@@ -39,7 +39,7 @@ class Encounter with _$Encounter {
   const factory Encounter(
     @JsonKey(name: 'min_level') int minLevel,
     @JsonKey(name: 'max_level') int maxLevel,
-    @JsonKey(name: 'condition_values') List<NamedAPIResource> conditionValues,
+    @JsonKey(name: 'condition_values') NamedAPIResourceList conditionValues,
     int chance,
     NamedAPIResource method,
   ) = _Encounter;

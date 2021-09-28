@@ -41,7 +41,7 @@ class BerryFirmness with _$BerryFirmness {
   const factory BerryFirmness(
     int id,
     String name,
-    List<NamedAPIResource> berries,
+    NamedAPIResourceList berries,
     List<Name> names,
   ) = _BerryFirmness;
 

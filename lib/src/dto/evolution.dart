@@ -62,7 +62,7 @@ class EvolutionTrigger with _$EvolutionTrigger {
     int id,
     String name,
     List<Name> names,
-    @JsonKey(name: 'pokemon_species') List<NamedAPIResource> pokemonSpecies,
+    @JsonKey(name: 'pokemon_species') NamedAPIResourceList pokemonSpecies,
   ) = _EvolutionTrigger;
 
   factory EvolutionTrigger.fromJson(Json json) =>

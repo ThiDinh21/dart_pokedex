@@ -11,13 +11,13 @@ class Generation with _$Generation {
   const factory Generation(
     int id,
     String name,
-    List<NamedAPIResource> abilities,
+    NamedAPIResourceList abilities,
     List<Name> names,
     @JsonKey(name: 'main_region') NamedAPIResource mainRegion,
-    List<NamedAPIResource> moves,
-    @JsonKey(name: 'pokemon_species') List<NamedAPIResource> pokemonSpecies,
-    List<NamedAPIResource> types,
-    @JsonKey(name: 'version_groups') List<NamedAPIResource> versionGroups,
+    NamedAPIResourceList moves,
+    @JsonKey(name: 'pokemon_species') NamedAPIResourceList pokemonSpecies,
+    NamedAPIResourceList types,
+    @JsonKey(name: 'version_groups') NamedAPIResourceList versionGroups,
   ) = _Generation;
 
   factory Generation.fromJson(Json json) => _$GenerationFromJson(json);
