@@ -21,8 +21,8 @@ linter:
 
 analyzer:
   exclude:
-    - lib/src/dto/*.g.dart
-    - lib/src/dto/*.freezed.dart
+    - lib/src/dto/**.g.dart
+    - lib/src/dto/**.freezed.dart
   errors:
     missing_return: error
     missing_required_param: error
