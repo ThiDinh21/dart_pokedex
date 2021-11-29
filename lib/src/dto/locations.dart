@@ -3,8 +3,8 @@ import 'package:poke_dart/src/dto/utility/common.dart';
 
 import '../aliases.dart';
 
-part 'location.freezed.dart';
-part 'location.g.dart';
+part 'locations.freezed.dart';
+part 'locations.g.dart';
 
 @freezed
 class Location with _$Location {

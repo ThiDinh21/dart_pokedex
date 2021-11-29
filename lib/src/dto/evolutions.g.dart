@@ -1,6 +1,6 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'evolution.dart';
+part of 'evolutions.dart';
 
 // **************************************************************************
 // JsonSerializableGenerator

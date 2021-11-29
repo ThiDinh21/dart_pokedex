@@ -3,8 +3,8 @@ import 'package:poke_dart/src/dto/utility/common.dart';
 
 import '../aliases.dart';
 
-part 'item.freezed.dart';
-part 'item.g.dart';
+part 'items.freezed.dart';
+part 'items.g.dart';
 
 @freezed
 class Item with _$Item {

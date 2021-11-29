@@ -3,8 +3,8 @@ import 'package:poke_dart/src/dto/utility/common.dart';
 
 import '../aliases.dart';
 
-part 'evolution.freezed.dart';
-part 'evolution.g.dart';
+part 'evolutions.freezed.dart';
+part 'evolutions.g.dart';
 
 @freezed
 class EvolutionChain with _$EvolutionChain {
