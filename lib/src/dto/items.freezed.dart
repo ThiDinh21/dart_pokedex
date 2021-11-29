@@ -63,7 +63,7 @@ class _$ItemTearOff {
     );
   }
 
-  Item fromJson(Map<String, Object> json) {
+  Item fromJson(Map<String, Object?> json) {
     return Item.fromJson(json);
   }
 }
@@ -456,68 +456,52 @@ class _$_Item implements _Item {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _Item &&
-            (identical(other.id, id) ||
-                const DeepCollectionEquality().equals(other.id, id)) &&
-            (identical(other.name, name) ||
-                const DeepCollectionEquality().equals(other.name, name)) &&
-            (identical(other.cost, cost) ||
-                const DeepCollectionEquality().equals(other.cost, cost)) &&
+        (other.runtimeType == runtimeType &&
+            other is _Item &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.name, name) || other.name == name) &&
+            (identical(other.cost, cost) || other.cost == cost) &&
             (identical(other.flingPower, flingPower) ||
-                const DeepCollectionEquality()
-                    .equals(other.flingPower, flingPower)) &&
+                other.flingPower == flingPower) &&
             (identical(other.flingEffect, flingEffect) ||
-                const DeepCollectionEquality()
-                    .equals(other.flingEffect, flingEffect)) &&
-            (identical(other.attributes, attributes) ||
-                const DeepCollectionEquality()
-                    .equals(other.attributes, attributes)) &&
+                other.flingEffect == flingEffect) &&
+            const DeepCollectionEquality()
+                .equals(other.attributes, attributes) &&
             (identical(other.category, category) ||
-                const DeepCollectionEquality()
-                    .equals(other.category, category)) &&
-            (identical(other.effectEntries, effectEntries) ||
-                const DeepCollectionEquality()
-                    .equals(other.effectEntries, effectEntries)) &&
-            (identical(other.flavorTextEntries, flavorTextEntries) ||
-                const DeepCollectionEquality()
-                    .equals(other.flavorTextEntries, flavorTextEntries)) &&
-            (identical(other.gameIndices, gameIndices) ||
-                const DeepCollectionEquality()
-                    .equals(other.gameIndices, gameIndices)) &&
-            (identical(other.names, names) ||
-                const DeepCollectionEquality().equals(other.names, names)) &&
-            (identical(other.sprites, sprites) ||
-                const DeepCollectionEquality()
-                    .equals(other.sprites, sprites)) &&
-            (identical(other.heldByPokemon, heldByPokemon) ||
-                const DeepCollectionEquality()
-                    .equals(other.heldByPokemon, heldByPokemon)) &&
+                other.category == category) &&
+            const DeepCollectionEquality()
+                .equals(other.effectEntries, effectEntries) &&
+            const DeepCollectionEquality()
+                .equals(other.flavorTextEntries, flavorTextEntries) &&
+            const DeepCollectionEquality()
+                .equals(other.gameIndices, gameIndices) &&
+            const DeepCollectionEquality().equals(other.names, names) &&
+            (identical(other.sprites, sprites) || other.sprites == sprites) &&
+            const DeepCollectionEquality()
+                .equals(other.heldByPokemon, heldByPokemon) &&
             (identical(other.babyTriggerFor, babyTriggerFor) ||
-                const DeepCollectionEquality()
-                    .equals(other.babyTriggerFor, babyTriggerFor)) &&
-            (identical(other.machines, machines) ||
-                const DeepCollectionEquality()
-                    .equals(other.machines, machines)));
+                other.babyTriggerFor == babyTriggerFor) &&
+            const DeepCollectionEquality().equals(other.machines, machines));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(id) ^
-      const DeepCollectionEquality().hash(name) ^
-      const DeepCollectionEquality().hash(cost) ^
-      const DeepCollectionEquality().hash(flingPower) ^
-      const DeepCollectionEquality().hash(flingEffect) ^
-      const DeepCollectionEquality().hash(attributes) ^
-      const DeepCollectionEquality().hash(category) ^
-      const DeepCollectionEquality().hash(effectEntries) ^
-      const DeepCollectionEquality().hash(flavorTextEntries) ^
-      const DeepCollectionEquality().hash(gameIndices) ^
-      const DeepCollectionEquality().hash(names) ^
-      const DeepCollectionEquality().hash(sprites) ^
-      const DeepCollectionEquality().hash(heldByPokemon) ^
-      const DeepCollectionEquality().hash(babyTriggerFor) ^
-      const DeepCollectionEquality().hash(machines);
+  int get hashCode => Object.hash(
+      runtimeType,
+      id,
+      name,
+      cost,
+      flingPower,
+      flingEffect,
+      const DeepCollectionEquality().hash(attributes),
+      category,
+      const DeepCollectionEquality().hash(effectEntries),
+      const DeepCollectionEquality().hash(flavorTextEntries),
+      const DeepCollectionEquality().hash(gameIndices),
+      const DeepCollectionEquality().hash(names),
+      sprites,
+      const DeepCollectionEquality().hash(heldByPokemon),
+      babyTriggerFor,
+      const DeepCollectionEquality().hash(machines));
 
   @JsonKey(ignore: true)
   @override
@@ -558,45 +542,42 @@ abstract class _Item implements Item {
   factory _Item.fromJson(Map<String, dynamic> json) = _$_Item.fromJson;
 
   @override
-  int get id => throw _privateConstructorUsedError;
+  int get id;
   @override
-  String get name => throw _privateConstructorUsedError;
+  String get name;
   @override
-  int get cost => throw _privateConstructorUsedError;
+  int get cost;
   @override
   @JsonKey(name: 'fling_power')
-  int get flingPower => throw _privateConstructorUsedError;
+  int get flingPower;
   @override
   @JsonKey(name: 'fling_effect')
-  NamedAPIResource get flingEffect => throw _privateConstructorUsedError;
+  NamedAPIResource get flingEffect;
   @override
-  List<NamedAPIResource> get attributes => throw _privateConstructorUsedError;
+  List<NamedAPIResource> get attributes;
   @override
-  NamedAPIResource get category => throw _privateConstructorUsedError;
+  NamedAPIResource get category;
   @override
   @JsonKey(name: 'effect_entries')
-  List<VerboseEffect> get effectEntries => throw _privateConstructorUsedError;
+  List<VerboseEffect> get effectEntries;
   @override
   @JsonKey(name: 'flavor_text_entries')
-  List<VersionGroupFlavorText> get flavorTextEntries =>
-      throw _privateConstructorUsedError;
+  List<VersionGroupFlavorText> get flavorTextEntries;
   @override
   @JsonKey(name: 'game_indices')
-  List<GenerationGameIndex> get gameIndices =>
-      throw _privateConstructorUsedError;
+  List<GenerationGameIndex> get gameIndices;
   @override
-  List<Name> get names => throw _privateConstructorUsedError;
+  List<Name> get names;
   @override
-  ItemSprites get sprites => throw _privateConstructorUsedError;
+  ItemSprites get sprites;
   @override
   @JsonKey(name: 'held_by_pokemon')
-  List<ItemHolderPokemon> get heldByPokemon =>
-      throw _privateConstructorUsedError;
+  List<ItemHolderPokemon> get heldByPokemon;
   @override
   @JsonKey(name: 'baby_trigger_for')
-  APIResource get babyTriggerFor => throw _privateConstructorUsedError;
+  APIResource get babyTriggerFor;
   @override
-  List<MachineVersionDetail> get machines => throw _privateConstructorUsedError;
+  List<MachineVersionDetail> get machines;
   @override
   @JsonKey(ignore: true)
   _$ItemCopyWith<_Item> get copyWith => throw _privateConstructorUsedError;
@@ -616,7 +597,7 @@ class _$ItemSpritesTearOff {
     );
   }
 
-  ItemSprites fromJson(Map<String, Object> json) {
+  ItemSprites fromJson(Map<String, Object?> json) {
     return ItemSprites.fromJson(json);
   }
 }
@@ -717,14 +698,13 @@ class _$_ItemSprites implements _ItemSprites {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _ItemSprites &&
-            (identical(other.value, value) ||
-                const DeepCollectionEquality().equals(other.value, value)));
+        (other.runtimeType == runtimeType &&
+            other is _ItemSprites &&
+            (identical(other.value, value) || other.value == value));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(value);
+  int get hashCode => Object.hash(runtimeType, value);
 
   @JsonKey(ignore: true)
   @override
@@ -746,7 +726,7 @@ abstract class _ItemSprites implements ItemSprites {
 
   @override
   @JsonKey(name: 'default')
-  String get value => throw _privateConstructorUsedError;
+  String get value;
   @override
   @JsonKey(ignore: true)
   _$ItemSpritesCopyWith<_ItemSprites> get copyWith =>
@@ -771,7 +751,7 @@ class _$ItemHolderPokemonTearOff {
     );
   }
 
-  ItemHolderPokemon fromJson(Map<String, Object> json) {
+  ItemHolderPokemon fromJson(Map<String, Object?> json) {
     return ItemHolderPokemon.fromJson(json);
   }
 }
@@ -907,20 +887,16 @@ class _$_ItemHolderPokemon implements _ItemHolderPokemon {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _ItemHolderPokemon &&
-            (identical(other.pokemon, pokemon) ||
-                const DeepCollectionEquality()
-                    .equals(other.pokemon, pokemon)) &&
-            (identical(other.versionDetails, versionDetails) ||
-                const DeepCollectionEquality()
-                    .equals(other.versionDetails, versionDetails)));
+        (other.runtimeType == runtimeType &&
+            other is _ItemHolderPokemon &&
+            (identical(other.pokemon, pokemon) || other.pokemon == pokemon) &&
+            const DeepCollectionEquality()
+                .equals(other.versionDetails, versionDetails));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(pokemon) ^
-      const DeepCollectionEquality().hash(versionDetails);
+  int get hashCode => Object.hash(runtimeType, pokemon,
+      const DeepCollectionEquality().hash(versionDetails));
 
   @JsonKey(ignore: true)
   @override
@@ -944,11 +920,10 @@ abstract class _ItemHolderPokemon implements ItemHolderPokemon {
       _$_ItemHolderPokemon.fromJson;
 
   @override
-  NamedAPIResource get pokemon => throw _privateConstructorUsedError;
+  NamedAPIResource get pokemon;
   @override
   @JsonKey(name: 'version_details')
-  List<ItemHolderPokemonVersionDetail> get versionDetails =>
-      throw _privateConstructorUsedError;
+  List<ItemHolderPokemonVersionDetail> get versionDetails;
   @override
   @JsonKey(ignore: true)
   _$ItemHolderPokemonCopyWith<_ItemHolderPokemon> get copyWith =>
@@ -971,7 +946,7 @@ class _$ItemHolderPokemonVersionDetailTearOff {
     );
   }
 
-  ItemHolderPokemonVersionDetail fromJson(Map<String, Object> json) {
+  ItemHolderPokemonVersionDetail fromJson(Map<String, Object?> json) {
     return ItemHolderPokemonVersionDetail.fromJson(json);
   }
 }
@@ -1104,18 +1079,14 @@ class _$_ItemHolderPokemonVersionDetail
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _ItemHolderPokemonVersionDetail &&
-            (identical(other.rarity, rarity) ||
-                const DeepCollectionEquality().equals(other.rarity, rarity)) &&
-            (identical(other.version, version) ||
-                const DeepCollectionEquality().equals(other.version, version)));
+        (other.runtimeType == runtimeType &&
+            other is _ItemHolderPokemonVersionDetail &&
+            (identical(other.rarity, rarity) || other.rarity == rarity) &&
+            (identical(other.version, version) || other.version == version));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(rarity) ^
-      const DeepCollectionEquality().hash(version);
+  int get hashCode => Object.hash(runtimeType, rarity, version);
 
   @JsonKey(ignore: true)
   @override
@@ -1138,9 +1109,9 @@ abstract class _ItemHolderPokemonVersionDetail
       _$_ItemHolderPokemonVersionDetail.fromJson;
 
   @override
-  int get rarity => throw _privateConstructorUsedError;
+  int get rarity;
   @override
-  NamedAPIResource get version => throw _privateConstructorUsedError;
+  NamedAPIResource get version;
   @override
   @JsonKey(ignore: true)
   _$ItemHolderPokemonVersionDetailCopyWith<_ItemHolderPokemonVersionDetail>
@@ -1166,7 +1137,7 @@ class _$ItemAttributeTearOff {
     );
   }
 
-  ItemAttribute fromJson(Map<String, Object> json) {
+  ItemAttribute fromJson(Map<String, Object?> json) {
     return ItemAttribute.fromJson(json);
   }
 }
@@ -1330,28 +1301,24 @@ class _$_ItemAttribute implements _ItemAttribute {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _ItemAttribute &&
-            (identical(other.id, id) ||
-                const DeepCollectionEquality().equals(other.id, id)) &&
-            (identical(other.name, name) ||
-                const DeepCollectionEquality().equals(other.name, name)) &&
-            (identical(other.items, items) ||
-                const DeepCollectionEquality().equals(other.items, items)) &&
-            (identical(other.names, names) ||
-                const DeepCollectionEquality().equals(other.names, names)) &&
-            (identical(other.descriptions, descriptions) ||
-                const DeepCollectionEquality()
-                    .equals(other.descriptions, descriptions)));
+        (other.runtimeType == runtimeType &&
+            other is _ItemAttribute &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.name, name) || other.name == name) &&
+            const DeepCollectionEquality().equals(other.items, items) &&
+            const DeepCollectionEquality().equals(other.names, names) &&
+            const DeepCollectionEquality()
+                .equals(other.descriptions, descriptions));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(id) ^
-      const DeepCollectionEquality().hash(name) ^
-      const DeepCollectionEquality().hash(items) ^
-      const DeepCollectionEquality().hash(names) ^
-      const DeepCollectionEquality().hash(descriptions);
+  int get hashCode => Object.hash(
+      runtimeType,
+      id,
+      name,
+      const DeepCollectionEquality().hash(items),
+      const DeepCollectionEquality().hash(names),
+      const DeepCollectionEquality().hash(descriptions));
 
   @JsonKey(ignore: true)
   @override
@@ -1376,15 +1343,15 @@ abstract class _ItemAttribute implements ItemAttribute {
       _$_ItemAttribute.fromJson;
 
   @override
-  int get id => throw _privateConstructorUsedError;
+  int get id;
   @override
-  String get name => throw _privateConstructorUsedError;
+  String get name;
   @override
-  List<NamedAPIResource> get items => throw _privateConstructorUsedError;
+  List<NamedAPIResource> get items;
   @override
-  List<Name> get names => throw _privateConstructorUsedError;
+  List<Name> get names;
   @override
-  List<Description> get descriptions => throw _privateConstructorUsedError;
+  List<Description> get descriptions;
   @override
   @JsonKey(ignore: true)
   _$ItemAttributeCopyWith<_ItemAttribute> get copyWith =>
@@ -1410,7 +1377,7 @@ class _$ItemCategoryTearOff {
     );
   }
 
-  ItemCategory fromJson(Map<String, Object> json) {
+  ItemCategory fromJson(Map<String, Object?> json) {
     return ItemCategory.fromJson(json);
   }
 }
@@ -1584,27 +1551,23 @@ class _$_ItemCategory implements _ItemCategory {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _ItemCategory &&
-            (identical(other.id, id) ||
-                const DeepCollectionEquality().equals(other.id, id)) &&
-            (identical(other.name, name) ||
-                const DeepCollectionEquality().equals(other.name, name)) &&
-            (identical(other.items, items) ||
-                const DeepCollectionEquality().equals(other.items, items)) &&
-            (identical(other.names, names) ||
-                const DeepCollectionEquality().equals(other.names, names)) &&
-            (identical(other.pocket, pocket) ||
-                const DeepCollectionEquality().equals(other.pocket, pocket)));
+        (other.runtimeType == runtimeType &&
+            other is _ItemCategory &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.name, name) || other.name == name) &&
+            const DeepCollectionEquality().equals(other.items, items) &&
+            const DeepCollectionEquality().equals(other.names, names) &&
+            (identical(other.pocket, pocket) || other.pocket == pocket));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(id) ^
-      const DeepCollectionEquality().hash(name) ^
-      const DeepCollectionEquality().hash(items) ^
-      const DeepCollectionEquality().hash(names) ^
-      const DeepCollectionEquality().hash(pocket);
+  int get hashCode => Object.hash(
+      runtimeType,
+      id,
+      name,
+      const DeepCollectionEquality().hash(items),
+      const DeepCollectionEquality().hash(names),
+      pocket);
 
   @JsonKey(ignore: true)
   @override
@@ -1625,15 +1588,15 @@ abstract class _ItemCategory implements ItemCategory {
       _$_ItemCategory.fromJson;
 
   @override
-  int get id => throw _privateConstructorUsedError;
+  int get id;
   @override
-  String get name => throw _privateConstructorUsedError;
+  String get name;
   @override
-  List<NamedAPIResource> get items => throw _privateConstructorUsedError;
+  List<NamedAPIResource> get items;
   @override
-  List<Name> get names => throw _privateConstructorUsedError;
+  List<Name> get names;
   @override
-  NamedAPIResource get pocket => throw _privateConstructorUsedError;
+  NamedAPIResource get pocket;
   @override
   @JsonKey(ignore: true)
   _$ItemCategoryCopyWith<_ItemCategory> get copyWith =>
@@ -1661,7 +1624,7 @@ class _$ItemFlingEffectTearOff {
     );
   }
 
-  ItemFlingEffect fromJson(Map<String, Object> json) {
+  ItemFlingEffect fromJson(Map<String, Object?> json) {
     return ItemFlingEffect.fromJson(json);
   }
 }
@@ -1812,25 +1775,22 @@ class _$_ItemFlingEffect implements _ItemFlingEffect {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _ItemFlingEffect &&
-            (identical(other.id, id) ||
-                const DeepCollectionEquality().equals(other.id, id)) &&
-            (identical(other.name, name) ||
-                const DeepCollectionEquality().equals(other.name, name)) &&
-            (identical(other.effectEntries, effectEntries) ||
-                const DeepCollectionEquality()
-                    .equals(other.effectEntries, effectEntries)) &&
-            (identical(other.items, items) ||
-                const DeepCollectionEquality().equals(other.items, items)));
+        (other.runtimeType == runtimeType &&
+            other is _ItemFlingEffect &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.name, name) || other.name == name) &&
+            const DeepCollectionEquality()
+                .equals(other.effectEntries, effectEntries) &&
+            const DeepCollectionEquality().equals(other.items, items));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(id) ^
-      const DeepCollectionEquality().hash(name) ^
-      const DeepCollectionEquality().hash(effectEntries) ^
-      const DeepCollectionEquality().hash(items);
+  int get hashCode => Object.hash(
+      runtimeType,
+      id,
+      name,
+      const DeepCollectionEquality().hash(effectEntries),
+      const DeepCollectionEquality().hash(items));
 
   @JsonKey(ignore: true)
   @override
@@ -1854,14 +1814,14 @@ abstract class _ItemFlingEffect implements ItemFlingEffect {
       _$_ItemFlingEffect.fromJson;
 
   @override
-  int get id => throw _privateConstructorUsedError;
+  int get id;
   @override
-  String get name => throw _privateConstructorUsedError;
+  String get name;
   @override
   @JsonKey(name: 'effect_entries')
-  List<Effect> get effectEntries => throw _privateConstructorUsedError;
+  List<Effect> get effectEntries;
   @override
-  List<NamedAPIResource> get items => throw _privateConstructorUsedError;
+  List<NamedAPIResource> get items;
   @override
   @JsonKey(ignore: true)
   _$ItemFlingEffectCopyWith<_ItemFlingEffect> get copyWith =>
@@ -1886,7 +1846,7 @@ class _$ItemPocketTearOff {
     );
   }
 
-  ItemPocket fromJson(Map<String, Object> json) {
+  ItemPocket fromJson(Map<String, Object?> json) {
     return ItemPocket.fromJson(json);
   }
 }
@@ -2031,25 +1991,22 @@ class _$_ItemPocket implements _ItemPocket {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _ItemPocket &&
-            (identical(other.id, id) ||
-                const DeepCollectionEquality().equals(other.id, id)) &&
-            (identical(other.name, name) ||
-                const DeepCollectionEquality().equals(other.name, name)) &&
-            (identical(other.categories, categories) ||
-                const DeepCollectionEquality()
-                    .equals(other.categories, categories)) &&
-            (identical(other.names, names) ||
-                const DeepCollectionEquality().equals(other.names, names)));
+        (other.runtimeType == runtimeType &&
+            other is _ItemPocket &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.name, name) || other.name == name) &&
+            const DeepCollectionEquality()
+                .equals(other.categories, categories) &&
+            const DeepCollectionEquality().equals(other.names, names));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(id) ^
-      const DeepCollectionEquality().hash(name) ^
-      const DeepCollectionEquality().hash(categories) ^
-      const DeepCollectionEquality().hash(names);
+  int get hashCode => Object.hash(
+      runtimeType,
+      id,
+      name,
+      const DeepCollectionEquality().hash(categories),
+      const DeepCollectionEquality().hash(names));
 
   @JsonKey(ignore: true)
   @override
@@ -2070,13 +2027,13 @@ abstract class _ItemPocket implements ItemPocket {
       _$_ItemPocket.fromJson;
 
   @override
-  int get id => throw _privateConstructorUsedError;
+  int get id;
   @override
-  String get name => throw _privateConstructorUsedError;
+  String get name;
   @override
-  List<NamedAPIResource> get categories => throw _privateConstructorUsedError;
+  List<NamedAPIResource> get categories;
   @override
-  List<Name> get names => throw _privateConstructorUsedError;
+  List<Name> get names;
   @override
   @JsonKey(ignore: true)
   _$ItemPocketCopyWith<_ItemPocket> get copyWith =>

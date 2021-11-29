@@ -38,7 +38,7 @@ class _$LocationTearOff {
     );
   }
 
-  Location fromJson(Map<String, Object> json) {
+  Location fromJson(Map<String, Object?> json) {
     return Location.fromJson(json);
   }
 }
@@ -226,31 +226,26 @@ class _$_Location implements _Location {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _Location &&
-            (identical(other.id, id) ||
-                const DeepCollectionEquality().equals(other.id, id)) &&
-            (identical(other.name, name) ||
-                const DeepCollectionEquality().equals(other.name, name)) &&
-            (identical(other.region, region) ||
-                const DeepCollectionEquality().equals(other.region, region)) &&
-            (identical(other.names, names) ||
-                const DeepCollectionEquality().equals(other.names, names)) &&
-            (identical(other.gameIndices, gameIndices) ||
-                const DeepCollectionEquality()
-                    .equals(other.gameIndices, gameIndices)) &&
-            (identical(other.areas, areas) ||
-                const DeepCollectionEquality().equals(other.areas, areas)));
+        (other.runtimeType == runtimeType &&
+            other is _Location &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.name, name) || other.name == name) &&
+            (identical(other.region, region) || other.region == region) &&
+            const DeepCollectionEquality().equals(other.names, names) &&
+            const DeepCollectionEquality()
+                .equals(other.gameIndices, gameIndices) &&
+            const DeepCollectionEquality().equals(other.areas, areas));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(id) ^
-      const DeepCollectionEquality().hash(name) ^
-      const DeepCollectionEquality().hash(region) ^
-      const DeepCollectionEquality().hash(names) ^
-      const DeepCollectionEquality().hash(gameIndices) ^
-      const DeepCollectionEquality().hash(areas);
+  int get hashCode => Object.hash(
+      runtimeType,
+      id,
+      name,
+      region,
+      const DeepCollectionEquality().hash(names),
+      const DeepCollectionEquality().hash(gameIndices),
+      const DeepCollectionEquality().hash(areas));
 
   @JsonKey(ignore: true)
   @override
@@ -275,19 +270,18 @@ abstract class _Location implements Location {
   factory _Location.fromJson(Map<String, dynamic> json) = _$_Location.fromJson;
 
   @override
-  int get id => throw _privateConstructorUsedError;
+  int get id;
   @override
-  String get name => throw _privateConstructorUsedError;
+  String get name;
   @override
-  NamedAPIResource get region => throw _privateConstructorUsedError;
+  NamedAPIResource get region;
   @override
-  List<Name> get names => throw _privateConstructorUsedError;
+  List<Name> get names;
   @override
   @JsonKey(name: 'game_indices')
-  List<GenerationGameIndex> get gameIndices =>
-      throw _privateConstructorUsedError;
+  List<GenerationGameIndex> get gameIndices;
   @override
-  List<NamedAPIResource> get areas => throw _privateConstructorUsedError;
+  List<NamedAPIResource> get areas;
   @override
   @JsonKey(ignore: true)
   _$LocationCopyWith<_Location> get copyWith =>
@@ -324,7 +318,7 @@ class _$LocationAreaTearOff {
     );
   }
 
-  LocationArea fromJson(Map<String, Object> json) {
+  LocationArea fromJson(Map<String, Object?> json) {
     return LocationArea.fromJson(json);
   }
 }
@@ -548,37 +542,31 @@ class _$_LocationArea implements _LocationArea {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _LocationArea &&
-            (identical(other.id, id) ||
-                const DeepCollectionEquality().equals(other.id, id)) &&
-            (identical(other.name, name) ||
-                const DeepCollectionEquality().equals(other.name, name)) &&
+        (other.runtimeType == runtimeType &&
+            other is _LocationArea &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.name, name) || other.name == name) &&
             (identical(other.gameIndex, gameIndex) ||
-                const DeepCollectionEquality()
-                    .equals(other.gameIndex, gameIndex)) &&
-            (identical(other.encounterMethodRates, encounterMethodRates) ||
-                const DeepCollectionEquality().equals(
-                    other.encounterMethodRates, encounterMethodRates)) &&
+                other.gameIndex == gameIndex) &&
+            const DeepCollectionEquality()
+                .equals(other.encounterMethodRates, encounterMethodRates) &&
             (identical(other.location, location) ||
-                const DeepCollectionEquality()
-                    .equals(other.location, location)) &&
-            (identical(other.names, names) ||
-                const DeepCollectionEquality().equals(other.names, names)) &&
-            (identical(other.pokemonEncounters, pokemonEncounters) ||
-                const DeepCollectionEquality()
-                    .equals(other.pokemonEncounters, pokemonEncounters)));
+                other.location == location) &&
+            const DeepCollectionEquality().equals(other.names, names) &&
+            const DeepCollectionEquality()
+                .equals(other.pokemonEncounters, pokemonEncounters));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(id) ^
-      const DeepCollectionEquality().hash(name) ^
-      const DeepCollectionEquality().hash(gameIndex) ^
-      const DeepCollectionEquality().hash(encounterMethodRates) ^
-      const DeepCollectionEquality().hash(location) ^
-      const DeepCollectionEquality().hash(names) ^
-      const DeepCollectionEquality().hash(pokemonEncounters);
+  int get hashCode => Object.hash(
+      runtimeType,
+      id,
+      name,
+      gameIndex,
+      const DeepCollectionEquality().hash(encounterMethodRates),
+      location,
+      const DeepCollectionEquality().hash(names),
+      const DeepCollectionEquality().hash(pokemonEncounters));
 
   @JsonKey(ignore: true)
   @override
@@ -608,24 +596,22 @@ abstract class _LocationArea implements LocationArea {
       _$_LocationArea.fromJson;
 
   @override
-  int get id => throw _privateConstructorUsedError;
+  int get id;
   @override
-  String get name => throw _privateConstructorUsedError;
+  String get name;
   @override
   @JsonKey(name: 'game_index')
-  int get gameIndex => throw _privateConstructorUsedError;
+  int get gameIndex;
   @override
   @JsonKey(name: 'encounter_method_rates')
-  List<EncounterMethodRate> get encounterMethodRates =>
-      throw _privateConstructorUsedError;
+  List<EncounterMethodRate> get encounterMethodRates;
   @override
-  NamedAPIResource get location => throw _privateConstructorUsedError;
+  NamedAPIResource get location;
   @override
-  List<Name> get names => throw _privateConstructorUsedError;
+  List<Name> get names;
   @override
   @JsonKey(name: 'pokemon_encounters')
-  List<PokemonEncounter> get pokemonEncounters =>
-      throw _privateConstructorUsedError;
+  List<PokemonEncounter> get pokemonEncounters;
   @override
   @JsonKey(ignore: true)
   _$LocationAreaCopyWith<_LocationArea> get copyWith =>
@@ -651,7 +637,7 @@ class _$EncounterMethodRateTearOff {
     );
   }
 
-  EncounterMethodRate fromJson(Map<String, Object> json) {
+  EncounterMethodRate fromJson(Map<String, Object?> json) {
     return EncounterMethodRate.fromJson(json);
   }
 }
@@ -792,20 +778,17 @@ class _$_EncounterMethodRate implements _EncounterMethodRate {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _EncounterMethodRate &&
+        (other.runtimeType == runtimeType &&
+            other is _EncounterMethodRate &&
             (identical(other.encounterMethod, encounterMethod) ||
-                const DeepCollectionEquality()
-                    .equals(other.encounterMethod, encounterMethod)) &&
-            (identical(other.versionDetails, versionDetails) ||
-                const DeepCollectionEquality()
-                    .equals(other.versionDetails, versionDetails)));
+                other.encounterMethod == encounterMethod) &&
+            const DeepCollectionEquality()
+                .equals(other.versionDetails, versionDetails));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(encounterMethod) ^
-      const DeepCollectionEquality().hash(versionDetails);
+  int get hashCode => Object.hash(runtimeType, encounterMethod,
+      const DeepCollectionEquality().hash(versionDetails));
 
   @JsonKey(ignore: true)
   @override
@@ -832,11 +815,10 @@ abstract class _EncounterMethodRate implements EncounterMethodRate {
 
   @override
   @JsonKey(name: 'encounter_method')
-  NamedAPIResource get encounterMethod => throw _privateConstructorUsedError;
+  NamedAPIResource get encounterMethod;
   @override
   @JsonKey(name: 'version_details')
-  List<EncounterVersionDetails> get versionDetails =>
-      throw _privateConstructorUsedError;
+  List<EncounterVersionDetails> get versionDetails;
   @override
   @JsonKey(ignore: true)
   _$EncounterMethodRateCopyWith<_EncounterMethodRate> get copyWith =>
@@ -859,7 +841,7 @@ class _$EncounterVersionDetailsTearOff {
     );
   }
 
-  EncounterVersionDetails fromJson(Map<String, Object> json) {
+  EncounterVersionDetails fromJson(Map<String, Object?> json) {
     return EncounterVersionDetails.fromJson(json);
   }
 }
@@ -986,18 +968,14 @@ class _$_EncounterVersionDetails implements _EncounterVersionDetails {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _EncounterVersionDetails &&
-            (identical(other.rate, rate) ||
-                const DeepCollectionEquality().equals(other.rate, rate)) &&
-            (identical(other.version, version) ||
-                const DeepCollectionEquality().equals(other.version, version)));
+        (other.runtimeType == runtimeType &&
+            other is _EncounterVersionDetails &&
+            (identical(other.rate, rate) || other.rate == rate) &&
+            (identical(other.version, version) || other.version == version));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(rate) ^
-      const DeepCollectionEquality().hash(version);
+  int get hashCode => Object.hash(runtimeType, rate, version);
 
   @JsonKey(ignore: true)
   @override
@@ -1019,9 +997,9 @@ abstract class _EncounterVersionDetails implements EncounterVersionDetails {
       _$_EncounterVersionDetails.fromJson;
 
   @override
-  int get rate => throw _privateConstructorUsedError;
+  int get rate;
   @override
-  NamedAPIResource get version => throw _privateConstructorUsedError;
+  NamedAPIResource get version;
   @override
   @JsonKey(ignore: true)
   _$EncounterVersionDetailsCopyWith<_EncounterVersionDetails> get copyWith =>
@@ -1046,7 +1024,7 @@ class _$PokemonEncounterTearOff {
     );
   }
 
-  PokemonEncounter fromJson(Map<String, Object> json) {
+  PokemonEncounter fromJson(Map<String, Object?> json) {
     return PokemonEncounter.fromJson(json);
   }
 }
@@ -1182,20 +1160,16 @@ class _$_PokemonEncounter implements _PokemonEncounter {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _PokemonEncounter &&
-            (identical(other.pokemon, pokemon) ||
-                const DeepCollectionEquality()
-                    .equals(other.pokemon, pokemon)) &&
-            (identical(other.versionDetails, versionDetails) ||
-                const DeepCollectionEquality()
-                    .equals(other.versionDetails, versionDetails)));
+        (other.runtimeType == runtimeType &&
+            other is _PokemonEncounter &&
+            (identical(other.pokemon, pokemon) || other.pokemon == pokemon) &&
+            const DeepCollectionEquality()
+                .equals(other.versionDetails, versionDetails));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(pokemon) ^
-      const DeepCollectionEquality().hash(versionDetails);
+  int get hashCode => Object.hash(runtimeType, pokemon,
+      const DeepCollectionEquality().hash(versionDetails));
 
   @JsonKey(ignore: true)
   @override
@@ -1218,11 +1192,10 @@ abstract class _PokemonEncounter implements PokemonEncounter {
       _$_PokemonEncounter.fromJson;
 
   @override
-  NamedAPIResource get pokemon => throw _privateConstructorUsedError;
+  NamedAPIResource get pokemon;
   @override
   @JsonKey(name: 'version_details')
-  List<VersionEncounterDetail> get versionDetails =>
-      throw _privateConstructorUsedError;
+  List<VersionEncounterDetail> get versionDetails;
   @override
   @JsonKey(ignore: true)
   _$PokemonEncounterCopyWith<_PokemonEncounter> get copyWith =>
@@ -1251,7 +1224,7 @@ class _$PalParkAreaTearOff {
     );
   }
 
-  PalParkArea fromJson(Map<String, Object> json) {
+  PalParkArea fromJson(Map<String, Object?> json) {
     return PalParkArea.fromJson(json);
   }
 }
@@ -1403,25 +1376,22 @@ class _$_PalParkArea implements _PalParkArea {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _PalParkArea &&
-            (identical(other.id, id) ||
-                const DeepCollectionEquality().equals(other.id, id)) &&
-            (identical(other.name, name) ||
-                const DeepCollectionEquality().equals(other.name, name)) &&
-            (identical(other.names, names) ||
-                const DeepCollectionEquality().equals(other.names, names)) &&
-            (identical(other.pokemonEncounters, pokemonEncounters) ||
-                const DeepCollectionEquality()
-                    .equals(other.pokemonEncounters, pokemonEncounters)));
+        (other.runtimeType == runtimeType &&
+            other is _PalParkArea &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.name, name) || other.name == name) &&
+            const DeepCollectionEquality().equals(other.names, names) &&
+            const DeepCollectionEquality()
+                .equals(other.pokemonEncounters, pokemonEncounters));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(id) ^
-      const DeepCollectionEquality().hash(name) ^
-      const DeepCollectionEquality().hash(names) ^
-      const DeepCollectionEquality().hash(pokemonEncounters);
+  int get hashCode => Object.hash(
+      runtimeType,
+      id,
+      name,
+      const DeepCollectionEquality().hash(names),
+      const DeepCollectionEquality().hash(pokemonEncounters));
 
   @JsonKey(ignore: true)
   @override
@@ -1446,15 +1416,14 @@ abstract class _PalParkArea implements PalParkArea {
       _$_PalParkArea.fromJson;
 
   @override
-  int get id => throw _privateConstructorUsedError;
+  int get id;
   @override
-  String get name => throw _privateConstructorUsedError;
+  String get name;
   @override
-  List<Name> get names => throw _privateConstructorUsedError;
+  List<Name> get names;
   @override
   @JsonKey(name: 'pokemon_encounters')
-  List<PalParkEncounterSpecies> get pokemonEncounters =>
-      throw _privateConstructorUsedError;
+  List<PalParkEncounterSpecies> get pokemonEncounters;
   @override
   @JsonKey(ignore: true)
   _$PalParkAreaCopyWith<_PalParkArea> get copyWith =>
@@ -1481,7 +1450,7 @@ class _$PalParkEncounterSpeciesTearOff {
     );
   }
 
-  PalParkEncounterSpecies fromJson(Map<String, Object> json) {
+  PalParkEncounterSpecies fromJson(Map<String, Object?> json) {
     return PalParkEncounterSpecies.fromJson(json);
   }
 }
@@ -1632,23 +1601,17 @@ class _$_PalParkEncounterSpecies implements _PalParkEncounterSpecies {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _PalParkEncounterSpecies &&
+        (other.runtimeType == runtimeType &&
+            other is _PalParkEncounterSpecies &&
             (identical(other.baseScore, baseScore) ||
-                const DeepCollectionEquality()
-                    .equals(other.baseScore, baseScore)) &&
-            (identical(other.rate, rate) ||
-                const DeepCollectionEquality().equals(other.rate, rate)) &&
+                other.baseScore == baseScore) &&
+            (identical(other.rate, rate) || other.rate == rate) &&
             (identical(other.pokemonSpecies, pokemonSpecies) ||
-                const DeepCollectionEquality()
-                    .equals(other.pokemonSpecies, pokemonSpecies)));
+                other.pokemonSpecies == pokemonSpecies));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(baseScore) ^
-      const DeepCollectionEquality().hash(rate) ^
-      const DeepCollectionEquality().hash(pokemonSpecies);
+  int get hashCode => Object.hash(runtimeType, baseScore, rate, pokemonSpecies);
 
   @JsonKey(ignore: true)
   @override
@@ -1674,12 +1637,12 @@ abstract class _PalParkEncounterSpecies implements PalParkEncounterSpecies {
 
   @override
   @JsonKey(name: 'base_score')
-  int get baseScore => throw _privateConstructorUsedError;
+  int get baseScore;
   @override
-  int get rate => throw _privateConstructorUsedError;
+  int get rate;
   @override
   @JsonKey(name: 'pokemon_species')
-  NamedAPIResource get pokemonSpecies => throw _privateConstructorUsedError;
+  NamedAPIResource get pokemonSpecies;
   @override
   @JsonKey(ignore: true)
   _$PalParkEncounterSpeciesCopyWith<_PalParkEncounterSpecies> get copyWith =>
@@ -1713,7 +1676,7 @@ class _$RegionTearOff {
     );
   }
 
-  Region fromJson(Map<String, Object> json) {
+  Region fromJson(Map<String, Object?> json) {
     return Region.fromJson(json);
   }
 }
@@ -1923,37 +1886,29 @@ class _$_Region implements _Region {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _Region &&
-            (identical(other.id, id) ||
-                const DeepCollectionEquality().equals(other.id, id)) &&
-            (identical(other.locations, locations) ||
-                const DeepCollectionEquality()
-                    .equals(other.locations, locations)) &&
-            (identical(other.name, name) ||
-                const DeepCollectionEquality().equals(other.name, name)) &&
-            (identical(other.names, names) ||
-                const DeepCollectionEquality().equals(other.names, names)) &&
+        (other.runtimeType == runtimeType &&
+            other is _Region &&
+            (identical(other.id, id) || other.id == id) &&
+            const DeepCollectionEquality().equals(other.locations, locations) &&
+            (identical(other.name, name) || other.name == name) &&
+            const DeepCollectionEquality().equals(other.names, names) &&
             (identical(other.mainGeneration, mainGeneration) ||
-                const DeepCollectionEquality()
-                    .equals(other.mainGeneration, mainGeneration)) &&
-            (identical(other.pokedexes, pokedexes) ||
-                const DeepCollectionEquality()
-                    .equals(other.pokedexes, pokedexes)) &&
-            (identical(other.versionGroups, versionGroups) ||
-                const DeepCollectionEquality()
-                    .equals(other.versionGroups, versionGroups)));
+                other.mainGeneration == mainGeneration) &&
+            const DeepCollectionEquality().equals(other.pokedexes, pokedexes) &&
+            const DeepCollectionEquality()
+                .equals(other.versionGroups, versionGroups));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(id) ^
-      const DeepCollectionEquality().hash(locations) ^
-      const DeepCollectionEquality().hash(name) ^
-      const DeepCollectionEquality().hash(names) ^
-      const DeepCollectionEquality().hash(mainGeneration) ^
-      const DeepCollectionEquality().hash(pokedexes) ^
-      const DeepCollectionEquality().hash(versionGroups);
+  int get hashCode => Object.hash(
+      runtimeType,
+      id,
+      const DeepCollectionEquality().hash(locations),
+      name,
+      const DeepCollectionEquality().hash(names),
+      mainGeneration,
+      const DeepCollectionEquality().hash(pokedexes),
+      const DeepCollectionEquality().hash(versionGroups));
 
   @JsonKey(ignore: true)
   @override
@@ -1981,22 +1936,21 @@ abstract class _Region implements Region {
   factory _Region.fromJson(Map<String, dynamic> json) = _$_Region.fromJson;
 
   @override
-  int get id => throw _privateConstructorUsedError;
+  int get id;
   @override
-  List<NamedAPIResource> get locations => throw _privateConstructorUsedError;
+  List<NamedAPIResource> get locations;
   @override
-  String get name => throw _privateConstructorUsedError;
+  String get name;
   @override
-  List<Name> get names => throw _privateConstructorUsedError;
+  List<Name> get names;
   @override
   @JsonKey(name: 'main_generation')
-  NamedAPIResource get mainGeneration => throw _privateConstructorUsedError;
+  NamedAPIResource get mainGeneration;
   @override
-  List<NamedAPIResource> get pokedexes => throw _privateConstructorUsedError;
+  List<NamedAPIResource> get pokedexes;
   @override
   @JsonKey(name: 'version_groups')
-  List<NamedAPIResource> get versionGroups =>
-      throw _privateConstructorUsedError;
+  List<NamedAPIResource> get versionGroups;
   @override
   @JsonKey(ignore: true)
   _$RegionCopyWith<_Region> get copyWith => throw _privateConstructorUsedError;

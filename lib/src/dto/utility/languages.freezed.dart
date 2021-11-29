@@ -33,7 +33,7 @@ class _$LanguageTearOff {
     );
   }
 
-  Language fromJson(Map<String, Object> json) {
+  Language fromJson(Map<String, Object?> json) {
     return Language.fromJson(json);
   }
 }
@@ -206,32 +206,20 @@ class _$_Language implements _Language {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _Language &&
-            (identical(other.id, id) ||
-                const DeepCollectionEquality().equals(other.id, id)) &&
-            (identical(other.name, name) ||
-                const DeepCollectionEquality().equals(other.name, name)) &&
+        (other.runtimeType == runtimeType &&
+            other is _Language &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.name, name) || other.name == name) &&
             (identical(other.official, official) ||
-                const DeepCollectionEquality()
-                    .equals(other.official, official)) &&
-            (identical(other.iso639, iso639) ||
-                const DeepCollectionEquality().equals(other.iso639, iso639)) &&
-            (identical(other.iso3166, iso3166) ||
-                const DeepCollectionEquality()
-                    .equals(other.iso3166, iso3166)) &&
-            (identical(other.names, names) ||
-                const DeepCollectionEquality().equals(other.names, names)));
+                other.official == official) &&
+            (identical(other.iso639, iso639) || other.iso639 == iso639) &&
+            (identical(other.iso3166, iso3166) || other.iso3166 == iso3166) &&
+            const DeepCollectionEquality().equals(other.names, names));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(id) ^
-      const DeepCollectionEquality().hash(name) ^
-      const DeepCollectionEquality().hash(official) ^
-      const DeepCollectionEquality().hash(iso639) ^
-      const DeepCollectionEquality().hash(iso3166) ^
-      const DeepCollectionEquality().hash(names);
+  int get hashCode => Object.hash(runtimeType, id, name, official, iso639,
+      iso3166, const DeepCollectionEquality().hash(names));
 
   @JsonKey(ignore: true)
   @override
@@ -251,17 +239,17 @@ abstract class _Language implements Language {
   factory _Language.fromJson(Map<String, dynamic> json) = _$_Language.fromJson;
 
   @override
-  int get id => throw _privateConstructorUsedError;
+  int get id;
   @override
-  String get name => throw _privateConstructorUsedError;
+  String get name;
   @override
-  bool get official => throw _privateConstructorUsedError;
+  bool get official;
   @override
-  String get iso639 => throw _privateConstructorUsedError;
+  String get iso639;
   @override
-  String get iso3166 => throw _privateConstructorUsedError;
+  String get iso3166;
   @override
-  List<Name> get names => throw _privateConstructorUsedError;
+  List<Name> get names;
   @override
   @JsonKey(ignore: true)
   _$LanguageCopyWith<_Language> get copyWith =>

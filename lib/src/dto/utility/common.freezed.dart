@@ -27,7 +27,7 @@ class _$APIResourceTearOff {
     );
   }
 
-  APIResource fromJson(Map<String, Object> json) {
+  APIResource fromJson(Map<String, Object?> json) {
     return APIResource.fromJson(json);
   }
 }
@@ -126,14 +126,13 @@ class _$_APIResource implements _APIResource {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _APIResource &&
-            (identical(other.url, url) ||
-                const DeepCollectionEquality().equals(other.url, url)));
+        (other.runtimeType == runtimeType &&
+            other is _APIResource &&
+            (identical(other.url, url) || other.url == url));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^ const DeepCollectionEquality().hash(url);
+  int get hashCode => Object.hash(runtimeType, url);
 
   @JsonKey(ignore: true)
   @override
@@ -153,7 +152,7 @@ abstract class _APIResource implements APIResource {
       _$_APIResource.fromJson;
 
   @override
-  String get url => throw _privateConstructorUsedError;
+  String get url;
   @override
   @JsonKey(ignore: true)
   _$APIResourceCopyWith<_APIResource> get copyWith =>
@@ -175,7 +174,7 @@ class _$DescriptionTearOff {
     );
   }
 
-  Description fromJson(Map<String, Object> json) {
+  Description fromJson(Map<String, Object?> json) {
     return Description.fromJson(json);
   }
 }
@@ -299,20 +298,16 @@ class _$_Description implements _Description {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _Description &&
+        (other.runtimeType == runtimeType &&
+            other is _Description &&
             (identical(other.description, description) ||
-                const DeepCollectionEquality()
-                    .equals(other.description, description)) &&
+                other.description == description) &&
             (identical(other.language, language) ||
-                const DeepCollectionEquality()
-                    .equals(other.language, language)));
+                other.language == language));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(description) ^
-      const DeepCollectionEquality().hash(language);
+  int get hashCode => Object.hash(runtimeType, description, language);
 
   @JsonKey(ignore: true)
   @override
@@ -333,9 +328,9 @@ abstract class _Description implements Description {
       _$_Description.fromJson;
 
   @override
-  String get description => throw _privateConstructorUsedError;
+  String get description;
   @override
-  NamedAPIResource get language => throw _privateConstructorUsedError;
+  NamedAPIResource get language;
   @override
   @JsonKey(ignore: true)
   _$DescriptionCopyWith<_Description> get copyWith =>
@@ -357,7 +352,7 @@ class _$EffectTearOff {
     );
   }
 
-  Effect fromJson(Map<String, Object> json) {
+  Effect fromJson(Map<String, Object?> json) {
     return Effect.fromJson(json);
   }
 }
@@ -476,19 +471,15 @@ class _$_Effect implements _Effect {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _Effect &&
-            (identical(other.effect, effect) ||
-                const DeepCollectionEquality().equals(other.effect, effect)) &&
+        (other.runtimeType == runtimeType &&
+            other is _Effect &&
+            (identical(other.effect, effect) || other.effect == effect) &&
             (identical(other.language, language) ||
-                const DeepCollectionEquality()
-                    .equals(other.language, language)));
+                other.language == language));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(effect) ^
-      const DeepCollectionEquality().hash(language);
+  int get hashCode => Object.hash(runtimeType, effect, language);
 
   @JsonKey(ignore: true)
   @override
@@ -507,9 +498,9 @@ abstract class _Effect implements Effect {
   factory _Effect.fromJson(Map<String, dynamic> json) = _$_Effect.fromJson;
 
   @override
-  String get effect => throw _privateConstructorUsedError;
+  String get effect;
   @override
-  NamedAPIResource get language => throw _privateConstructorUsedError;
+  NamedAPIResource get language;
   @override
   @JsonKey(ignore: true)
   _$EffectCopyWith<_Effect> get copyWith => throw _privateConstructorUsedError;
@@ -538,7 +529,7 @@ class _$EncounterTearOff {
     );
   }
 
-  Encounter fromJson(Map<String, Object> json) {
+  Encounter fromJson(Map<String, Object?> json) {
     return Encounter.fromJson(json);
   }
 }
@@ -720,30 +711,21 @@ class _$_Encounter implements _Encounter {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _Encounter &&
+        (other.runtimeType == runtimeType &&
+            other is _Encounter &&
             (identical(other.minLevel, minLevel) ||
-                const DeepCollectionEquality()
-                    .equals(other.minLevel, minLevel)) &&
+                other.minLevel == minLevel) &&
             (identical(other.maxLevel, maxLevel) ||
-                const DeepCollectionEquality()
-                    .equals(other.maxLevel, maxLevel)) &&
-            (identical(other.conditionValues, conditionValues) ||
-                const DeepCollectionEquality()
-                    .equals(other.conditionValues, conditionValues)) &&
-            (identical(other.chance, chance) ||
-                const DeepCollectionEquality().equals(other.chance, chance)) &&
-            (identical(other.method, method) ||
-                const DeepCollectionEquality().equals(other.method, method)));
+                other.maxLevel == maxLevel) &&
+            const DeepCollectionEquality()
+                .equals(other.conditionValues, conditionValues) &&
+            (identical(other.chance, chance) || other.chance == chance) &&
+            (identical(other.method, method) || other.method == method));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(minLevel) ^
-      const DeepCollectionEquality().hash(maxLevel) ^
-      const DeepCollectionEquality().hash(conditionValues) ^
-      const DeepCollectionEquality().hash(chance) ^
-      const DeepCollectionEquality().hash(method);
+  int get hashCode => Object.hash(runtimeType, minLevel, maxLevel,
+      const DeepCollectionEquality().hash(conditionValues), chance, method);
 
   @JsonKey(ignore: true)
   @override
@@ -769,18 +751,17 @@ abstract class _Encounter implements Encounter {
 
   @override
   @JsonKey(name: 'min_level')
-  int get minLevel => throw _privateConstructorUsedError;
+  int get minLevel;
   @override
   @JsonKey(name: 'max_level')
-  int get maxLevel => throw _privateConstructorUsedError;
+  int get maxLevel;
   @override
   @JsonKey(name: 'condition_values')
-  List<NamedAPIResource> get conditionValues =>
-      throw _privateConstructorUsedError;
+  List<NamedAPIResource> get conditionValues;
   @override
-  int get chance => throw _privateConstructorUsedError;
+  int get chance;
   @override
-  NamedAPIResource get method => throw _privateConstructorUsedError;
+  NamedAPIResource get method;
   @override
   @JsonKey(ignore: true)
   _$EncounterCopyWith<_Encounter> get copyWith =>
@@ -804,7 +785,7 @@ class _$FlavorTextTearOff {
     );
   }
 
-  FlavorText fromJson(Map<String, Object> json) {
+  FlavorText fromJson(Map<String, Object?> json) {
     return FlavorText.fromJson(json);
   }
 }
@@ -959,23 +940,17 @@ class _$_FlavorText implements _FlavorText {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _FlavorText &&
+        (other.runtimeType == runtimeType &&
+            other is _FlavorText &&
             (identical(other.flavorText, flavorText) ||
-                const DeepCollectionEquality()
-                    .equals(other.flavorText, flavorText)) &&
+                other.flavorText == flavorText) &&
             (identical(other.language, language) ||
-                const DeepCollectionEquality()
-                    .equals(other.language, language)) &&
-            (identical(other.version, version) ||
-                const DeepCollectionEquality().equals(other.version, version)));
+                other.language == language) &&
+            (identical(other.version, version) || other.version == version));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(flavorText) ^
-      const DeepCollectionEquality().hash(language) ^
-      const DeepCollectionEquality().hash(version);
+  int get hashCode => Object.hash(runtimeType, flavorText, language, version);
 
   @JsonKey(ignore: true)
   @override
@@ -997,11 +972,11 @@ abstract class _FlavorText implements FlavorText {
 
   @override
   @JsonKey(name: 'flavor_text')
-  String get flavorText => throw _privateConstructorUsedError;
+  String get flavorText;
   @override
-  NamedAPIResource get language => throw _privateConstructorUsedError;
+  NamedAPIResource get language;
   @override
-  NamedAPIResource get version => throw _privateConstructorUsedError;
+  NamedAPIResource get version;
   @override
   @JsonKey(ignore: true)
   _$FlavorTextCopyWith<_FlavorText> get copyWith =>
@@ -1024,7 +999,7 @@ class _$GenerationGameIndexTearOff {
     );
   }
 
-  GenerationGameIndex fromJson(Map<String, Object> json) {
+  GenerationGameIndex fromJson(Map<String, Object?> json) {
     return GenerationGameIndex.fromJson(json);
   }
 }
@@ -1157,20 +1132,16 @@ class _$_GenerationGameIndex implements _GenerationGameIndex {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _GenerationGameIndex &&
+        (other.runtimeType == runtimeType &&
+            other is _GenerationGameIndex &&
             (identical(other.gameIndex, gameIndex) ||
-                const DeepCollectionEquality()
-                    .equals(other.gameIndex, gameIndex)) &&
+                other.gameIndex == gameIndex) &&
             (identical(other.generation, generation) ||
-                const DeepCollectionEquality()
-                    .equals(other.generation, generation)));
+                other.generation == generation));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(gameIndex) ^
-      const DeepCollectionEquality().hash(generation);
+  int get hashCode => Object.hash(runtimeType, gameIndex, generation);
 
   @JsonKey(ignore: true)
   @override
@@ -1193,9 +1164,9 @@ abstract class _GenerationGameIndex implements GenerationGameIndex {
 
   @override
   @JsonKey(name: 'game_index')
-  int get gameIndex => throw _privateConstructorUsedError;
+  int get gameIndex;
   @override
-  NamedAPIResource get generation => throw _privateConstructorUsedError;
+  NamedAPIResource get generation;
   @override
   @JsonKey(ignore: true)
   _$GenerationGameIndexCopyWith<_GenerationGameIndex> get copyWith =>
@@ -1218,7 +1189,7 @@ class _$MachineVersionDetailTearOff {
     );
   }
 
-  MachineVersionDetail fromJson(Map<String, Object> json) {
+  MachineVersionDetail fromJson(Map<String, Object?> json) {
     return MachineVersionDetail.fromJson(json);
   }
 }
@@ -1361,20 +1332,15 @@ class _$_MachineVersionDetail implements _MachineVersionDetail {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _MachineVersionDetail &&
-            (identical(other.machine, machine) ||
-                const DeepCollectionEquality()
-                    .equals(other.machine, machine)) &&
+        (other.runtimeType == runtimeType &&
+            other is _MachineVersionDetail &&
+            (identical(other.machine, machine) || other.machine == machine) &&
             (identical(other.versionGroup, versionGroup) ||
-                const DeepCollectionEquality()
-                    .equals(other.versionGroup, versionGroup)));
+                other.versionGroup == versionGroup));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(machine) ^
-      const DeepCollectionEquality().hash(versionGroup);
+  int get hashCode => Object.hash(runtimeType, machine, versionGroup);
 
   @JsonKey(ignore: true)
   @override
@@ -1397,10 +1363,10 @@ abstract class _MachineVersionDetail implements MachineVersionDetail {
       _$_MachineVersionDetail.fromJson;
 
   @override
-  APIResource get machine => throw _privateConstructorUsedError;
+  APIResource get machine;
   @override
   @JsonKey(name: 'version_group')
-  NamedAPIResource get versionGroup => throw _privateConstructorUsedError;
+  NamedAPIResource get versionGroup;
   @override
   @JsonKey(ignore: true)
   _$MachineVersionDetailCopyWith<_MachineVersionDetail> get copyWith =>
@@ -1422,7 +1388,7 @@ class _$NameTearOff {
     );
   }
 
-  Name fromJson(Map<String, Object> json) {
+  Name fromJson(Map<String, Object?> json) {
     return Name.fromJson(json);
   }
 }
@@ -1540,19 +1506,15 @@ class _$_Name implements _Name {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _Name &&
-            (identical(other.name, name) ||
-                const DeepCollectionEquality().equals(other.name, name)) &&
+        (other.runtimeType == runtimeType &&
+            other is _Name &&
+            (identical(other.name, name) || other.name == name) &&
             (identical(other.language, language) ||
-                const DeepCollectionEquality()
-                    .equals(other.language, language)));
+                other.language == language));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(name) ^
-      const DeepCollectionEquality().hash(language);
+  int get hashCode => Object.hash(runtimeType, name, language);
 
   @JsonKey(ignore: true)
   @override
@@ -1571,9 +1533,9 @@ abstract class _Name implements Name {
   factory _Name.fromJson(Map<String, dynamic> json) = _$_Name.fromJson;
 
   @override
-  String get name => throw _privateConstructorUsedError;
+  String get name;
   @override
-  NamedAPIResource get language => throw _privateConstructorUsedError;
+  NamedAPIResource get language;
   @override
   @JsonKey(ignore: true)
   _$NameCopyWith<_Name> get copyWith => throw _privateConstructorUsedError;
@@ -1594,7 +1556,7 @@ class _$NamedAPIResourceTearOff {
     );
   }
 
-  NamedAPIResource fromJson(Map<String, Object> json) {
+  NamedAPIResource fromJson(Map<String, Object?> json) {
     return NamedAPIResource.fromJson(json);
   }
 }
@@ -1708,18 +1670,14 @@ class _$_NamedAPIResource implements _NamedAPIResource {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _NamedAPIResource &&
-            (identical(other.name, name) ||
-                const DeepCollectionEquality().equals(other.name, name)) &&
-            (identical(other.url, url) ||
-                const DeepCollectionEquality().equals(other.url, url)));
+        (other.runtimeType == runtimeType &&
+            other is _NamedAPIResource &&
+            (identical(other.name, name) || other.name == name) &&
+            (identical(other.url, url) || other.url == url));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(name) ^
-      const DeepCollectionEquality().hash(url);
+  int get hashCode => Object.hash(runtimeType, name, url);
 
   @JsonKey(ignore: true)
   @override
@@ -1740,9 +1698,9 @@ abstract class _NamedAPIResource implements NamedAPIResource {
       _$_NamedAPIResource.fromJson;
 
   @override
-  String get name => throw _privateConstructorUsedError;
+  String get name;
   @override
-  String get url => throw _privateConstructorUsedError;
+  String get url;
   @override
   @JsonKey(ignore: true)
   _$NamedAPIResourceCopyWith<_NamedAPIResource> get copyWith =>
@@ -1768,7 +1726,7 @@ class _$VerboseEffectTearOff {
     );
   }
 
-  VerboseEffect fromJson(Map<String, Object> json) {
+  VerboseEffect fromJson(Map<String, Object?> json) {
     return VerboseEffect.fromJson(json);
   }
 }
@@ -1916,23 +1874,17 @@ class _$_VerboseEffect implements _VerboseEffect {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _VerboseEffect &&
-            (identical(other.effect, effect) ||
-                const DeepCollectionEquality().equals(other.effect, effect)) &&
+        (other.runtimeType == runtimeType &&
+            other is _VerboseEffect &&
+            (identical(other.effect, effect) || other.effect == effect) &&
             (identical(other.shortEffect, shortEffect) ||
-                const DeepCollectionEquality()
-                    .equals(other.shortEffect, shortEffect)) &&
+                other.shortEffect == shortEffect) &&
             (identical(other.language, language) ||
-                const DeepCollectionEquality()
-                    .equals(other.language, language)));
+                other.language == language));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(effect) ^
-      const DeepCollectionEquality().hash(shortEffect) ^
-      const DeepCollectionEquality().hash(language);
+  int get hashCode => Object.hash(runtimeType, effect, shortEffect, language);
 
   @JsonKey(ignore: true)
   @override
@@ -1955,12 +1907,12 @@ abstract class _VerboseEffect implements VerboseEffect {
       _$_VerboseEffect.fromJson;
 
   @override
-  String get effect => throw _privateConstructorUsedError;
+  String get effect;
   @override
   @JsonKey(name: 'short_effect')
-  String get shortEffect => throw _privateConstructorUsedError;
+  String get shortEffect;
   @override
-  NamedAPIResource get language => throw _privateConstructorUsedError;
+  NamedAPIResource get language;
   @override
   @JsonKey(ignore: true)
   _$VerboseEffectCopyWith<_VerboseEffect> get copyWith =>
@@ -1987,7 +1939,7 @@ class _$VersionEncounterDetailTearOff {
     );
   }
 
-  VersionEncounterDetail fromJson(Map<String, Object> json) {
+  VersionEncounterDetail fromJson(Map<String, Object?> json) {
     return VersionEncounterDetail.fromJson(json);
   }
 }
@@ -2139,24 +2091,18 @@ class _$_VersionEncounterDetail implements _VersionEncounterDetail {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _VersionEncounterDetail &&
-            (identical(other.version, version) ||
-                const DeepCollectionEquality()
-                    .equals(other.version, version)) &&
+        (other.runtimeType == runtimeType &&
+            other is _VersionEncounterDetail &&
+            (identical(other.version, version) || other.version == version) &&
             (identical(other.maxChance, maxChance) ||
-                const DeepCollectionEquality()
-                    .equals(other.maxChance, maxChance)) &&
-            (identical(other.encounterDetails, encounterDetails) ||
-                const DeepCollectionEquality()
-                    .equals(other.encounterDetails, encounterDetails)));
+                other.maxChance == maxChance) &&
+            const DeepCollectionEquality()
+                .equals(other.encounterDetails, encounterDetails));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(version) ^
-      const DeepCollectionEquality().hash(maxChance) ^
-      const DeepCollectionEquality().hash(encounterDetails);
+  int get hashCode => Object.hash(runtimeType, version, maxChance,
+      const DeepCollectionEquality().hash(encounterDetails));
 
   @JsonKey(ignore: true)
   @override
@@ -2182,13 +2128,13 @@ abstract class _VersionEncounterDetail implements VersionEncounterDetail {
       _$_VersionEncounterDetail.fromJson;
 
   @override
-  NamedAPIResource get version => throw _privateConstructorUsedError;
+  NamedAPIResource get version;
   @override
   @JsonKey(name: 'max_chance')
-  int get maxChance => throw _privateConstructorUsedError;
+  int get maxChance;
   @override
   @JsonKey(name: 'encounter_details')
-  List<Encounter> get encounterDetails => throw _privateConstructorUsedError;
+  List<Encounter> get encounterDetails;
   @override
   @JsonKey(ignore: true)
   _$VersionEncounterDetailCopyWith<_VersionEncounterDetail> get copyWith =>
@@ -2211,7 +2157,7 @@ class _$VersionGameIndexTearOff {
     );
   }
 
-  VersionGameIndex fromJson(Map<String, Object> json) {
+  VersionGameIndex fromJson(Map<String, Object?> json) {
     return VersionGameIndex.fromJson(json);
   }
 }
@@ -2342,19 +2288,15 @@ class _$_VersionGameIndex implements _VersionGameIndex {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _VersionGameIndex &&
+        (other.runtimeType == runtimeType &&
+            other is _VersionGameIndex &&
             (identical(other.gameIndex, gameIndex) ||
-                const DeepCollectionEquality()
-                    .equals(other.gameIndex, gameIndex)) &&
-            (identical(other.version, version) ||
-                const DeepCollectionEquality().equals(other.version, version)));
+                other.gameIndex == gameIndex) &&
+            (identical(other.version, version) || other.version == version));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(gameIndex) ^
-      const DeepCollectionEquality().hash(version);
+  int get hashCode => Object.hash(runtimeType, gameIndex, version);
 
   @JsonKey(ignore: true)
   @override
@@ -2376,9 +2318,9 @@ abstract class _VersionGameIndex implements VersionGameIndex {
 
   @override
   @JsonKey(name: 'game_index')
-  int get gameIndex => throw _privateConstructorUsedError;
+  int get gameIndex;
   @override
-  NamedAPIResource get version => throw _privateConstructorUsedError;
+  NamedAPIResource get version;
   @override
   @JsonKey(ignore: true)
   _$VersionGameIndexCopyWith<_VersionGameIndex> get copyWith =>
@@ -2403,7 +2345,7 @@ class _$VersionGroupFlavorTextTearOff {
     );
   }
 
-  VersionGroupFlavorText fromJson(Map<String, Object> json) {
+  VersionGroupFlavorText fromJson(Map<String, Object?> json) {
     return VersionGroupFlavorText.fromJson(json);
   }
 }
@@ -2561,23 +2503,17 @@ class _$_VersionGroupFlavorText implements _VersionGroupFlavorText {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _VersionGroupFlavorText &&
-            (identical(other.text, text) ||
-                const DeepCollectionEquality().equals(other.text, text)) &&
+        (other.runtimeType == runtimeType &&
+            other is _VersionGroupFlavorText &&
+            (identical(other.text, text) || other.text == text) &&
             (identical(other.language, language) ||
-                const DeepCollectionEquality()
-                    .equals(other.language, language)) &&
+                other.language == language) &&
             (identical(other.versionGroup, versionGroup) ||
-                const DeepCollectionEquality()
-                    .equals(other.versionGroup, versionGroup)));
+                other.versionGroup == versionGroup));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(text) ^
-      const DeepCollectionEquality().hash(language) ^
-      const DeepCollectionEquality().hash(versionGroup);
+  int get hashCode => Object.hash(runtimeType, text, language, versionGroup);
 
   @JsonKey(ignore: true)
   @override
@@ -2600,12 +2536,12 @@ abstract class _VersionGroupFlavorText implements VersionGroupFlavorText {
       _$_VersionGroupFlavorText.fromJson;
 
   @override
-  String get text => throw _privateConstructorUsedError;
+  String get text;
   @override
-  NamedAPIResource get language => throw _privateConstructorUsedError;
+  NamedAPIResource get language;
   @override
   @JsonKey(name: 'version_group')
-  NamedAPIResource get versionGroup => throw _privateConstructorUsedError;
+  NamedAPIResource get versionGroup;
   @override
   @JsonKey(ignore: true)
   _$VersionGroupFlavorTextCopyWith<_VersionGroupFlavorText> get copyWith =>

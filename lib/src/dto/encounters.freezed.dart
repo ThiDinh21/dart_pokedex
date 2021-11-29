@@ -30,7 +30,7 @@ class _$EncounterMethodTearOff {
     );
   }
 
-  EncounterMethod fromJson(Map<String, Object> json) {
+  EncounterMethod fromJson(Map<String, Object?> json) {
     return EncounterMethod.fromJson(json);
   }
 }
@@ -170,24 +170,17 @@ class _$_EncounterMethod implements _EncounterMethod {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _EncounterMethod &&
-            (identical(other.id, id) ||
-                const DeepCollectionEquality().equals(other.id, id)) &&
-            (identical(other.name, name) ||
-                const DeepCollectionEquality().equals(other.name, name)) &&
-            (identical(other.order, order) ||
-                const DeepCollectionEquality().equals(other.order, order)) &&
-            (identical(other.names, names) ||
-                const DeepCollectionEquality().equals(other.names, names)));
+        (other.runtimeType == runtimeType &&
+            other is _EncounterMethod &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.name, name) || other.name == name) &&
+            (identical(other.order, order) || other.order == order) &&
+            const DeepCollectionEquality().equals(other.names, names));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(id) ^
-      const DeepCollectionEquality().hash(name) ^
-      const DeepCollectionEquality().hash(order) ^
-      const DeepCollectionEquality().hash(names);
+  int get hashCode => Object.hash(
+      runtimeType, id, name, order, const DeepCollectionEquality().hash(names));
 
   @JsonKey(ignore: true)
   @override
@@ -208,13 +201,13 @@ abstract class _EncounterMethod implements EncounterMethod {
       _$_EncounterMethod.fromJson;
 
   @override
-  int get id => throw _privateConstructorUsedError;
+  int get id;
   @override
-  String get name => throw _privateConstructorUsedError;
+  String get name;
   @override
-  int get order => throw _privateConstructorUsedError;
+  int get order;
   @override
-  List<Name> get names => throw _privateConstructorUsedError;
+  List<Name> get names;
   @override
   @JsonKey(ignore: true)
   _$EncounterMethodCopyWith<_EncounterMethod> get copyWith =>
@@ -239,7 +232,7 @@ class _$EncounterConditionTearOff {
     );
   }
 
-  EncounterCondition fromJson(Map<String, Object> json) {
+  EncounterCondition fromJson(Map<String, Object?> json) {
     return EncounterCondition.fromJson(json);
   }
 }
@@ -381,24 +374,21 @@ class _$_EncounterCondition implements _EncounterCondition {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _EncounterCondition &&
-            (identical(other.id, id) ||
-                const DeepCollectionEquality().equals(other.id, id)) &&
-            (identical(other.name, name) ||
-                const DeepCollectionEquality().equals(other.name, name)) &&
-            (identical(other.names, names) ||
-                const DeepCollectionEquality().equals(other.names, names)) &&
-            (identical(other.values, values) ||
-                const DeepCollectionEquality().equals(other.values, values)));
+        (other.runtimeType == runtimeType &&
+            other is _EncounterCondition &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.name, name) || other.name == name) &&
+            const DeepCollectionEquality().equals(other.names, names) &&
+            const DeepCollectionEquality().equals(other.values, values));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(id) ^
-      const DeepCollectionEquality().hash(name) ^
-      const DeepCollectionEquality().hash(names) ^
-      const DeepCollectionEquality().hash(values);
+  int get hashCode => Object.hash(
+      runtimeType,
+      id,
+      name,
+      const DeepCollectionEquality().hash(names),
+      const DeepCollectionEquality().hash(values));
 
   @JsonKey(ignore: true)
   @override
@@ -419,13 +409,13 @@ abstract class _EncounterCondition implements EncounterCondition {
       _$_EncounterCondition.fromJson;
 
   @override
-  int get id => throw _privateConstructorUsedError;
+  int get id;
   @override
-  String get name => throw _privateConstructorUsedError;
+  String get name;
   @override
-  List<Name> get names => throw _privateConstructorUsedError;
+  List<Name> get names;
   @override
-  List<NamedAPIResource> get values => throw _privateConstructorUsedError;
+  List<NamedAPIResource> get values;
   @override
   @JsonKey(ignore: true)
   _$EncounterConditionCopyWith<_EncounterCondition> get copyWith =>
@@ -451,7 +441,7 @@ class _$EncounterConditionValueTearOff {
     );
   }
 
-  EncounterConditionValue fromJson(Map<String, Object> json) {
+  EncounterConditionValue fromJson(Map<String, Object?> json) {
     return EncounterConditionValue.fromJson(json);
   }
 }
@@ -607,25 +597,18 @@ class _$_EncounterConditionValue implements _EncounterConditionValue {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _EncounterConditionValue &&
-            (identical(other.id, id) ||
-                const DeepCollectionEquality().equals(other.id, id)) &&
-            (identical(other.name, name) ||
-                const DeepCollectionEquality().equals(other.name, name)) &&
+        (other.runtimeType == runtimeType &&
+            other is _EncounterConditionValue &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.name, name) || other.name == name) &&
             (identical(other.condition, condition) ||
-                const DeepCollectionEquality()
-                    .equals(other.condition, condition)) &&
-            (identical(other.names, names) ||
-                const DeepCollectionEquality().equals(other.names, names)));
+                other.condition == condition) &&
+            const DeepCollectionEquality().equals(other.names, names));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(id) ^
-      const DeepCollectionEquality().hash(name) ^
-      const DeepCollectionEquality().hash(condition) ^
-      const DeepCollectionEquality().hash(names);
+  int get hashCode => Object.hash(runtimeType, id, name, condition,
+      const DeepCollectionEquality().hash(names));
 
   @JsonKey(ignore: true)
   @override
@@ -648,13 +631,13 @@ abstract class _EncounterConditionValue implements EncounterConditionValue {
       _$_EncounterConditionValue.fromJson;
 
   @override
-  int get id => throw _privateConstructorUsedError;
+  int get id;
   @override
-  String get name => throw _privateConstructorUsedError;
+  String get name;
   @override
-  NamedAPIResource get condition => throw _privateConstructorUsedError;
+  NamedAPIResource get condition;
   @override
-  List<Name> get names => throw _privateConstructorUsedError;
+  List<Name> get names;
   @override
   @JsonKey(ignore: true)
   _$EncounterConditionValueCopyWith<_EncounterConditionValue> get copyWith =>

@@ -32,7 +32,7 @@ class _$EvolutionChainTearOff {
     );
   }
 
-  EvolutionChain fromJson(Map<String, Object> json) {
+  EvolutionChain fromJson(Map<String, Object?> json) {
     return EvolutionChain.fromJson(json);
   }
 }
@@ -190,22 +190,16 @@ class _$_EvolutionChain implements _EvolutionChain {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _EvolutionChain &&
-            (identical(other.id, id) ||
-                const DeepCollectionEquality().equals(other.id, id)) &&
+        (other.runtimeType == runtimeType &&
+            other is _EvolutionChain &&
+            (identical(other.id, id) || other.id == id) &&
             (identical(other.babyTriggerItem, babyTriggerItem) ||
-                const DeepCollectionEquality()
-                    .equals(other.babyTriggerItem, babyTriggerItem)) &&
-            (identical(other.chain, chain) ||
-                const DeepCollectionEquality().equals(other.chain, chain)));
+                other.babyTriggerItem == babyTriggerItem) &&
+            (identical(other.chain, chain) || other.chain == chain));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(id) ^
-      const DeepCollectionEquality().hash(babyTriggerItem) ^
-      const DeepCollectionEquality().hash(chain);
+  int get hashCode => Object.hash(runtimeType, id, babyTriggerItem, chain);
 
   @JsonKey(ignore: true)
   @override
@@ -228,12 +222,12 @@ abstract class _EvolutionChain implements EvolutionChain {
       _$_EvolutionChain.fromJson;
 
   @override
-  int get id => throw _privateConstructorUsedError;
+  int get id;
   @override
   @JsonKey(name: 'baby_trigger_item')
-  NamedAPIResource get babyTriggerItem => throw _privateConstructorUsedError;
+  NamedAPIResource get babyTriggerItem;
   @override
-  ChainLink get chain => throw _privateConstructorUsedError;
+  ChainLink get chain;
   @override
   @JsonKey(ignore: true)
   _$EvolutionChainCopyWith<_EvolutionChain> get copyWith =>
@@ -264,7 +258,7 @@ class _$ChainLinkTearOff {
     );
   }
 
-  ChainLink fromJson(Map<String, Object> json) {
+  ChainLink fromJson(Map<String, Object?> json) {
     return ChainLink.fromJson(json);
   }
 }
@@ -436,27 +430,22 @@ class _$_ChainLink implements _ChainLink {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _ChainLink &&
-            (identical(other.isbaby, isbaby) ||
-                const DeepCollectionEquality().equals(other.isbaby, isbaby)) &&
-            (identical(other.species, species) ||
-                const DeepCollectionEquality()
-                    .equals(other.species, species)) &&
-            (identical(other.evolutionDetails, evolutionDetails) ||
-                const DeepCollectionEquality()
-                    .equals(other.evolutionDetails, evolutionDetails)) &&
-            (identical(other.evolvesTo, evolvesTo) ||
-                const DeepCollectionEquality()
-                    .equals(other.evolvesTo, evolvesTo)));
+        (other.runtimeType == runtimeType &&
+            other is _ChainLink &&
+            (identical(other.isbaby, isbaby) || other.isbaby == isbaby) &&
+            (identical(other.species, species) || other.species == species) &&
+            const DeepCollectionEquality()
+                .equals(other.evolutionDetails, evolutionDetails) &&
+            const DeepCollectionEquality().equals(other.evolvesTo, evolvesTo));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(isbaby) ^
-      const DeepCollectionEquality().hash(species) ^
-      const DeepCollectionEquality().hash(evolutionDetails) ^
-      const DeepCollectionEquality().hash(evolvesTo);
+  int get hashCode => Object.hash(
+      runtimeType,
+      isbaby,
+      species,
+      const DeepCollectionEquality().hash(evolutionDetails),
+      const DeepCollectionEquality().hash(evolvesTo));
 
   @JsonKey(ignore: true)
   @override
@@ -484,16 +473,15 @@ abstract class _ChainLink implements ChainLink {
 
   @override
   @JsonKey(name: 'is_baby')
-  bool get isbaby => throw _privateConstructorUsedError;
+  bool get isbaby;
   @override
-  NamedAPIResource get species => throw _privateConstructorUsedError;
+  NamedAPIResource get species;
   @override
   @JsonKey(name: 'evolution_details')
-  List<EvolutionDetail> get evolutionDetails =>
-      throw _privateConstructorUsedError;
+  List<EvolutionDetail> get evolutionDetails;
   @override
   @JsonKey(name: 'evolves_to')
-  List<ChainLink> get evolvesTo => throw _privateConstructorUsedError;
+  List<ChainLink> get evolvesTo;
   @override
   @JsonKey(ignore: true)
   _$ChainLinkCopyWith<_ChainLink> get copyWith =>
@@ -549,7 +537,7 @@ class _$EvolutionDetailTearOff {
     );
   }
 
-  EvolutionDetail fromJson(Map<String, Object> json) {
+  EvolutionDetail fromJson(Map<String, Object?> json) {
     return EvolutionDetail.fromJson(json);
   }
 }
@@ -1045,82 +1033,64 @@ class _$_EvolutionDetail implements _EvolutionDetail {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _EvolutionDetail &&
-            (identical(other.item, item) ||
-                const DeepCollectionEquality().equals(other.item, item)) &&
-            (identical(other.trigger, trigger) ||
-                const DeepCollectionEquality()
-                    .equals(other.trigger, trigger)) &&
-            (identical(other.gender, gender) ||
-                const DeepCollectionEquality().equals(other.gender, gender)) &&
+        (other.runtimeType == runtimeType &&
+            other is _EvolutionDetail &&
+            (identical(other.item, item) || other.item == item) &&
+            (identical(other.trigger, trigger) || other.trigger == trigger) &&
+            (identical(other.gender, gender) || other.gender == gender) &&
             (identical(other.heldItem, heldItem) ||
-                const DeepCollectionEquality()
-                    .equals(other.heldItem, heldItem)) &&
+                other.heldItem == heldItem) &&
             (identical(other.knownMove, knownMove) ||
-                const DeepCollectionEquality()
-                    .equals(other.knownMove, knownMove)) &&
+                other.knownMove == knownMove) &&
             (identical(other.knownMoveType, knownMoveType) ||
-                const DeepCollectionEquality()
-                    .equals(other.knownMoveType, knownMoveType)) &&
+                other.knownMoveType == knownMoveType) &&
             (identical(other.location, location) ||
-                const DeepCollectionEquality()
-                    .equals(other.location, location)) &&
+                other.location == location) &&
             (identical(other.minLevel, minLevel) ||
-                const DeepCollectionEquality()
-                    .equals(other.minLevel, minLevel)) &&
+                other.minLevel == minLevel) &&
             (identical(other.minHappiness, minHappiness) ||
-                const DeepCollectionEquality()
-                    .equals(other.minHappiness, minHappiness)) &&
+                other.minHappiness == minHappiness) &&
             (identical(other.minBeauty, minBeauty) ||
-                const DeepCollectionEquality()
-                    .equals(other.minBeauty, minBeauty)) &&
+                other.minBeauty == minBeauty) &&
             (identical(other.minAffection, minAffection) ||
-                const DeepCollectionEquality()
-                    .equals(other.minAffection, minAffection)) &&
+                other.minAffection == minAffection) &&
             (identical(other.needsOverworldRain, needsOverworldRain) ||
-                const DeepCollectionEquality()
-                    .equals(other.needsOverworldRain, needsOverworldRain)) &&
+                other.needsOverworldRain == needsOverworldRain) &&
             (identical(other.partySpecies, partySpecies) ||
-                const DeepCollectionEquality()
-                    .equals(other.partySpecies, partySpecies)) &&
+                other.partySpecies == partySpecies) &&
             (identical(other.partyType, partyType) ||
-                const DeepCollectionEquality()
-                    .equals(other.partyType, partyType)) &&
+                other.partyType == partyType) &&
             (identical(other.relativePhysicalStats, relativePhysicalStats) ||
-                const DeepCollectionEquality().equals(
-                    other.relativePhysicalStats, relativePhysicalStats)) &&
+                other.relativePhysicalStats == relativePhysicalStats) &&
             (identical(other.timeOfDay, timeOfDay) ||
-                const DeepCollectionEquality()
-                    .equals(other.timeOfDay, timeOfDay)) &&
+                other.timeOfDay == timeOfDay) &&
             (identical(other.tradeSpecies, tradeSpecies) ||
-                const DeepCollectionEquality()
-                    .equals(other.tradeSpecies, tradeSpecies)) &&
+                other.tradeSpecies == tradeSpecies) &&
             (identical(other.turnUpsideDown, turnUpsideDown) ||
-                const DeepCollectionEquality()
-                    .equals(other.turnUpsideDown, turnUpsideDown)));
+                other.turnUpsideDown == turnUpsideDown));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(item) ^
-      const DeepCollectionEquality().hash(trigger) ^
-      const DeepCollectionEquality().hash(gender) ^
-      const DeepCollectionEquality().hash(heldItem) ^
-      const DeepCollectionEquality().hash(knownMove) ^
-      const DeepCollectionEquality().hash(knownMoveType) ^
-      const DeepCollectionEquality().hash(location) ^
-      const DeepCollectionEquality().hash(minLevel) ^
-      const DeepCollectionEquality().hash(minHappiness) ^
-      const DeepCollectionEquality().hash(minBeauty) ^
-      const DeepCollectionEquality().hash(minAffection) ^
-      const DeepCollectionEquality().hash(needsOverworldRain) ^
-      const DeepCollectionEquality().hash(partySpecies) ^
-      const DeepCollectionEquality().hash(partyType) ^
-      const DeepCollectionEquality().hash(relativePhysicalStats) ^
-      const DeepCollectionEquality().hash(timeOfDay) ^
-      const DeepCollectionEquality().hash(tradeSpecies) ^
-      const DeepCollectionEquality().hash(turnUpsideDown);
+  int get hashCode => Object.hash(
+      runtimeType,
+      item,
+      trigger,
+      gender,
+      heldItem,
+      knownMove,
+      knownMoveType,
+      location,
+      minLevel,
+      minHappiness,
+      minBeauty,
+      minAffection,
+      needsOverworldRain,
+      partySpecies,
+      partyType,
+      relativePhysicalStats,
+      timeOfDay,
+      tradeSpecies,
+      turnUpsideDown);
 
   @JsonKey(ignore: true)
   @override
@@ -1159,55 +1129,55 @@ abstract class _EvolutionDetail implements EvolutionDetail {
       _$_EvolutionDetail.fromJson;
 
   @override
-  NamedAPIResource get item => throw _privateConstructorUsedError;
+  NamedAPIResource get item;
   @override
-  NamedAPIResource get trigger => throw _privateConstructorUsedError;
+  NamedAPIResource get trigger;
   @override
-  int get gender => throw _privateConstructorUsedError;
+  int get gender;
   @override
   @JsonKey(name: 'held_item')
-  NamedAPIResource get heldItem => throw _privateConstructorUsedError;
+  NamedAPIResource get heldItem;
   @override
   @JsonKey(name: 'known_move')
-  NamedAPIResource get knownMove => throw _privateConstructorUsedError;
+  NamedAPIResource get knownMove;
   @override
   @JsonKey(name: 'known_move_type')
-  NamedAPIResource get knownMoveType => throw _privateConstructorUsedError;
+  NamedAPIResource get knownMoveType;
   @override
-  NamedAPIResource get location => throw _privateConstructorUsedError;
+  NamedAPIResource get location;
   @override
   @JsonKey(name: 'min_level')
-  int get minLevel => throw _privateConstructorUsedError;
+  int get minLevel;
   @override
   @JsonKey(name: 'min_happiness')
-  int get minHappiness => throw _privateConstructorUsedError;
+  int get minHappiness;
   @override
   @JsonKey(name: 'min_beauty')
-  int get minBeauty => throw _privateConstructorUsedError;
+  int get minBeauty;
   @override
   @JsonKey(name: 'min_affection')
-  int get minAffection => throw _privateConstructorUsedError;
+  int get minAffection;
   @override
   @JsonKey(name: 'needs_overworld_rain')
-  bool get needsOverworldRain => throw _privateConstructorUsedError;
+  bool get needsOverworldRain;
   @override
   @JsonKey(name: 'party_species')
-  NamedAPIResource get partySpecies => throw _privateConstructorUsedError;
+  NamedAPIResource get partySpecies;
   @override
   @JsonKey(name: 'party_type')
-  NamedAPIResource get partyType => throw _privateConstructorUsedError;
+  NamedAPIResource get partyType;
   @override
   @JsonKey(name: 'relative_physical_stats')
-  int get relativePhysicalStats => throw _privateConstructorUsedError;
+  int get relativePhysicalStats;
   @override
   @JsonKey(name: 'time_of_day')
-  String get timeOfDay => throw _privateConstructorUsedError;
+  String get timeOfDay;
   @override
   @JsonKey(name: 'trade_species')
-  NamedAPIResource get tradeSpecies => throw _privateConstructorUsedError;
+  NamedAPIResource get tradeSpecies;
   @override
   @JsonKey(name: 'turn_upside_down')
-  bool get turnUpsideDown => throw _privateConstructorUsedError;
+  bool get turnUpsideDown;
   @override
   @JsonKey(ignore: true)
   _$EvolutionDetailCopyWith<_EvolutionDetail> get copyWith =>
@@ -1232,7 +1202,7 @@ class _$EvolutionTriggerTearOff {
     );
   }
 
-  EvolutionTrigger fromJson(Map<String, Object> json) {
+  EvolutionTrigger fromJson(Map<String, Object?> json) {
     return EvolutionTrigger.fromJson(json);
   }
 }
@@ -1384,25 +1354,22 @@ class _$_EvolutionTrigger implements _EvolutionTrigger {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _EvolutionTrigger &&
-            (identical(other.id, id) ||
-                const DeepCollectionEquality().equals(other.id, id)) &&
-            (identical(other.name, name) ||
-                const DeepCollectionEquality().equals(other.name, name)) &&
-            (identical(other.names, names) ||
-                const DeepCollectionEquality().equals(other.names, names)) &&
-            (identical(other.pokemonSpecies, pokemonSpecies) ||
-                const DeepCollectionEquality()
-                    .equals(other.pokemonSpecies, pokemonSpecies)));
+        (other.runtimeType == runtimeType &&
+            other is _EvolutionTrigger &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.name, name) || other.name == name) &&
+            const DeepCollectionEquality().equals(other.names, names) &&
+            const DeepCollectionEquality()
+                .equals(other.pokemonSpecies, pokemonSpecies));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(id) ^
-      const DeepCollectionEquality().hash(name) ^
-      const DeepCollectionEquality().hash(names) ^
-      const DeepCollectionEquality().hash(pokemonSpecies);
+  int get hashCode => Object.hash(
+      runtimeType,
+      id,
+      name,
+      const DeepCollectionEquality().hash(names),
+      const DeepCollectionEquality().hash(pokemonSpecies));
 
   @JsonKey(ignore: true)
   @override
@@ -1427,15 +1394,14 @@ abstract class _EvolutionTrigger implements EvolutionTrigger {
       _$_EvolutionTrigger.fromJson;
 
   @override
-  int get id => throw _privateConstructorUsedError;
+  int get id;
   @override
-  String get name => throw _privateConstructorUsedError;
+  String get name;
   @override
-  List<Name> get names => throw _privateConstructorUsedError;
+  List<Name> get names;
   @override
   @JsonKey(name: 'pokemon_species')
-  List<NamedAPIResource> get pokemonSpecies =>
-      throw _privateConstructorUsedError;
+  List<NamedAPIResource> get pokemonSpecies;
   @override
   @JsonKey(ignore: true)
   _$EvolutionTriggerCopyWith<_EvolutionTrigger> get copyWith =>

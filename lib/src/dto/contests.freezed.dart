@@ -34,7 +34,7 @@ class _$ContestTypeTearOff {
     );
   }
 
-  ContestType fromJson(Map<String, Object> json) {
+  ContestType fromJson(Map<String, Object?> json) {
     return ContestType.fromJson(json);
   }
 }
@@ -195,25 +195,18 @@ class _$_ContestType implements _ContestType {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _ContestType &&
-            (identical(other.id, id) ||
-                const DeepCollectionEquality().equals(other.id, id)) &&
-            (identical(other.name, name) ||
-                const DeepCollectionEquality().equals(other.name, name)) &&
+        (other.runtimeType == runtimeType &&
+            other is _ContestType &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.name, name) || other.name == name) &&
             (identical(other.berryFlavor, berryFlavor) ||
-                const DeepCollectionEquality()
-                    .equals(other.berryFlavor, berryFlavor)) &&
-            (identical(other.names, names) ||
-                const DeepCollectionEquality().equals(other.names, names)));
+                other.berryFlavor == berryFlavor) &&
+            const DeepCollectionEquality().equals(other.names, names));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(id) ^
-      const DeepCollectionEquality().hash(name) ^
-      const DeepCollectionEquality().hash(berryFlavor) ^
-      const DeepCollectionEquality().hash(names);
+  int get hashCode => Object.hash(runtimeType, id, name, berryFlavor,
+      const DeepCollectionEquality().hash(names));
 
   @JsonKey(ignore: true)
   @override
@@ -237,14 +230,14 @@ abstract class _ContestType implements ContestType {
       _$_ContestType.fromJson;
 
   @override
-  int get id => throw _privateConstructorUsedError;
+  int get id;
   @override
-  String get name => throw _privateConstructorUsedError;
+  String get name;
   @override
   @JsonKey(name: 'berry_flavor')
-  NamedAPIResource get berryFlavor => throw _privateConstructorUsedError;
+  NamedAPIResource get berryFlavor;
   @override
-  List<ContestName> get names => throw _privateConstructorUsedError;
+  List<ContestName> get names;
   @override
   @JsonKey(ignore: true)
   _$ContestTypeCopyWith<_ContestType> get copyWith =>
@@ -267,7 +260,7 @@ class _$ContestNameTearOff {
     );
   }
 
-  ContestName fromJson(Map<String, Object> json) {
+  ContestName fromJson(Map<String, Object?> json) {
     return ContestName.fromJson(json);
   }
 }
@@ -404,22 +397,16 @@ class _$_ContestName implements _ContestName {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _ContestName &&
-            (identical(other.name, name) ||
-                const DeepCollectionEquality().equals(other.name, name)) &&
-            (identical(other.color, color) ||
-                const DeepCollectionEquality().equals(other.color, color)) &&
+        (other.runtimeType == runtimeType &&
+            other is _ContestName &&
+            (identical(other.name, name) || other.name == name) &&
+            (identical(other.color, color) || other.color == color) &&
             (identical(other.language, language) ||
-                const DeepCollectionEquality()
-                    .equals(other.language, language)));
+                other.language == language));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(name) ^
-      const DeepCollectionEquality().hash(color) ^
-      const DeepCollectionEquality().hash(language);
+  int get hashCode => Object.hash(runtimeType, name, color, language);
 
   @JsonKey(ignore: true)
   @override
@@ -440,11 +427,11 @@ abstract class _ContestName implements ContestName {
       _$_ContestName.fromJson;
 
   @override
-  String get name => throw _privateConstructorUsedError;
+  String get name;
   @override
-  String get color => throw _privateConstructorUsedError;
+  String get color;
   @override
-  NamedAPIResource get language => throw _privateConstructorUsedError;
+  NamedAPIResource get language;
   @override
   @JsonKey(ignore: true)
   _$ContestNameCopyWith<_ContestName> get copyWith =>
@@ -476,7 +463,7 @@ class _$ContestEffectTearOff {
     );
   }
 
-  ContestEffect fromJson(Map<String, Object> json) {
+  ContestEffect fromJson(Map<String, Object?> json) {
     return ContestEffect.fromJson(json);
   }
 }
@@ -652,29 +639,25 @@ class _$_ContestEffect implements _ContestEffect {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _ContestEffect &&
-            (identical(other.id, id) ||
-                const DeepCollectionEquality().equals(other.id, id)) &&
-            (identical(other.appeal, appeal) ||
-                const DeepCollectionEquality().equals(other.appeal, appeal)) &&
-            (identical(other.jam, jam) ||
-                const DeepCollectionEquality().equals(other.jam, jam)) &&
-            (identical(other.effectEntries, effectEntries) ||
-                const DeepCollectionEquality()
-                    .equals(other.effectEntries, effectEntries)) &&
-            (identical(other.flavorTextEntries, flavorTextEntries) ||
-                const DeepCollectionEquality()
-                    .equals(other.flavorTextEntries, flavorTextEntries)));
+        (other.runtimeType == runtimeType &&
+            other is _ContestEffect &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.appeal, appeal) || other.appeal == appeal) &&
+            (identical(other.jam, jam) || other.jam == jam) &&
+            const DeepCollectionEquality()
+                .equals(other.effectEntries, effectEntries) &&
+            const DeepCollectionEquality()
+                .equals(other.flavorTextEntries, flavorTextEntries));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(id) ^
-      const DeepCollectionEquality().hash(appeal) ^
-      const DeepCollectionEquality().hash(jam) ^
-      const DeepCollectionEquality().hash(effectEntries) ^
-      const DeepCollectionEquality().hash(flavorTextEntries);
+  int get hashCode => Object.hash(
+      runtimeType,
+      id,
+      appeal,
+      jam,
+      const DeepCollectionEquality().hash(effectEntries),
+      const DeepCollectionEquality().hash(flavorTextEntries));
 
   @JsonKey(ignore: true)
   @override
@@ -701,17 +684,17 @@ abstract class _ContestEffect implements ContestEffect {
       _$_ContestEffect.fromJson;
 
   @override
-  int get id => throw _privateConstructorUsedError;
+  int get id;
   @override
-  int get appeal => throw _privateConstructorUsedError;
+  int get appeal;
   @override
-  int get jam => throw _privateConstructorUsedError;
+  int get jam;
   @override
   @JsonKey(name: 'effect_entries')
-  List<Effect> get effectEntries => throw _privateConstructorUsedError;
+  List<Effect> get effectEntries;
   @override
   @JsonKey(name: 'flavor_text_entries')
-  List<FlavorText> get flavorTextEntries => throw _privateConstructorUsedError;
+  List<FlavorText> get flavorTextEntries;
   @override
   @JsonKey(ignore: true)
   _$ContestEffectCopyWith<_ContestEffect> get copyWith =>
@@ -739,7 +722,7 @@ class _$SuperContestEffectTearOff {
     );
   }
 
-  SuperContestEffect fromJson(Map<String, Object> json) {
+  SuperContestEffect fromJson(Map<String, Object?> json) {
     return SuperContestEffect.fromJson(json);
   }
 }
@@ -890,25 +873,22 @@ class _$_SuperContestEffect implements _SuperContestEffect {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _SuperContestEffect &&
-            (identical(other.id, id) ||
-                const DeepCollectionEquality().equals(other.id, id)) &&
-            (identical(other.appeal, appeal) ||
-                const DeepCollectionEquality().equals(other.appeal, appeal)) &&
-            (identical(other.flavorTextEntries, flavorTextEntries) ||
-                const DeepCollectionEquality()
-                    .equals(other.flavorTextEntries, flavorTextEntries)) &&
-            (identical(other.moves, moves) ||
-                const DeepCollectionEquality().equals(other.moves, moves)));
+        (other.runtimeType == runtimeType &&
+            other is _SuperContestEffect &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.appeal, appeal) || other.appeal == appeal) &&
+            const DeepCollectionEquality()
+                .equals(other.flavorTextEntries, flavorTextEntries) &&
+            const DeepCollectionEquality().equals(other.moves, moves));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(id) ^
-      const DeepCollectionEquality().hash(appeal) ^
-      const DeepCollectionEquality().hash(flavorTextEntries) ^
-      const DeepCollectionEquality().hash(moves);
+  int get hashCode => Object.hash(
+      runtimeType,
+      id,
+      appeal,
+      const DeepCollectionEquality().hash(flavorTextEntries),
+      const DeepCollectionEquality().hash(moves));
 
   @JsonKey(ignore: true)
   @override
@@ -932,14 +912,14 @@ abstract class _SuperContestEffect implements SuperContestEffect {
       _$_SuperContestEffect.fromJson;
 
   @override
-  int get id => throw _privateConstructorUsedError;
+  int get id;
   @override
-  int get appeal => throw _privateConstructorUsedError;
+  int get appeal;
   @override
   @JsonKey(name: 'flavor_text_entries')
-  List<FlavorText> get flavorTextEntries => throw _privateConstructorUsedError;
+  List<FlavorText> get flavorTextEntries;
   @override
-  List<NamedAPIResource> get moves => throw _privateConstructorUsedError;
+  List<NamedAPIResource> get moves;
   @override
   @JsonKey(ignore: true)
   _$SuperContestEffectCopyWith<_SuperContestEffect> get copyWith =>

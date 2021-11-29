@@ -50,7 +50,7 @@ class _$BerryTearOff {
     );
   }
 
-  Berry fromJson(Map<String, Object> json) {
+  Berry fromJson(Map<String, Object?> json) {
     return Berry.fromJson(json);
   }
 }
@@ -365,56 +365,44 @@ class _$_Berry implements _Berry {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _Berry &&
-            (identical(other.id, id) ||
-                const DeepCollectionEquality().equals(other.id, id)) &&
-            (identical(other.name, name) ||
-                const DeepCollectionEquality().equals(other.name, name)) &&
+        (other.runtimeType == runtimeType &&
+            other is _Berry &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.name, name) || other.name == name) &&
             (identical(other.growthTime, growthTime) ||
-                const DeepCollectionEquality()
-                    .equals(other.growthTime, growthTime)) &&
+                other.growthTime == growthTime) &&
             (identical(other.maxHarvest, maxHarvest) ||
-                const DeepCollectionEquality()
-                    .equals(other.maxHarvest, maxHarvest)) &&
+                other.maxHarvest == maxHarvest) &&
             (identical(other.naturalGiftPower, naturalGiftPower) ||
-                const DeepCollectionEquality()
-                    .equals(other.naturalGiftPower, naturalGiftPower)) &&
-            (identical(other.size, size) ||
-                const DeepCollectionEquality().equals(other.size, size)) &&
+                other.naturalGiftPower == naturalGiftPower) &&
+            (identical(other.size, size) || other.size == size) &&
             (identical(other.smoothness, smoothness) ||
-                const DeepCollectionEquality()
-                    .equals(other.smoothness, smoothness)) &&
+                other.smoothness == smoothness) &&
             (identical(other.soilDryness, soilDryness) ||
-                const DeepCollectionEquality()
-                    .equals(other.soilDryness, soilDryness)) &&
+                other.soilDryness == soilDryness) &&
             (identical(other.firmness, firmness) ||
-                const DeepCollectionEquality()
-                    .equals(other.firmness, firmness)) &&
-            (identical(other.flavors, flavors) ||
-                const DeepCollectionEquality()
-                    .equals(other.flavors, flavors)) &&
-            (identical(other.item, item) ||
-                const DeepCollectionEquality().equals(other.item, item)) &&
+                other.firmness == firmness) &&
+            const DeepCollectionEquality().equals(other.flavors, flavors) &&
+            (identical(other.item, item) || other.item == item) &&
             (identical(other.naturalGiftType, naturalGiftType) ||
-                const DeepCollectionEquality()
-                    .equals(other.naturalGiftType, naturalGiftType)));
+                other.naturalGiftType == naturalGiftType));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(id) ^
-      const DeepCollectionEquality().hash(name) ^
-      const DeepCollectionEquality().hash(growthTime) ^
-      const DeepCollectionEquality().hash(maxHarvest) ^
-      const DeepCollectionEquality().hash(naturalGiftPower) ^
-      const DeepCollectionEquality().hash(size) ^
-      const DeepCollectionEquality().hash(smoothness) ^
-      const DeepCollectionEquality().hash(soilDryness) ^
-      const DeepCollectionEquality().hash(firmness) ^
-      const DeepCollectionEquality().hash(flavors) ^
-      const DeepCollectionEquality().hash(item) ^
-      const DeepCollectionEquality().hash(naturalGiftType);
+  int get hashCode => Object.hash(
+      runtimeType,
+      id,
+      name,
+      growthTime,
+      maxHarvest,
+      naturalGiftPower,
+      size,
+      smoothness,
+      soilDryness,
+      firmness,
+      const DeepCollectionEquality().hash(flavors),
+      item,
+      naturalGiftType);
 
   @JsonKey(ignore: true)
   @override
@@ -450,34 +438,34 @@ abstract class _Berry implements Berry {
   factory _Berry.fromJson(Map<String, dynamic> json) = _$_Berry.fromJson;
 
   @override
-  int get id => throw _privateConstructorUsedError;
+  int get id;
   @override
-  String get name => throw _privateConstructorUsedError;
+  String get name;
   @override
   @JsonKey(name: 'grwoth_time')
-  int get growthTime => throw _privateConstructorUsedError;
+  int get growthTime;
   @override
   @JsonKey(name: 'max_harvest')
-  int get maxHarvest => throw _privateConstructorUsedError;
+  int get maxHarvest;
   @override
   @JsonKey(name: 'natural_gift_power')
-  int get naturalGiftPower => throw _privateConstructorUsedError;
+  int get naturalGiftPower;
   @override
-  int get size => throw _privateConstructorUsedError;
+  int get size;
   @override
-  int get smoothness => throw _privateConstructorUsedError;
+  int get smoothness;
   @override
   @JsonKey(name: 'soil_dryness')
-  int get soilDryness => throw _privateConstructorUsedError;
+  int get soilDryness;
   @override
-  BerryFirmness get firmness => throw _privateConstructorUsedError;
+  BerryFirmness get firmness;
   @override
-  List<BerryFlavorMap> get flavors => throw _privateConstructorUsedError;
+  List<BerryFlavorMap> get flavors;
   @override
-  NamedAPIResource get item => throw _privateConstructorUsedError;
+  NamedAPIResource get item;
   @override
   @JsonKey(name: 'natural_gift_type')
-  NamedAPIResource get naturalGiftType => throw _privateConstructorUsedError;
+  NamedAPIResource get naturalGiftType;
   @override
   @JsonKey(ignore: true)
   _$BerryCopyWith<_Berry> get copyWith => throw _privateConstructorUsedError;
@@ -498,7 +486,7 @@ class _$BerryFlavorMapTearOff {
     );
   }
 
-  BerryFlavorMap fromJson(Map<String, Object> json) {
+  BerryFlavorMap fromJson(Map<String, Object?> json) {
     return BerryFlavorMap.fromJson(json);
   }
 }
@@ -624,19 +612,14 @@ class _$_BerryFlavorMap implements _BerryFlavorMap {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _BerryFlavorMap &&
-            (identical(other.potency, potency) ||
-                const DeepCollectionEquality()
-                    .equals(other.potency, potency)) &&
-            (identical(other.flavor, flavor) ||
-                const DeepCollectionEquality().equals(other.flavor, flavor)));
+        (other.runtimeType == runtimeType &&
+            other is _BerryFlavorMap &&
+            (identical(other.potency, potency) || other.potency == potency) &&
+            (identical(other.flavor, flavor) || other.flavor == flavor));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(potency) ^
-      const DeepCollectionEquality().hash(flavor);
+  int get hashCode => Object.hash(runtimeType, potency, flavor);
 
   @JsonKey(ignore: true)
   @override
@@ -657,9 +640,9 @@ abstract class _BerryFlavorMap implements BerryFlavorMap {
       _$_BerryFlavorMap.fromJson;
 
   @override
-  int get potency => throw _privateConstructorUsedError;
+  int get potency;
   @override
-  NamedAPIResource get flavor => throw _privateConstructorUsedError;
+  NamedAPIResource get flavor;
   @override
   @JsonKey(ignore: true)
   _$BerryFlavorMapCopyWith<_BerryFlavorMap> get copyWith =>
@@ -684,7 +667,7 @@ class _$BerryFirmnessTearOff {
     );
   }
 
-  BerryFirmness fromJson(Map<String, Object> json) {
+  BerryFirmness fromJson(Map<String, Object?> json) {
     return BerryFirmness.fromJson(json);
   }
 }
@@ -826,25 +809,21 @@ class _$_BerryFirmness implements _BerryFirmness {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _BerryFirmness &&
-            (identical(other.id, id) ||
-                const DeepCollectionEquality().equals(other.id, id)) &&
-            (identical(other.name, name) ||
-                const DeepCollectionEquality().equals(other.name, name)) &&
-            (identical(other.berries, berries) ||
-                const DeepCollectionEquality()
-                    .equals(other.berries, berries)) &&
-            (identical(other.names, names) ||
-                const DeepCollectionEquality().equals(other.names, names)));
+        (other.runtimeType == runtimeType &&
+            other is _BerryFirmness &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.name, name) || other.name == name) &&
+            const DeepCollectionEquality().equals(other.berries, berries) &&
+            const DeepCollectionEquality().equals(other.names, names));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(id) ^
-      const DeepCollectionEquality().hash(name) ^
-      const DeepCollectionEquality().hash(berries) ^
-      const DeepCollectionEquality().hash(names);
+  int get hashCode => Object.hash(
+      runtimeType,
+      id,
+      name,
+      const DeepCollectionEquality().hash(berries),
+      const DeepCollectionEquality().hash(names));
 
   @JsonKey(ignore: true)
   @override
@@ -865,13 +844,13 @@ abstract class _BerryFirmness implements BerryFirmness {
       _$_BerryFirmness.fromJson;
 
   @override
-  int get id => throw _privateConstructorUsedError;
+  int get id;
   @override
-  String get name => throw _privateConstructorUsedError;
+  String get name;
   @override
-  List<NamedAPIResource> get berries => throw _privateConstructorUsedError;
+  List<NamedAPIResource> get berries;
   @override
-  List<Name> get names => throw _privateConstructorUsedError;
+  List<Name> get names;
   @override
   @JsonKey(ignore: true)
   _$BerryFirmnessCopyWith<_BerryFirmness> get copyWith =>
@@ -901,7 +880,7 @@ class _$BerryFlavorTearOff {
     );
   }
 
-  BerryFlavor fromJson(Map<String, Object> json) {
+  BerryFlavor fromJson(Map<String, Object?> json) {
     return BerryFlavor.fromJson(json);
   }
 }
@@ -1077,29 +1056,24 @@ class _$_BerryFlavor implements _BerryFlavor {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _BerryFlavor &&
-            (identical(other.id, id) ||
-                const DeepCollectionEquality().equals(other.id, id)) &&
-            (identical(other.name, name) ||
-                const DeepCollectionEquality().equals(other.name, name)) &&
-            (identical(other.berries, berries) ||
-                const DeepCollectionEquality()
-                    .equals(other.berries, berries)) &&
+        (other.runtimeType == runtimeType &&
+            other is _BerryFlavor &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.name, name) || other.name == name) &&
+            const DeepCollectionEquality().equals(other.berries, berries) &&
             (identical(other.contestType, contestType) ||
-                const DeepCollectionEquality()
-                    .equals(other.contestType, contestType)) &&
-            (identical(other.names, names) ||
-                const DeepCollectionEquality().equals(other.names, names)));
+                other.contestType == contestType) &&
+            const DeepCollectionEquality().equals(other.names, names));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(id) ^
-      const DeepCollectionEquality().hash(name) ^
-      const DeepCollectionEquality().hash(berries) ^
-      const DeepCollectionEquality().hash(contestType) ^
-      const DeepCollectionEquality().hash(names);
+  int get hashCode => Object.hash(
+      runtimeType,
+      id,
+      name,
+      const DeepCollectionEquality().hash(berries),
+      contestType,
+      const DeepCollectionEquality().hash(names));
 
   @JsonKey(ignore: true)
   @override
@@ -1124,16 +1098,16 @@ abstract class _BerryFlavor implements BerryFlavor {
       _$_BerryFlavor.fromJson;
 
   @override
-  int get id => throw _privateConstructorUsedError;
+  int get id;
   @override
-  String get name => throw _privateConstructorUsedError;
+  String get name;
   @override
-  List<FlavorBerryMap> get berries => throw _privateConstructorUsedError;
+  List<FlavorBerryMap> get berries;
   @override
   @JsonKey(name: 'contest_type')
-  NamedAPIResource get contestType => throw _privateConstructorUsedError;
+  NamedAPIResource get contestType;
   @override
-  List<Name> get names => throw _privateConstructorUsedError;
+  List<Name> get names;
   @override
   @JsonKey(ignore: true)
   _$BerryFlavorCopyWith<_BerryFlavor> get copyWith =>
@@ -1155,7 +1129,7 @@ class _$FlavorBerryMapTearOff {
     );
   }
 
-  FlavorBerryMap fromJson(Map<String, Object> json) {
+  FlavorBerryMap fromJson(Map<String, Object?> json) {
     return FlavorBerryMap.fromJson(json);
   }
 }
@@ -1281,19 +1255,14 @@ class _$_FlavorBerryMap implements _FlavorBerryMap {
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _FlavorBerryMap &&
-            (identical(other.potency, potency) ||
-                const DeepCollectionEquality()
-                    .equals(other.potency, potency)) &&
-            (identical(other.berry, berry) ||
-                const DeepCollectionEquality().equals(other.berry, berry)));
+        (other.runtimeType == runtimeType &&
+            other is _FlavorBerryMap &&
+            (identical(other.potency, potency) || other.potency == potency) &&
+            (identical(other.berry, berry) || other.berry == berry));
   }
 
   @override
-  int get hashCode =>
-      runtimeType.hashCode ^
-      const DeepCollectionEquality().hash(potency) ^
-      const DeepCollectionEquality().hash(berry);
+  int get hashCode => Object.hash(runtimeType, potency, berry);
 
   @JsonKey(ignore: true)
   @override
@@ -1314,9 +1283,9 @@ abstract class _FlavorBerryMap implements FlavorBerryMap {
       _$_FlavorBerryMap.fromJson;
 
   @override
-  int get potency => throw _privateConstructorUsedError;
+  int get potency;
   @override
-  NamedAPIResource get berry => throw _privateConstructorUsedError;
+  NamedAPIResource get berry;
   @override
   @JsonKey(ignore: true)
   _$FlavorBerryMapCopyWith<_FlavorBerryMap> get copyWith =>
