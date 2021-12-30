@@ -2309,3 +2309,9740 @@ abstract class _GrowthRateExperienceLevel implements GrowthRateExperienceLevel {
   _$GrowthRateExperienceLevelCopyWith<_GrowthRateExperienceLevel>
       get copyWith => throw _privateConstructorUsedError;
 }
+
+Nature _$NatureFromJson(Map<String, dynamic> json) {
+  return _Nature.fromJson(json);
+}
+
+/// @nodoc
+class _$NatureTearOff {
+  const _$NatureTearOff();
+
+  _Nature call(
+      int id,
+      String name,
+      @JsonKey(name: 'decreased_stat')
+          NamedAPIResource decreasedStat,
+      @JsonKey(name: 'increased_stat')
+          NamedAPIResource increasedStat,
+      @JsonKey(name: 'hates_flavor')
+          NamedAPIResource hatesFlavor,
+      @JsonKey(name: 'likes_flavor')
+          NamedAPIResource likesFlavor,
+      @JsonKey(name: 'pokeathlon_stat_changes')
+          List<NamedAPIResource> pokeathlonStatChanges,
+      @JsonKey(name: 'move_battle_style_preferences')
+          List<MoveBattleStylePreference> moveBattleStylePreferences,
+      List<Name> names) {
+    return _Nature(
+      id,
+      name,
+      decreasedStat,
+      increasedStat,
+      hatesFlavor,
+      likesFlavor,
+      pokeathlonStatChanges,
+      moveBattleStylePreferences,
+      names,
+    );
+  }
+
+  Nature fromJson(Map<String, Object?> json) {
+    return Nature.fromJson(json);
+  }
+}
+
+/// @nodoc
+const $Nature = _$NatureTearOff();
+
+/// @nodoc
+mixin _$Nature {
+  int get id => throw _privateConstructorUsedError;
+  String get name => throw _privateConstructorUsedError;
+  @JsonKey(name: 'decreased_stat')
+  NamedAPIResource get decreasedStat => throw _privateConstructorUsedError;
+  @JsonKey(name: 'increased_stat')
+  NamedAPIResource get increasedStat => throw _privateConstructorUsedError;
+  @JsonKey(name: 'hates_flavor')
+  NamedAPIResource get hatesFlavor => throw _privateConstructorUsedError;
+  @JsonKey(name: 'likes_flavor')
+  NamedAPIResource get likesFlavor => throw _privateConstructorUsedError;
+  @JsonKey(name: 'pokeathlon_stat_changes')
+  List<NamedAPIResource> get pokeathlonStatChanges =>
+      throw _privateConstructorUsedError;
+  @JsonKey(name: 'move_battle_style_preferences')
+  List<MoveBattleStylePreference> get moveBattleStylePreferences =>
+      throw _privateConstructorUsedError;
+  List<Name> get names => throw _privateConstructorUsedError;
+
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $NatureCopyWith<Nature> get copyWith => throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $NatureCopyWith<$Res> {
+  factory $NatureCopyWith(Nature value, $Res Function(Nature) then) =
+      _$NatureCopyWithImpl<$Res>;
+  $Res call(
+      {int id,
+      String name,
+      @JsonKey(name: 'decreased_stat')
+          NamedAPIResource decreasedStat,
+      @JsonKey(name: 'increased_stat')
+          NamedAPIResource increasedStat,
+      @JsonKey(name: 'hates_flavor')
+          NamedAPIResource hatesFlavor,
+      @JsonKey(name: 'likes_flavor')
+          NamedAPIResource likesFlavor,
+      @JsonKey(name: 'pokeathlon_stat_changes')
+          List<NamedAPIResource> pokeathlonStatChanges,
+      @JsonKey(name: 'move_battle_style_preferences')
+          List<MoveBattleStylePreference> moveBattleStylePreferences,
+      List<Name> names});
+
+  $NamedAPIResourceCopyWith<$Res> get decreasedStat;
+  $NamedAPIResourceCopyWith<$Res> get increasedStat;
+  $NamedAPIResourceCopyWith<$Res> get hatesFlavor;
+  $NamedAPIResourceCopyWith<$Res> get likesFlavor;
+}
+
+/// @nodoc
+class _$NatureCopyWithImpl<$Res> implements $NatureCopyWith<$Res> {
+  _$NatureCopyWithImpl(this._value, this._then);
+
+  final Nature _value;
+  // ignore: unused_field
+  final $Res Function(Nature) _then;
+
+  @override
+  $Res call({
+    Object? id = freezed,
+    Object? name = freezed,
+    Object? decreasedStat = freezed,
+    Object? increasedStat = freezed,
+    Object? hatesFlavor = freezed,
+    Object? likesFlavor = freezed,
+    Object? pokeathlonStatChanges = freezed,
+    Object? moveBattleStylePreferences = freezed,
+    Object? names = freezed,
+  }) {
+    return _then(_value.copyWith(
+      id: id == freezed
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as int,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      decreasedStat: decreasedStat == freezed
+          ? _value.decreasedStat
+          : decreasedStat // ignore: cast_nullable_to_non_nullable
+              as NamedAPIResource,
+      increasedStat: increasedStat == freezed
+          ? _value.increasedStat
+          : increasedStat // ignore: cast_nullable_to_non_nullable
+              as NamedAPIResource,
+      hatesFlavor: hatesFlavor == freezed
+          ? _value.hatesFlavor
+          : hatesFlavor // ignore: cast_nullable_to_non_nullable
+              as NamedAPIResource,
+      likesFlavor: likesFlavor == freezed
+          ? _value.likesFlavor
+          : likesFlavor // ignore: cast_nullable_to_non_nullable
+              as NamedAPIResource,
+      pokeathlonStatChanges: pokeathlonStatChanges == freezed
+          ? _value.pokeathlonStatChanges
+          : pokeathlonStatChanges // ignore: cast_nullable_to_non_nullable
+              as List<NamedAPIResource>,
+      moveBattleStylePreferences: moveBattleStylePreferences == freezed
+          ? _value.moveBattleStylePreferences
+          : moveBattleStylePreferences // ignore: cast_nullable_to_non_nullable
+              as List<MoveBattleStylePreference>,
+      names: names == freezed
+          ? _value.names
+          : names // ignore: cast_nullable_to_non_nullable
+              as List<Name>,
+    ));
+  }
+
+  @override
+  $NamedAPIResourceCopyWith<$Res> get decreasedStat {
+    return $NamedAPIResourceCopyWith<$Res>(_value.decreasedStat, (value) {
+      return _then(_value.copyWith(decreasedStat: value));
+    });
+  }
+
+  @override
+  $NamedAPIResourceCopyWith<$Res> get increasedStat {
+    return $NamedAPIResourceCopyWith<$Res>(_value.increasedStat, (value) {
+      return _then(_value.copyWith(increasedStat: value));
+    });
+  }
+
+  @override
+  $NamedAPIResourceCopyWith<$Res> get hatesFlavor {
+    return $NamedAPIResourceCopyWith<$Res>(_value.hatesFlavor, (value) {
+      return _then(_value.copyWith(hatesFlavor: value));
+    });
+  }
+
+  @override
+  $NamedAPIResourceCopyWith<$Res> get likesFlavor {
+    return $NamedAPIResourceCopyWith<$Res>(_value.likesFlavor, (value) {
+      return _then(_value.copyWith(likesFlavor: value));
+    });
+  }
+}
+
+/// @nodoc
+abstract class _$NatureCopyWith<$Res> implements $NatureCopyWith<$Res> {
+  factory _$NatureCopyWith(_Nature value, $Res Function(_Nature) then) =
+      __$NatureCopyWithImpl<$Res>;
+  @override
+  $Res call(
+      {int id,
+      String name,
+      @JsonKey(name: 'decreased_stat')
+          NamedAPIResource decreasedStat,
+      @JsonKey(name: 'increased_stat')
+          NamedAPIResource increasedStat,
+      @JsonKey(name: 'hates_flavor')
+          NamedAPIResource hatesFlavor,
+      @JsonKey(name: 'likes_flavor')
+          NamedAPIResource likesFlavor,
+      @JsonKey(name: 'pokeathlon_stat_changes')
+          List<NamedAPIResource> pokeathlonStatChanges,
+      @JsonKey(name: 'move_battle_style_preferences')
+          List<MoveBattleStylePreference> moveBattleStylePreferences,
+      List<Name> names});
+
+  @override
+  $NamedAPIResourceCopyWith<$Res> get decreasedStat;
+  @override
+  $NamedAPIResourceCopyWith<$Res> get increasedStat;
+  @override
+  $NamedAPIResourceCopyWith<$Res> get hatesFlavor;
+  @override
+  $NamedAPIResourceCopyWith<$Res> get likesFlavor;
+}
+
+/// @nodoc
+class __$NatureCopyWithImpl<$Res> extends _$NatureCopyWithImpl<$Res>
+    implements _$NatureCopyWith<$Res> {
+  __$NatureCopyWithImpl(_Nature _value, $Res Function(_Nature) _then)
+      : super(_value, (v) => _then(v as _Nature));
+
+  @override
+  _Nature get _value => super._value as _Nature;
+
+  @override
+  $Res call({
+    Object? id = freezed,
+    Object? name = freezed,
+    Object? decreasedStat = freezed,
+    Object? increasedStat = freezed,
+    Object? hatesFlavor = freezed,
+    Object? likesFlavor = freezed,
+    Object? pokeathlonStatChanges = freezed,
+    Object? moveBattleStylePreferences = freezed,
+    Object? names = freezed,
+  }) {
+    return _then(_Nature(
+      id == freezed
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as int,
+      name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      decreasedStat == freezed
+          ? _value.decreasedStat
+          : decreasedStat // ignore: cast_nullable_to_non_nullable
+              as NamedAPIResource,
+      increasedStat == freezed
+          ? _value.increasedStat
+          : increasedStat // ignore: cast_nullable_to_non_nullable
+              as NamedAPIResource,
+      hatesFlavor == freezed
+          ? _value.hatesFlavor
+          : hatesFlavor // ignore: cast_nullable_to_non_nullable
+              as NamedAPIResource,
+      likesFlavor == freezed
+          ? _value.likesFlavor
+          : likesFlavor // ignore: cast_nullable_to_non_nullable
+              as NamedAPIResource,
+      pokeathlonStatChanges == freezed
+          ? _value.pokeathlonStatChanges
+          : pokeathlonStatChanges // ignore: cast_nullable_to_non_nullable
+              as List<NamedAPIResource>,
+      moveBattleStylePreferences == freezed
+          ? _value.moveBattleStylePreferences
+          : moveBattleStylePreferences // ignore: cast_nullable_to_non_nullable
+              as List<MoveBattleStylePreference>,
+      names == freezed
+          ? _value.names
+          : names // ignore: cast_nullable_to_non_nullable
+              as List<Name>,
+    ));
+  }
+}
+
+/// @nodoc
+@JsonSerializable()
+class _$_Nature implements _Nature {
+  const _$_Nature(
+      this.id,
+      this.name,
+      @JsonKey(name: 'decreased_stat')
+          this.decreasedStat,
+      @JsonKey(name: 'increased_stat')
+          this.increasedStat,
+      @JsonKey(name: 'hates_flavor')
+          this.hatesFlavor,
+      @JsonKey(name: 'likes_flavor')
+          this.likesFlavor,
+      @JsonKey(name: 'pokeathlon_stat_changes')
+          this.pokeathlonStatChanges,
+      @JsonKey(name: 'move_battle_style_preferences')
+          this.moveBattleStylePreferences,
+      this.names);
+
+  factory _$_Nature.fromJson(Map<String, dynamic> json) =>
+      _$$_NatureFromJson(json);
+
+  @override
+  final int id;
+  @override
+  final String name;
+  @override
+  @JsonKey(name: 'decreased_stat')
+  final NamedAPIResource decreasedStat;
+  @override
+  @JsonKey(name: 'increased_stat')
+  final NamedAPIResource increasedStat;
+  @override
+  @JsonKey(name: 'hates_flavor')
+  final NamedAPIResource hatesFlavor;
+  @override
+  @JsonKey(name: 'likes_flavor')
+  final NamedAPIResource likesFlavor;
+  @override
+  @JsonKey(name: 'pokeathlon_stat_changes')
+  final List<NamedAPIResource> pokeathlonStatChanges;
+  @override
+  @JsonKey(name: 'move_battle_style_preferences')
+  final List<MoveBattleStylePreference> moveBattleStylePreferences;
+  @override
+  final List<Name> names;
+
+  @override
+  String toString() {
+    return 'Nature(id: $id, name: $name, decreasedStat: $decreasedStat, increasedStat: $increasedStat, hatesFlavor: $hatesFlavor, likesFlavor: $likesFlavor, pokeathlonStatChanges: $pokeathlonStatChanges, moveBattleStylePreferences: $moveBattleStylePreferences, names: $names)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _Nature &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.name, name) || other.name == name) &&
+            (identical(other.decreasedStat, decreasedStat) ||
+                other.decreasedStat == decreasedStat) &&
+            (identical(other.increasedStat, increasedStat) ||
+                other.increasedStat == increasedStat) &&
+            (identical(other.hatesFlavor, hatesFlavor) ||
+                other.hatesFlavor == hatesFlavor) &&
+            (identical(other.likesFlavor, likesFlavor) ||
+                other.likesFlavor == likesFlavor) &&
+            const DeepCollectionEquality()
+                .equals(other.pokeathlonStatChanges, pokeathlonStatChanges) &&
+            const DeepCollectionEquality().equals(
+                other.moveBattleStylePreferences, moveBattleStylePreferences) &&
+            const DeepCollectionEquality().equals(other.names, names));
+  }
+
+  @override
+  int get hashCode => Object.hash(
+      runtimeType,
+      id,
+      name,
+      decreasedStat,
+      increasedStat,
+      hatesFlavor,
+      likesFlavor,
+      const DeepCollectionEquality().hash(pokeathlonStatChanges),
+      const DeepCollectionEquality().hash(moveBattleStylePreferences),
+      const DeepCollectionEquality().hash(names));
+
+  @JsonKey(ignore: true)
+  @override
+  _$NatureCopyWith<_Nature> get copyWith =>
+      __$NatureCopyWithImpl<_Nature>(this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$$_NatureToJson(this);
+  }
+}
+
+abstract class _Nature implements Nature {
+  const factory _Nature(
+      int id,
+      String name,
+      @JsonKey(name: 'decreased_stat')
+          NamedAPIResource decreasedStat,
+      @JsonKey(name: 'increased_stat')
+          NamedAPIResource increasedStat,
+      @JsonKey(name: 'hates_flavor')
+          NamedAPIResource hatesFlavor,
+      @JsonKey(name: 'likes_flavor')
+          NamedAPIResource likesFlavor,
+      @JsonKey(name: 'pokeathlon_stat_changes')
+          List<NamedAPIResource> pokeathlonStatChanges,
+      @JsonKey(name: 'move_battle_style_preferences')
+          List<MoveBattleStylePreference> moveBattleStylePreferences,
+      List<Name> names) = _$_Nature;
+
+  factory _Nature.fromJson(Map<String, dynamic> json) = _$_Nature.fromJson;
+
+  @override
+  int get id;
+  @override
+  String get name;
+  @override
+  @JsonKey(name: 'decreased_stat')
+  NamedAPIResource get decreasedStat;
+  @override
+  @JsonKey(name: 'increased_stat')
+  NamedAPIResource get increasedStat;
+  @override
+  @JsonKey(name: 'hates_flavor')
+  NamedAPIResource get hatesFlavor;
+  @override
+  @JsonKey(name: 'likes_flavor')
+  NamedAPIResource get likesFlavor;
+  @override
+  @JsonKey(name: 'pokeathlon_stat_changes')
+  List<NamedAPIResource> get pokeathlonStatChanges;
+  @override
+  @JsonKey(name: 'move_battle_style_preferences')
+  List<MoveBattleStylePreference> get moveBattleStylePreferences;
+  @override
+  List<Name> get names;
+  @override
+  @JsonKey(ignore: true)
+  _$NatureCopyWith<_Nature> get copyWith => throw _privateConstructorUsedError;
+}
+
+NatureStatChange _$NatureStatChangeFromJson(Map<String, dynamic> json) {
+  return _NatureStatChange.fromJson(json);
+}
+
+/// @nodoc
+class _$NatureStatChangeTearOff {
+  const _$NatureStatChangeTearOff();
+
+  _NatureStatChange call(@JsonKey(name: 'max_change') int maxChange,
+      @JsonKey(name: 'pokeathlon_stat') NamedAPIResource pokeathlonStat) {
+    return _NatureStatChange(
+      maxChange,
+      pokeathlonStat,
+    );
+  }
+
+  NatureStatChange fromJson(Map<String, Object?> json) {
+    return NatureStatChange.fromJson(json);
+  }
+}
+
+/// @nodoc
+const $NatureStatChange = _$NatureStatChangeTearOff();
+
+/// @nodoc
+mixin _$NatureStatChange {
+  @JsonKey(name: 'max_change')
+  int get maxChange => throw _privateConstructorUsedError;
+  @JsonKey(name: 'pokeathlon_stat')
+  NamedAPIResource get pokeathlonStat => throw _privateConstructorUsedError;
+
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $NatureStatChangeCopyWith<NatureStatChange> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $NatureStatChangeCopyWith<$Res> {
+  factory $NatureStatChangeCopyWith(
+          NatureStatChange value, $Res Function(NatureStatChange) then) =
+      _$NatureStatChangeCopyWithImpl<$Res>;
+  $Res call(
+      {@JsonKey(name: 'max_change') int maxChange,
+      @JsonKey(name: 'pokeathlon_stat') NamedAPIResource pokeathlonStat});
+
+  $NamedAPIResourceCopyWith<$Res> get pokeathlonStat;
+}
+
+/// @nodoc
+class _$NatureStatChangeCopyWithImpl<$Res>
+    implements $NatureStatChangeCopyWith<$Res> {
+  _$NatureStatChangeCopyWithImpl(this._value, this._then);
+
+  final NatureStatChange _value;
+  // ignore: unused_field
+  final $Res Function(NatureStatChange) _then;
+
+  @override
+  $Res call({
+    Object? maxChange = freezed,
+    Object? pokeathlonStat = freezed,
+  }) {
+    return _then(_value.copyWith(
+      maxChange: maxChange == freezed
+          ? _value.maxChange
+          : maxChange // ignore: cast_nullable_to_non_nullable
+              as int,
+      pokeathlonStat: pokeathlonStat == freezed
+          ? _value.pokeathlonStat
+          : pokeathlonStat // ignore: cast_nullable_to_non_nullable
+              as NamedAPIResource,
+    ));
+  }
+
+  @override
+  $NamedAPIResourceCopyWith<$Res> get pokeathlonStat {
+    return $NamedAPIResourceCopyWith<$Res>(_value.pokeathlonStat, (value) {
+      return _then(_value.copyWith(pokeathlonStat: value));
+    });
+  }
+}
+
+/// @nodoc
+abstract class _$NatureStatChangeCopyWith<$Res>
+    implements $NatureStatChangeCopyWith<$Res> {
+  factory _$NatureStatChangeCopyWith(
+          _NatureStatChange value, $Res Function(_NatureStatChange) then) =
+      __$NatureStatChangeCopyWithImpl<$Res>;
+  @override
+  $Res call(
+      {@JsonKey(name: 'max_change') int maxChange,
+      @JsonKey(name: 'pokeathlon_stat') NamedAPIResource pokeathlonStat});
+
+  @override
+  $NamedAPIResourceCopyWith<$Res> get pokeathlonStat;
+}
+
+/// @nodoc
+class __$NatureStatChangeCopyWithImpl<$Res>
+    extends _$NatureStatChangeCopyWithImpl<$Res>
+    implements _$NatureStatChangeCopyWith<$Res> {
+  __$NatureStatChangeCopyWithImpl(
+      _NatureStatChange _value, $Res Function(_NatureStatChange) _then)
+      : super(_value, (v) => _then(v as _NatureStatChange));
+
+  @override
+  _NatureStatChange get _value => super._value as _NatureStatChange;
+
+  @override
+  $Res call({
+    Object? maxChange = freezed,
+    Object? pokeathlonStat = freezed,
+  }) {
+    return _then(_NatureStatChange(
+      maxChange == freezed
+          ? _value.maxChange
+          : maxChange // ignore: cast_nullable_to_non_nullable
+              as int,
+      pokeathlonStat == freezed
+          ? _value.pokeathlonStat
+          : pokeathlonStat // ignore: cast_nullable_to_non_nullable
+              as NamedAPIResource,
+    ));
+  }
+}
+
+/// @nodoc
+@JsonSerializable()
+class _$_NatureStatChange implements _NatureStatChange {
+  const _$_NatureStatChange(@JsonKey(name: 'max_change') this.maxChange,
+      @JsonKey(name: 'pokeathlon_stat') this.pokeathlonStat);
+
+  factory _$_NatureStatChange.fromJson(Map<String, dynamic> json) =>
+      _$$_NatureStatChangeFromJson(json);
+
+  @override
+  @JsonKey(name: 'max_change')
+  final int maxChange;
+  @override
+  @JsonKey(name: 'pokeathlon_stat')
+  final NamedAPIResource pokeathlonStat;
+
+  @override
+  String toString() {
+    return 'NatureStatChange(maxChange: $maxChange, pokeathlonStat: $pokeathlonStat)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _NatureStatChange &&
+            (identical(other.maxChange, maxChange) ||
+                other.maxChange == maxChange) &&
+            (identical(other.pokeathlonStat, pokeathlonStat) ||
+                other.pokeathlonStat == pokeathlonStat));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, maxChange, pokeathlonStat);
+
+  @JsonKey(ignore: true)
+  @override
+  _$NatureStatChangeCopyWith<_NatureStatChange> get copyWith =>
+      __$NatureStatChangeCopyWithImpl<_NatureStatChange>(this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$$_NatureStatChangeToJson(this);
+  }
+}
+
+abstract class _NatureStatChange implements NatureStatChange {
+  const factory _NatureStatChange(@JsonKey(name: 'max_change') int maxChange,
+          @JsonKey(name: 'pokeathlon_stat') NamedAPIResource pokeathlonStat) =
+      _$_NatureStatChange;
+
+  factory _NatureStatChange.fromJson(Map<String, dynamic> json) =
+      _$_NatureStatChange.fromJson;
+
+  @override
+  @JsonKey(name: 'max_change')
+  int get maxChange;
+  @override
+  @JsonKey(name: 'pokeathlon_stat')
+  NamedAPIResource get pokeathlonStat;
+  @override
+  @JsonKey(ignore: true)
+  _$NatureStatChangeCopyWith<_NatureStatChange> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+MoveBattleStylePreference _$MoveBattleStylePreferenceFromJson(
+    Map<String, dynamic> json) {
+  return _MoveBattleStylePreference.fromJson(json);
+}
+
+/// @nodoc
+class _$MoveBattleStylePreferenceTearOff {
+  const _$MoveBattleStylePreferenceTearOff();
+
+  _MoveBattleStylePreference call(
+      @JsonKey(name: 'low_hp_preference') int lowHpPreference,
+      @JsonKey(name: 'high_hp_preference') int highHpPreference,
+      @JsonKey(name: 'move_battle_style') NamedAPIResource moveBattleStyle) {
+    return _MoveBattleStylePreference(
+      lowHpPreference,
+      highHpPreference,
+      moveBattleStyle,
+    );
+  }
+
+  MoveBattleStylePreference fromJson(Map<String, Object?> json) {
+    return MoveBattleStylePreference.fromJson(json);
+  }
+}
+
+/// @nodoc
+const $MoveBattleStylePreference = _$MoveBattleStylePreferenceTearOff();
+
+/// @nodoc
+mixin _$MoveBattleStylePreference {
+  @JsonKey(name: 'low_hp_preference')
+  int get lowHpPreference => throw _privateConstructorUsedError;
+  @JsonKey(name: 'high_hp_preference')
+  int get highHpPreference => throw _privateConstructorUsedError;
+  @JsonKey(name: 'move_battle_style')
+  NamedAPIResource get moveBattleStyle => throw _privateConstructorUsedError;
+
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $MoveBattleStylePreferenceCopyWith<MoveBattleStylePreference> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $MoveBattleStylePreferenceCopyWith<$Res> {
+  factory $MoveBattleStylePreferenceCopyWith(MoveBattleStylePreference value,
+          $Res Function(MoveBattleStylePreference) then) =
+      _$MoveBattleStylePreferenceCopyWithImpl<$Res>;
+  $Res call(
+      {@JsonKey(name: 'low_hp_preference') int lowHpPreference,
+      @JsonKey(name: 'high_hp_preference') int highHpPreference,
+      @JsonKey(name: 'move_battle_style') NamedAPIResource moveBattleStyle});
+
+  $NamedAPIResourceCopyWith<$Res> get moveBattleStyle;
+}
+
+/// @nodoc
+class _$MoveBattleStylePreferenceCopyWithImpl<$Res>
+    implements $MoveBattleStylePreferenceCopyWith<$Res> {
+  _$MoveBattleStylePreferenceCopyWithImpl(this._value, this._then);
+
+  final MoveBattleStylePreference _value;
+  // ignore: unused_field
+  final $Res Function(MoveBattleStylePreference) _then;
+
+  @override
+  $Res call({
+    Object? lowHpPreference = freezed,
+    Object? highHpPreference = freezed,
+    Object? moveBattleStyle = freezed,
+  }) {
+    return _then(_value.copyWith(
+      lowHpPreference: lowHpPreference == freezed
+          ? _value.lowHpPreference
+          : lowHpPreference // ignore: cast_nullable_to_non_nullable
+              as int,
+      highHpPreference: highHpPreference == freezed
+          ? _value.highHpPreference
+          : highHpPreference // ignore: cast_nullable_to_non_nullable
+              as int,
+      moveBattleStyle: moveBattleStyle == freezed
+          ? _value.moveBattleStyle
+          : moveBattleStyle // ignore: cast_nullable_to_non_nullable
+              as NamedAPIResource,
+    ));
+  }
+
+  @override
+  $NamedAPIResourceCopyWith<$Res> get moveBattleStyle {
+    return $NamedAPIResourceCopyWith<$Res>(_value.moveBattleStyle, (value) {
+      return _then(_value.copyWith(moveBattleStyle: value));
+    });
+  }
+}
+
+/// @nodoc
+abstract class _$MoveBattleStylePreferenceCopyWith<$Res>
+    implements $MoveBattleStylePreferenceCopyWith<$Res> {
+  factory _$MoveBattleStylePreferenceCopyWith(_MoveBattleStylePreference value,
+          $Res Function(_MoveBattleStylePreference) then) =
+      __$MoveBattleStylePreferenceCopyWithImpl<$Res>;
+  @override
+  $Res call(
+      {@JsonKey(name: 'low_hp_preference') int lowHpPreference,
+      @JsonKey(name: 'high_hp_preference') int highHpPreference,
+      @JsonKey(name: 'move_battle_style') NamedAPIResource moveBattleStyle});
+
+  @override
+  $NamedAPIResourceCopyWith<$Res> get moveBattleStyle;
+}
+
+/// @nodoc
+class __$MoveBattleStylePreferenceCopyWithImpl<$Res>
+    extends _$MoveBattleStylePreferenceCopyWithImpl<$Res>
+    implements _$MoveBattleStylePreferenceCopyWith<$Res> {
+  __$MoveBattleStylePreferenceCopyWithImpl(_MoveBattleStylePreference _value,
+      $Res Function(_MoveBattleStylePreference) _then)
+      : super(_value, (v) => _then(v as _MoveBattleStylePreference));
+
+  @override
+  _MoveBattleStylePreference get _value =>
+      super._value as _MoveBattleStylePreference;
+
+  @override
+  $Res call({
+    Object? lowHpPreference = freezed,
+    Object? highHpPreference = freezed,
+    Object? moveBattleStyle = freezed,
+  }) {
+    return _then(_MoveBattleStylePreference(
+      lowHpPreference == freezed
+          ? _value.lowHpPreference
+          : lowHpPreference // ignore: cast_nullable_to_non_nullable
+              as int,
+      highHpPreference == freezed
+          ? _value.highHpPreference
+          : highHpPreference // ignore: cast_nullable_to_non_nullable
+              as int,
+      moveBattleStyle == freezed
+          ? _value.moveBattleStyle
+          : moveBattleStyle // ignore: cast_nullable_to_non_nullable
+              as NamedAPIResource,
+    ));
+  }
+}
+
+/// @nodoc
+@JsonSerializable()
+class _$_MoveBattleStylePreference implements _MoveBattleStylePreference {
+  const _$_MoveBattleStylePreference(
+      @JsonKey(name: 'low_hp_preference') this.lowHpPreference,
+      @JsonKey(name: 'high_hp_preference') this.highHpPreference,
+      @JsonKey(name: 'move_battle_style') this.moveBattleStyle);
+
+  factory _$_MoveBattleStylePreference.fromJson(Map<String, dynamic> json) =>
+      _$$_MoveBattleStylePreferenceFromJson(json);
+
+  @override
+  @JsonKey(name: 'low_hp_preference')
+  final int lowHpPreference;
+  @override
+  @JsonKey(name: 'high_hp_preference')
+  final int highHpPreference;
+  @override
+  @JsonKey(name: 'move_battle_style')
+  final NamedAPIResource moveBattleStyle;
+
+  @override
+  String toString() {
+    return 'MoveBattleStylePreference(lowHpPreference: $lowHpPreference, highHpPreference: $highHpPreference, moveBattleStyle: $moveBattleStyle)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _MoveBattleStylePreference &&
+            (identical(other.lowHpPreference, lowHpPreference) ||
+                other.lowHpPreference == lowHpPreference) &&
+            (identical(other.highHpPreference, highHpPreference) ||
+                other.highHpPreference == highHpPreference) &&
+            (identical(other.moveBattleStyle, moveBattleStyle) ||
+                other.moveBattleStyle == moveBattleStyle));
+  }
+
+  @override
+  int get hashCode => Object.hash(
+      runtimeType, lowHpPreference, highHpPreference, moveBattleStyle);
+
+  @JsonKey(ignore: true)
+  @override
+  _$MoveBattleStylePreferenceCopyWith<_MoveBattleStylePreference>
+      get copyWith =>
+          __$MoveBattleStylePreferenceCopyWithImpl<_MoveBattleStylePreference>(
+              this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$$_MoveBattleStylePreferenceToJson(this);
+  }
+}
+
+abstract class _MoveBattleStylePreference implements MoveBattleStylePreference {
+  const factory _MoveBattleStylePreference(
+      @JsonKey(name: 'low_hp_preference')
+          int lowHpPreference,
+      @JsonKey(name: 'high_hp_preference')
+          int highHpPreference,
+      @JsonKey(name: 'move_battle_style')
+          NamedAPIResource moveBattleStyle) = _$_MoveBattleStylePreference;
+
+  factory _MoveBattleStylePreference.fromJson(Map<String, dynamic> json) =
+      _$_MoveBattleStylePreference.fromJson;
+
+  @override
+  @JsonKey(name: 'low_hp_preference')
+  int get lowHpPreference;
+  @override
+  @JsonKey(name: 'high_hp_preference')
+  int get highHpPreference;
+  @override
+  @JsonKey(name: 'move_battle_style')
+  NamedAPIResource get moveBattleStyle;
+  @override
+  @JsonKey(ignore: true)
+  _$MoveBattleStylePreferenceCopyWith<_MoveBattleStylePreference>
+      get copyWith => throw _privateConstructorUsedError;
+}
+
+PokeathlonStat _$PokeathlonStatFromJson(Map<String, dynamic> json) {
+  return _PokeathlonStat.fromJson(json);
+}
+
+/// @nodoc
+class _$PokeathlonStatTearOff {
+  const _$PokeathlonStatTearOff();
+
+  _PokeathlonStat call(
+      int id,
+      String name,
+      List<Name> names,
+      @JsonKey(name: 'affecting_natures')
+          NaturePokeathlonStatAffectSets affectingNatures) {
+    return _PokeathlonStat(
+      id,
+      name,
+      names,
+      affectingNatures,
+    );
+  }
+
+  PokeathlonStat fromJson(Map<String, Object?> json) {
+    return PokeathlonStat.fromJson(json);
+  }
+}
+
+/// @nodoc
+const $PokeathlonStat = _$PokeathlonStatTearOff();
+
+/// @nodoc
+mixin _$PokeathlonStat {
+  int get id => throw _privateConstructorUsedError;
+  String get name => throw _privateConstructorUsedError;
+  List<Name> get names => throw _privateConstructorUsedError;
+  @JsonKey(name: 'affecting_natures')
+  NaturePokeathlonStatAffectSets get affectingNatures =>
+      throw _privateConstructorUsedError;
+
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $PokeathlonStatCopyWith<PokeathlonStat> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $PokeathlonStatCopyWith<$Res> {
+  factory $PokeathlonStatCopyWith(
+          PokeathlonStat value, $Res Function(PokeathlonStat) then) =
+      _$PokeathlonStatCopyWithImpl<$Res>;
+  $Res call(
+      {int id,
+      String name,
+      List<Name> names,
+      @JsonKey(name: 'affecting_natures')
+          NaturePokeathlonStatAffectSets affectingNatures});
+
+  $NaturePokeathlonStatAffectSetsCopyWith<$Res> get affectingNatures;
+}
+
+/// @nodoc
+class _$PokeathlonStatCopyWithImpl<$Res>
+    implements $PokeathlonStatCopyWith<$Res> {
+  _$PokeathlonStatCopyWithImpl(this._value, this._then);
+
+  final PokeathlonStat _value;
+  // ignore: unused_field
+  final $Res Function(PokeathlonStat) _then;
+
+  @override
+  $Res call({
+    Object? id = freezed,
+    Object? name = freezed,
+    Object? names = freezed,
+    Object? affectingNatures = freezed,
+  }) {
+    return _then(_value.copyWith(
+      id: id == freezed
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as int,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      names: names == freezed
+          ? _value.names
+          : names // ignore: cast_nullable_to_non_nullable
+              as List<Name>,
+      affectingNatures: affectingNatures == freezed
+          ? _value.affectingNatures
+          : affectingNatures // ignore: cast_nullable_to_non_nullable
+              as NaturePokeathlonStatAffectSets,
+    ));
+  }
+
+  @override
+  $NaturePokeathlonStatAffectSetsCopyWith<$Res> get affectingNatures {
+    return $NaturePokeathlonStatAffectSetsCopyWith<$Res>(
+        _value.affectingNatures, (value) {
+      return _then(_value.copyWith(affectingNatures: value));
+    });
+  }
+}
+
+/// @nodoc
+abstract class _$PokeathlonStatCopyWith<$Res>
+    implements $PokeathlonStatCopyWith<$Res> {
+  factory _$PokeathlonStatCopyWith(
+          _PokeathlonStat value, $Res Function(_PokeathlonStat) then) =
+      __$PokeathlonStatCopyWithImpl<$Res>;
+  @override
+  $Res call(
+      {int id,
+      String name,
+      List<Name> names,
+      @JsonKey(name: 'affecting_natures')
+          NaturePokeathlonStatAffectSets affectingNatures});
+
+  @override
+  $NaturePokeathlonStatAffectSetsCopyWith<$Res> get affectingNatures;
+}
+
+/// @nodoc
+class __$PokeathlonStatCopyWithImpl<$Res>
+    extends _$PokeathlonStatCopyWithImpl<$Res>
+    implements _$PokeathlonStatCopyWith<$Res> {
+  __$PokeathlonStatCopyWithImpl(
+      _PokeathlonStat _value, $Res Function(_PokeathlonStat) _then)
+      : super(_value, (v) => _then(v as _PokeathlonStat));
+
+  @override
+  _PokeathlonStat get _value => super._value as _PokeathlonStat;
+
+  @override
+  $Res call({
+    Object? id = freezed,
+    Object? name = freezed,
+    Object? names = freezed,
+    Object? affectingNatures = freezed,
+  }) {
+    return _then(_PokeathlonStat(
+      id == freezed
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as int,
+      name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      names == freezed
+          ? _value.names
+          : names // ignore: cast_nullable_to_non_nullable
+              as List<Name>,
+      affectingNatures == freezed
+          ? _value.affectingNatures
+          : affectingNatures // ignore: cast_nullable_to_non_nullable
+              as NaturePokeathlonStatAffectSets,
+    ));
+  }
+}
+
+/// @nodoc
+@JsonSerializable()
+class _$_PokeathlonStat implements _PokeathlonStat {
+  const _$_PokeathlonStat(this.id, this.name, this.names,
+      @JsonKey(name: 'affecting_natures') this.affectingNatures);
+
+  factory _$_PokeathlonStat.fromJson(Map<String, dynamic> json) =>
+      _$$_PokeathlonStatFromJson(json);
+
+  @override
+  final int id;
+  @override
+  final String name;
+  @override
+  final List<Name> names;
+  @override
+  @JsonKey(name: 'affecting_natures')
+  final NaturePokeathlonStatAffectSets affectingNatures;
+
+  @override
+  String toString() {
+    return 'PokeathlonStat(id: $id, name: $name, names: $names, affectingNatures: $affectingNatures)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _PokeathlonStat &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.name, name) || other.name == name) &&
+            const DeepCollectionEquality().equals(other.names, names) &&
+            (identical(other.affectingNatures, affectingNatures) ||
+                other.affectingNatures == affectingNatures));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, id, name,
+      const DeepCollectionEquality().hash(names), affectingNatures);
+
+  @JsonKey(ignore: true)
+  @override
+  _$PokeathlonStatCopyWith<_PokeathlonStat> get copyWith =>
+      __$PokeathlonStatCopyWithImpl<_PokeathlonStat>(this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$$_PokeathlonStatToJson(this);
+  }
+}
+
+abstract class _PokeathlonStat implements PokeathlonStat {
+  const factory _PokeathlonStat(
+      int id,
+      String name,
+      List<Name> names,
+      @JsonKey(name: 'affecting_natures')
+          NaturePokeathlonStatAffectSets affectingNatures) = _$_PokeathlonStat;
+
+  factory _PokeathlonStat.fromJson(Map<String, dynamic> json) =
+      _$_PokeathlonStat.fromJson;
+
+  @override
+  int get id;
+  @override
+  String get name;
+  @override
+  List<Name> get names;
+  @override
+  @JsonKey(name: 'affecting_natures')
+  NaturePokeathlonStatAffectSets get affectingNatures;
+  @override
+  @JsonKey(ignore: true)
+  _$PokeathlonStatCopyWith<_PokeathlonStat> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+NaturePokeathlonStatAffectSets _$NaturePokeathlonStatAffectSetsFromJson(
+    Map<String, dynamic> json) {
+  return _NaturePokeathlonStatAffectSets.fromJson(json);
+}
+
+/// @nodoc
+class _$NaturePokeathlonStatAffectSetsTearOff {
+  const _$NaturePokeathlonStatAffectSetsTearOff();
+
+  _NaturePokeathlonStatAffectSets call(
+      List<NaturePokeathlonStatAffect> increase,
+      List<NaturePokeathlonStatAffect> decrease) {
+    return _NaturePokeathlonStatAffectSets(
+      increase,
+      decrease,
+    );
+  }
+
+  NaturePokeathlonStatAffectSets fromJson(Map<String, Object?> json) {
+    return NaturePokeathlonStatAffectSets.fromJson(json);
+  }
+}
+
+/// @nodoc
+const $NaturePokeathlonStatAffectSets =
+    _$NaturePokeathlonStatAffectSetsTearOff();
+
+/// @nodoc
+mixin _$NaturePokeathlonStatAffectSets {
+  List<NaturePokeathlonStatAffect> get increase =>
+      throw _privateConstructorUsedError;
+  List<NaturePokeathlonStatAffect> get decrease =>
+      throw _privateConstructorUsedError;
+
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $NaturePokeathlonStatAffectSetsCopyWith<NaturePokeathlonStatAffectSets>
+      get copyWith => throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $NaturePokeathlonStatAffectSetsCopyWith<$Res> {
+  factory $NaturePokeathlonStatAffectSetsCopyWith(
+          NaturePokeathlonStatAffectSets value,
+          $Res Function(NaturePokeathlonStatAffectSets) then) =
+      _$NaturePokeathlonStatAffectSetsCopyWithImpl<$Res>;
+  $Res call(
+      {List<NaturePokeathlonStatAffect> increase,
+      List<NaturePokeathlonStatAffect> decrease});
+}
+
+/// @nodoc
+class _$NaturePokeathlonStatAffectSetsCopyWithImpl<$Res>
+    implements $NaturePokeathlonStatAffectSetsCopyWith<$Res> {
+  _$NaturePokeathlonStatAffectSetsCopyWithImpl(this._value, this._then);
+
+  final NaturePokeathlonStatAffectSets _value;
+  // ignore: unused_field
+  final $Res Function(NaturePokeathlonStatAffectSets) _then;
+
+  @override
+  $Res call({
+    Object? increase = freezed,
+    Object? decrease = freezed,
+  }) {
+    return _then(_value.copyWith(
+      increase: increase == freezed
+          ? _value.increase
+          : increase // ignore: cast_nullable_to_non_nullable
+              as List<NaturePokeathlonStatAffect>,
+      decrease: decrease == freezed
+          ? _value.decrease
+          : decrease // ignore: cast_nullable_to_non_nullable
+              as List<NaturePokeathlonStatAffect>,
+    ));
+  }
+}
+
+/// @nodoc
+abstract class _$NaturePokeathlonStatAffectSetsCopyWith<$Res>
+    implements $NaturePokeathlonStatAffectSetsCopyWith<$Res> {
+  factory _$NaturePokeathlonStatAffectSetsCopyWith(
+          _NaturePokeathlonStatAffectSets value,
+          $Res Function(_NaturePokeathlonStatAffectSets) then) =
+      __$NaturePokeathlonStatAffectSetsCopyWithImpl<$Res>;
+  @override
+  $Res call(
+      {List<NaturePokeathlonStatAffect> increase,
+      List<NaturePokeathlonStatAffect> decrease});
+}
+
+/// @nodoc
+class __$NaturePokeathlonStatAffectSetsCopyWithImpl<$Res>
+    extends _$NaturePokeathlonStatAffectSetsCopyWithImpl<$Res>
+    implements _$NaturePokeathlonStatAffectSetsCopyWith<$Res> {
+  __$NaturePokeathlonStatAffectSetsCopyWithImpl(
+      _NaturePokeathlonStatAffectSets _value,
+      $Res Function(_NaturePokeathlonStatAffectSets) _then)
+      : super(_value, (v) => _then(v as _NaturePokeathlonStatAffectSets));
+
+  @override
+  _NaturePokeathlonStatAffectSets get _value =>
+      super._value as _NaturePokeathlonStatAffectSets;
+
+  @override
+  $Res call({
+    Object? increase = freezed,
+    Object? decrease = freezed,
+  }) {
+    return _then(_NaturePokeathlonStatAffectSets(
+      increase == freezed
+          ? _value.increase
+          : increase // ignore: cast_nullable_to_non_nullable
+              as List<NaturePokeathlonStatAffect>,
+      decrease == freezed
+          ? _value.decrease
+          : decrease // ignore: cast_nullable_to_non_nullable
+              as List<NaturePokeathlonStatAffect>,
+    ));
+  }
+}
+
+/// @nodoc
+@JsonSerializable()
+class _$_NaturePokeathlonStatAffectSets
+    implements _NaturePokeathlonStatAffectSets {
+  const _$_NaturePokeathlonStatAffectSets(this.increase, this.decrease);
+
+  factory _$_NaturePokeathlonStatAffectSets.fromJson(
+          Map<String, dynamic> json) =>
+      _$$_NaturePokeathlonStatAffectSetsFromJson(json);
+
+  @override
+  final List<NaturePokeathlonStatAffect> increase;
+  @override
+  final List<NaturePokeathlonStatAffect> decrease;
+
+  @override
+  String toString() {
+    return 'NaturePokeathlonStatAffectSets(increase: $increase, decrease: $decrease)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _NaturePokeathlonStatAffectSets &&
+            const DeepCollectionEquality().equals(other.increase, increase) &&
+            const DeepCollectionEquality().equals(other.decrease, decrease));
+  }
+
+  @override
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(increase),
+      const DeepCollectionEquality().hash(decrease));
+
+  @JsonKey(ignore: true)
+  @override
+  _$NaturePokeathlonStatAffectSetsCopyWith<_NaturePokeathlonStatAffectSets>
+      get copyWith => __$NaturePokeathlonStatAffectSetsCopyWithImpl<
+          _NaturePokeathlonStatAffectSets>(this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$$_NaturePokeathlonStatAffectSetsToJson(this);
+  }
+}
+
+abstract class _NaturePokeathlonStatAffectSets
+    implements NaturePokeathlonStatAffectSets {
+  const factory _NaturePokeathlonStatAffectSets(
+          List<NaturePokeathlonStatAffect> increase,
+          List<NaturePokeathlonStatAffect> decrease) =
+      _$_NaturePokeathlonStatAffectSets;
+
+  factory _NaturePokeathlonStatAffectSets.fromJson(Map<String, dynamic> json) =
+      _$_NaturePokeathlonStatAffectSets.fromJson;
+
+  @override
+  List<NaturePokeathlonStatAffect> get increase;
+  @override
+  List<NaturePokeathlonStatAffect> get decrease;
+  @override
+  @JsonKey(ignore: true)
+  _$NaturePokeathlonStatAffectSetsCopyWith<_NaturePokeathlonStatAffectSets>
+      get copyWith => throw _privateConstructorUsedError;
+}
+
+NaturePokeathlonStatAffect _$NaturePokeathlonStatAffectFromJson(
+    Map<String, dynamic> json) {
+  return _NaturePokeathlonStatAffect.fromJson(json);
+}
+
+/// @nodoc
+class _$NaturePokeathlonStatAffectTearOff {
+  const _$NaturePokeathlonStatAffectTearOff();
+
+  _NaturePokeathlonStatAffect call(
+      @JsonKey(name: 'max_change') int maxChange, NamedAPIResource nature) {
+    return _NaturePokeathlonStatAffect(
+      maxChange,
+      nature,
+    );
+  }
+
+  NaturePokeathlonStatAffect fromJson(Map<String, Object?> json) {
+    return NaturePokeathlonStatAffect.fromJson(json);
+  }
+}
+
+/// @nodoc
+const $NaturePokeathlonStatAffect = _$NaturePokeathlonStatAffectTearOff();
+
+/// @nodoc
+mixin _$NaturePokeathlonStatAffect {
+  @JsonKey(name: 'max_change')
+  int get maxChange => throw _privateConstructorUsedError;
+  NamedAPIResource get nature => throw _privateConstructorUsedError;
+
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $NaturePokeathlonStatAffectCopyWith<NaturePokeathlonStatAffect>
+      get copyWith => throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $NaturePokeathlonStatAffectCopyWith<$Res> {
+  factory $NaturePokeathlonStatAffectCopyWith(NaturePokeathlonStatAffect value,
+          $Res Function(NaturePokeathlonStatAffect) then) =
+      _$NaturePokeathlonStatAffectCopyWithImpl<$Res>;
+  $Res call(
+      {@JsonKey(name: 'max_change') int maxChange, NamedAPIResource nature});
+
+  $NamedAPIResourceCopyWith<$Res> get nature;
+}
+
+/// @nodoc
+class _$NaturePokeathlonStatAffectCopyWithImpl<$Res>
+    implements $NaturePokeathlonStatAffectCopyWith<$Res> {
+  _$NaturePokeathlonStatAffectCopyWithImpl(this._value, this._then);
+
+  final NaturePokeathlonStatAffect _value;
+  // ignore: unused_field
+  final $Res Function(NaturePokeathlonStatAffect) _then;
+
+  @override
+  $Res call({
+    Object? maxChange = freezed,
+    Object? nature = freezed,
+  }) {
+    return _then(_value.copyWith(
+      maxChange: maxChange == freezed
+          ? _value.maxChange
+          : maxChange // ignore: cast_nullable_to_non_nullable
+              as int,
+      nature: nature == freezed
+          ? _value.nature
+          : nature // ignore: cast_nullable_to_non_nullable
+              as NamedAPIResource,
+    ));
+  }
+
+  @override
+  $NamedAPIResourceCopyWith<$Res> get nature {
+    return $NamedAPIResourceCopyWith<$Res>(_value.nature, (value) {
+      return _then(_value.copyWith(nature: value));
+    });
+  }
+}
+
+/// @nodoc
+abstract class _$NaturePokeathlonStatAffectCopyWith<$Res>
+    implements $NaturePokeathlonStatAffectCopyWith<$Res> {
+  factory _$NaturePokeathlonStatAffectCopyWith(
+          _NaturePokeathlonStatAffect value,
+          $Res Function(_NaturePokeathlonStatAffect) then) =
+      __$NaturePokeathlonStatAffectCopyWithImpl<$Res>;
+  @override
+  $Res call(
+      {@JsonKey(name: 'max_change') int maxChange, NamedAPIResource nature});
+
+  @override
+  $NamedAPIResourceCopyWith<$Res> get nature;
+}
+
+/// @nodoc
+class __$NaturePokeathlonStatAffectCopyWithImpl<$Res>
+    extends _$NaturePokeathlonStatAffectCopyWithImpl<$Res>
+    implements _$NaturePokeathlonStatAffectCopyWith<$Res> {
+  __$NaturePokeathlonStatAffectCopyWithImpl(_NaturePokeathlonStatAffect _value,
+      $Res Function(_NaturePokeathlonStatAffect) _then)
+      : super(_value, (v) => _then(v as _NaturePokeathlonStatAffect));
+
+  @override
+  _NaturePokeathlonStatAffect get _value =>
+      super._value as _NaturePokeathlonStatAffect;
+
+  @override
+  $Res call({
+    Object? maxChange = freezed,
+    Object? nature = freezed,
+  }) {
+    return _then(_NaturePokeathlonStatAffect(
+      maxChange == freezed
+          ? _value.maxChange
+          : maxChange // ignore: cast_nullable_to_non_nullable
+              as int,
+      nature == freezed
+          ? _value.nature
+          : nature // ignore: cast_nullable_to_non_nullable
+              as NamedAPIResource,
+    ));
+  }
+}
+
+/// @nodoc
+@JsonSerializable()
+class _$_NaturePokeathlonStatAffect implements _NaturePokeathlonStatAffect {
+  const _$_NaturePokeathlonStatAffect(
+      @JsonKey(name: 'max_change') this.maxChange, this.nature);
+
+  factory _$_NaturePokeathlonStatAffect.fromJson(Map<String, dynamic> json) =>
+      _$$_NaturePokeathlonStatAffectFromJson(json);
+
+  @override
+  @JsonKey(name: 'max_change')
+  final int maxChange;
+  @override
+  final NamedAPIResource nature;
+
+  @override
+  String toString() {
+    return 'NaturePokeathlonStatAffect(maxChange: $maxChange, nature: $nature)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _NaturePokeathlonStatAffect &&
+            (identical(other.maxChange, maxChange) ||
+                other.maxChange == maxChange) &&
+            (identical(other.nature, nature) || other.nature == nature));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, maxChange, nature);
+
+  @JsonKey(ignore: true)
+  @override
+  _$NaturePokeathlonStatAffectCopyWith<_NaturePokeathlonStatAffect>
+      get copyWith => __$NaturePokeathlonStatAffectCopyWithImpl<
+          _NaturePokeathlonStatAffect>(this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$$_NaturePokeathlonStatAffectToJson(this);
+  }
+}
+
+abstract class _NaturePokeathlonStatAffect
+    implements NaturePokeathlonStatAffect {
+  const factory _NaturePokeathlonStatAffect(
+          @JsonKey(name: 'max_change') int maxChange, NamedAPIResource nature) =
+      _$_NaturePokeathlonStatAffect;
+
+  factory _NaturePokeathlonStatAffect.fromJson(Map<String, dynamic> json) =
+      _$_NaturePokeathlonStatAffect.fromJson;
+
+  @override
+  @JsonKey(name: 'max_change')
+  int get maxChange;
+  @override
+  NamedAPIResource get nature;
+  @override
+  @JsonKey(ignore: true)
+  _$NaturePokeathlonStatAffectCopyWith<_NaturePokeathlonStatAffect>
+      get copyWith => throw _privateConstructorUsedError;
+}
+
+Pokemon _$PokemonFromJson(Map<String, dynamic> json) {
+  return _Pokemon.fromJson(json);
+}
+
+/// @nodoc
+class _$PokemonTearOff {
+  const _$PokemonTearOff();
+
+  _Pokemon call(
+      int id,
+      String name,
+      @JsonKey(name: 'base_experience') int baseExperience,
+      int height,
+      @JsonKey(name: 'is_default') bool isDefault,
+      int order,
+      int weight,
+      List<PokemonAbility> abilities,
+      List<NamedAPIResource> forms,
+      @JsonKey(name: 'game_indices') List<VersionGameIndex> gameIndices,
+      @JsonKey(name: 'held_items') List<PokemonHeldItem> heldItems,
+      @JsonKey(name: 'location_area_encounters') String locationAreaEncounters,
+      List<PokemonMove> moves,
+      @JsonKey(name: 'past_types') List<PokemonTypePast> pastTypes,
+      PokemonSprites sprites,
+      NamedAPIResource species,
+      List<PokemonStat> stats,
+      List<PokemonType> types) {
+    return _Pokemon(
+      id,
+      name,
+      baseExperience,
+      height,
+      isDefault,
+      order,
+      weight,
+      abilities,
+      forms,
+      gameIndices,
+      heldItems,
+      locationAreaEncounters,
+      moves,
+      pastTypes,
+      sprites,
+      species,
+      stats,
+      types,
+    );
+  }
+
+  Pokemon fromJson(Map<String, Object?> json) {
+    return Pokemon.fromJson(json);
+  }
+}
+
+/// @nodoc
+const $Pokemon = _$PokemonTearOff();
+
+/// @nodoc
+mixin _$Pokemon {
+  int get id => throw _privateConstructorUsedError;
+  String get name => throw _privateConstructorUsedError;
+  @JsonKey(name: 'base_experience')
+  int get baseExperience => throw _privateConstructorUsedError;
+  int get height => throw _privateConstructorUsedError;
+  @JsonKey(name: 'is_default')
+  bool get isDefault => throw _privateConstructorUsedError;
+  int get order => throw _privateConstructorUsedError;
+  int get weight => throw _privateConstructorUsedError;
+  List<PokemonAbility> get abilities => throw _privateConstructorUsedError;
+  List<NamedAPIResource> get forms => throw _privateConstructorUsedError;
+  @JsonKey(name: 'game_indices')
+  List<VersionGameIndex> get gameIndices => throw _privateConstructorUsedError;
+  @JsonKey(name: 'held_items')
+  List<PokemonHeldItem> get heldItems => throw _privateConstructorUsedError;
+  @JsonKey(name: 'location_area_encounters')
+  String get locationAreaEncounters => throw _privateConstructorUsedError;
+  List<PokemonMove> get moves => throw _privateConstructorUsedError;
+  @JsonKey(name: 'past_types')
+  List<PokemonTypePast> get pastTypes => throw _privateConstructorUsedError;
+  PokemonSprites get sprites => throw _privateConstructorUsedError;
+  NamedAPIResource get species => throw _privateConstructorUsedError;
+  List<PokemonStat> get stats => throw _privateConstructorUsedError;
+  List<PokemonType> get types => throw _privateConstructorUsedError;
+
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $PokemonCopyWith<Pokemon> get copyWith => throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $PokemonCopyWith<$Res> {
+  factory $PokemonCopyWith(Pokemon value, $Res Function(Pokemon) then) =
+      _$PokemonCopyWithImpl<$Res>;
+  $Res call(
+      {int id,
+      String name,
+      @JsonKey(name: 'base_experience') int baseExperience,
+      int height,
+      @JsonKey(name: 'is_default') bool isDefault,
+      int order,
+      int weight,
+      List<PokemonAbility> abilities,
+      List<NamedAPIResource> forms,
+      @JsonKey(name: 'game_indices') List<VersionGameIndex> gameIndices,
+      @JsonKey(name: 'held_items') List<PokemonHeldItem> heldItems,
+      @JsonKey(name: 'location_area_encounters') String locationAreaEncounters,
+      List<PokemonMove> moves,
+      @JsonKey(name: 'past_types') List<PokemonTypePast> pastTypes,
+      PokemonSprites sprites,
+      NamedAPIResource species,
+      List<PokemonStat> stats,
+      List<PokemonType> types});
+
+  $PokemonSpritesCopyWith<$Res> get sprites;
+  $NamedAPIResourceCopyWith<$Res> get species;
+}
+
+/// @nodoc
+class _$PokemonCopyWithImpl<$Res> implements $PokemonCopyWith<$Res> {
+  _$PokemonCopyWithImpl(this._value, this._then);
+
+  final Pokemon _value;
+  // ignore: unused_field
+  final $Res Function(Pokemon) _then;
+
+  @override
+  $Res call({
+    Object? id = freezed,
+    Object? name = freezed,
+    Object? baseExperience = freezed,
+    Object? height = freezed,
+    Object? isDefault = freezed,
+    Object? order = freezed,
+    Object? weight = freezed,
+    Object? abilities = freezed,
+    Object? forms = freezed,
+    Object? gameIndices = freezed,
+    Object? heldItems = freezed,
+    Object? locationAreaEncounters = freezed,
+    Object? moves = freezed,
+    Object? pastTypes = freezed,
+    Object? sprites = freezed,
+    Object? species = freezed,
+    Object? stats = freezed,
+    Object? types = freezed,
+  }) {
+    return _then(_value.copyWith(
+      id: id == freezed
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as int,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      baseExperience: baseExperience == freezed
+          ? _value.baseExperience
+          : baseExperience // ignore: cast_nullable_to_non_nullable
+              as int,
+      height: height == freezed
+          ? _value.height
+          : height // ignore: cast_nullable_to_non_nullable
+              as int,
+      isDefault: isDefault == freezed
+          ? _value.isDefault
+          : isDefault // ignore: cast_nullable_to_non_nullable
+              as bool,
+      order: order == freezed
+          ? _value.order
+          : order // ignore: cast_nullable_to_non_nullable
+              as int,
+      weight: weight == freezed
+          ? _value.weight
+          : weight // ignore: cast_nullable_to_non_nullable
+              as int,
+      abilities: abilities == freezed
+          ? _value.abilities
+          : abilities // ignore: cast_nullable_to_non_nullable
+              as List<PokemonAbility>,
+      forms: forms == freezed
+          ? _value.forms
+          : forms // ignore: cast_nullable_to_non_nullable
+              as List<NamedAPIResource>,
+      gameIndices: gameIndices == freezed
+          ? _value.gameIndices
+          : gameIndices // ignore: cast_nullable_to_non_nullable
+              as List<VersionGameIndex>,
+      heldItems: heldItems == freezed
+          ? _value.heldItems
+          : heldItems // ignore: cast_nullable_to_non_nullable
+              as List<PokemonHeldItem>,
+      locationAreaEncounters: locationAreaEncounters == freezed
+          ? _value.locationAreaEncounters
+          : locationAreaEncounters // ignore: cast_nullable_to_non_nullable
+              as String,
+      moves: moves == freezed
+          ? _value.moves
+          : moves // ignore: cast_nullable_to_non_nullable
+              as List<PokemonMove>,
+      pastTypes: pastTypes == freezed
+          ? _value.pastTypes
+          : pastTypes // ignore: cast_nullable_to_non_nullable
+              as List<PokemonTypePast>,
+      sprites: sprites == freezed
+          ? _value.sprites
+          : sprites // ignore: cast_nullable_to_non_nullable
+              as PokemonSprites,
+      species: species == freezed
+          ? _value.species
+          : species // ignore: cast_nullable_to_non_nullable
+              as NamedAPIResource,
+      stats: stats == freezed
+          ? _value.stats
+          : stats // ignore: cast_nullable_to_non_nullable
+              as List<PokemonStat>,
+      types: types == freezed
+          ? _value.types
+          : types // ignore: cast_nullable_to_non_nullable
+              as List<PokemonType>,
+    ));
+  }
+
+  @override
+  $PokemonSpritesCopyWith<$Res> get sprites {
+    return $PokemonSpritesCopyWith<$Res>(_value.sprites, (value) {
+      return _then(_value.copyWith(sprites: value));
+    });
+  }
+
+  @override
+  $NamedAPIResourceCopyWith<$Res> get species {
+    return $NamedAPIResourceCopyWith<$Res>(_value.species, (value) {
+      return _then(_value.copyWith(species: value));
+    });
+  }
+}
+
+/// @nodoc
+abstract class _$PokemonCopyWith<$Res> implements $PokemonCopyWith<$Res> {
+  factory _$PokemonCopyWith(_Pokemon value, $Res Function(_Pokemon) then) =
+      __$PokemonCopyWithImpl<$Res>;
+  @override
+  $Res call(
+      {int id,
+      String name,
+      @JsonKey(name: 'base_experience') int baseExperience,
+      int height,
+      @JsonKey(name: 'is_default') bool isDefault,
+      int order,
+      int weight,
+      List<PokemonAbility> abilities,
+      List<NamedAPIResource> forms,
+      @JsonKey(name: 'game_indices') List<VersionGameIndex> gameIndices,
+      @JsonKey(name: 'held_items') List<PokemonHeldItem> heldItems,
+      @JsonKey(name: 'location_area_encounters') String locationAreaEncounters,
+      List<PokemonMove> moves,
+      @JsonKey(name: 'past_types') List<PokemonTypePast> pastTypes,
+      PokemonSprites sprites,
+      NamedAPIResource species,
+      List<PokemonStat> stats,
+      List<PokemonType> types});
+
+  @override
+  $PokemonSpritesCopyWith<$Res> get sprites;
+  @override
+  $NamedAPIResourceCopyWith<$Res> get species;
+}
+
+/// @nodoc
+class __$PokemonCopyWithImpl<$Res> extends _$PokemonCopyWithImpl<$Res>
+    implements _$PokemonCopyWith<$Res> {
+  __$PokemonCopyWithImpl(_Pokemon _value, $Res Function(_Pokemon) _then)
+      : super(_value, (v) => _then(v as _Pokemon));
+
+  @override
+  _Pokemon get _value => super._value as _Pokemon;
+
+  @override
+  $Res call({
+    Object? id = freezed,
+    Object? name = freezed,
+    Object? baseExperience = freezed,
+    Object? height = freezed,
+    Object? isDefault = freezed,
+    Object? order = freezed,
+    Object? weight = freezed,
+    Object? abilities = freezed,
+    Object? forms = freezed,
+    Object? gameIndices = freezed,
+    Object? heldItems = freezed,
+    Object? locationAreaEncounters = freezed,
+    Object? moves = freezed,
+    Object? pastTypes = freezed,
+    Object? sprites = freezed,
+    Object? species = freezed,
+    Object? stats = freezed,
+    Object? types = freezed,
+  }) {
+    return _then(_Pokemon(
+      id == freezed
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as int,
+      name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      baseExperience == freezed
+          ? _value.baseExperience
+          : baseExperience // ignore: cast_nullable_to_non_nullable
+              as int,
+      height == freezed
+          ? _value.height
+          : height // ignore: cast_nullable_to_non_nullable
+              as int,
+      isDefault == freezed
+          ? _value.isDefault
+          : isDefault // ignore: cast_nullable_to_non_nullable
+              as bool,
+      order == freezed
+          ? _value.order
+          : order // ignore: cast_nullable_to_non_nullable
+              as int,
+      weight == freezed
+          ? _value.weight
+          : weight // ignore: cast_nullable_to_non_nullable
+              as int,
+      abilities == freezed
+          ? _value.abilities
+          : abilities // ignore: cast_nullable_to_non_nullable
+              as List<PokemonAbility>,
+      forms == freezed
+          ? _value.forms
+          : forms // ignore: cast_nullable_to_non_nullable
+              as List<NamedAPIResource>,
+      gameIndices == freezed
+          ? _value.gameIndices
+          : gameIndices // ignore: cast_nullable_to_non_nullable
+              as List<VersionGameIndex>,
+      heldItems == freezed
+          ? _value.heldItems
+          : heldItems // ignore: cast_nullable_to_non_nullable
+              as List<PokemonHeldItem>,
+      locationAreaEncounters == freezed
+          ? _value.locationAreaEncounters
+          : locationAreaEncounters // ignore: cast_nullable_to_non_nullable
+              as String,
+      moves == freezed
+          ? _value.moves
+          : moves // ignore: cast_nullable_to_non_nullable
+              as List<PokemonMove>,
+      pastTypes == freezed
+          ? _value.pastTypes
+          : pastTypes // ignore: cast_nullable_to_non_nullable
+              as List<PokemonTypePast>,
+      sprites == freezed
+          ? _value.sprites
+          : sprites // ignore: cast_nullable_to_non_nullable
+              as PokemonSprites,
+      species == freezed
+          ? _value.species
+          : species // ignore: cast_nullable_to_non_nullable
+              as NamedAPIResource,
+      stats == freezed
+          ? _value.stats
+          : stats // ignore: cast_nullable_to_non_nullable
+              as List<PokemonStat>,
+      types == freezed
+          ? _value.types
+          : types // ignore: cast_nullable_to_non_nullable
+              as List<PokemonType>,
+    ));
+  }
+}
+
+/// @nodoc
+@JsonSerializable()
+class _$_Pokemon implements _Pokemon {
+  const _$_Pokemon(
+      this.id,
+      this.name,
+      @JsonKey(name: 'base_experience') this.baseExperience,
+      this.height,
+      @JsonKey(name: 'is_default') this.isDefault,
+      this.order,
+      this.weight,
+      this.abilities,
+      this.forms,
+      @JsonKey(name: 'game_indices') this.gameIndices,
+      @JsonKey(name: 'held_items') this.heldItems,
+      @JsonKey(name: 'location_area_encounters') this.locationAreaEncounters,
+      this.moves,
+      @JsonKey(name: 'past_types') this.pastTypes,
+      this.sprites,
+      this.species,
+      this.stats,
+      this.types);
+
+  factory _$_Pokemon.fromJson(Map<String, dynamic> json) =>
+      _$$_PokemonFromJson(json);
+
+  @override
+  final int id;
+  @override
+  final String name;
+  @override
+  @JsonKey(name: 'base_experience')
+  final int baseExperience;
+  @override
+  final int height;
+  @override
+  @JsonKey(name: 'is_default')
+  final bool isDefault;
+  @override
+  final int order;
+  @override
+  final int weight;
+  @override
+  final List<PokemonAbility> abilities;
+  @override
+  final List<NamedAPIResource> forms;
+  @override
+  @JsonKey(name: 'game_indices')
+  final List<VersionGameIndex> gameIndices;
+  @override
+  @JsonKey(name: 'held_items')
+  final List<PokemonHeldItem> heldItems;
+  @override
+  @JsonKey(name: 'location_area_encounters')
+  final String locationAreaEncounters;
+  @override
+  final List<PokemonMove> moves;
+  @override
+  @JsonKey(name: 'past_types')
+  final List<PokemonTypePast> pastTypes;
+  @override
+  final PokemonSprites sprites;
+  @override
+  final NamedAPIResource species;
+  @override
+  final List<PokemonStat> stats;
+  @override
+  final List<PokemonType> types;
+
+  @override
+  String toString() {
+    return 'Pokemon(id: $id, name: $name, baseExperience: $baseExperience, height: $height, isDefault: $isDefault, order: $order, weight: $weight, abilities: $abilities, forms: $forms, gameIndices: $gameIndices, heldItems: $heldItems, locationAreaEncounters: $locationAreaEncounters, moves: $moves, pastTypes: $pastTypes, sprites: $sprites, species: $species, stats: $stats, types: $types)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _Pokemon &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.name, name) || other.name == name) &&
+            (identical(other.baseExperience, baseExperience) ||
+                other.baseExperience == baseExperience) &&
+            (identical(other.height, height) || other.height == height) &&
+            (identical(other.isDefault, isDefault) ||
+                other.isDefault == isDefault) &&
+            (identical(other.order, order) || other.order == order) &&
+            (identical(other.weight, weight) || other.weight == weight) &&
+            const DeepCollectionEquality().equals(other.abilities, abilities) &&
+            const DeepCollectionEquality().equals(other.forms, forms) &&
+            const DeepCollectionEquality()
+                .equals(other.gameIndices, gameIndices) &&
+            const DeepCollectionEquality().equals(other.heldItems, heldItems) &&
+            (identical(other.locationAreaEncounters, locationAreaEncounters) ||
+                other.locationAreaEncounters == locationAreaEncounters) &&
+            const DeepCollectionEquality().equals(other.moves, moves) &&
+            const DeepCollectionEquality().equals(other.pastTypes, pastTypes) &&
+            (identical(other.sprites, sprites) || other.sprites == sprites) &&
+            (identical(other.species, species) || other.species == species) &&
+            const DeepCollectionEquality().equals(other.stats, stats) &&
+            const DeepCollectionEquality().equals(other.types, types));
+  }
+
+  @override
+  int get hashCode => Object.hash(
+      runtimeType,
+      id,
+      name,
+      baseExperience,
+      height,
+      isDefault,
+      order,
+      weight,
+      const DeepCollectionEquality().hash(abilities),
+      const DeepCollectionEquality().hash(forms),
+      const DeepCollectionEquality().hash(gameIndices),
+      const DeepCollectionEquality().hash(heldItems),
+      locationAreaEncounters,
+      const DeepCollectionEquality().hash(moves),
+      const DeepCollectionEquality().hash(pastTypes),
+      sprites,
+      species,
+      const DeepCollectionEquality().hash(stats),
+      const DeepCollectionEquality().hash(types));
+
+  @JsonKey(ignore: true)
+  @override
+  _$PokemonCopyWith<_Pokemon> get copyWith =>
+      __$PokemonCopyWithImpl<_Pokemon>(this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$$_PokemonToJson(this);
+  }
+}
+
+abstract class _Pokemon implements Pokemon {
+  const factory _Pokemon(
+      int id,
+      String name,
+      @JsonKey(name: 'base_experience') int baseExperience,
+      int height,
+      @JsonKey(name: 'is_default') bool isDefault,
+      int order,
+      int weight,
+      List<PokemonAbility> abilities,
+      List<NamedAPIResource> forms,
+      @JsonKey(name: 'game_indices') List<VersionGameIndex> gameIndices,
+      @JsonKey(name: 'held_items') List<PokemonHeldItem> heldItems,
+      @JsonKey(name: 'location_area_encounters') String locationAreaEncounters,
+      List<PokemonMove> moves,
+      @JsonKey(name: 'past_types') List<PokemonTypePast> pastTypes,
+      PokemonSprites sprites,
+      NamedAPIResource species,
+      List<PokemonStat> stats,
+      List<PokemonType> types) = _$_Pokemon;
+
+  factory _Pokemon.fromJson(Map<String, dynamic> json) = _$_Pokemon.fromJson;
+
+  @override
+  int get id;
+  @override
+  String get name;
+  @override
+  @JsonKey(name: 'base_experience')
+  int get baseExperience;
+  @override
+  int get height;
+  @override
+  @JsonKey(name: 'is_default')
+  bool get isDefault;
+  @override
+  int get order;
+  @override
+  int get weight;
+  @override
+  List<PokemonAbility> get abilities;
+  @override
+  List<NamedAPIResource> get forms;
+  @override
+  @JsonKey(name: 'game_indices')
+  List<VersionGameIndex> get gameIndices;
+  @override
+  @JsonKey(name: 'held_items')
+  List<PokemonHeldItem> get heldItems;
+  @override
+  @JsonKey(name: 'location_area_encounters')
+  String get locationAreaEncounters;
+  @override
+  List<PokemonMove> get moves;
+  @override
+  @JsonKey(name: 'past_types')
+  List<PokemonTypePast> get pastTypes;
+  @override
+  PokemonSprites get sprites;
+  @override
+  NamedAPIResource get species;
+  @override
+  List<PokemonStat> get stats;
+  @override
+  List<PokemonType> get types;
+  @override
+  @JsonKey(ignore: true)
+  _$PokemonCopyWith<_Pokemon> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+PokemonAbility _$PokemonAbilityFromJson(Map<String, dynamic> json) {
+  return _PokemonAbility.fromJson(json);
+}
+
+/// @nodoc
+class _$PokemonAbilityTearOff {
+  const _$PokemonAbilityTearOff();
+
+  _PokemonAbility call(@JsonKey(name: 'is_hidden') bool isHidden, int slot,
+      NamedAPIResource ability) {
+    return _PokemonAbility(
+      isHidden,
+      slot,
+      ability,
+    );
+  }
+
+  PokemonAbility fromJson(Map<String, Object?> json) {
+    return PokemonAbility.fromJson(json);
+  }
+}
+
+/// @nodoc
+const $PokemonAbility = _$PokemonAbilityTearOff();
+
+/// @nodoc
+mixin _$PokemonAbility {
+  @JsonKey(name: 'is_hidden')
+  bool get isHidden => throw _privateConstructorUsedError;
+  int get slot => throw _privateConstructorUsedError;
+  NamedAPIResource get ability => throw _privateConstructorUsedError;
+
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $PokemonAbilityCopyWith<PokemonAbility> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $PokemonAbilityCopyWith<$Res> {
+  factory $PokemonAbilityCopyWith(
+          PokemonAbility value, $Res Function(PokemonAbility) then) =
+      _$PokemonAbilityCopyWithImpl<$Res>;
+  $Res call(
+      {@JsonKey(name: 'is_hidden') bool isHidden,
+      int slot,
+      NamedAPIResource ability});
+
+  $NamedAPIResourceCopyWith<$Res> get ability;
+}
+
+/// @nodoc
+class _$PokemonAbilityCopyWithImpl<$Res>
+    implements $PokemonAbilityCopyWith<$Res> {
+  _$PokemonAbilityCopyWithImpl(this._value, this._then);
+
+  final PokemonAbility _value;
+  // ignore: unused_field
+  final $Res Function(PokemonAbility) _then;
+
+  @override
+  $Res call({
+    Object? isHidden = freezed,
+    Object? slot = freezed,
+    Object? ability = freezed,
+  }) {
+    return _then(_value.copyWith(
+      isHidden: isHidden == freezed
+          ? _value.isHidden
+          : isHidden // ignore: cast_nullable_to_non_nullable
+              as bool,
+      slot: slot == freezed
+          ? _value.slot
+          : slot // ignore: cast_nullable_to_non_nullable
+              as int,
+      ability: ability == freezed
+          ? _value.ability
+          : ability // ignore: cast_nullable_to_non_nullable
+              as NamedAPIResource,
+    ));
+  }
+
+  @override
+  $NamedAPIResourceCopyWith<$Res> get ability {
+    return $NamedAPIResourceCopyWith<$Res>(_value.ability, (value) {
+      return _then(_value.copyWith(ability: value));
+    });
+  }
+}
+
+/// @nodoc
+abstract class _$PokemonAbilityCopyWith<$Res>
+    implements $PokemonAbilityCopyWith<$Res> {
+  factory _$PokemonAbilityCopyWith(
+          _PokemonAbility value, $Res Function(_PokemonAbility) then) =
+      __$PokemonAbilityCopyWithImpl<$Res>;
+  @override
+  $Res call(
+      {@JsonKey(name: 'is_hidden') bool isHidden,
+      int slot,
+      NamedAPIResource ability});
+
+  @override
+  $NamedAPIResourceCopyWith<$Res> get ability;
+}
+
+/// @nodoc
+class __$PokemonAbilityCopyWithImpl<$Res>
+    extends _$PokemonAbilityCopyWithImpl<$Res>
+    implements _$PokemonAbilityCopyWith<$Res> {
+  __$PokemonAbilityCopyWithImpl(
+      _PokemonAbility _value, $Res Function(_PokemonAbility) _then)
+      : super(_value, (v) => _then(v as _PokemonAbility));
+
+  @override
+  _PokemonAbility get _value => super._value as _PokemonAbility;
+
+  @override
+  $Res call({
+    Object? isHidden = freezed,
+    Object? slot = freezed,
+    Object? ability = freezed,
+  }) {
+    return _then(_PokemonAbility(
+      isHidden == freezed
+          ? _value.isHidden
+          : isHidden // ignore: cast_nullable_to_non_nullable
+              as bool,
+      slot == freezed
+          ? _value.slot
+          : slot // ignore: cast_nullable_to_non_nullable
+              as int,
+      ability == freezed
+          ? _value.ability
+          : ability // ignore: cast_nullable_to_non_nullable
+              as NamedAPIResource,
+    ));
+  }
+}
+
+/// @nodoc
+@JsonSerializable()
+class _$_PokemonAbility implements _PokemonAbility {
+  const _$_PokemonAbility(
+      @JsonKey(name: 'is_hidden') this.isHidden, this.slot, this.ability);
+
+  factory _$_PokemonAbility.fromJson(Map<String, dynamic> json) =>
+      _$$_PokemonAbilityFromJson(json);
+
+  @override
+  @JsonKey(name: 'is_hidden')
+  final bool isHidden;
+  @override
+  final int slot;
+  @override
+  final NamedAPIResource ability;
+
+  @override
+  String toString() {
+    return 'PokemonAbility(isHidden: $isHidden, slot: $slot, ability: $ability)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _PokemonAbility &&
+            (identical(other.isHidden, isHidden) ||
+                other.isHidden == isHidden) &&
+            (identical(other.slot, slot) || other.slot == slot) &&
+            (identical(other.ability, ability) || other.ability == ability));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, isHidden, slot, ability);
+
+  @JsonKey(ignore: true)
+  @override
+  _$PokemonAbilityCopyWith<_PokemonAbility> get copyWith =>
+      __$PokemonAbilityCopyWithImpl<_PokemonAbility>(this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$$_PokemonAbilityToJson(this);
+  }
+}
+
+abstract class _PokemonAbility implements PokemonAbility {
+  const factory _PokemonAbility(@JsonKey(name: 'is_hidden') bool isHidden,
+      int slot, NamedAPIResource ability) = _$_PokemonAbility;
+
+  factory _PokemonAbility.fromJson(Map<String, dynamic> json) =
+      _$_PokemonAbility.fromJson;
+
+  @override
+  @JsonKey(name: 'is_hidden')
+  bool get isHidden;
+  @override
+  int get slot;
+  @override
+  NamedAPIResource get ability;
+  @override
+  @JsonKey(ignore: true)
+  _$PokemonAbilityCopyWith<_PokemonAbility> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+PokemonType _$PokemonTypeFromJson(Map<String, dynamic> json) {
+  return _PokemonType.fromJson(json);
+}
+
+/// @nodoc
+class _$PokemonTypeTearOff {
+  const _$PokemonTypeTearOff();
+
+  _PokemonType call(int slot, NamedAPIResource type) {
+    return _PokemonType(
+      slot,
+      type,
+    );
+  }
+
+  PokemonType fromJson(Map<String, Object?> json) {
+    return PokemonType.fromJson(json);
+  }
+}
+
+/// @nodoc
+const $PokemonType = _$PokemonTypeTearOff();
+
+/// @nodoc
+mixin _$PokemonType {
+  int get slot => throw _privateConstructorUsedError;
+  NamedAPIResource get type => throw _privateConstructorUsedError;
+
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $PokemonTypeCopyWith<PokemonType> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $PokemonTypeCopyWith<$Res> {
+  factory $PokemonTypeCopyWith(
+          PokemonType value, $Res Function(PokemonType) then) =
+      _$PokemonTypeCopyWithImpl<$Res>;
+  $Res call({int slot, NamedAPIResource type});
+
+  $NamedAPIResourceCopyWith<$Res> get type;
+}
+
+/// @nodoc
+class _$PokemonTypeCopyWithImpl<$Res> implements $PokemonTypeCopyWith<$Res> {
+  _$PokemonTypeCopyWithImpl(this._value, this._then);
+
+  final PokemonType _value;
+  // ignore: unused_field
+  final $Res Function(PokemonType) _then;
+
+  @override
+  $Res call({
+    Object? slot = freezed,
+    Object? type = freezed,
+  }) {
+    return _then(_value.copyWith(
+      slot: slot == freezed
+          ? _value.slot
+          : slot // ignore: cast_nullable_to_non_nullable
+              as int,
+      type: type == freezed
+          ? _value.type
+          : type // ignore: cast_nullable_to_non_nullable
+              as NamedAPIResource,
+    ));
+  }
+
+  @override
+  $NamedAPIResourceCopyWith<$Res> get type {
+    return $NamedAPIResourceCopyWith<$Res>(_value.type, (value) {
+      return _then(_value.copyWith(type: value));
+    });
+  }
+}
+
+/// @nodoc
+abstract class _$PokemonTypeCopyWith<$Res>
+    implements $PokemonTypeCopyWith<$Res> {
+  factory _$PokemonTypeCopyWith(
+          _PokemonType value, $Res Function(_PokemonType) then) =
+      __$PokemonTypeCopyWithImpl<$Res>;
+  @override
+  $Res call({int slot, NamedAPIResource type});
+
+  @override
+  $NamedAPIResourceCopyWith<$Res> get type;
+}
+
+/// @nodoc
+class __$PokemonTypeCopyWithImpl<$Res> extends _$PokemonTypeCopyWithImpl<$Res>
+    implements _$PokemonTypeCopyWith<$Res> {
+  __$PokemonTypeCopyWithImpl(
+      _PokemonType _value, $Res Function(_PokemonType) _then)
+      : super(_value, (v) => _then(v as _PokemonType));
+
+  @override
+  _PokemonType get _value => super._value as _PokemonType;
+
+  @override
+  $Res call({
+    Object? slot = freezed,
+    Object? type = freezed,
+  }) {
+    return _then(_PokemonType(
+      slot == freezed
+          ? _value.slot
+          : slot // ignore: cast_nullable_to_non_nullable
+              as int,
+      type == freezed
+          ? _value.type
+          : type // ignore: cast_nullable_to_non_nullable
+              as NamedAPIResource,
+    ));
+  }
+}
+
+/// @nodoc
+@JsonSerializable()
+class _$_PokemonType implements _PokemonType {
+  const _$_PokemonType(this.slot, this.type);
+
+  factory _$_PokemonType.fromJson(Map<String, dynamic> json) =>
+      _$$_PokemonTypeFromJson(json);
+
+  @override
+  final int slot;
+  @override
+  final NamedAPIResource type;
+
+  @override
+  String toString() {
+    return 'PokemonType(slot: $slot, type: $type)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _PokemonType &&
+            (identical(other.slot, slot) || other.slot == slot) &&
+            (identical(other.type, type) || other.type == type));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, slot, type);
+
+  @JsonKey(ignore: true)
+  @override
+  _$PokemonTypeCopyWith<_PokemonType> get copyWith =>
+      __$PokemonTypeCopyWithImpl<_PokemonType>(this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$$_PokemonTypeToJson(this);
+  }
+}
+
+abstract class _PokemonType implements PokemonType {
+  const factory _PokemonType(int slot, NamedAPIResource type) = _$_PokemonType;
+
+  factory _PokemonType.fromJson(Map<String, dynamic> json) =
+      _$_PokemonType.fromJson;
+
+  @override
+  int get slot;
+  @override
+  NamedAPIResource get type;
+  @override
+  @JsonKey(ignore: true)
+  _$PokemonTypeCopyWith<_PokemonType> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+PokemonFormType _$PokemonFormTypeFromJson(Map<String, dynamic> json) {
+  return _PokemonFormType.fromJson(json);
+}
+
+/// @nodoc
+class _$PokemonFormTypeTearOff {
+  const _$PokemonFormTypeTearOff();
+
+  _PokemonFormType call(int slot, NamedAPIResource type) {
+    return _PokemonFormType(
+      slot,
+      type,
+    );
+  }
+
+  PokemonFormType fromJson(Map<String, Object?> json) {
+    return PokemonFormType.fromJson(json);
+  }
+}
+
+/// @nodoc
+const $PokemonFormType = _$PokemonFormTypeTearOff();
+
+/// @nodoc
+mixin _$PokemonFormType {
+  int get slot => throw _privateConstructorUsedError;
+  NamedAPIResource get type => throw _privateConstructorUsedError;
+
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $PokemonFormTypeCopyWith<PokemonFormType> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $PokemonFormTypeCopyWith<$Res> {
+  factory $PokemonFormTypeCopyWith(
+          PokemonFormType value, $Res Function(PokemonFormType) then) =
+      _$PokemonFormTypeCopyWithImpl<$Res>;
+  $Res call({int slot, NamedAPIResource type});
+
+  $NamedAPIResourceCopyWith<$Res> get type;
+}
+
+/// @nodoc
+class _$PokemonFormTypeCopyWithImpl<$Res>
+    implements $PokemonFormTypeCopyWith<$Res> {
+  _$PokemonFormTypeCopyWithImpl(this._value, this._then);
+
+  final PokemonFormType _value;
+  // ignore: unused_field
+  final $Res Function(PokemonFormType) _then;
+
+  @override
+  $Res call({
+    Object? slot = freezed,
+    Object? type = freezed,
+  }) {
+    return _then(_value.copyWith(
+      slot: slot == freezed
+          ? _value.slot
+          : slot // ignore: cast_nullable_to_non_nullable
+              as int,
+      type: type == freezed
+          ? _value.type
+          : type // ignore: cast_nullable_to_non_nullable
+              as NamedAPIResource,
+    ));
+  }
+
+  @override
+  $NamedAPIResourceCopyWith<$Res> get type {
+    return $NamedAPIResourceCopyWith<$Res>(_value.type, (value) {
+      return _then(_value.copyWith(type: value));
+    });
+  }
+}
+
+/// @nodoc
+abstract class _$PokemonFormTypeCopyWith<$Res>
+    implements $PokemonFormTypeCopyWith<$Res> {
+  factory _$PokemonFormTypeCopyWith(
+          _PokemonFormType value, $Res Function(_PokemonFormType) then) =
+      __$PokemonFormTypeCopyWithImpl<$Res>;
+  @override
+  $Res call({int slot, NamedAPIResource type});
+
+  @override
+  $NamedAPIResourceCopyWith<$Res> get type;
+}
+
+/// @nodoc
+class __$PokemonFormTypeCopyWithImpl<$Res>
+    extends _$PokemonFormTypeCopyWithImpl<$Res>
+    implements _$PokemonFormTypeCopyWith<$Res> {
+  __$PokemonFormTypeCopyWithImpl(
+      _PokemonFormType _value, $Res Function(_PokemonFormType) _then)
+      : super(_value, (v) => _then(v as _PokemonFormType));
+
+  @override
+  _PokemonFormType get _value => super._value as _PokemonFormType;
+
+  @override
+  $Res call({
+    Object? slot = freezed,
+    Object? type = freezed,
+  }) {
+    return _then(_PokemonFormType(
+      slot == freezed
+          ? _value.slot
+          : slot // ignore: cast_nullable_to_non_nullable
+              as int,
+      type == freezed
+          ? _value.type
+          : type // ignore: cast_nullable_to_non_nullable
+              as NamedAPIResource,
+    ));
+  }
+}
+
+/// @nodoc
+@JsonSerializable()
+class _$_PokemonFormType implements _PokemonFormType {
+  const _$_PokemonFormType(this.slot, this.type);
+
+  factory _$_PokemonFormType.fromJson(Map<String, dynamic> json) =>
+      _$$_PokemonFormTypeFromJson(json);
+
+  @override
+  final int slot;
+  @override
+  final NamedAPIResource type;
+
+  @override
+  String toString() {
+    return 'PokemonFormType(slot: $slot, type: $type)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _PokemonFormType &&
+            (identical(other.slot, slot) || other.slot == slot) &&
+            (identical(other.type, type) || other.type == type));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, slot, type);
+
+  @JsonKey(ignore: true)
+  @override
+  _$PokemonFormTypeCopyWith<_PokemonFormType> get copyWith =>
+      __$PokemonFormTypeCopyWithImpl<_PokemonFormType>(this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$$_PokemonFormTypeToJson(this);
+  }
+}
+
+abstract class _PokemonFormType implements PokemonFormType {
+  const factory _PokemonFormType(int slot, NamedAPIResource type) =
+      _$_PokemonFormType;
+
+  factory _PokemonFormType.fromJson(Map<String, dynamic> json) =
+      _$_PokemonFormType.fromJson;
+
+  @override
+  int get slot;
+  @override
+  NamedAPIResource get type;
+  @override
+  @JsonKey(ignore: true)
+  _$PokemonFormTypeCopyWith<_PokemonFormType> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+PokemonTypePast _$PokemonTypePastFromJson(Map<String, dynamic> json) {
+  return _PokemonTypePast.fromJson(json);
+}
+
+/// @nodoc
+class _$PokemonTypePastTearOff {
+  const _$PokemonTypePastTearOff();
+
+  _PokemonTypePast call(NamedAPIResource generation, List<PokemonType> types) {
+    return _PokemonTypePast(
+      generation,
+      types,
+    );
+  }
+
+  PokemonTypePast fromJson(Map<String, Object?> json) {
+    return PokemonTypePast.fromJson(json);
+  }
+}
+
+/// @nodoc
+const $PokemonTypePast = _$PokemonTypePastTearOff();
+
+/// @nodoc
+mixin _$PokemonTypePast {
+  NamedAPIResource get generation => throw _privateConstructorUsedError;
+  List<PokemonType> get types => throw _privateConstructorUsedError;
+
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $PokemonTypePastCopyWith<PokemonTypePast> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $PokemonTypePastCopyWith<$Res> {
+  factory $PokemonTypePastCopyWith(
+          PokemonTypePast value, $Res Function(PokemonTypePast) then) =
+      _$PokemonTypePastCopyWithImpl<$Res>;
+  $Res call({NamedAPIResource generation, List<PokemonType> types});
+
+  $NamedAPIResourceCopyWith<$Res> get generation;
+}
+
+/// @nodoc
+class _$PokemonTypePastCopyWithImpl<$Res>
+    implements $PokemonTypePastCopyWith<$Res> {
+  _$PokemonTypePastCopyWithImpl(this._value, this._then);
+
+  final PokemonTypePast _value;
+  // ignore: unused_field
+  final $Res Function(PokemonTypePast) _then;
+
+  @override
+  $Res call({
+    Object? generation = freezed,
+    Object? types = freezed,
+  }) {
+    return _then(_value.copyWith(
+      generation: generation == freezed
+          ? _value.generation
+          : generation // ignore: cast_nullable_to_non_nullable
+              as NamedAPIResource,
+      types: types == freezed
+          ? _value.types
+          : types // ignore: cast_nullable_to_non_nullable
+              as List<PokemonType>,
+    ));
+  }
+
+  @override
+  $NamedAPIResourceCopyWith<$Res> get generation {
+    return $NamedAPIResourceCopyWith<$Res>(_value.generation, (value) {
+      return _then(_value.copyWith(generation: value));
+    });
+  }
+}
+
+/// @nodoc
+abstract class _$PokemonTypePastCopyWith<$Res>
+    implements $PokemonTypePastCopyWith<$Res> {
+  factory _$PokemonTypePastCopyWith(
+          _PokemonTypePast value, $Res Function(_PokemonTypePast) then) =
+      __$PokemonTypePastCopyWithImpl<$Res>;
+  @override
+  $Res call({NamedAPIResource generation, List<PokemonType> types});
+
+  @override
+  $NamedAPIResourceCopyWith<$Res> get generation;
+}
+
+/// @nodoc
+class __$PokemonTypePastCopyWithImpl<$Res>
+    extends _$PokemonTypePastCopyWithImpl<$Res>
+    implements _$PokemonTypePastCopyWith<$Res> {
+  __$PokemonTypePastCopyWithImpl(
+      _PokemonTypePast _value, $Res Function(_PokemonTypePast) _then)
+      : super(_value, (v) => _then(v as _PokemonTypePast));
+
+  @override
+  _PokemonTypePast get _value => super._value as _PokemonTypePast;
+
+  @override
+  $Res call({
+    Object? generation = freezed,
+    Object? types = freezed,
+  }) {
+    return _then(_PokemonTypePast(
+      generation == freezed
+          ? _value.generation
+          : generation // ignore: cast_nullable_to_non_nullable
+              as NamedAPIResource,
+      types == freezed
+          ? _value.types
+          : types // ignore: cast_nullable_to_non_nullable
+              as List<PokemonType>,
+    ));
+  }
+}
+
+/// @nodoc
+@JsonSerializable()
+class _$_PokemonTypePast implements _PokemonTypePast {
+  const _$_PokemonTypePast(this.generation, this.types);
+
+  factory _$_PokemonTypePast.fromJson(Map<String, dynamic> json) =>
+      _$$_PokemonTypePastFromJson(json);
+
+  @override
+  final NamedAPIResource generation;
+  @override
+  final List<PokemonType> types;
+
+  @override
+  String toString() {
+    return 'PokemonTypePast(generation: $generation, types: $types)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _PokemonTypePast &&
+            (identical(other.generation, generation) ||
+                other.generation == generation) &&
+            const DeepCollectionEquality().equals(other.types, types));
+  }
+
+  @override
+  int get hashCode => Object.hash(
+      runtimeType, generation, const DeepCollectionEquality().hash(types));
+
+  @JsonKey(ignore: true)
+  @override
+  _$PokemonTypePastCopyWith<_PokemonTypePast> get copyWith =>
+      __$PokemonTypePastCopyWithImpl<_PokemonTypePast>(this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$$_PokemonTypePastToJson(this);
+  }
+}
+
+abstract class _PokemonTypePast implements PokemonTypePast {
+  const factory _PokemonTypePast(
+          NamedAPIResource generation, List<PokemonType> types) =
+      _$_PokemonTypePast;
+
+  factory _PokemonTypePast.fromJson(Map<String, dynamic> json) =
+      _$_PokemonTypePast.fromJson;
+
+  @override
+  NamedAPIResource get generation;
+  @override
+  List<PokemonType> get types;
+  @override
+  @JsonKey(ignore: true)
+  _$PokemonTypePastCopyWith<_PokemonTypePast> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+PokemonHeldItem _$PokemonHeldItemFromJson(Map<String, dynamic> json) {
+  return _PokemonHeldItem.fromJson(json);
+}
+
+/// @nodoc
+class _$PokemonHeldItemTearOff {
+  const _$PokemonHeldItemTearOff();
+
+  _PokemonHeldItem call(
+      NamedAPIResource item,
+      @JsonKey(name: 'version_details')
+          List<PokemonHeldItemVersion> versionDetails) {
+    return _PokemonHeldItem(
+      item,
+      versionDetails,
+    );
+  }
+
+  PokemonHeldItem fromJson(Map<String, Object?> json) {
+    return PokemonHeldItem.fromJson(json);
+  }
+}
+
+/// @nodoc
+const $PokemonHeldItem = _$PokemonHeldItemTearOff();
+
+/// @nodoc
+mixin _$PokemonHeldItem {
+  NamedAPIResource get item => throw _privateConstructorUsedError;
+  @JsonKey(name: 'version_details')
+  List<PokemonHeldItemVersion> get versionDetails =>
+      throw _privateConstructorUsedError;
+
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $PokemonHeldItemCopyWith<PokemonHeldItem> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $PokemonHeldItemCopyWith<$Res> {
+  factory $PokemonHeldItemCopyWith(
+          PokemonHeldItem value, $Res Function(PokemonHeldItem) then) =
+      _$PokemonHeldItemCopyWithImpl<$Res>;
+  $Res call(
+      {NamedAPIResource item,
+      @JsonKey(name: 'version_details')
+          List<PokemonHeldItemVersion> versionDetails});
+
+  $NamedAPIResourceCopyWith<$Res> get item;
+}
+
+/// @nodoc
+class _$PokemonHeldItemCopyWithImpl<$Res>
+    implements $PokemonHeldItemCopyWith<$Res> {
+  _$PokemonHeldItemCopyWithImpl(this._value, this._then);
+
+  final PokemonHeldItem _value;
+  // ignore: unused_field
+  final $Res Function(PokemonHeldItem) _then;
+
+  @override
+  $Res call({
+    Object? item = freezed,
+    Object? versionDetails = freezed,
+  }) {
+    return _then(_value.copyWith(
+      item: item == freezed
+          ? _value.item
+          : item // ignore: cast_nullable_to_non_nullable
+              as NamedAPIResource,
+      versionDetails: versionDetails == freezed
+          ? _value.versionDetails
+          : versionDetails // ignore: cast_nullable_to_non_nullable
+              as List<PokemonHeldItemVersion>,
+    ));
+  }
+
+  @override
+  $NamedAPIResourceCopyWith<$Res> get item {
+    return $NamedAPIResourceCopyWith<$Res>(_value.item, (value) {
+      return _then(_value.copyWith(item: value));
+    });
+  }
+}
+
+/// @nodoc
+abstract class _$PokemonHeldItemCopyWith<$Res>
+    implements $PokemonHeldItemCopyWith<$Res> {
+  factory _$PokemonHeldItemCopyWith(
+          _PokemonHeldItem value, $Res Function(_PokemonHeldItem) then) =
+      __$PokemonHeldItemCopyWithImpl<$Res>;
+  @override
+  $Res call(
+      {NamedAPIResource item,
+      @JsonKey(name: 'version_details')
+          List<PokemonHeldItemVersion> versionDetails});
+
+  @override
+  $NamedAPIResourceCopyWith<$Res> get item;
+}
+
+/// @nodoc
+class __$PokemonHeldItemCopyWithImpl<$Res>
+    extends _$PokemonHeldItemCopyWithImpl<$Res>
+    implements _$PokemonHeldItemCopyWith<$Res> {
+  __$PokemonHeldItemCopyWithImpl(
+      _PokemonHeldItem _value, $Res Function(_PokemonHeldItem) _then)
+      : super(_value, (v) => _then(v as _PokemonHeldItem));
+
+  @override
+  _PokemonHeldItem get _value => super._value as _PokemonHeldItem;
+
+  @override
+  $Res call({
+    Object? item = freezed,
+    Object? versionDetails = freezed,
+  }) {
+    return _then(_PokemonHeldItem(
+      item == freezed
+          ? _value.item
+          : item // ignore: cast_nullable_to_non_nullable
+              as NamedAPIResource,
+      versionDetails == freezed
+          ? _value.versionDetails
+          : versionDetails // ignore: cast_nullable_to_non_nullable
+              as List<PokemonHeldItemVersion>,
+    ));
+  }
+}
+
+/// @nodoc
+@JsonSerializable()
+class _$_PokemonHeldItem implements _PokemonHeldItem {
+  const _$_PokemonHeldItem(
+      this.item, @JsonKey(name: 'version_details') this.versionDetails);
+
+  factory _$_PokemonHeldItem.fromJson(Map<String, dynamic> json) =>
+      _$$_PokemonHeldItemFromJson(json);
+
+  @override
+  final NamedAPIResource item;
+  @override
+  @JsonKey(name: 'version_details')
+  final List<PokemonHeldItemVersion> versionDetails;
+
+  @override
+  String toString() {
+    return 'PokemonHeldItem(item: $item, versionDetails: $versionDetails)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _PokemonHeldItem &&
+            (identical(other.item, item) || other.item == item) &&
+            const DeepCollectionEquality()
+                .equals(other.versionDetails, versionDetails));
+  }
+
+  @override
+  int get hashCode => Object.hash(
+      runtimeType, item, const DeepCollectionEquality().hash(versionDetails));
+
+  @JsonKey(ignore: true)
+  @override
+  _$PokemonHeldItemCopyWith<_PokemonHeldItem> get copyWith =>
+      __$PokemonHeldItemCopyWithImpl<_PokemonHeldItem>(this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$$_PokemonHeldItemToJson(this);
+  }
+}
+
+abstract class _PokemonHeldItem implements PokemonHeldItem {
+  const factory _PokemonHeldItem(
+      NamedAPIResource item,
+      @JsonKey(name: 'version_details')
+          List<PokemonHeldItemVersion> versionDetails) = _$_PokemonHeldItem;
+
+  factory _PokemonHeldItem.fromJson(Map<String, dynamic> json) =
+      _$_PokemonHeldItem.fromJson;
+
+  @override
+  NamedAPIResource get item;
+  @override
+  @JsonKey(name: 'version_details')
+  List<PokemonHeldItemVersion> get versionDetails;
+  @override
+  @JsonKey(ignore: true)
+  _$PokemonHeldItemCopyWith<_PokemonHeldItem> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+PokemonHeldItemVersion _$PokemonHeldItemVersionFromJson(
+    Map<String, dynamic> json) {
+  return _PokemonHeldItemVersion.fromJson(json);
+}
+
+/// @nodoc
+class _$PokemonHeldItemVersionTearOff {
+  const _$PokemonHeldItemVersionTearOff();
+
+  _PokemonHeldItemVersion call(NamedAPIResource version, int rarity) {
+    return _PokemonHeldItemVersion(
+      version,
+      rarity,
+    );
+  }
+
+  PokemonHeldItemVersion fromJson(Map<String, Object?> json) {
+    return PokemonHeldItemVersion.fromJson(json);
+  }
+}
+
+/// @nodoc
+const $PokemonHeldItemVersion = _$PokemonHeldItemVersionTearOff();
+
+/// @nodoc
+mixin _$PokemonHeldItemVersion {
+  NamedAPIResource get version => throw _privateConstructorUsedError;
+  int get rarity => throw _privateConstructorUsedError;
+
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $PokemonHeldItemVersionCopyWith<PokemonHeldItemVersion> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $PokemonHeldItemVersionCopyWith<$Res> {
+  factory $PokemonHeldItemVersionCopyWith(PokemonHeldItemVersion value,
+          $Res Function(PokemonHeldItemVersion) then) =
+      _$PokemonHeldItemVersionCopyWithImpl<$Res>;
+  $Res call({NamedAPIResource version, int rarity});
+
+  $NamedAPIResourceCopyWith<$Res> get version;
+}
+
+/// @nodoc
+class _$PokemonHeldItemVersionCopyWithImpl<$Res>
+    implements $PokemonHeldItemVersionCopyWith<$Res> {
+  _$PokemonHeldItemVersionCopyWithImpl(this._value, this._then);
+
+  final PokemonHeldItemVersion _value;
+  // ignore: unused_field
+  final $Res Function(PokemonHeldItemVersion) _then;
+
+  @override
+  $Res call({
+    Object? version = freezed,
+    Object? rarity = freezed,
+  }) {
+    return _then(_value.copyWith(
+      version: version == freezed
+          ? _value.version
+          : version // ignore: cast_nullable_to_non_nullable
+              as NamedAPIResource,
+      rarity: rarity == freezed
+          ? _value.rarity
+          : rarity // ignore: cast_nullable_to_non_nullable
+              as int,
+    ));
+  }
+
+  @override
+  $NamedAPIResourceCopyWith<$Res> get version {
+    return $NamedAPIResourceCopyWith<$Res>(_value.version, (value) {
+      return _then(_value.copyWith(version: value));
+    });
+  }
+}
+
+/// @nodoc
+abstract class _$PokemonHeldItemVersionCopyWith<$Res>
+    implements $PokemonHeldItemVersionCopyWith<$Res> {
+  factory _$PokemonHeldItemVersionCopyWith(_PokemonHeldItemVersion value,
+          $Res Function(_PokemonHeldItemVersion) then) =
+      __$PokemonHeldItemVersionCopyWithImpl<$Res>;
+  @override
+  $Res call({NamedAPIResource version, int rarity});
+
+  @override
+  $NamedAPIResourceCopyWith<$Res> get version;
+}
+
+/// @nodoc
+class __$PokemonHeldItemVersionCopyWithImpl<$Res>
+    extends _$PokemonHeldItemVersionCopyWithImpl<$Res>
+    implements _$PokemonHeldItemVersionCopyWith<$Res> {
+  __$PokemonHeldItemVersionCopyWithImpl(_PokemonHeldItemVersion _value,
+      $Res Function(_PokemonHeldItemVersion) _then)
+      : super(_value, (v) => _then(v as _PokemonHeldItemVersion));
+
+  @override
+  _PokemonHeldItemVersion get _value => super._value as _PokemonHeldItemVersion;
+
+  @override
+  $Res call({
+    Object? version = freezed,
+    Object? rarity = freezed,
+  }) {
+    return _then(_PokemonHeldItemVersion(
+      version == freezed
+          ? _value.version
+          : version // ignore: cast_nullable_to_non_nullable
+              as NamedAPIResource,
+      rarity == freezed
+          ? _value.rarity
+          : rarity // ignore: cast_nullable_to_non_nullable
+              as int,
+    ));
+  }
+}
+
+/// @nodoc
+@JsonSerializable()
+class _$_PokemonHeldItemVersion implements _PokemonHeldItemVersion {
+  const _$_PokemonHeldItemVersion(this.version, this.rarity);
+
+  factory _$_PokemonHeldItemVersion.fromJson(Map<String, dynamic> json) =>
+      _$$_PokemonHeldItemVersionFromJson(json);
+
+  @override
+  final NamedAPIResource version;
+  @override
+  final int rarity;
+
+  @override
+  String toString() {
+    return 'PokemonHeldItemVersion(version: $version, rarity: $rarity)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _PokemonHeldItemVersion &&
+            (identical(other.version, version) || other.version == version) &&
+            (identical(other.rarity, rarity) || other.rarity == rarity));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, version, rarity);
+
+  @JsonKey(ignore: true)
+  @override
+  _$PokemonHeldItemVersionCopyWith<_PokemonHeldItemVersion> get copyWith =>
+      __$PokemonHeldItemVersionCopyWithImpl<_PokemonHeldItemVersion>(
+          this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$$_PokemonHeldItemVersionToJson(this);
+  }
+}
+
+abstract class _PokemonHeldItemVersion implements PokemonHeldItemVersion {
+  const factory _PokemonHeldItemVersion(NamedAPIResource version, int rarity) =
+      _$_PokemonHeldItemVersion;
+
+  factory _PokemonHeldItemVersion.fromJson(Map<String, dynamic> json) =
+      _$_PokemonHeldItemVersion.fromJson;
+
+  @override
+  NamedAPIResource get version;
+  @override
+  int get rarity;
+  @override
+  @JsonKey(ignore: true)
+  _$PokemonHeldItemVersionCopyWith<_PokemonHeldItemVersion> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+PokemonMove _$PokemonMoveFromJson(Map<String, dynamic> json) {
+  return _PokemonMove.fromJson(json);
+}
+
+/// @nodoc
+class _$PokemonMoveTearOff {
+  const _$PokemonMoveTearOff();
+
+  _PokemonMove call(
+      NamedAPIResource move,
+      @JsonKey(name: 'version_group_details')
+          List<PokemonMoveVersion> versionGroupDetails) {
+    return _PokemonMove(
+      move,
+      versionGroupDetails,
+    );
+  }
+
+  PokemonMove fromJson(Map<String, Object?> json) {
+    return PokemonMove.fromJson(json);
+  }
+}
+
+/// @nodoc
+const $PokemonMove = _$PokemonMoveTearOff();
+
+/// @nodoc
+mixin _$PokemonMove {
+  NamedAPIResource get move => throw _privateConstructorUsedError;
+  @JsonKey(name: 'version_group_details')
+  List<PokemonMoveVersion> get versionGroupDetails =>
+      throw _privateConstructorUsedError;
+
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $PokemonMoveCopyWith<PokemonMove> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $PokemonMoveCopyWith<$Res> {
+  factory $PokemonMoveCopyWith(
+          PokemonMove value, $Res Function(PokemonMove) then) =
+      _$PokemonMoveCopyWithImpl<$Res>;
+  $Res call(
+      {NamedAPIResource move,
+      @JsonKey(name: 'version_group_details')
+          List<PokemonMoveVersion> versionGroupDetails});
+
+  $NamedAPIResourceCopyWith<$Res> get move;
+}
+
+/// @nodoc
+class _$PokemonMoveCopyWithImpl<$Res> implements $PokemonMoveCopyWith<$Res> {
+  _$PokemonMoveCopyWithImpl(this._value, this._then);
+
+  final PokemonMove _value;
+  // ignore: unused_field
+  final $Res Function(PokemonMove) _then;
+
+  @override
+  $Res call({
+    Object? move = freezed,
+    Object? versionGroupDetails = freezed,
+  }) {
+    return _then(_value.copyWith(
+      move: move == freezed
+          ? _value.move
+          : move // ignore: cast_nullable_to_non_nullable
+              as NamedAPIResource,
+      versionGroupDetails: versionGroupDetails == freezed
+          ? _value.versionGroupDetails
+          : versionGroupDetails // ignore: cast_nullable_to_non_nullable
+              as List<PokemonMoveVersion>,
+    ));
+  }
+
+  @override
+  $NamedAPIResourceCopyWith<$Res> get move {
+    return $NamedAPIResourceCopyWith<$Res>(_value.move, (value) {
+      return _then(_value.copyWith(move: value));
+    });
+  }
+}
+
+/// @nodoc
+abstract class _$PokemonMoveCopyWith<$Res>
+    implements $PokemonMoveCopyWith<$Res> {
+  factory _$PokemonMoveCopyWith(
+          _PokemonMove value, $Res Function(_PokemonMove) then) =
+      __$PokemonMoveCopyWithImpl<$Res>;
+  @override
+  $Res call(
+      {NamedAPIResource move,
+      @JsonKey(name: 'version_group_details')
+          List<PokemonMoveVersion> versionGroupDetails});
+
+  @override
+  $NamedAPIResourceCopyWith<$Res> get move;
+}
+
+/// @nodoc
+class __$PokemonMoveCopyWithImpl<$Res> extends _$PokemonMoveCopyWithImpl<$Res>
+    implements _$PokemonMoveCopyWith<$Res> {
+  __$PokemonMoveCopyWithImpl(
+      _PokemonMove _value, $Res Function(_PokemonMove) _then)
+      : super(_value, (v) => _then(v as _PokemonMove));
+
+  @override
+  _PokemonMove get _value => super._value as _PokemonMove;
+
+  @override
+  $Res call({
+    Object? move = freezed,
+    Object? versionGroupDetails = freezed,
+  }) {
+    return _then(_PokemonMove(
+      move == freezed
+          ? _value.move
+          : move // ignore: cast_nullable_to_non_nullable
+              as NamedAPIResource,
+      versionGroupDetails == freezed
+          ? _value.versionGroupDetails
+          : versionGroupDetails // ignore: cast_nullable_to_non_nullable
+              as List<PokemonMoveVersion>,
+    ));
+  }
+}
+
+/// @nodoc
+@JsonSerializable()
+class _$_PokemonMove implements _PokemonMove {
+  const _$_PokemonMove(this.move,
+      @JsonKey(name: 'version_group_details') this.versionGroupDetails);
+
+  factory _$_PokemonMove.fromJson(Map<String, dynamic> json) =>
+      _$$_PokemonMoveFromJson(json);
+
+  @override
+  final NamedAPIResource move;
+  @override
+  @JsonKey(name: 'version_group_details')
+  final List<PokemonMoveVersion> versionGroupDetails;
+
+  @override
+  String toString() {
+    return 'PokemonMove(move: $move, versionGroupDetails: $versionGroupDetails)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _PokemonMove &&
+            (identical(other.move, move) || other.move == move) &&
+            const DeepCollectionEquality()
+                .equals(other.versionGroupDetails, versionGroupDetails));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, move,
+      const DeepCollectionEquality().hash(versionGroupDetails));
+
+  @JsonKey(ignore: true)
+  @override
+  _$PokemonMoveCopyWith<_PokemonMove> get copyWith =>
+      __$PokemonMoveCopyWithImpl<_PokemonMove>(this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$$_PokemonMoveToJson(this);
+  }
+}
+
+abstract class _PokemonMove implements PokemonMove {
+  const factory _PokemonMove(
+      NamedAPIResource move,
+      @JsonKey(name: 'version_group_details')
+          List<PokemonMoveVersion> versionGroupDetails) = _$_PokemonMove;
+
+  factory _PokemonMove.fromJson(Map<String, dynamic> json) =
+      _$_PokemonMove.fromJson;
+
+  @override
+  NamedAPIResource get move;
+  @override
+  @JsonKey(name: 'version_group_details')
+  List<PokemonMoveVersion> get versionGroupDetails;
+  @override
+  @JsonKey(ignore: true)
+  _$PokemonMoveCopyWith<_PokemonMove> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+PokemonMoveVersion _$PokemonMoveVersionFromJson(Map<String, dynamic> json) {
+  return _PokemonMoveVersion.fromJson(json);
+}
+
+/// @nodoc
+class _$PokemonMoveVersionTearOff {
+  const _$PokemonMoveVersionTearOff();
+
+  _PokemonMoveVersion call(
+      @JsonKey(name: 'move_learn_method') NamedAPIResource moveLearnMethod,
+      @JsonKey(name: 'version_group') NamedAPIResource versionGroup,
+      @JsonKey(name: 'level_learned_at') int levelLearnedAt) {
+    return _PokemonMoveVersion(
+      moveLearnMethod,
+      versionGroup,
+      levelLearnedAt,
+    );
+  }
+
+  PokemonMoveVersion fromJson(Map<String, Object?> json) {
+    return PokemonMoveVersion.fromJson(json);
+  }
+}
+
+/// @nodoc
+const $PokemonMoveVersion = _$PokemonMoveVersionTearOff();
+
+/// @nodoc
+mixin _$PokemonMoveVersion {
+  @JsonKey(name: 'move_learn_method')
+  NamedAPIResource get moveLearnMethod => throw _privateConstructorUsedError;
+  @JsonKey(name: 'version_group')
+  NamedAPIResource get versionGroup => throw _privateConstructorUsedError;
+  @JsonKey(name: 'level_learned_at')
+  int get levelLearnedAt => throw _privateConstructorUsedError;
+
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $PokemonMoveVersionCopyWith<PokemonMoveVersion> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $PokemonMoveVersionCopyWith<$Res> {
+  factory $PokemonMoveVersionCopyWith(
+          PokemonMoveVersion value, $Res Function(PokemonMoveVersion) then) =
+      _$PokemonMoveVersionCopyWithImpl<$Res>;
+  $Res call(
+      {@JsonKey(name: 'move_learn_method') NamedAPIResource moveLearnMethod,
+      @JsonKey(name: 'version_group') NamedAPIResource versionGroup,
+      @JsonKey(name: 'level_learned_at') int levelLearnedAt});
+
+  $NamedAPIResourceCopyWith<$Res> get moveLearnMethod;
+  $NamedAPIResourceCopyWith<$Res> get versionGroup;
+}
+
+/// @nodoc
+class _$PokemonMoveVersionCopyWithImpl<$Res>
+    implements $PokemonMoveVersionCopyWith<$Res> {
+  _$PokemonMoveVersionCopyWithImpl(this._value, this._then);
+
+  final PokemonMoveVersion _value;
+  // ignore: unused_field
+  final $Res Function(PokemonMoveVersion) _then;
+
+  @override
+  $Res call({
+    Object? moveLearnMethod = freezed,
+    Object? versionGroup = freezed,
+    Object? levelLearnedAt = freezed,
+  }) {
+    return _then(_value.copyWith(
+      moveLearnMethod: moveLearnMethod == freezed
+          ? _value.moveLearnMethod
+          : moveLearnMethod // ignore: cast_nullable_to_non_nullable
+              as NamedAPIResource,
+      versionGroup: versionGroup == freezed
+          ? _value.versionGroup
+          : versionGroup // ignore: cast_nullable_to_non_nullable
+              as NamedAPIResource,
+      levelLearnedAt: levelLearnedAt == freezed
+          ? _value.levelLearnedAt
+          : levelLearnedAt // ignore: cast_nullable_to_non_nullable
+              as int,
+    ));
+  }
+
+  @override
+  $NamedAPIResourceCopyWith<$Res> get moveLearnMethod {
+    return $NamedAPIResourceCopyWith<$Res>(_value.moveLearnMethod, (value) {
+      return _then(_value.copyWith(moveLearnMethod: value));
+    });
+  }
+
+  @override
+  $NamedAPIResourceCopyWith<$Res> get versionGroup {
+    return $NamedAPIResourceCopyWith<$Res>(_value.versionGroup, (value) {
+      return _then(_value.copyWith(versionGroup: value));
+    });
+  }
+}
+
+/// @nodoc
+abstract class _$PokemonMoveVersionCopyWith<$Res>
+    implements $PokemonMoveVersionCopyWith<$Res> {
+  factory _$PokemonMoveVersionCopyWith(
+          _PokemonMoveVersion value, $Res Function(_PokemonMoveVersion) then) =
+      __$PokemonMoveVersionCopyWithImpl<$Res>;
+  @override
+  $Res call(
+      {@JsonKey(name: 'move_learn_method') NamedAPIResource moveLearnMethod,
+      @JsonKey(name: 'version_group') NamedAPIResource versionGroup,
+      @JsonKey(name: 'level_learned_at') int levelLearnedAt});
+
+  @override
+  $NamedAPIResourceCopyWith<$Res> get moveLearnMethod;
+  @override
+  $NamedAPIResourceCopyWith<$Res> get versionGroup;
+}
+
+/// @nodoc
+class __$PokemonMoveVersionCopyWithImpl<$Res>
+    extends _$PokemonMoveVersionCopyWithImpl<$Res>
+    implements _$PokemonMoveVersionCopyWith<$Res> {
+  __$PokemonMoveVersionCopyWithImpl(
+      _PokemonMoveVersion _value, $Res Function(_PokemonMoveVersion) _then)
+      : super(_value, (v) => _then(v as _PokemonMoveVersion));
+
+  @override
+  _PokemonMoveVersion get _value => super._value as _PokemonMoveVersion;
+
+  @override
+  $Res call({
+    Object? moveLearnMethod = freezed,
+    Object? versionGroup = freezed,
+    Object? levelLearnedAt = freezed,
+  }) {
+    return _then(_PokemonMoveVersion(
+      moveLearnMethod == freezed
+          ? _value.moveLearnMethod
+          : moveLearnMethod // ignore: cast_nullable_to_non_nullable
+              as NamedAPIResource,
+      versionGroup == freezed
+          ? _value.versionGroup
+          : versionGroup // ignore: cast_nullable_to_non_nullable
+              as NamedAPIResource,
+      levelLearnedAt == freezed
+          ? _value.levelLearnedAt
+          : levelLearnedAt // ignore: cast_nullable_to_non_nullable
+              as int,
+    ));
+  }
+}
+
+/// @nodoc
+@JsonSerializable()
+class _$_PokemonMoveVersion implements _PokemonMoveVersion {
+  const _$_PokemonMoveVersion(
+      @JsonKey(name: 'move_learn_method') this.moveLearnMethod,
+      @JsonKey(name: 'version_group') this.versionGroup,
+      @JsonKey(name: 'level_learned_at') this.levelLearnedAt);
+
+  factory _$_PokemonMoveVersion.fromJson(Map<String, dynamic> json) =>
+      _$$_PokemonMoveVersionFromJson(json);
+
+  @override
+  @JsonKey(name: 'move_learn_method')
+  final NamedAPIResource moveLearnMethod;
+  @override
+  @JsonKey(name: 'version_group')
+  final NamedAPIResource versionGroup;
+  @override
+  @JsonKey(name: 'level_learned_at')
+  final int levelLearnedAt;
+
+  @override
+  String toString() {
+    return 'PokemonMoveVersion(moveLearnMethod: $moveLearnMethod, versionGroup: $versionGroup, levelLearnedAt: $levelLearnedAt)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _PokemonMoveVersion &&
+            (identical(other.moveLearnMethod, moveLearnMethod) ||
+                other.moveLearnMethod == moveLearnMethod) &&
+            (identical(other.versionGroup, versionGroup) ||
+                other.versionGroup == versionGroup) &&
+            (identical(other.levelLearnedAt, levelLearnedAt) ||
+                other.levelLearnedAt == levelLearnedAt));
+  }
+
+  @override
+  int get hashCode =>
+      Object.hash(runtimeType, moveLearnMethod, versionGroup, levelLearnedAt);
+
+  @JsonKey(ignore: true)
+  @override
+  _$PokemonMoveVersionCopyWith<_PokemonMoveVersion> get copyWith =>
+      __$PokemonMoveVersionCopyWithImpl<_PokemonMoveVersion>(this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$$_PokemonMoveVersionToJson(this);
+  }
+}
+
+abstract class _PokemonMoveVersion implements PokemonMoveVersion {
+  const factory _PokemonMoveVersion(
+          @JsonKey(name: 'move_learn_method') NamedAPIResource moveLearnMethod,
+          @JsonKey(name: 'version_group') NamedAPIResource versionGroup,
+          @JsonKey(name: 'level_learned_at') int levelLearnedAt) =
+      _$_PokemonMoveVersion;
+
+  factory _PokemonMoveVersion.fromJson(Map<String, dynamic> json) =
+      _$_PokemonMoveVersion.fromJson;
+
+  @override
+  @JsonKey(name: 'move_learn_method')
+  NamedAPIResource get moveLearnMethod;
+  @override
+  @JsonKey(name: 'version_group')
+  NamedAPIResource get versionGroup;
+  @override
+  @JsonKey(name: 'level_learned_at')
+  int get levelLearnedAt;
+  @override
+  @JsonKey(ignore: true)
+  _$PokemonMoveVersionCopyWith<_PokemonMoveVersion> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+PokemonStat _$PokemonStatFromJson(Map<String, dynamic> json) {
+  return _PokemonStat.fromJson(json);
+}
+
+/// @nodoc
+class _$PokemonStatTearOff {
+  const _$PokemonStatTearOff();
+
+  _PokemonStat call(NamedAPIResource stat, int effort,
+      @JsonKey(name: 'base_stat') int baseStat) {
+    return _PokemonStat(
+      stat,
+      effort,
+      baseStat,
+    );
+  }
+
+  PokemonStat fromJson(Map<String, Object?> json) {
+    return PokemonStat.fromJson(json);
+  }
+}
+
+/// @nodoc
+const $PokemonStat = _$PokemonStatTearOff();
+
+/// @nodoc
+mixin _$PokemonStat {
+  NamedAPIResource get stat => throw _privateConstructorUsedError;
+  int get effort => throw _privateConstructorUsedError;
+  @JsonKey(name: 'base_stat')
+  int get baseStat => throw _privateConstructorUsedError;
+
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $PokemonStatCopyWith<PokemonStat> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $PokemonStatCopyWith<$Res> {
+  factory $PokemonStatCopyWith(
+          PokemonStat value, $Res Function(PokemonStat) then) =
+      _$PokemonStatCopyWithImpl<$Res>;
+  $Res call(
+      {NamedAPIResource stat,
+      int effort,
+      @JsonKey(name: 'base_stat') int baseStat});
+
+  $NamedAPIResourceCopyWith<$Res> get stat;
+}
+
+/// @nodoc
+class _$PokemonStatCopyWithImpl<$Res> implements $PokemonStatCopyWith<$Res> {
+  _$PokemonStatCopyWithImpl(this._value, this._then);
+
+  final PokemonStat _value;
+  // ignore: unused_field
+  final $Res Function(PokemonStat) _then;
+
+  @override
+  $Res call({
+    Object? stat = freezed,
+    Object? effort = freezed,
+    Object? baseStat = freezed,
+  }) {
+    return _then(_value.copyWith(
+      stat: stat == freezed
+          ? _value.stat
+          : stat // ignore: cast_nullable_to_non_nullable
+              as NamedAPIResource,
+      effort: effort == freezed
+          ? _value.effort
+          : effort // ignore: cast_nullable_to_non_nullable
+              as int,
+      baseStat: baseStat == freezed
+          ? _value.baseStat
+          : baseStat // ignore: cast_nullable_to_non_nullable
+              as int,
+    ));
+  }
+
+  @override
+  $NamedAPIResourceCopyWith<$Res> get stat {
+    return $NamedAPIResourceCopyWith<$Res>(_value.stat, (value) {
+      return _then(_value.copyWith(stat: value));
+    });
+  }
+}
+
+/// @nodoc
+abstract class _$PokemonStatCopyWith<$Res>
+    implements $PokemonStatCopyWith<$Res> {
+  factory _$PokemonStatCopyWith(
+          _PokemonStat value, $Res Function(_PokemonStat) then) =
+      __$PokemonStatCopyWithImpl<$Res>;
+  @override
+  $Res call(
+      {NamedAPIResource stat,
+      int effort,
+      @JsonKey(name: 'base_stat') int baseStat});
+
+  @override
+  $NamedAPIResourceCopyWith<$Res> get stat;
+}
+
+/// @nodoc
+class __$PokemonStatCopyWithImpl<$Res> extends _$PokemonStatCopyWithImpl<$Res>
+    implements _$PokemonStatCopyWith<$Res> {
+  __$PokemonStatCopyWithImpl(
+      _PokemonStat _value, $Res Function(_PokemonStat) _then)
+      : super(_value, (v) => _then(v as _PokemonStat));
+
+  @override
+  _PokemonStat get _value => super._value as _PokemonStat;
+
+  @override
+  $Res call({
+    Object? stat = freezed,
+    Object? effort = freezed,
+    Object? baseStat = freezed,
+  }) {
+    return _then(_PokemonStat(
+      stat == freezed
+          ? _value.stat
+          : stat // ignore: cast_nullable_to_non_nullable
+              as NamedAPIResource,
+      effort == freezed
+          ? _value.effort
+          : effort // ignore: cast_nullable_to_non_nullable
+              as int,
+      baseStat == freezed
+          ? _value.baseStat
+          : baseStat // ignore: cast_nullable_to_non_nullable
+              as int,
+    ));
+  }
+}
+
+/// @nodoc
+@JsonSerializable()
+class _$_PokemonStat implements _PokemonStat {
+  const _$_PokemonStat(
+      this.stat, this.effort, @JsonKey(name: 'base_stat') this.baseStat);
+
+  factory _$_PokemonStat.fromJson(Map<String, dynamic> json) =>
+      _$$_PokemonStatFromJson(json);
+
+  @override
+  final NamedAPIResource stat;
+  @override
+  final int effort;
+  @override
+  @JsonKey(name: 'base_stat')
+  final int baseStat;
+
+  @override
+  String toString() {
+    return 'PokemonStat(stat: $stat, effort: $effort, baseStat: $baseStat)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _PokemonStat &&
+            (identical(other.stat, stat) || other.stat == stat) &&
+            (identical(other.effort, effort) || other.effort == effort) &&
+            (identical(other.baseStat, baseStat) ||
+                other.baseStat == baseStat));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, stat, effort, baseStat);
+
+  @JsonKey(ignore: true)
+  @override
+  _$PokemonStatCopyWith<_PokemonStat> get copyWith =>
+      __$PokemonStatCopyWithImpl<_PokemonStat>(this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$$_PokemonStatToJson(this);
+  }
+}
+
+abstract class _PokemonStat implements PokemonStat {
+  const factory _PokemonStat(NamedAPIResource stat, int effort,
+      @JsonKey(name: 'base_stat') int baseStat) = _$_PokemonStat;
+
+  factory _PokemonStat.fromJson(Map<String, dynamic> json) =
+      _$_PokemonStat.fromJson;
+
+  @override
+  NamedAPIResource get stat;
+  @override
+  int get effort;
+  @override
+  @JsonKey(name: 'base_stat')
+  int get baseStat;
+  @override
+  @JsonKey(ignore: true)
+  _$PokemonStatCopyWith<_PokemonStat> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+PokemonSprites _$PokemonSpritesFromJson(Map<String, dynamic> json) {
+  return _PokemonSprites.fromJson(json);
+}
+
+/// @nodoc
+class _$PokemonSpritesTearOff {
+  const _$PokemonSpritesTearOff();
+
+  _PokemonSprites call(
+      @JsonKey(name: 'front_default') String frontDefault,
+      @JsonKey(name: 'front_shiny') String frontShiny,
+      @JsonKey(name: 'front_female') String frontFemale,
+      @JsonKey(name: 'front_shiny_female') String frontShinyFemale,
+      @JsonKey(name: 'back_default') String backDefault,
+      @JsonKey(name: 'back_shiny') String backShiny,
+      @JsonKey(name: 'back_female') String backFemale,
+      @JsonKey(name: 'back_shiny_female') String backShinyFemale) {
+    return _PokemonSprites(
+      frontDefault,
+      frontShiny,
+      frontFemale,
+      frontShinyFemale,
+      backDefault,
+      backShiny,
+      backFemale,
+      backShinyFemale,
+    );
+  }
+
+  PokemonSprites fromJson(Map<String, Object?> json) {
+    return PokemonSprites.fromJson(json);
+  }
+}
+
+/// @nodoc
+const $PokemonSprites = _$PokemonSpritesTearOff();
+
+/// @nodoc
+mixin _$PokemonSprites {
+  @JsonKey(name: 'front_default')
+  String get frontDefault => throw _privateConstructorUsedError;
+  @JsonKey(name: 'front_shiny')
+  String get frontShiny => throw _privateConstructorUsedError;
+  @JsonKey(name: 'front_female')
+  String get frontFemale => throw _privateConstructorUsedError;
+  @JsonKey(name: 'front_shiny_female')
+  String get frontShinyFemale => throw _privateConstructorUsedError;
+  @JsonKey(name: 'back_default')
+  String get backDefault => throw _privateConstructorUsedError;
+  @JsonKey(name: 'back_shiny')
+  String get backShiny => throw _privateConstructorUsedError;
+  @JsonKey(name: 'back_female')
+  String get backFemale => throw _privateConstructorUsedError;
+  @JsonKey(name: 'back_shiny_female')
+  String get backShinyFemale => throw _privateConstructorUsedError;
+
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $PokemonSpritesCopyWith<PokemonSprites> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $PokemonSpritesCopyWith<$Res> {
+  factory $PokemonSpritesCopyWith(
+          PokemonSprites value, $Res Function(PokemonSprites) then) =
+      _$PokemonSpritesCopyWithImpl<$Res>;
+  $Res call(
+      {@JsonKey(name: 'front_default') String frontDefault,
+      @JsonKey(name: 'front_shiny') String frontShiny,
+      @JsonKey(name: 'front_female') String frontFemale,
+      @JsonKey(name: 'front_shiny_female') String frontShinyFemale,
+      @JsonKey(name: 'back_default') String backDefault,
+      @JsonKey(name: 'back_shiny') String backShiny,
+      @JsonKey(name: 'back_female') String backFemale,
+      @JsonKey(name: 'back_shiny_female') String backShinyFemale});
+}
+
+/// @nodoc
+class _$PokemonSpritesCopyWithImpl<$Res>
+    implements $PokemonSpritesCopyWith<$Res> {
+  _$PokemonSpritesCopyWithImpl(this._value, this._then);
+
+  final PokemonSprites _value;
+  // ignore: unused_field
+  final $Res Function(PokemonSprites) _then;
+
+  @override
+  $Res call({
+    Object? frontDefault = freezed,
+    Object? frontShiny = freezed,
+    Object? frontFemale = freezed,
+    Object? frontShinyFemale = freezed,
+    Object? backDefault = freezed,
+    Object? backShiny = freezed,
+    Object? backFemale = freezed,
+    Object? backShinyFemale = freezed,
+  }) {
+    return _then(_value.copyWith(
+      frontDefault: frontDefault == freezed
+          ? _value.frontDefault
+          : frontDefault // ignore: cast_nullable_to_non_nullable
+              as String,
+      frontShiny: frontShiny == freezed
+          ? _value.frontShiny
+          : frontShiny // ignore: cast_nullable_to_non_nullable
+              as String,
+      frontFemale: frontFemale == freezed
+          ? _value.frontFemale
+          : frontFemale // ignore: cast_nullable_to_non_nullable
+              as String,
+      frontShinyFemale: frontShinyFemale == freezed
+          ? _value.frontShinyFemale
+          : frontShinyFemale // ignore: cast_nullable_to_non_nullable
+              as String,
+      backDefault: backDefault == freezed
+          ? _value.backDefault
+          : backDefault // ignore: cast_nullable_to_non_nullable
+              as String,
+      backShiny: backShiny == freezed
+          ? _value.backShiny
+          : backShiny // ignore: cast_nullable_to_non_nullable
+              as String,
+      backFemale: backFemale == freezed
+          ? _value.backFemale
+          : backFemale // ignore: cast_nullable_to_non_nullable
+              as String,
+      backShinyFemale: backShinyFemale == freezed
+          ? _value.backShinyFemale
+          : backShinyFemale // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
+  }
+}
+
+/// @nodoc
+abstract class _$PokemonSpritesCopyWith<$Res>
+    implements $PokemonSpritesCopyWith<$Res> {
+  factory _$PokemonSpritesCopyWith(
+          _PokemonSprites value, $Res Function(_PokemonSprites) then) =
+      __$PokemonSpritesCopyWithImpl<$Res>;
+  @override
+  $Res call(
+      {@JsonKey(name: 'front_default') String frontDefault,
+      @JsonKey(name: 'front_shiny') String frontShiny,
+      @JsonKey(name: 'front_female') String frontFemale,
+      @JsonKey(name: 'front_shiny_female') String frontShinyFemale,
+      @JsonKey(name: 'back_default') String backDefault,
+      @JsonKey(name: 'back_shiny') String backShiny,
+      @JsonKey(name: 'back_female') String backFemale,
+      @JsonKey(name: 'back_shiny_female') String backShinyFemale});
+}
+
+/// @nodoc
+class __$PokemonSpritesCopyWithImpl<$Res>
+    extends _$PokemonSpritesCopyWithImpl<$Res>
+    implements _$PokemonSpritesCopyWith<$Res> {
+  __$PokemonSpritesCopyWithImpl(
+      _PokemonSprites _value, $Res Function(_PokemonSprites) _then)
+      : super(_value, (v) => _then(v as _PokemonSprites));
+
+  @override
+  _PokemonSprites get _value => super._value as _PokemonSprites;
+
+  @override
+  $Res call({
+    Object? frontDefault = freezed,
+    Object? frontShiny = freezed,
+    Object? frontFemale = freezed,
+    Object? frontShinyFemale = freezed,
+    Object? backDefault = freezed,
+    Object? backShiny = freezed,
+    Object? backFemale = freezed,
+    Object? backShinyFemale = freezed,
+  }) {
+    return _then(_PokemonSprites(
+      frontDefault == freezed
+          ? _value.frontDefault
+          : frontDefault // ignore: cast_nullable_to_non_nullable
+              as String,
+      frontShiny == freezed
+          ? _value.frontShiny
+          : frontShiny // ignore: cast_nullable_to_non_nullable
+              as String,
+      frontFemale == freezed
+          ? _value.frontFemale
+          : frontFemale // ignore: cast_nullable_to_non_nullable
+              as String,
+      frontShinyFemale == freezed
+          ? _value.frontShinyFemale
+          : frontShinyFemale // ignore: cast_nullable_to_non_nullable
+              as String,
+      backDefault == freezed
+          ? _value.backDefault
+          : backDefault // ignore: cast_nullable_to_non_nullable
+              as String,
+      backShiny == freezed
+          ? _value.backShiny
+          : backShiny // ignore: cast_nullable_to_non_nullable
+              as String,
+      backFemale == freezed
+          ? _value.backFemale
+          : backFemale // ignore: cast_nullable_to_non_nullable
+              as String,
+      backShinyFemale == freezed
+          ? _value.backShinyFemale
+          : backShinyFemale // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
+  }
+}
+
+/// @nodoc
+@JsonSerializable()
+class _$_PokemonSprites implements _PokemonSprites {
+  const _$_PokemonSprites(
+      @JsonKey(name: 'front_default') this.frontDefault,
+      @JsonKey(name: 'front_shiny') this.frontShiny,
+      @JsonKey(name: 'front_female') this.frontFemale,
+      @JsonKey(name: 'front_shiny_female') this.frontShinyFemale,
+      @JsonKey(name: 'back_default') this.backDefault,
+      @JsonKey(name: 'back_shiny') this.backShiny,
+      @JsonKey(name: 'back_female') this.backFemale,
+      @JsonKey(name: 'back_shiny_female') this.backShinyFemale);
+
+  factory _$_PokemonSprites.fromJson(Map<String, dynamic> json) =>
+      _$$_PokemonSpritesFromJson(json);
+
+  @override
+  @JsonKey(name: 'front_default')
+  final String frontDefault;
+  @override
+  @JsonKey(name: 'front_shiny')
+  final String frontShiny;
+  @override
+  @JsonKey(name: 'front_female')
+  final String frontFemale;
+  @override
+  @JsonKey(name: 'front_shiny_female')
+  final String frontShinyFemale;
+  @override
+  @JsonKey(name: 'back_default')
+  final String backDefault;
+  @override
+  @JsonKey(name: 'back_shiny')
+  final String backShiny;
+  @override
+  @JsonKey(name: 'back_female')
+  final String backFemale;
+  @override
+  @JsonKey(name: 'back_shiny_female')
+  final String backShinyFemale;
+
+  @override
+  String toString() {
+    return 'PokemonSprites(frontDefault: $frontDefault, frontShiny: $frontShiny, frontFemale: $frontFemale, frontShinyFemale: $frontShinyFemale, backDefault: $backDefault, backShiny: $backShiny, backFemale: $backFemale, backShinyFemale: $backShinyFemale)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _PokemonSprites &&
+            (identical(other.frontDefault, frontDefault) ||
+                other.frontDefault == frontDefault) &&
+            (identical(other.frontShiny, frontShiny) ||
+                other.frontShiny == frontShiny) &&
+            (identical(other.frontFemale, frontFemale) ||
+                other.frontFemale == frontFemale) &&
+            (identical(other.frontShinyFemale, frontShinyFemale) ||
+                other.frontShinyFemale == frontShinyFemale) &&
+            (identical(other.backDefault, backDefault) ||
+                other.backDefault == backDefault) &&
+            (identical(other.backShiny, backShiny) ||
+                other.backShiny == backShiny) &&
+            (identical(other.backFemale, backFemale) ||
+                other.backFemale == backFemale) &&
+            (identical(other.backShinyFemale, backShinyFemale) ||
+                other.backShinyFemale == backShinyFemale));
+  }
+
+  @override
+  int get hashCode => Object.hash(
+      runtimeType,
+      frontDefault,
+      frontShiny,
+      frontFemale,
+      frontShinyFemale,
+      backDefault,
+      backShiny,
+      backFemale,
+      backShinyFemale);
+
+  @JsonKey(ignore: true)
+  @override
+  _$PokemonSpritesCopyWith<_PokemonSprites> get copyWith =>
+      __$PokemonSpritesCopyWithImpl<_PokemonSprites>(this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$$_PokemonSpritesToJson(this);
+  }
+}
+
+abstract class _PokemonSprites implements PokemonSprites {
+  const factory _PokemonSprites(
+          @JsonKey(name: 'front_default') String frontDefault,
+          @JsonKey(name: 'front_shiny') String frontShiny,
+          @JsonKey(name: 'front_female') String frontFemale,
+          @JsonKey(name: 'front_shiny_female') String frontShinyFemale,
+          @JsonKey(name: 'back_default') String backDefault,
+          @JsonKey(name: 'back_shiny') String backShiny,
+          @JsonKey(name: 'back_female') String backFemale,
+          @JsonKey(name: 'back_shiny_female') String backShinyFemale) =
+      _$_PokemonSprites;
+
+  factory _PokemonSprites.fromJson(Map<String, dynamic> json) =
+      _$_PokemonSprites.fromJson;
+
+  @override
+  @JsonKey(name: 'front_default')
+  String get frontDefault;
+  @override
+  @JsonKey(name: 'front_shiny')
+  String get frontShiny;
+  @override
+  @JsonKey(name: 'front_female')
+  String get frontFemale;
+  @override
+  @JsonKey(name: 'front_shiny_female')
+  String get frontShinyFemale;
+  @override
+  @JsonKey(name: 'back_default')
+  String get backDefault;
+  @override
+  @JsonKey(name: 'back_shiny')
+  String get backShiny;
+  @override
+  @JsonKey(name: 'back_female')
+  String get backFemale;
+  @override
+  @JsonKey(name: 'back_shiny_female')
+  String get backShinyFemale;
+  @override
+  @JsonKey(ignore: true)
+  _$PokemonSpritesCopyWith<_PokemonSprites> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+PokemonLocationAreas _$PokemonLocationAreasFromJson(Map<String, dynamic> json) {
+  return _PokemonLocationAreas.fromJson(json);
+}
+
+/// @nodoc
+class _$PokemonLocationAreasTearOff {
+  const _$PokemonLocationAreasTearOff();
+
+  _PokemonLocationAreas call(
+      @JsonKey(name: 'location_area')
+          NamedAPIResource locationArea,
+      @JsonKey(name: 'version_details')
+          List<VersionEncounterDetail> versionDetails) {
+    return _PokemonLocationAreas(
+      locationArea,
+      versionDetails,
+    );
+  }
+
+  PokemonLocationAreas fromJson(Map<String, Object?> json) {
+    return PokemonLocationAreas.fromJson(json);
+  }
+}
+
+/// @nodoc
+const $PokemonLocationAreas = _$PokemonLocationAreasTearOff();
+
+/// @nodoc
+mixin _$PokemonLocationAreas {
+  @JsonKey(name: 'location_area')
+  NamedAPIResource get locationArea => throw _privateConstructorUsedError;
+  @JsonKey(name: 'version_details')
+  List<VersionEncounterDetail> get versionDetails =>
+      throw _privateConstructorUsedError;
+
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $PokemonLocationAreasCopyWith<PokemonLocationAreas> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $PokemonLocationAreasCopyWith<$Res> {
+  factory $PokemonLocationAreasCopyWith(PokemonLocationAreas value,
+          $Res Function(PokemonLocationAreas) then) =
+      _$PokemonLocationAreasCopyWithImpl<$Res>;
+  $Res call(
+      {@JsonKey(name: 'location_area')
+          NamedAPIResource locationArea,
+      @JsonKey(name: 'version_details')
+          List<VersionEncounterDetail> versionDetails});
+
+  $NamedAPIResourceCopyWith<$Res> get locationArea;
+}
+
+/// @nodoc
+class _$PokemonLocationAreasCopyWithImpl<$Res>
+    implements $PokemonLocationAreasCopyWith<$Res> {
+  _$PokemonLocationAreasCopyWithImpl(this._value, this._then);
+
+  final PokemonLocationAreas _value;
+  // ignore: unused_field
+  final $Res Function(PokemonLocationAreas) _then;
+
+  @override
+  $Res call({
+    Object? locationArea = freezed,
+    Object? versionDetails = freezed,
+  }) {
+    return _then(_value.copyWith(
+      locationArea: locationArea == freezed
+          ? _value.locationArea
+          : locationArea // ignore: cast_nullable_to_non_nullable
+              as NamedAPIResource,
+      versionDetails: versionDetails == freezed
+          ? _value.versionDetails
+          : versionDetails // ignore: cast_nullable_to_non_nullable
+              as List<VersionEncounterDetail>,
+    ));
+  }
+
+  @override
+  $NamedAPIResourceCopyWith<$Res> get locationArea {
+    return $NamedAPIResourceCopyWith<$Res>(_value.locationArea, (value) {
+      return _then(_value.copyWith(locationArea: value));
+    });
+  }
+}
+
+/// @nodoc
+abstract class _$PokemonLocationAreasCopyWith<$Res>
+    implements $PokemonLocationAreasCopyWith<$Res> {
+  factory _$PokemonLocationAreasCopyWith(_PokemonLocationAreas value,
+          $Res Function(_PokemonLocationAreas) then) =
+      __$PokemonLocationAreasCopyWithImpl<$Res>;
+  @override
+  $Res call(
+      {@JsonKey(name: 'location_area')
+          NamedAPIResource locationArea,
+      @JsonKey(name: 'version_details')
+          List<VersionEncounterDetail> versionDetails});
+
+  @override
+  $NamedAPIResourceCopyWith<$Res> get locationArea;
+}
+
+/// @nodoc
+class __$PokemonLocationAreasCopyWithImpl<$Res>
+    extends _$PokemonLocationAreasCopyWithImpl<$Res>
+    implements _$PokemonLocationAreasCopyWith<$Res> {
+  __$PokemonLocationAreasCopyWithImpl(
+      _PokemonLocationAreas _value, $Res Function(_PokemonLocationAreas) _then)
+      : super(_value, (v) => _then(v as _PokemonLocationAreas));
+
+  @override
+  _PokemonLocationAreas get _value => super._value as _PokemonLocationAreas;
+
+  @override
+  $Res call({
+    Object? locationArea = freezed,
+    Object? versionDetails = freezed,
+  }) {
+    return _then(_PokemonLocationAreas(
+      locationArea == freezed
+          ? _value.locationArea
+          : locationArea // ignore: cast_nullable_to_non_nullable
+              as NamedAPIResource,
+      versionDetails == freezed
+          ? _value.versionDetails
+          : versionDetails // ignore: cast_nullable_to_non_nullable
+              as List<VersionEncounterDetail>,
+    ));
+  }
+}
+
+/// @nodoc
+@JsonSerializable()
+class _$_PokemonLocationAreas implements _PokemonLocationAreas {
+  const _$_PokemonLocationAreas(
+      @JsonKey(name: 'location_area') this.locationArea,
+      @JsonKey(name: 'version_details') this.versionDetails);
+
+  factory _$_PokemonLocationAreas.fromJson(Map<String, dynamic> json) =>
+      _$$_PokemonLocationAreasFromJson(json);
+
+  @override
+  @JsonKey(name: 'location_area')
+  final NamedAPIResource locationArea;
+  @override
+  @JsonKey(name: 'version_details')
+  final List<VersionEncounterDetail> versionDetails;
+
+  @override
+  String toString() {
+    return 'PokemonLocationAreas(locationArea: $locationArea, versionDetails: $versionDetails)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _PokemonLocationAreas &&
+            (identical(other.locationArea, locationArea) ||
+                other.locationArea == locationArea) &&
+            const DeepCollectionEquality()
+                .equals(other.versionDetails, versionDetails));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, locationArea,
+      const DeepCollectionEquality().hash(versionDetails));
+
+  @JsonKey(ignore: true)
+  @override
+  _$PokemonLocationAreasCopyWith<_PokemonLocationAreas> get copyWith =>
+      __$PokemonLocationAreasCopyWithImpl<_PokemonLocationAreas>(
+          this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$$_PokemonLocationAreasToJson(this);
+  }
+}
+
+abstract class _PokemonLocationAreas implements PokemonLocationAreas {
+  const factory _PokemonLocationAreas(
+          @JsonKey(name: 'location_area')
+              NamedAPIResource locationArea,
+          @JsonKey(name: 'version_details')
+              List<VersionEncounterDetail> versionDetails) =
+      _$_PokemonLocationAreas;
+
+  factory _PokemonLocationAreas.fromJson(Map<String, dynamic> json) =
+      _$_PokemonLocationAreas.fromJson;
+
+  @override
+  @JsonKey(name: 'location_area')
+  NamedAPIResource get locationArea;
+  @override
+  @JsonKey(name: 'version_details')
+  List<VersionEncounterDetail> get versionDetails;
+  @override
+  @JsonKey(ignore: true)
+  _$PokemonLocationAreasCopyWith<_PokemonLocationAreas> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+PokemonColor _$PokemonColorFromJson(Map<String, dynamic> json) {
+  return _PokemonColor.fromJson(json);
+}
+
+/// @nodoc
+class _$PokemonColorTearOff {
+  const _$PokemonColorTearOff();
+
+  _PokemonColor call(int id, String name, List<Name> names,
+      @JsonKey(name: 'pokemon_species') List<NamedAPIResource> pokemonSpecies) {
+    return _PokemonColor(
+      id,
+      name,
+      names,
+      pokemonSpecies,
+    );
+  }
+
+  PokemonColor fromJson(Map<String, Object?> json) {
+    return PokemonColor.fromJson(json);
+  }
+}
+
+/// @nodoc
+const $PokemonColor = _$PokemonColorTearOff();
+
+/// @nodoc
+mixin _$PokemonColor {
+  int get id => throw _privateConstructorUsedError;
+  String get name => throw _privateConstructorUsedError;
+  List<Name> get names => throw _privateConstructorUsedError;
+  @JsonKey(name: 'pokemon_species')
+  List<NamedAPIResource> get pokemonSpecies =>
+      throw _privateConstructorUsedError;
+
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $PokemonColorCopyWith<PokemonColor> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $PokemonColorCopyWith<$Res> {
+  factory $PokemonColorCopyWith(
+          PokemonColor value, $Res Function(PokemonColor) then) =
+      _$PokemonColorCopyWithImpl<$Res>;
+  $Res call(
+      {int id,
+      String name,
+      List<Name> names,
+      @JsonKey(name: 'pokemon_species') List<NamedAPIResource> pokemonSpecies});
+}
+
+/// @nodoc
+class _$PokemonColorCopyWithImpl<$Res> implements $PokemonColorCopyWith<$Res> {
+  _$PokemonColorCopyWithImpl(this._value, this._then);
+
+  final PokemonColor _value;
+  // ignore: unused_field
+  final $Res Function(PokemonColor) _then;
+
+  @override
+  $Res call({
+    Object? id = freezed,
+    Object? name = freezed,
+    Object? names = freezed,
+    Object? pokemonSpecies = freezed,
+  }) {
+    return _then(_value.copyWith(
+      id: id == freezed
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as int,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      names: names == freezed
+          ? _value.names
+          : names // ignore: cast_nullable_to_non_nullable
+              as List<Name>,
+      pokemonSpecies: pokemonSpecies == freezed
+          ? _value.pokemonSpecies
+          : pokemonSpecies // ignore: cast_nullable_to_non_nullable
+              as List<NamedAPIResource>,
+    ));
+  }
+}
+
+/// @nodoc
+abstract class _$PokemonColorCopyWith<$Res>
+    implements $PokemonColorCopyWith<$Res> {
+  factory _$PokemonColorCopyWith(
+          _PokemonColor value, $Res Function(_PokemonColor) then) =
+      __$PokemonColorCopyWithImpl<$Res>;
+  @override
+  $Res call(
+      {int id,
+      String name,
+      List<Name> names,
+      @JsonKey(name: 'pokemon_species') List<NamedAPIResource> pokemonSpecies});
+}
+
+/// @nodoc
+class __$PokemonColorCopyWithImpl<$Res> extends _$PokemonColorCopyWithImpl<$Res>
+    implements _$PokemonColorCopyWith<$Res> {
+  __$PokemonColorCopyWithImpl(
+      _PokemonColor _value, $Res Function(_PokemonColor) _then)
+      : super(_value, (v) => _then(v as _PokemonColor));
+
+  @override
+  _PokemonColor get _value => super._value as _PokemonColor;
+
+  @override
+  $Res call({
+    Object? id = freezed,
+    Object? name = freezed,
+    Object? names = freezed,
+    Object? pokemonSpecies = freezed,
+  }) {
+    return _then(_PokemonColor(
+      id == freezed
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as int,
+      name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      names == freezed
+          ? _value.names
+          : names // ignore: cast_nullable_to_non_nullable
+              as List<Name>,
+      pokemonSpecies == freezed
+          ? _value.pokemonSpecies
+          : pokemonSpecies // ignore: cast_nullable_to_non_nullable
+              as List<NamedAPIResource>,
+    ));
+  }
+}
+
+/// @nodoc
+@JsonSerializable()
+class _$_PokemonColor implements _PokemonColor {
+  const _$_PokemonColor(this.id, this.name, this.names,
+      @JsonKey(name: 'pokemon_species') this.pokemonSpecies);
+
+  factory _$_PokemonColor.fromJson(Map<String, dynamic> json) =>
+      _$$_PokemonColorFromJson(json);
+
+  @override
+  final int id;
+  @override
+  final String name;
+  @override
+  final List<Name> names;
+  @override
+  @JsonKey(name: 'pokemon_species')
+  final List<NamedAPIResource> pokemonSpecies;
+
+  @override
+  String toString() {
+    return 'PokemonColor(id: $id, name: $name, names: $names, pokemonSpecies: $pokemonSpecies)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _PokemonColor &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.name, name) || other.name == name) &&
+            const DeepCollectionEquality().equals(other.names, names) &&
+            const DeepCollectionEquality()
+                .equals(other.pokemonSpecies, pokemonSpecies));
+  }
+
+  @override
+  int get hashCode => Object.hash(
+      runtimeType,
+      id,
+      name,
+      const DeepCollectionEquality().hash(names),
+      const DeepCollectionEquality().hash(pokemonSpecies));
+
+  @JsonKey(ignore: true)
+  @override
+  _$PokemonColorCopyWith<_PokemonColor> get copyWith =>
+      __$PokemonColorCopyWithImpl<_PokemonColor>(this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$$_PokemonColorToJson(this);
+  }
+}
+
+abstract class _PokemonColor implements PokemonColor {
+  const factory _PokemonColor(
+      int id,
+      String name,
+      List<Name> names,
+      @JsonKey(name: 'pokemon_species')
+          List<NamedAPIResource> pokemonSpecies) = _$_PokemonColor;
+
+  factory _PokemonColor.fromJson(Map<String, dynamic> json) =
+      _$_PokemonColor.fromJson;
+
+  @override
+  int get id;
+  @override
+  String get name;
+  @override
+  List<Name> get names;
+  @override
+  @JsonKey(name: 'pokemon_species')
+  List<NamedAPIResource> get pokemonSpecies;
+  @override
+  @JsonKey(ignore: true)
+  _$PokemonColorCopyWith<_PokemonColor> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+PokemonForm _$PokemonFormFromJson(Map<String, dynamic> json) {
+  return _PokemonForm.fromJson(json);
+}
+
+/// @nodoc
+class _$PokemonFormTearOff {
+  const _$PokemonFormTearOff();
+
+  _PokemonForm call(
+      int id,
+      String name,
+      int order,
+      @JsonKey(name: 'form_order') int formOrder,
+      @JsonKey(name: 'is_default') bool isDefault,
+      @JsonKey(name: 'is_battle_only') bool isBattleOnly,
+      @JsonKey(name: 'is_mega') bool isMega,
+      @JsonKey(name: 'form_name') String formName,
+      NamedAPIResource pokemon,
+      NamedAPIResource types,
+      PokemonFormSprites sprites,
+      @JsonKey(name: 'version_group') NamedAPIResource versionGroup,
+      List<Name> names,
+      @JsonKey(name: 'form_names') List<Name> formNames) {
+    return _PokemonForm(
+      id,
+      name,
+      order,
+      formOrder,
+      isDefault,
+      isBattleOnly,
+      isMega,
+      formName,
+      pokemon,
+      types,
+      sprites,
+      versionGroup,
+      names,
+      formNames,
+    );
+  }
+
+  PokemonForm fromJson(Map<String, Object?> json) {
+    return PokemonForm.fromJson(json);
+  }
+}
+
+/// @nodoc
+const $PokemonForm = _$PokemonFormTearOff();
+
+/// @nodoc
+mixin _$PokemonForm {
+  int get id => throw _privateConstructorUsedError;
+  String get name => throw _privateConstructorUsedError;
+  int get order => throw _privateConstructorUsedError;
+  @JsonKey(name: 'form_order')
+  int get formOrder => throw _privateConstructorUsedError;
+  @JsonKey(name: 'is_default')
+  bool get isDefault => throw _privateConstructorUsedError;
+  @JsonKey(name: 'is_battle_only')
+  bool get isBattleOnly => throw _privateConstructorUsedError;
+  @JsonKey(name: 'is_mega')
+  bool get isMega => throw _privateConstructorUsedError;
+  @JsonKey(name: 'form_name')
+  String get formName => throw _privateConstructorUsedError;
+  NamedAPIResource get pokemon => throw _privateConstructorUsedError;
+  NamedAPIResource get types => throw _privateConstructorUsedError;
+  PokemonFormSprites get sprites => throw _privateConstructorUsedError;
+  @JsonKey(name: 'version_group')
+  NamedAPIResource get versionGroup => throw _privateConstructorUsedError;
+  List<Name> get names => throw _privateConstructorUsedError;
+  @JsonKey(name: 'form_names')
+  List<Name> get formNames => throw _privateConstructorUsedError;
+
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $PokemonFormCopyWith<PokemonForm> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $PokemonFormCopyWith<$Res> {
+  factory $PokemonFormCopyWith(
+          PokemonForm value, $Res Function(PokemonForm) then) =
+      _$PokemonFormCopyWithImpl<$Res>;
+  $Res call(
+      {int id,
+      String name,
+      int order,
+      @JsonKey(name: 'form_order') int formOrder,
+      @JsonKey(name: 'is_default') bool isDefault,
+      @JsonKey(name: 'is_battle_only') bool isBattleOnly,
+      @JsonKey(name: 'is_mega') bool isMega,
+      @JsonKey(name: 'form_name') String formName,
+      NamedAPIResource pokemon,
+      NamedAPIResource types,
+      PokemonFormSprites sprites,
+      @JsonKey(name: 'version_group') NamedAPIResource versionGroup,
+      List<Name> names,
+      @JsonKey(name: 'form_names') List<Name> formNames});
+
+  $NamedAPIResourceCopyWith<$Res> get pokemon;
+  $NamedAPIResourceCopyWith<$Res> get types;
+  $PokemonFormSpritesCopyWith<$Res> get sprites;
+  $NamedAPIResourceCopyWith<$Res> get versionGroup;
+}
+
+/// @nodoc
+class _$PokemonFormCopyWithImpl<$Res> implements $PokemonFormCopyWith<$Res> {
+  _$PokemonFormCopyWithImpl(this._value, this._then);
+
+  final PokemonForm _value;
+  // ignore: unused_field
+  final $Res Function(PokemonForm) _then;
+
+  @override
+  $Res call({
+    Object? id = freezed,
+    Object? name = freezed,
+    Object? order = freezed,
+    Object? formOrder = freezed,
+    Object? isDefault = freezed,
+    Object? isBattleOnly = freezed,
+    Object? isMega = freezed,
+    Object? formName = freezed,
+    Object? pokemon = freezed,
+    Object? types = freezed,
+    Object? sprites = freezed,
+    Object? versionGroup = freezed,
+    Object? names = freezed,
+    Object? formNames = freezed,
+  }) {
+    return _then(_value.copyWith(
+      id: id == freezed
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as int,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      order: order == freezed
+          ? _value.order
+          : order // ignore: cast_nullable_to_non_nullable
+              as int,
+      formOrder: formOrder == freezed
+          ? _value.formOrder
+          : formOrder // ignore: cast_nullable_to_non_nullable
+              as int,
+      isDefault: isDefault == freezed
+          ? _value.isDefault
+          : isDefault // ignore: cast_nullable_to_non_nullable
+              as bool,
+      isBattleOnly: isBattleOnly == freezed
+          ? _value.isBattleOnly
+          : isBattleOnly // ignore: cast_nullable_to_non_nullable
+              as bool,
+      isMega: isMega == freezed
+          ? _value.isMega
+          : isMega // ignore: cast_nullable_to_non_nullable
+              as bool,
+      formName: formName == freezed
+          ? _value.formName
+          : formName // ignore: cast_nullable_to_non_nullable
+              as String,
+      pokemon: pokemon == freezed
+          ? _value.pokemon
+          : pokemon // ignore: cast_nullable_to_non_nullable
+              as NamedAPIResource,
+      types: types == freezed
+          ? _value.types
+          : types // ignore: cast_nullable_to_non_nullable
+              as NamedAPIResource,
+      sprites: sprites == freezed
+          ? _value.sprites
+          : sprites // ignore: cast_nullable_to_non_nullable
+              as PokemonFormSprites,
+      versionGroup: versionGroup == freezed
+          ? _value.versionGroup
+          : versionGroup // ignore: cast_nullable_to_non_nullable
+              as NamedAPIResource,
+      names: names == freezed
+          ? _value.names
+          : names // ignore: cast_nullable_to_non_nullable
+              as List<Name>,
+      formNames: formNames == freezed
+          ? _value.formNames
+          : formNames // ignore: cast_nullable_to_non_nullable
+              as List<Name>,
+    ));
+  }
+
+  @override
+  $NamedAPIResourceCopyWith<$Res> get pokemon {
+    return $NamedAPIResourceCopyWith<$Res>(_value.pokemon, (value) {
+      return _then(_value.copyWith(pokemon: value));
+    });
+  }
+
+  @override
+  $NamedAPIResourceCopyWith<$Res> get types {
+    return $NamedAPIResourceCopyWith<$Res>(_value.types, (value) {
+      return _then(_value.copyWith(types: value));
+    });
+  }
+
+  @override
+  $PokemonFormSpritesCopyWith<$Res> get sprites {
+    return $PokemonFormSpritesCopyWith<$Res>(_value.sprites, (value) {
+      return _then(_value.copyWith(sprites: value));
+    });
+  }
+
+  @override
+  $NamedAPIResourceCopyWith<$Res> get versionGroup {
+    return $NamedAPIResourceCopyWith<$Res>(_value.versionGroup, (value) {
+      return _then(_value.copyWith(versionGroup: value));
+    });
+  }
+}
+
+/// @nodoc
+abstract class _$PokemonFormCopyWith<$Res>
+    implements $PokemonFormCopyWith<$Res> {
+  factory _$PokemonFormCopyWith(
+          _PokemonForm value, $Res Function(_PokemonForm) then) =
+      __$PokemonFormCopyWithImpl<$Res>;
+  @override
+  $Res call(
+      {int id,
+      String name,
+      int order,
+      @JsonKey(name: 'form_order') int formOrder,
+      @JsonKey(name: 'is_default') bool isDefault,
+      @JsonKey(name: 'is_battle_only') bool isBattleOnly,
+      @JsonKey(name: 'is_mega') bool isMega,
+      @JsonKey(name: 'form_name') String formName,
+      NamedAPIResource pokemon,
+      NamedAPIResource types,
+      PokemonFormSprites sprites,
+      @JsonKey(name: 'version_group') NamedAPIResource versionGroup,
+      List<Name> names,
+      @JsonKey(name: 'form_names') List<Name> formNames});
+
+  @override
+  $NamedAPIResourceCopyWith<$Res> get pokemon;
+  @override
+  $NamedAPIResourceCopyWith<$Res> get types;
+  @override
+  $PokemonFormSpritesCopyWith<$Res> get sprites;
+  @override
+  $NamedAPIResourceCopyWith<$Res> get versionGroup;
+}
+
+/// @nodoc
+class __$PokemonFormCopyWithImpl<$Res> extends _$PokemonFormCopyWithImpl<$Res>
+    implements _$PokemonFormCopyWith<$Res> {
+  __$PokemonFormCopyWithImpl(
+      _PokemonForm _value, $Res Function(_PokemonForm) _then)
+      : super(_value, (v) => _then(v as _PokemonForm));
+
+  @override
+  _PokemonForm get _value => super._value as _PokemonForm;
+
+  @override
+  $Res call({
+    Object? id = freezed,
+    Object? name = freezed,
+    Object? order = freezed,
+    Object? formOrder = freezed,
+    Object? isDefault = freezed,
+    Object? isBattleOnly = freezed,
+    Object? isMega = freezed,
+    Object? formName = freezed,
+    Object? pokemon = freezed,
+    Object? types = freezed,
+    Object? sprites = freezed,
+    Object? versionGroup = freezed,
+    Object? names = freezed,
+    Object? formNames = freezed,
+  }) {
+    return _then(_PokemonForm(
+      id == freezed
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as int,
+      name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      order == freezed
+          ? _value.order
+          : order // ignore: cast_nullable_to_non_nullable
+              as int,
+      formOrder == freezed
+          ? _value.formOrder
+          : formOrder // ignore: cast_nullable_to_non_nullable
+              as int,
+      isDefault == freezed
+          ? _value.isDefault
+          : isDefault // ignore: cast_nullable_to_non_nullable
+              as bool,
+      isBattleOnly == freezed
+          ? _value.isBattleOnly
+          : isBattleOnly // ignore: cast_nullable_to_non_nullable
+              as bool,
+      isMega == freezed
+          ? _value.isMega
+          : isMega // ignore: cast_nullable_to_non_nullable
+              as bool,
+      formName == freezed
+          ? _value.formName
+          : formName // ignore: cast_nullable_to_non_nullable
+              as String,
+      pokemon == freezed
+          ? _value.pokemon
+          : pokemon // ignore: cast_nullable_to_non_nullable
+              as NamedAPIResource,
+      types == freezed
+          ? _value.types
+          : types // ignore: cast_nullable_to_non_nullable
+              as NamedAPIResource,
+      sprites == freezed
+          ? _value.sprites
+          : sprites // ignore: cast_nullable_to_non_nullable
+              as PokemonFormSprites,
+      versionGroup == freezed
+          ? _value.versionGroup
+          : versionGroup // ignore: cast_nullable_to_non_nullable
+              as NamedAPIResource,
+      names == freezed
+          ? _value.names
+          : names // ignore: cast_nullable_to_non_nullable
+              as List<Name>,
+      formNames == freezed
+          ? _value.formNames
+          : formNames // ignore: cast_nullable_to_non_nullable
+              as List<Name>,
+    ));
+  }
+}
+
+/// @nodoc
+@JsonSerializable()
+class _$_PokemonForm implements _PokemonForm {
+  const _$_PokemonForm(
+      this.id,
+      this.name,
+      this.order,
+      @JsonKey(name: 'form_order') this.formOrder,
+      @JsonKey(name: 'is_default') this.isDefault,
+      @JsonKey(name: 'is_battle_only') this.isBattleOnly,
+      @JsonKey(name: 'is_mega') this.isMega,
+      @JsonKey(name: 'form_name') this.formName,
+      this.pokemon,
+      this.types,
+      this.sprites,
+      @JsonKey(name: 'version_group') this.versionGroup,
+      this.names,
+      @JsonKey(name: 'form_names') this.formNames);
+
+  factory _$_PokemonForm.fromJson(Map<String, dynamic> json) =>
+      _$$_PokemonFormFromJson(json);
+
+  @override
+  final int id;
+  @override
+  final String name;
+  @override
+  final int order;
+  @override
+  @JsonKey(name: 'form_order')
+  final int formOrder;
+  @override
+  @JsonKey(name: 'is_default')
+  final bool isDefault;
+  @override
+  @JsonKey(name: 'is_battle_only')
+  final bool isBattleOnly;
+  @override
+  @JsonKey(name: 'is_mega')
+  final bool isMega;
+  @override
+  @JsonKey(name: 'form_name')
+  final String formName;
+  @override
+  final NamedAPIResource pokemon;
+  @override
+  final NamedAPIResource types;
+  @override
+  final PokemonFormSprites sprites;
+  @override
+  @JsonKey(name: 'version_group')
+  final NamedAPIResource versionGroup;
+  @override
+  final List<Name> names;
+  @override
+  @JsonKey(name: 'form_names')
+  final List<Name> formNames;
+
+  @override
+  String toString() {
+    return 'PokemonForm(id: $id, name: $name, order: $order, formOrder: $formOrder, isDefault: $isDefault, isBattleOnly: $isBattleOnly, isMega: $isMega, formName: $formName, pokemon: $pokemon, types: $types, sprites: $sprites, versionGroup: $versionGroup, names: $names, formNames: $formNames)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _PokemonForm &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.name, name) || other.name == name) &&
+            (identical(other.order, order) || other.order == order) &&
+            (identical(other.formOrder, formOrder) ||
+                other.formOrder == formOrder) &&
+            (identical(other.isDefault, isDefault) ||
+                other.isDefault == isDefault) &&
+            (identical(other.isBattleOnly, isBattleOnly) ||
+                other.isBattleOnly == isBattleOnly) &&
+            (identical(other.isMega, isMega) || other.isMega == isMega) &&
+            (identical(other.formName, formName) ||
+                other.formName == formName) &&
+            (identical(other.pokemon, pokemon) || other.pokemon == pokemon) &&
+            (identical(other.types, types) || other.types == types) &&
+            (identical(other.sprites, sprites) || other.sprites == sprites) &&
+            (identical(other.versionGroup, versionGroup) ||
+                other.versionGroup == versionGroup) &&
+            const DeepCollectionEquality().equals(other.names, names) &&
+            const DeepCollectionEquality().equals(other.formNames, formNames));
+  }
+
+  @override
+  int get hashCode => Object.hash(
+      runtimeType,
+      id,
+      name,
+      order,
+      formOrder,
+      isDefault,
+      isBattleOnly,
+      isMega,
+      formName,
+      pokemon,
+      types,
+      sprites,
+      versionGroup,
+      const DeepCollectionEquality().hash(names),
+      const DeepCollectionEquality().hash(formNames));
+
+  @JsonKey(ignore: true)
+  @override
+  _$PokemonFormCopyWith<_PokemonForm> get copyWith =>
+      __$PokemonFormCopyWithImpl<_PokemonForm>(this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$$_PokemonFormToJson(this);
+  }
+}
+
+abstract class _PokemonForm implements PokemonForm {
+  const factory _PokemonForm(
+      int id,
+      String name,
+      int order,
+      @JsonKey(name: 'form_order') int formOrder,
+      @JsonKey(name: 'is_default') bool isDefault,
+      @JsonKey(name: 'is_battle_only') bool isBattleOnly,
+      @JsonKey(name: 'is_mega') bool isMega,
+      @JsonKey(name: 'form_name') String formName,
+      NamedAPIResource pokemon,
+      NamedAPIResource types,
+      PokemonFormSprites sprites,
+      @JsonKey(name: 'version_group') NamedAPIResource versionGroup,
+      List<Name> names,
+      @JsonKey(name: 'form_names') List<Name> formNames) = _$_PokemonForm;
+
+  factory _PokemonForm.fromJson(Map<String, dynamic> json) =
+      _$_PokemonForm.fromJson;
+
+  @override
+  int get id;
+  @override
+  String get name;
+  @override
+  int get order;
+  @override
+  @JsonKey(name: 'form_order')
+  int get formOrder;
+  @override
+  @JsonKey(name: 'is_default')
+  bool get isDefault;
+  @override
+  @JsonKey(name: 'is_battle_only')
+  bool get isBattleOnly;
+  @override
+  @JsonKey(name: 'is_mega')
+  bool get isMega;
+  @override
+  @JsonKey(name: 'form_name')
+  String get formName;
+  @override
+  NamedAPIResource get pokemon;
+  @override
+  NamedAPIResource get types;
+  @override
+  PokemonFormSprites get sprites;
+  @override
+  @JsonKey(name: 'version_group')
+  NamedAPIResource get versionGroup;
+  @override
+  List<Name> get names;
+  @override
+  @JsonKey(name: 'form_names')
+  List<Name> get formNames;
+  @override
+  @JsonKey(ignore: true)
+  _$PokemonFormCopyWith<_PokemonForm> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+PokemonFormSprites _$PokemonFormSpritesFromJson(Map<String, dynamic> json) {
+  return _PokemonFormSprites.fromJson(json);
+}
+
+/// @nodoc
+class _$PokemonFormSpritesTearOff {
+  const _$PokemonFormSpritesTearOff();
+
+  _PokemonFormSprites call(
+      @JsonKey(name: 'front_default') String frontDefault,
+      @JsonKey(name: 'front_shiny') String frontShiny,
+      @JsonKey(name: 'back_default') String backDefault,
+      @JsonKey(name: 'back_shiny') String backShiny) {
+    return _PokemonFormSprites(
+      frontDefault,
+      frontShiny,
+      backDefault,
+      backShiny,
+    );
+  }
+
+  PokemonFormSprites fromJson(Map<String, Object?> json) {
+    return PokemonFormSprites.fromJson(json);
+  }
+}
+
+/// @nodoc
+const $PokemonFormSprites = _$PokemonFormSpritesTearOff();
+
+/// @nodoc
+mixin _$PokemonFormSprites {
+  @JsonKey(name: 'front_default')
+  String get frontDefault => throw _privateConstructorUsedError;
+  @JsonKey(name: 'front_shiny')
+  String get frontShiny => throw _privateConstructorUsedError;
+  @JsonKey(name: 'back_default')
+  String get backDefault => throw _privateConstructorUsedError;
+  @JsonKey(name: 'back_shiny')
+  String get backShiny => throw _privateConstructorUsedError;
+
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $PokemonFormSpritesCopyWith<PokemonFormSprites> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $PokemonFormSpritesCopyWith<$Res> {
+  factory $PokemonFormSpritesCopyWith(
+          PokemonFormSprites value, $Res Function(PokemonFormSprites) then) =
+      _$PokemonFormSpritesCopyWithImpl<$Res>;
+  $Res call(
+      {@JsonKey(name: 'front_default') String frontDefault,
+      @JsonKey(name: 'front_shiny') String frontShiny,
+      @JsonKey(name: 'back_default') String backDefault,
+      @JsonKey(name: 'back_shiny') String backShiny});
+}
+
+/// @nodoc
+class _$PokemonFormSpritesCopyWithImpl<$Res>
+    implements $PokemonFormSpritesCopyWith<$Res> {
+  _$PokemonFormSpritesCopyWithImpl(this._value, this._then);
+
+  final PokemonFormSprites _value;
+  // ignore: unused_field
+  final $Res Function(PokemonFormSprites) _then;
+
+  @override
+  $Res call({
+    Object? frontDefault = freezed,
+    Object? frontShiny = freezed,
+    Object? backDefault = freezed,
+    Object? backShiny = freezed,
+  }) {
+    return _then(_value.copyWith(
+      frontDefault: frontDefault == freezed
+          ? _value.frontDefault
+          : frontDefault // ignore: cast_nullable_to_non_nullable
+              as String,
+      frontShiny: frontShiny == freezed
+          ? _value.frontShiny
+          : frontShiny // ignore: cast_nullable_to_non_nullable
+              as String,
+      backDefault: backDefault == freezed
+          ? _value.backDefault
+          : backDefault // ignore: cast_nullable_to_non_nullable
+              as String,
+      backShiny: backShiny == freezed
+          ? _value.backShiny
+          : backShiny // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
+  }
+}
+
+/// @nodoc
+abstract class _$PokemonFormSpritesCopyWith<$Res>
+    implements $PokemonFormSpritesCopyWith<$Res> {
+  factory _$PokemonFormSpritesCopyWith(
+          _PokemonFormSprites value, $Res Function(_PokemonFormSprites) then) =
+      __$PokemonFormSpritesCopyWithImpl<$Res>;
+  @override
+  $Res call(
+      {@JsonKey(name: 'front_default') String frontDefault,
+      @JsonKey(name: 'front_shiny') String frontShiny,
+      @JsonKey(name: 'back_default') String backDefault,
+      @JsonKey(name: 'back_shiny') String backShiny});
+}
+
+/// @nodoc
+class __$PokemonFormSpritesCopyWithImpl<$Res>
+    extends _$PokemonFormSpritesCopyWithImpl<$Res>
+    implements _$PokemonFormSpritesCopyWith<$Res> {
+  __$PokemonFormSpritesCopyWithImpl(
+      _PokemonFormSprites _value, $Res Function(_PokemonFormSprites) _then)
+      : super(_value, (v) => _then(v as _PokemonFormSprites));
+
+  @override
+  _PokemonFormSprites get _value => super._value as _PokemonFormSprites;
+
+  @override
+  $Res call({
+    Object? frontDefault = freezed,
+    Object? frontShiny = freezed,
+    Object? backDefault = freezed,
+    Object? backShiny = freezed,
+  }) {
+    return _then(_PokemonFormSprites(
+      frontDefault == freezed
+          ? _value.frontDefault
+          : frontDefault // ignore: cast_nullable_to_non_nullable
+              as String,
+      frontShiny == freezed
+          ? _value.frontShiny
+          : frontShiny // ignore: cast_nullable_to_non_nullable
+              as String,
+      backDefault == freezed
+          ? _value.backDefault
+          : backDefault // ignore: cast_nullable_to_non_nullable
+              as String,
+      backShiny == freezed
+          ? _value.backShiny
+          : backShiny // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
+  }
+}
+
+/// @nodoc
+@JsonSerializable()
+class _$_PokemonFormSprites implements _PokemonFormSprites {
+  const _$_PokemonFormSprites(
+      @JsonKey(name: 'front_default') this.frontDefault,
+      @JsonKey(name: 'front_shiny') this.frontShiny,
+      @JsonKey(name: 'back_default') this.backDefault,
+      @JsonKey(name: 'back_shiny') this.backShiny);
+
+  factory _$_PokemonFormSprites.fromJson(Map<String, dynamic> json) =>
+      _$$_PokemonFormSpritesFromJson(json);
+
+  @override
+  @JsonKey(name: 'front_default')
+  final String frontDefault;
+  @override
+  @JsonKey(name: 'front_shiny')
+  final String frontShiny;
+  @override
+  @JsonKey(name: 'back_default')
+  final String backDefault;
+  @override
+  @JsonKey(name: 'back_shiny')
+  final String backShiny;
+
+  @override
+  String toString() {
+    return 'PokemonFormSprites(frontDefault: $frontDefault, frontShiny: $frontShiny, backDefault: $backDefault, backShiny: $backShiny)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _PokemonFormSprites &&
+            (identical(other.frontDefault, frontDefault) ||
+                other.frontDefault == frontDefault) &&
+            (identical(other.frontShiny, frontShiny) ||
+                other.frontShiny == frontShiny) &&
+            (identical(other.backDefault, backDefault) ||
+                other.backDefault == backDefault) &&
+            (identical(other.backShiny, backShiny) ||
+                other.backShiny == backShiny));
+  }
+
+  @override
+  int get hashCode => Object.hash(
+      runtimeType, frontDefault, frontShiny, backDefault, backShiny);
+
+  @JsonKey(ignore: true)
+  @override
+  _$PokemonFormSpritesCopyWith<_PokemonFormSprites> get copyWith =>
+      __$PokemonFormSpritesCopyWithImpl<_PokemonFormSprites>(this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$$_PokemonFormSpritesToJson(this);
+  }
+}
+
+abstract class _PokemonFormSprites implements PokemonFormSprites {
+  const factory _PokemonFormSprites(
+      @JsonKey(name: 'front_default') String frontDefault,
+      @JsonKey(name: 'front_shiny') String frontShiny,
+      @JsonKey(name: 'back_default') String backDefault,
+      @JsonKey(name: 'back_shiny') String backShiny) = _$_PokemonFormSprites;
+
+  factory _PokemonFormSprites.fromJson(Map<String, dynamic> json) =
+      _$_PokemonFormSprites.fromJson;
+
+  @override
+  @JsonKey(name: 'front_default')
+  String get frontDefault;
+  @override
+  @JsonKey(name: 'front_shiny')
+  String get frontShiny;
+  @override
+  @JsonKey(name: 'back_default')
+  String get backDefault;
+  @override
+  @JsonKey(name: 'back_shiny')
+  String get backShiny;
+  @override
+  @JsonKey(ignore: true)
+  _$PokemonFormSpritesCopyWith<_PokemonFormSprites> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+PokemonHabitat _$PokemonHabitatFromJson(Map<String, dynamic> json) {
+  return _PokemonHabitat.fromJson(json);
+}
+
+/// @nodoc
+class _$PokemonHabitatTearOff {
+  const _$PokemonHabitatTearOff();
+
+  _PokemonHabitat call(int id, String name, List<Name> names,
+      @JsonKey(name: 'pokemon_species') List<NamedAPIResource> pokemonSpecies) {
+    return _PokemonHabitat(
+      id,
+      name,
+      names,
+      pokemonSpecies,
+    );
+  }
+
+  PokemonHabitat fromJson(Map<String, Object?> json) {
+    return PokemonHabitat.fromJson(json);
+  }
+}
+
+/// @nodoc
+const $PokemonHabitat = _$PokemonHabitatTearOff();
+
+/// @nodoc
+mixin _$PokemonHabitat {
+  int get id => throw _privateConstructorUsedError;
+  String get name => throw _privateConstructorUsedError;
+  List<Name> get names => throw _privateConstructorUsedError;
+  @JsonKey(name: 'pokemon_species')
+  List<NamedAPIResource> get pokemonSpecies =>
+      throw _privateConstructorUsedError;
+
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $PokemonHabitatCopyWith<PokemonHabitat> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $PokemonHabitatCopyWith<$Res> {
+  factory $PokemonHabitatCopyWith(
+          PokemonHabitat value, $Res Function(PokemonHabitat) then) =
+      _$PokemonHabitatCopyWithImpl<$Res>;
+  $Res call(
+      {int id,
+      String name,
+      List<Name> names,
+      @JsonKey(name: 'pokemon_species') List<NamedAPIResource> pokemonSpecies});
+}
+
+/// @nodoc
+class _$PokemonHabitatCopyWithImpl<$Res>
+    implements $PokemonHabitatCopyWith<$Res> {
+  _$PokemonHabitatCopyWithImpl(this._value, this._then);
+
+  final PokemonHabitat _value;
+  // ignore: unused_field
+  final $Res Function(PokemonHabitat) _then;
+
+  @override
+  $Res call({
+    Object? id = freezed,
+    Object? name = freezed,
+    Object? names = freezed,
+    Object? pokemonSpecies = freezed,
+  }) {
+    return _then(_value.copyWith(
+      id: id == freezed
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as int,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      names: names == freezed
+          ? _value.names
+          : names // ignore: cast_nullable_to_non_nullable
+              as List<Name>,
+      pokemonSpecies: pokemonSpecies == freezed
+          ? _value.pokemonSpecies
+          : pokemonSpecies // ignore: cast_nullable_to_non_nullable
+              as List<NamedAPIResource>,
+    ));
+  }
+}
+
+/// @nodoc
+abstract class _$PokemonHabitatCopyWith<$Res>
+    implements $PokemonHabitatCopyWith<$Res> {
+  factory _$PokemonHabitatCopyWith(
+          _PokemonHabitat value, $Res Function(_PokemonHabitat) then) =
+      __$PokemonHabitatCopyWithImpl<$Res>;
+  @override
+  $Res call(
+      {int id,
+      String name,
+      List<Name> names,
+      @JsonKey(name: 'pokemon_species') List<NamedAPIResource> pokemonSpecies});
+}
+
+/// @nodoc
+class __$PokemonHabitatCopyWithImpl<$Res>
+    extends _$PokemonHabitatCopyWithImpl<$Res>
+    implements _$PokemonHabitatCopyWith<$Res> {
+  __$PokemonHabitatCopyWithImpl(
+      _PokemonHabitat _value, $Res Function(_PokemonHabitat) _then)
+      : super(_value, (v) => _then(v as _PokemonHabitat));
+
+  @override
+  _PokemonHabitat get _value => super._value as _PokemonHabitat;
+
+  @override
+  $Res call({
+    Object? id = freezed,
+    Object? name = freezed,
+    Object? names = freezed,
+    Object? pokemonSpecies = freezed,
+  }) {
+    return _then(_PokemonHabitat(
+      id == freezed
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as int,
+      name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      names == freezed
+          ? _value.names
+          : names // ignore: cast_nullable_to_non_nullable
+              as List<Name>,
+      pokemonSpecies == freezed
+          ? _value.pokemonSpecies
+          : pokemonSpecies // ignore: cast_nullable_to_non_nullable
+              as List<NamedAPIResource>,
+    ));
+  }
+}
+
+/// @nodoc
+@JsonSerializable()
+class _$_PokemonHabitat implements _PokemonHabitat {
+  const _$_PokemonHabitat(this.id, this.name, this.names,
+      @JsonKey(name: 'pokemon_species') this.pokemonSpecies);
+
+  factory _$_PokemonHabitat.fromJson(Map<String, dynamic> json) =>
+      _$$_PokemonHabitatFromJson(json);
+
+  @override
+  final int id;
+  @override
+  final String name;
+  @override
+  final List<Name> names;
+  @override
+  @JsonKey(name: 'pokemon_species')
+  final List<NamedAPIResource> pokemonSpecies;
+
+  @override
+  String toString() {
+    return 'PokemonHabitat(id: $id, name: $name, names: $names, pokemonSpecies: $pokemonSpecies)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _PokemonHabitat &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.name, name) || other.name == name) &&
+            const DeepCollectionEquality().equals(other.names, names) &&
+            const DeepCollectionEquality()
+                .equals(other.pokemonSpecies, pokemonSpecies));
+  }
+
+  @override
+  int get hashCode => Object.hash(
+      runtimeType,
+      id,
+      name,
+      const DeepCollectionEquality().hash(names),
+      const DeepCollectionEquality().hash(pokemonSpecies));
+
+  @JsonKey(ignore: true)
+  @override
+  _$PokemonHabitatCopyWith<_PokemonHabitat> get copyWith =>
+      __$PokemonHabitatCopyWithImpl<_PokemonHabitat>(this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$$_PokemonHabitatToJson(this);
+  }
+}
+
+abstract class _PokemonHabitat implements PokemonHabitat {
+  const factory _PokemonHabitat(
+      int id,
+      String name,
+      List<Name> names,
+      @JsonKey(name: 'pokemon_species')
+          List<NamedAPIResource> pokemonSpecies) = _$_PokemonHabitat;
+
+  factory _PokemonHabitat.fromJson(Map<String, dynamic> json) =
+      _$_PokemonHabitat.fromJson;
+
+  @override
+  int get id;
+  @override
+  String get name;
+  @override
+  List<Name> get names;
+  @override
+  @JsonKey(name: 'pokemon_species')
+  List<NamedAPIResource> get pokemonSpecies;
+  @override
+  @JsonKey(ignore: true)
+  _$PokemonHabitatCopyWith<_PokemonHabitat> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+PokemonShape _$PokemonShapeFromJson(Map<String, dynamic> json) {
+  return _PokemonShape.fromJson(json);
+}
+
+/// @nodoc
+class _$PokemonShapeTearOff {
+  const _$PokemonShapeTearOff();
+
+  _PokemonShape call(
+      int id,
+      String name,
+      @JsonKey(name: 'awesome_names') List<AwesomeName> awesomeNames,
+      List<Name> names,
+      @JsonKey(name: 'pokemon_species') List<NamedAPIResource> pokemonSpecies) {
+    return _PokemonShape(
+      id,
+      name,
+      awesomeNames,
+      names,
+      pokemonSpecies,
+    );
+  }
+
+  PokemonShape fromJson(Map<String, Object?> json) {
+    return PokemonShape.fromJson(json);
+  }
+}
+
+/// @nodoc
+const $PokemonShape = _$PokemonShapeTearOff();
+
+/// @nodoc
+mixin _$PokemonShape {
+  int get id => throw _privateConstructorUsedError;
+  String get name => throw _privateConstructorUsedError;
+  @JsonKey(name: 'awesome_names')
+  List<AwesomeName> get awesomeNames => throw _privateConstructorUsedError;
+  List<Name> get names => throw _privateConstructorUsedError;
+  @JsonKey(name: 'pokemon_species')
+  List<NamedAPIResource> get pokemonSpecies =>
+      throw _privateConstructorUsedError;
+
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $PokemonShapeCopyWith<PokemonShape> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $PokemonShapeCopyWith<$Res> {
+  factory $PokemonShapeCopyWith(
+          PokemonShape value, $Res Function(PokemonShape) then) =
+      _$PokemonShapeCopyWithImpl<$Res>;
+  $Res call(
+      {int id,
+      String name,
+      @JsonKey(name: 'awesome_names') List<AwesomeName> awesomeNames,
+      List<Name> names,
+      @JsonKey(name: 'pokemon_species') List<NamedAPIResource> pokemonSpecies});
+}
+
+/// @nodoc
+class _$PokemonShapeCopyWithImpl<$Res> implements $PokemonShapeCopyWith<$Res> {
+  _$PokemonShapeCopyWithImpl(this._value, this._then);
+
+  final PokemonShape _value;
+  // ignore: unused_field
+  final $Res Function(PokemonShape) _then;
+
+  @override
+  $Res call({
+    Object? id = freezed,
+    Object? name = freezed,
+    Object? awesomeNames = freezed,
+    Object? names = freezed,
+    Object? pokemonSpecies = freezed,
+  }) {
+    return _then(_value.copyWith(
+      id: id == freezed
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as int,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      awesomeNames: awesomeNames == freezed
+          ? _value.awesomeNames
+          : awesomeNames // ignore: cast_nullable_to_non_nullable
+              as List<AwesomeName>,
+      names: names == freezed
+          ? _value.names
+          : names // ignore: cast_nullable_to_non_nullable
+              as List<Name>,
+      pokemonSpecies: pokemonSpecies == freezed
+          ? _value.pokemonSpecies
+          : pokemonSpecies // ignore: cast_nullable_to_non_nullable
+              as List<NamedAPIResource>,
+    ));
+  }
+}
+
+/// @nodoc
+abstract class _$PokemonShapeCopyWith<$Res>
+    implements $PokemonShapeCopyWith<$Res> {
+  factory _$PokemonShapeCopyWith(
+          _PokemonShape value, $Res Function(_PokemonShape) then) =
+      __$PokemonShapeCopyWithImpl<$Res>;
+  @override
+  $Res call(
+      {int id,
+      String name,
+      @JsonKey(name: 'awesome_names') List<AwesomeName> awesomeNames,
+      List<Name> names,
+      @JsonKey(name: 'pokemon_species') List<NamedAPIResource> pokemonSpecies});
+}
+
+/// @nodoc
+class __$PokemonShapeCopyWithImpl<$Res> extends _$PokemonShapeCopyWithImpl<$Res>
+    implements _$PokemonShapeCopyWith<$Res> {
+  __$PokemonShapeCopyWithImpl(
+      _PokemonShape _value, $Res Function(_PokemonShape) _then)
+      : super(_value, (v) => _then(v as _PokemonShape));
+
+  @override
+  _PokemonShape get _value => super._value as _PokemonShape;
+
+  @override
+  $Res call({
+    Object? id = freezed,
+    Object? name = freezed,
+    Object? awesomeNames = freezed,
+    Object? names = freezed,
+    Object? pokemonSpecies = freezed,
+  }) {
+    return _then(_PokemonShape(
+      id == freezed
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as int,
+      name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      awesomeNames == freezed
+          ? _value.awesomeNames
+          : awesomeNames // ignore: cast_nullable_to_non_nullable
+              as List<AwesomeName>,
+      names == freezed
+          ? _value.names
+          : names // ignore: cast_nullable_to_non_nullable
+              as List<Name>,
+      pokemonSpecies == freezed
+          ? _value.pokemonSpecies
+          : pokemonSpecies // ignore: cast_nullable_to_non_nullable
+              as List<NamedAPIResource>,
+    ));
+  }
+}
+
+/// @nodoc
+@JsonSerializable()
+class _$_PokemonShape implements _PokemonShape {
+  const _$_PokemonShape(
+      this.id,
+      this.name,
+      @JsonKey(name: 'awesome_names') this.awesomeNames,
+      this.names,
+      @JsonKey(name: 'pokemon_species') this.pokemonSpecies);
+
+  factory _$_PokemonShape.fromJson(Map<String, dynamic> json) =>
+      _$$_PokemonShapeFromJson(json);
+
+  @override
+  final int id;
+  @override
+  final String name;
+  @override
+  @JsonKey(name: 'awesome_names')
+  final List<AwesomeName> awesomeNames;
+  @override
+  final List<Name> names;
+  @override
+  @JsonKey(name: 'pokemon_species')
+  final List<NamedAPIResource> pokemonSpecies;
+
+  @override
+  String toString() {
+    return 'PokemonShape(id: $id, name: $name, awesomeNames: $awesomeNames, names: $names, pokemonSpecies: $pokemonSpecies)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _PokemonShape &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.name, name) || other.name == name) &&
+            const DeepCollectionEquality()
+                .equals(other.awesomeNames, awesomeNames) &&
+            const DeepCollectionEquality().equals(other.names, names) &&
+            const DeepCollectionEquality()
+                .equals(other.pokemonSpecies, pokemonSpecies));
+  }
+
+  @override
+  int get hashCode => Object.hash(
+      runtimeType,
+      id,
+      name,
+      const DeepCollectionEquality().hash(awesomeNames),
+      const DeepCollectionEquality().hash(names),
+      const DeepCollectionEquality().hash(pokemonSpecies));
+
+  @JsonKey(ignore: true)
+  @override
+  _$PokemonShapeCopyWith<_PokemonShape> get copyWith =>
+      __$PokemonShapeCopyWithImpl<_PokemonShape>(this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$$_PokemonShapeToJson(this);
+  }
+}
+
+abstract class _PokemonShape implements PokemonShape {
+  const factory _PokemonShape(
+      int id,
+      String name,
+      @JsonKey(name: 'awesome_names')
+          List<AwesomeName> awesomeNames,
+      List<Name> names,
+      @JsonKey(name: 'pokemon_species')
+          List<NamedAPIResource> pokemonSpecies) = _$_PokemonShape;
+
+  factory _PokemonShape.fromJson(Map<String, dynamic> json) =
+      _$_PokemonShape.fromJson;
+
+  @override
+  int get id;
+  @override
+  String get name;
+  @override
+  @JsonKey(name: 'awesome_names')
+  List<AwesomeName> get awesomeNames;
+  @override
+  List<Name> get names;
+  @override
+  @JsonKey(name: 'pokemon_species')
+  List<NamedAPIResource> get pokemonSpecies;
+  @override
+  @JsonKey(ignore: true)
+  _$PokemonShapeCopyWith<_PokemonShape> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+AwesomeName _$AwesomeNameFromJson(Map<String, dynamic> json) {
+  return _AwesomeName.fromJson(json);
+}
+
+/// @nodoc
+class _$AwesomeNameTearOff {
+  const _$AwesomeNameTearOff();
+
+  _AwesomeName call(@JsonKey(name: 'awesome_name') String awesomeName,
+      NamedAPIResource language) {
+    return _AwesomeName(
+      awesomeName,
+      language,
+    );
+  }
+
+  AwesomeName fromJson(Map<String, Object?> json) {
+    return AwesomeName.fromJson(json);
+  }
+}
+
+/// @nodoc
+const $AwesomeName = _$AwesomeNameTearOff();
+
+/// @nodoc
+mixin _$AwesomeName {
+  @JsonKey(name: 'awesome_name')
+  String get awesomeName => throw _privateConstructorUsedError;
+  NamedAPIResource get language => throw _privateConstructorUsedError;
+
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $AwesomeNameCopyWith<AwesomeName> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $AwesomeNameCopyWith<$Res> {
+  factory $AwesomeNameCopyWith(
+          AwesomeName value, $Res Function(AwesomeName) then) =
+      _$AwesomeNameCopyWithImpl<$Res>;
+  $Res call(
+      {@JsonKey(name: 'awesome_name') String awesomeName,
+      NamedAPIResource language});
+
+  $NamedAPIResourceCopyWith<$Res> get language;
+}
+
+/// @nodoc
+class _$AwesomeNameCopyWithImpl<$Res> implements $AwesomeNameCopyWith<$Res> {
+  _$AwesomeNameCopyWithImpl(this._value, this._then);
+
+  final AwesomeName _value;
+  // ignore: unused_field
+  final $Res Function(AwesomeName) _then;
+
+  @override
+  $Res call({
+    Object? awesomeName = freezed,
+    Object? language = freezed,
+  }) {
+    return _then(_value.copyWith(
+      awesomeName: awesomeName == freezed
+          ? _value.awesomeName
+          : awesomeName // ignore: cast_nullable_to_non_nullable
+              as String,
+      language: language == freezed
+          ? _value.language
+          : language // ignore: cast_nullable_to_non_nullable
+              as NamedAPIResource,
+    ));
+  }
+
+  @override
+  $NamedAPIResourceCopyWith<$Res> get language {
+    return $NamedAPIResourceCopyWith<$Res>(_value.language, (value) {
+      return _then(_value.copyWith(language: value));
+    });
+  }
+}
+
+/// @nodoc
+abstract class _$AwesomeNameCopyWith<$Res>
+    implements $AwesomeNameCopyWith<$Res> {
+  factory _$AwesomeNameCopyWith(
+          _AwesomeName value, $Res Function(_AwesomeName) then) =
+      __$AwesomeNameCopyWithImpl<$Res>;
+  @override
+  $Res call(
+      {@JsonKey(name: 'awesome_name') String awesomeName,
+      NamedAPIResource language});
+
+  @override
+  $NamedAPIResourceCopyWith<$Res> get language;
+}
+
+/// @nodoc
+class __$AwesomeNameCopyWithImpl<$Res> extends _$AwesomeNameCopyWithImpl<$Res>
+    implements _$AwesomeNameCopyWith<$Res> {
+  __$AwesomeNameCopyWithImpl(
+      _AwesomeName _value, $Res Function(_AwesomeName) _then)
+      : super(_value, (v) => _then(v as _AwesomeName));
+
+  @override
+  _AwesomeName get _value => super._value as _AwesomeName;
+
+  @override
+  $Res call({
+    Object? awesomeName = freezed,
+    Object? language = freezed,
+  }) {
+    return _then(_AwesomeName(
+      awesomeName == freezed
+          ? _value.awesomeName
+          : awesomeName // ignore: cast_nullable_to_non_nullable
+              as String,
+      language == freezed
+          ? _value.language
+          : language // ignore: cast_nullable_to_non_nullable
+              as NamedAPIResource,
+    ));
+  }
+}
+
+/// @nodoc
+@JsonSerializable()
+class _$_AwesomeName implements _AwesomeName {
+  const _$_AwesomeName(
+      @JsonKey(name: 'awesome_name') this.awesomeName, this.language);
+
+  factory _$_AwesomeName.fromJson(Map<String, dynamic> json) =>
+      _$$_AwesomeNameFromJson(json);
+
+  @override
+  @JsonKey(name: 'awesome_name')
+  final String awesomeName;
+  @override
+  final NamedAPIResource language;
+
+  @override
+  String toString() {
+    return 'AwesomeName(awesomeName: $awesomeName, language: $language)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _AwesomeName &&
+            (identical(other.awesomeName, awesomeName) ||
+                other.awesomeName == awesomeName) &&
+            (identical(other.language, language) ||
+                other.language == language));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, awesomeName, language);
+
+  @JsonKey(ignore: true)
+  @override
+  _$AwesomeNameCopyWith<_AwesomeName> get copyWith =>
+      __$AwesomeNameCopyWithImpl<_AwesomeName>(this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$$_AwesomeNameToJson(this);
+  }
+}
+
+abstract class _AwesomeName implements AwesomeName {
+  const factory _AwesomeName(@JsonKey(name: 'awesome_name') String awesomeName,
+      NamedAPIResource language) = _$_AwesomeName;
+
+  factory _AwesomeName.fromJson(Map<String, dynamic> json) =
+      _$_AwesomeName.fromJson;
+
+  @override
+  @JsonKey(name: 'awesome_name')
+  String get awesomeName;
+  @override
+  NamedAPIResource get language;
+  @override
+  @JsonKey(ignore: true)
+  _$AwesomeNameCopyWith<_AwesomeName> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+PokemonSpecies _$PokemonSpeciesFromJson(Map<String, dynamic> json) {
+  return _PokemonSpecies.fromJson(json);
+}
+
+/// @nodoc
+class _$PokemonSpeciesTearOff {
+  const _$PokemonSpeciesTearOff();
+
+  _PokemonSpecies call(
+      int id,
+      String name,
+      int order,
+      @JsonKey(name: 'gender_rate')
+          int genderRate,
+      @JsonKey(name: 'capture_rate')
+          int captureRate,
+      @JsonKey(name: 'base_happiness')
+          int baseHappiness,
+      @JsonKey(name: 'is_baby')
+          bool isBaby,
+      @JsonKey(name: 'is_legendary')
+          bool isLegendary,
+      @JsonKey(name: 'is_mythical')
+          bool isMythical,
+      @JsonKey(name: 'hatch_counter')
+          int hatchCounter,
+      @JsonKey(name: 'has_gender_differences')
+          bool hasGenderdifferences,
+      @JsonKey(name: 'forms_switchable')
+          bool formsSwitchable,
+      @JsonKey(name: 'growth_rate')
+          NamedAPIResource growthRate,
+      @JsonKey(name: 'pokedex_numbers')
+          List<PokemonSpeciesDexEntry> pokedexNumbers,
+      @JsonKey(name: 'egg_groups')
+          List<NamedAPIResource> eggGroups,
+      NamedAPIResource color,
+      NamedAPIResource shape,
+      @JsonKey(name: 'evolves_from_species')
+          List<NamedAPIResource> evolvesFromSpecies,
+      @JsonKey(name: 'evolution_chain')
+          APIResource evolutionChain,
+      NamedAPIResource habitat,
+      NamedAPIResource generation,
+      List<Name> names,
+      @JsonKey(name: 'pal_park_encounters')
+          List<PalParkEncounterArea> palParkEncounters,
+      @JsonKey(name: 'flavor_text_entries')
+          List<FlavorText> flavorTextEntries,
+      @JsonKey(name: 'form_descriptions')
+          List<Description> formDescriptions,
+      List<Genus> genera,
+      List<PokemonSpeciesVariety> varieties) {
+    return _PokemonSpecies(
+      id,
+      name,
+      order,
+      genderRate,
+      captureRate,
+      baseHappiness,
+      isBaby,
+      isLegendary,
+      isMythical,
+      hatchCounter,
+      hasGenderdifferences,
+      formsSwitchable,
+      growthRate,
+      pokedexNumbers,
+      eggGroups,
+      color,
+      shape,
+      evolvesFromSpecies,
+      evolutionChain,
+      habitat,
+      generation,
+      names,
+      palParkEncounters,
+      flavorTextEntries,
+      formDescriptions,
+      genera,
+      varieties,
+    );
+  }
+
+  PokemonSpecies fromJson(Map<String, Object?> json) {
+    return PokemonSpecies.fromJson(json);
+  }
+}
+
+/// @nodoc
+const $PokemonSpecies = _$PokemonSpeciesTearOff();
+
+/// @nodoc
+mixin _$PokemonSpecies {
+  int get id => throw _privateConstructorUsedError;
+  String get name => throw _privateConstructorUsedError;
+  int get order => throw _privateConstructorUsedError;
+  @JsonKey(name: 'gender_rate')
+  int get genderRate => throw _privateConstructorUsedError;
+  @JsonKey(name: 'capture_rate')
+  int get captureRate => throw _privateConstructorUsedError;
+  @JsonKey(name: 'base_happiness')
+  int get baseHappiness => throw _privateConstructorUsedError;
+  @JsonKey(name: 'is_baby')
+  bool get isBaby => throw _privateConstructorUsedError;
+  @JsonKey(name: 'is_legendary')
+  bool get isLegendary => throw _privateConstructorUsedError;
+  @JsonKey(name: 'is_mythical')
+  bool get isMythical => throw _privateConstructorUsedError;
+  @JsonKey(name: 'hatch_counter')
+  int get hatchCounter => throw _privateConstructorUsedError;
+  @JsonKey(name: 'has_gender_differences')
+  bool get hasGenderdifferences => throw _privateConstructorUsedError;
+  @JsonKey(name: 'forms_switchable')
+  bool get formsSwitchable => throw _privateConstructorUsedError;
+  @JsonKey(name: 'growth_rate')
+  NamedAPIResource get growthRate => throw _privateConstructorUsedError;
+  @JsonKey(name: 'pokedex_numbers')
+  List<PokemonSpeciesDexEntry> get pokedexNumbers =>
+      throw _privateConstructorUsedError;
+  @JsonKey(name: 'egg_groups')
+  List<NamedAPIResource> get eggGroups => throw _privateConstructorUsedError;
+  NamedAPIResource get color => throw _privateConstructorUsedError;
+  NamedAPIResource get shape => throw _privateConstructorUsedError;
+  @JsonKey(name: 'evolves_from_species')
+  List<NamedAPIResource> get evolvesFromSpecies =>
+      throw _privateConstructorUsedError;
+  @JsonKey(name: 'evolution_chain')
+  APIResource get evolutionChain => throw _privateConstructorUsedError;
+  NamedAPIResource get habitat => throw _privateConstructorUsedError;
+  NamedAPIResource get generation => throw _privateConstructorUsedError;
+  List<Name> get names => throw _privateConstructorUsedError;
+  @JsonKey(name: 'pal_park_encounters')
+  List<PalParkEncounterArea> get palParkEncounters =>
+      throw _privateConstructorUsedError;
+  @JsonKey(name: 'flavor_text_entries')
+  List<FlavorText> get flavorTextEntries => throw _privateConstructorUsedError;
+  @JsonKey(name: 'form_descriptions')
+  List<Description> get formDescriptions => throw _privateConstructorUsedError;
+  List<Genus> get genera => throw _privateConstructorUsedError;
+  List<PokemonSpeciesVariety> get varieties =>
+      throw _privateConstructorUsedError;
+
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $PokemonSpeciesCopyWith<PokemonSpecies> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $PokemonSpeciesCopyWith<$Res> {
+  factory $PokemonSpeciesCopyWith(
+          PokemonSpecies value, $Res Function(PokemonSpecies) then) =
+      _$PokemonSpeciesCopyWithImpl<$Res>;
+  $Res call(
+      {int id,
+      String name,
+      int order,
+      @JsonKey(name: 'gender_rate')
+          int genderRate,
+      @JsonKey(name: 'capture_rate')
+          int captureRate,
+      @JsonKey(name: 'base_happiness')
+          int baseHappiness,
+      @JsonKey(name: 'is_baby')
+          bool isBaby,
+      @JsonKey(name: 'is_legendary')
+          bool isLegendary,
+      @JsonKey(name: 'is_mythical')
+          bool isMythical,
+      @JsonKey(name: 'hatch_counter')
+          int hatchCounter,
+      @JsonKey(name: 'has_gender_differences')
+          bool hasGenderdifferences,
+      @JsonKey(name: 'forms_switchable')
+          bool formsSwitchable,
+      @JsonKey(name: 'growth_rate')
+          NamedAPIResource growthRate,
+      @JsonKey(name: 'pokedex_numbers')
+          List<PokemonSpeciesDexEntry> pokedexNumbers,
+      @JsonKey(name: 'egg_groups')
+          List<NamedAPIResource> eggGroups,
+      NamedAPIResource color,
+      NamedAPIResource shape,
+      @JsonKey(name: 'evolves_from_species')
+          List<NamedAPIResource> evolvesFromSpecies,
+      @JsonKey(name: 'evolution_chain')
+          APIResource evolutionChain,
+      NamedAPIResource habitat,
+      NamedAPIResource generation,
+      List<Name> names,
+      @JsonKey(name: 'pal_park_encounters')
+          List<PalParkEncounterArea> palParkEncounters,
+      @JsonKey(name: 'flavor_text_entries')
+          List<FlavorText> flavorTextEntries,
+      @JsonKey(name: 'form_descriptions')
+          List<Description> formDescriptions,
+      List<Genus> genera,
+      List<PokemonSpeciesVariety> varieties});
+
+  $NamedAPIResourceCopyWith<$Res> get growthRate;
+  $NamedAPIResourceCopyWith<$Res> get color;
+  $NamedAPIResourceCopyWith<$Res> get shape;
+  $APIResourceCopyWith<$Res> get evolutionChain;
+  $NamedAPIResourceCopyWith<$Res> get habitat;
+  $NamedAPIResourceCopyWith<$Res> get generation;
+}
+
+/// @nodoc
+class _$PokemonSpeciesCopyWithImpl<$Res>
+    implements $PokemonSpeciesCopyWith<$Res> {
+  _$PokemonSpeciesCopyWithImpl(this._value, this._then);
+
+  final PokemonSpecies _value;
+  // ignore: unused_field
+  final $Res Function(PokemonSpecies) _then;
+
+  @override
+  $Res call({
+    Object? id = freezed,
+    Object? name = freezed,
+    Object? order = freezed,
+    Object? genderRate = freezed,
+    Object? captureRate = freezed,
+    Object? baseHappiness = freezed,
+    Object? isBaby = freezed,
+    Object? isLegendary = freezed,
+    Object? isMythical = freezed,
+    Object? hatchCounter = freezed,
+    Object? hasGenderdifferences = freezed,
+    Object? formsSwitchable = freezed,
+    Object? growthRate = freezed,
+    Object? pokedexNumbers = freezed,
+    Object? eggGroups = freezed,
+    Object? color = freezed,
+    Object? shape = freezed,
+    Object? evolvesFromSpecies = freezed,
+    Object? evolutionChain = freezed,
+    Object? habitat = freezed,
+    Object? generation = freezed,
+    Object? names = freezed,
+    Object? palParkEncounters = freezed,
+    Object? flavorTextEntries = freezed,
+    Object? formDescriptions = freezed,
+    Object? genera = freezed,
+    Object? varieties = freezed,
+  }) {
+    return _then(_value.copyWith(
+      id: id == freezed
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as int,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      order: order == freezed
+          ? _value.order
+          : order // ignore: cast_nullable_to_non_nullable
+              as int,
+      genderRate: genderRate == freezed
+          ? _value.genderRate
+          : genderRate // ignore: cast_nullable_to_non_nullable
+              as int,
+      captureRate: captureRate == freezed
+          ? _value.captureRate
+          : captureRate // ignore: cast_nullable_to_non_nullable
+              as int,
+      baseHappiness: baseHappiness == freezed
+          ? _value.baseHappiness
+          : baseHappiness // ignore: cast_nullable_to_non_nullable
+              as int,
+      isBaby: isBaby == freezed
+          ? _value.isBaby
+          : isBaby // ignore: cast_nullable_to_non_nullable
+              as bool,
+      isLegendary: isLegendary == freezed
+          ? _value.isLegendary
+          : isLegendary // ignore: cast_nullable_to_non_nullable
+              as bool,
+      isMythical: isMythical == freezed
+          ? _value.isMythical
+          : isMythical // ignore: cast_nullable_to_non_nullable
+              as bool,
+      hatchCounter: hatchCounter == freezed
+          ? _value.hatchCounter
+          : hatchCounter // ignore: cast_nullable_to_non_nullable
+              as int,
+      hasGenderdifferences: hasGenderdifferences == freezed
+          ? _value.hasGenderdifferences
+          : hasGenderdifferences // ignore: cast_nullable_to_non_nullable
+              as bool,
+      formsSwitchable: formsSwitchable == freezed
+          ? _value.formsSwitchable
+          : formsSwitchable // ignore: cast_nullable_to_non_nullable
+              as bool,
+      growthRate: growthRate == freezed
+          ? _value.growthRate
+          : growthRate // ignore: cast_nullable_to_non_nullable
+              as NamedAPIResource,
+      pokedexNumbers: pokedexNumbers == freezed
+          ? _value.pokedexNumbers
+          : pokedexNumbers // ignore: cast_nullable_to_non_nullable
+              as List<PokemonSpeciesDexEntry>,
+      eggGroups: eggGroups == freezed
+          ? _value.eggGroups
+          : eggGroups // ignore: cast_nullable_to_non_nullable
+              as List<NamedAPIResource>,
+      color: color == freezed
+          ? _value.color
+          : color // ignore: cast_nullable_to_non_nullable
+              as NamedAPIResource,
+      shape: shape == freezed
+          ? _value.shape
+          : shape // ignore: cast_nullable_to_non_nullable
+              as NamedAPIResource,
+      evolvesFromSpecies: evolvesFromSpecies == freezed
+          ? _value.evolvesFromSpecies
+          : evolvesFromSpecies // ignore: cast_nullable_to_non_nullable
+              as List<NamedAPIResource>,
+      evolutionChain: evolutionChain == freezed
+          ? _value.evolutionChain
+          : evolutionChain // ignore: cast_nullable_to_non_nullable
+              as APIResource,
+      habitat: habitat == freezed
+          ? _value.habitat
+          : habitat // ignore: cast_nullable_to_non_nullable
+              as NamedAPIResource,
+      generation: generation == freezed
+          ? _value.generation
+          : generation // ignore: cast_nullable_to_non_nullable
+              as NamedAPIResource,
+      names: names == freezed
+          ? _value.names
+          : names // ignore: cast_nullable_to_non_nullable
+              as List<Name>,
+      palParkEncounters: palParkEncounters == freezed
+          ? _value.palParkEncounters
+          : palParkEncounters // ignore: cast_nullable_to_non_nullable
+              as List<PalParkEncounterArea>,
+      flavorTextEntries: flavorTextEntries == freezed
+          ? _value.flavorTextEntries
+          : flavorTextEntries // ignore: cast_nullable_to_non_nullable
+              as List<FlavorText>,
+      formDescriptions: formDescriptions == freezed
+          ? _value.formDescriptions
+          : formDescriptions // ignore: cast_nullable_to_non_nullable
+              as List<Description>,
+      genera: genera == freezed
+          ? _value.genera
+          : genera // ignore: cast_nullable_to_non_nullable
+              as List<Genus>,
+      varieties: varieties == freezed
+          ? _value.varieties
+          : varieties // ignore: cast_nullable_to_non_nullable
+              as List<PokemonSpeciesVariety>,
+    ));
+  }
+
+  @override
+  $NamedAPIResourceCopyWith<$Res> get growthRate {
+    return $NamedAPIResourceCopyWith<$Res>(_value.growthRate, (value) {
+      return _then(_value.copyWith(growthRate: value));
+    });
+  }
+
+  @override
+  $NamedAPIResourceCopyWith<$Res> get color {
+    return $NamedAPIResourceCopyWith<$Res>(_value.color, (value) {
+      return _then(_value.copyWith(color: value));
+    });
+  }
+
+  @override
+  $NamedAPIResourceCopyWith<$Res> get shape {
+    return $NamedAPIResourceCopyWith<$Res>(_value.shape, (value) {
+      return _then(_value.copyWith(shape: value));
+    });
+  }
+
+  @override
+  $APIResourceCopyWith<$Res> get evolutionChain {
+    return $APIResourceCopyWith<$Res>(_value.evolutionChain, (value) {
+      return _then(_value.copyWith(evolutionChain: value));
+    });
+  }
+
+  @override
+  $NamedAPIResourceCopyWith<$Res> get habitat {
+    return $NamedAPIResourceCopyWith<$Res>(_value.habitat, (value) {
+      return _then(_value.copyWith(habitat: value));
+    });
+  }
+
+  @override
+  $NamedAPIResourceCopyWith<$Res> get generation {
+    return $NamedAPIResourceCopyWith<$Res>(_value.generation, (value) {
+      return _then(_value.copyWith(generation: value));
+    });
+  }
+}
+
+/// @nodoc
+abstract class _$PokemonSpeciesCopyWith<$Res>
+    implements $PokemonSpeciesCopyWith<$Res> {
+  factory _$PokemonSpeciesCopyWith(
+          _PokemonSpecies value, $Res Function(_PokemonSpecies) then) =
+      __$PokemonSpeciesCopyWithImpl<$Res>;
+  @override
+  $Res call(
+      {int id,
+      String name,
+      int order,
+      @JsonKey(name: 'gender_rate')
+          int genderRate,
+      @JsonKey(name: 'capture_rate')
+          int captureRate,
+      @JsonKey(name: 'base_happiness')
+          int baseHappiness,
+      @JsonKey(name: 'is_baby')
+          bool isBaby,
+      @JsonKey(name: 'is_legendary')
+          bool isLegendary,
+      @JsonKey(name: 'is_mythical')
+          bool isMythical,
+      @JsonKey(name: 'hatch_counter')
+          int hatchCounter,
+      @JsonKey(name: 'has_gender_differences')
+          bool hasGenderdifferences,
+      @JsonKey(name: 'forms_switchable')
+          bool formsSwitchable,
+      @JsonKey(name: 'growth_rate')
+          NamedAPIResource growthRate,
+      @JsonKey(name: 'pokedex_numbers')
+          List<PokemonSpeciesDexEntry> pokedexNumbers,
+      @JsonKey(name: 'egg_groups')
+          List<NamedAPIResource> eggGroups,
+      NamedAPIResource color,
+      NamedAPIResource shape,
+      @JsonKey(name: 'evolves_from_species')
+          List<NamedAPIResource> evolvesFromSpecies,
+      @JsonKey(name: 'evolution_chain')
+          APIResource evolutionChain,
+      NamedAPIResource habitat,
+      NamedAPIResource generation,
+      List<Name> names,
+      @JsonKey(name: 'pal_park_encounters')
+          List<PalParkEncounterArea> palParkEncounters,
+      @JsonKey(name: 'flavor_text_entries')
+          List<FlavorText> flavorTextEntries,
+      @JsonKey(name: 'form_descriptions')
+          List<Description> formDescriptions,
+      List<Genus> genera,
+      List<PokemonSpeciesVariety> varieties});
+
+  @override
+  $NamedAPIResourceCopyWith<$Res> get growthRate;
+  @override
+  $NamedAPIResourceCopyWith<$Res> get color;
+  @override
+  $NamedAPIResourceCopyWith<$Res> get shape;
+  @override
+  $APIResourceCopyWith<$Res> get evolutionChain;
+  @override
+  $NamedAPIResourceCopyWith<$Res> get habitat;
+  @override
+  $NamedAPIResourceCopyWith<$Res> get generation;
+}
+
+/// @nodoc
+class __$PokemonSpeciesCopyWithImpl<$Res>
+    extends _$PokemonSpeciesCopyWithImpl<$Res>
+    implements _$PokemonSpeciesCopyWith<$Res> {
+  __$PokemonSpeciesCopyWithImpl(
+      _PokemonSpecies _value, $Res Function(_PokemonSpecies) _then)
+      : super(_value, (v) => _then(v as _PokemonSpecies));
+
+  @override
+  _PokemonSpecies get _value => super._value as _PokemonSpecies;
+
+  @override
+  $Res call({
+    Object? id = freezed,
+    Object? name = freezed,
+    Object? order = freezed,
+    Object? genderRate = freezed,
+    Object? captureRate = freezed,
+    Object? baseHappiness = freezed,
+    Object? isBaby = freezed,
+    Object? isLegendary = freezed,
+    Object? isMythical = freezed,
+    Object? hatchCounter = freezed,
+    Object? hasGenderdifferences = freezed,
+    Object? formsSwitchable = freezed,
+    Object? growthRate = freezed,
+    Object? pokedexNumbers = freezed,
+    Object? eggGroups = freezed,
+    Object? color = freezed,
+    Object? shape = freezed,
+    Object? evolvesFromSpecies = freezed,
+    Object? evolutionChain = freezed,
+    Object? habitat = freezed,
+    Object? generation = freezed,
+    Object? names = freezed,
+    Object? palParkEncounters = freezed,
+    Object? flavorTextEntries = freezed,
+    Object? formDescriptions = freezed,
+    Object? genera = freezed,
+    Object? varieties = freezed,
+  }) {
+    return _then(_PokemonSpecies(
+      id == freezed
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as int,
+      name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      order == freezed
+          ? _value.order
+          : order // ignore: cast_nullable_to_non_nullable
+              as int,
+      genderRate == freezed
+          ? _value.genderRate
+          : genderRate // ignore: cast_nullable_to_non_nullable
+              as int,
+      captureRate == freezed
+          ? _value.captureRate
+          : captureRate // ignore: cast_nullable_to_non_nullable
+              as int,
+      baseHappiness == freezed
+          ? _value.baseHappiness
+          : baseHappiness // ignore: cast_nullable_to_non_nullable
+              as int,
+      isBaby == freezed
+          ? _value.isBaby
+          : isBaby // ignore: cast_nullable_to_non_nullable
+              as bool,
+      isLegendary == freezed
+          ? _value.isLegendary
+          : isLegendary // ignore: cast_nullable_to_non_nullable
+              as bool,
+      isMythical == freezed
+          ? _value.isMythical
+          : isMythical // ignore: cast_nullable_to_non_nullable
+              as bool,
+      hatchCounter == freezed
+          ? _value.hatchCounter
+          : hatchCounter // ignore: cast_nullable_to_non_nullable
+              as int,
+      hasGenderdifferences == freezed
+          ? _value.hasGenderdifferences
+          : hasGenderdifferences // ignore: cast_nullable_to_non_nullable
+              as bool,
+      formsSwitchable == freezed
+          ? _value.formsSwitchable
+          : formsSwitchable // ignore: cast_nullable_to_non_nullable
+              as bool,
+      growthRate == freezed
+          ? _value.growthRate
+          : growthRate // ignore: cast_nullable_to_non_nullable
+              as NamedAPIResource,
+      pokedexNumbers == freezed
+          ? _value.pokedexNumbers
+          : pokedexNumbers // ignore: cast_nullable_to_non_nullable
+              as List<PokemonSpeciesDexEntry>,
+      eggGroups == freezed
+          ? _value.eggGroups
+          : eggGroups // ignore: cast_nullable_to_non_nullable
+              as List<NamedAPIResource>,
+      color == freezed
+          ? _value.color
+          : color // ignore: cast_nullable_to_non_nullable
+              as NamedAPIResource,
+      shape == freezed
+          ? _value.shape
+          : shape // ignore: cast_nullable_to_non_nullable
+              as NamedAPIResource,
+      evolvesFromSpecies == freezed
+          ? _value.evolvesFromSpecies
+          : evolvesFromSpecies // ignore: cast_nullable_to_non_nullable
+              as List<NamedAPIResource>,
+      evolutionChain == freezed
+          ? _value.evolutionChain
+          : evolutionChain // ignore: cast_nullable_to_non_nullable
+              as APIResource,
+      habitat == freezed
+          ? _value.habitat
+          : habitat // ignore: cast_nullable_to_non_nullable
+              as NamedAPIResource,
+      generation == freezed
+          ? _value.generation
+          : generation // ignore: cast_nullable_to_non_nullable
+              as NamedAPIResource,
+      names == freezed
+          ? _value.names
+          : names // ignore: cast_nullable_to_non_nullable
+              as List<Name>,
+      palParkEncounters == freezed
+          ? _value.palParkEncounters
+          : palParkEncounters // ignore: cast_nullable_to_non_nullable
+              as List<PalParkEncounterArea>,
+      flavorTextEntries == freezed
+          ? _value.flavorTextEntries
+          : flavorTextEntries // ignore: cast_nullable_to_non_nullable
+              as List<FlavorText>,
+      formDescriptions == freezed
+          ? _value.formDescriptions
+          : formDescriptions // ignore: cast_nullable_to_non_nullable
+              as List<Description>,
+      genera == freezed
+          ? _value.genera
+          : genera // ignore: cast_nullable_to_non_nullable
+              as List<Genus>,
+      varieties == freezed
+          ? _value.varieties
+          : varieties // ignore: cast_nullable_to_non_nullable
+              as List<PokemonSpeciesVariety>,
+    ));
+  }
+}
+
+/// @nodoc
+@JsonSerializable()
+class _$_PokemonSpecies implements _PokemonSpecies {
+  const _$_PokemonSpecies(
+      this.id,
+      this.name,
+      this.order,
+      @JsonKey(name: 'gender_rate') this.genderRate,
+      @JsonKey(name: 'capture_rate') this.captureRate,
+      @JsonKey(name: 'base_happiness') this.baseHappiness,
+      @JsonKey(name: 'is_baby') this.isBaby,
+      @JsonKey(name: 'is_legendary') this.isLegendary,
+      @JsonKey(name: 'is_mythical') this.isMythical,
+      @JsonKey(name: 'hatch_counter') this.hatchCounter,
+      @JsonKey(name: 'has_gender_differences') this.hasGenderdifferences,
+      @JsonKey(name: 'forms_switchable') this.formsSwitchable,
+      @JsonKey(name: 'growth_rate') this.growthRate,
+      @JsonKey(name: 'pokedex_numbers') this.pokedexNumbers,
+      @JsonKey(name: 'egg_groups') this.eggGroups,
+      this.color,
+      this.shape,
+      @JsonKey(name: 'evolves_from_species') this.evolvesFromSpecies,
+      @JsonKey(name: 'evolution_chain') this.evolutionChain,
+      this.habitat,
+      this.generation,
+      this.names,
+      @JsonKey(name: 'pal_park_encounters') this.palParkEncounters,
+      @JsonKey(name: 'flavor_text_entries') this.flavorTextEntries,
+      @JsonKey(name: 'form_descriptions') this.formDescriptions,
+      this.genera,
+      this.varieties);
+
+  factory _$_PokemonSpecies.fromJson(Map<String, dynamic> json) =>
+      _$$_PokemonSpeciesFromJson(json);
+
+  @override
+  final int id;
+  @override
+  final String name;
+  @override
+  final int order;
+  @override
+  @JsonKey(name: 'gender_rate')
+  final int genderRate;
+  @override
+  @JsonKey(name: 'capture_rate')
+  final int captureRate;
+  @override
+  @JsonKey(name: 'base_happiness')
+  final int baseHappiness;
+  @override
+  @JsonKey(name: 'is_baby')
+  final bool isBaby;
+  @override
+  @JsonKey(name: 'is_legendary')
+  final bool isLegendary;
+  @override
+  @JsonKey(name: 'is_mythical')
+  final bool isMythical;
+  @override
+  @JsonKey(name: 'hatch_counter')
+  final int hatchCounter;
+  @override
+  @JsonKey(name: 'has_gender_differences')
+  final bool hasGenderdifferences;
+  @override
+  @JsonKey(name: 'forms_switchable')
+  final bool formsSwitchable;
+  @override
+  @JsonKey(name: 'growth_rate')
+  final NamedAPIResource growthRate;
+  @override
+  @JsonKey(name: 'pokedex_numbers')
+  final List<PokemonSpeciesDexEntry> pokedexNumbers;
+  @override
+  @JsonKey(name: 'egg_groups')
+  final List<NamedAPIResource> eggGroups;
+  @override
+  final NamedAPIResource color;
+  @override
+  final NamedAPIResource shape;
+  @override
+  @JsonKey(name: 'evolves_from_species')
+  final List<NamedAPIResource> evolvesFromSpecies;
+  @override
+  @JsonKey(name: 'evolution_chain')
+  final APIResource evolutionChain;
+  @override
+  final NamedAPIResource habitat;
+  @override
+  final NamedAPIResource generation;
+  @override
+  final List<Name> names;
+  @override
+  @JsonKey(name: 'pal_park_encounters')
+  final List<PalParkEncounterArea> palParkEncounters;
+  @override
+  @JsonKey(name: 'flavor_text_entries')
+  final List<FlavorText> flavorTextEntries;
+  @override
+  @JsonKey(name: 'form_descriptions')
+  final List<Description> formDescriptions;
+  @override
+  final List<Genus> genera;
+  @override
+  final List<PokemonSpeciesVariety> varieties;
+
+  @override
+  String toString() {
+    return 'PokemonSpecies(id: $id, name: $name, order: $order, genderRate: $genderRate, captureRate: $captureRate, baseHappiness: $baseHappiness, isBaby: $isBaby, isLegendary: $isLegendary, isMythical: $isMythical, hatchCounter: $hatchCounter, hasGenderdifferences: $hasGenderdifferences, formsSwitchable: $formsSwitchable, growthRate: $growthRate, pokedexNumbers: $pokedexNumbers, eggGroups: $eggGroups, color: $color, shape: $shape, evolvesFromSpecies: $evolvesFromSpecies, evolutionChain: $evolutionChain, habitat: $habitat, generation: $generation, names: $names, palParkEncounters: $palParkEncounters, flavorTextEntries: $flavorTextEntries, formDescriptions: $formDescriptions, genera: $genera, varieties: $varieties)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _PokemonSpecies &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.name, name) || other.name == name) &&
+            (identical(other.order, order) || other.order == order) &&
+            (identical(other.genderRate, genderRate) ||
+                other.genderRate == genderRate) &&
+            (identical(other.captureRate, captureRate) ||
+                other.captureRate == captureRate) &&
+            (identical(other.baseHappiness, baseHappiness) ||
+                other.baseHappiness == baseHappiness) &&
+            (identical(other.isBaby, isBaby) || other.isBaby == isBaby) &&
+            (identical(other.isLegendary, isLegendary) ||
+                other.isLegendary == isLegendary) &&
+            (identical(other.isMythical, isMythical) ||
+                other.isMythical == isMythical) &&
+            (identical(other.hatchCounter, hatchCounter) ||
+                other.hatchCounter == hatchCounter) &&
+            (identical(other.hasGenderdifferences, hasGenderdifferences) ||
+                other.hasGenderdifferences == hasGenderdifferences) &&
+            (identical(other.formsSwitchable, formsSwitchable) ||
+                other.formsSwitchable == formsSwitchable) &&
+            (identical(other.growthRate, growthRate) ||
+                other.growthRate == growthRate) &&
+            const DeepCollectionEquality()
+                .equals(other.pokedexNumbers, pokedexNumbers) &&
+            const DeepCollectionEquality().equals(other.eggGroups, eggGroups) &&
+            (identical(other.color, color) || other.color == color) &&
+            (identical(other.shape, shape) || other.shape == shape) &&
+            const DeepCollectionEquality()
+                .equals(other.evolvesFromSpecies, evolvesFromSpecies) &&
+            (identical(other.evolutionChain, evolutionChain) ||
+                other.evolutionChain == evolutionChain) &&
+            (identical(other.habitat, habitat) || other.habitat == habitat) &&
+            (identical(other.generation, generation) ||
+                other.generation == generation) &&
+            const DeepCollectionEquality().equals(other.names, names) &&
+            const DeepCollectionEquality()
+                .equals(other.palParkEncounters, palParkEncounters) &&
+            const DeepCollectionEquality()
+                .equals(other.flavorTextEntries, flavorTextEntries) &&
+            const DeepCollectionEquality()
+                .equals(other.formDescriptions, formDescriptions) &&
+            const DeepCollectionEquality().equals(other.genera, genera) &&
+            const DeepCollectionEquality().equals(other.varieties, varieties));
+  }
+
+  @override
+  int get hashCode => Object.hashAll([
+        runtimeType,
+        id,
+        name,
+        order,
+        genderRate,
+        captureRate,
+        baseHappiness,
+        isBaby,
+        isLegendary,
+        isMythical,
+        hatchCounter,
+        hasGenderdifferences,
+        formsSwitchable,
+        growthRate,
+        const DeepCollectionEquality().hash(pokedexNumbers),
+        const DeepCollectionEquality().hash(eggGroups),
+        color,
+        shape,
+        const DeepCollectionEquality().hash(evolvesFromSpecies),
+        evolutionChain,
+        habitat,
+        generation,
+        const DeepCollectionEquality().hash(names),
+        const DeepCollectionEquality().hash(palParkEncounters),
+        const DeepCollectionEquality().hash(flavorTextEntries),
+        const DeepCollectionEquality().hash(formDescriptions),
+        const DeepCollectionEquality().hash(genera),
+        const DeepCollectionEquality().hash(varieties)
+      ]);
+
+  @JsonKey(ignore: true)
+  @override
+  _$PokemonSpeciesCopyWith<_PokemonSpecies> get copyWith =>
+      __$PokemonSpeciesCopyWithImpl<_PokemonSpecies>(this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$$_PokemonSpeciesToJson(this);
+  }
+}
+
+abstract class _PokemonSpecies implements PokemonSpecies {
+  const factory _PokemonSpecies(
+      int id,
+      String name,
+      int order,
+      @JsonKey(name: 'gender_rate')
+          int genderRate,
+      @JsonKey(name: 'capture_rate')
+          int captureRate,
+      @JsonKey(name: 'base_happiness')
+          int baseHappiness,
+      @JsonKey(name: 'is_baby')
+          bool isBaby,
+      @JsonKey(name: 'is_legendary')
+          bool isLegendary,
+      @JsonKey(name: 'is_mythical')
+          bool isMythical,
+      @JsonKey(name: 'hatch_counter')
+          int hatchCounter,
+      @JsonKey(name: 'has_gender_differences')
+          bool hasGenderdifferences,
+      @JsonKey(name: 'forms_switchable')
+          bool formsSwitchable,
+      @JsonKey(name: 'growth_rate')
+          NamedAPIResource growthRate,
+      @JsonKey(name: 'pokedex_numbers')
+          List<PokemonSpeciesDexEntry> pokedexNumbers,
+      @JsonKey(name: 'egg_groups')
+          List<NamedAPIResource> eggGroups,
+      NamedAPIResource color,
+      NamedAPIResource shape,
+      @JsonKey(name: 'evolves_from_species')
+          List<NamedAPIResource> evolvesFromSpecies,
+      @JsonKey(name: 'evolution_chain')
+          APIResource evolutionChain,
+      NamedAPIResource habitat,
+      NamedAPIResource generation,
+      List<Name> names,
+      @JsonKey(name: 'pal_park_encounters')
+          List<PalParkEncounterArea> palParkEncounters,
+      @JsonKey(name: 'flavor_text_entries')
+          List<FlavorText> flavorTextEntries,
+      @JsonKey(name: 'form_descriptions')
+          List<Description> formDescriptions,
+      List<Genus> genera,
+      List<PokemonSpeciesVariety> varieties) = _$_PokemonSpecies;
+
+  factory _PokemonSpecies.fromJson(Map<String, dynamic> json) =
+      _$_PokemonSpecies.fromJson;
+
+  @override
+  int get id;
+  @override
+  String get name;
+  @override
+  int get order;
+  @override
+  @JsonKey(name: 'gender_rate')
+  int get genderRate;
+  @override
+  @JsonKey(name: 'capture_rate')
+  int get captureRate;
+  @override
+  @JsonKey(name: 'base_happiness')
+  int get baseHappiness;
+  @override
+  @JsonKey(name: 'is_baby')
+  bool get isBaby;
+  @override
+  @JsonKey(name: 'is_legendary')
+  bool get isLegendary;
+  @override
+  @JsonKey(name: 'is_mythical')
+  bool get isMythical;
+  @override
+  @JsonKey(name: 'hatch_counter')
+  int get hatchCounter;
+  @override
+  @JsonKey(name: 'has_gender_differences')
+  bool get hasGenderdifferences;
+  @override
+  @JsonKey(name: 'forms_switchable')
+  bool get formsSwitchable;
+  @override
+  @JsonKey(name: 'growth_rate')
+  NamedAPIResource get growthRate;
+  @override
+  @JsonKey(name: 'pokedex_numbers')
+  List<PokemonSpeciesDexEntry> get pokedexNumbers;
+  @override
+  @JsonKey(name: 'egg_groups')
+  List<NamedAPIResource> get eggGroups;
+  @override
+  NamedAPIResource get color;
+  @override
+  NamedAPIResource get shape;
+  @override
+  @JsonKey(name: 'evolves_from_species')
+  List<NamedAPIResource> get evolvesFromSpecies;
+  @override
+  @JsonKey(name: 'evolution_chain')
+  APIResource get evolutionChain;
+  @override
+  NamedAPIResource get habitat;
+  @override
+  NamedAPIResource get generation;
+  @override
+  List<Name> get names;
+  @override
+  @JsonKey(name: 'pal_park_encounters')
+  List<PalParkEncounterArea> get palParkEncounters;
+  @override
+  @JsonKey(name: 'flavor_text_entries')
+  List<FlavorText> get flavorTextEntries;
+  @override
+  @JsonKey(name: 'form_descriptions')
+  List<Description> get formDescriptions;
+  @override
+  List<Genus> get genera;
+  @override
+  List<PokemonSpeciesVariety> get varieties;
+  @override
+  @JsonKey(ignore: true)
+  _$PokemonSpeciesCopyWith<_PokemonSpecies> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+Genus _$GenusFromJson(Map<String, dynamic> json) {
+  return _Genus.fromJson(json);
+}
+
+/// @nodoc
+class _$GenusTearOff {
+  const _$GenusTearOff();
+
+  _Genus call(String genus, NamedAPIResource language) {
+    return _Genus(
+      genus,
+      language,
+    );
+  }
+
+  Genus fromJson(Map<String, Object?> json) {
+    return Genus.fromJson(json);
+  }
+}
+
+/// @nodoc
+const $Genus = _$GenusTearOff();
+
+/// @nodoc
+mixin _$Genus {
+  String get genus => throw _privateConstructorUsedError;
+  NamedAPIResource get language => throw _privateConstructorUsedError;
+
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $GenusCopyWith<Genus> get copyWith => throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $GenusCopyWith<$Res> {
+  factory $GenusCopyWith(Genus value, $Res Function(Genus) then) =
+      _$GenusCopyWithImpl<$Res>;
+  $Res call({String genus, NamedAPIResource language});
+
+  $NamedAPIResourceCopyWith<$Res> get language;
+}
+
+/// @nodoc
+class _$GenusCopyWithImpl<$Res> implements $GenusCopyWith<$Res> {
+  _$GenusCopyWithImpl(this._value, this._then);
+
+  final Genus _value;
+  // ignore: unused_field
+  final $Res Function(Genus) _then;
+
+  @override
+  $Res call({
+    Object? genus = freezed,
+    Object? language = freezed,
+  }) {
+    return _then(_value.copyWith(
+      genus: genus == freezed
+          ? _value.genus
+          : genus // ignore: cast_nullable_to_non_nullable
+              as String,
+      language: language == freezed
+          ? _value.language
+          : language // ignore: cast_nullable_to_non_nullable
+              as NamedAPIResource,
+    ));
+  }
+
+  @override
+  $NamedAPIResourceCopyWith<$Res> get language {
+    return $NamedAPIResourceCopyWith<$Res>(_value.language, (value) {
+      return _then(_value.copyWith(language: value));
+    });
+  }
+}
+
+/// @nodoc
+abstract class _$GenusCopyWith<$Res> implements $GenusCopyWith<$Res> {
+  factory _$GenusCopyWith(_Genus value, $Res Function(_Genus) then) =
+      __$GenusCopyWithImpl<$Res>;
+  @override
+  $Res call({String genus, NamedAPIResource language});
+
+  @override
+  $NamedAPIResourceCopyWith<$Res> get language;
+}
+
+/// @nodoc
+class __$GenusCopyWithImpl<$Res> extends _$GenusCopyWithImpl<$Res>
+    implements _$GenusCopyWith<$Res> {
+  __$GenusCopyWithImpl(_Genus _value, $Res Function(_Genus) _then)
+      : super(_value, (v) => _then(v as _Genus));
+
+  @override
+  _Genus get _value => super._value as _Genus;
+
+  @override
+  $Res call({
+    Object? genus = freezed,
+    Object? language = freezed,
+  }) {
+    return _then(_Genus(
+      genus == freezed
+          ? _value.genus
+          : genus // ignore: cast_nullable_to_non_nullable
+              as String,
+      language == freezed
+          ? _value.language
+          : language // ignore: cast_nullable_to_non_nullable
+              as NamedAPIResource,
+    ));
+  }
+}
+
+/// @nodoc
+@JsonSerializable()
+class _$_Genus implements _Genus {
+  const _$_Genus(this.genus, this.language);
+
+  factory _$_Genus.fromJson(Map<String, dynamic> json) =>
+      _$$_GenusFromJson(json);
+
+  @override
+  final String genus;
+  @override
+  final NamedAPIResource language;
+
+  @override
+  String toString() {
+    return 'Genus(genus: $genus, language: $language)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _Genus &&
+            (identical(other.genus, genus) || other.genus == genus) &&
+            (identical(other.language, language) ||
+                other.language == language));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, genus, language);
+
+  @JsonKey(ignore: true)
+  @override
+  _$GenusCopyWith<_Genus> get copyWith =>
+      __$GenusCopyWithImpl<_Genus>(this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$$_GenusToJson(this);
+  }
+}
+
+abstract class _Genus implements Genus {
+  const factory _Genus(String genus, NamedAPIResource language) = _$_Genus;
+
+  factory _Genus.fromJson(Map<String, dynamic> json) = _$_Genus.fromJson;
+
+  @override
+  String get genus;
+  @override
+  NamedAPIResource get language;
+  @override
+  @JsonKey(ignore: true)
+  _$GenusCopyWith<_Genus> get copyWith => throw _privateConstructorUsedError;
+}
+
+PokemonSpeciesDexEntry _$PokemonSpeciesDexEntryFromJson(
+    Map<String, dynamic> json) {
+  return _PokemonSpeciesDexEntry.fromJson(json);
+}
+
+/// @nodoc
+class _$PokemonSpeciesDexEntryTearOff {
+  const _$PokemonSpeciesDexEntryTearOff();
+
+  _PokemonSpeciesDexEntry call(@JsonKey(name: 'entry_number') int entryNumber,
+      NamedAPIResource pokedex) {
+    return _PokemonSpeciesDexEntry(
+      entryNumber,
+      pokedex,
+    );
+  }
+
+  PokemonSpeciesDexEntry fromJson(Map<String, Object?> json) {
+    return PokemonSpeciesDexEntry.fromJson(json);
+  }
+}
+
+/// @nodoc
+const $PokemonSpeciesDexEntry = _$PokemonSpeciesDexEntryTearOff();
+
+/// @nodoc
+mixin _$PokemonSpeciesDexEntry {
+  @JsonKey(name: 'entry_number')
+  int get entryNumber => throw _privateConstructorUsedError;
+  NamedAPIResource get pokedex => throw _privateConstructorUsedError;
+
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $PokemonSpeciesDexEntryCopyWith<PokemonSpeciesDexEntry> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $PokemonSpeciesDexEntryCopyWith<$Res> {
+  factory $PokemonSpeciesDexEntryCopyWith(PokemonSpeciesDexEntry value,
+          $Res Function(PokemonSpeciesDexEntry) then) =
+      _$PokemonSpeciesDexEntryCopyWithImpl<$Res>;
+  $Res call(
+      {@JsonKey(name: 'entry_number') int entryNumber,
+      NamedAPIResource pokedex});
+
+  $NamedAPIResourceCopyWith<$Res> get pokedex;
+}
+
+/// @nodoc
+class _$PokemonSpeciesDexEntryCopyWithImpl<$Res>
+    implements $PokemonSpeciesDexEntryCopyWith<$Res> {
+  _$PokemonSpeciesDexEntryCopyWithImpl(this._value, this._then);
+
+  final PokemonSpeciesDexEntry _value;
+  // ignore: unused_field
+  final $Res Function(PokemonSpeciesDexEntry) _then;
+
+  @override
+  $Res call({
+    Object? entryNumber = freezed,
+    Object? pokedex = freezed,
+  }) {
+    return _then(_value.copyWith(
+      entryNumber: entryNumber == freezed
+          ? _value.entryNumber
+          : entryNumber // ignore: cast_nullable_to_non_nullable
+              as int,
+      pokedex: pokedex == freezed
+          ? _value.pokedex
+          : pokedex // ignore: cast_nullable_to_non_nullable
+              as NamedAPIResource,
+    ));
+  }
+
+  @override
+  $NamedAPIResourceCopyWith<$Res> get pokedex {
+    return $NamedAPIResourceCopyWith<$Res>(_value.pokedex, (value) {
+      return _then(_value.copyWith(pokedex: value));
+    });
+  }
+}
+
+/// @nodoc
+abstract class _$PokemonSpeciesDexEntryCopyWith<$Res>
+    implements $PokemonSpeciesDexEntryCopyWith<$Res> {
+  factory _$PokemonSpeciesDexEntryCopyWith(_PokemonSpeciesDexEntry value,
+          $Res Function(_PokemonSpeciesDexEntry) then) =
+      __$PokemonSpeciesDexEntryCopyWithImpl<$Res>;
+  @override
+  $Res call(
+      {@JsonKey(name: 'entry_number') int entryNumber,
+      NamedAPIResource pokedex});
+
+  @override
+  $NamedAPIResourceCopyWith<$Res> get pokedex;
+}
+
+/// @nodoc
+class __$PokemonSpeciesDexEntryCopyWithImpl<$Res>
+    extends _$PokemonSpeciesDexEntryCopyWithImpl<$Res>
+    implements _$PokemonSpeciesDexEntryCopyWith<$Res> {
+  __$PokemonSpeciesDexEntryCopyWithImpl(_PokemonSpeciesDexEntry _value,
+      $Res Function(_PokemonSpeciesDexEntry) _then)
+      : super(_value, (v) => _then(v as _PokemonSpeciesDexEntry));
+
+  @override
+  _PokemonSpeciesDexEntry get _value => super._value as _PokemonSpeciesDexEntry;
+
+  @override
+  $Res call({
+    Object? entryNumber = freezed,
+    Object? pokedex = freezed,
+  }) {
+    return _then(_PokemonSpeciesDexEntry(
+      entryNumber == freezed
+          ? _value.entryNumber
+          : entryNumber // ignore: cast_nullable_to_non_nullable
+              as int,
+      pokedex == freezed
+          ? _value.pokedex
+          : pokedex // ignore: cast_nullable_to_non_nullable
+              as NamedAPIResource,
+    ));
+  }
+}
+
+/// @nodoc
+@JsonSerializable()
+class _$_PokemonSpeciesDexEntry implements _PokemonSpeciesDexEntry {
+  const _$_PokemonSpeciesDexEntry(
+      @JsonKey(name: 'entry_number') this.entryNumber, this.pokedex);
+
+  factory _$_PokemonSpeciesDexEntry.fromJson(Map<String, dynamic> json) =>
+      _$$_PokemonSpeciesDexEntryFromJson(json);
+
+  @override
+  @JsonKey(name: 'entry_number')
+  final int entryNumber;
+  @override
+  final NamedAPIResource pokedex;
+
+  @override
+  String toString() {
+    return 'PokemonSpeciesDexEntry(entryNumber: $entryNumber, pokedex: $pokedex)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _PokemonSpeciesDexEntry &&
+            (identical(other.entryNumber, entryNumber) ||
+                other.entryNumber == entryNumber) &&
+            (identical(other.pokedex, pokedex) || other.pokedex == pokedex));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, entryNumber, pokedex);
+
+  @JsonKey(ignore: true)
+  @override
+  _$PokemonSpeciesDexEntryCopyWith<_PokemonSpeciesDexEntry> get copyWith =>
+      __$PokemonSpeciesDexEntryCopyWithImpl<_PokemonSpeciesDexEntry>(
+          this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$$_PokemonSpeciesDexEntryToJson(this);
+  }
+}
+
+abstract class _PokemonSpeciesDexEntry implements PokemonSpeciesDexEntry {
+  const factory _PokemonSpeciesDexEntry(
+      @JsonKey(name: 'entry_number') int entryNumber,
+      NamedAPIResource pokedex) = _$_PokemonSpeciesDexEntry;
+
+  factory _PokemonSpeciesDexEntry.fromJson(Map<String, dynamic> json) =
+      _$_PokemonSpeciesDexEntry.fromJson;
+
+  @override
+  @JsonKey(name: 'entry_number')
+  int get entryNumber;
+  @override
+  NamedAPIResource get pokedex;
+  @override
+  @JsonKey(ignore: true)
+  _$PokemonSpeciesDexEntryCopyWith<_PokemonSpeciesDexEntry> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+PalParkEncounterArea _$PalParkEncounterAreaFromJson(Map<String, dynamic> json) {
+  return _PalParkEncounterArea.fromJson(json);
+}
+
+/// @nodoc
+class _$PalParkEncounterAreaTearOff {
+  const _$PalParkEncounterAreaTearOff();
+
+  _PalParkEncounterArea call(@JsonKey(name: 'base_score') int baseScore,
+      int rate, NamedAPIResource area) {
+    return _PalParkEncounterArea(
+      baseScore,
+      rate,
+      area,
+    );
+  }
+
+  PalParkEncounterArea fromJson(Map<String, Object?> json) {
+    return PalParkEncounterArea.fromJson(json);
+  }
+}
+
+/// @nodoc
+const $PalParkEncounterArea = _$PalParkEncounterAreaTearOff();
+
+/// @nodoc
+mixin _$PalParkEncounterArea {
+  @JsonKey(name: 'base_score')
+  int get baseScore => throw _privateConstructorUsedError;
+  int get rate => throw _privateConstructorUsedError;
+  NamedAPIResource get area => throw _privateConstructorUsedError;
+
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $PalParkEncounterAreaCopyWith<PalParkEncounterArea> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $PalParkEncounterAreaCopyWith<$Res> {
+  factory $PalParkEncounterAreaCopyWith(PalParkEncounterArea value,
+          $Res Function(PalParkEncounterArea) then) =
+      _$PalParkEncounterAreaCopyWithImpl<$Res>;
+  $Res call(
+      {@JsonKey(name: 'base_score') int baseScore,
+      int rate,
+      NamedAPIResource area});
+
+  $NamedAPIResourceCopyWith<$Res> get area;
+}
+
+/// @nodoc
+class _$PalParkEncounterAreaCopyWithImpl<$Res>
+    implements $PalParkEncounterAreaCopyWith<$Res> {
+  _$PalParkEncounterAreaCopyWithImpl(this._value, this._then);
+
+  final PalParkEncounterArea _value;
+  // ignore: unused_field
+  final $Res Function(PalParkEncounterArea) _then;
+
+  @override
+  $Res call({
+    Object? baseScore = freezed,
+    Object? rate = freezed,
+    Object? area = freezed,
+  }) {
+    return _then(_value.copyWith(
+      baseScore: baseScore == freezed
+          ? _value.baseScore
+          : baseScore // ignore: cast_nullable_to_non_nullable
+              as int,
+      rate: rate == freezed
+          ? _value.rate
+          : rate // ignore: cast_nullable_to_non_nullable
+              as int,
+      area: area == freezed
+          ? _value.area
+          : area // ignore: cast_nullable_to_non_nullable
+              as NamedAPIResource,
+    ));
+  }
+
+  @override
+  $NamedAPIResourceCopyWith<$Res> get area {
+    return $NamedAPIResourceCopyWith<$Res>(_value.area, (value) {
+      return _then(_value.copyWith(area: value));
+    });
+  }
+}
+
+/// @nodoc
+abstract class _$PalParkEncounterAreaCopyWith<$Res>
+    implements $PalParkEncounterAreaCopyWith<$Res> {
+  factory _$PalParkEncounterAreaCopyWith(_PalParkEncounterArea value,
+          $Res Function(_PalParkEncounterArea) then) =
+      __$PalParkEncounterAreaCopyWithImpl<$Res>;
+  @override
+  $Res call(
+      {@JsonKey(name: 'base_score') int baseScore,
+      int rate,
+      NamedAPIResource area});
+
+  @override
+  $NamedAPIResourceCopyWith<$Res> get area;
+}
+
+/// @nodoc
+class __$PalParkEncounterAreaCopyWithImpl<$Res>
+    extends _$PalParkEncounterAreaCopyWithImpl<$Res>
+    implements _$PalParkEncounterAreaCopyWith<$Res> {
+  __$PalParkEncounterAreaCopyWithImpl(
+      _PalParkEncounterArea _value, $Res Function(_PalParkEncounterArea) _then)
+      : super(_value, (v) => _then(v as _PalParkEncounterArea));
+
+  @override
+  _PalParkEncounterArea get _value => super._value as _PalParkEncounterArea;
+
+  @override
+  $Res call({
+    Object? baseScore = freezed,
+    Object? rate = freezed,
+    Object? area = freezed,
+  }) {
+    return _then(_PalParkEncounterArea(
+      baseScore == freezed
+          ? _value.baseScore
+          : baseScore // ignore: cast_nullable_to_non_nullable
+              as int,
+      rate == freezed
+          ? _value.rate
+          : rate // ignore: cast_nullable_to_non_nullable
+              as int,
+      area == freezed
+          ? _value.area
+          : area // ignore: cast_nullable_to_non_nullable
+              as NamedAPIResource,
+    ));
+  }
+}
+
+/// @nodoc
+@JsonSerializable()
+class _$_PalParkEncounterArea implements _PalParkEncounterArea {
+  const _$_PalParkEncounterArea(
+      @JsonKey(name: 'base_score') this.baseScore, this.rate, this.area);
+
+  factory _$_PalParkEncounterArea.fromJson(Map<String, dynamic> json) =>
+      _$$_PalParkEncounterAreaFromJson(json);
+
+  @override
+  @JsonKey(name: 'base_score')
+  final int baseScore;
+  @override
+  final int rate;
+  @override
+  final NamedAPIResource area;
+
+  @override
+  String toString() {
+    return 'PalParkEncounterArea(baseScore: $baseScore, rate: $rate, area: $area)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _PalParkEncounterArea &&
+            (identical(other.baseScore, baseScore) ||
+                other.baseScore == baseScore) &&
+            (identical(other.rate, rate) || other.rate == rate) &&
+            (identical(other.area, area) || other.area == area));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, baseScore, rate, area);
+
+  @JsonKey(ignore: true)
+  @override
+  _$PalParkEncounterAreaCopyWith<_PalParkEncounterArea> get copyWith =>
+      __$PalParkEncounterAreaCopyWithImpl<_PalParkEncounterArea>(
+          this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$$_PalParkEncounterAreaToJson(this);
+  }
+}
+
+abstract class _PalParkEncounterArea implements PalParkEncounterArea {
+  const factory _PalParkEncounterArea(
+      @JsonKey(name: 'base_score') int baseScore,
+      int rate,
+      NamedAPIResource area) = _$_PalParkEncounterArea;
+
+  factory _PalParkEncounterArea.fromJson(Map<String, dynamic> json) =
+      _$_PalParkEncounterArea.fromJson;
+
+  @override
+  @JsonKey(name: 'base_score')
+  int get baseScore;
+  @override
+  int get rate;
+  @override
+  NamedAPIResource get area;
+  @override
+  @JsonKey(ignore: true)
+  _$PalParkEncounterAreaCopyWith<_PalParkEncounterArea> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+PokemonSpeciesVariety _$PokemonSpeciesVarietyFromJson(
+    Map<String, dynamic> json) {
+  return _PokemonSpeciesVariety.fromJson(json);
+}
+
+/// @nodoc
+class _$PokemonSpeciesVarietyTearOff {
+  const _$PokemonSpeciesVarietyTearOff();
+
+  _PokemonSpeciesVariety call(
+      @JsonKey(name: 'is_default') bool isDefault, NamedAPIResource pokemon) {
+    return _PokemonSpeciesVariety(
+      isDefault,
+      pokemon,
+    );
+  }
+
+  PokemonSpeciesVariety fromJson(Map<String, Object?> json) {
+    return PokemonSpeciesVariety.fromJson(json);
+  }
+}
+
+/// @nodoc
+const $PokemonSpeciesVariety = _$PokemonSpeciesVarietyTearOff();
+
+/// @nodoc
+mixin _$PokemonSpeciesVariety {
+  @JsonKey(name: 'is_default')
+  bool get isDefault => throw _privateConstructorUsedError;
+  NamedAPIResource get pokemon => throw _privateConstructorUsedError;
+
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $PokemonSpeciesVarietyCopyWith<PokemonSpeciesVariety> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $PokemonSpeciesVarietyCopyWith<$Res> {
+  factory $PokemonSpeciesVarietyCopyWith(PokemonSpeciesVariety value,
+          $Res Function(PokemonSpeciesVariety) then) =
+      _$PokemonSpeciesVarietyCopyWithImpl<$Res>;
+  $Res call(
+      {@JsonKey(name: 'is_default') bool isDefault, NamedAPIResource pokemon});
+
+  $NamedAPIResourceCopyWith<$Res> get pokemon;
+}
+
+/// @nodoc
+class _$PokemonSpeciesVarietyCopyWithImpl<$Res>
+    implements $PokemonSpeciesVarietyCopyWith<$Res> {
+  _$PokemonSpeciesVarietyCopyWithImpl(this._value, this._then);
+
+  final PokemonSpeciesVariety _value;
+  // ignore: unused_field
+  final $Res Function(PokemonSpeciesVariety) _then;
+
+  @override
+  $Res call({
+    Object? isDefault = freezed,
+    Object? pokemon = freezed,
+  }) {
+    return _then(_value.copyWith(
+      isDefault: isDefault == freezed
+          ? _value.isDefault
+          : isDefault // ignore: cast_nullable_to_non_nullable
+              as bool,
+      pokemon: pokemon == freezed
+          ? _value.pokemon
+          : pokemon // ignore: cast_nullable_to_non_nullable
+              as NamedAPIResource,
+    ));
+  }
+
+  @override
+  $NamedAPIResourceCopyWith<$Res> get pokemon {
+    return $NamedAPIResourceCopyWith<$Res>(_value.pokemon, (value) {
+      return _then(_value.copyWith(pokemon: value));
+    });
+  }
+}
+
+/// @nodoc
+abstract class _$PokemonSpeciesVarietyCopyWith<$Res>
+    implements $PokemonSpeciesVarietyCopyWith<$Res> {
+  factory _$PokemonSpeciesVarietyCopyWith(_PokemonSpeciesVariety value,
+          $Res Function(_PokemonSpeciesVariety) then) =
+      __$PokemonSpeciesVarietyCopyWithImpl<$Res>;
+  @override
+  $Res call(
+      {@JsonKey(name: 'is_default') bool isDefault, NamedAPIResource pokemon});
+
+  @override
+  $NamedAPIResourceCopyWith<$Res> get pokemon;
+}
+
+/// @nodoc
+class __$PokemonSpeciesVarietyCopyWithImpl<$Res>
+    extends _$PokemonSpeciesVarietyCopyWithImpl<$Res>
+    implements _$PokemonSpeciesVarietyCopyWith<$Res> {
+  __$PokemonSpeciesVarietyCopyWithImpl(_PokemonSpeciesVariety _value,
+      $Res Function(_PokemonSpeciesVariety) _then)
+      : super(_value, (v) => _then(v as _PokemonSpeciesVariety));
+
+  @override
+  _PokemonSpeciesVariety get _value => super._value as _PokemonSpeciesVariety;
+
+  @override
+  $Res call({
+    Object? isDefault = freezed,
+    Object? pokemon = freezed,
+  }) {
+    return _then(_PokemonSpeciesVariety(
+      isDefault == freezed
+          ? _value.isDefault
+          : isDefault // ignore: cast_nullable_to_non_nullable
+              as bool,
+      pokemon == freezed
+          ? _value.pokemon
+          : pokemon // ignore: cast_nullable_to_non_nullable
+              as NamedAPIResource,
+    ));
+  }
+}
+
+/// @nodoc
+@JsonSerializable()
+class _$_PokemonSpeciesVariety implements _PokemonSpeciesVariety {
+  const _$_PokemonSpeciesVariety(
+      @JsonKey(name: 'is_default') this.isDefault, this.pokemon);
+
+  factory _$_PokemonSpeciesVariety.fromJson(Map<String, dynamic> json) =>
+      _$$_PokemonSpeciesVarietyFromJson(json);
+
+  @override
+  @JsonKey(name: 'is_default')
+  final bool isDefault;
+  @override
+  final NamedAPIResource pokemon;
+
+  @override
+  String toString() {
+    return 'PokemonSpeciesVariety(isDefault: $isDefault, pokemon: $pokemon)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _PokemonSpeciesVariety &&
+            (identical(other.isDefault, isDefault) ||
+                other.isDefault == isDefault) &&
+            (identical(other.pokemon, pokemon) || other.pokemon == pokemon));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, isDefault, pokemon);
+
+  @JsonKey(ignore: true)
+  @override
+  _$PokemonSpeciesVarietyCopyWith<_PokemonSpeciesVariety> get copyWith =>
+      __$PokemonSpeciesVarietyCopyWithImpl<_PokemonSpeciesVariety>(
+          this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$$_PokemonSpeciesVarietyToJson(this);
+  }
+}
+
+abstract class _PokemonSpeciesVariety implements PokemonSpeciesVariety {
+  const factory _PokemonSpeciesVariety(
+      @JsonKey(name: 'is_default') bool isDefault,
+      NamedAPIResource pokemon) = _$_PokemonSpeciesVariety;
+
+  factory _PokemonSpeciesVariety.fromJson(Map<String, dynamic> json) =
+      _$_PokemonSpeciesVariety.fromJson;
+
+  @override
+  @JsonKey(name: 'is_default')
+  bool get isDefault;
+  @override
+  NamedAPIResource get pokemon;
+  @override
+  @JsonKey(ignore: true)
+  _$PokemonSpeciesVarietyCopyWith<_PokemonSpeciesVariety> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+Stat _$StatFromJson(Map<String, dynamic> json) {
+  return _Stat.fromJson(json);
+}
+
+/// @nodoc
+class _$StatTearOff {
+  const _$StatTearOff();
+
+  _Stat call(
+      int id,
+      String name,
+      @JsonKey(name: 'game_index') int gameIndex,
+      @JsonKey(name: 'is_battle_only') bool isBattleOnly,
+      @JsonKey(name: 'affecting_moves') MoveStatAffectSets affectingMoves,
+      @JsonKey(name: 'affecting_natures') NatureStatAffectSets affectingNatures,
+      List<APIResource> characteristics,
+      @JsonKey(name: 'move_damage_class') NamedAPIResource moveDamageClass,
+      List<Name> names) {
+    return _Stat(
+      id,
+      name,
+      gameIndex,
+      isBattleOnly,
+      affectingMoves,
+      affectingNatures,
+      characteristics,
+      moveDamageClass,
+      names,
+    );
+  }
+
+  Stat fromJson(Map<String, Object?> json) {
+    return Stat.fromJson(json);
+  }
+}
+
+/// @nodoc
+const $Stat = _$StatTearOff();
+
+/// @nodoc
+mixin _$Stat {
+  int get id => throw _privateConstructorUsedError;
+  String get name => throw _privateConstructorUsedError;
+  @JsonKey(name: 'game_index')
+  int get gameIndex => throw _privateConstructorUsedError;
+  @JsonKey(name: 'is_battle_only')
+  bool get isBattleOnly => throw _privateConstructorUsedError;
+  @JsonKey(name: 'affecting_moves')
+  MoveStatAffectSets get affectingMoves => throw _privateConstructorUsedError;
+  @JsonKey(name: 'affecting_natures')
+  NatureStatAffectSets get affectingNatures =>
+      throw _privateConstructorUsedError;
+  List<APIResource> get characteristics => throw _privateConstructorUsedError;
+  @JsonKey(name: 'move_damage_class')
+  NamedAPIResource get moveDamageClass => throw _privateConstructorUsedError;
+  List<Name> get names => throw _privateConstructorUsedError;
+
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $StatCopyWith<Stat> get copyWith => throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $StatCopyWith<$Res> {
+  factory $StatCopyWith(Stat value, $Res Function(Stat) then) =
+      _$StatCopyWithImpl<$Res>;
+  $Res call(
+      {int id,
+      String name,
+      @JsonKey(name: 'game_index') int gameIndex,
+      @JsonKey(name: 'is_battle_only') bool isBattleOnly,
+      @JsonKey(name: 'affecting_moves') MoveStatAffectSets affectingMoves,
+      @JsonKey(name: 'affecting_natures') NatureStatAffectSets affectingNatures,
+      List<APIResource> characteristics,
+      @JsonKey(name: 'move_damage_class') NamedAPIResource moveDamageClass,
+      List<Name> names});
+
+  $MoveStatAffectSetsCopyWith<$Res> get affectingMoves;
+  $NatureStatAffectSetsCopyWith<$Res> get affectingNatures;
+  $NamedAPIResourceCopyWith<$Res> get moveDamageClass;
+}
+
+/// @nodoc
+class _$StatCopyWithImpl<$Res> implements $StatCopyWith<$Res> {
+  _$StatCopyWithImpl(this._value, this._then);
+
+  final Stat _value;
+  // ignore: unused_field
+  final $Res Function(Stat) _then;
+
+  @override
+  $Res call({
+    Object? id = freezed,
+    Object? name = freezed,
+    Object? gameIndex = freezed,
+    Object? isBattleOnly = freezed,
+    Object? affectingMoves = freezed,
+    Object? affectingNatures = freezed,
+    Object? characteristics = freezed,
+    Object? moveDamageClass = freezed,
+    Object? names = freezed,
+  }) {
+    return _then(_value.copyWith(
+      id: id == freezed
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as int,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      gameIndex: gameIndex == freezed
+          ? _value.gameIndex
+          : gameIndex // ignore: cast_nullable_to_non_nullable
+              as int,
+      isBattleOnly: isBattleOnly == freezed
+          ? _value.isBattleOnly
+          : isBattleOnly // ignore: cast_nullable_to_non_nullable
+              as bool,
+      affectingMoves: affectingMoves == freezed
+          ? _value.affectingMoves
+          : affectingMoves // ignore: cast_nullable_to_non_nullable
+              as MoveStatAffectSets,
+      affectingNatures: affectingNatures == freezed
+          ? _value.affectingNatures
+          : affectingNatures // ignore: cast_nullable_to_non_nullable
+              as NatureStatAffectSets,
+      characteristics: characteristics == freezed
+          ? _value.characteristics
+          : characteristics // ignore: cast_nullable_to_non_nullable
+              as List<APIResource>,
+      moveDamageClass: moveDamageClass == freezed
+          ? _value.moveDamageClass
+          : moveDamageClass // ignore: cast_nullable_to_non_nullable
+              as NamedAPIResource,
+      names: names == freezed
+          ? _value.names
+          : names // ignore: cast_nullable_to_non_nullable
+              as List<Name>,
+    ));
+  }
+
+  @override
+  $MoveStatAffectSetsCopyWith<$Res> get affectingMoves {
+    return $MoveStatAffectSetsCopyWith<$Res>(_value.affectingMoves, (value) {
+      return _then(_value.copyWith(affectingMoves: value));
+    });
+  }
+
+  @override
+  $NatureStatAffectSetsCopyWith<$Res> get affectingNatures {
+    return $NatureStatAffectSetsCopyWith<$Res>(_value.affectingNatures,
+        (value) {
+      return _then(_value.copyWith(affectingNatures: value));
+    });
+  }
+
+  @override
+  $NamedAPIResourceCopyWith<$Res> get moveDamageClass {
+    return $NamedAPIResourceCopyWith<$Res>(_value.moveDamageClass, (value) {
+      return _then(_value.copyWith(moveDamageClass: value));
+    });
+  }
+}
+
+/// @nodoc
+abstract class _$StatCopyWith<$Res> implements $StatCopyWith<$Res> {
+  factory _$StatCopyWith(_Stat value, $Res Function(_Stat) then) =
+      __$StatCopyWithImpl<$Res>;
+  @override
+  $Res call(
+      {int id,
+      String name,
+      @JsonKey(name: 'game_index') int gameIndex,
+      @JsonKey(name: 'is_battle_only') bool isBattleOnly,
+      @JsonKey(name: 'affecting_moves') MoveStatAffectSets affectingMoves,
+      @JsonKey(name: 'affecting_natures') NatureStatAffectSets affectingNatures,
+      List<APIResource> characteristics,
+      @JsonKey(name: 'move_damage_class') NamedAPIResource moveDamageClass,
+      List<Name> names});
+
+  @override
+  $MoveStatAffectSetsCopyWith<$Res> get affectingMoves;
+  @override
+  $NatureStatAffectSetsCopyWith<$Res> get affectingNatures;
+  @override
+  $NamedAPIResourceCopyWith<$Res> get moveDamageClass;
+}
+
+/// @nodoc
+class __$StatCopyWithImpl<$Res> extends _$StatCopyWithImpl<$Res>
+    implements _$StatCopyWith<$Res> {
+  __$StatCopyWithImpl(_Stat _value, $Res Function(_Stat) _then)
+      : super(_value, (v) => _then(v as _Stat));
+
+  @override
+  _Stat get _value => super._value as _Stat;
+
+  @override
+  $Res call({
+    Object? id = freezed,
+    Object? name = freezed,
+    Object? gameIndex = freezed,
+    Object? isBattleOnly = freezed,
+    Object? affectingMoves = freezed,
+    Object? affectingNatures = freezed,
+    Object? characteristics = freezed,
+    Object? moveDamageClass = freezed,
+    Object? names = freezed,
+  }) {
+    return _then(_Stat(
+      id == freezed
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as int,
+      name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      gameIndex == freezed
+          ? _value.gameIndex
+          : gameIndex // ignore: cast_nullable_to_non_nullable
+              as int,
+      isBattleOnly == freezed
+          ? _value.isBattleOnly
+          : isBattleOnly // ignore: cast_nullable_to_non_nullable
+              as bool,
+      affectingMoves == freezed
+          ? _value.affectingMoves
+          : affectingMoves // ignore: cast_nullable_to_non_nullable
+              as MoveStatAffectSets,
+      affectingNatures == freezed
+          ? _value.affectingNatures
+          : affectingNatures // ignore: cast_nullable_to_non_nullable
+              as NatureStatAffectSets,
+      characteristics == freezed
+          ? _value.characteristics
+          : characteristics // ignore: cast_nullable_to_non_nullable
+              as List<APIResource>,
+      moveDamageClass == freezed
+          ? _value.moveDamageClass
+          : moveDamageClass // ignore: cast_nullable_to_non_nullable
+              as NamedAPIResource,
+      names == freezed
+          ? _value.names
+          : names // ignore: cast_nullable_to_non_nullable
+              as List<Name>,
+    ));
+  }
+}
+
+/// @nodoc
+@JsonSerializable()
+class _$_Stat implements _Stat {
+  const _$_Stat(
+      this.id,
+      this.name,
+      @JsonKey(name: 'game_index') this.gameIndex,
+      @JsonKey(name: 'is_battle_only') this.isBattleOnly,
+      @JsonKey(name: 'affecting_moves') this.affectingMoves,
+      @JsonKey(name: 'affecting_natures') this.affectingNatures,
+      this.characteristics,
+      @JsonKey(name: 'move_damage_class') this.moveDamageClass,
+      this.names);
+
+  factory _$_Stat.fromJson(Map<String, dynamic> json) => _$$_StatFromJson(json);
+
+  @override
+  final int id;
+  @override
+  final String name;
+  @override
+  @JsonKey(name: 'game_index')
+  final int gameIndex;
+  @override
+  @JsonKey(name: 'is_battle_only')
+  final bool isBattleOnly;
+  @override
+  @JsonKey(name: 'affecting_moves')
+  final MoveStatAffectSets affectingMoves;
+  @override
+  @JsonKey(name: 'affecting_natures')
+  final NatureStatAffectSets affectingNatures;
+  @override
+  final List<APIResource> characteristics;
+  @override
+  @JsonKey(name: 'move_damage_class')
+  final NamedAPIResource moveDamageClass;
+  @override
+  final List<Name> names;
+
+  @override
+  String toString() {
+    return 'Stat(id: $id, name: $name, gameIndex: $gameIndex, isBattleOnly: $isBattleOnly, affectingMoves: $affectingMoves, affectingNatures: $affectingNatures, characteristics: $characteristics, moveDamageClass: $moveDamageClass, names: $names)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _Stat &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.name, name) || other.name == name) &&
+            (identical(other.gameIndex, gameIndex) ||
+                other.gameIndex == gameIndex) &&
+            (identical(other.isBattleOnly, isBattleOnly) ||
+                other.isBattleOnly == isBattleOnly) &&
+            (identical(other.affectingMoves, affectingMoves) ||
+                other.affectingMoves == affectingMoves) &&
+            (identical(other.affectingNatures, affectingNatures) ||
+                other.affectingNatures == affectingNatures) &&
+            const DeepCollectionEquality()
+                .equals(other.characteristics, characteristics) &&
+            (identical(other.moveDamageClass, moveDamageClass) ||
+                other.moveDamageClass == moveDamageClass) &&
+            const DeepCollectionEquality().equals(other.names, names));
+  }
+
+  @override
+  int get hashCode => Object.hash(
+      runtimeType,
+      id,
+      name,
+      gameIndex,
+      isBattleOnly,
+      affectingMoves,
+      affectingNatures,
+      const DeepCollectionEquality().hash(characteristics),
+      moveDamageClass,
+      const DeepCollectionEquality().hash(names));
+
+  @JsonKey(ignore: true)
+  @override
+  _$StatCopyWith<_Stat> get copyWith =>
+      __$StatCopyWithImpl<_Stat>(this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$$_StatToJson(this);
+  }
+}
+
+abstract class _Stat implements Stat {
+  const factory _Stat(
+      int id,
+      String name,
+      @JsonKey(name: 'game_index') int gameIndex,
+      @JsonKey(name: 'is_battle_only') bool isBattleOnly,
+      @JsonKey(name: 'affecting_moves') MoveStatAffectSets affectingMoves,
+      @JsonKey(name: 'affecting_natures') NatureStatAffectSets affectingNatures,
+      List<APIResource> characteristics,
+      @JsonKey(name: 'move_damage_class') NamedAPIResource moveDamageClass,
+      List<Name> names) = _$_Stat;
+
+  factory _Stat.fromJson(Map<String, dynamic> json) = _$_Stat.fromJson;
+
+  @override
+  int get id;
+  @override
+  String get name;
+  @override
+  @JsonKey(name: 'game_index')
+  int get gameIndex;
+  @override
+  @JsonKey(name: 'is_battle_only')
+  bool get isBattleOnly;
+  @override
+  @JsonKey(name: 'affecting_moves')
+  MoveStatAffectSets get affectingMoves;
+  @override
+  @JsonKey(name: 'affecting_natures')
+  NatureStatAffectSets get affectingNatures;
+  @override
+  List<APIResource> get characteristics;
+  @override
+  @JsonKey(name: 'move_damage_class')
+  NamedAPIResource get moveDamageClass;
+  @override
+  List<Name> get names;
+  @override
+  @JsonKey(ignore: true)
+  _$StatCopyWith<_Stat> get copyWith => throw _privateConstructorUsedError;
+}
+
+MoveStatAffectSets _$MoveStatAffectSetsFromJson(Map<String, dynamic> json) {
+  return _MoveStatAffectSets.fromJson(json);
+}
+
+/// @nodoc
+class _$MoveStatAffectSetsTearOff {
+  const _$MoveStatAffectSetsTearOff();
+
+  _MoveStatAffectSets call(
+      List<MoveStatAffect> increase, List<MoveStatAffect> decrease) {
+    return _MoveStatAffectSets(
+      increase,
+      decrease,
+    );
+  }
+
+  MoveStatAffectSets fromJson(Map<String, Object?> json) {
+    return MoveStatAffectSets.fromJson(json);
+  }
+}
+
+/// @nodoc
+const $MoveStatAffectSets = _$MoveStatAffectSetsTearOff();
+
+/// @nodoc
+mixin _$MoveStatAffectSets {
+  List<MoveStatAffect> get increase => throw _privateConstructorUsedError;
+  List<MoveStatAffect> get decrease => throw _privateConstructorUsedError;
+
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $MoveStatAffectSetsCopyWith<MoveStatAffectSets> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $MoveStatAffectSetsCopyWith<$Res> {
+  factory $MoveStatAffectSetsCopyWith(
+          MoveStatAffectSets value, $Res Function(MoveStatAffectSets) then) =
+      _$MoveStatAffectSetsCopyWithImpl<$Res>;
+  $Res call({List<MoveStatAffect> increase, List<MoveStatAffect> decrease});
+}
+
+/// @nodoc
+class _$MoveStatAffectSetsCopyWithImpl<$Res>
+    implements $MoveStatAffectSetsCopyWith<$Res> {
+  _$MoveStatAffectSetsCopyWithImpl(this._value, this._then);
+
+  final MoveStatAffectSets _value;
+  // ignore: unused_field
+  final $Res Function(MoveStatAffectSets) _then;
+
+  @override
+  $Res call({
+    Object? increase = freezed,
+    Object? decrease = freezed,
+  }) {
+    return _then(_value.copyWith(
+      increase: increase == freezed
+          ? _value.increase
+          : increase // ignore: cast_nullable_to_non_nullable
+              as List<MoveStatAffect>,
+      decrease: decrease == freezed
+          ? _value.decrease
+          : decrease // ignore: cast_nullable_to_non_nullable
+              as List<MoveStatAffect>,
+    ));
+  }
+}
+
+/// @nodoc
+abstract class _$MoveStatAffectSetsCopyWith<$Res>
+    implements $MoveStatAffectSetsCopyWith<$Res> {
+  factory _$MoveStatAffectSetsCopyWith(
+          _MoveStatAffectSets value, $Res Function(_MoveStatAffectSets) then) =
+      __$MoveStatAffectSetsCopyWithImpl<$Res>;
+  @override
+  $Res call({List<MoveStatAffect> increase, List<MoveStatAffect> decrease});
+}
+
+/// @nodoc
+class __$MoveStatAffectSetsCopyWithImpl<$Res>
+    extends _$MoveStatAffectSetsCopyWithImpl<$Res>
+    implements _$MoveStatAffectSetsCopyWith<$Res> {
+  __$MoveStatAffectSetsCopyWithImpl(
+      _MoveStatAffectSets _value, $Res Function(_MoveStatAffectSets) _then)
+      : super(_value, (v) => _then(v as _MoveStatAffectSets));
+
+  @override
+  _MoveStatAffectSets get _value => super._value as _MoveStatAffectSets;
+
+  @override
+  $Res call({
+    Object? increase = freezed,
+    Object? decrease = freezed,
+  }) {
+    return _then(_MoveStatAffectSets(
+      increase == freezed
+          ? _value.increase
+          : increase // ignore: cast_nullable_to_non_nullable
+              as List<MoveStatAffect>,
+      decrease == freezed
+          ? _value.decrease
+          : decrease // ignore: cast_nullable_to_non_nullable
+              as List<MoveStatAffect>,
+    ));
+  }
+}
+
+/// @nodoc
+@JsonSerializable()
+class _$_MoveStatAffectSets implements _MoveStatAffectSets {
+  const _$_MoveStatAffectSets(this.increase, this.decrease);
+
+  factory _$_MoveStatAffectSets.fromJson(Map<String, dynamic> json) =>
+      _$$_MoveStatAffectSetsFromJson(json);
+
+  @override
+  final List<MoveStatAffect> increase;
+  @override
+  final List<MoveStatAffect> decrease;
+
+  @override
+  String toString() {
+    return 'MoveStatAffectSets(increase: $increase, decrease: $decrease)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _MoveStatAffectSets &&
+            const DeepCollectionEquality().equals(other.increase, increase) &&
+            const DeepCollectionEquality().equals(other.decrease, decrease));
+  }
+
+  @override
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(increase),
+      const DeepCollectionEquality().hash(decrease));
+
+  @JsonKey(ignore: true)
+  @override
+  _$MoveStatAffectSetsCopyWith<_MoveStatAffectSets> get copyWith =>
+      __$MoveStatAffectSetsCopyWithImpl<_MoveStatAffectSets>(this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$$_MoveStatAffectSetsToJson(this);
+  }
+}
+
+abstract class _MoveStatAffectSets implements MoveStatAffectSets {
+  const factory _MoveStatAffectSets(
+          List<MoveStatAffect> increase, List<MoveStatAffect> decrease) =
+      _$_MoveStatAffectSets;
+
+  factory _MoveStatAffectSets.fromJson(Map<String, dynamic> json) =
+      _$_MoveStatAffectSets.fromJson;
+
+  @override
+  List<MoveStatAffect> get increase;
+  @override
+  List<MoveStatAffect> get decrease;
+  @override
+  @JsonKey(ignore: true)
+  _$MoveStatAffectSetsCopyWith<_MoveStatAffectSets> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+MoveStatAffect _$MoveStatAffectFromJson(Map<String, dynamic> json) {
+  return _MoveStatAffect.fromJson(json);
+}
+
+/// @nodoc
+class _$MoveStatAffectTearOff {
+  const _$MoveStatAffectTearOff();
+
+  _MoveStatAffect call(int change, NamedAPIResource move) {
+    return _MoveStatAffect(
+      change,
+      move,
+    );
+  }
+
+  MoveStatAffect fromJson(Map<String, Object?> json) {
+    return MoveStatAffect.fromJson(json);
+  }
+}
+
+/// @nodoc
+const $MoveStatAffect = _$MoveStatAffectTearOff();
+
+/// @nodoc
+mixin _$MoveStatAffect {
+  int get change => throw _privateConstructorUsedError;
+  NamedAPIResource get move => throw _privateConstructorUsedError;
+
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $MoveStatAffectCopyWith<MoveStatAffect> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $MoveStatAffectCopyWith<$Res> {
+  factory $MoveStatAffectCopyWith(
+          MoveStatAffect value, $Res Function(MoveStatAffect) then) =
+      _$MoveStatAffectCopyWithImpl<$Res>;
+  $Res call({int change, NamedAPIResource move});
+
+  $NamedAPIResourceCopyWith<$Res> get move;
+}
+
+/// @nodoc
+class _$MoveStatAffectCopyWithImpl<$Res>
+    implements $MoveStatAffectCopyWith<$Res> {
+  _$MoveStatAffectCopyWithImpl(this._value, this._then);
+
+  final MoveStatAffect _value;
+  // ignore: unused_field
+  final $Res Function(MoveStatAffect) _then;
+
+  @override
+  $Res call({
+    Object? change = freezed,
+    Object? move = freezed,
+  }) {
+    return _then(_value.copyWith(
+      change: change == freezed
+          ? _value.change
+          : change // ignore: cast_nullable_to_non_nullable
+              as int,
+      move: move == freezed
+          ? _value.move
+          : move // ignore: cast_nullable_to_non_nullable
+              as NamedAPIResource,
+    ));
+  }
+
+  @override
+  $NamedAPIResourceCopyWith<$Res> get move {
+    return $NamedAPIResourceCopyWith<$Res>(_value.move, (value) {
+      return _then(_value.copyWith(move: value));
+    });
+  }
+}
+
+/// @nodoc
+abstract class _$MoveStatAffectCopyWith<$Res>
+    implements $MoveStatAffectCopyWith<$Res> {
+  factory _$MoveStatAffectCopyWith(
+          _MoveStatAffect value, $Res Function(_MoveStatAffect) then) =
+      __$MoveStatAffectCopyWithImpl<$Res>;
+  @override
+  $Res call({int change, NamedAPIResource move});
+
+  @override
+  $NamedAPIResourceCopyWith<$Res> get move;
+}
+
+/// @nodoc
+class __$MoveStatAffectCopyWithImpl<$Res>
+    extends _$MoveStatAffectCopyWithImpl<$Res>
+    implements _$MoveStatAffectCopyWith<$Res> {
+  __$MoveStatAffectCopyWithImpl(
+      _MoveStatAffect _value, $Res Function(_MoveStatAffect) _then)
+      : super(_value, (v) => _then(v as _MoveStatAffect));
+
+  @override
+  _MoveStatAffect get _value => super._value as _MoveStatAffect;
+
+  @override
+  $Res call({
+    Object? change = freezed,
+    Object? move = freezed,
+  }) {
+    return _then(_MoveStatAffect(
+      change == freezed
+          ? _value.change
+          : change // ignore: cast_nullable_to_non_nullable
+              as int,
+      move == freezed
+          ? _value.move
+          : move // ignore: cast_nullable_to_non_nullable
+              as NamedAPIResource,
+    ));
+  }
+}
+
+/// @nodoc
+@JsonSerializable()
+class _$_MoveStatAffect implements _MoveStatAffect {
+  const _$_MoveStatAffect(this.change, this.move);
+
+  factory _$_MoveStatAffect.fromJson(Map<String, dynamic> json) =>
+      _$$_MoveStatAffectFromJson(json);
+
+  @override
+  final int change;
+  @override
+  final NamedAPIResource move;
+
+  @override
+  String toString() {
+    return 'MoveStatAffect(change: $change, move: $move)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _MoveStatAffect &&
+            (identical(other.change, change) || other.change == change) &&
+            (identical(other.move, move) || other.move == move));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, change, move);
+
+  @JsonKey(ignore: true)
+  @override
+  _$MoveStatAffectCopyWith<_MoveStatAffect> get copyWith =>
+      __$MoveStatAffectCopyWithImpl<_MoveStatAffect>(this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$$_MoveStatAffectToJson(this);
+  }
+}
+
+abstract class _MoveStatAffect implements MoveStatAffect {
+  const factory _MoveStatAffect(int change, NamedAPIResource move) =
+      _$_MoveStatAffect;
+
+  factory _MoveStatAffect.fromJson(Map<String, dynamic> json) =
+      _$_MoveStatAffect.fromJson;
+
+  @override
+  int get change;
+  @override
+  NamedAPIResource get move;
+  @override
+  @JsonKey(ignore: true)
+  _$MoveStatAffectCopyWith<_MoveStatAffect> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+NatureStatAffectSets _$NatureStatAffectSetsFromJson(Map<String, dynamic> json) {
+  return _NatureStatAffectSets.fromJson(json);
+}
+
+/// @nodoc
+class _$NatureStatAffectSetsTearOff {
+  const _$NatureStatAffectSetsTearOff();
+
+  _NatureStatAffectSets call(
+      List<NamedAPIResource> increase, List<NamedAPIResource> decrease) {
+    return _NatureStatAffectSets(
+      increase,
+      decrease,
+    );
+  }
+
+  NatureStatAffectSets fromJson(Map<String, Object?> json) {
+    return NatureStatAffectSets.fromJson(json);
+  }
+}
+
+/// @nodoc
+const $NatureStatAffectSets = _$NatureStatAffectSetsTearOff();
+
+/// @nodoc
+mixin _$NatureStatAffectSets {
+  List<NamedAPIResource> get increase => throw _privateConstructorUsedError;
+  List<NamedAPIResource> get decrease => throw _privateConstructorUsedError;
+
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $NatureStatAffectSetsCopyWith<NatureStatAffectSets> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $NatureStatAffectSetsCopyWith<$Res> {
+  factory $NatureStatAffectSetsCopyWith(NatureStatAffectSets value,
+          $Res Function(NatureStatAffectSets) then) =
+      _$NatureStatAffectSetsCopyWithImpl<$Res>;
+  $Res call({List<NamedAPIResource> increase, List<NamedAPIResource> decrease});
+}
+
+/// @nodoc
+class _$NatureStatAffectSetsCopyWithImpl<$Res>
+    implements $NatureStatAffectSetsCopyWith<$Res> {
+  _$NatureStatAffectSetsCopyWithImpl(this._value, this._then);
+
+  final NatureStatAffectSets _value;
+  // ignore: unused_field
+  final $Res Function(NatureStatAffectSets) _then;
+
+  @override
+  $Res call({
+    Object? increase = freezed,
+    Object? decrease = freezed,
+  }) {
+    return _then(_value.copyWith(
+      increase: increase == freezed
+          ? _value.increase
+          : increase // ignore: cast_nullable_to_non_nullable
+              as List<NamedAPIResource>,
+      decrease: decrease == freezed
+          ? _value.decrease
+          : decrease // ignore: cast_nullable_to_non_nullable
+              as List<NamedAPIResource>,
+    ));
+  }
+}
+
+/// @nodoc
+abstract class _$NatureStatAffectSetsCopyWith<$Res>
+    implements $NatureStatAffectSetsCopyWith<$Res> {
+  factory _$NatureStatAffectSetsCopyWith(_NatureStatAffectSets value,
+          $Res Function(_NatureStatAffectSets) then) =
+      __$NatureStatAffectSetsCopyWithImpl<$Res>;
+  @override
+  $Res call({List<NamedAPIResource> increase, List<NamedAPIResource> decrease});
+}
+
+/// @nodoc
+class __$NatureStatAffectSetsCopyWithImpl<$Res>
+    extends _$NatureStatAffectSetsCopyWithImpl<$Res>
+    implements _$NatureStatAffectSetsCopyWith<$Res> {
+  __$NatureStatAffectSetsCopyWithImpl(
+      _NatureStatAffectSets _value, $Res Function(_NatureStatAffectSets) _then)
+      : super(_value, (v) => _then(v as _NatureStatAffectSets));
+
+  @override
+  _NatureStatAffectSets get _value => super._value as _NatureStatAffectSets;
+
+  @override
+  $Res call({
+    Object? increase = freezed,
+    Object? decrease = freezed,
+  }) {
+    return _then(_NatureStatAffectSets(
+      increase == freezed
+          ? _value.increase
+          : increase // ignore: cast_nullable_to_non_nullable
+              as List<NamedAPIResource>,
+      decrease == freezed
+          ? _value.decrease
+          : decrease // ignore: cast_nullable_to_non_nullable
+              as List<NamedAPIResource>,
+    ));
+  }
+}
+
+/// @nodoc
+@JsonSerializable()
+class _$_NatureStatAffectSets implements _NatureStatAffectSets {
+  const _$_NatureStatAffectSets(this.increase, this.decrease);
+
+  factory _$_NatureStatAffectSets.fromJson(Map<String, dynamic> json) =>
+      _$$_NatureStatAffectSetsFromJson(json);
+
+  @override
+  final List<NamedAPIResource> increase;
+  @override
+  final List<NamedAPIResource> decrease;
+
+  @override
+  String toString() {
+    return 'NatureStatAffectSets(increase: $increase, decrease: $decrease)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _NatureStatAffectSets &&
+            const DeepCollectionEquality().equals(other.increase, increase) &&
+            const DeepCollectionEquality().equals(other.decrease, decrease));
+  }
+
+  @override
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(increase),
+      const DeepCollectionEquality().hash(decrease));
+
+  @JsonKey(ignore: true)
+  @override
+  _$NatureStatAffectSetsCopyWith<_NatureStatAffectSets> get copyWith =>
+      __$NatureStatAffectSetsCopyWithImpl<_NatureStatAffectSets>(
+          this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$$_NatureStatAffectSetsToJson(this);
+  }
+}
+
+abstract class _NatureStatAffectSets implements NatureStatAffectSets {
+  const factory _NatureStatAffectSets(
+          List<NamedAPIResource> increase, List<NamedAPIResource> decrease) =
+      _$_NatureStatAffectSets;
+
+  factory _NatureStatAffectSets.fromJson(Map<String, dynamic> json) =
+      _$_NatureStatAffectSets.fromJson;
+
+  @override
+  List<NamedAPIResource> get increase;
+  @override
+  List<NamedAPIResource> get decrease;
+  @override
+  @JsonKey(ignore: true)
+  _$NatureStatAffectSetsCopyWith<_NatureStatAffectSets> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+Type _$TypeFromJson(Map<String, dynamic> json) {
+  return _Type.fromJson(json);
+}
+
+/// @nodoc
+class _$TypeTearOff {
+  const _$TypeTearOff();
+
+  _Type call(
+      int id,
+      String name,
+      @JsonKey(name: 'damage_relations')
+          TypeRelations damageRelations,
+      @JsonKey(name: 'past_damage_relations')
+          List<TypeRelationsPast> pastDamageRelations,
+      @JsonKey(name: 'game_indices')
+          List<GenerationGameIndex> gameIndices,
+      NamedAPIResource generation,
+      @JsonKey(name: 'move_damage_class')
+          NamedAPIResource moveDamageClass,
+      List<Name> names,
+      List<TypePokemon> pokemon,
+      List<NamedAPIResource> moves) {
+    return _Type(
+      id,
+      name,
+      damageRelations,
+      pastDamageRelations,
+      gameIndices,
+      generation,
+      moveDamageClass,
+      names,
+      pokemon,
+      moves,
+    );
+  }
+
+  Type fromJson(Map<String, Object?> json) {
+    return Type.fromJson(json);
+  }
+}
+
+/// @nodoc
+const $Type = _$TypeTearOff();
+
+/// @nodoc
+mixin _$Type {
+  int get id => throw _privateConstructorUsedError;
+  String get name => throw _privateConstructorUsedError;
+  @JsonKey(name: 'damage_relations')
+  TypeRelations get damageRelations => throw _privateConstructorUsedError;
+  @JsonKey(name: 'past_damage_relations')
+  List<TypeRelationsPast> get pastDamageRelations =>
+      throw _privateConstructorUsedError;
+  @JsonKey(name: 'game_indices')
+  List<GenerationGameIndex> get gameIndices =>
+      throw _privateConstructorUsedError;
+  NamedAPIResource get generation => throw _privateConstructorUsedError;
+  @JsonKey(name: 'move_damage_class')
+  NamedAPIResource get moveDamageClass => throw _privateConstructorUsedError;
+  List<Name> get names => throw _privateConstructorUsedError;
+  List<TypePokemon> get pokemon => throw _privateConstructorUsedError;
+  List<NamedAPIResource> get moves => throw _privateConstructorUsedError;
+
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $TypeCopyWith<Type> get copyWith => throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $TypeCopyWith<$Res> {
+  factory $TypeCopyWith(Type value, $Res Function(Type) then) =
+      _$TypeCopyWithImpl<$Res>;
+  $Res call(
+      {int id,
+      String name,
+      @JsonKey(name: 'damage_relations')
+          TypeRelations damageRelations,
+      @JsonKey(name: 'past_damage_relations')
+          List<TypeRelationsPast> pastDamageRelations,
+      @JsonKey(name: 'game_indices')
+          List<GenerationGameIndex> gameIndices,
+      NamedAPIResource generation,
+      @JsonKey(name: 'move_damage_class')
+          NamedAPIResource moveDamageClass,
+      List<Name> names,
+      List<TypePokemon> pokemon,
+      List<NamedAPIResource> moves});
+
+  $TypeRelationsCopyWith<$Res> get damageRelations;
+  $NamedAPIResourceCopyWith<$Res> get generation;
+  $NamedAPIResourceCopyWith<$Res> get moveDamageClass;
+}
+
+/// @nodoc
+class _$TypeCopyWithImpl<$Res> implements $TypeCopyWith<$Res> {
+  _$TypeCopyWithImpl(this._value, this._then);
+
+  final Type _value;
+  // ignore: unused_field
+  final $Res Function(Type) _then;
+
+  @override
+  $Res call({
+    Object? id = freezed,
+    Object? name = freezed,
+    Object? damageRelations = freezed,
+    Object? pastDamageRelations = freezed,
+    Object? gameIndices = freezed,
+    Object? generation = freezed,
+    Object? moveDamageClass = freezed,
+    Object? names = freezed,
+    Object? pokemon = freezed,
+    Object? moves = freezed,
+  }) {
+    return _then(_value.copyWith(
+      id: id == freezed
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as int,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      damageRelations: damageRelations == freezed
+          ? _value.damageRelations
+          : damageRelations // ignore: cast_nullable_to_non_nullable
+              as TypeRelations,
+      pastDamageRelations: pastDamageRelations == freezed
+          ? _value.pastDamageRelations
+          : pastDamageRelations // ignore: cast_nullable_to_non_nullable
+              as List<TypeRelationsPast>,
+      gameIndices: gameIndices == freezed
+          ? _value.gameIndices
+          : gameIndices // ignore: cast_nullable_to_non_nullable
+              as List<GenerationGameIndex>,
+      generation: generation == freezed
+          ? _value.generation
+          : generation // ignore: cast_nullable_to_non_nullable
+              as NamedAPIResource,
+      moveDamageClass: moveDamageClass == freezed
+          ? _value.moveDamageClass
+          : moveDamageClass // ignore: cast_nullable_to_non_nullable
+              as NamedAPIResource,
+      names: names == freezed
+          ? _value.names
+          : names // ignore: cast_nullable_to_non_nullable
+              as List<Name>,
+      pokemon: pokemon == freezed
+          ? _value.pokemon
+          : pokemon // ignore: cast_nullable_to_non_nullable
+              as List<TypePokemon>,
+      moves: moves == freezed
+          ? _value.moves
+          : moves // ignore: cast_nullable_to_non_nullable
+              as List<NamedAPIResource>,
+    ));
+  }
+
+  @override
+  $TypeRelationsCopyWith<$Res> get damageRelations {
+    return $TypeRelationsCopyWith<$Res>(_value.damageRelations, (value) {
+      return _then(_value.copyWith(damageRelations: value));
+    });
+  }
+
+  @override
+  $NamedAPIResourceCopyWith<$Res> get generation {
+    return $NamedAPIResourceCopyWith<$Res>(_value.generation, (value) {
+      return _then(_value.copyWith(generation: value));
+    });
+  }
+
+  @override
+  $NamedAPIResourceCopyWith<$Res> get moveDamageClass {
+    return $NamedAPIResourceCopyWith<$Res>(_value.moveDamageClass, (value) {
+      return _then(_value.copyWith(moveDamageClass: value));
+    });
+  }
+}
+
+/// @nodoc
+abstract class _$TypeCopyWith<$Res> implements $TypeCopyWith<$Res> {
+  factory _$TypeCopyWith(_Type value, $Res Function(_Type) then) =
+      __$TypeCopyWithImpl<$Res>;
+  @override
+  $Res call(
+      {int id,
+      String name,
+      @JsonKey(name: 'damage_relations')
+          TypeRelations damageRelations,
+      @JsonKey(name: 'past_damage_relations')
+          List<TypeRelationsPast> pastDamageRelations,
+      @JsonKey(name: 'game_indices')
+          List<GenerationGameIndex> gameIndices,
+      NamedAPIResource generation,
+      @JsonKey(name: 'move_damage_class')
+          NamedAPIResource moveDamageClass,
+      List<Name> names,
+      List<TypePokemon> pokemon,
+      List<NamedAPIResource> moves});
+
+  @override
+  $TypeRelationsCopyWith<$Res> get damageRelations;
+  @override
+  $NamedAPIResourceCopyWith<$Res> get generation;
+  @override
+  $NamedAPIResourceCopyWith<$Res> get moveDamageClass;
+}
+
+/// @nodoc
+class __$TypeCopyWithImpl<$Res> extends _$TypeCopyWithImpl<$Res>
+    implements _$TypeCopyWith<$Res> {
+  __$TypeCopyWithImpl(_Type _value, $Res Function(_Type) _then)
+      : super(_value, (v) => _then(v as _Type));
+
+  @override
+  _Type get _value => super._value as _Type;
+
+  @override
+  $Res call({
+    Object? id = freezed,
+    Object? name = freezed,
+    Object? damageRelations = freezed,
+    Object? pastDamageRelations = freezed,
+    Object? gameIndices = freezed,
+    Object? generation = freezed,
+    Object? moveDamageClass = freezed,
+    Object? names = freezed,
+    Object? pokemon = freezed,
+    Object? moves = freezed,
+  }) {
+    return _then(_Type(
+      id == freezed
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as int,
+      name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      damageRelations == freezed
+          ? _value.damageRelations
+          : damageRelations // ignore: cast_nullable_to_non_nullable
+              as TypeRelations,
+      pastDamageRelations == freezed
+          ? _value.pastDamageRelations
+          : pastDamageRelations // ignore: cast_nullable_to_non_nullable
+              as List<TypeRelationsPast>,
+      gameIndices == freezed
+          ? _value.gameIndices
+          : gameIndices // ignore: cast_nullable_to_non_nullable
+              as List<GenerationGameIndex>,
+      generation == freezed
+          ? _value.generation
+          : generation // ignore: cast_nullable_to_non_nullable
+              as NamedAPIResource,
+      moveDamageClass == freezed
+          ? _value.moveDamageClass
+          : moveDamageClass // ignore: cast_nullable_to_non_nullable
+              as NamedAPIResource,
+      names == freezed
+          ? _value.names
+          : names // ignore: cast_nullable_to_non_nullable
+              as List<Name>,
+      pokemon == freezed
+          ? _value.pokemon
+          : pokemon // ignore: cast_nullable_to_non_nullable
+              as List<TypePokemon>,
+      moves == freezed
+          ? _value.moves
+          : moves // ignore: cast_nullable_to_non_nullable
+              as List<NamedAPIResource>,
+    ));
+  }
+}
+
+/// @nodoc
+@JsonSerializable()
+class _$_Type implements _Type {
+  const _$_Type(
+      this.id,
+      this.name,
+      @JsonKey(name: 'damage_relations') this.damageRelations,
+      @JsonKey(name: 'past_damage_relations') this.pastDamageRelations,
+      @JsonKey(name: 'game_indices') this.gameIndices,
+      this.generation,
+      @JsonKey(name: 'move_damage_class') this.moveDamageClass,
+      this.names,
+      this.pokemon,
+      this.moves);
+
+  factory _$_Type.fromJson(Map<String, dynamic> json) => _$$_TypeFromJson(json);
+
+  @override
+  final int id;
+  @override
+  final String name;
+  @override
+  @JsonKey(name: 'damage_relations')
+  final TypeRelations damageRelations;
+  @override
+  @JsonKey(name: 'past_damage_relations')
+  final List<TypeRelationsPast> pastDamageRelations;
+  @override
+  @JsonKey(name: 'game_indices')
+  final List<GenerationGameIndex> gameIndices;
+  @override
+  final NamedAPIResource generation;
+  @override
+  @JsonKey(name: 'move_damage_class')
+  final NamedAPIResource moveDamageClass;
+  @override
+  final List<Name> names;
+  @override
+  final List<TypePokemon> pokemon;
+  @override
+  final List<NamedAPIResource> moves;
+
+  @override
+  String toString() {
+    return 'Type(id: $id, name: $name, damageRelations: $damageRelations, pastDamageRelations: $pastDamageRelations, gameIndices: $gameIndices, generation: $generation, moveDamageClass: $moveDamageClass, names: $names, pokemon: $pokemon, moves: $moves)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _Type &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.name, name) || other.name == name) &&
+            (identical(other.damageRelations, damageRelations) ||
+                other.damageRelations == damageRelations) &&
+            const DeepCollectionEquality()
+                .equals(other.pastDamageRelations, pastDamageRelations) &&
+            const DeepCollectionEquality()
+                .equals(other.gameIndices, gameIndices) &&
+            (identical(other.generation, generation) ||
+                other.generation == generation) &&
+            (identical(other.moveDamageClass, moveDamageClass) ||
+                other.moveDamageClass == moveDamageClass) &&
+            const DeepCollectionEquality().equals(other.names, names) &&
+            const DeepCollectionEquality().equals(other.pokemon, pokemon) &&
+            const DeepCollectionEquality().equals(other.moves, moves));
+  }
+
+  @override
+  int get hashCode => Object.hash(
+      runtimeType,
+      id,
+      name,
+      damageRelations,
+      const DeepCollectionEquality().hash(pastDamageRelations),
+      const DeepCollectionEquality().hash(gameIndices),
+      generation,
+      moveDamageClass,
+      const DeepCollectionEquality().hash(names),
+      const DeepCollectionEquality().hash(pokemon),
+      const DeepCollectionEquality().hash(moves));
+
+  @JsonKey(ignore: true)
+  @override
+  _$TypeCopyWith<_Type> get copyWith =>
+      __$TypeCopyWithImpl<_Type>(this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$$_TypeToJson(this);
+  }
+}
+
+abstract class _Type implements Type {
+  const factory _Type(
+      int id,
+      String name,
+      @JsonKey(name: 'damage_relations')
+          TypeRelations damageRelations,
+      @JsonKey(name: 'past_damage_relations')
+          List<TypeRelationsPast> pastDamageRelations,
+      @JsonKey(name: 'game_indices')
+          List<GenerationGameIndex> gameIndices,
+      NamedAPIResource generation,
+      @JsonKey(name: 'move_damage_class')
+          NamedAPIResource moveDamageClass,
+      List<Name> names,
+      List<TypePokemon> pokemon,
+      List<NamedAPIResource> moves) = _$_Type;
+
+  factory _Type.fromJson(Map<String, dynamic> json) = _$_Type.fromJson;
+
+  @override
+  int get id;
+  @override
+  String get name;
+  @override
+  @JsonKey(name: 'damage_relations')
+  TypeRelations get damageRelations;
+  @override
+  @JsonKey(name: 'past_damage_relations')
+  List<TypeRelationsPast> get pastDamageRelations;
+  @override
+  @JsonKey(name: 'game_indices')
+  List<GenerationGameIndex> get gameIndices;
+  @override
+  NamedAPIResource get generation;
+  @override
+  @JsonKey(name: 'move_damage_class')
+  NamedAPIResource get moveDamageClass;
+  @override
+  List<Name> get names;
+  @override
+  List<TypePokemon> get pokemon;
+  @override
+  List<NamedAPIResource> get moves;
+  @override
+  @JsonKey(ignore: true)
+  _$TypeCopyWith<_Type> get copyWith => throw _privateConstructorUsedError;
+}
+
+TypePokemon _$TypePokemonFromJson(Map<String, dynamic> json) {
+  return _TypePokemon.fromJson(json);
+}
+
+/// @nodoc
+class _$TypePokemonTearOff {
+  const _$TypePokemonTearOff();
+
+  _TypePokemon call(int slot, NamedAPIResource pokemon) {
+    return _TypePokemon(
+      slot,
+      pokemon,
+    );
+  }
+
+  TypePokemon fromJson(Map<String, Object?> json) {
+    return TypePokemon.fromJson(json);
+  }
+}
+
+/// @nodoc
+const $TypePokemon = _$TypePokemonTearOff();
+
+/// @nodoc
+mixin _$TypePokemon {
+  int get slot => throw _privateConstructorUsedError;
+  NamedAPIResource get pokemon => throw _privateConstructorUsedError;
+
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $TypePokemonCopyWith<TypePokemon> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $TypePokemonCopyWith<$Res> {
+  factory $TypePokemonCopyWith(
+          TypePokemon value, $Res Function(TypePokemon) then) =
+      _$TypePokemonCopyWithImpl<$Res>;
+  $Res call({int slot, NamedAPIResource pokemon});
+
+  $NamedAPIResourceCopyWith<$Res> get pokemon;
+}
+
+/// @nodoc
+class _$TypePokemonCopyWithImpl<$Res> implements $TypePokemonCopyWith<$Res> {
+  _$TypePokemonCopyWithImpl(this._value, this._then);
+
+  final TypePokemon _value;
+  // ignore: unused_field
+  final $Res Function(TypePokemon) _then;
+
+  @override
+  $Res call({
+    Object? slot = freezed,
+    Object? pokemon = freezed,
+  }) {
+    return _then(_value.copyWith(
+      slot: slot == freezed
+          ? _value.slot
+          : slot // ignore: cast_nullable_to_non_nullable
+              as int,
+      pokemon: pokemon == freezed
+          ? _value.pokemon
+          : pokemon // ignore: cast_nullable_to_non_nullable
+              as NamedAPIResource,
+    ));
+  }
+
+  @override
+  $NamedAPIResourceCopyWith<$Res> get pokemon {
+    return $NamedAPIResourceCopyWith<$Res>(_value.pokemon, (value) {
+      return _then(_value.copyWith(pokemon: value));
+    });
+  }
+}
+
+/// @nodoc
+abstract class _$TypePokemonCopyWith<$Res>
+    implements $TypePokemonCopyWith<$Res> {
+  factory _$TypePokemonCopyWith(
+          _TypePokemon value, $Res Function(_TypePokemon) then) =
+      __$TypePokemonCopyWithImpl<$Res>;
+  @override
+  $Res call({int slot, NamedAPIResource pokemon});
+
+  @override
+  $NamedAPIResourceCopyWith<$Res> get pokemon;
+}
+
+/// @nodoc
+class __$TypePokemonCopyWithImpl<$Res> extends _$TypePokemonCopyWithImpl<$Res>
+    implements _$TypePokemonCopyWith<$Res> {
+  __$TypePokemonCopyWithImpl(
+      _TypePokemon _value, $Res Function(_TypePokemon) _then)
+      : super(_value, (v) => _then(v as _TypePokemon));
+
+  @override
+  _TypePokemon get _value => super._value as _TypePokemon;
+
+  @override
+  $Res call({
+    Object? slot = freezed,
+    Object? pokemon = freezed,
+  }) {
+    return _then(_TypePokemon(
+      slot == freezed
+          ? _value.slot
+          : slot // ignore: cast_nullable_to_non_nullable
+              as int,
+      pokemon == freezed
+          ? _value.pokemon
+          : pokemon // ignore: cast_nullable_to_non_nullable
+              as NamedAPIResource,
+    ));
+  }
+}
+
+/// @nodoc
+@JsonSerializable()
+class _$_TypePokemon implements _TypePokemon {
+  const _$_TypePokemon(this.slot, this.pokemon);
+
+  factory _$_TypePokemon.fromJson(Map<String, dynamic> json) =>
+      _$$_TypePokemonFromJson(json);
+
+  @override
+  final int slot;
+  @override
+  final NamedAPIResource pokemon;
+
+  @override
+  String toString() {
+    return 'TypePokemon(slot: $slot, pokemon: $pokemon)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _TypePokemon &&
+            (identical(other.slot, slot) || other.slot == slot) &&
+            (identical(other.pokemon, pokemon) || other.pokemon == pokemon));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, slot, pokemon);
+
+  @JsonKey(ignore: true)
+  @override
+  _$TypePokemonCopyWith<_TypePokemon> get copyWith =>
+      __$TypePokemonCopyWithImpl<_TypePokemon>(this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$$_TypePokemonToJson(this);
+  }
+}
+
+abstract class _TypePokemon implements TypePokemon {
+  const factory _TypePokemon(int slot, NamedAPIResource pokemon) =
+      _$_TypePokemon;
+
+  factory _TypePokemon.fromJson(Map<String, dynamic> json) =
+      _$_TypePokemon.fromJson;
+
+  @override
+  int get slot;
+  @override
+  NamedAPIResource get pokemon;
+  @override
+  @JsonKey(ignore: true)
+  _$TypePokemonCopyWith<_TypePokemon> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+TypeRelations _$TypeRelationsFromJson(Map<String, dynamic> json) {
+  return _TypeRelations.fromJson(json);
+}
+
+/// @nodoc
+class _$TypeRelationsTearOff {
+  const _$TypeRelationsTearOff();
+
+  _TypeRelations call(
+      @JsonKey(name: 'no_damage_to')
+          List<NamedAPIResource> noDamageTo,
+      @JsonKey(name: 'half_damage_to')
+          List<NamedAPIResource> halfDamageTo,
+      @JsonKey(name: 'double_damage_to')
+          List<NamedAPIResource> doubleDamageTo,
+      @JsonKey(name: 'no_damage_from')
+          List<NamedAPIResource> noDamageFrom,
+      @JsonKey(name: 'half_damage_from')
+          List<NamedAPIResource> halfDamageFrom,
+      @JsonKey(name: 'double_damage_from')
+          List<NamedAPIResource> doubleDamageFrom) {
+    return _TypeRelations(
+      noDamageTo,
+      halfDamageTo,
+      doubleDamageTo,
+      noDamageFrom,
+      halfDamageFrom,
+      doubleDamageFrom,
+    );
+  }
+
+  TypeRelations fromJson(Map<String, Object?> json) {
+    return TypeRelations.fromJson(json);
+  }
+}
+
+/// @nodoc
+const $TypeRelations = _$TypeRelationsTearOff();
+
+/// @nodoc
+mixin _$TypeRelations {
+  @JsonKey(name: 'no_damage_to')
+  List<NamedAPIResource> get noDamageTo => throw _privateConstructorUsedError;
+  @JsonKey(name: 'half_damage_to')
+  List<NamedAPIResource> get halfDamageTo => throw _privateConstructorUsedError;
+  @JsonKey(name: 'double_damage_to')
+  List<NamedAPIResource> get doubleDamageTo =>
+      throw _privateConstructorUsedError;
+  @JsonKey(name: 'no_damage_from')
+  List<NamedAPIResource> get noDamageFrom => throw _privateConstructorUsedError;
+  @JsonKey(name: 'half_damage_from')
+  List<NamedAPIResource> get halfDamageFrom =>
+      throw _privateConstructorUsedError;
+  @JsonKey(name: 'double_damage_from')
+  List<NamedAPIResource> get doubleDamageFrom =>
+      throw _privateConstructorUsedError;
+
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $TypeRelationsCopyWith<TypeRelations> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $TypeRelationsCopyWith<$Res> {
+  factory $TypeRelationsCopyWith(
+          TypeRelations value, $Res Function(TypeRelations) then) =
+      _$TypeRelationsCopyWithImpl<$Res>;
+  $Res call(
+      {@JsonKey(name: 'no_damage_to')
+          List<NamedAPIResource> noDamageTo,
+      @JsonKey(name: 'half_damage_to')
+          List<NamedAPIResource> halfDamageTo,
+      @JsonKey(name: 'double_damage_to')
+          List<NamedAPIResource> doubleDamageTo,
+      @JsonKey(name: 'no_damage_from')
+          List<NamedAPIResource> noDamageFrom,
+      @JsonKey(name: 'half_damage_from')
+          List<NamedAPIResource> halfDamageFrom,
+      @JsonKey(name: 'double_damage_from')
+          List<NamedAPIResource> doubleDamageFrom});
+}
+
+/// @nodoc
+class _$TypeRelationsCopyWithImpl<$Res>
+    implements $TypeRelationsCopyWith<$Res> {
+  _$TypeRelationsCopyWithImpl(this._value, this._then);
+
+  final TypeRelations _value;
+  // ignore: unused_field
+  final $Res Function(TypeRelations) _then;
+
+  @override
+  $Res call({
+    Object? noDamageTo = freezed,
+    Object? halfDamageTo = freezed,
+    Object? doubleDamageTo = freezed,
+    Object? noDamageFrom = freezed,
+    Object? halfDamageFrom = freezed,
+    Object? doubleDamageFrom = freezed,
+  }) {
+    return _then(_value.copyWith(
+      noDamageTo: noDamageTo == freezed
+          ? _value.noDamageTo
+          : noDamageTo // ignore: cast_nullable_to_non_nullable
+              as List<NamedAPIResource>,
+      halfDamageTo: halfDamageTo == freezed
+          ? _value.halfDamageTo
+          : halfDamageTo // ignore: cast_nullable_to_non_nullable
+              as List<NamedAPIResource>,
+      doubleDamageTo: doubleDamageTo == freezed
+          ? _value.doubleDamageTo
+          : doubleDamageTo // ignore: cast_nullable_to_non_nullable
+              as List<NamedAPIResource>,
+      noDamageFrom: noDamageFrom == freezed
+          ? _value.noDamageFrom
+          : noDamageFrom // ignore: cast_nullable_to_non_nullable
+              as List<NamedAPIResource>,
+      halfDamageFrom: halfDamageFrom == freezed
+          ? _value.halfDamageFrom
+          : halfDamageFrom // ignore: cast_nullable_to_non_nullable
+              as List<NamedAPIResource>,
+      doubleDamageFrom: doubleDamageFrom == freezed
+          ? _value.doubleDamageFrom
+          : doubleDamageFrom // ignore: cast_nullable_to_non_nullable
+              as List<NamedAPIResource>,
+    ));
+  }
+}
+
+/// @nodoc
+abstract class _$TypeRelationsCopyWith<$Res>
+    implements $TypeRelationsCopyWith<$Res> {
+  factory _$TypeRelationsCopyWith(
+          _TypeRelations value, $Res Function(_TypeRelations) then) =
+      __$TypeRelationsCopyWithImpl<$Res>;
+  @override
+  $Res call(
+      {@JsonKey(name: 'no_damage_to')
+          List<NamedAPIResource> noDamageTo,
+      @JsonKey(name: 'half_damage_to')
+          List<NamedAPIResource> halfDamageTo,
+      @JsonKey(name: 'double_damage_to')
+          List<NamedAPIResource> doubleDamageTo,
+      @JsonKey(name: 'no_damage_from')
+          List<NamedAPIResource> noDamageFrom,
+      @JsonKey(name: 'half_damage_from')
+          List<NamedAPIResource> halfDamageFrom,
+      @JsonKey(name: 'double_damage_from')
+          List<NamedAPIResource> doubleDamageFrom});
+}
+
+/// @nodoc
+class __$TypeRelationsCopyWithImpl<$Res>
+    extends _$TypeRelationsCopyWithImpl<$Res>
+    implements _$TypeRelationsCopyWith<$Res> {
+  __$TypeRelationsCopyWithImpl(
+      _TypeRelations _value, $Res Function(_TypeRelations) _then)
+      : super(_value, (v) => _then(v as _TypeRelations));
+
+  @override
+  _TypeRelations get _value => super._value as _TypeRelations;
+
+  @override
+  $Res call({
+    Object? noDamageTo = freezed,
+    Object? halfDamageTo = freezed,
+    Object? doubleDamageTo = freezed,
+    Object? noDamageFrom = freezed,
+    Object? halfDamageFrom = freezed,
+    Object? doubleDamageFrom = freezed,
+  }) {
+    return _then(_TypeRelations(
+      noDamageTo == freezed
+          ? _value.noDamageTo
+          : noDamageTo // ignore: cast_nullable_to_non_nullable
+              as List<NamedAPIResource>,
+      halfDamageTo == freezed
+          ? _value.halfDamageTo
+          : halfDamageTo // ignore: cast_nullable_to_non_nullable
+              as List<NamedAPIResource>,
+      doubleDamageTo == freezed
+          ? _value.doubleDamageTo
+          : doubleDamageTo // ignore: cast_nullable_to_non_nullable
+              as List<NamedAPIResource>,
+      noDamageFrom == freezed
+          ? _value.noDamageFrom
+          : noDamageFrom // ignore: cast_nullable_to_non_nullable
+              as List<NamedAPIResource>,
+      halfDamageFrom == freezed
+          ? _value.halfDamageFrom
+          : halfDamageFrom // ignore: cast_nullable_to_non_nullable
+              as List<NamedAPIResource>,
+      doubleDamageFrom == freezed
+          ? _value.doubleDamageFrom
+          : doubleDamageFrom // ignore: cast_nullable_to_non_nullable
+              as List<NamedAPIResource>,
+    ));
+  }
+}
+
+/// @nodoc
+@JsonSerializable()
+class _$_TypeRelations implements _TypeRelations {
+  const _$_TypeRelations(
+      @JsonKey(name: 'no_damage_to') this.noDamageTo,
+      @JsonKey(name: 'half_damage_to') this.halfDamageTo,
+      @JsonKey(name: 'double_damage_to') this.doubleDamageTo,
+      @JsonKey(name: 'no_damage_from') this.noDamageFrom,
+      @JsonKey(name: 'half_damage_from') this.halfDamageFrom,
+      @JsonKey(name: 'double_damage_from') this.doubleDamageFrom);
+
+  factory _$_TypeRelations.fromJson(Map<String, dynamic> json) =>
+      _$$_TypeRelationsFromJson(json);
+
+  @override
+  @JsonKey(name: 'no_damage_to')
+  final List<NamedAPIResource> noDamageTo;
+  @override
+  @JsonKey(name: 'half_damage_to')
+  final List<NamedAPIResource> halfDamageTo;
+  @override
+  @JsonKey(name: 'double_damage_to')
+  final List<NamedAPIResource> doubleDamageTo;
+  @override
+  @JsonKey(name: 'no_damage_from')
+  final List<NamedAPIResource> noDamageFrom;
+  @override
+  @JsonKey(name: 'half_damage_from')
+  final List<NamedAPIResource> halfDamageFrom;
+  @override
+  @JsonKey(name: 'double_damage_from')
+  final List<NamedAPIResource> doubleDamageFrom;
+
+  @override
+  String toString() {
+    return 'TypeRelations(noDamageTo: $noDamageTo, halfDamageTo: $halfDamageTo, doubleDamageTo: $doubleDamageTo, noDamageFrom: $noDamageFrom, halfDamageFrom: $halfDamageFrom, doubleDamageFrom: $doubleDamageFrom)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _TypeRelations &&
+            const DeepCollectionEquality()
+                .equals(other.noDamageTo, noDamageTo) &&
+            const DeepCollectionEquality()
+                .equals(other.halfDamageTo, halfDamageTo) &&
+            const DeepCollectionEquality()
+                .equals(other.doubleDamageTo, doubleDamageTo) &&
+            const DeepCollectionEquality()
+                .equals(other.noDamageFrom, noDamageFrom) &&
+            const DeepCollectionEquality()
+                .equals(other.halfDamageFrom, halfDamageFrom) &&
+            const DeepCollectionEquality()
+                .equals(other.doubleDamageFrom, doubleDamageFrom));
+  }
+
+  @override
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(noDamageTo),
+      const DeepCollectionEquality().hash(halfDamageTo),
+      const DeepCollectionEquality().hash(doubleDamageTo),
+      const DeepCollectionEquality().hash(noDamageFrom),
+      const DeepCollectionEquality().hash(halfDamageFrom),
+      const DeepCollectionEquality().hash(doubleDamageFrom));
+
+  @JsonKey(ignore: true)
+  @override
+  _$TypeRelationsCopyWith<_TypeRelations> get copyWith =>
+      __$TypeRelationsCopyWithImpl<_TypeRelations>(this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$$_TypeRelationsToJson(this);
+  }
+}
+
+abstract class _TypeRelations implements TypeRelations {
+  const factory _TypeRelations(
+      @JsonKey(name: 'no_damage_to')
+          List<NamedAPIResource> noDamageTo,
+      @JsonKey(name: 'half_damage_to')
+          List<NamedAPIResource> halfDamageTo,
+      @JsonKey(name: 'double_damage_to')
+          List<NamedAPIResource> doubleDamageTo,
+      @JsonKey(name: 'no_damage_from')
+          List<NamedAPIResource> noDamageFrom,
+      @JsonKey(name: 'half_damage_from')
+          List<NamedAPIResource> halfDamageFrom,
+      @JsonKey(name: 'double_damage_from')
+          List<NamedAPIResource> doubleDamageFrom) = _$_TypeRelations;
+
+  factory _TypeRelations.fromJson(Map<String, dynamic> json) =
+      _$_TypeRelations.fromJson;
+
+  @override
+  @JsonKey(name: 'no_damage_to')
+  List<NamedAPIResource> get noDamageTo;
+  @override
+  @JsonKey(name: 'half_damage_to')
+  List<NamedAPIResource> get halfDamageTo;
+  @override
+  @JsonKey(name: 'double_damage_to')
+  List<NamedAPIResource> get doubleDamageTo;
+  @override
+  @JsonKey(name: 'no_damage_from')
+  List<NamedAPIResource> get noDamageFrom;
+  @override
+  @JsonKey(name: 'half_damage_from')
+  List<NamedAPIResource> get halfDamageFrom;
+  @override
+  @JsonKey(name: 'double_damage_from')
+  List<NamedAPIResource> get doubleDamageFrom;
+  @override
+  @JsonKey(ignore: true)
+  _$TypeRelationsCopyWith<_TypeRelations> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+TypeRelationsPast _$TypeRelationsPastFromJson(Map<String, dynamic> json) {
+  return _TypeRelationsPast.fromJson(json);
+}
+
+/// @nodoc
+class _$TypeRelationsPastTearOff {
+  const _$TypeRelationsPastTearOff();
+
+  _TypeRelationsPast call(NamedAPIResource generation,
+      @JsonKey(name: 'damage_relations') TypeRelations damageRelations) {
+    return _TypeRelationsPast(
+      generation,
+      damageRelations,
+    );
+  }
+
+  TypeRelationsPast fromJson(Map<String, Object?> json) {
+    return TypeRelationsPast.fromJson(json);
+  }
+}
+
+/// @nodoc
+const $TypeRelationsPast = _$TypeRelationsPastTearOff();
+
+/// @nodoc
+mixin _$TypeRelationsPast {
+  NamedAPIResource get generation => throw _privateConstructorUsedError;
+  @JsonKey(name: 'damage_relations')
+  TypeRelations get damageRelations => throw _privateConstructorUsedError;
+
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $TypeRelationsPastCopyWith<TypeRelationsPast> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $TypeRelationsPastCopyWith<$Res> {
+  factory $TypeRelationsPastCopyWith(
+          TypeRelationsPast value, $Res Function(TypeRelationsPast) then) =
+      _$TypeRelationsPastCopyWithImpl<$Res>;
+  $Res call(
+      {NamedAPIResource generation,
+      @JsonKey(name: 'damage_relations') TypeRelations damageRelations});
+
+  $NamedAPIResourceCopyWith<$Res> get generation;
+  $TypeRelationsCopyWith<$Res> get damageRelations;
+}
+
+/// @nodoc
+class _$TypeRelationsPastCopyWithImpl<$Res>
+    implements $TypeRelationsPastCopyWith<$Res> {
+  _$TypeRelationsPastCopyWithImpl(this._value, this._then);
+
+  final TypeRelationsPast _value;
+  // ignore: unused_field
+  final $Res Function(TypeRelationsPast) _then;
+
+  @override
+  $Res call({
+    Object? generation = freezed,
+    Object? damageRelations = freezed,
+  }) {
+    return _then(_value.copyWith(
+      generation: generation == freezed
+          ? _value.generation
+          : generation // ignore: cast_nullable_to_non_nullable
+              as NamedAPIResource,
+      damageRelations: damageRelations == freezed
+          ? _value.damageRelations
+          : damageRelations // ignore: cast_nullable_to_non_nullable
+              as TypeRelations,
+    ));
+  }
+
+  @override
+  $NamedAPIResourceCopyWith<$Res> get generation {
+    return $NamedAPIResourceCopyWith<$Res>(_value.generation, (value) {
+      return _then(_value.copyWith(generation: value));
+    });
+  }
+
+  @override
+  $TypeRelationsCopyWith<$Res> get damageRelations {
+    return $TypeRelationsCopyWith<$Res>(_value.damageRelations, (value) {
+      return _then(_value.copyWith(damageRelations: value));
+    });
+  }
+}
+
+/// @nodoc
+abstract class _$TypeRelationsPastCopyWith<$Res>
+    implements $TypeRelationsPastCopyWith<$Res> {
+  factory _$TypeRelationsPastCopyWith(
+          _TypeRelationsPast value, $Res Function(_TypeRelationsPast) then) =
+      __$TypeRelationsPastCopyWithImpl<$Res>;
+  @override
+  $Res call(
+      {NamedAPIResource generation,
+      @JsonKey(name: 'damage_relations') TypeRelations damageRelations});
+
+  @override
+  $NamedAPIResourceCopyWith<$Res> get generation;
+  @override
+  $TypeRelationsCopyWith<$Res> get damageRelations;
+}
+
+/// @nodoc
+class __$TypeRelationsPastCopyWithImpl<$Res>
+    extends _$TypeRelationsPastCopyWithImpl<$Res>
+    implements _$TypeRelationsPastCopyWith<$Res> {
+  __$TypeRelationsPastCopyWithImpl(
+      _TypeRelationsPast _value, $Res Function(_TypeRelationsPast) _then)
+      : super(_value, (v) => _then(v as _TypeRelationsPast));
+
+  @override
+  _TypeRelationsPast get _value => super._value as _TypeRelationsPast;
+
+  @override
+  $Res call({
+    Object? generation = freezed,
+    Object? damageRelations = freezed,
+  }) {
+    return _then(_TypeRelationsPast(
+      generation == freezed
+          ? _value.generation
+          : generation // ignore: cast_nullable_to_non_nullable
+              as NamedAPIResource,
+      damageRelations == freezed
+          ? _value.damageRelations
+          : damageRelations // ignore: cast_nullable_to_non_nullable
+              as TypeRelations,
+    ));
+  }
+}
+
+/// @nodoc
+@JsonSerializable()
+class _$_TypeRelationsPast implements _TypeRelationsPast {
+  const _$_TypeRelationsPast(
+      this.generation, @JsonKey(name: 'damage_relations') this.damageRelations);
+
+  factory _$_TypeRelationsPast.fromJson(Map<String, dynamic> json) =>
+      _$$_TypeRelationsPastFromJson(json);
+
+  @override
+  final NamedAPIResource generation;
+  @override
+  @JsonKey(name: 'damage_relations')
+  final TypeRelations damageRelations;
+
+  @override
+  String toString() {
+    return 'TypeRelationsPast(generation: $generation, damageRelations: $damageRelations)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _TypeRelationsPast &&
+            (identical(other.generation, generation) ||
+                other.generation == generation) &&
+            (identical(other.damageRelations, damageRelations) ||
+                other.damageRelations == damageRelations));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, generation, damageRelations);
+
+  @JsonKey(ignore: true)
+  @override
+  _$TypeRelationsPastCopyWith<_TypeRelationsPast> get copyWith =>
+      __$TypeRelationsPastCopyWithImpl<_TypeRelationsPast>(this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$$_TypeRelationsPastToJson(this);
+  }
+}
+
+abstract class _TypeRelationsPast implements TypeRelationsPast {
+  const factory _TypeRelationsPast(NamedAPIResource generation,
+          @JsonKey(name: 'damage_relations') TypeRelations damageRelations) =
+      _$_TypeRelationsPast;
+
+  factory _TypeRelationsPast.fromJson(Map<String, dynamic> json) =
+      _$_TypeRelationsPast.fromJson;
+
+  @override
+  NamedAPIResource get generation;
+  @override
+  @JsonKey(name: 'damage_relations')
+  TypeRelations get damageRelations;
+  @override
+  @JsonKey(ignore: true)
+  _$TypeRelationsPastCopyWith<_TypeRelationsPast> get copyWith =>
+      throw _privateConstructorUsedError;
+}
