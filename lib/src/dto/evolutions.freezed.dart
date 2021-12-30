@@ -249,14 +249,14 @@ class _$ChainLinkTearOff {
 
   _ChainLink call(
       @JsonKey(name: 'is_baby')
-          bool isbaby,
+          bool isBaby,
       NamedAPIResource species,
       @JsonKey(name: 'evolution_details')
           List<EvolutionDetail> evolutionDetails,
       @JsonKey(name: 'evolves_to')
           List<ChainLink> evolvesTo) {
     return _ChainLink(
-      isbaby,
+      isBaby,
       species,
       evolutionDetails,
       evolvesTo,
@@ -274,7 +274,7 @@ const $ChainLink = _$ChainLinkTearOff();
 /// @nodoc
 mixin _$ChainLink {
   @JsonKey(name: 'is_baby')
-  bool get isbaby => throw _privateConstructorUsedError;
+  bool get isBaby => throw _privateConstructorUsedError;
   NamedAPIResource get species => throw _privateConstructorUsedError;
   @JsonKey(name: 'evolution_details')
   List<EvolutionDetail> get evolutionDetails =>
@@ -294,7 +294,7 @@ abstract class $ChainLinkCopyWith<$Res> {
       _$ChainLinkCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'is_baby')
-          bool isbaby,
+          bool isBaby,
       NamedAPIResource species,
       @JsonKey(name: 'evolution_details')
           List<EvolutionDetail> evolutionDetails,
@@ -314,15 +314,15 @@ class _$ChainLinkCopyWithImpl<$Res> implements $ChainLinkCopyWith<$Res> {
 
   @override
   $Res call({
-    Object? isbaby = freezed,
+    Object? isBaby = freezed,
     Object? species = freezed,
     Object? evolutionDetails = freezed,
     Object? evolvesTo = freezed,
   }) {
     return _then(_value.copyWith(
-      isbaby: isbaby == freezed
-          ? _value.isbaby
-          : isbaby // ignore: cast_nullable_to_non_nullable
+      isBaby: isBaby == freezed
+          ? _value.isBaby
+          : isBaby // ignore: cast_nullable_to_non_nullable
               as bool,
       species: species == freezed
           ? _value.species
@@ -355,7 +355,7 @@ abstract class _$ChainLinkCopyWith<$Res> implements $ChainLinkCopyWith<$Res> {
   @override
   $Res call(
       {@JsonKey(name: 'is_baby')
-          bool isbaby,
+          bool isBaby,
       NamedAPIResource species,
       @JsonKey(name: 'evolution_details')
           List<EvolutionDetail> evolutionDetails,
@@ -377,15 +377,15 @@ class __$ChainLinkCopyWithImpl<$Res> extends _$ChainLinkCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object? isbaby = freezed,
+    Object? isBaby = freezed,
     Object? species = freezed,
     Object? evolutionDetails = freezed,
     Object? evolvesTo = freezed,
   }) {
     return _then(_ChainLink(
-      isbaby == freezed
-          ? _value.isbaby
-          : isbaby // ignore: cast_nullable_to_non_nullable
+      isBaby == freezed
+          ? _value.isBaby
+          : isBaby // ignore: cast_nullable_to_non_nullable
               as bool,
       species == freezed
           ? _value.species
@@ -407,7 +407,7 @@ class __$ChainLinkCopyWithImpl<$Res> extends _$ChainLinkCopyWithImpl<$Res>
 @JsonSerializable()
 class _$_ChainLink implements _ChainLink {
   const _$_ChainLink(
-      @JsonKey(name: 'is_baby') this.isbaby,
+      @JsonKey(name: 'is_baby') this.isBaby,
       this.species,
       @JsonKey(name: 'evolution_details') this.evolutionDetails,
       @JsonKey(name: 'evolves_to') this.evolvesTo);
@@ -417,7 +417,7 @@ class _$_ChainLink implements _ChainLink {
 
   @override
   @JsonKey(name: 'is_baby')
-  final bool isbaby;
+  final bool isBaby;
   @override
   final NamedAPIResource species;
   @override
@@ -429,7 +429,7 @@ class _$_ChainLink implements _ChainLink {
 
   @override
   String toString() {
-    return 'ChainLink(isbaby: $isbaby, species: $species, evolutionDetails: $evolutionDetails, evolvesTo: $evolvesTo)';
+    return 'ChainLink(isBaby: $isBaby, species: $species, evolutionDetails: $evolutionDetails, evolvesTo: $evolvesTo)';
   }
 
   @override
@@ -437,7 +437,7 @@ class _$_ChainLink implements _ChainLink {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _ChainLink &&
-            const DeepCollectionEquality().equals(other.isbaby, isbaby) &&
+            const DeepCollectionEquality().equals(other.isBaby, isBaby) &&
             const DeepCollectionEquality().equals(other.species, species) &&
             const DeepCollectionEquality()
                 .equals(other.evolutionDetails, evolutionDetails) &&
@@ -447,7 +447,7 @@ class _$_ChainLink implements _ChainLink {
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      const DeepCollectionEquality().hash(isbaby),
+      const DeepCollectionEquality().hash(isBaby),
       const DeepCollectionEquality().hash(species),
       const DeepCollectionEquality().hash(evolutionDetails),
       const DeepCollectionEquality().hash(evolvesTo));
@@ -466,7 +466,7 @@ class _$_ChainLink implements _ChainLink {
 abstract class _ChainLink implements ChainLink {
   const factory _ChainLink(
       @JsonKey(name: 'is_baby')
-          bool isbaby,
+          bool isBaby,
       NamedAPIResource species,
       @JsonKey(name: 'evolution_details')
           List<EvolutionDetail> evolutionDetails,
@@ -478,7 +478,7 @@ abstract class _ChainLink implements ChainLink {
 
   @override
   @JsonKey(name: 'is_baby')
-  bool get isbaby;
+  bool get isBaby;
   @override
   NamedAPIResource get species;
   @override

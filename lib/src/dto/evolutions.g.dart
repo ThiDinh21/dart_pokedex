@@ -34,7 +34,7 @@ _$_ChainLink _$$_ChainLinkFromJson(Map<String, dynamic> json) => _$_ChainLink(
 
 Map<String, dynamic> _$$_ChainLinkToJson(_$_ChainLink instance) =>
     <String, dynamic>{
-      'is_baby': instance.isbaby,
+      'is_baby': instance.isBaby,
       'species': instance.species,
       'evolution_details': instance.evolutionDetails,
       'evolves_to': instance.evolvesTo,

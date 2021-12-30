@@ -6173,12 +6173,12 @@ class _$PokemonSpritesTearOff {
   _PokemonSprites call(
       @JsonKey(name: 'front_default') String frontDefault,
       @JsonKey(name: 'front_shiny') String frontShiny,
-      @JsonKey(name: 'front_female') String frontFemale,
-      @JsonKey(name: 'front_shiny_female') String frontShinyFemale,
+      @JsonKey(name: 'front_female') String? frontFemale,
+      @JsonKey(name: 'front_shiny_female') String? frontShinyFemale,
       @JsonKey(name: 'back_default') String backDefault,
       @JsonKey(name: 'back_shiny') String backShiny,
-      @JsonKey(name: 'back_female') String backFemale,
-      @JsonKey(name: 'back_shiny_female') String backShinyFemale) {
+      @JsonKey(name: 'back_female') String? backFemale,
+      @JsonKey(name: 'back_shiny_female') String? backShinyFemale) {
     return _PokemonSprites(
       frontDefault,
       frontShiny,
@@ -6206,17 +6206,17 @@ mixin _$PokemonSprites {
   @JsonKey(name: 'front_shiny')
   String get frontShiny => throw _privateConstructorUsedError;
   @JsonKey(name: 'front_female')
-  String get frontFemale => throw _privateConstructorUsedError;
+  String? get frontFemale => throw _privateConstructorUsedError;
   @JsonKey(name: 'front_shiny_female')
-  String get frontShinyFemale => throw _privateConstructorUsedError;
+  String? get frontShinyFemale => throw _privateConstructorUsedError;
   @JsonKey(name: 'back_default')
   String get backDefault => throw _privateConstructorUsedError;
   @JsonKey(name: 'back_shiny')
   String get backShiny => throw _privateConstructorUsedError;
   @JsonKey(name: 'back_female')
-  String get backFemale => throw _privateConstructorUsedError;
+  String? get backFemale => throw _privateConstructorUsedError;
   @JsonKey(name: 'back_shiny_female')
-  String get backShinyFemale => throw _privateConstructorUsedError;
+  String? get backShinyFemale => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -6232,12 +6232,12 @@ abstract class $PokemonSpritesCopyWith<$Res> {
   $Res call(
       {@JsonKey(name: 'front_default') String frontDefault,
       @JsonKey(name: 'front_shiny') String frontShiny,
-      @JsonKey(name: 'front_female') String frontFemale,
-      @JsonKey(name: 'front_shiny_female') String frontShinyFemale,
+      @JsonKey(name: 'front_female') String? frontFemale,
+      @JsonKey(name: 'front_shiny_female') String? frontShinyFemale,
       @JsonKey(name: 'back_default') String backDefault,
       @JsonKey(name: 'back_shiny') String backShiny,
-      @JsonKey(name: 'back_female') String backFemale,
-      @JsonKey(name: 'back_shiny_female') String backShinyFemale});
+      @JsonKey(name: 'back_female') String? backFemale,
+      @JsonKey(name: 'back_shiny_female') String? backShinyFemale});
 }
 
 /// @nodoc
@@ -6272,11 +6272,11 @@ class _$PokemonSpritesCopyWithImpl<$Res>
       frontFemale: frontFemale == freezed
           ? _value.frontFemale
           : frontFemale // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       frontShinyFemale: frontShinyFemale == freezed
           ? _value.frontShinyFemale
           : frontShinyFemale // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       backDefault: backDefault == freezed
           ? _value.backDefault
           : backDefault // ignore: cast_nullable_to_non_nullable
@@ -6288,11 +6288,11 @@ class _$PokemonSpritesCopyWithImpl<$Res>
       backFemale: backFemale == freezed
           ? _value.backFemale
           : backFemale // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       backShinyFemale: backShinyFemale == freezed
           ? _value.backShinyFemale
           : backShinyFemale // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
     ));
   }
 }
@@ -6307,12 +6307,12 @@ abstract class _$PokemonSpritesCopyWith<$Res>
   $Res call(
       {@JsonKey(name: 'front_default') String frontDefault,
       @JsonKey(name: 'front_shiny') String frontShiny,
-      @JsonKey(name: 'front_female') String frontFemale,
-      @JsonKey(name: 'front_shiny_female') String frontShinyFemale,
+      @JsonKey(name: 'front_female') String? frontFemale,
+      @JsonKey(name: 'front_shiny_female') String? frontShinyFemale,
       @JsonKey(name: 'back_default') String backDefault,
       @JsonKey(name: 'back_shiny') String backShiny,
-      @JsonKey(name: 'back_female') String backFemale,
-      @JsonKey(name: 'back_shiny_female') String backShinyFemale});
+      @JsonKey(name: 'back_female') String? backFemale,
+      @JsonKey(name: 'back_shiny_female') String? backShinyFemale});
 }
 
 /// @nodoc
@@ -6349,11 +6349,11 @@ class __$PokemonSpritesCopyWithImpl<$Res>
       frontFemale == freezed
           ? _value.frontFemale
           : frontFemale // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       frontShinyFemale == freezed
           ? _value.frontShinyFemale
           : frontShinyFemale // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       backDefault == freezed
           ? _value.backDefault
           : backDefault // ignore: cast_nullable_to_non_nullable
@@ -6365,11 +6365,11 @@ class __$PokemonSpritesCopyWithImpl<$Res>
       backFemale == freezed
           ? _value.backFemale
           : backFemale // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       backShinyFemale == freezed
           ? _value.backShinyFemale
           : backShinyFemale // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
     ));
   }
 }
@@ -6398,10 +6398,10 @@ class _$_PokemonSprites implements _PokemonSprites {
   final String frontShiny;
   @override
   @JsonKey(name: 'front_female')
-  final String frontFemale;
+  final String? frontFemale;
   @override
   @JsonKey(name: 'front_shiny_female')
-  final String frontShinyFemale;
+  final String? frontShinyFemale;
   @override
   @JsonKey(name: 'back_default')
   final String backDefault;
@@ -6410,10 +6410,10 @@ class _$_PokemonSprites implements _PokemonSprites {
   final String backShiny;
   @override
   @JsonKey(name: 'back_female')
-  final String backFemale;
+  final String? backFemale;
   @override
   @JsonKey(name: 'back_shiny_female')
-  final String backShinyFemale;
+  final String? backShinyFemale;
 
   @override
   String toString() {
@@ -6469,12 +6469,12 @@ abstract class _PokemonSprites implements PokemonSprites {
   const factory _PokemonSprites(
           @JsonKey(name: 'front_default') String frontDefault,
           @JsonKey(name: 'front_shiny') String frontShiny,
-          @JsonKey(name: 'front_female') String frontFemale,
-          @JsonKey(name: 'front_shiny_female') String frontShinyFemale,
+          @JsonKey(name: 'front_female') String? frontFemale,
+          @JsonKey(name: 'front_shiny_female') String? frontShinyFemale,
           @JsonKey(name: 'back_default') String backDefault,
           @JsonKey(name: 'back_shiny') String backShiny,
-          @JsonKey(name: 'back_female') String backFemale,
-          @JsonKey(name: 'back_shiny_female') String backShinyFemale) =
+          @JsonKey(name: 'back_female') String? backFemale,
+          @JsonKey(name: 'back_shiny_female') String? backShinyFemale) =
       _$_PokemonSprites;
 
   factory _PokemonSprites.fromJson(Map<String, dynamic> json) =
@@ -6488,10 +6488,10 @@ abstract class _PokemonSprites implements PokemonSprites {
   String get frontShiny;
   @override
   @JsonKey(name: 'front_female')
-  String get frontFemale;
+  String? get frontFemale;
   @override
   @JsonKey(name: 'front_shiny_female')
-  String get frontShinyFemale;
+  String? get frontShinyFemale;
   @override
   @JsonKey(name: 'back_default')
   String get backDefault;
@@ -6500,10 +6500,10 @@ abstract class _PokemonSprites implements PokemonSprites {
   String get backShiny;
   @override
   @JsonKey(name: 'back_female')
-  String get backFemale;
+  String? get backFemale;
   @override
   @JsonKey(name: 'back_shiny_female')
-  String get backShinyFemale;
+  String? get backShinyFemale;
   @override
   @JsonKey(ignore: true)
   _$PokemonSpritesCopyWith<_PokemonSprites> get copyWith =>
