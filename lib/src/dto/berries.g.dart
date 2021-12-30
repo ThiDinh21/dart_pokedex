@@ -9,7 +9,7 @@ part of 'berries.dart';
 _$_Berry _$$_BerryFromJson(Map<String, dynamic> json) => _$_Berry(
       json['id'] as int,
       json['name'] as String,
-      json['grwoth_time'] as int,
+      json['growth_time'] as int,
       json['max_harvest'] as int,
       json['natural_gift_power'] as int,
       json['size'] as int,
@@ -27,7 +27,7 @@ _$_Berry _$$_BerryFromJson(Map<String, dynamic> json) => _$_Berry(
 Map<String, dynamic> _$$_BerryToJson(_$_Berry instance) => <String, dynamic>{
       'id': instance.id,
       'name': instance.name,
-      'grwoth_time': instance.growthTime,
+      'growth_time': instance.growthTime,
       'max_harvest': instance.maxHarvest,
       'natural_gift_power': instance.naturalGiftPower,
       'size': instance.size,

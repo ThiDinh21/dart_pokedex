@@ -25,7 +25,7 @@ class _$BerryTearOff {
   _Berry call(
       int id,
       String name,
-      @JsonKey(name: 'grwoth_time') int growthTime,
+      @JsonKey(name: 'growth_time') int growthTime,
       @JsonKey(name: 'max_harvest') int maxHarvest,
       @JsonKey(name: 'natural_gift_power') int naturalGiftPower,
       int size,
@@ -63,7 +63,7 @@ const $Berry = _$BerryTearOff();
 mixin _$Berry {
   int get id => throw _privateConstructorUsedError;
   String get name => throw _privateConstructorUsedError;
-  @JsonKey(name: 'grwoth_time')
+  @JsonKey(name: 'growth_time')
   int get growthTime => throw _privateConstructorUsedError;
   @JsonKey(name: 'max_harvest')
   int get maxHarvest => throw _privateConstructorUsedError;
@@ -91,7 +91,7 @@ abstract class $BerryCopyWith<$Res> {
   $Res call(
       {int id,
       String name,
-      @JsonKey(name: 'grwoth_time') int growthTime,
+      @JsonKey(name: 'growth_time') int growthTime,
       @JsonKey(name: 'max_harvest') int maxHarvest,
       @JsonKey(name: 'natural_gift_power') int naturalGiftPower,
       int size,
@@ -212,7 +212,7 @@ abstract class _$BerryCopyWith<$Res> implements $BerryCopyWith<$Res> {
   $Res call(
       {int id,
       String name,
-      @JsonKey(name: 'grwoth_time') int growthTime,
+      @JsonKey(name: 'growth_time') int growthTime,
       @JsonKey(name: 'max_harvest') int maxHarvest,
       @JsonKey(name: 'natural_gift_power') int naturalGiftPower,
       int size,
@@ -314,7 +314,7 @@ class _$_Berry implements _Berry {
   const _$_Berry(
       this.id,
       this.name,
-      @JsonKey(name: 'grwoth_time') this.growthTime,
+      @JsonKey(name: 'growth_time') this.growthTime,
       @JsonKey(name: 'max_harvest') this.maxHarvest,
       @JsonKey(name: 'natural_gift_power') this.naturalGiftPower,
       this.size,
@@ -333,7 +333,7 @@ class _$_Berry implements _Berry {
   @override
   final String name;
   @override
-  @JsonKey(name: 'grwoth_time')
+  @JsonKey(name: 'growth_time')
   final int growthTime;
   @override
   @JsonKey(name: 'max_harvest')
@@ -419,7 +419,7 @@ abstract class _Berry implements Berry {
   const factory _Berry(
       int id,
       String name,
-      @JsonKey(name: 'grwoth_time')
+      @JsonKey(name: 'growth_time')
           int growthTime,
       @JsonKey(name: 'max_harvest')
           int maxHarvest,
@@ -442,7 +442,7 @@ abstract class _Berry implements Berry {
   @override
   String get name;
   @override
-  @JsonKey(name: 'grwoth_time')
+  @JsonKey(name: 'growth_time')
   int get growthTime;
   @override
   @JsonKey(name: 'max_harvest')

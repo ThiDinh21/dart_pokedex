@@ -10,7 +10,7 @@ class Berry with _$Berry {
   const factory Berry(
     int id,
     String name,
-    @JsonKey(name: 'grwoth_time') int growthTime,
+    @JsonKey(name: 'growth_time') int growthTime,
     @JsonKey(name: 'max_harvest') int maxHarvest,
     @JsonKey(name: 'natural_gift_power') int naturalGiftPower,
     int size,
