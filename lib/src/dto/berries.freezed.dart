@@ -1,5 +1,6 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'berries.dart';
@@ -367,42 +368,41 @@ class _$_Berry implements _Berry {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _Berry &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.name, name) || other.name == name) &&
-            (identical(other.growthTime, growthTime) ||
-                other.growthTime == growthTime) &&
-            (identical(other.maxHarvest, maxHarvest) ||
-                other.maxHarvest == maxHarvest) &&
-            (identical(other.naturalGiftPower, naturalGiftPower) ||
-                other.naturalGiftPower == naturalGiftPower) &&
-            (identical(other.size, size) || other.size == size) &&
-            (identical(other.smoothness, smoothness) ||
-                other.smoothness == smoothness) &&
-            (identical(other.soilDryness, soilDryness) ||
-                other.soilDryness == soilDryness) &&
-            (identical(other.firmness, firmness) ||
-                other.firmness == firmness) &&
+            const DeepCollectionEquality().equals(other.id, id) &&
+            const DeepCollectionEquality().equals(other.name, name) &&
+            const DeepCollectionEquality()
+                .equals(other.growthTime, growthTime) &&
+            const DeepCollectionEquality()
+                .equals(other.maxHarvest, maxHarvest) &&
+            const DeepCollectionEquality()
+                .equals(other.naturalGiftPower, naturalGiftPower) &&
+            const DeepCollectionEquality().equals(other.size, size) &&
+            const DeepCollectionEquality()
+                .equals(other.smoothness, smoothness) &&
+            const DeepCollectionEquality()
+                .equals(other.soilDryness, soilDryness) &&
+            const DeepCollectionEquality().equals(other.firmness, firmness) &&
             const DeepCollectionEquality().equals(other.flavors, flavors) &&
-            (identical(other.item, item) || other.item == item) &&
-            (identical(other.naturalGiftType, naturalGiftType) ||
-                other.naturalGiftType == naturalGiftType));
+            const DeepCollectionEquality().equals(other.item, item) &&
+            const DeepCollectionEquality()
+                .equals(other.naturalGiftType, naturalGiftType));
   }
 
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      id,
-      name,
-      growthTime,
-      maxHarvest,
-      naturalGiftPower,
-      size,
-      smoothness,
-      soilDryness,
-      firmness,
+      const DeepCollectionEquality().hash(id),
+      const DeepCollectionEquality().hash(name),
+      const DeepCollectionEquality().hash(growthTime),
+      const DeepCollectionEquality().hash(maxHarvest),
+      const DeepCollectionEquality().hash(naturalGiftPower),
+      const DeepCollectionEquality().hash(size),
+      const DeepCollectionEquality().hash(smoothness),
+      const DeepCollectionEquality().hash(soilDryness),
+      const DeepCollectionEquality().hash(firmness),
       const DeepCollectionEquality().hash(flavors),
-      item,
-      naturalGiftType);
+      const DeepCollectionEquality().hash(item),
+      const DeepCollectionEquality().hash(naturalGiftType));
 
   @JsonKey(ignore: true)
   @override
@@ -614,12 +614,15 @@ class _$_BerryFlavorMap implements _BerryFlavorMap {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _BerryFlavorMap &&
-            (identical(other.potency, potency) || other.potency == potency) &&
-            (identical(other.flavor, flavor) || other.flavor == flavor));
+            const DeepCollectionEquality().equals(other.potency, potency) &&
+            const DeepCollectionEquality().equals(other.flavor, flavor));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, potency, flavor);
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(potency),
+      const DeepCollectionEquality().hash(flavor));
 
   @JsonKey(ignore: true)
   @override
@@ -811,8 +814,8 @@ class _$_BerryFirmness implements _BerryFirmness {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _BerryFirmness &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.name, name) || other.name == name) &&
+            const DeepCollectionEquality().equals(other.id, id) &&
+            const DeepCollectionEquality().equals(other.name, name) &&
             const DeepCollectionEquality().equals(other.berries, berries) &&
             const DeepCollectionEquality().equals(other.names, names));
   }
@@ -820,8 +823,8 @@ class _$_BerryFirmness implements _BerryFirmness {
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      id,
-      name,
+      const DeepCollectionEquality().hash(id),
+      const DeepCollectionEquality().hash(name),
       const DeepCollectionEquality().hash(berries),
       const DeepCollectionEquality().hash(names));
 
@@ -1058,21 +1061,21 @@ class _$_BerryFlavor implements _BerryFlavor {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _BerryFlavor &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.name, name) || other.name == name) &&
+            const DeepCollectionEquality().equals(other.id, id) &&
+            const DeepCollectionEquality().equals(other.name, name) &&
             const DeepCollectionEquality().equals(other.berries, berries) &&
-            (identical(other.contestType, contestType) ||
-                other.contestType == contestType) &&
+            const DeepCollectionEquality()
+                .equals(other.contestType, contestType) &&
             const DeepCollectionEquality().equals(other.names, names));
   }
 
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      id,
-      name,
+      const DeepCollectionEquality().hash(id),
+      const DeepCollectionEquality().hash(name),
       const DeepCollectionEquality().hash(berries),
-      contestType,
+      const DeepCollectionEquality().hash(contestType),
       const DeepCollectionEquality().hash(names));
 
   @JsonKey(ignore: true)
@@ -1257,12 +1260,15 @@ class _$_FlavorBerryMap implements _FlavorBerryMap {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _FlavorBerryMap &&
-            (identical(other.potency, potency) || other.potency == potency) &&
-            (identical(other.berry, berry) || other.berry == berry));
+            const DeepCollectionEquality().equals(other.potency, potency) &&
+            const DeepCollectionEquality().equals(other.berry, berry));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, potency, berry);
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(potency),
+      const DeepCollectionEquality().hash(berry));
 
   @JsonKey(ignore: true)
   @override

@@ -1,5 +1,6 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'common.dart';
@@ -128,11 +129,12 @@ class _$_APIResource implements _APIResource {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _APIResource &&
-            (identical(other.url, url) || other.url == url));
+            const DeepCollectionEquality().equals(other.url, url));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, url);
+  int get hashCode =>
+      Object.hash(runtimeType, const DeepCollectionEquality().hash(url));
 
   @JsonKey(ignore: true)
   @override
@@ -300,14 +302,16 @@ class _$_Description implements _Description {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _Description &&
-            (identical(other.description, description) ||
-                other.description == description) &&
-            (identical(other.language, language) ||
-                other.language == language));
+            const DeepCollectionEquality()
+                .equals(other.description, description) &&
+            const DeepCollectionEquality().equals(other.language, language));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, description, language);
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(description),
+      const DeepCollectionEquality().hash(language));
 
   @JsonKey(ignore: true)
   @override
@@ -473,13 +477,15 @@ class _$_Effect implements _Effect {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _Effect &&
-            (identical(other.effect, effect) || other.effect == effect) &&
-            (identical(other.language, language) ||
-                other.language == language));
+            const DeepCollectionEquality().equals(other.effect, effect) &&
+            const DeepCollectionEquality().equals(other.language, language));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, effect, language);
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(effect),
+      const DeepCollectionEquality().hash(language));
 
   @JsonKey(ignore: true)
   @override
@@ -713,19 +719,22 @@ class _$_Encounter implements _Encounter {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _Encounter &&
-            (identical(other.minLevel, minLevel) ||
-                other.minLevel == minLevel) &&
-            (identical(other.maxLevel, maxLevel) ||
-                other.maxLevel == maxLevel) &&
+            const DeepCollectionEquality().equals(other.minLevel, minLevel) &&
+            const DeepCollectionEquality().equals(other.maxLevel, maxLevel) &&
             const DeepCollectionEquality()
                 .equals(other.conditionValues, conditionValues) &&
-            (identical(other.chance, chance) || other.chance == chance) &&
-            (identical(other.method, method) || other.method == method));
+            const DeepCollectionEquality().equals(other.chance, chance) &&
+            const DeepCollectionEquality().equals(other.method, method));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, minLevel, maxLevel,
-      const DeepCollectionEquality().hash(conditionValues), chance, method);
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(minLevel),
+      const DeepCollectionEquality().hash(maxLevel),
+      const DeepCollectionEquality().hash(conditionValues),
+      const DeepCollectionEquality().hash(chance),
+      const DeepCollectionEquality().hash(method));
 
   @JsonKey(ignore: true)
   @override
@@ -942,15 +951,18 @@ class _$_FlavorText implements _FlavorText {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _FlavorText &&
-            (identical(other.flavorText, flavorText) ||
-                other.flavorText == flavorText) &&
-            (identical(other.language, language) ||
-                other.language == language) &&
-            (identical(other.version, version) || other.version == version));
+            const DeepCollectionEquality()
+                .equals(other.flavorText, flavorText) &&
+            const DeepCollectionEquality().equals(other.language, language) &&
+            const DeepCollectionEquality().equals(other.version, version));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, flavorText, language, version);
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(flavorText),
+      const DeepCollectionEquality().hash(language),
+      const DeepCollectionEquality().hash(version));
 
   @JsonKey(ignore: true)
   @override
@@ -1134,14 +1146,16 @@ class _$_GenerationGameIndex implements _GenerationGameIndex {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _GenerationGameIndex &&
-            (identical(other.gameIndex, gameIndex) ||
-                other.gameIndex == gameIndex) &&
-            (identical(other.generation, generation) ||
-                other.generation == generation));
+            const DeepCollectionEquality().equals(other.gameIndex, gameIndex) &&
+            const DeepCollectionEquality()
+                .equals(other.generation, generation));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, gameIndex, generation);
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(gameIndex),
+      const DeepCollectionEquality().hash(generation));
 
   @JsonKey(ignore: true)
   @override
@@ -1334,13 +1348,16 @@ class _$_MachineVersionDetail implements _MachineVersionDetail {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _MachineVersionDetail &&
-            (identical(other.machine, machine) || other.machine == machine) &&
-            (identical(other.versionGroup, versionGroup) ||
-                other.versionGroup == versionGroup));
+            const DeepCollectionEquality().equals(other.machine, machine) &&
+            const DeepCollectionEquality()
+                .equals(other.versionGroup, versionGroup));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, machine, versionGroup);
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(machine),
+      const DeepCollectionEquality().hash(versionGroup));
 
   @JsonKey(ignore: true)
   @override
@@ -1508,13 +1525,15 @@ class _$_Name implements _Name {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _Name &&
-            (identical(other.name, name) || other.name == name) &&
-            (identical(other.language, language) ||
-                other.language == language));
+            const DeepCollectionEquality().equals(other.name, name) &&
+            const DeepCollectionEquality().equals(other.language, language));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, name, language);
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(name),
+      const DeepCollectionEquality().hash(language));
 
   @JsonKey(ignore: true)
   @override
@@ -1672,12 +1691,15 @@ class _$_NamedAPIResource implements _NamedAPIResource {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _NamedAPIResource &&
-            (identical(other.name, name) || other.name == name) &&
-            (identical(other.url, url) || other.url == url));
+            const DeepCollectionEquality().equals(other.name, name) &&
+            const DeepCollectionEquality().equals(other.url, url));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, name, url);
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(name),
+      const DeepCollectionEquality().hash(url));
 
   @JsonKey(ignore: true)
   @override
@@ -1876,15 +1898,18 @@ class _$_VerboseEffect implements _VerboseEffect {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _VerboseEffect &&
-            (identical(other.effect, effect) || other.effect == effect) &&
-            (identical(other.shortEffect, shortEffect) ||
-                other.shortEffect == shortEffect) &&
-            (identical(other.language, language) ||
-                other.language == language));
+            const DeepCollectionEquality().equals(other.effect, effect) &&
+            const DeepCollectionEquality()
+                .equals(other.shortEffect, shortEffect) &&
+            const DeepCollectionEquality().equals(other.language, language));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, effect, shortEffect, language);
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(effect),
+      const DeepCollectionEquality().hash(shortEffect),
+      const DeepCollectionEquality().hash(language));
 
   @JsonKey(ignore: true)
   @override
@@ -2093,15 +2118,17 @@ class _$_VersionEncounterDetail implements _VersionEncounterDetail {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _VersionEncounterDetail &&
-            (identical(other.version, version) || other.version == version) &&
-            (identical(other.maxChance, maxChance) ||
-                other.maxChance == maxChance) &&
+            const DeepCollectionEquality().equals(other.version, version) &&
+            const DeepCollectionEquality().equals(other.maxChance, maxChance) &&
             const DeepCollectionEquality()
                 .equals(other.encounterDetails, encounterDetails));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, version, maxChance,
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(version),
+      const DeepCollectionEquality().hash(maxChance),
       const DeepCollectionEquality().hash(encounterDetails));
 
   @JsonKey(ignore: true)
@@ -2290,13 +2317,15 @@ class _$_VersionGameIndex implements _VersionGameIndex {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _VersionGameIndex &&
-            (identical(other.gameIndex, gameIndex) ||
-                other.gameIndex == gameIndex) &&
-            (identical(other.version, version) || other.version == version));
+            const DeepCollectionEquality().equals(other.gameIndex, gameIndex) &&
+            const DeepCollectionEquality().equals(other.version, version));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, gameIndex, version);
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(gameIndex),
+      const DeepCollectionEquality().hash(version));
 
   @JsonKey(ignore: true)
   @override
@@ -2505,15 +2534,18 @@ class _$_VersionGroupFlavorText implements _VersionGroupFlavorText {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _VersionGroupFlavorText &&
-            (identical(other.text, text) || other.text == text) &&
-            (identical(other.language, language) ||
-                other.language == language) &&
-            (identical(other.versionGroup, versionGroup) ||
-                other.versionGroup == versionGroup));
+            const DeepCollectionEquality().equals(other.text, text) &&
+            const DeepCollectionEquality().equals(other.language, language) &&
+            const DeepCollectionEquality()
+                .equals(other.versionGroup, versionGroup));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, text, language, versionGroup);
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(text),
+      const DeepCollectionEquality().hash(language),
+      const DeepCollectionEquality().hash(versionGroup));
 
   @JsonKey(ignore: true)
   @override

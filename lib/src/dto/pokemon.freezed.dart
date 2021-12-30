@@ -1,5 +1,6 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'pokemon.dart';
@@ -305,12 +306,12 @@ class _$_Ability implements _Ability {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _Ability &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.name, name) || other.name == name) &&
-            (identical(other.isMainSeries, isMainSeries) ||
-                other.isMainSeries == isMainSeries) &&
-            (identical(other.generation, generation) ||
-                other.generation == generation) &&
+            const DeepCollectionEquality().equals(other.id, id) &&
+            const DeepCollectionEquality().equals(other.name, name) &&
+            const DeepCollectionEquality()
+                .equals(other.isMainSeries, isMainSeries) &&
+            const DeepCollectionEquality()
+                .equals(other.generation, generation) &&
             const DeepCollectionEquality().equals(other.names, names) &&
             const DeepCollectionEquality()
                 .equals(other.effectEntries, effectEntries) &&
@@ -324,10 +325,10 @@ class _$_Ability implements _Ability {
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      id,
-      name,
-      isMainSeries,
-      generation,
+      const DeepCollectionEquality().hash(id),
+      const DeepCollectionEquality().hash(name),
+      const DeepCollectionEquality().hash(isMainSeries),
+      const DeepCollectionEquality().hash(generation),
       const DeepCollectionEquality().hash(names),
       const DeepCollectionEquality().hash(effectEntries),
       const DeepCollectionEquality().hash(effectChanges),
@@ -548,13 +549,15 @@ class _$_AbilityEffectChange implements _AbilityEffectChange {
             other is _AbilityEffectChange &&
             const DeepCollectionEquality()
                 .equals(other.effectEntries, effectEntries) &&
-            (identical(other.versionGroup, versionGroup) ||
-                other.versionGroup == versionGroup));
+            const DeepCollectionEquality()
+                .equals(other.versionGroup, versionGroup));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType,
-      const DeepCollectionEquality().hash(effectEntries), versionGroup);
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(effectEntries),
+      const DeepCollectionEquality().hash(versionGroup));
 
   @JsonKey(ignore: true)
   @override
@@ -770,17 +773,19 @@ class _$_AbilityFlavorText implements _AbilityFlavorText {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _AbilityFlavorText &&
-            (identical(other.flavorText, flavorText) ||
-                other.flavorText == flavorText) &&
-            (identical(other.language, language) ||
-                other.language == language) &&
-            (identical(other.versionGroup, versionGroup) ||
-                other.versionGroup == versionGroup));
+            const DeepCollectionEquality()
+                .equals(other.flavorText, flavorText) &&
+            const DeepCollectionEquality().equals(other.language, language) &&
+            const DeepCollectionEquality()
+                .equals(other.versionGroup, versionGroup));
   }
 
   @override
-  int get hashCode =>
-      Object.hash(runtimeType, flavorText, language, versionGroup);
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(flavorText),
+      const DeepCollectionEquality().hash(language),
+      const DeepCollectionEquality().hash(versionGroup));
 
   @JsonKey(ignore: true)
   @override
@@ -984,14 +989,17 @@ class _$_AbilityPokemon implements _AbilityPokemon {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _AbilityPokemon &&
-            (identical(other.isHidden, isHidden) ||
-                other.isHidden == isHidden) &&
-            (identical(other.slot, slot) || other.slot == slot) &&
-            (identical(other.pokemon, pokemon) || other.pokemon == pokemon));
+            const DeepCollectionEquality().equals(other.isHidden, isHidden) &&
+            const DeepCollectionEquality().equals(other.slot, slot) &&
+            const DeepCollectionEquality().equals(other.pokemon, pokemon));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, isHidden, slot, pokemon);
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(isHidden),
+      const DeepCollectionEquality().hash(slot),
+      const DeepCollectionEquality().hash(pokemon));
 
   @JsonKey(ignore: true)
   @override
@@ -1183,15 +1191,18 @@ class _$_Characteristic implements _Characteristic {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _Characteristic &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.geneModulo, geneModulo) ||
-                other.geneModulo == geneModulo) &&
+            const DeepCollectionEquality().equals(other.id, id) &&
+            const DeepCollectionEquality()
+                .equals(other.geneModulo, geneModulo) &&
             const DeepCollectionEquality()
                 .equals(other.possibleValues, possibleValues));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, id, geneModulo,
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(id),
+      const DeepCollectionEquality().hash(geneModulo),
       const DeepCollectionEquality().hash(possibleValues));
 
   @JsonKey(ignore: true)
@@ -1395,8 +1406,8 @@ class _$_EggGroup implements _EggGroup {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _EggGroup &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.name, name) || other.name == name) &&
+            const DeepCollectionEquality().equals(other.id, id) &&
+            const DeepCollectionEquality().equals(other.name, name) &&
             const DeepCollectionEquality().equals(other.names, names) &&
             const DeepCollectionEquality()
                 .equals(other.pokemonSpecies, pokemonSpecies));
@@ -1405,8 +1416,8 @@ class _$_EggGroup implements _EggGroup {
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      id,
-      name,
+      const DeepCollectionEquality().hash(id),
+      const DeepCollectionEquality().hash(name),
       const DeepCollectionEquality().hash(names),
       const DeepCollectionEquality().hash(pokemonSpecies));
 
@@ -1626,8 +1637,8 @@ class _$_Gender implements _Gender {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _Gender &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.name, name) || other.name == name) &&
+            const DeepCollectionEquality().equals(other.id, id) &&
+            const DeepCollectionEquality().equals(other.name, name) &&
             const DeepCollectionEquality()
                 .equals(other.pokemonSpeciesDetails, pokemonSpeciesDetails) &&
             const DeepCollectionEquality()
@@ -1637,8 +1648,8 @@ class _$_Gender implements _Gender {
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      id,
-      name,
+      const DeepCollectionEquality().hash(id),
+      const DeepCollectionEquality().hash(name),
       const DeepCollectionEquality().hash(pokemonSpeciesDetails),
       const DeepCollectionEquality().hash(requiredForEvolution));
 
@@ -1830,13 +1841,16 @@ class _$_PokemonSpeciesGender implements _PokemonSpeciesGender {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _PokemonSpeciesGender &&
-            (identical(other.rate, rate) || other.rate == rate) &&
-            (identical(other.pokemonSpecies, pokemonSpecies) ||
-                other.pokemonSpecies == pokemonSpecies));
+            const DeepCollectionEquality().equals(other.rate, rate) &&
+            const DeepCollectionEquality()
+                .equals(other.pokemonSpecies, pokemonSpecies));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, rate, pokemonSpecies);
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(rate),
+      const DeepCollectionEquality().hash(pokemonSpecies));
 
   @JsonKey(ignore: true)
   @override
@@ -2076,9 +2090,9 @@ class _$_GrowthRate implements _GrowthRate {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _GrowthRate &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.name, name) || other.name == name) &&
-            (identical(other.formula, formula) || other.formula == formula) &&
+            const DeepCollectionEquality().equals(other.id, id) &&
+            const DeepCollectionEquality().equals(other.name, name) &&
+            const DeepCollectionEquality().equals(other.formula, formula) &&
             const DeepCollectionEquality()
                 .equals(other.descriptions, descriptions) &&
             const DeepCollectionEquality().equals(other.levels, levels) &&
@@ -2089,9 +2103,9 @@ class _$_GrowthRate implements _GrowthRate {
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      id,
-      name,
-      formula,
+      const DeepCollectionEquality().hash(id),
+      const DeepCollectionEquality().hash(name),
+      const DeepCollectionEquality().hash(formula),
       const DeepCollectionEquality().hash(descriptions),
       const DeepCollectionEquality().hash(levels),
       const DeepCollectionEquality().hash(pokemonSpecies));
@@ -2272,13 +2286,16 @@ class _$_GrowthRateExperienceLevel implements _GrowthRateExperienceLevel {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _GrowthRateExperienceLevel &&
-            (identical(other.level, level) || other.level == level) &&
-            (identical(other.experience, experience) ||
-                other.experience == experience));
+            const DeepCollectionEquality().equals(other.level, level) &&
+            const DeepCollectionEquality()
+                .equals(other.experience, experience));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, level, experience);
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(level),
+      const DeepCollectionEquality().hash(experience));
 
   @JsonKey(ignore: true)
   @override
@@ -2648,16 +2665,16 @@ class _$_Nature implements _Nature {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _Nature &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.name, name) || other.name == name) &&
-            (identical(other.decreasedStat, decreasedStat) ||
-                other.decreasedStat == decreasedStat) &&
-            (identical(other.increasedStat, increasedStat) ||
-                other.increasedStat == increasedStat) &&
-            (identical(other.hatesFlavor, hatesFlavor) ||
-                other.hatesFlavor == hatesFlavor) &&
-            (identical(other.likesFlavor, likesFlavor) ||
-                other.likesFlavor == likesFlavor) &&
+            const DeepCollectionEquality().equals(other.id, id) &&
+            const DeepCollectionEquality().equals(other.name, name) &&
+            const DeepCollectionEquality()
+                .equals(other.decreasedStat, decreasedStat) &&
+            const DeepCollectionEquality()
+                .equals(other.increasedStat, increasedStat) &&
+            const DeepCollectionEquality()
+                .equals(other.hatesFlavor, hatesFlavor) &&
+            const DeepCollectionEquality()
+                .equals(other.likesFlavor, likesFlavor) &&
             const DeepCollectionEquality()
                 .equals(other.pokeathlonStatChanges, pokeathlonStatChanges) &&
             const DeepCollectionEquality().equals(
@@ -2668,12 +2685,12 @@ class _$_Nature implements _Nature {
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      id,
-      name,
-      decreasedStat,
-      increasedStat,
-      hatesFlavor,
-      likesFlavor,
+      const DeepCollectionEquality().hash(id),
+      const DeepCollectionEquality().hash(name),
+      const DeepCollectionEquality().hash(decreasedStat),
+      const DeepCollectionEquality().hash(increasedStat),
+      const DeepCollectionEquality().hash(hatesFlavor),
+      const DeepCollectionEquality().hash(likesFlavor),
       const DeepCollectionEquality().hash(pokeathlonStatChanges),
       const DeepCollectionEquality().hash(moveBattleStylePreferences),
       const DeepCollectionEquality().hash(names));
@@ -2891,14 +2908,16 @@ class _$_NatureStatChange implements _NatureStatChange {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _NatureStatChange &&
-            (identical(other.maxChange, maxChange) ||
-                other.maxChange == maxChange) &&
-            (identical(other.pokeathlonStat, pokeathlonStat) ||
-                other.pokeathlonStat == pokeathlonStat));
+            const DeepCollectionEquality().equals(other.maxChange, maxChange) &&
+            const DeepCollectionEquality()
+                .equals(other.pokeathlonStat, pokeathlonStat));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, maxChange, pokeathlonStat);
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(maxChange),
+      const DeepCollectionEquality().hash(pokeathlonStat));
 
   @JsonKey(ignore: true)
   @override
@@ -3108,17 +3127,20 @@ class _$_MoveBattleStylePreference implements _MoveBattleStylePreference {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _MoveBattleStylePreference &&
-            (identical(other.lowHpPreference, lowHpPreference) ||
-                other.lowHpPreference == lowHpPreference) &&
-            (identical(other.highHpPreference, highHpPreference) ||
-                other.highHpPreference == highHpPreference) &&
-            (identical(other.moveBattleStyle, moveBattleStyle) ||
-                other.moveBattleStyle == moveBattleStyle));
+            const DeepCollectionEquality()
+                .equals(other.lowHpPreference, lowHpPreference) &&
+            const DeepCollectionEquality()
+                .equals(other.highHpPreference, highHpPreference) &&
+            const DeepCollectionEquality()
+                .equals(other.moveBattleStyle, moveBattleStyle));
   }
 
   @override
   int get hashCode => Object.hash(
-      runtimeType, lowHpPreference, highHpPreference, moveBattleStyle);
+      runtimeType,
+      const DeepCollectionEquality().hash(lowHpPreference),
+      const DeepCollectionEquality().hash(highHpPreference),
+      const DeepCollectionEquality().hash(moveBattleStyle));
 
   @JsonKey(ignore: true)
   @override
@@ -3351,16 +3373,20 @@ class _$_PokeathlonStat implements _PokeathlonStat {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _PokeathlonStat &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.name, name) || other.name == name) &&
+            const DeepCollectionEquality().equals(other.id, id) &&
+            const DeepCollectionEquality().equals(other.name, name) &&
             const DeepCollectionEquality().equals(other.names, names) &&
-            (identical(other.affectingNatures, affectingNatures) ||
-                other.affectingNatures == affectingNatures));
+            const DeepCollectionEquality()
+                .equals(other.affectingNatures, affectingNatures));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, id, name,
-      const DeepCollectionEquality().hash(names), affectingNatures);
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(id),
+      const DeepCollectionEquality().hash(name),
+      const DeepCollectionEquality().hash(names),
+      const DeepCollectionEquality().hash(affectingNatures));
 
   @JsonKey(ignore: true)
   @override
@@ -3740,13 +3766,15 @@ class _$_NaturePokeathlonStatAffect implements _NaturePokeathlonStatAffect {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _NaturePokeathlonStatAffect &&
-            (identical(other.maxChange, maxChange) ||
-                other.maxChange == maxChange) &&
-            (identical(other.nature, nature) || other.nature == nature));
+            const DeepCollectionEquality().equals(other.maxChange, maxChange) &&
+            const DeepCollectionEquality().equals(other.nature, nature));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, maxChange, nature);
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(maxChange),
+      const DeepCollectionEquality().hash(nature));
 
   @JsonKey(ignore: true)
   @override
@@ -4234,26 +4262,25 @@ class _$_Pokemon implements _Pokemon {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _Pokemon &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.name, name) || other.name == name) &&
-            (identical(other.baseExperience, baseExperience) ||
-                other.baseExperience == baseExperience) &&
-            (identical(other.height, height) || other.height == height) &&
-            (identical(other.isDefault, isDefault) ||
-                other.isDefault == isDefault) &&
-            (identical(other.order, order) || other.order == order) &&
-            (identical(other.weight, weight) || other.weight == weight) &&
+            const DeepCollectionEquality().equals(other.id, id) &&
+            const DeepCollectionEquality().equals(other.name, name) &&
+            const DeepCollectionEquality()
+                .equals(other.baseExperience, baseExperience) &&
+            const DeepCollectionEquality().equals(other.height, height) &&
+            const DeepCollectionEquality().equals(other.isDefault, isDefault) &&
+            const DeepCollectionEquality().equals(other.order, order) &&
+            const DeepCollectionEquality().equals(other.weight, weight) &&
             const DeepCollectionEquality().equals(other.abilities, abilities) &&
             const DeepCollectionEquality().equals(other.forms, forms) &&
             const DeepCollectionEquality()
                 .equals(other.gameIndices, gameIndices) &&
             const DeepCollectionEquality().equals(other.heldItems, heldItems) &&
-            (identical(other.locationAreaEncounters, locationAreaEncounters) ||
-                other.locationAreaEncounters == locationAreaEncounters) &&
+            const DeepCollectionEquality()
+                .equals(other.locationAreaEncounters, locationAreaEncounters) &&
             const DeepCollectionEquality().equals(other.moves, moves) &&
             const DeepCollectionEquality().equals(other.pastTypes, pastTypes) &&
-            (identical(other.sprites, sprites) || other.sprites == sprites) &&
-            (identical(other.species, species) || other.species == species) &&
+            const DeepCollectionEquality().equals(other.sprites, sprites) &&
+            const DeepCollectionEquality().equals(other.species, species) &&
             const DeepCollectionEquality().equals(other.stats, stats) &&
             const DeepCollectionEquality().equals(other.types, types));
   }
@@ -4261,22 +4288,22 @@ class _$_Pokemon implements _Pokemon {
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      id,
-      name,
-      baseExperience,
-      height,
-      isDefault,
-      order,
-      weight,
+      const DeepCollectionEquality().hash(id),
+      const DeepCollectionEquality().hash(name),
+      const DeepCollectionEquality().hash(baseExperience),
+      const DeepCollectionEquality().hash(height),
+      const DeepCollectionEquality().hash(isDefault),
+      const DeepCollectionEquality().hash(order),
+      const DeepCollectionEquality().hash(weight),
       const DeepCollectionEquality().hash(abilities),
       const DeepCollectionEquality().hash(forms),
       const DeepCollectionEquality().hash(gameIndices),
       const DeepCollectionEquality().hash(heldItems),
-      locationAreaEncounters,
+      const DeepCollectionEquality().hash(locationAreaEncounters),
       const DeepCollectionEquality().hash(moves),
       const DeepCollectionEquality().hash(pastTypes),
-      sprites,
-      species,
+      const DeepCollectionEquality().hash(sprites),
+      const DeepCollectionEquality().hash(species),
       const DeepCollectionEquality().hash(stats),
       const DeepCollectionEquality().hash(types));
 
@@ -4529,14 +4556,17 @@ class _$_PokemonAbility implements _PokemonAbility {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _PokemonAbility &&
-            (identical(other.isHidden, isHidden) ||
-                other.isHidden == isHidden) &&
-            (identical(other.slot, slot) || other.slot == slot) &&
-            (identical(other.ability, ability) || other.ability == ability));
+            const DeepCollectionEquality().equals(other.isHidden, isHidden) &&
+            const DeepCollectionEquality().equals(other.slot, slot) &&
+            const DeepCollectionEquality().equals(other.ability, ability));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, isHidden, slot, ability);
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(isHidden),
+      const DeepCollectionEquality().hash(slot),
+      const DeepCollectionEquality().hash(ability));
 
   @JsonKey(ignore: true)
   @override
@@ -4710,12 +4740,15 @@ class _$_PokemonType implements _PokemonType {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _PokemonType &&
-            (identical(other.slot, slot) || other.slot == slot) &&
-            (identical(other.type, type) || other.type == type));
+            const DeepCollectionEquality().equals(other.slot, slot) &&
+            const DeepCollectionEquality().equals(other.type, type));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, slot, type);
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(slot),
+      const DeepCollectionEquality().hash(type));
 
   @JsonKey(ignore: true)
   @override
@@ -4887,12 +4920,15 @@ class _$_PokemonFormType implements _PokemonFormType {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _PokemonFormType &&
-            (identical(other.slot, slot) || other.slot == slot) &&
-            (identical(other.type, type) || other.type == type));
+            const DeepCollectionEquality().equals(other.slot, slot) &&
+            const DeepCollectionEquality().equals(other.type, type));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, slot, type);
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(slot),
+      const DeepCollectionEquality().hash(type));
 
   @JsonKey(ignore: true)
   @override
@@ -5065,14 +5101,16 @@ class _$_PokemonTypePast implements _PokemonTypePast {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _PokemonTypePast &&
-            (identical(other.generation, generation) ||
-                other.generation == generation) &&
+            const DeepCollectionEquality()
+                .equals(other.generation, generation) &&
             const DeepCollectionEquality().equals(other.types, types));
   }
 
   @override
   int get hashCode => Object.hash(
-      runtimeType, generation, const DeepCollectionEquality().hash(types));
+      runtimeType,
+      const DeepCollectionEquality().hash(generation),
+      const DeepCollectionEquality().hash(types));
 
   @JsonKey(ignore: true)
   @override
@@ -5259,14 +5297,16 @@ class _$_PokemonHeldItem implements _PokemonHeldItem {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _PokemonHeldItem &&
-            (identical(other.item, item) || other.item == item) &&
+            const DeepCollectionEquality().equals(other.item, item) &&
             const DeepCollectionEquality()
                 .equals(other.versionDetails, versionDetails));
   }
 
   @override
   int get hashCode => Object.hash(
-      runtimeType, item, const DeepCollectionEquality().hash(versionDetails));
+      runtimeType,
+      const DeepCollectionEquality().hash(item),
+      const DeepCollectionEquality().hash(versionDetails));
 
   @JsonKey(ignore: true)
   @override
@@ -5443,12 +5483,15 @@ class _$_PokemonHeldItemVersion implements _PokemonHeldItemVersion {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _PokemonHeldItemVersion &&
-            (identical(other.version, version) || other.version == version) &&
-            (identical(other.rarity, rarity) || other.rarity == rarity));
+            const DeepCollectionEquality().equals(other.version, version) &&
+            const DeepCollectionEquality().equals(other.rarity, rarity));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, version, rarity);
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(version),
+      const DeepCollectionEquality().hash(rarity));
 
   @JsonKey(ignore: true)
   @override
@@ -5633,13 +5676,15 @@ class _$_PokemonMove implements _PokemonMove {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _PokemonMove &&
-            (identical(other.move, move) || other.move == move) &&
+            const DeepCollectionEquality().equals(other.move, move) &&
             const DeepCollectionEquality()
                 .equals(other.versionGroupDetails, versionGroupDetails));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, move,
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(move),
       const DeepCollectionEquality().hash(versionGroupDetails));
 
   @JsonKey(ignore: true)
@@ -5858,17 +5903,20 @@ class _$_PokemonMoveVersion implements _PokemonMoveVersion {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _PokemonMoveVersion &&
-            (identical(other.moveLearnMethod, moveLearnMethod) ||
-                other.moveLearnMethod == moveLearnMethod) &&
-            (identical(other.versionGroup, versionGroup) ||
-                other.versionGroup == versionGroup) &&
-            (identical(other.levelLearnedAt, levelLearnedAt) ||
-                other.levelLearnedAt == levelLearnedAt));
+            const DeepCollectionEquality()
+                .equals(other.moveLearnMethod, moveLearnMethod) &&
+            const DeepCollectionEquality()
+                .equals(other.versionGroup, versionGroup) &&
+            const DeepCollectionEquality()
+                .equals(other.levelLearnedAt, levelLearnedAt));
   }
 
   @override
-  int get hashCode =>
-      Object.hash(runtimeType, moveLearnMethod, versionGroup, levelLearnedAt);
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(moveLearnMethod),
+      const DeepCollectionEquality().hash(versionGroup),
+      const DeepCollectionEquality().hash(levelLearnedAt));
 
   @JsonKey(ignore: true)
   @override
@@ -6071,14 +6119,17 @@ class _$_PokemonStat implements _PokemonStat {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _PokemonStat &&
-            (identical(other.stat, stat) || other.stat == stat) &&
-            (identical(other.effort, effort) || other.effort == effort) &&
-            (identical(other.baseStat, baseStat) ||
-                other.baseStat == baseStat));
+            const DeepCollectionEquality().equals(other.stat, stat) &&
+            const DeepCollectionEquality().equals(other.effort, effort) &&
+            const DeepCollectionEquality().equals(other.baseStat, baseStat));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, stat, effort, baseStat);
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(stat),
+      const DeepCollectionEquality().hash(effort),
+      const DeepCollectionEquality().hash(baseStat));
 
   @JsonKey(ignore: true)
   @override
@@ -6374,35 +6425,34 @@ class _$_PokemonSprites implements _PokemonSprites {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _PokemonSprites &&
-            (identical(other.frontDefault, frontDefault) ||
-                other.frontDefault == frontDefault) &&
-            (identical(other.frontShiny, frontShiny) ||
-                other.frontShiny == frontShiny) &&
-            (identical(other.frontFemale, frontFemale) ||
-                other.frontFemale == frontFemale) &&
-            (identical(other.frontShinyFemale, frontShinyFemale) ||
-                other.frontShinyFemale == frontShinyFemale) &&
-            (identical(other.backDefault, backDefault) ||
-                other.backDefault == backDefault) &&
-            (identical(other.backShiny, backShiny) ||
-                other.backShiny == backShiny) &&
-            (identical(other.backFemale, backFemale) ||
-                other.backFemale == backFemale) &&
-            (identical(other.backShinyFemale, backShinyFemale) ||
-                other.backShinyFemale == backShinyFemale));
+            const DeepCollectionEquality()
+                .equals(other.frontDefault, frontDefault) &&
+            const DeepCollectionEquality()
+                .equals(other.frontShiny, frontShiny) &&
+            const DeepCollectionEquality()
+                .equals(other.frontFemale, frontFemale) &&
+            const DeepCollectionEquality()
+                .equals(other.frontShinyFemale, frontShinyFemale) &&
+            const DeepCollectionEquality()
+                .equals(other.backDefault, backDefault) &&
+            const DeepCollectionEquality().equals(other.backShiny, backShiny) &&
+            const DeepCollectionEquality()
+                .equals(other.backFemale, backFemale) &&
+            const DeepCollectionEquality()
+                .equals(other.backShinyFemale, backShinyFemale));
   }
 
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      frontDefault,
-      frontShiny,
-      frontFemale,
-      frontShinyFemale,
-      backDefault,
-      backShiny,
-      backFemale,
-      backShinyFemale);
+      const DeepCollectionEquality().hash(frontDefault),
+      const DeepCollectionEquality().hash(frontShiny),
+      const DeepCollectionEquality().hash(frontFemale),
+      const DeepCollectionEquality().hash(frontShinyFemale),
+      const DeepCollectionEquality().hash(backDefault),
+      const DeepCollectionEquality().hash(backShiny),
+      const DeepCollectionEquality().hash(backFemale),
+      const DeepCollectionEquality().hash(backShinyFemale));
 
   @JsonKey(ignore: true)
   @override
@@ -6622,14 +6672,16 @@ class _$_PokemonLocationAreas implements _PokemonLocationAreas {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _PokemonLocationAreas &&
-            (identical(other.locationArea, locationArea) ||
-                other.locationArea == locationArea) &&
+            const DeepCollectionEquality()
+                .equals(other.locationArea, locationArea) &&
             const DeepCollectionEquality()
                 .equals(other.versionDetails, versionDetails));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, locationArea,
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(locationArea),
       const DeepCollectionEquality().hash(versionDetails));
 
   @JsonKey(ignore: true)
@@ -6837,8 +6889,8 @@ class _$_PokemonColor implements _PokemonColor {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _PokemonColor &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.name, name) || other.name == name) &&
+            const DeepCollectionEquality().equals(other.id, id) &&
+            const DeepCollectionEquality().equals(other.name, name) &&
             const DeepCollectionEquality().equals(other.names, names) &&
             const DeepCollectionEquality()
                 .equals(other.pokemonSpecies, pokemonSpecies));
@@ -6847,8 +6899,8 @@ class _$_PokemonColor implements _PokemonColor {
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      id,
-      name,
+      const DeepCollectionEquality().hash(id),
+      const DeepCollectionEquality().hash(name),
       const DeepCollectionEquality().hash(names),
       const DeepCollectionEquality().hash(pokemonSpecies));
 
@@ -7298,23 +7350,20 @@ class _$_PokemonForm implements _PokemonForm {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _PokemonForm &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.name, name) || other.name == name) &&
-            (identical(other.order, order) || other.order == order) &&
-            (identical(other.formOrder, formOrder) ||
-                other.formOrder == formOrder) &&
-            (identical(other.isDefault, isDefault) ||
-                other.isDefault == isDefault) &&
-            (identical(other.isBattleOnly, isBattleOnly) ||
-                other.isBattleOnly == isBattleOnly) &&
-            (identical(other.isMega, isMega) || other.isMega == isMega) &&
-            (identical(other.formName, formName) ||
-                other.formName == formName) &&
-            (identical(other.pokemon, pokemon) || other.pokemon == pokemon) &&
-            (identical(other.types, types) || other.types == types) &&
-            (identical(other.sprites, sprites) || other.sprites == sprites) &&
-            (identical(other.versionGroup, versionGroup) ||
-                other.versionGroup == versionGroup) &&
+            const DeepCollectionEquality().equals(other.id, id) &&
+            const DeepCollectionEquality().equals(other.name, name) &&
+            const DeepCollectionEquality().equals(other.order, order) &&
+            const DeepCollectionEquality().equals(other.formOrder, formOrder) &&
+            const DeepCollectionEquality().equals(other.isDefault, isDefault) &&
+            const DeepCollectionEquality()
+                .equals(other.isBattleOnly, isBattleOnly) &&
+            const DeepCollectionEquality().equals(other.isMega, isMega) &&
+            const DeepCollectionEquality().equals(other.formName, formName) &&
+            const DeepCollectionEquality().equals(other.pokemon, pokemon) &&
+            const DeepCollectionEquality().equals(other.types, types) &&
+            const DeepCollectionEquality().equals(other.sprites, sprites) &&
+            const DeepCollectionEquality()
+                .equals(other.versionGroup, versionGroup) &&
             const DeepCollectionEquality().equals(other.names, names) &&
             const DeepCollectionEquality().equals(other.formNames, formNames));
   }
@@ -7322,18 +7371,18 @@ class _$_PokemonForm implements _PokemonForm {
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      id,
-      name,
-      order,
-      formOrder,
-      isDefault,
-      isBattleOnly,
-      isMega,
-      formName,
-      pokemon,
-      types,
-      sprites,
-      versionGroup,
+      const DeepCollectionEquality().hash(id),
+      const DeepCollectionEquality().hash(name),
+      const DeepCollectionEquality().hash(order),
+      const DeepCollectionEquality().hash(formOrder),
+      const DeepCollectionEquality().hash(isDefault),
+      const DeepCollectionEquality().hash(isBattleOnly),
+      const DeepCollectionEquality().hash(isMega),
+      const DeepCollectionEquality().hash(formName),
+      const DeepCollectionEquality().hash(pokemon),
+      const DeepCollectionEquality().hash(types),
+      const DeepCollectionEquality().hash(sprites),
+      const DeepCollectionEquality().hash(versionGroup),
       const DeepCollectionEquality().hash(names),
       const DeepCollectionEquality().hash(formNames));
 
@@ -7592,19 +7641,22 @@ class _$_PokemonFormSprites implements _PokemonFormSprites {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _PokemonFormSprites &&
-            (identical(other.frontDefault, frontDefault) ||
-                other.frontDefault == frontDefault) &&
-            (identical(other.frontShiny, frontShiny) ||
-                other.frontShiny == frontShiny) &&
-            (identical(other.backDefault, backDefault) ||
-                other.backDefault == backDefault) &&
-            (identical(other.backShiny, backShiny) ||
-                other.backShiny == backShiny));
+            const DeepCollectionEquality()
+                .equals(other.frontDefault, frontDefault) &&
+            const DeepCollectionEquality()
+                .equals(other.frontShiny, frontShiny) &&
+            const DeepCollectionEquality()
+                .equals(other.backDefault, backDefault) &&
+            const DeepCollectionEquality().equals(other.backShiny, backShiny));
   }
 
   @override
   int get hashCode => Object.hash(
-      runtimeType, frontDefault, frontShiny, backDefault, backShiny);
+      runtimeType,
+      const DeepCollectionEquality().hash(frontDefault),
+      const DeepCollectionEquality().hash(frontShiny),
+      const DeepCollectionEquality().hash(backDefault),
+      const DeepCollectionEquality().hash(backShiny));
 
   @JsonKey(ignore: true)
   @override
@@ -7817,8 +7869,8 @@ class _$_PokemonHabitat implements _PokemonHabitat {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _PokemonHabitat &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.name, name) || other.name == name) &&
+            const DeepCollectionEquality().equals(other.id, id) &&
+            const DeepCollectionEquality().equals(other.name, name) &&
             const DeepCollectionEquality().equals(other.names, names) &&
             const DeepCollectionEquality()
                 .equals(other.pokemonSpecies, pokemonSpecies));
@@ -7827,8 +7879,8 @@ class _$_PokemonHabitat implements _PokemonHabitat {
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      id,
-      name,
+      const DeepCollectionEquality().hash(id),
+      const DeepCollectionEquality().hash(name),
       const DeepCollectionEquality().hash(names),
       const DeepCollectionEquality().hash(pokemonSpecies));
 
@@ -8065,8 +8117,8 @@ class _$_PokemonShape implements _PokemonShape {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _PokemonShape &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.name, name) || other.name == name) &&
+            const DeepCollectionEquality().equals(other.id, id) &&
+            const DeepCollectionEquality().equals(other.name, name) &&
             const DeepCollectionEquality()
                 .equals(other.awesomeNames, awesomeNames) &&
             const DeepCollectionEquality().equals(other.names, names) &&
@@ -8077,8 +8129,8 @@ class _$_PokemonShape implements _PokemonShape {
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      id,
-      name,
+      const DeepCollectionEquality().hash(id),
+      const DeepCollectionEquality().hash(name),
       const DeepCollectionEquality().hash(awesomeNames),
       const DeepCollectionEquality().hash(names),
       const DeepCollectionEquality().hash(pokemonSpecies));
@@ -8274,14 +8326,16 @@ class _$_AwesomeName implements _AwesomeName {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _AwesomeName &&
-            (identical(other.awesomeName, awesomeName) ||
-                other.awesomeName == awesomeName) &&
-            (identical(other.language, language) ||
-                other.language == language));
+            const DeepCollectionEquality()
+                .equals(other.awesomeName, awesomeName) &&
+            const DeepCollectionEquality().equals(other.language, language));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, awesomeName, language);
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(awesomeName),
+      const DeepCollectionEquality().hash(language));
 
   @JsonKey(ignore: true)
   @override
@@ -9052,40 +9106,40 @@ class _$_PokemonSpecies implements _PokemonSpecies {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _PokemonSpecies &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.name, name) || other.name == name) &&
-            (identical(other.order, order) || other.order == order) &&
-            (identical(other.genderRate, genderRate) ||
-                other.genderRate == genderRate) &&
-            (identical(other.captureRate, captureRate) ||
-                other.captureRate == captureRate) &&
-            (identical(other.baseHappiness, baseHappiness) ||
-                other.baseHappiness == baseHappiness) &&
-            (identical(other.isBaby, isBaby) || other.isBaby == isBaby) &&
-            (identical(other.isLegendary, isLegendary) ||
-                other.isLegendary == isLegendary) &&
-            (identical(other.isMythical, isMythical) ||
-                other.isMythical == isMythical) &&
-            (identical(other.hatchCounter, hatchCounter) ||
-                other.hatchCounter == hatchCounter) &&
-            (identical(other.hasGenderdifferences, hasGenderdifferences) ||
-                other.hasGenderdifferences == hasGenderdifferences) &&
-            (identical(other.formsSwitchable, formsSwitchable) ||
-                other.formsSwitchable == formsSwitchable) &&
-            (identical(other.growthRate, growthRate) ||
-                other.growthRate == growthRate) &&
+            const DeepCollectionEquality().equals(other.id, id) &&
+            const DeepCollectionEquality().equals(other.name, name) &&
+            const DeepCollectionEquality().equals(other.order, order) &&
+            const DeepCollectionEquality()
+                .equals(other.genderRate, genderRate) &&
+            const DeepCollectionEquality()
+                .equals(other.captureRate, captureRate) &&
+            const DeepCollectionEquality()
+                .equals(other.baseHappiness, baseHappiness) &&
+            const DeepCollectionEquality().equals(other.isBaby, isBaby) &&
+            const DeepCollectionEquality()
+                .equals(other.isLegendary, isLegendary) &&
+            const DeepCollectionEquality()
+                .equals(other.isMythical, isMythical) &&
+            const DeepCollectionEquality()
+                .equals(other.hatchCounter, hatchCounter) &&
+            const DeepCollectionEquality()
+                .equals(other.hasGenderdifferences, hasGenderdifferences) &&
+            const DeepCollectionEquality()
+                .equals(other.formsSwitchable, formsSwitchable) &&
+            const DeepCollectionEquality()
+                .equals(other.growthRate, growthRate) &&
             const DeepCollectionEquality()
                 .equals(other.pokedexNumbers, pokedexNumbers) &&
             const DeepCollectionEquality().equals(other.eggGroups, eggGroups) &&
-            (identical(other.color, color) || other.color == color) &&
-            (identical(other.shape, shape) || other.shape == shape) &&
+            const DeepCollectionEquality().equals(other.color, color) &&
+            const DeepCollectionEquality().equals(other.shape, shape) &&
             const DeepCollectionEquality()
                 .equals(other.evolvesFromSpecies, evolvesFromSpecies) &&
-            (identical(other.evolutionChain, evolutionChain) ||
-                other.evolutionChain == evolutionChain) &&
-            (identical(other.habitat, habitat) || other.habitat == habitat) &&
-            (identical(other.generation, generation) ||
-                other.generation == generation) &&
+            const DeepCollectionEquality()
+                .equals(other.evolutionChain, evolutionChain) &&
+            const DeepCollectionEquality().equals(other.habitat, habitat) &&
+            const DeepCollectionEquality()
+                .equals(other.generation, generation) &&
             const DeepCollectionEquality().equals(other.names, names) &&
             const DeepCollectionEquality()
                 .equals(other.palParkEncounters, palParkEncounters) &&
@@ -9100,27 +9154,27 @@ class _$_PokemonSpecies implements _PokemonSpecies {
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
-        id,
-        name,
-        order,
-        genderRate,
-        captureRate,
-        baseHappiness,
-        isBaby,
-        isLegendary,
-        isMythical,
-        hatchCounter,
-        hasGenderdifferences,
-        formsSwitchable,
-        growthRate,
+        const DeepCollectionEquality().hash(id),
+        const DeepCollectionEquality().hash(name),
+        const DeepCollectionEquality().hash(order),
+        const DeepCollectionEquality().hash(genderRate),
+        const DeepCollectionEquality().hash(captureRate),
+        const DeepCollectionEquality().hash(baseHappiness),
+        const DeepCollectionEquality().hash(isBaby),
+        const DeepCollectionEquality().hash(isLegendary),
+        const DeepCollectionEquality().hash(isMythical),
+        const DeepCollectionEquality().hash(hatchCounter),
+        const DeepCollectionEquality().hash(hasGenderdifferences),
+        const DeepCollectionEquality().hash(formsSwitchable),
+        const DeepCollectionEquality().hash(growthRate),
         const DeepCollectionEquality().hash(pokedexNumbers),
         const DeepCollectionEquality().hash(eggGroups),
-        color,
-        shape,
+        const DeepCollectionEquality().hash(color),
+        const DeepCollectionEquality().hash(shape),
         const DeepCollectionEquality().hash(evolvesFromSpecies),
-        evolutionChain,
-        habitat,
-        generation,
+        const DeepCollectionEquality().hash(evolutionChain),
+        const DeepCollectionEquality().hash(habitat),
+        const DeepCollectionEquality().hash(generation),
         const DeepCollectionEquality().hash(names),
         const DeepCollectionEquality().hash(palParkEncounters),
         const DeepCollectionEquality().hash(flavorTextEntries),
@@ -9403,13 +9457,15 @@ class _$_Genus implements _Genus {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _Genus &&
-            (identical(other.genus, genus) || other.genus == genus) &&
-            (identical(other.language, language) ||
-                other.language == language));
+            const DeepCollectionEquality().equals(other.genus, genus) &&
+            const DeepCollectionEquality().equals(other.language, language));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, genus, language);
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(genus),
+      const DeepCollectionEquality().hash(language));
 
   @JsonKey(ignore: true)
   @override
@@ -9588,13 +9644,16 @@ class _$_PokemonSpeciesDexEntry implements _PokemonSpeciesDexEntry {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _PokemonSpeciesDexEntry &&
-            (identical(other.entryNumber, entryNumber) ||
-                other.entryNumber == entryNumber) &&
-            (identical(other.pokedex, pokedex) || other.pokedex == pokedex));
+            const DeepCollectionEquality()
+                .equals(other.entryNumber, entryNumber) &&
+            const DeepCollectionEquality().equals(other.pokedex, pokedex));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, entryNumber, pokedex);
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(entryNumber),
+      const DeepCollectionEquality().hash(pokedex));
 
   @JsonKey(ignore: true)
   @override
@@ -9794,14 +9853,17 @@ class _$_PalParkEncounterArea implements _PalParkEncounterArea {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _PalParkEncounterArea &&
-            (identical(other.baseScore, baseScore) ||
-                other.baseScore == baseScore) &&
-            (identical(other.rate, rate) || other.rate == rate) &&
-            (identical(other.area, area) || other.area == area));
+            const DeepCollectionEquality().equals(other.baseScore, baseScore) &&
+            const DeepCollectionEquality().equals(other.rate, rate) &&
+            const DeepCollectionEquality().equals(other.area, area));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, baseScore, rate, area);
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(baseScore),
+      const DeepCollectionEquality().hash(rate),
+      const DeepCollectionEquality().hash(area));
 
   @JsonKey(ignore: true)
   @override
@@ -9987,13 +10049,15 @@ class _$_PokemonSpeciesVariety implements _PokemonSpeciesVariety {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _PokemonSpeciesVariety &&
-            (identical(other.isDefault, isDefault) ||
-                other.isDefault == isDefault) &&
-            (identical(other.pokemon, pokemon) || other.pokemon == pokemon));
+            const DeepCollectionEquality().equals(other.isDefault, isDefault) &&
+            const DeepCollectionEquality().equals(other.pokemon, pokemon));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, isDefault, pokemon);
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(isDefault),
+      const DeepCollectionEquality().hash(pokemon));
 
   @JsonKey(ignore: true)
   @override
@@ -10327,34 +10391,33 @@ class _$_Stat implements _Stat {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _Stat &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.name, name) || other.name == name) &&
-            (identical(other.gameIndex, gameIndex) ||
-                other.gameIndex == gameIndex) &&
-            (identical(other.isBattleOnly, isBattleOnly) ||
-                other.isBattleOnly == isBattleOnly) &&
-            (identical(other.affectingMoves, affectingMoves) ||
-                other.affectingMoves == affectingMoves) &&
-            (identical(other.affectingNatures, affectingNatures) ||
-                other.affectingNatures == affectingNatures) &&
+            const DeepCollectionEquality().equals(other.id, id) &&
+            const DeepCollectionEquality().equals(other.name, name) &&
+            const DeepCollectionEquality().equals(other.gameIndex, gameIndex) &&
+            const DeepCollectionEquality()
+                .equals(other.isBattleOnly, isBattleOnly) &&
+            const DeepCollectionEquality()
+                .equals(other.affectingMoves, affectingMoves) &&
+            const DeepCollectionEquality()
+                .equals(other.affectingNatures, affectingNatures) &&
             const DeepCollectionEquality()
                 .equals(other.characteristics, characteristics) &&
-            (identical(other.moveDamageClass, moveDamageClass) ||
-                other.moveDamageClass == moveDamageClass) &&
+            const DeepCollectionEquality()
+                .equals(other.moveDamageClass, moveDamageClass) &&
             const DeepCollectionEquality().equals(other.names, names));
   }
 
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      id,
-      name,
-      gameIndex,
-      isBattleOnly,
-      affectingMoves,
-      affectingNatures,
+      const DeepCollectionEquality().hash(id),
+      const DeepCollectionEquality().hash(name),
+      const DeepCollectionEquality().hash(gameIndex),
+      const DeepCollectionEquality().hash(isBattleOnly),
+      const DeepCollectionEquality().hash(affectingMoves),
+      const DeepCollectionEquality().hash(affectingNatures),
       const DeepCollectionEquality().hash(characteristics),
-      moveDamageClass,
+      const DeepCollectionEquality().hash(moveDamageClass),
       const DeepCollectionEquality().hash(names));
 
   @JsonKey(ignore: true)
@@ -10724,12 +10787,15 @@ class _$_MoveStatAffect implements _MoveStatAffect {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _MoveStatAffect &&
-            (identical(other.change, change) || other.change == change) &&
-            (identical(other.move, move) || other.move == move));
+            const DeepCollectionEquality().equals(other.change, change) &&
+            const DeepCollectionEquality().equals(other.move, move));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, change, move);
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(change),
+      const DeepCollectionEquality().hash(move));
 
   @JsonKey(ignore: true)
   @override
@@ -11260,18 +11326,18 @@ class _$_Type implements _Type {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _Type &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.name, name) || other.name == name) &&
-            (identical(other.damageRelations, damageRelations) ||
-                other.damageRelations == damageRelations) &&
+            const DeepCollectionEquality().equals(other.id, id) &&
+            const DeepCollectionEquality().equals(other.name, name) &&
+            const DeepCollectionEquality()
+                .equals(other.damageRelations, damageRelations) &&
             const DeepCollectionEquality()
                 .equals(other.pastDamageRelations, pastDamageRelations) &&
             const DeepCollectionEquality()
                 .equals(other.gameIndices, gameIndices) &&
-            (identical(other.generation, generation) ||
-                other.generation == generation) &&
-            (identical(other.moveDamageClass, moveDamageClass) ||
-                other.moveDamageClass == moveDamageClass) &&
+            const DeepCollectionEquality()
+                .equals(other.generation, generation) &&
+            const DeepCollectionEquality()
+                .equals(other.moveDamageClass, moveDamageClass) &&
             const DeepCollectionEquality().equals(other.names, names) &&
             const DeepCollectionEquality().equals(other.pokemon, pokemon) &&
             const DeepCollectionEquality().equals(other.moves, moves));
@@ -11280,13 +11346,13 @@ class _$_Type implements _Type {
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      id,
-      name,
-      damageRelations,
+      const DeepCollectionEquality().hash(id),
+      const DeepCollectionEquality().hash(name),
+      const DeepCollectionEquality().hash(damageRelations),
       const DeepCollectionEquality().hash(pastDamageRelations),
       const DeepCollectionEquality().hash(gameIndices),
-      generation,
-      moveDamageClass,
+      const DeepCollectionEquality().hash(generation),
+      const DeepCollectionEquality().hash(moveDamageClass),
       const DeepCollectionEquality().hash(names),
       const DeepCollectionEquality().hash(pokemon),
       const DeepCollectionEquality().hash(moves));
@@ -11491,12 +11557,15 @@ class _$_TypePokemon implements _TypePokemon {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _TypePokemon &&
-            (identical(other.slot, slot) || other.slot == slot) &&
-            (identical(other.pokemon, pokemon) || other.pokemon == pokemon));
+            const DeepCollectionEquality().equals(other.slot, slot) &&
+            const DeepCollectionEquality().equals(other.pokemon, pokemon));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, slot, pokemon);
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(slot),
+      const DeepCollectionEquality().hash(pokemon));
 
   @JsonKey(ignore: true)
   @override
@@ -12008,14 +12077,17 @@ class _$_TypeRelationsPast implements _TypeRelationsPast {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _TypeRelationsPast &&
-            (identical(other.generation, generation) ||
-                other.generation == generation) &&
-            (identical(other.damageRelations, damageRelations) ||
-                other.damageRelations == damageRelations));
+            const DeepCollectionEquality()
+                .equals(other.generation, generation) &&
+            const DeepCollectionEquality()
+                .equals(other.damageRelations, damageRelations));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, generation, damageRelations);
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(generation),
+      const DeepCollectionEquality().hash(damageRelations));
 
   @JsonKey(ignore: true)
   @override

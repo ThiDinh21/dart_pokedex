@@ -1,5 +1,6 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'encounters.dart';
@@ -172,15 +173,19 @@ class _$_EncounterMethod implements _EncounterMethod {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _EncounterMethod &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.name, name) || other.name == name) &&
-            (identical(other.order, order) || other.order == order) &&
+            const DeepCollectionEquality().equals(other.id, id) &&
+            const DeepCollectionEquality().equals(other.name, name) &&
+            const DeepCollectionEquality().equals(other.order, order) &&
             const DeepCollectionEquality().equals(other.names, names));
   }
 
   @override
   int get hashCode => Object.hash(
-      runtimeType, id, name, order, const DeepCollectionEquality().hash(names));
+      runtimeType,
+      const DeepCollectionEquality().hash(id),
+      const DeepCollectionEquality().hash(name),
+      const DeepCollectionEquality().hash(order),
+      const DeepCollectionEquality().hash(names));
 
   @JsonKey(ignore: true)
   @override
@@ -376,8 +381,8 @@ class _$_EncounterCondition implements _EncounterCondition {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _EncounterCondition &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.name, name) || other.name == name) &&
+            const DeepCollectionEquality().equals(other.id, id) &&
+            const DeepCollectionEquality().equals(other.name, name) &&
             const DeepCollectionEquality().equals(other.names, names) &&
             const DeepCollectionEquality().equals(other.values, values));
   }
@@ -385,8 +390,8 @@ class _$_EncounterCondition implements _EncounterCondition {
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      id,
-      name,
+      const DeepCollectionEquality().hash(id),
+      const DeepCollectionEquality().hash(name),
       const DeepCollectionEquality().hash(names),
       const DeepCollectionEquality().hash(values));
 
@@ -599,15 +604,18 @@ class _$_EncounterConditionValue implements _EncounterConditionValue {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _EncounterConditionValue &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.name, name) || other.name == name) &&
-            (identical(other.condition, condition) ||
-                other.condition == condition) &&
+            const DeepCollectionEquality().equals(other.id, id) &&
+            const DeepCollectionEquality().equals(other.name, name) &&
+            const DeepCollectionEquality().equals(other.condition, condition) &&
             const DeepCollectionEquality().equals(other.names, names));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, id, name, condition,
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(id),
+      const DeepCollectionEquality().hash(name),
+      const DeepCollectionEquality().hash(condition),
       const DeepCollectionEquality().hash(names));
 
   @JsonKey(ignore: true)

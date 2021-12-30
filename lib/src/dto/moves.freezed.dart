@@ -1,5 +1,6 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'moves.dart';
@@ -681,71 +682,69 @@ class _$_Move implements _Move {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _Move &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.name, name) || other.name == name) &&
-            (identical(other.accuracy, accuracy) ||
-                other.accuracy == accuracy) &&
-            (identical(other.effectChance, effectChance) ||
-                other.effectChance == effectChance) &&
-            (identical(other.pp, pp) || other.pp == pp) &&
-            (identical(other.priority, priority) ||
-                other.priority == priority) &&
-            (identical(other.power, power) || other.power == power) &&
-            (identical(other.contestCombos, contestCombos) ||
-                other.contestCombos == contestCombos) &&
-            (identical(other.contestType, contestType) ||
-                other.contestType == contestType) &&
-            (identical(other.contestEffect, contestEffect) ||
-                other.contestEffect == contestEffect) &&
-            (identical(other.damageClass, damageClass) ||
-                other.damageClass == damageClass) &&
+            const DeepCollectionEquality().equals(other.id, id) &&
+            const DeepCollectionEquality().equals(other.name, name) &&
+            const DeepCollectionEquality().equals(other.accuracy, accuracy) &&
+            const DeepCollectionEquality()
+                .equals(other.effectChance, effectChance) &&
+            const DeepCollectionEquality().equals(other.pp, pp) &&
+            const DeepCollectionEquality().equals(other.priority, priority) &&
+            const DeepCollectionEquality().equals(other.power, power) &&
+            const DeepCollectionEquality()
+                .equals(other.contestCombos, contestCombos) &&
+            const DeepCollectionEquality()
+                .equals(other.contestType, contestType) &&
+            const DeepCollectionEquality()
+                .equals(other.contestEffect, contestEffect) &&
+            const DeepCollectionEquality()
+                .equals(other.damageClass, damageClass) &&
             const DeepCollectionEquality()
                 .equals(other.effectEntries, effectEntries) &&
             const DeepCollectionEquality()
                 .equals(other.effectChanges, effectChanges) &&
             const DeepCollectionEquality()
                 .equals(other.flavorTextEntries, flavorTextEntries) &&
-            (identical(other.generation, generation) ||
-                other.generation == generation) &&
+            const DeepCollectionEquality()
+                .equals(other.generation, generation) &&
             const DeepCollectionEquality().equals(other.machines, machines) &&
-            (identical(other.meta, meta) || other.meta == meta) &&
+            const DeepCollectionEquality().equals(other.meta, meta) &&
             const DeepCollectionEquality().equals(other.names, names) &&
-            (identical(other.pastValues, pastValues) ||
-                other.pastValues == pastValues) &&
+            const DeepCollectionEquality()
+                .equals(other.pastValues, pastValues) &&
             const DeepCollectionEquality()
                 .equals(other.statChanges, statChanges) &&
-            (identical(other.superContestEffect, superContestEffect) ||
-                other.superContestEffect == superContestEffect) &&
-            (identical(other.target, target) || other.target == target) &&
-            (identical(other.type, type) || other.type == type));
+            const DeepCollectionEquality()
+                .equals(other.superContestEffect, superContestEffect) &&
+            const DeepCollectionEquality().equals(other.target, target) &&
+            const DeepCollectionEquality().equals(other.type, type));
   }
 
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
-        id,
-        name,
-        accuracy,
-        effectChance,
-        pp,
-        priority,
-        power,
-        contestCombos,
-        contestType,
-        contestEffect,
-        damageClass,
+        const DeepCollectionEquality().hash(id),
+        const DeepCollectionEquality().hash(name),
+        const DeepCollectionEquality().hash(accuracy),
+        const DeepCollectionEquality().hash(effectChance),
+        const DeepCollectionEquality().hash(pp),
+        const DeepCollectionEquality().hash(priority),
+        const DeepCollectionEquality().hash(power),
+        const DeepCollectionEquality().hash(contestCombos),
+        const DeepCollectionEquality().hash(contestType),
+        const DeepCollectionEquality().hash(contestEffect),
+        const DeepCollectionEquality().hash(damageClass),
         const DeepCollectionEquality().hash(effectEntries),
         const DeepCollectionEquality().hash(effectChanges),
         const DeepCollectionEquality().hash(flavorTextEntries),
-        generation,
+        const DeepCollectionEquality().hash(generation),
         const DeepCollectionEquality().hash(machines),
-        meta,
+        const DeepCollectionEquality().hash(meta),
         const DeepCollectionEquality().hash(names),
-        pastValues,
+        const DeepCollectionEquality().hash(pastValues),
         const DeepCollectionEquality().hash(statChanges),
-        superContestEffect,
-        target,
-        type
+        const DeepCollectionEquality().hash(superContestEffect),
+        const DeepCollectionEquality().hash(target),
+        const DeepCollectionEquality().hash(type)
       ]);
 
   @JsonKey(ignore: true)
@@ -1021,13 +1020,15 @@ class _$_ContestComboSets implements _ContestComboSets {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _ContestComboSets &&
-            (identical(other.normal, normal) || other.normal == normal) &&
-            (identical(other.superMove, superMove) ||
-                other.superMove == superMove));
+            const DeepCollectionEquality().equals(other.normal, normal) &&
+            const DeepCollectionEquality().equals(other.superMove, superMove));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, normal, superMove);
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(normal),
+      const DeepCollectionEquality().hash(superMove));
 
   @JsonKey(ignore: true)
   @override
@@ -1424,17 +1425,19 @@ class _$_MoveFlavorText implements _MoveFlavorText {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _MoveFlavorText &&
-            (identical(other.flavorText, flavorText) ||
-                other.flavorText == flavorText) &&
-            (identical(other.language, language) ||
-                other.language == language) &&
-            (identical(other.versionGroup, versionGroup) ||
-                other.versionGroup == versionGroup));
+            const DeepCollectionEquality()
+                .equals(other.flavorText, flavorText) &&
+            const DeepCollectionEquality().equals(other.language, language) &&
+            const DeepCollectionEquality()
+                .equals(other.versionGroup, versionGroup));
   }
 
   @override
-  int get hashCode =>
-      Object.hash(runtimeType, flavorText, language, versionGroup);
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(flavorText),
+      const DeepCollectionEquality().hash(language),
+      const DeepCollectionEquality().hash(versionGroup));
 
   @JsonKey(ignore: true)
   @override
@@ -1826,42 +1829,38 @@ class _$_MoveMetaData implements _MoveMetaData {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _MoveMetaData &&
-            (identical(other.ailment, ailment) || other.ailment == ailment) &&
-            (identical(other.category, category) ||
-                other.category == category) &&
-            (identical(other.minHits, minHits) || other.minHits == minHits) &&
-            (identical(other.maxHits, maxHits) || other.maxHits == maxHits) &&
-            (identical(other.minTurns, minTurns) ||
-                other.minTurns == minTurns) &&
-            (identical(other.maxTurns, maxTurns) ||
-                other.maxTurns == maxTurns) &&
-            (identical(other.drain, drain) || other.drain == drain) &&
-            (identical(other.healing, healing) || other.healing == healing) &&
-            (identical(other.critRate, critRate) ||
-                other.critRate == critRate) &&
-            (identical(other.ailmentChance, ailmentChance) ||
-                other.ailmentChance == ailmentChance) &&
-            (identical(other.flinchChance, flinchChance) ||
-                other.flinchChance == flinchChance) &&
-            (identical(other.statChance, statChance) ||
-                other.statChance == statChance));
+            const DeepCollectionEquality().equals(other.ailment, ailment) &&
+            const DeepCollectionEquality().equals(other.category, category) &&
+            const DeepCollectionEquality().equals(other.minHits, minHits) &&
+            const DeepCollectionEquality().equals(other.maxHits, maxHits) &&
+            const DeepCollectionEquality().equals(other.minTurns, minTurns) &&
+            const DeepCollectionEquality().equals(other.maxTurns, maxTurns) &&
+            const DeepCollectionEquality().equals(other.drain, drain) &&
+            const DeepCollectionEquality().equals(other.healing, healing) &&
+            const DeepCollectionEquality().equals(other.critRate, critRate) &&
+            const DeepCollectionEquality()
+                .equals(other.ailmentChance, ailmentChance) &&
+            const DeepCollectionEquality()
+                .equals(other.flinchChance, flinchChance) &&
+            const DeepCollectionEquality()
+                .equals(other.statChance, statChance));
   }
 
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      ailment,
-      category,
-      minHits,
-      maxHits,
-      minTurns,
-      maxTurns,
-      drain,
-      healing,
-      critRate,
-      ailmentChance,
-      flinchChance,
-      statChance);
+      const DeepCollectionEquality().hash(ailment),
+      const DeepCollectionEquality().hash(category),
+      const DeepCollectionEquality().hash(minHits),
+      const DeepCollectionEquality().hash(maxHits),
+      const DeepCollectionEquality().hash(minTurns),
+      const DeepCollectionEquality().hash(maxTurns),
+      const DeepCollectionEquality().hash(drain),
+      const DeepCollectionEquality().hash(healing),
+      const DeepCollectionEquality().hash(critRate),
+      const DeepCollectionEquality().hash(ailmentChance),
+      const DeepCollectionEquality().hash(flinchChance),
+      const DeepCollectionEquality().hash(statChance));
 
   @JsonKey(ignore: true)
   @override
@@ -2073,12 +2072,15 @@ class _$_MoveStatChange implements _MoveStatChange {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _MoveStatChange &&
-            (identical(other.change, change) || other.change == change) &&
-            (identical(other.stat, stat) || other.stat == stat));
+            const DeepCollectionEquality().equals(other.change, change) &&
+            const DeepCollectionEquality().equals(other.stat, stat));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, change, stat);
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(change),
+      const DeepCollectionEquality().hash(stat));
 
   @JsonKey(ignore: true)
   @override
@@ -2365,29 +2367,28 @@ class _$_PastMoveStatValues implements _PastMoveStatValues {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _PastMoveStatValues &&
-            (identical(other.accuracy, accuracy) ||
-                other.accuracy == accuracy) &&
-            (identical(other.effectChance, effectChance) ||
-                other.effectChance == effectChance) &&
-            (identical(other.power, power) || other.power == power) &&
-            (identical(other.pp, pp) || other.pp == pp) &&
+            const DeepCollectionEquality().equals(other.accuracy, accuracy) &&
+            const DeepCollectionEquality()
+                .equals(other.effectChance, effectChance) &&
+            const DeepCollectionEquality().equals(other.power, power) &&
+            const DeepCollectionEquality().equals(other.pp, pp) &&
             const DeepCollectionEquality()
                 .equals(other.effectEntries, effectEntries) &&
-            (identical(other.type, type) || other.type == type) &&
-            (identical(other.versionGroup, versionGroup) ||
-                other.versionGroup == versionGroup));
+            const DeepCollectionEquality().equals(other.type, type) &&
+            const DeepCollectionEquality()
+                .equals(other.versionGroup, versionGroup));
   }
 
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      accuracy,
-      effectChance,
-      power,
-      pp,
+      const DeepCollectionEquality().hash(accuracy),
+      const DeepCollectionEquality().hash(effectChance),
+      const DeepCollectionEquality().hash(power),
+      const DeepCollectionEquality().hash(pp),
       const DeepCollectionEquality().hash(effectEntries),
-      type,
-      versionGroup);
+      const DeepCollectionEquality().hash(type),
+      const DeepCollectionEquality().hash(versionGroup));
 
   @JsonKey(ignore: true)
   @override
@@ -2597,8 +2598,8 @@ class _$_MoveAilment implements _MoveAilment {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _MoveAilment &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.name, name) || other.name == name) &&
+            const DeepCollectionEquality().equals(other.id, id) &&
+            const DeepCollectionEquality().equals(other.name, name) &&
             const DeepCollectionEquality().equals(other.moves, moves) &&
             const DeepCollectionEquality().equals(other.names, names));
   }
@@ -2606,8 +2607,8 @@ class _$_MoveAilment implements _MoveAilment {
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      id,
-      name,
+      const DeepCollectionEquality().hash(id),
+      const DeepCollectionEquality().hash(name),
       const DeepCollectionEquality().hash(moves),
       const DeepCollectionEquality().hash(names));
 
@@ -2789,14 +2790,17 @@ class _$_MoveBattleStyle implements _MoveBattleStyle {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _MoveBattleStyle &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.name, name) || other.name == name) &&
+            const DeepCollectionEquality().equals(other.id, id) &&
+            const DeepCollectionEquality().equals(other.name, name) &&
             const DeepCollectionEquality().equals(other.names, names));
   }
 
   @override
   int get hashCode => Object.hash(
-      runtimeType, id, name, const DeepCollectionEquality().hash(names));
+      runtimeType,
+      const DeepCollectionEquality().hash(id),
+      const DeepCollectionEquality().hash(name),
+      const DeepCollectionEquality().hash(names));
 
   @JsonKey(ignore: true)
   @override
@@ -2994,8 +2998,8 @@ class _$_MoveCategory implements _MoveCategory {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _MoveCategory &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.name, name) || other.name == name) &&
+            const DeepCollectionEquality().equals(other.id, id) &&
+            const DeepCollectionEquality().equals(other.name, name) &&
             const DeepCollectionEquality().equals(other.moves, moves) &&
             const DeepCollectionEquality()
                 .equals(other.descriptions, descriptions));
@@ -3004,8 +3008,8 @@ class _$_MoveCategory implements _MoveCategory {
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      id,
-      name,
+      const DeepCollectionEquality().hash(id),
+      const DeepCollectionEquality().hash(name),
       const DeepCollectionEquality().hash(moves),
       const DeepCollectionEquality().hash(descriptions));
 
@@ -3226,8 +3230,8 @@ class _$_MoveDamageClass implements _MoveDamageClass {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _MoveDamageClass &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.name, name) || other.name == name) &&
+            const DeepCollectionEquality().equals(other.id, id) &&
+            const DeepCollectionEquality().equals(other.name, name) &&
             const DeepCollectionEquality()
                 .equals(other.descriptions, descriptions) &&
             const DeepCollectionEquality().equals(other.moves, moves) &&
@@ -3237,8 +3241,8 @@ class _$_MoveDamageClass implements _MoveDamageClass {
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      id,
-      name,
+      const DeepCollectionEquality().hash(id),
+      const DeepCollectionEquality().hash(name),
       const DeepCollectionEquality().hash(descriptions),
       const DeepCollectionEquality().hash(moves),
       const DeepCollectionEquality().hash(names));
@@ -3473,8 +3477,8 @@ class _$_MoveLearnMethod implements _MoveLearnMethod {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _MoveLearnMethod &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.name, name) || other.name == name) &&
+            const DeepCollectionEquality().equals(other.id, id) &&
+            const DeepCollectionEquality().equals(other.name, name) &&
             const DeepCollectionEquality()
                 .equals(other.descriptions, descriptions) &&
             const DeepCollectionEquality().equals(other.names, names) &&
@@ -3485,8 +3489,8 @@ class _$_MoveLearnMethod implements _MoveLearnMethod {
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      id,
-      name,
+      const DeepCollectionEquality().hash(id),
+      const DeepCollectionEquality().hash(name),
       const DeepCollectionEquality().hash(descriptions),
       const DeepCollectionEquality().hash(names),
       const DeepCollectionEquality().hash(versionGroups));
@@ -3713,8 +3717,8 @@ class _$_MoveTarget implements _MoveTarget {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _MoveTarget &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.name, name) || other.name == name) &&
+            const DeepCollectionEquality().equals(other.id, id) &&
+            const DeepCollectionEquality().equals(other.name, name) &&
             const DeepCollectionEquality()
                 .equals(other.descriptions, descriptions) &&
             const DeepCollectionEquality().equals(other.moves, moves) &&
@@ -3724,8 +3728,8 @@ class _$_MoveTarget implements _MoveTarget {
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      id,
-      name,
+      const DeepCollectionEquality().hash(id),
+      const DeepCollectionEquality().hash(name),
       const DeepCollectionEquality().hash(descriptions),
       const DeepCollectionEquality().hash(moves),
       const DeepCollectionEquality().hash(names));

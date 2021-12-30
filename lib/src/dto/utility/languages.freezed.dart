@@ -1,5 +1,6 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'languages.dart';
@@ -208,18 +209,23 @@ class _$_Language implements _Language {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _Language &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.name, name) || other.name == name) &&
-            (identical(other.official, official) ||
-                other.official == official) &&
-            (identical(other.iso639, iso639) || other.iso639 == iso639) &&
-            (identical(other.iso3166, iso3166) || other.iso3166 == iso3166) &&
+            const DeepCollectionEquality().equals(other.id, id) &&
+            const DeepCollectionEquality().equals(other.name, name) &&
+            const DeepCollectionEquality().equals(other.official, official) &&
+            const DeepCollectionEquality().equals(other.iso639, iso639) &&
+            const DeepCollectionEquality().equals(other.iso3166, iso3166) &&
             const DeepCollectionEquality().equals(other.names, names));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, id, name, official, iso639,
-      iso3166, const DeepCollectionEquality().hash(names));
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(id),
+      const DeepCollectionEquality().hash(name),
+      const DeepCollectionEquality().hash(official),
+      const DeepCollectionEquality().hash(iso639),
+      const DeepCollectionEquality().hash(iso3166),
+      const DeepCollectionEquality().hash(names));
 
   @JsonKey(ignore: true)
   @override

@@ -1,5 +1,6 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'contests.dart';
@@ -197,15 +198,19 @@ class _$_ContestType implements _ContestType {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _ContestType &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.name, name) || other.name == name) &&
-            (identical(other.berryFlavor, berryFlavor) ||
-                other.berryFlavor == berryFlavor) &&
+            const DeepCollectionEquality().equals(other.id, id) &&
+            const DeepCollectionEquality().equals(other.name, name) &&
+            const DeepCollectionEquality()
+                .equals(other.berryFlavor, berryFlavor) &&
             const DeepCollectionEquality().equals(other.names, names));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, id, name, berryFlavor,
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(id),
+      const DeepCollectionEquality().hash(name),
+      const DeepCollectionEquality().hash(berryFlavor),
       const DeepCollectionEquality().hash(names));
 
   @JsonKey(ignore: true)
@@ -399,14 +404,17 @@ class _$_ContestName implements _ContestName {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _ContestName &&
-            (identical(other.name, name) || other.name == name) &&
-            (identical(other.color, color) || other.color == color) &&
-            (identical(other.language, language) ||
-                other.language == language));
+            const DeepCollectionEquality().equals(other.name, name) &&
+            const DeepCollectionEquality().equals(other.color, color) &&
+            const DeepCollectionEquality().equals(other.language, language));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, name, color, language);
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(name),
+      const DeepCollectionEquality().hash(color),
+      const DeepCollectionEquality().hash(language));
 
   @JsonKey(ignore: true)
   @override
@@ -641,9 +649,9 @@ class _$_ContestEffect implements _ContestEffect {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _ContestEffect &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.appeal, appeal) || other.appeal == appeal) &&
-            (identical(other.jam, jam) || other.jam == jam) &&
+            const DeepCollectionEquality().equals(other.id, id) &&
+            const DeepCollectionEquality().equals(other.appeal, appeal) &&
+            const DeepCollectionEquality().equals(other.jam, jam) &&
             const DeepCollectionEquality()
                 .equals(other.effectEntries, effectEntries) &&
             const DeepCollectionEquality()
@@ -653,9 +661,9 @@ class _$_ContestEffect implements _ContestEffect {
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      id,
-      appeal,
-      jam,
+      const DeepCollectionEquality().hash(id),
+      const DeepCollectionEquality().hash(appeal),
+      const DeepCollectionEquality().hash(jam),
       const DeepCollectionEquality().hash(effectEntries),
       const DeepCollectionEquality().hash(flavorTextEntries));
 
@@ -875,8 +883,8 @@ class _$_SuperContestEffect implements _SuperContestEffect {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _SuperContestEffect &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.appeal, appeal) || other.appeal == appeal) &&
+            const DeepCollectionEquality().equals(other.id, id) &&
+            const DeepCollectionEquality().equals(other.appeal, appeal) &&
             const DeepCollectionEquality()
                 .equals(other.flavorTextEntries, flavorTextEntries) &&
             const DeepCollectionEquality().equals(other.moves, moves));
@@ -885,8 +893,8 @@ class _$_SuperContestEffect implements _SuperContestEffect {
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      id,
-      appeal,
+      const DeepCollectionEquality().hash(id),
+      const DeepCollectionEquality().hash(appeal),
       const DeepCollectionEquality().hash(flavorTextEntries),
       const DeepCollectionEquality().hash(moves));
 

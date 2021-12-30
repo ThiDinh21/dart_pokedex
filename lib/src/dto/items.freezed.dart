@@ -1,5 +1,6 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'items.dart';
@@ -458,17 +459,16 @@ class _$_Item implements _Item {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _Item &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.name, name) || other.name == name) &&
-            (identical(other.cost, cost) || other.cost == cost) &&
-            (identical(other.flingPower, flingPower) ||
-                other.flingPower == flingPower) &&
-            (identical(other.flingEffect, flingEffect) ||
-                other.flingEffect == flingEffect) &&
+            const DeepCollectionEquality().equals(other.id, id) &&
+            const DeepCollectionEquality().equals(other.name, name) &&
+            const DeepCollectionEquality().equals(other.cost, cost) &&
+            const DeepCollectionEquality()
+                .equals(other.flingPower, flingPower) &&
+            const DeepCollectionEquality()
+                .equals(other.flingEffect, flingEffect) &&
             const DeepCollectionEquality()
                 .equals(other.attributes, attributes) &&
-            (identical(other.category, category) ||
-                other.category == category) &&
+            const DeepCollectionEquality().equals(other.category, category) &&
             const DeepCollectionEquality()
                 .equals(other.effectEntries, effectEntries) &&
             const DeepCollectionEquality()
@@ -476,31 +476,31 @@ class _$_Item implements _Item {
             const DeepCollectionEquality()
                 .equals(other.gameIndices, gameIndices) &&
             const DeepCollectionEquality().equals(other.names, names) &&
-            (identical(other.sprites, sprites) || other.sprites == sprites) &&
+            const DeepCollectionEquality().equals(other.sprites, sprites) &&
             const DeepCollectionEquality()
                 .equals(other.heldByPokemon, heldByPokemon) &&
-            (identical(other.babyTriggerFor, babyTriggerFor) ||
-                other.babyTriggerFor == babyTriggerFor) &&
+            const DeepCollectionEquality()
+                .equals(other.babyTriggerFor, babyTriggerFor) &&
             const DeepCollectionEquality().equals(other.machines, machines));
   }
 
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      id,
-      name,
-      cost,
-      flingPower,
-      flingEffect,
+      const DeepCollectionEquality().hash(id),
+      const DeepCollectionEquality().hash(name),
+      const DeepCollectionEquality().hash(cost),
+      const DeepCollectionEquality().hash(flingPower),
+      const DeepCollectionEquality().hash(flingEffect),
       const DeepCollectionEquality().hash(attributes),
-      category,
+      const DeepCollectionEquality().hash(category),
       const DeepCollectionEquality().hash(effectEntries),
       const DeepCollectionEquality().hash(flavorTextEntries),
       const DeepCollectionEquality().hash(gameIndices),
       const DeepCollectionEquality().hash(names),
-      sprites,
+      const DeepCollectionEquality().hash(sprites),
       const DeepCollectionEquality().hash(heldByPokemon),
-      babyTriggerFor,
+      const DeepCollectionEquality().hash(babyTriggerFor),
       const DeepCollectionEquality().hash(machines));
 
   @JsonKey(ignore: true)
@@ -700,11 +700,12 @@ class _$_ItemSprites implements _ItemSprites {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _ItemSprites &&
-            (identical(other.value, value) || other.value == value));
+            const DeepCollectionEquality().equals(other.value, value));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, value);
+  int get hashCode =>
+      Object.hash(runtimeType, const DeepCollectionEquality().hash(value));
 
   @JsonKey(ignore: true)
   @override
@@ -889,13 +890,15 @@ class _$_ItemHolderPokemon implements _ItemHolderPokemon {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _ItemHolderPokemon &&
-            (identical(other.pokemon, pokemon) || other.pokemon == pokemon) &&
+            const DeepCollectionEquality().equals(other.pokemon, pokemon) &&
             const DeepCollectionEquality()
                 .equals(other.versionDetails, versionDetails));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, pokemon,
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(pokemon),
       const DeepCollectionEquality().hash(versionDetails));
 
   @JsonKey(ignore: true)
@@ -1081,12 +1084,15 @@ class _$_ItemHolderPokemonVersionDetail
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _ItemHolderPokemonVersionDetail &&
-            (identical(other.rarity, rarity) || other.rarity == rarity) &&
-            (identical(other.version, version) || other.version == version));
+            const DeepCollectionEquality().equals(other.rarity, rarity) &&
+            const DeepCollectionEquality().equals(other.version, version));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, rarity, version);
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(rarity),
+      const DeepCollectionEquality().hash(version));
 
   @JsonKey(ignore: true)
   @override
@@ -1303,8 +1309,8 @@ class _$_ItemAttribute implements _ItemAttribute {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _ItemAttribute &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.name, name) || other.name == name) &&
+            const DeepCollectionEquality().equals(other.id, id) &&
+            const DeepCollectionEquality().equals(other.name, name) &&
             const DeepCollectionEquality().equals(other.items, items) &&
             const DeepCollectionEquality().equals(other.names, names) &&
             const DeepCollectionEquality()
@@ -1314,8 +1320,8 @@ class _$_ItemAttribute implements _ItemAttribute {
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      id,
-      name,
+      const DeepCollectionEquality().hash(id),
+      const DeepCollectionEquality().hash(name),
       const DeepCollectionEquality().hash(items),
       const DeepCollectionEquality().hash(names),
       const DeepCollectionEquality().hash(descriptions));
@@ -1553,21 +1559,21 @@ class _$_ItemCategory implements _ItemCategory {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _ItemCategory &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.name, name) || other.name == name) &&
+            const DeepCollectionEquality().equals(other.id, id) &&
+            const DeepCollectionEquality().equals(other.name, name) &&
             const DeepCollectionEquality().equals(other.items, items) &&
             const DeepCollectionEquality().equals(other.names, names) &&
-            (identical(other.pocket, pocket) || other.pocket == pocket));
+            const DeepCollectionEquality().equals(other.pocket, pocket));
   }
 
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      id,
-      name,
+      const DeepCollectionEquality().hash(id),
+      const DeepCollectionEquality().hash(name),
       const DeepCollectionEquality().hash(items),
       const DeepCollectionEquality().hash(names),
-      pocket);
+      const DeepCollectionEquality().hash(pocket));
 
   @JsonKey(ignore: true)
   @override
@@ -1777,8 +1783,8 @@ class _$_ItemFlingEffect implements _ItemFlingEffect {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _ItemFlingEffect &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.name, name) || other.name == name) &&
+            const DeepCollectionEquality().equals(other.id, id) &&
+            const DeepCollectionEquality().equals(other.name, name) &&
             const DeepCollectionEquality()
                 .equals(other.effectEntries, effectEntries) &&
             const DeepCollectionEquality().equals(other.items, items));
@@ -1787,8 +1793,8 @@ class _$_ItemFlingEffect implements _ItemFlingEffect {
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      id,
-      name,
+      const DeepCollectionEquality().hash(id),
+      const DeepCollectionEquality().hash(name),
       const DeepCollectionEquality().hash(effectEntries),
       const DeepCollectionEquality().hash(items));
 
@@ -1993,8 +1999,8 @@ class _$_ItemPocket implements _ItemPocket {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _ItemPocket &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.name, name) || other.name == name) &&
+            const DeepCollectionEquality().equals(other.id, id) &&
+            const DeepCollectionEquality().equals(other.name, name) &&
             const DeepCollectionEquality()
                 .equals(other.categories, categories) &&
             const DeepCollectionEquality().equals(other.names, names));
@@ -2003,8 +2009,8 @@ class _$_ItemPocket implements _ItemPocket {
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      id,
-      name,
+      const DeepCollectionEquality().hash(id),
+      const DeepCollectionEquality().hash(name),
       const DeepCollectionEquality().hash(categories),
       const DeepCollectionEquality().hash(names));
 

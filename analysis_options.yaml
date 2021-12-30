@@ -10,8 +10,7 @@
 # 'package:lints/core.yaml'. These are just the most critical lints
 # (the recommended set includes the core lints).
 # The core lints are also what is used by pub.dev for scoring packages.
-
-include: package:lints/recommended.yaml
+include: package:lint/analysis_options.yaml
 
 # Uncomment the following section to specify additional rules.
 
@@ -21,8 +20,8 @@ linter:
 
 analyzer:
     exclude:
-        - lib/src/dto/**.g.dart
-        - lib/src/dto/**.freezed.dart
+        - "**.g.dart"
+        - "**.freezed.dart"
     errors:
         missing_return: error
         missing_required_param: error

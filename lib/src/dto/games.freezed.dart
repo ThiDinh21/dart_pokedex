@@ -1,5 +1,6 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
 part of 'games.dart';
@@ -295,12 +296,12 @@ class _$_Generation implements _Generation {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _Generation &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.name, name) || other.name == name) &&
+            const DeepCollectionEquality().equals(other.id, id) &&
+            const DeepCollectionEquality().equals(other.name, name) &&
             const DeepCollectionEquality().equals(other.abilities, abilities) &&
             const DeepCollectionEquality().equals(other.names, names) &&
-            (identical(other.mainRegion, mainRegion) ||
-                other.mainRegion == mainRegion) &&
+            const DeepCollectionEquality()
+                .equals(other.mainRegion, mainRegion) &&
             const DeepCollectionEquality().equals(other.moves, moves) &&
             const DeepCollectionEquality()
                 .equals(other.pokemonSpecies, pokemonSpecies) &&
@@ -312,11 +313,11 @@ class _$_Generation implements _Generation {
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      id,
-      name,
+      const DeepCollectionEquality().hash(id),
+      const DeepCollectionEquality().hash(name),
       const DeepCollectionEquality().hash(abilities),
       const DeepCollectionEquality().hash(names),
-      mainRegion,
+      const DeepCollectionEquality().hash(mainRegion),
       const DeepCollectionEquality().hash(moves),
       const DeepCollectionEquality().hash(pokemonSpecies),
       const DeepCollectionEquality().hash(types),
@@ -637,16 +638,16 @@ class _$_Pokedex implements _Pokedex {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _Pokedex &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.name, name) || other.name == name) &&
-            (identical(other.isMainSeries, isMainSeries) ||
-                other.isMainSeries == isMainSeries) &&
+            const DeepCollectionEquality().equals(other.id, id) &&
+            const DeepCollectionEquality().equals(other.name, name) &&
+            const DeepCollectionEquality()
+                .equals(other.isMainSeries, isMainSeries) &&
             const DeepCollectionEquality()
                 .equals(other.descriptions, descriptions) &&
             const DeepCollectionEquality().equals(other.names, names) &&
             const DeepCollectionEquality()
                 .equals(other.pokemonEntries, pokemonEntries) &&
-            (identical(other.region, region) || other.region == region) &&
+            const DeepCollectionEquality().equals(other.region, region) &&
             const DeepCollectionEquality()
                 .equals(other.versionGroups, versionGroups));
   }
@@ -654,13 +655,13 @@ class _$_Pokedex implements _Pokedex {
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      id,
-      name,
-      isMainSeries,
+      const DeepCollectionEquality().hash(id),
+      const DeepCollectionEquality().hash(name),
+      const DeepCollectionEquality().hash(isMainSeries),
       const DeepCollectionEquality().hash(descriptions),
       const DeepCollectionEquality().hash(names),
       const DeepCollectionEquality().hash(pokemonEntries),
-      region,
+      const DeepCollectionEquality().hash(region),
       const DeepCollectionEquality().hash(versionGroups));
 
   @JsonKey(ignore: true)
@@ -866,14 +867,17 @@ class _$_PokemonEntry implements _PokemonEntry {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _PokemonEntry &&
-            (identical(other.entryNumber, entryNumber) ||
-                other.entryNumber == entryNumber) &&
-            (identical(other.pokemonSpecies, pokemonSpecies) ||
-                other.pokemonSpecies == pokemonSpecies));
+            const DeepCollectionEquality()
+                .equals(other.entryNumber, entryNumber) &&
+            const DeepCollectionEquality()
+                .equals(other.pokemonSpecies, pokemonSpecies));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, entryNumber, pokemonSpecies);
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(entryNumber),
+      const DeepCollectionEquality().hash(pokemonSpecies));
 
   @JsonKey(ignore: true)
   @override
@@ -1082,16 +1086,20 @@ class _$_Version implements _Version {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _Version &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.name, name) || other.name == name) &&
+            const DeepCollectionEquality().equals(other.id, id) &&
+            const DeepCollectionEquality().equals(other.name, name) &&
             const DeepCollectionEquality().equals(other.names, names) &&
-            (identical(other.versionGroup, versionGroup) ||
-                other.versionGroup == versionGroup));
+            const DeepCollectionEquality()
+                .equals(other.versionGroup, versionGroup));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, id, name,
-      const DeepCollectionEquality().hash(names), versionGroup);
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(id),
+      const DeepCollectionEquality().hash(name),
+      const DeepCollectionEquality().hash(names),
+      const DeepCollectionEquality().hash(versionGroup));
 
   @JsonKey(ignore: true)
   @override
@@ -1389,11 +1397,11 @@ class _$_VersionGroup implements _VersionGroup {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _VersionGroup &&
-            (identical(other.id, id) || other.id == id) &&
-            (identical(other.name, name) || other.name == name) &&
-            (identical(other.order, order) || other.order == order) &&
-            (identical(other.generation, generation) ||
-                other.generation == generation) &&
+            const DeepCollectionEquality().equals(other.id, id) &&
+            const DeepCollectionEquality().equals(other.name, name) &&
+            const DeepCollectionEquality().equals(other.order, order) &&
+            const DeepCollectionEquality()
+                .equals(other.generation, generation) &&
             const DeepCollectionEquality()
                 .equals(other.moveLearnMethods, moveLearnMethods) &&
             const DeepCollectionEquality().equals(other.pokedexes, pokedexes) &&
@@ -1404,10 +1412,10 @@ class _$_VersionGroup implements _VersionGroup {
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      id,
-      name,
-      order,
-      generation,
+      const DeepCollectionEquality().hash(id),
+      const DeepCollectionEquality().hash(name),
+      const DeepCollectionEquality().hash(order),
+      const DeepCollectionEquality().hash(generation),
       const DeepCollectionEquality().hash(moveLearnMethods),
       const DeepCollectionEquality().hash(pokedexes),
       const DeepCollectionEquality().hash(regions),
