@@ -16,7 +16,7 @@ class Berry with _$Berry {
     int size,
     int smoothness,
     @JsonKey(name: 'soil_dryness') int soilDryness,
-    BerryFirmness firmness,
+    NamedAPIResource firmness,
     List<BerryFlavorMap> flavors,
     NamedAPIResource item,
     @JsonKey(name: 'natural_gift_type') NamedAPIResource naturalGiftType,

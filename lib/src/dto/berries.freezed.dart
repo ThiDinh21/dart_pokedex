@@ -31,7 +31,7 @@ class _$BerryTearOff {
       int size,
       int smoothness,
       @JsonKey(name: 'soil_dryness') int soilDryness,
-      BerryFirmness firmness,
+      NamedAPIResource firmness,
       List<BerryFlavorMap> flavors,
       NamedAPIResource item,
       @JsonKey(name: 'natural_gift_type') NamedAPIResource naturalGiftType) {
@@ -73,7 +73,7 @@ mixin _$Berry {
   int get smoothness => throw _privateConstructorUsedError;
   @JsonKey(name: 'soil_dryness')
   int get soilDryness => throw _privateConstructorUsedError;
-  BerryFirmness get firmness => throw _privateConstructorUsedError;
+  NamedAPIResource get firmness => throw _privateConstructorUsedError;
   List<BerryFlavorMap> get flavors => throw _privateConstructorUsedError;
   NamedAPIResource get item => throw _privateConstructorUsedError;
   @JsonKey(name: 'natural_gift_type')
@@ -97,12 +97,12 @@ abstract class $BerryCopyWith<$Res> {
       int size,
       int smoothness,
       @JsonKey(name: 'soil_dryness') int soilDryness,
-      BerryFirmness firmness,
+      NamedAPIResource firmness,
       List<BerryFlavorMap> flavors,
       NamedAPIResource item,
       @JsonKey(name: 'natural_gift_type') NamedAPIResource naturalGiftType});
 
-  $BerryFirmnessCopyWith<$Res> get firmness;
+  $NamedAPIResourceCopyWith<$Res> get firmness;
   $NamedAPIResourceCopyWith<$Res> get item;
   $NamedAPIResourceCopyWith<$Res> get naturalGiftType;
 }
@@ -166,7 +166,7 @@ class _$BerryCopyWithImpl<$Res> implements $BerryCopyWith<$Res> {
       firmness: firmness == freezed
           ? _value.firmness
           : firmness // ignore: cast_nullable_to_non_nullable
-              as BerryFirmness,
+              as NamedAPIResource,
       flavors: flavors == freezed
           ? _value.flavors
           : flavors // ignore: cast_nullable_to_non_nullable
@@ -183,8 +183,8 @@ class _$BerryCopyWithImpl<$Res> implements $BerryCopyWith<$Res> {
   }
 
   @override
-  $BerryFirmnessCopyWith<$Res> get firmness {
-    return $BerryFirmnessCopyWith<$Res>(_value.firmness, (value) {
+  $NamedAPIResourceCopyWith<$Res> get firmness {
+    return $NamedAPIResourceCopyWith<$Res>(_value.firmness, (value) {
       return _then(_value.copyWith(firmness: value));
     });
   }
@@ -218,13 +218,13 @@ abstract class _$BerryCopyWith<$Res> implements $BerryCopyWith<$Res> {
       int size,
       int smoothness,
       @JsonKey(name: 'soil_dryness') int soilDryness,
-      BerryFirmness firmness,
+      NamedAPIResource firmness,
       List<BerryFlavorMap> flavors,
       NamedAPIResource item,
       @JsonKey(name: 'natural_gift_type') NamedAPIResource naturalGiftType});
 
   @override
-  $BerryFirmnessCopyWith<$Res> get firmness;
+  $NamedAPIResourceCopyWith<$Res> get firmness;
   @override
   $NamedAPIResourceCopyWith<$Res> get item;
   @override
@@ -291,7 +291,7 @@ class __$BerryCopyWithImpl<$Res> extends _$BerryCopyWithImpl<$Res>
       firmness == freezed
           ? _value.firmness
           : firmness // ignore: cast_nullable_to_non_nullable
-              as BerryFirmness,
+              as NamedAPIResource,
       flavors == freezed
           ? _value.flavors
           : flavors // ignore: cast_nullable_to_non_nullable
@@ -349,7 +349,7 @@ class _$_Berry implements _Berry {
   @JsonKey(name: 'soil_dryness')
   final int soilDryness;
   @override
-  final BerryFirmness firmness;
+  final NamedAPIResource firmness;
   @override
   final List<BerryFlavorMap> flavors;
   @override
@@ -429,7 +429,7 @@ abstract class _Berry implements Berry {
       int smoothness,
       @JsonKey(name: 'soil_dryness')
           int soilDryness,
-      BerryFirmness firmness,
+      NamedAPIResource firmness,
       List<BerryFlavorMap> flavors,
       NamedAPIResource item,
       @JsonKey(name: 'natural_gift_type')
@@ -458,7 +458,7 @@ abstract class _Berry implements Berry {
   @JsonKey(name: 'soil_dryness')
   int get soilDryness;
   @override
-  BerryFirmness get firmness;
+  NamedAPIResource get firmness;
   @override
   List<BerryFlavorMap> get flavors;
   @override
