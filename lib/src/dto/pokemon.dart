@@ -1,7 +1,8 @@
-import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:poke_dart/src/dto/utility/common.dart';
+// ignore_for_file: avoid_positional_boolean_parameters
 
-import '../aliases.dart';
+import 'package:freezed_annotation/freezed_annotation.dart';
+import 'package:poke_dart/src/aliases.dart';
+import 'package:poke_dart/src/dto/utility/common.dart';
 
 part 'pokemon.freezed.dart';
 part 'pokemon.g.dart';

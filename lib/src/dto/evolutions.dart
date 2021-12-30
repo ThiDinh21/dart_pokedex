@@ -1,7 +1,8 @@
-import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:poke_dart/src/dto/utility/common.dart';
+// ignore_for_file: avoid_positional_boolean_parameters
 
-import '../aliases.dart';
+import 'package:freezed_annotation/freezed_annotation.dart';
+import 'package:poke_dart/src/aliases.dart';
+import 'package:poke_dart/src/dto/utility/common.dart';
 
 part 'evolutions.freezed.dart';
 part 'evolutions.g.dart';
@@ -20,7 +21,7 @@ class EvolutionChain with _$EvolutionChain {
 @freezed
 class ChainLink with _$ChainLink {
   const factory ChainLink(
-    @JsonKey(name: 'is_baby') bool isbaby,
+    @JsonKey(name: 'is_baby') bool isBaby,
     NamedAPIResource species,
     @JsonKey(name: 'evolution_details') List<EvolutionDetail> evolutionDetails,
     @JsonKey(name: 'evolves_to') List<ChainLink> evolvesTo,

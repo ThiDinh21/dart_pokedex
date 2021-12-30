@@ -1,7 +1,6 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
+import 'package:poke_dart/src/aliases.dart';
 import 'package:poke_dart/src/dto/utility/common.dart';
-
-import '../aliases.dart';
 
 part 'locations.freezed.dart';
 part 'locations.g.dart';

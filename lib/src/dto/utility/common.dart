@@ -1,6 +1,5 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-
-import '../../aliases.dart';
+import 'package:poke_dart/src/aliases.dart';
 
 part 'common.freezed.dart';
 part 'common.g.dart';
