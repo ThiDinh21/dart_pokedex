@@ -35,7 +35,7 @@ abstract class NamedEndpoint<R> {
     int offset = 0,
   });
 
-  Future<APIResourceList> getAll();
+  Future<NamedAPIResourceList> getAll();
 }
 
 class PokeApiEndPoints {
