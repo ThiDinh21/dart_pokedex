@@ -180,3 +180,23 @@ Map<String, dynamic> _$$_VersionGroupFlavorTextToJson(
       'language': instance.language,
       'version_group': instance.versionGroup,
     };
+
+_$_NamedAPIResourceList _$$_NamedAPIResourceListFromJson(
+        Map<String, dynamic> json) =>
+    _$_NamedAPIResourceList(
+      json['count'] as int,
+      json['next'] as String?,
+      json['previous'] as String?,
+      (json['results'] as List<dynamic>)
+          .map((e) => NamedAPIResource.fromJson(e as Map<String, dynamic>))
+          .toList(),
+    );
+
+Map<String, dynamic> _$$_NamedAPIResourceListToJson(
+        _$_NamedAPIResourceList instance) =>
+    <String, dynamic>{
+      'count': instance.count,
+      'next': instance.next,
+      'previous': instance.previous,
+      'results': instance.results,
+    };

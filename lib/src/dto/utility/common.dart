@@ -145,3 +145,16 @@ class VersionGroupFlavorText with _$VersionGroupFlavorText {
   factory VersionGroupFlavorText.fromJson(Json json) =>
       _$VersionGroupFlavorTextFromJson(json);
 }
+
+@freezed
+class NamedAPIResourceList with _$NamedAPIResourceList {
+  const factory NamedAPIResourceList(
+    int count,
+    String? next,
+    String? previous,
+    List<NamedAPIResource> results,
+  ) = _NamedAPIResourceList;
+
+  factory NamedAPIResourceList.fromJson(Json json) =>
+      _$NamedAPIResourceListFromJson(json);
+}

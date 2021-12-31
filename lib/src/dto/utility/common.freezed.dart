@@ -2579,3 +2579,219 @@ abstract class _VersionGroupFlavorText implements VersionGroupFlavorText {
   _$VersionGroupFlavorTextCopyWith<_VersionGroupFlavorText> get copyWith =>
       throw _privateConstructorUsedError;
 }
+
+NamedAPIResourceList _$NamedAPIResourceListFromJson(Map<String, dynamic> json) {
+  return _NamedAPIResourceList.fromJson(json);
+}
+
+/// @nodoc
+class _$NamedAPIResourceListTearOff {
+  const _$NamedAPIResourceListTearOff();
+
+  _NamedAPIResourceList call(int count, String? next, String? previous,
+      List<NamedAPIResource> results) {
+    return _NamedAPIResourceList(
+      count,
+      next,
+      previous,
+      results,
+    );
+  }
+
+  NamedAPIResourceList fromJson(Map<String, Object?> json) {
+    return NamedAPIResourceList.fromJson(json);
+  }
+}
+
+/// @nodoc
+const $NamedAPIResourceList = _$NamedAPIResourceListTearOff();
+
+/// @nodoc
+mixin _$NamedAPIResourceList {
+  int get count => throw _privateConstructorUsedError;
+  String? get next => throw _privateConstructorUsedError;
+  String? get previous => throw _privateConstructorUsedError;
+  List<NamedAPIResource> get results => throw _privateConstructorUsedError;
+
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $NamedAPIResourceListCopyWith<NamedAPIResourceList> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $NamedAPIResourceListCopyWith<$Res> {
+  factory $NamedAPIResourceListCopyWith(NamedAPIResourceList value,
+          $Res Function(NamedAPIResourceList) then) =
+      _$NamedAPIResourceListCopyWithImpl<$Res>;
+  $Res call(
+      {int count,
+      String? next,
+      String? previous,
+      List<NamedAPIResource> results});
+}
+
+/// @nodoc
+class _$NamedAPIResourceListCopyWithImpl<$Res>
+    implements $NamedAPIResourceListCopyWith<$Res> {
+  _$NamedAPIResourceListCopyWithImpl(this._value, this._then);
+
+  final NamedAPIResourceList _value;
+  // ignore: unused_field
+  final $Res Function(NamedAPIResourceList) _then;
+
+  @override
+  $Res call({
+    Object? count = freezed,
+    Object? next = freezed,
+    Object? previous = freezed,
+    Object? results = freezed,
+  }) {
+    return _then(_value.copyWith(
+      count: count == freezed
+          ? _value.count
+          : count // ignore: cast_nullable_to_non_nullable
+              as int,
+      next: next == freezed
+          ? _value.next
+          : next // ignore: cast_nullable_to_non_nullable
+              as String?,
+      previous: previous == freezed
+          ? _value.previous
+          : previous // ignore: cast_nullable_to_non_nullable
+              as String?,
+      results: results == freezed
+          ? _value.results
+          : results // ignore: cast_nullable_to_non_nullable
+              as List<NamedAPIResource>,
+    ));
+  }
+}
+
+/// @nodoc
+abstract class _$NamedAPIResourceListCopyWith<$Res>
+    implements $NamedAPIResourceListCopyWith<$Res> {
+  factory _$NamedAPIResourceListCopyWith(_NamedAPIResourceList value,
+          $Res Function(_NamedAPIResourceList) then) =
+      __$NamedAPIResourceListCopyWithImpl<$Res>;
+  @override
+  $Res call(
+      {int count,
+      String? next,
+      String? previous,
+      List<NamedAPIResource> results});
+}
+
+/// @nodoc
+class __$NamedAPIResourceListCopyWithImpl<$Res>
+    extends _$NamedAPIResourceListCopyWithImpl<$Res>
+    implements _$NamedAPIResourceListCopyWith<$Res> {
+  __$NamedAPIResourceListCopyWithImpl(
+      _NamedAPIResourceList _value, $Res Function(_NamedAPIResourceList) _then)
+      : super(_value, (v) => _then(v as _NamedAPIResourceList));
+
+  @override
+  _NamedAPIResourceList get _value => super._value as _NamedAPIResourceList;
+
+  @override
+  $Res call({
+    Object? count = freezed,
+    Object? next = freezed,
+    Object? previous = freezed,
+    Object? results = freezed,
+  }) {
+    return _then(_NamedAPIResourceList(
+      count == freezed
+          ? _value.count
+          : count // ignore: cast_nullable_to_non_nullable
+              as int,
+      next == freezed
+          ? _value.next
+          : next // ignore: cast_nullable_to_non_nullable
+              as String?,
+      previous == freezed
+          ? _value.previous
+          : previous // ignore: cast_nullable_to_non_nullable
+              as String?,
+      results == freezed
+          ? _value.results
+          : results // ignore: cast_nullable_to_non_nullable
+              as List<NamedAPIResource>,
+    ));
+  }
+}
+
+/// @nodoc
+@JsonSerializable()
+class _$_NamedAPIResourceList implements _NamedAPIResourceList {
+  const _$_NamedAPIResourceList(
+      this.count, this.next, this.previous, this.results);
+
+  factory _$_NamedAPIResourceList.fromJson(Map<String, dynamic> json) =>
+      _$$_NamedAPIResourceListFromJson(json);
+
+  @override
+  final int count;
+  @override
+  final String? next;
+  @override
+  final String? previous;
+  @override
+  final List<NamedAPIResource> results;
+
+  @override
+  String toString() {
+    return 'NamedAPIResourceList(count: $count, next: $next, previous: $previous, results: $results)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _NamedAPIResourceList &&
+            const DeepCollectionEquality().equals(other.count, count) &&
+            const DeepCollectionEquality().equals(other.next, next) &&
+            const DeepCollectionEquality().equals(other.previous, previous) &&
+            const DeepCollectionEquality().equals(other.results, results));
+  }
+
+  @override
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(count),
+      const DeepCollectionEquality().hash(next),
+      const DeepCollectionEquality().hash(previous),
+      const DeepCollectionEquality().hash(results));
+
+  @JsonKey(ignore: true)
+  @override
+  _$NamedAPIResourceListCopyWith<_NamedAPIResourceList> get copyWith =>
+      __$NamedAPIResourceListCopyWithImpl<_NamedAPIResourceList>(
+          this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$$_NamedAPIResourceListToJson(this);
+  }
+}
+
+abstract class _NamedAPIResourceList implements NamedAPIResourceList {
+  const factory _NamedAPIResourceList(int count, String? next, String? previous,
+      List<NamedAPIResource> results) = _$_NamedAPIResourceList;
+
+  factory _NamedAPIResourceList.fromJson(Map<String, dynamic> json) =
+      _$_NamedAPIResourceList.fromJson;
+
+  @override
+  int get count;
+  @override
+  String? get next;
+  @override
+  String? get previous;
+  @override
+  List<NamedAPIResource> get results;
+  @override
+  @JsonKey(ignore: true)
+  _$NamedAPIResourceListCopyWith<_NamedAPIResourceList> get copyWith =>
+      throw _privateConstructorUsedError;
+}
