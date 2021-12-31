@@ -379,15 +379,15 @@ abstract class _Generation implements Generation {
       throw _privateConstructorUsedError;
 }
 
-Pokedex _$PokedexFromJson(Map<String, dynamic> json) {
-  return _Pokedex.fromJson(json);
+PokedexData _$PokedexDataFromJson(Map<String, dynamic> json) {
+  return _PokedexData.fromJson(json);
 }
 
 /// @nodoc
-class _$PokedexTearOff {
-  const _$PokedexTearOff();
+class _$PokedexDataTearOff {
+  const _$PokedexDataTearOff();
 
-  _Pokedex call(
+  _PokedexData call(
       int id,
       String name,
       @JsonKey(name: 'is_main_series') bool isMainSeries,
@@ -396,7 +396,7 @@ class _$PokedexTearOff {
       @JsonKey(name: 'pokemon_entries') List<PokemonEntry> pokemonEntries,
       NamedAPIResource region,
       @JsonKey(name: 'version_groups') List<NamedAPIResource> versionGroups) {
-    return _Pokedex(
+    return _PokedexData(
       id,
       name,
       isMainSeries,
@@ -408,16 +408,16 @@ class _$PokedexTearOff {
     );
   }
 
-  Pokedex fromJson(Map<String, Object?> json) {
-    return Pokedex.fromJson(json);
+  PokedexData fromJson(Map<String, Object?> json) {
+    return PokedexData.fromJson(json);
   }
 }
 
 /// @nodoc
-const $Pokedex = _$PokedexTearOff();
+const $PokedexData = _$PokedexDataTearOff();
 
 /// @nodoc
-mixin _$Pokedex {
+mixin _$PokedexData {
   int get id => throw _privateConstructorUsedError;
   String get name => throw _privateConstructorUsedError;
   @JsonKey(name: 'is_main_series')
@@ -433,13 +433,15 @@ mixin _$Pokedex {
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $PokedexCopyWith<Pokedex> get copyWith => throw _privateConstructorUsedError;
+  $PokedexDataCopyWith<PokedexData> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $PokedexCopyWith<$Res> {
-  factory $PokedexCopyWith(Pokedex value, $Res Function(Pokedex) then) =
-      _$PokedexCopyWithImpl<$Res>;
+abstract class $PokedexDataCopyWith<$Res> {
+  factory $PokedexDataCopyWith(
+          PokedexData value, $Res Function(PokedexData) then) =
+      _$PokedexDataCopyWithImpl<$Res>;
   $Res call(
       {int id,
       String name,
@@ -454,12 +456,12 @@ abstract class $PokedexCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$PokedexCopyWithImpl<$Res> implements $PokedexCopyWith<$Res> {
-  _$PokedexCopyWithImpl(this._value, this._then);
+class _$PokedexDataCopyWithImpl<$Res> implements $PokedexDataCopyWith<$Res> {
+  _$PokedexDataCopyWithImpl(this._value, this._then);
 
-  final Pokedex _value;
+  final PokedexData _value;
   // ignore: unused_field
-  final $Res Function(Pokedex) _then;
+  final $Res Function(PokedexData) _then;
 
   @override
   $Res call({
@@ -517,9 +519,11 @@ class _$PokedexCopyWithImpl<$Res> implements $PokedexCopyWith<$Res> {
 }
 
 /// @nodoc
-abstract class _$PokedexCopyWith<$Res> implements $PokedexCopyWith<$Res> {
-  factory _$PokedexCopyWith(_Pokedex value, $Res Function(_Pokedex) then) =
-      __$PokedexCopyWithImpl<$Res>;
+abstract class _$PokedexDataCopyWith<$Res>
+    implements $PokedexDataCopyWith<$Res> {
+  factory _$PokedexDataCopyWith(
+          _PokedexData value, $Res Function(_PokedexData) then) =
+      __$PokedexDataCopyWithImpl<$Res>;
   @override
   $Res call(
       {int id,
@@ -536,13 +540,14 @@ abstract class _$PokedexCopyWith<$Res> implements $PokedexCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$PokedexCopyWithImpl<$Res> extends _$PokedexCopyWithImpl<$Res>
-    implements _$PokedexCopyWith<$Res> {
-  __$PokedexCopyWithImpl(_Pokedex _value, $Res Function(_Pokedex) _then)
-      : super(_value, (v) => _then(v as _Pokedex));
+class __$PokedexDataCopyWithImpl<$Res> extends _$PokedexDataCopyWithImpl<$Res>
+    implements _$PokedexDataCopyWith<$Res> {
+  __$PokedexDataCopyWithImpl(
+      _PokedexData _value, $Res Function(_PokedexData) _then)
+      : super(_value, (v) => _then(v as _PokedexData));
 
   @override
-  _Pokedex get _value => super._value as _Pokedex;
+  _PokedexData get _value => super._value as _PokedexData;
 
   @override
   $Res call({
@@ -555,7 +560,7 @@ class __$PokedexCopyWithImpl<$Res> extends _$PokedexCopyWithImpl<$Res>
     Object? region = freezed,
     Object? versionGroups = freezed,
   }) {
-    return _then(_Pokedex(
+    return _then(_PokedexData(
       id == freezed
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
@@ -594,8 +599,8 @@ class __$PokedexCopyWithImpl<$Res> extends _$PokedexCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_Pokedex implements _Pokedex {
-  const _$_Pokedex(
+class _$_PokedexData implements _PokedexData {
+  const _$_PokedexData(
       this.id,
       this.name,
       @JsonKey(name: 'is_main_series') this.isMainSeries,
@@ -605,8 +610,8 @@ class _$_Pokedex implements _Pokedex {
       this.region,
       @JsonKey(name: 'version_groups') this.versionGroups);
 
-  factory _$_Pokedex.fromJson(Map<String, dynamic> json) =>
-      _$$_PokedexFromJson(json);
+  factory _$_PokedexData.fromJson(Map<String, dynamic> json) =>
+      _$$_PokedexDataFromJson(json);
 
   @override
   final int id;
@@ -630,14 +635,14 @@ class _$_Pokedex implements _Pokedex {
 
   @override
   String toString() {
-    return 'Pokedex(id: $id, name: $name, isMainSeries: $isMainSeries, descriptions: $descriptions, names: $names, pokemonEntries: $pokemonEntries, region: $region, versionGroups: $versionGroups)';
+    return 'PokedexData(id: $id, name: $name, isMainSeries: $isMainSeries, descriptions: $descriptions, names: $names, pokemonEntries: $pokemonEntries, region: $region, versionGroups: $versionGroups)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Pokedex &&
+            other is _PokedexData &&
             const DeepCollectionEquality().equals(other.id, id) &&
             const DeepCollectionEquality().equals(other.name, name) &&
             const DeepCollectionEquality()
@@ -666,17 +671,17 @@ class _$_Pokedex implements _Pokedex {
 
   @JsonKey(ignore: true)
   @override
-  _$PokedexCopyWith<_Pokedex> get copyWith =>
-      __$PokedexCopyWithImpl<_Pokedex>(this, _$identity);
+  _$PokedexDataCopyWith<_PokedexData> get copyWith =>
+      __$PokedexDataCopyWithImpl<_PokedexData>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PokedexToJson(this);
+    return _$$_PokedexDataToJson(this);
   }
 }
 
-abstract class _Pokedex implements Pokedex {
-  const factory _Pokedex(
+abstract class _PokedexData implements PokedexData {
+  const factory _PokedexData(
       int id,
       String name,
       @JsonKey(name: 'is_main_series')
@@ -687,9 +692,10 @@ abstract class _Pokedex implements Pokedex {
           List<PokemonEntry> pokemonEntries,
       NamedAPIResource region,
       @JsonKey(name: 'version_groups')
-          List<NamedAPIResource> versionGroups) = _$_Pokedex;
+          List<NamedAPIResource> versionGroups) = _$_PokedexData;
 
-  factory _Pokedex.fromJson(Map<String, dynamic> json) = _$_Pokedex.fromJson;
+  factory _PokedexData.fromJson(Map<String, dynamic> json) =
+      _$_PokedexData.fromJson;
 
   @override
   int get id;
@@ -712,7 +718,7 @@ abstract class _Pokedex implements Pokedex {
   List<NamedAPIResource> get versionGroups;
   @override
   @JsonKey(ignore: true)
-  _$PokedexCopyWith<_Pokedex> get copyWith =>
+  _$PokedexDataCopyWith<_PokedexData> get copyWith =>
       throw _privateConstructorUsedError;
 }
 

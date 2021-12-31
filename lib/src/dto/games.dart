@@ -25,8 +25,8 @@ class Generation with _$Generation {
 }
 
 @freezed
-class Pokedex with _$Pokedex {
-  const factory Pokedex(
+class PokedexData with _$PokedexData {
+  const factory PokedexData(
     int id,
     String name,
     @JsonKey(name: 'is_main_series') bool isMainSeries,
@@ -35,9 +35,9 @@ class Pokedex with _$Pokedex {
     @JsonKey(name: 'pokemon_entries') List<PokemonEntry> pokemonEntries,
     NamedAPIResource region,
     @JsonKey(name: 'version_groups') List<NamedAPIResource> versionGroups,
-  ) = _Pokedex;
+  ) = _PokedexData;
 
-  factory Pokedex.fromJson(Json json) => _$PokedexFromJson(json);
+  factory PokedexData.fromJson(Json json) => _$PokedexDataFromJson(json);
 }
 
 @freezed

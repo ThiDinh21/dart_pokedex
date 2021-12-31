@@ -44,7 +44,8 @@ Map<String, dynamic> _$$_GenerationToJson(_$_Generation instance) =>
       'version_groups': instance.versionGroups,
     };
 
-_$_Pokedex _$$_PokedexFromJson(Map<String, dynamic> json) => _$_Pokedex(
+_$_PokedexData _$$_PokedexDataFromJson(Map<String, dynamic> json) =>
+    _$_PokedexData(
       json['id'] as int,
       json['name'] as String,
       json['is_main_series'] as bool,
@@ -63,7 +64,7 @@ _$_Pokedex _$$_PokedexFromJson(Map<String, dynamic> json) => _$_Pokedex(
           .toList(),
     );
 
-Map<String, dynamic> _$$_PokedexToJson(_$_Pokedex instance) =>
+Map<String, dynamic> _$$_PokedexDataToJson(_$_PokedexData instance) =>
     <String, dynamic>{
       'id': instance.id,
       'name': instance.name,

@@ -200,3 +200,21 @@ Map<String, dynamic> _$$_NamedAPIResourceListToJson(
       'previous': instance.previous,
       'results': instance.results,
     };
+
+_$_APIResourceList _$$_APIResourceListFromJson(Map<String, dynamic> json) =>
+    _$_APIResourceList(
+      json['count'] as int,
+      json['next'] as String?,
+      json['previous'] as String?,
+      (json['results'] as List<dynamic>)
+          .map((e) => APIResource.fromJson(e as Map<String, dynamic>))
+          .toList(),
+    );
+
+Map<String, dynamic> _$$_APIResourceListToJson(_$_APIResourceList instance) =>
+    <String, dynamic>{
+      'count': instance.count,
+      'next': instance.next,
+      'previous': instance.previous,
+      'results': instance.results,
+    };

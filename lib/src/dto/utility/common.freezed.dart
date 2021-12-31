@@ -2795,3 +2795,211 @@ abstract class _NamedAPIResourceList implements NamedAPIResourceList {
   _$NamedAPIResourceListCopyWith<_NamedAPIResourceList> get copyWith =>
       throw _privateConstructorUsedError;
 }
+
+APIResourceList _$APIResourceListFromJson(Map<String, dynamic> json) {
+  return _APIResourceList.fromJson(json);
+}
+
+/// @nodoc
+class _$APIResourceListTearOff {
+  const _$APIResourceListTearOff();
+
+  _APIResourceList call(
+      int count, String? next, String? previous, List<APIResource> results) {
+    return _APIResourceList(
+      count,
+      next,
+      previous,
+      results,
+    );
+  }
+
+  APIResourceList fromJson(Map<String, Object?> json) {
+    return APIResourceList.fromJson(json);
+  }
+}
+
+/// @nodoc
+const $APIResourceList = _$APIResourceListTearOff();
+
+/// @nodoc
+mixin _$APIResourceList {
+  int get count => throw _privateConstructorUsedError;
+  String? get next => throw _privateConstructorUsedError;
+  String? get previous => throw _privateConstructorUsedError;
+  List<APIResource> get results => throw _privateConstructorUsedError;
+
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  $APIResourceListCopyWith<APIResourceList> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $APIResourceListCopyWith<$Res> {
+  factory $APIResourceListCopyWith(
+          APIResourceList value, $Res Function(APIResourceList) then) =
+      _$APIResourceListCopyWithImpl<$Res>;
+  $Res call(
+      {int count, String? next, String? previous, List<APIResource> results});
+}
+
+/// @nodoc
+class _$APIResourceListCopyWithImpl<$Res>
+    implements $APIResourceListCopyWith<$Res> {
+  _$APIResourceListCopyWithImpl(this._value, this._then);
+
+  final APIResourceList _value;
+  // ignore: unused_field
+  final $Res Function(APIResourceList) _then;
+
+  @override
+  $Res call({
+    Object? count = freezed,
+    Object? next = freezed,
+    Object? previous = freezed,
+    Object? results = freezed,
+  }) {
+    return _then(_value.copyWith(
+      count: count == freezed
+          ? _value.count
+          : count // ignore: cast_nullable_to_non_nullable
+              as int,
+      next: next == freezed
+          ? _value.next
+          : next // ignore: cast_nullable_to_non_nullable
+              as String?,
+      previous: previous == freezed
+          ? _value.previous
+          : previous // ignore: cast_nullable_to_non_nullable
+              as String?,
+      results: results == freezed
+          ? _value.results
+          : results // ignore: cast_nullable_to_non_nullable
+              as List<APIResource>,
+    ));
+  }
+}
+
+/// @nodoc
+abstract class _$APIResourceListCopyWith<$Res>
+    implements $APIResourceListCopyWith<$Res> {
+  factory _$APIResourceListCopyWith(
+          _APIResourceList value, $Res Function(_APIResourceList) then) =
+      __$APIResourceListCopyWithImpl<$Res>;
+  @override
+  $Res call(
+      {int count, String? next, String? previous, List<APIResource> results});
+}
+
+/// @nodoc
+class __$APIResourceListCopyWithImpl<$Res>
+    extends _$APIResourceListCopyWithImpl<$Res>
+    implements _$APIResourceListCopyWith<$Res> {
+  __$APIResourceListCopyWithImpl(
+      _APIResourceList _value, $Res Function(_APIResourceList) _then)
+      : super(_value, (v) => _then(v as _APIResourceList));
+
+  @override
+  _APIResourceList get _value => super._value as _APIResourceList;
+
+  @override
+  $Res call({
+    Object? count = freezed,
+    Object? next = freezed,
+    Object? previous = freezed,
+    Object? results = freezed,
+  }) {
+    return _then(_APIResourceList(
+      count == freezed
+          ? _value.count
+          : count // ignore: cast_nullable_to_non_nullable
+              as int,
+      next == freezed
+          ? _value.next
+          : next // ignore: cast_nullable_to_non_nullable
+              as String?,
+      previous == freezed
+          ? _value.previous
+          : previous // ignore: cast_nullable_to_non_nullable
+              as String?,
+      results == freezed
+          ? _value.results
+          : results // ignore: cast_nullable_to_non_nullable
+              as List<APIResource>,
+    ));
+  }
+}
+
+/// @nodoc
+@JsonSerializable()
+class _$_APIResourceList implements _APIResourceList {
+  const _$_APIResourceList(this.count, this.next, this.previous, this.results);
+
+  factory _$_APIResourceList.fromJson(Map<String, dynamic> json) =>
+      _$$_APIResourceListFromJson(json);
+
+  @override
+  final int count;
+  @override
+  final String? next;
+  @override
+  final String? previous;
+  @override
+  final List<APIResource> results;
+
+  @override
+  String toString() {
+    return 'APIResourceList(count: $count, next: $next, previous: $previous, results: $results)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _APIResourceList &&
+            const DeepCollectionEquality().equals(other.count, count) &&
+            const DeepCollectionEquality().equals(other.next, next) &&
+            const DeepCollectionEquality().equals(other.previous, previous) &&
+            const DeepCollectionEquality().equals(other.results, results));
+  }
+
+  @override
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(count),
+      const DeepCollectionEquality().hash(next),
+      const DeepCollectionEquality().hash(previous),
+      const DeepCollectionEquality().hash(results));
+
+  @JsonKey(ignore: true)
+  @override
+  _$APIResourceListCopyWith<_APIResourceList> get copyWith =>
+      __$APIResourceListCopyWithImpl<_APIResourceList>(this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$$_APIResourceListToJson(this);
+  }
+}
+
+abstract class _APIResourceList implements APIResourceList {
+  const factory _APIResourceList(int count, String? next, String? previous,
+      List<APIResource> results) = _$_APIResourceList;
+
+  factory _APIResourceList.fromJson(Map<String, dynamic> json) =
+      _$_APIResourceList.fromJson;
+
+  @override
+  int get count;
+  @override
+  String? get next;
+  @override
+  String? get previous;
+  @override
+  List<APIResource> get results;
+  @override
+  @JsonKey(ignore: true)
+  _$APIResourceListCopyWith<_APIResourceList> get copyWith =>
+      throw _privateConstructorUsedError;
+}

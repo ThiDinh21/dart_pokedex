@@ -158,3 +158,16 @@ class NamedAPIResourceList with _$NamedAPIResourceList {
   factory NamedAPIResourceList.fromJson(Json json) =>
       _$NamedAPIResourceListFromJson(json);
 }
+
+@freezed
+class APIResourceList with _$APIResourceList {
+  const factory APIResourceList(
+    int count,
+    String? next,
+    String? previous,
+    List<APIResource> results,
+  ) = _APIResourceList;
+
+  factory APIResourceList.fromJson(Json json) =>
+      _$APIResourceListFromJson(json);
+}
