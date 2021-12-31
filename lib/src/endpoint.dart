@@ -20,6 +20,8 @@ abstract class Endpoint<R> {
     int limit = 20,
     int offset = 0,
   });
+
+  Future<APIResourceList> getAll();
 }
 
 abstract class NamedEndpoint<R> {
@@ -32,6 +34,8 @@ abstract class NamedEndpoint<R> {
     int limit = 20,
     int offset = 0,
   });
+
+  Future<APIResourceList> getAll();
 }
 
 class PokeApiEndPoints {
