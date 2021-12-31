@@ -1,9 +1,9 @@
 import 'dart:convert';
 
 import 'package:http/http.dart' as http;
+import 'package:http/http.dart';
 import 'package:poke_dart/src/aliases.dart';
 import 'package:poke_dart/src/dto/berries.dart';
-import 'package:poke_dart/src/dto/utility/common.dart';
 
 class Pokedex {
   static const baseUri = 'https://pokeapi.co/api/v2/';
@@ -34,4 +34,8 @@ class Pokedex {
   }
 
   // Future<NamedAPIResourceList> getPages
+}
+
+abstract class PokeApiClient {
+  Future<T> get<T>(String url);
 }

@@ -1,3 +1,7 @@
+import 'dart:convert';
+
+import 'package:http/http.dart' as http;
+import 'package:poke_dart/src/aliases.dart';
 import 'package:poke_dart/src/dto/berries.dart';
 import 'package:poke_dart/src/dto/contests.dart';
 import 'package:poke_dart/src/dto/encounters.dart';
@@ -38,7 +42,7 @@ abstract class NamedEndpoint<R> {
   Future<NamedAPIResourceList> getAll();
 }
 
-class PokeApiEndPoints {
+class PokeAPIEndpoints {
   final NamedEndpoint<Berry> berries;
   final NamedEndpoint<BerryFirmness> berryFirmness;
   final NamedEndpoint<BerryFlavor> berryFlavors;
@@ -88,7 +92,7 @@ class PokeApiEndPoints {
   final NamedEndpoint<Type> types;
   final NamedEndpoint<Language> languages;
 
-  const PokeApiEndPoints({
+  const PokeAPIEndpoints({
     required this.berries,
     required this.berryFirmness,
     required this.berryFlavors,
