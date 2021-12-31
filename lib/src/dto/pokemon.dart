@@ -76,7 +76,7 @@ class EggGroup with _$EggGroup {
     int id,
     String name,
     List<Name> names,
-    @JsonKey(name: 'pokemon_species') NamedAPIResourceList pokemonSpecies,
+    @JsonKey(name: 'pokemon_species') List<NamedAPIResource> pokemonSpecies,
   ) = _EggGroup;
 
   factory EggGroup.fromJson(Json json) => _$EggGroupFromJson(json);
@@ -90,7 +90,7 @@ class Gender with _$Gender {
     @JsonKey(name: 'pokemon_species_details')
         List<PokemonSpeciesGender> pokemonSpeciesDetails,
     @JsonKey(name: 'required_for_evolution')
-        NamedAPIResourceList requiredForEvolution,
+        List<NamedAPIResource> requiredForEvolution,
   ) = _Gender;
 
   factory Gender.fromJson(Json json) => _$GenderFromJson(json);
@@ -115,7 +115,7 @@ class GrowthRate with _$GrowthRate {
     String formula,
     List<Description> descriptions,
     List<GrowthRateExperienceLevel> levels,
-    @JsonKey(name: 'pokemon_species') NamedAPIResourceList pokemonSpecies,
+    @JsonKey(name: 'pokemon_species') List<NamedAPIResource> pokemonSpecies,
   ) = _GrowthRate;
 
   factory GrowthRate.fromJson(Json json) => _$GrowthRateFromJson(json);
@@ -142,7 +142,7 @@ class Nature with _$Nature {
     @JsonKey(name: 'hates_flavor') NamedAPIResource hatesFlavor,
     @JsonKey(name: 'likes_flavor') NamedAPIResource likesFlavor,
     @JsonKey(name: 'pokeathlon_stat_changes')
-        NamedAPIResourceList pokeathlonStatChanges,
+        List<NamedAPIResource> pokeathlonStatChanges,
     @JsonKey(name: 'move_battle_style_preferences')
         List<MoveBattleStylePreference> moveBattleStylePreferences,
     List<Name> names,
@@ -220,7 +220,7 @@ class Pokemon with _$Pokemon {
     int order,
     int weight,
     List<PokemonAbility> abilities,
-    NamedAPIResourceList forms,
+    List<NamedAPIResource> forms,
     @JsonKey(name: 'game_indices') List<VersionGameIndex> gameIndices,
     @JsonKey(name: 'held_items') List<PokemonHeldItem> heldItems,
     @JsonKey(name: 'location_area_encounters') String locationAreaEncounters,
@@ -369,7 +369,7 @@ class PokemonColor with _$PokemonColor {
     int id,
     String name,
     List<Name> names,
-    @JsonKey(name: 'pokemon_species') NamedAPIResourceList pokemonSpecies,
+    @JsonKey(name: 'pokemon_species') List<NamedAPIResource> pokemonSpecies,
   ) = _PokemonColor;
 
   factory PokemonColor.fromJson(Json json) => _$PokemonColorFromJson(json);
@@ -416,7 +416,7 @@ class PokemonHabitat with _$PokemonHabitat {
     int id,
     String name,
     List<Name> names,
-    @JsonKey(name: 'pokemon_species') NamedAPIResourceList pokemonSpecies,
+    @JsonKey(name: 'pokemon_species') List<NamedAPIResource> pokemonSpecies,
   ) = _PokemonHabitat;
 
   factory PokemonHabitat.fromJson(Json json) => _$PokemonHabitatFromJson(json);
@@ -429,7 +429,7 @@ class PokemonShape with _$PokemonShape {
     String name,
     @JsonKey(name: 'awesome_names') List<AwesomeName> awesomeNames,
     List<Name> names,
-    @JsonKey(name: 'pokemon_species') NamedAPIResourceList pokemonSpecies,
+    @JsonKey(name: 'pokemon_species') List<NamedAPIResource> pokemonSpecies,
   ) = _PokemonShape;
 
   factory PokemonShape.fromJson(Json json) => _$PokemonShapeFromJson(json);
@@ -463,11 +463,11 @@ class PokemonSpecies with _$PokemonSpecies {
     @JsonKey(name: 'growth_rate') NamedAPIResource growthRate,
     @JsonKey(name: 'pokedex_numbers')
         List<PokemonSpeciesDexEntry> pokedexNumbers,
-    @JsonKey(name: 'egg_groups') NamedAPIResourceList eggGroups,
+    @JsonKey(name: 'egg_groups') List<NamedAPIResource> eggGroups,
     NamedAPIResource color,
     NamedAPIResource shape,
     @JsonKey(name: 'evolves_from_species')
-        NamedAPIResourceList evolvesFromSpecies,
+        List<NamedAPIResource> evolvesFromSpecies,
     @JsonKey(name: 'evolution_chain') APIResource evolutionChain,
     NamedAPIResource habitat,
     NamedAPIResource generation,
@@ -536,7 +536,7 @@ class Stat with _$Stat {
     @JsonKey(name: 'is_battle_only') bool isBattleOnly,
     @JsonKey(name: 'affecting_moves') MoveStatAffectSets affectingMoves,
     @JsonKey(name: 'affecting_natures') NatureStatAffectSets affectingNatures,
-    APIResourceList characteristics,
+    List<APIResource> characteristics,
     @JsonKey(name: 'move_damage_class') NamedAPIResource moveDamageClass,
     List<Name> names,
   ) = _Stat;
@@ -568,8 +568,8 @@ class MoveStatAffect with _$MoveStatAffect {
 @freezed
 class NatureStatAffectSets with _$NatureStatAffectSets {
   const factory NatureStatAffectSets(
-    NamedAPIResourceList increase,
-    NamedAPIResourceList decrease,
+    List<NamedAPIResource> increase,
+    List<NamedAPIResource> decrease,
   ) = _NatureStatAffectSets;
 
   factory NatureStatAffectSets.fromJson(Json json) =>
@@ -589,7 +589,7 @@ class Type with _$Type {
     @JsonKey(name: 'move_damage_class') NamedAPIResource moveDamageClass,
     List<Name> names,
     List<TypePokemon> pokemon,
-    NamedAPIResourceList moves,
+    List<NamedAPIResource> moves,
   ) = _Type;
 
   factory Type.fromJson(Json json) => _$TypeFromJson(json);
@@ -608,12 +608,13 @@ class TypePokemon with _$TypePokemon {
 @freezed
 class TypeRelations with _$TypeRelations {
   const factory TypeRelations(
-    @JsonKey(name: 'no_damage_to') NamedAPIResourceList noDamageTo,
-    @JsonKey(name: 'half_damage_to') NamedAPIResourceList halfDamageTo,
-    @JsonKey(name: 'double_damage_to') NamedAPIResourceList doubleDamageTo,
-    @JsonKey(name: 'no_damage_from') NamedAPIResourceList noDamageFrom,
-    @JsonKey(name: 'half_damage_from') NamedAPIResourceList halfDamageFrom,
-    @JsonKey(name: 'double_damage_from') NamedAPIResourceList doubleDamageFrom,
+    @JsonKey(name: 'no_damage_to') List<NamedAPIResource> noDamageTo,
+    @JsonKey(name: 'half_damage_to') List<NamedAPIResource> halfDamageTo,
+    @JsonKey(name: 'double_damage_to') List<NamedAPIResource> doubleDamageTo,
+    @JsonKey(name: 'no_damage_from') List<NamedAPIResource> noDamageFrom,
+    @JsonKey(name: 'half_damage_from') List<NamedAPIResource> halfDamageFrom,
+    @JsonKey(name: 'double_damage_from')
+        List<NamedAPIResource> doubleDamageFrom,
   ) = _TypeRelations;
 
   factory TypeRelations.fromJson(Json json) => _$TypeRelationsFromJson(json);

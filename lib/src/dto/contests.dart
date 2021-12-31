@@ -47,7 +47,7 @@ class SuperContestEffect with _$SuperContestEffect {
     int id,
     int appeal,
     @JsonKey(name: 'flavor_text_entries') List<FlavorText> flavorTextEntries,
-    NamedAPIResourceList moves,
+    List<NamedAPIResource> moves,
   ) = _SuperContestEffect;
 
   factory SuperContestEffect.fromJson(Json json) =>
