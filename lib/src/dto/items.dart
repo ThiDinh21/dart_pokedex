@@ -12,9 +12,9 @@ class Item with _$Item {
     String name,
     int cost,
     @JsonKey(name: 'fling_power') int flingPower,
-    @JsonKey(name: 'fling_effect') NamedAPIResource flingEffect,
-    List<NamedAPIResource> attributes,
-    NamedAPIResource category,
+    @JsonKey(name: 'fling_effect') NamedApiResource flingEffect,
+    List<NamedApiResource> attributes,
+    NamedApiResource category,
     @JsonKey(name: 'effect_entries') List<VerboseEffect> effectEntries,
     @JsonKey(name: 'flavor_text_entries')
         List<VersionGroupFlavorText> flavorTextEntries,
@@ -22,7 +22,7 @@ class Item with _$Item {
     List<Name> names,
     ItemSprites sprites,
     @JsonKey(name: 'held_by_pokemon') List<ItemHolderPokemon> heldByPokemon,
-    @JsonKey(name: 'baby_trigger_for') APIResource babyTriggerFor,
+    @JsonKey(name: 'baby_trigger_for') ApiResource babyTriggerFor,
     List<MachineVersionDetail> machines,
   ) = _Item;
 
@@ -41,7 +41,7 @@ class ItemSprites with _$ItemSprites {
 @freezed
 class ItemHolderPokemon with _$ItemHolderPokemon {
   const factory ItemHolderPokemon(
-    NamedAPIResource pokemon,
+    NamedApiResource pokemon,
     @JsonKey(name: 'version_details')
         List<ItemHolderPokemonVersionDetail> versionDetails,
   ) = _ItemHolderPokemon;
@@ -54,7 +54,7 @@ class ItemHolderPokemon with _$ItemHolderPokemon {
 class ItemHolderPokemonVersionDetail with _$ItemHolderPokemonVersionDetail {
   const factory ItemHolderPokemonVersionDetail(
     int rarity,
-    NamedAPIResource version,
+    NamedApiResource version,
   ) = _ItemHolderPokemonVersionDetail;
 
   factory ItemHolderPokemonVersionDetail.fromJson(Json json) =>
@@ -66,7 +66,7 @@ class ItemAttribute with _$ItemAttribute {
   const factory ItemAttribute(
     int id,
     String name,
-    List<NamedAPIResource> items,
+    List<NamedApiResource> items,
     List<Name> names,
     List<Description> descriptions,
   ) = _ItemAttribute;
@@ -79,9 +79,9 @@ class ItemCategory with _$ItemCategory {
   const factory ItemCategory(
     int id,
     String name,
-    List<NamedAPIResource> items,
+    List<NamedApiResource> items,
     List<Name> names,
-    NamedAPIResource pocket,
+    NamedApiResource pocket,
   ) = _ItemCategory;
 
   factory ItemCategory.fromJson(Json json) => _$ItemCategoryFromJson(json);
@@ -93,7 +93,7 @@ class ItemFlingEffect with _$ItemFlingEffect {
     int id,
     String name,
     @JsonKey(name: 'effect_entries') List<Effect> effectEntries,
-    List<NamedAPIResource> items,
+    List<NamedApiResource> items,
   ) = _ItemFlingEffect;
 
   factory ItemFlingEffect.fromJson(Json json) =>
@@ -105,7 +105,7 @@ class ItemPocket with _$ItemPocket {
   const factory ItemPocket(
     int id,
     String name,
-    List<NamedAPIResource> categories,
+    List<NamedApiResource> categories,
     List<Name> names,
   ) = _ItemPocket;
 

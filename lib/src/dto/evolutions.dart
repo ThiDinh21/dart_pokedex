@@ -11,7 +11,7 @@ part 'evolutions.g.dart';
 class EvolutionChain with _$EvolutionChain {
   const factory EvolutionChain(
     int id,
-    @JsonKey(name: 'baby_trigger_item') NamedAPIResource babyTriggerItem,
+    @JsonKey(name: 'baby_trigger_item') NamedApiResource babyTriggerItem,
     ChainLink chain,
   ) = _EvolutionChain;
 
@@ -22,7 +22,7 @@ class EvolutionChain with _$EvolutionChain {
 class ChainLink with _$ChainLink {
   const factory ChainLink(
     @JsonKey(name: 'is_baby') bool isBaby,
-    NamedAPIResource species,
+    NamedApiResource species,
     @JsonKey(name: 'evolution_details') List<EvolutionDetail> evolutionDetails,
     @JsonKey(name: 'evolves_to') List<ChainLink> evolvesTo,
   ) = _ChainLink;
@@ -33,23 +33,23 @@ class ChainLink with _$ChainLink {
 @freezed
 class EvolutionDetail with _$EvolutionDetail {
   const factory EvolutionDetail(
-    NamedAPIResource item,
-    NamedAPIResource trigger,
+    NamedApiResource item,
+    NamedApiResource trigger,
     int gender,
-    @JsonKey(name: 'held_item') NamedAPIResource heldItem,
-    @JsonKey(name: 'known_move') NamedAPIResource knownMove,
-    @JsonKey(name: 'known_move_type') NamedAPIResource knownMoveType,
-    NamedAPIResource location,
+    @JsonKey(name: 'held_item') NamedApiResource heldItem,
+    @JsonKey(name: 'known_move') NamedApiResource knownMove,
+    @JsonKey(name: 'known_move_type') NamedApiResource knownMoveType,
+    NamedApiResource location,
     @JsonKey(name: 'min_level') int minLevel,
     @JsonKey(name: 'min_happiness') int minHappiness,
     @JsonKey(name: 'min_beauty') int minBeauty,
     @JsonKey(name: 'min_affection') int minAffection,
     @JsonKey(name: 'needs_overworld_rain') bool needsOverworldRain,
-    @JsonKey(name: 'party_species') NamedAPIResource partySpecies,
-    @JsonKey(name: 'party_type') NamedAPIResource partyType,
+    @JsonKey(name: 'party_species') NamedApiResource partySpecies,
+    @JsonKey(name: 'party_type') NamedApiResource partyType,
     @JsonKey(name: 'relative_physical_stats') int relativePhysicalStats,
     @JsonKey(name: 'time_of_day') String timeOfDay,
-    @JsonKey(name: 'trade_species') NamedAPIResource tradeSpecies,
+    @JsonKey(name: 'trade_species') NamedApiResource tradeSpecies,
     @JsonKey(name: 'turn_upside_down') bool turnUpsideDown,
   ) = _EvolutionDetail;
 
@@ -63,7 +63,7 @@ class EvolutionTrigger with _$EvolutionTrigger {
     int id,
     String name,
     List<Name> names,
-    @JsonKey(name: 'pokemon_species') List<NamedAPIResource> pokemonSpecies,
+    @JsonKey(name: 'pokemon_species') List<NamedApiResource> pokemonSpecies,
   ) = _EvolutionTrigger;
 
   factory EvolutionTrigger.fromJson(Json json) =>

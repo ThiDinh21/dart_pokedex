@@ -9,9 +9,9 @@ part 'machines.g.dart';
 class Machine with _$Machine {
   const factory Machine(
     int id,
-    NamedAPIResource item,
-    NamedAPIResource move,
-    @JsonKey(name: 'version_group') NamedAPIResource versionGroup,
+    NamedApiResource item,
+    NamedApiResource move,
+    @JsonKey(name: 'version_group') NamedApiResource versionGroup,
   ) = _Machine;
 
   factory Machine.fromJson(Json json) => _$MachineFromJson(json);

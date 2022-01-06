@@ -17,22 +17,22 @@ class Move with _$Move {
     int priority,
     int power,
     @JsonKey(name: 'contest_combos') ContestComboSets contestCombos,
-    @JsonKey(name: 'contest_type') NamedAPIResource contestType,
-    @JsonKey(name: 'contest_effect') APIResource contestEffect,
-    @JsonKey(name: 'damage_class') NamedAPIResource damageClass,
+    @JsonKey(name: 'contest_type') NamedApiResource contestType,
+    @JsonKey(name: 'contest_effect') ApiResource contestEffect,
+    @JsonKey(name: 'damage_class') NamedApiResource damageClass,
     @JsonKey(name: 'effect_entries') List<VerboseEffect> effectEntries,
     @JsonKey(name: 'effect_changes') List<AbilityEffectChange> effectChanges,
     @JsonKey(name: 'flavor_text_entries')
         List<MoveFlavorText> flavorTextEntries,
-    NamedAPIResource generation,
+    NamedApiResource generation,
     List<MachineVersionDetail> machines,
     MoveMetaData meta,
     List<Name> names,
     @JsonKey(name: 'past_values') PastMoveStatValues pastValues,
     @JsonKey(name: 'stat_changes') List<MoveStatChange> statChanges,
-    @JsonKey(name: 'super_contest_effect') APIResource superContestEffect,
-    NamedAPIResource target,
-    NamedAPIResource type,
+    @JsonKey(name: 'super_contest_effect') ApiResource superContestEffect,
+    NamedApiResource target,
+    NamedApiResource type,
   ) = _Move;
 
   factory Move.fromJson(Json json) => _$MoveFromJson(json);
@@ -52,8 +52,8 @@ class ContestComboSets with _$ContestComboSets {
 @freezed
 class ContestComboDetail with _$ContestComboDetail {
   const factory ContestComboDetail(
-    @JsonKey(name: 'use_before') List<NamedAPIResource> useBefore,
-    @JsonKey(name: 'use_after') List<NamedAPIResource> useAfter,
+    @JsonKey(name: 'use_before') List<NamedApiResource> useBefore,
+    @JsonKey(name: 'use_after') List<NamedApiResource> useAfter,
   ) = _ContestComboDetail;
 
   factory ContestComboDetail.fromJson(Json json) =>
@@ -64,8 +64,8 @@ class ContestComboDetail with _$ContestComboDetail {
 class MoveFlavorText with _$MoveFlavorText {
   const factory MoveFlavorText(
     @JsonKey(name: 'flavor_text') String flavorText,
-    NamedAPIResource language,
-    @JsonKey(name: 'version_group') NamedAPIResource versionGroup,
+    NamedApiResource language,
+    @JsonKey(name: 'version_group') NamedApiResource versionGroup,
   ) = _MoveFlavorText;
 
   factory MoveFlavorText.fromJson(Json json) => _$MoveFlavorTextFromJson(json);
@@ -74,8 +74,8 @@ class MoveFlavorText with _$MoveFlavorText {
 @freezed
 class MoveMetaData with _$MoveMetaData {
   const factory MoveMetaData(
-    NamedAPIResource ailment,
-    NamedAPIResource category,
+    NamedApiResource ailment,
+    NamedApiResource category,
     @JsonKey(name: 'min_hits') int minHits,
     @JsonKey(name: 'max_hits') int maxHits,
     @JsonKey(name: 'min_turns') int minTurns,
@@ -95,7 +95,7 @@ class MoveMetaData with _$MoveMetaData {
 class MoveStatChange with _$MoveStatChange {
   const factory MoveStatChange(
     int change,
-    NamedAPIResource stat,
+    NamedApiResource stat,
   ) = _MoveStatChange;
 
   factory MoveStatChange.fromJson(Json json) => _$MoveStatChangeFromJson(json);
@@ -109,8 +109,8 @@ class PastMoveStatValues with _$PastMoveStatValues {
     int power,
     int pp,
     @JsonKey(name: 'effect_entries') List<VerboseEffect> effectEntries,
-    NamedAPIResource type,
-    @JsonKey(name: 'version_group') NamedAPIResource versionGroup,
+    NamedApiResource type,
+    @JsonKey(name: 'version_group') NamedApiResource versionGroup,
   ) = _PastMoveStatValues;
 
   factory PastMoveStatValues.fromJson(Json json) =>
@@ -122,7 +122,7 @@ class MoveAilment with _$MoveAilment {
   const factory MoveAilment(
     int id,
     String name,
-    List<NamedAPIResource> moves,
+    List<NamedApiResource> moves,
     List<Name> names,
   ) = _MoveAilment;
 
@@ -146,7 +146,7 @@ class MoveCategory with _$MoveCategory {
   const factory MoveCategory(
     int id,
     String name,
-    List<NamedAPIResource> moves,
+    List<NamedApiResource> moves,
     List<Description> descriptions,
   ) = _MoveCategory;
 
@@ -159,7 +159,7 @@ class MoveDamageClass with _$MoveDamageClass {
     int id,
     String name,
     List<Description> descriptions,
-    List<NamedAPIResource> moves,
+    List<NamedApiResource> moves,
     List<Name> names,
   ) = _MoveDamageClass;
 
@@ -174,7 +174,7 @@ class MoveLearnMethod with _$MoveLearnMethod {
     String name,
     List<Description> descriptions,
     List<Name> names,
-    @JsonKey(name: 'version_groups') List<NamedAPIResource> versionGroups,
+    @JsonKey(name: 'version_groups') List<NamedApiResource> versionGroups,
   ) = _MoveLearnMethod;
 
   factory MoveLearnMethod.fromJson(Json json) =>
@@ -187,7 +187,7 @@ class MoveTarget with _$MoveTarget {
     int id,
     String name,
     List<Description> descriptions,
-    List<NamedAPIResource> moves,
+    List<NamedApiResource> moves,
     List<Name> names,
   ) = _MoveTarget;
 

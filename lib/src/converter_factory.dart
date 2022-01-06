@@ -18,12 +18,12 @@ import 'package:poke_dart/src/dto/utility/languages.dart';
 
 class ConverterFactory implements BaseConverterFactory {
   final Map<core.Type, Converter> _converters = Map.unmodifiable({
-    APIResourceList: Converter<APIResourceList>(
-      fromJson: (json) => APIResourceList.fromJson(json),
+    ApiResourceList: Converter<ApiResourceList>(
+      fromJson: (json) => ApiResourceList.fromJson(json),
       toJson: (data) => data.toJson(),
     ),
-    NamedAPIResourceList: Converter<NamedAPIResourceList>(
-      fromJson: (json) => NamedAPIResourceList.fromJson(json),
+    NamedApiResourceList: Converter<NamedApiResourceList>(
+      fromJson: (json) => NamedApiResourceList.fromJson(json),
       toJson: (data) => data.toJson(),
     ),
     Berry: Converter<Berry>(

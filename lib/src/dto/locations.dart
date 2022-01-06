@@ -10,10 +10,10 @@ class Location with _$Location {
   const factory Location(
     int id,
     String name,
-    NamedAPIResource region,
+    NamedApiResource region,
     List<Name> names,
     @JsonKey(name: 'game_indices') List<GenerationGameIndex> gameIndices,
-    List<NamedAPIResource> areas,
+    List<NamedApiResource> areas,
   ) = _Location;
 
   factory Location.fromJson(Json json) => _$LocationFromJson(json);
@@ -27,7 +27,7 @@ class LocationArea with _$LocationArea {
     @JsonKey(name: 'game_index') int gameIndex,
     @JsonKey(name: 'encounter_method_rates')
         List<EncounterMethodRate> encounterMethodRates,
-    NamedAPIResource location,
+    NamedApiResource location,
     List<Name> names,
     @JsonKey(name: 'pokemon_encounters')
         List<PokemonEncounter> pokemonEncounters,
@@ -39,7 +39,7 @@ class LocationArea with _$LocationArea {
 @freezed
 class EncounterMethodRate with _$EncounterMethodRate {
   const factory EncounterMethodRate(
-    @JsonKey(name: 'encounter_method') NamedAPIResource encounterMethod,
+    @JsonKey(name: 'encounter_method') NamedApiResource encounterMethod,
     @JsonKey(name: 'version_details')
         List<EncounterVersionDetails> versionDetails,
   ) = _EncounterMethodRate;
@@ -52,7 +52,7 @@ class EncounterMethodRate with _$EncounterMethodRate {
 class EncounterVersionDetails with _$EncounterVersionDetails {
   const factory EncounterVersionDetails(
     int rate,
-    NamedAPIResource version,
+    NamedApiResource version,
   ) = _EncounterVersionDetails;
 
   factory EncounterVersionDetails.fromJson(Json json) =>
@@ -62,7 +62,7 @@ class EncounterVersionDetails with _$EncounterVersionDetails {
 @freezed
 class PokemonEncounter with _$PokemonEncounter {
   const factory PokemonEncounter(
-    NamedAPIResource pokemon,
+    NamedApiResource pokemon,
     @JsonKey(name: 'version_details')
         List<VersionEncounterDetail> versionDetails,
   ) = _PokemonEncounter;
@@ -89,7 +89,7 @@ class PalParkEncounterSpecies with _$PalParkEncounterSpecies {
   const factory PalParkEncounterSpecies(
     @JsonKey(name: 'base_score') int baseScore,
     int rate,
-    @JsonKey(name: 'pokemon_species') NamedAPIResource pokemonSpecies,
+    @JsonKey(name: 'pokemon_species') NamedApiResource pokemonSpecies,
   ) = _PalParkEncounterSpecies;
 
   factory PalParkEncounterSpecies.fromJson(Json json) =>
@@ -100,12 +100,12 @@ class PalParkEncounterSpecies with _$PalParkEncounterSpecies {
 class Region with _$Region {
   const factory Region(
     int id,
-    List<NamedAPIResource> locations,
+    List<NamedApiResource> locations,
     String name,
     List<Name> names,
-    @JsonKey(name: 'main_generation') NamedAPIResource mainGeneration,
-    List<NamedAPIResource> pokedexes,
-    @JsonKey(name: 'version_groups') List<NamedAPIResource> versionGroups,
+    @JsonKey(name: 'main_generation') NamedApiResource mainGeneration,
+    List<NamedApiResource> pokedexes,
+    @JsonKey(name: 'version_groups') List<NamedApiResource> versionGroups,
   ) = _Region;
 
   factory Region.fromJson(Json json) => _$RegionFromJson(json);

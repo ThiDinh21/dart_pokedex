@@ -16,10 +16,10 @@ class Berry with _$Berry {
     int size,
     int smoothness,
     @JsonKey(name: 'soil_dryness') int soilDryness,
-    NamedAPIResource firmness,
+    NamedApiResource firmness,
     List<BerryFlavorMap> flavors,
-    NamedAPIResource item,
-    @JsonKey(name: 'natural_gift_type') NamedAPIResource naturalGiftType,
+    NamedApiResource item,
+    @JsonKey(name: 'natural_gift_type') NamedApiResource naturalGiftType,
   ) = _Berry;
 
   factory Berry.fromJson(Json json) => _$BerryFromJson(json);
@@ -29,7 +29,7 @@ class Berry with _$Berry {
 class BerryFlavorMap with _$BerryFlavorMap {
   const factory BerryFlavorMap(
     int potency,
-    NamedAPIResource flavor,
+    NamedApiResource flavor,
   ) = _BerryFlavorMap;
 
   factory BerryFlavorMap.fromJson(Json json) => _$BerryFlavorMapFromJson(json);
@@ -40,7 +40,7 @@ class BerryFirmness with _$BerryFirmness {
   const factory BerryFirmness(
     int id,
     String name,
-    List<NamedAPIResource> berries,
+    List<NamedApiResource> berries,
     List<Name> names,
   ) = _BerryFirmness;
 
@@ -53,7 +53,7 @@ class BerryFlavor with _$BerryFlavor {
     int id,
     String name,
     List<FlavorBerryMap> berries,
-    @JsonKey(name: 'contest_type') NamedAPIResource contestType,
+    @JsonKey(name: 'contest_type') NamedApiResource contestType,
     List<Name> names,
   ) = _BerryFlavor;
 
@@ -64,7 +64,7 @@ class BerryFlavor with _$BerryFlavor {
 class FlavorBerryMap with _$FlavorBerryMap {
   const factory FlavorBerryMap(
     int potency,
-    NamedAPIResource berry,
+    NamedApiResource berry,
   ) = _FlavorBerryMap;
 
   factory FlavorBerryMap.fromJson(Json json) => _$FlavorBerryMapFromJson(json);

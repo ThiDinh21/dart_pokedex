@@ -34,18 +34,18 @@ class _$MoveTearOff {
       @JsonKey(name: 'contest_combos')
           ContestComboSets contestCombos,
       @JsonKey(name: 'contest_type')
-          NamedAPIResource contestType,
+          NamedApiResource contestType,
       @JsonKey(name: 'contest_effect')
-          APIResource contestEffect,
+          ApiResource contestEffect,
       @JsonKey(name: 'damage_class')
-          NamedAPIResource damageClass,
+          NamedApiResource damageClass,
       @JsonKey(name: 'effect_entries')
           List<VerboseEffect> effectEntries,
       @JsonKey(name: 'effect_changes')
           List<AbilityEffectChange> effectChanges,
       @JsonKey(name: 'flavor_text_entries')
           List<MoveFlavorText> flavorTextEntries,
-      NamedAPIResource generation,
+      NamedApiResource generation,
       List<MachineVersionDetail> machines,
       MoveMetaData meta,
       List<Name> names,
@@ -54,9 +54,9 @@ class _$MoveTearOff {
       @JsonKey(name: 'stat_changes')
           List<MoveStatChange> statChanges,
       @JsonKey(name: 'super_contest_effect')
-          APIResource superContestEffect,
-      NamedAPIResource target,
-      NamedAPIResource type) {
+          ApiResource superContestEffect,
+      NamedApiResource target,
+      NamedApiResource type) {
     return _Move(
       id,
       name,
@@ -105,11 +105,11 @@ mixin _$Move {
   @JsonKey(name: 'contest_combos')
   ContestComboSets get contestCombos => throw _privateConstructorUsedError;
   @JsonKey(name: 'contest_type')
-  NamedAPIResource get contestType => throw _privateConstructorUsedError;
+  NamedApiResource get contestType => throw _privateConstructorUsedError;
   @JsonKey(name: 'contest_effect')
-  APIResource get contestEffect => throw _privateConstructorUsedError;
+  ApiResource get contestEffect => throw _privateConstructorUsedError;
   @JsonKey(name: 'damage_class')
-  NamedAPIResource get damageClass => throw _privateConstructorUsedError;
+  NamedApiResource get damageClass => throw _privateConstructorUsedError;
   @JsonKey(name: 'effect_entries')
   List<VerboseEffect> get effectEntries => throw _privateConstructorUsedError;
   @JsonKey(name: 'effect_changes')
@@ -118,7 +118,7 @@ mixin _$Move {
   @JsonKey(name: 'flavor_text_entries')
   List<MoveFlavorText> get flavorTextEntries =>
       throw _privateConstructorUsedError;
-  NamedAPIResource get generation => throw _privateConstructorUsedError;
+  NamedApiResource get generation => throw _privateConstructorUsedError;
   List<MachineVersionDetail> get machines => throw _privateConstructorUsedError;
   MoveMetaData get meta => throw _privateConstructorUsedError;
   List<Name> get names => throw _privateConstructorUsedError;
@@ -127,9 +127,9 @@ mixin _$Move {
   @JsonKey(name: 'stat_changes')
   List<MoveStatChange> get statChanges => throw _privateConstructorUsedError;
   @JsonKey(name: 'super_contest_effect')
-  APIResource get superContestEffect => throw _privateConstructorUsedError;
-  NamedAPIResource get target => throw _privateConstructorUsedError;
-  NamedAPIResource get type => throw _privateConstructorUsedError;
+  ApiResource get superContestEffect => throw _privateConstructorUsedError;
+  NamedApiResource get target => throw _privateConstructorUsedError;
+  NamedApiResource get type => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -152,18 +152,18 @@ abstract class $MoveCopyWith<$Res> {
       @JsonKey(name: 'contest_combos')
           ContestComboSets contestCombos,
       @JsonKey(name: 'contest_type')
-          NamedAPIResource contestType,
+          NamedApiResource contestType,
       @JsonKey(name: 'contest_effect')
-          APIResource contestEffect,
+          ApiResource contestEffect,
       @JsonKey(name: 'damage_class')
-          NamedAPIResource damageClass,
+          NamedApiResource damageClass,
       @JsonKey(name: 'effect_entries')
           List<VerboseEffect> effectEntries,
       @JsonKey(name: 'effect_changes')
           List<AbilityEffectChange> effectChanges,
       @JsonKey(name: 'flavor_text_entries')
           List<MoveFlavorText> flavorTextEntries,
-      NamedAPIResource generation,
+      NamedApiResource generation,
       List<MachineVersionDetail> machines,
       MoveMetaData meta,
       List<Name> names,
@@ -172,20 +172,20 @@ abstract class $MoveCopyWith<$Res> {
       @JsonKey(name: 'stat_changes')
           List<MoveStatChange> statChanges,
       @JsonKey(name: 'super_contest_effect')
-          APIResource superContestEffect,
-      NamedAPIResource target,
-      NamedAPIResource type});
+          ApiResource superContestEffect,
+      NamedApiResource target,
+      NamedApiResource type});
 
   $ContestComboSetsCopyWith<$Res> get contestCombos;
-  $NamedAPIResourceCopyWith<$Res> get contestType;
-  $APIResourceCopyWith<$Res> get contestEffect;
-  $NamedAPIResourceCopyWith<$Res> get damageClass;
-  $NamedAPIResourceCopyWith<$Res> get generation;
+  $NamedApiResourceCopyWith<$Res> get contestType;
+  $ApiResourceCopyWith<$Res> get contestEffect;
+  $NamedApiResourceCopyWith<$Res> get damageClass;
+  $NamedApiResourceCopyWith<$Res> get generation;
   $MoveMetaDataCopyWith<$Res> get meta;
   $PastMoveStatValuesCopyWith<$Res> get pastValues;
-  $APIResourceCopyWith<$Res> get superContestEffect;
-  $NamedAPIResourceCopyWith<$Res> get target;
-  $NamedAPIResourceCopyWith<$Res> get type;
+  $ApiResourceCopyWith<$Res> get superContestEffect;
+  $NamedApiResourceCopyWith<$Res> get target;
+  $NamedApiResourceCopyWith<$Res> get type;
 }
 
 /// @nodoc
@@ -258,15 +258,15 @@ class _$MoveCopyWithImpl<$Res> implements $MoveCopyWith<$Res> {
       contestType: contestType == freezed
           ? _value.contestType
           : contestType // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
       contestEffect: contestEffect == freezed
           ? _value.contestEffect
           : contestEffect // ignore: cast_nullable_to_non_nullable
-              as APIResource,
+              as ApiResource,
       damageClass: damageClass == freezed
           ? _value.damageClass
           : damageClass // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
       effectEntries: effectEntries == freezed
           ? _value.effectEntries
           : effectEntries // ignore: cast_nullable_to_non_nullable
@@ -282,7 +282,7 @@ class _$MoveCopyWithImpl<$Res> implements $MoveCopyWith<$Res> {
       generation: generation == freezed
           ? _value.generation
           : generation // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
       machines: machines == freezed
           ? _value.machines
           : machines // ignore: cast_nullable_to_non_nullable
@@ -306,15 +306,15 @@ class _$MoveCopyWithImpl<$Res> implements $MoveCopyWith<$Res> {
       superContestEffect: superContestEffect == freezed
           ? _value.superContestEffect
           : superContestEffect // ignore: cast_nullable_to_non_nullable
-              as APIResource,
+              as ApiResource,
       target: target == freezed
           ? _value.target
           : target // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
       type: type == freezed
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
     ));
   }
 
@@ -326,29 +326,29 @@ class _$MoveCopyWithImpl<$Res> implements $MoveCopyWith<$Res> {
   }
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get contestType {
-    return $NamedAPIResourceCopyWith<$Res>(_value.contestType, (value) {
+  $NamedApiResourceCopyWith<$Res> get contestType {
+    return $NamedApiResourceCopyWith<$Res>(_value.contestType, (value) {
       return _then(_value.copyWith(contestType: value));
     });
   }
 
   @override
-  $APIResourceCopyWith<$Res> get contestEffect {
-    return $APIResourceCopyWith<$Res>(_value.contestEffect, (value) {
+  $ApiResourceCopyWith<$Res> get contestEffect {
+    return $ApiResourceCopyWith<$Res>(_value.contestEffect, (value) {
       return _then(_value.copyWith(contestEffect: value));
     });
   }
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get damageClass {
-    return $NamedAPIResourceCopyWith<$Res>(_value.damageClass, (value) {
+  $NamedApiResourceCopyWith<$Res> get damageClass {
+    return $NamedApiResourceCopyWith<$Res>(_value.damageClass, (value) {
       return _then(_value.copyWith(damageClass: value));
     });
   }
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get generation {
-    return $NamedAPIResourceCopyWith<$Res>(_value.generation, (value) {
+  $NamedApiResourceCopyWith<$Res> get generation {
+    return $NamedApiResourceCopyWith<$Res>(_value.generation, (value) {
       return _then(_value.copyWith(generation: value));
     });
   }
@@ -368,22 +368,22 @@ class _$MoveCopyWithImpl<$Res> implements $MoveCopyWith<$Res> {
   }
 
   @override
-  $APIResourceCopyWith<$Res> get superContestEffect {
-    return $APIResourceCopyWith<$Res>(_value.superContestEffect, (value) {
+  $ApiResourceCopyWith<$Res> get superContestEffect {
+    return $ApiResourceCopyWith<$Res>(_value.superContestEffect, (value) {
       return _then(_value.copyWith(superContestEffect: value));
     });
   }
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get target {
-    return $NamedAPIResourceCopyWith<$Res>(_value.target, (value) {
+  $NamedApiResourceCopyWith<$Res> get target {
+    return $NamedApiResourceCopyWith<$Res>(_value.target, (value) {
       return _then(_value.copyWith(target: value));
     });
   }
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get type {
-    return $NamedAPIResourceCopyWith<$Res>(_value.type, (value) {
+  $NamedApiResourceCopyWith<$Res> get type {
+    return $NamedApiResourceCopyWith<$Res>(_value.type, (value) {
       return _then(_value.copyWith(type: value));
     });
   }
@@ -406,18 +406,18 @@ abstract class _$MoveCopyWith<$Res> implements $MoveCopyWith<$Res> {
       @JsonKey(name: 'contest_combos')
           ContestComboSets contestCombos,
       @JsonKey(name: 'contest_type')
-          NamedAPIResource contestType,
+          NamedApiResource contestType,
       @JsonKey(name: 'contest_effect')
-          APIResource contestEffect,
+          ApiResource contestEffect,
       @JsonKey(name: 'damage_class')
-          NamedAPIResource damageClass,
+          NamedApiResource damageClass,
       @JsonKey(name: 'effect_entries')
           List<VerboseEffect> effectEntries,
       @JsonKey(name: 'effect_changes')
           List<AbilityEffectChange> effectChanges,
       @JsonKey(name: 'flavor_text_entries')
           List<MoveFlavorText> flavorTextEntries,
-      NamedAPIResource generation,
+      NamedApiResource generation,
       List<MachineVersionDetail> machines,
       MoveMetaData meta,
       List<Name> names,
@@ -426,30 +426,30 @@ abstract class _$MoveCopyWith<$Res> implements $MoveCopyWith<$Res> {
       @JsonKey(name: 'stat_changes')
           List<MoveStatChange> statChanges,
       @JsonKey(name: 'super_contest_effect')
-          APIResource superContestEffect,
-      NamedAPIResource target,
-      NamedAPIResource type});
+          ApiResource superContestEffect,
+      NamedApiResource target,
+      NamedApiResource type});
 
   @override
   $ContestComboSetsCopyWith<$Res> get contestCombos;
   @override
-  $NamedAPIResourceCopyWith<$Res> get contestType;
+  $NamedApiResourceCopyWith<$Res> get contestType;
   @override
-  $APIResourceCopyWith<$Res> get contestEffect;
+  $ApiResourceCopyWith<$Res> get contestEffect;
   @override
-  $NamedAPIResourceCopyWith<$Res> get damageClass;
+  $NamedApiResourceCopyWith<$Res> get damageClass;
   @override
-  $NamedAPIResourceCopyWith<$Res> get generation;
+  $NamedApiResourceCopyWith<$Res> get generation;
   @override
   $MoveMetaDataCopyWith<$Res> get meta;
   @override
   $PastMoveStatValuesCopyWith<$Res> get pastValues;
   @override
-  $APIResourceCopyWith<$Res> get superContestEffect;
+  $ApiResourceCopyWith<$Res> get superContestEffect;
   @override
-  $NamedAPIResourceCopyWith<$Res> get target;
+  $NamedApiResourceCopyWith<$Res> get target;
   @override
-  $NamedAPIResourceCopyWith<$Res> get type;
+  $NamedApiResourceCopyWith<$Res> get type;
 }
 
 /// @nodoc
@@ -523,15 +523,15 @@ class __$MoveCopyWithImpl<$Res> extends _$MoveCopyWithImpl<$Res>
       contestType == freezed
           ? _value.contestType
           : contestType // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
       contestEffect == freezed
           ? _value.contestEffect
           : contestEffect // ignore: cast_nullable_to_non_nullable
-              as APIResource,
+              as ApiResource,
       damageClass == freezed
           ? _value.damageClass
           : damageClass // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
       effectEntries == freezed
           ? _value.effectEntries
           : effectEntries // ignore: cast_nullable_to_non_nullable
@@ -547,7 +547,7 @@ class __$MoveCopyWithImpl<$Res> extends _$MoveCopyWithImpl<$Res>
       generation == freezed
           ? _value.generation
           : generation // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
       machines == freezed
           ? _value.machines
           : machines // ignore: cast_nullable_to_non_nullable
@@ -571,15 +571,15 @@ class __$MoveCopyWithImpl<$Res> extends _$MoveCopyWithImpl<$Res>
       superContestEffect == freezed
           ? _value.superContestEffect
           : superContestEffect // ignore: cast_nullable_to_non_nullable
-              as APIResource,
+              as ApiResource,
       target == freezed
           ? _value.target
           : target // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
       type == freezed
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
     ));
   }
 }
@@ -634,13 +634,13 @@ class _$_Move implements _Move {
   final ContestComboSets contestCombos;
   @override
   @JsonKey(name: 'contest_type')
-  final NamedAPIResource contestType;
+  final NamedApiResource contestType;
   @override
   @JsonKey(name: 'contest_effect')
-  final APIResource contestEffect;
+  final ApiResource contestEffect;
   @override
   @JsonKey(name: 'damage_class')
-  final NamedAPIResource damageClass;
+  final NamedApiResource damageClass;
   @override
   @JsonKey(name: 'effect_entries')
   final List<VerboseEffect> effectEntries;
@@ -651,7 +651,7 @@ class _$_Move implements _Move {
   @JsonKey(name: 'flavor_text_entries')
   final List<MoveFlavorText> flavorTextEntries;
   @override
-  final NamedAPIResource generation;
+  final NamedApiResource generation;
   @override
   final List<MachineVersionDetail> machines;
   @override
@@ -666,11 +666,11 @@ class _$_Move implements _Move {
   final List<MoveStatChange> statChanges;
   @override
   @JsonKey(name: 'super_contest_effect')
-  final APIResource superContestEffect;
+  final ApiResource superContestEffect;
   @override
-  final NamedAPIResource target;
+  final NamedApiResource target;
   @override
-  final NamedAPIResource type;
+  final NamedApiResource type;
 
   @override
   String toString() {
@@ -771,18 +771,18 @@ abstract class _Move implements Move {
       @JsonKey(name: 'contest_combos')
           ContestComboSets contestCombos,
       @JsonKey(name: 'contest_type')
-          NamedAPIResource contestType,
+          NamedApiResource contestType,
       @JsonKey(name: 'contest_effect')
-          APIResource contestEffect,
+          ApiResource contestEffect,
       @JsonKey(name: 'damage_class')
-          NamedAPIResource damageClass,
+          NamedApiResource damageClass,
       @JsonKey(name: 'effect_entries')
           List<VerboseEffect> effectEntries,
       @JsonKey(name: 'effect_changes')
           List<AbilityEffectChange> effectChanges,
       @JsonKey(name: 'flavor_text_entries')
           List<MoveFlavorText> flavorTextEntries,
-      NamedAPIResource generation,
+      NamedApiResource generation,
       List<MachineVersionDetail> machines,
       MoveMetaData meta,
       List<Name> names,
@@ -791,9 +791,9 @@ abstract class _Move implements Move {
       @JsonKey(name: 'stat_changes')
           List<MoveStatChange> statChanges,
       @JsonKey(name: 'super_contest_effect')
-          APIResource superContestEffect,
-      NamedAPIResource target,
-      NamedAPIResource type) = _$_Move;
+          ApiResource superContestEffect,
+      NamedApiResource target,
+      NamedApiResource type) = _$_Move;
 
   factory _Move.fromJson(Map<String, dynamic> json) = _$_Move.fromJson;
 
@@ -817,13 +817,13 @@ abstract class _Move implements Move {
   ContestComboSets get contestCombos;
   @override
   @JsonKey(name: 'contest_type')
-  NamedAPIResource get contestType;
+  NamedApiResource get contestType;
   @override
   @JsonKey(name: 'contest_effect')
-  APIResource get contestEffect;
+  ApiResource get contestEffect;
   @override
   @JsonKey(name: 'damage_class')
-  NamedAPIResource get damageClass;
+  NamedApiResource get damageClass;
   @override
   @JsonKey(name: 'effect_entries')
   List<VerboseEffect> get effectEntries;
@@ -834,7 +834,7 @@ abstract class _Move implements Move {
   @JsonKey(name: 'flavor_text_entries')
   List<MoveFlavorText> get flavorTextEntries;
   @override
-  NamedAPIResource get generation;
+  NamedApiResource get generation;
   @override
   List<MachineVersionDetail> get machines;
   @override
@@ -849,11 +849,11 @@ abstract class _Move implements Move {
   List<MoveStatChange> get statChanges;
   @override
   @JsonKey(name: 'super_contest_effect')
-  APIResource get superContestEffect;
+  ApiResource get superContestEffect;
   @override
-  NamedAPIResource get target;
+  NamedApiResource get target;
   @override
-  NamedAPIResource get type;
+  NamedApiResource get type;
   @override
   @JsonKey(ignore: true)
   _$MoveCopyWith<_Move> get copyWith => throw _privateConstructorUsedError;
@@ -1069,8 +1069,8 @@ class _$ContestComboDetailTearOff {
   const _$ContestComboDetailTearOff();
 
   _ContestComboDetail call(
-      @JsonKey(name: 'use_before') List<NamedAPIResource> useBefore,
-      @JsonKey(name: 'use_after') List<NamedAPIResource> useAfter) {
+      @JsonKey(name: 'use_before') List<NamedApiResource> useBefore,
+      @JsonKey(name: 'use_after') List<NamedApiResource> useAfter) {
     return _ContestComboDetail(
       useBefore,
       useAfter,
@@ -1088,9 +1088,9 @@ const $ContestComboDetail = _$ContestComboDetailTearOff();
 /// @nodoc
 mixin _$ContestComboDetail {
   @JsonKey(name: 'use_before')
-  List<NamedAPIResource> get useBefore => throw _privateConstructorUsedError;
+  List<NamedApiResource> get useBefore => throw _privateConstructorUsedError;
   @JsonKey(name: 'use_after')
-  List<NamedAPIResource> get useAfter => throw _privateConstructorUsedError;
+  List<NamedApiResource> get useAfter => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -1104,8 +1104,8 @@ abstract class $ContestComboDetailCopyWith<$Res> {
           ContestComboDetail value, $Res Function(ContestComboDetail) then) =
       _$ContestComboDetailCopyWithImpl<$Res>;
   $Res call(
-      {@JsonKey(name: 'use_before') List<NamedAPIResource> useBefore,
-      @JsonKey(name: 'use_after') List<NamedAPIResource> useAfter});
+      {@JsonKey(name: 'use_before') List<NamedApiResource> useBefore,
+      @JsonKey(name: 'use_after') List<NamedApiResource> useAfter});
 }
 
 /// @nodoc
@@ -1126,11 +1126,11 @@ class _$ContestComboDetailCopyWithImpl<$Res>
       useBefore: useBefore == freezed
           ? _value.useBefore
           : useBefore // ignore: cast_nullable_to_non_nullable
-              as List<NamedAPIResource>,
+              as List<NamedApiResource>,
       useAfter: useAfter == freezed
           ? _value.useAfter
           : useAfter // ignore: cast_nullable_to_non_nullable
-              as List<NamedAPIResource>,
+              as List<NamedApiResource>,
     ));
   }
 }
@@ -1143,8 +1143,8 @@ abstract class _$ContestComboDetailCopyWith<$Res>
       __$ContestComboDetailCopyWithImpl<$Res>;
   @override
   $Res call(
-      {@JsonKey(name: 'use_before') List<NamedAPIResource> useBefore,
-      @JsonKey(name: 'use_after') List<NamedAPIResource> useAfter});
+      {@JsonKey(name: 'use_before') List<NamedApiResource> useBefore,
+      @JsonKey(name: 'use_after') List<NamedApiResource> useAfter});
 }
 
 /// @nodoc
@@ -1167,11 +1167,11 @@ class __$ContestComboDetailCopyWithImpl<$Res>
       useBefore == freezed
           ? _value.useBefore
           : useBefore // ignore: cast_nullable_to_non_nullable
-              as List<NamedAPIResource>,
+              as List<NamedApiResource>,
       useAfter == freezed
           ? _value.useAfter
           : useAfter // ignore: cast_nullable_to_non_nullable
-              as List<NamedAPIResource>,
+              as List<NamedApiResource>,
     ));
   }
 }
@@ -1187,10 +1187,10 @@ class _$_ContestComboDetail implements _ContestComboDetail {
 
   @override
   @JsonKey(name: 'use_before')
-  final List<NamedAPIResource> useBefore;
+  final List<NamedApiResource> useBefore;
   @override
   @JsonKey(name: 'use_after')
-  final List<NamedAPIResource> useAfter;
+  final List<NamedApiResource> useAfter;
 
   @override
   String toString() {
@@ -1225,8 +1225,8 @@ class _$_ContestComboDetail implements _ContestComboDetail {
 
 abstract class _ContestComboDetail implements ContestComboDetail {
   const factory _ContestComboDetail(
-          @JsonKey(name: 'use_before') List<NamedAPIResource> useBefore,
-          @JsonKey(name: 'use_after') List<NamedAPIResource> useAfter) =
+          @JsonKey(name: 'use_before') List<NamedApiResource> useBefore,
+          @JsonKey(name: 'use_after') List<NamedApiResource> useAfter) =
       _$_ContestComboDetail;
 
   factory _ContestComboDetail.fromJson(Map<String, dynamic> json) =
@@ -1234,10 +1234,10 @@ abstract class _ContestComboDetail implements ContestComboDetail {
 
   @override
   @JsonKey(name: 'use_before')
-  List<NamedAPIResource> get useBefore;
+  List<NamedApiResource> get useBefore;
   @override
   @JsonKey(name: 'use_after')
-  List<NamedAPIResource> get useAfter;
+  List<NamedApiResource> get useAfter;
   @override
   @JsonKey(ignore: true)
   _$ContestComboDetailCopyWith<_ContestComboDetail> get copyWith =>
@@ -1254,8 +1254,8 @@ class _$MoveFlavorTextTearOff {
 
   _MoveFlavorText call(
       @JsonKey(name: 'flavor_text') String flavorText,
-      NamedAPIResource language,
-      @JsonKey(name: 'version_group') NamedAPIResource versionGroup) {
+      NamedApiResource language,
+      @JsonKey(name: 'version_group') NamedApiResource versionGroup) {
     return _MoveFlavorText(
       flavorText,
       language,
@@ -1275,9 +1275,9 @@ const $MoveFlavorText = _$MoveFlavorTextTearOff();
 mixin _$MoveFlavorText {
   @JsonKey(name: 'flavor_text')
   String get flavorText => throw _privateConstructorUsedError;
-  NamedAPIResource get language => throw _privateConstructorUsedError;
+  NamedApiResource get language => throw _privateConstructorUsedError;
   @JsonKey(name: 'version_group')
-  NamedAPIResource get versionGroup => throw _privateConstructorUsedError;
+  NamedApiResource get versionGroup => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -1292,11 +1292,11 @@ abstract class $MoveFlavorTextCopyWith<$Res> {
       _$MoveFlavorTextCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'flavor_text') String flavorText,
-      NamedAPIResource language,
-      @JsonKey(name: 'version_group') NamedAPIResource versionGroup});
+      NamedApiResource language,
+      @JsonKey(name: 'version_group') NamedApiResource versionGroup});
 
-  $NamedAPIResourceCopyWith<$Res> get language;
-  $NamedAPIResourceCopyWith<$Res> get versionGroup;
+  $NamedApiResourceCopyWith<$Res> get language;
+  $NamedApiResourceCopyWith<$Res> get versionGroup;
 }
 
 /// @nodoc
@@ -1322,24 +1322,24 @@ class _$MoveFlavorTextCopyWithImpl<$Res>
       language: language == freezed
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
       versionGroup: versionGroup == freezed
           ? _value.versionGroup
           : versionGroup // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
     ));
   }
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get language {
-    return $NamedAPIResourceCopyWith<$Res>(_value.language, (value) {
+  $NamedApiResourceCopyWith<$Res> get language {
+    return $NamedApiResourceCopyWith<$Res>(_value.language, (value) {
       return _then(_value.copyWith(language: value));
     });
   }
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get versionGroup {
-    return $NamedAPIResourceCopyWith<$Res>(_value.versionGroup, (value) {
+  $NamedApiResourceCopyWith<$Res> get versionGroup {
+    return $NamedApiResourceCopyWith<$Res>(_value.versionGroup, (value) {
       return _then(_value.copyWith(versionGroup: value));
     });
   }
@@ -1354,13 +1354,13 @@ abstract class _$MoveFlavorTextCopyWith<$Res>
   @override
   $Res call(
       {@JsonKey(name: 'flavor_text') String flavorText,
-      NamedAPIResource language,
-      @JsonKey(name: 'version_group') NamedAPIResource versionGroup});
+      NamedApiResource language,
+      @JsonKey(name: 'version_group') NamedApiResource versionGroup});
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get language;
+  $NamedApiResourceCopyWith<$Res> get language;
   @override
-  $NamedAPIResourceCopyWith<$Res> get versionGroup;
+  $NamedApiResourceCopyWith<$Res> get versionGroup;
 }
 
 /// @nodoc
@@ -1388,11 +1388,11 @@ class __$MoveFlavorTextCopyWithImpl<$Res>
       language == freezed
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
       versionGroup == freezed
           ? _value.versionGroup
           : versionGroup // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
     ));
   }
 }
@@ -1410,10 +1410,10 @@ class _$_MoveFlavorText implements _MoveFlavorText {
   @JsonKey(name: 'flavor_text')
   final String flavorText;
   @override
-  final NamedAPIResource language;
+  final NamedApiResource language;
   @override
   @JsonKey(name: 'version_group')
-  final NamedAPIResource versionGroup;
+  final NamedApiResource versionGroup;
 
   @override
   String toString() {
@@ -1453,8 +1453,8 @@ class _$_MoveFlavorText implements _MoveFlavorText {
 abstract class _MoveFlavorText implements MoveFlavorText {
   const factory _MoveFlavorText(
           @JsonKey(name: 'flavor_text') String flavorText,
-          NamedAPIResource language,
-          @JsonKey(name: 'version_group') NamedAPIResource versionGroup) =
+          NamedApiResource language,
+          @JsonKey(name: 'version_group') NamedApiResource versionGroup) =
       _$_MoveFlavorText;
 
   factory _MoveFlavorText.fromJson(Map<String, dynamic> json) =
@@ -1464,10 +1464,10 @@ abstract class _MoveFlavorText implements MoveFlavorText {
   @JsonKey(name: 'flavor_text')
   String get flavorText;
   @override
-  NamedAPIResource get language;
+  NamedApiResource get language;
   @override
   @JsonKey(name: 'version_group')
-  NamedAPIResource get versionGroup;
+  NamedApiResource get versionGroup;
   @override
   @JsonKey(ignore: true)
   _$MoveFlavorTextCopyWith<_MoveFlavorText> get copyWith =>
@@ -1483,8 +1483,8 @@ class _$MoveMetaDataTearOff {
   const _$MoveMetaDataTearOff();
 
   _MoveMetaData call(
-      NamedAPIResource ailment,
-      NamedAPIResource category,
+      NamedApiResource ailment,
+      NamedApiResource category,
       @JsonKey(name: 'min_hits') int minHits,
       @JsonKey(name: 'max_hits') int maxHits,
       @JsonKey(name: 'min_turns') int minTurns,
@@ -1521,8 +1521,8 @@ const $MoveMetaData = _$MoveMetaDataTearOff();
 
 /// @nodoc
 mixin _$MoveMetaData {
-  NamedAPIResource get ailment => throw _privateConstructorUsedError;
-  NamedAPIResource get category => throw _privateConstructorUsedError;
+  NamedApiResource get ailment => throw _privateConstructorUsedError;
+  NamedApiResource get category => throw _privateConstructorUsedError;
   @JsonKey(name: 'min_hits')
   int get minHits => throw _privateConstructorUsedError;
   @JsonKey(name: 'max_hits')
@@ -1554,8 +1554,8 @@ abstract class $MoveMetaDataCopyWith<$Res> {
           MoveMetaData value, $Res Function(MoveMetaData) then) =
       _$MoveMetaDataCopyWithImpl<$Res>;
   $Res call(
-      {NamedAPIResource ailment,
-      NamedAPIResource category,
+      {NamedApiResource ailment,
+      NamedApiResource category,
       @JsonKey(name: 'min_hits') int minHits,
       @JsonKey(name: 'max_hits') int maxHits,
       @JsonKey(name: 'min_turns') int minTurns,
@@ -1567,8 +1567,8 @@ abstract class $MoveMetaDataCopyWith<$Res> {
       @JsonKey(name: 'flinch_chance') int flinchChance,
       @JsonKey(name: 'stat_chance') int statChance});
 
-  $NamedAPIResourceCopyWith<$Res> get ailment;
-  $NamedAPIResourceCopyWith<$Res> get category;
+  $NamedApiResourceCopyWith<$Res> get ailment;
+  $NamedApiResourceCopyWith<$Res> get category;
 }
 
 /// @nodoc
@@ -1598,11 +1598,11 @@ class _$MoveMetaDataCopyWithImpl<$Res> implements $MoveMetaDataCopyWith<$Res> {
       ailment: ailment == freezed
           ? _value.ailment
           : ailment // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
       category: category == freezed
           ? _value.category
           : category // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
       minHits: minHits == freezed
           ? _value.minHits
           : minHits // ignore: cast_nullable_to_non_nullable
@@ -1647,15 +1647,15 @@ class _$MoveMetaDataCopyWithImpl<$Res> implements $MoveMetaDataCopyWith<$Res> {
   }
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get ailment {
-    return $NamedAPIResourceCopyWith<$Res>(_value.ailment, (value) {
+  $NamedApiResourceCopyWith<$Res> get ailment {
+    return $NamedApiResourceCopyWith<$Res>(_value.ailment, (value) {
       return _then(_value.copyWith(ailment: value));
     });
   }
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get category {
-    return $NamedAPIResourceCopyWith<$Res>(_value.category, (value) {
+  $NamedApiResourceCopyWith<$Res> get category {
+    return $NamedApiResourceCopyWith<$Res>(_value.category, (value) {
       return _then(_value.copyWith(category: value));
     });
   }
@@ -1669,8 +1669,8 @@ abstract class _$MoveMetaDataCopyWith<$Res>
       __$MoveMetaDataCopyWithImpl<$Res>;
   @override
   $Res call(
-      {NamedAPIResource ailment,
-      NamedAPIResource category,
+      {NamedApiResource ailment,
+      NamedApiResource category,
       @JsonKey(name: 'min_hits') int minHits,
       @JsonKey(name: 'max_hits') int maxHits,
       @JsonKey(name: 'min_turns') int minTurns,
@@ -1683,9 +1683,9 @@ abstract class _$MoveMetaDataCopyWith<$Res>
       @JsonKey(name: 'stat_chance') int statChance});
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get ailment;
+  $NamedApiResourceCopyWith<$Res> get ailment;
   @override
-  $NamedAPIResourceCopyWith<$Res> get category;
+  $NamedApiResourceCopyWith<$Res> get category;
 }
 
 /// @nodoc
@@ -1717,11 +1717,11 @@ class __$MoveMetaDataCopyWithImpl<$Res> extends _$MoveMetaDataCopyWithImpl<$Res>
       ailment == freezed
           ? _value.ailment
           : ailment // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
       category == freezed
           ? _value.category
           : category // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
       minHits == freezed
           ? _value.minHits
           : minHits // ignore: cast_nullable_to_non_nullable
@@ -1787,9 +1787,9 @@ class _$_MoveMetaData implements _MoveMetaData {
       _$$_MoveMetaDataFromJson(json);
 
   @override
-  final NamedAPIResource ailment;
+  final NamedApiResource ailment;
   @override
-  final NamedAPIResource category;
+  final NamedApiResource category;
   @override
   @JsonKey(name: 'min_hits')
   final int minHits;
@@ -1875,8 +1875,8 @@ class _$_MoveMetaData implements _MoveMetaData {
 
 abstract class _MoveMetaData implements MoveMetaData {
   const factory _MoveMetaData(
-      NamedAPIResource ailment,
-      NamedAPIResource category,
+      NamedApiResource ailment,
+      NamedApiResource category,
       @JsonKey(name: 'min_hits') int minHits,
       @JsonKey(name: 'max_hits') int maxHits,
       @JsonKey(name: 'min_turns') int minTurns,
@@ -1892,9 +1892,9 @@ abstract class _MoveMetaData implements MoveMetaData {
       _$_MoveMetaData.fromJson;
 
   @override
-  NamedAPIResource get ailment;
+  NamedApiResource get ailment;
   @override
-  NamedAPIResource get category;
+  NamedApiResource get category;
   @override
   @JsonKey(name: 'min_hits')
   int get minHits;
@@ -1937,7 +1937,7 @@ MoveStatChange _$MoveStatChangeFromJson(Map<String, dynamic> json) {
 class _$MoveStatChangeTearOff {
   const _$MoveStatChangeTearOff();
 
-  _MoveStatChange call(int change, NamedAPIResource stat) {
+  _MoveStatChange call(int change, NamedApiResource stat) {
     return _MoveStatChange(
       change,
       stat,
@@ -1955,7 +1955,7 @@ const $MoveStatChange = _$MoveStatChangeTearOff();
 /// @nodoc
 mixin _$MoveStatChange {
   int get change => throw _privateConstructorUsedError;
-  NamedAPIResource get stat => throw _privateConstructorUsedError;
+  NamedApiResource get stat => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -1968,9 +1968,9 @@ abstract class $MoveStatChangeCopyWith<$Res> {
   factory $MoveStatChangeCopyWith(
           MoveStatChange value, $Res Function(MoveStatChange) then) =
       _$MoveStatChangeCopyWithImpl<$Res>;
-  $Res call({int change, NamedAPIResource stat});
+  $Res call({int change, NamedApiResource stat});
 
-  $NamedAPIResourceCopyWith<$Res> get stat;
+  $NamedApiResourceCopyWith<$Res> get stat;
 }
 
 /// @nodoc
@@ -1995,13 +1995,13 @@ class _$MoveStatChangeCopyWithImpl<$Res>
       stat: stat == freezed
           ? _value.stat
           : stat // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
     ));
   }
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get stat {
-    return $NamedAPIResourceCopyWith<$Res>(_value.stat, (value) {
+  $NamedApiResourceCopyWith<$Res> get stat {
+    return $NamedApiResourceCopyWith<$Res>(_value.stat, (value) {
       return _then(_value.copyWith(stat: value));
     });
   }
@@ -2014,10 +2014,10 @@ abstract class _$MoveStatChangeCopyWith<$Res>
           _MoveStatChange value, $Res Function(_MoveStatChange) then) =
       __$MoveStatChangeCopyWithImpl<$Res>;
   @override
-  $Res call({int change, NamedAPIResource stat});
+  $Res call({int change, NamedApiResource stat});
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get stat;
+  $NamedApiResourceCopyWith<$Res> get stat;
 }
 
 /// @nodoc
@@ -2044,7 +2044,7 @@ class __$MoveStatChangeCopyWithImpl<$Res>
       stat == freezed
           ? _value.stat
           : stat // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
     ));
   }
 }
@@ -2060,7 +2060,7 @@ class _$_MoveStatChange implements _MoveStatChange {
   @override
   final int change;
   @override
-  final NamedAPIResource stat;
+  final NamedApiResource stat;
 
   @override
   String toString() {
@@ -2094,7 +2094,7 @@ class _$_MoveStatChange implements _MoveStatChange {
 }
 
 abstract class _MoveStatChange implements MoveStatChange {
-  const factory _MoveStatChange(int change, NamedAPIResource stat) =
+  const factory _MoveStatChange(int change, NamedApiResource stat) =
       _$_MoveStatChange;
 
   factory _MoveStatChange.fromJson(Map<String, dynamic> json) =
@@ -2103,7 +2103,7 @@ abstract class _MoveStatChange implements MoveStatChange {
   @override
   int get change;
   @override
-  NamedAPIResource get stat;
+  NamedApiResource get stat;
   @override
   @JsonKey(ignore: true)
   _$MoveStatChangeCopyWith<_MoveStatChange> get copyWith =>
@@ -2124,8 +2124,8 @@ class _$PastMoveStatValuesTearOff {
       int power,
       int pp,
       @JsonKey(name: 'effect_entries') List<VerboseEffect> effectEntries,
-      NamedAPIResource type,
-      @JsonKey(name: 'version_group') NamedAPIResource versionGroup) {
+      NamedApiResource type,
+      @JsonKey(name: 'version_group') NamedApiResource versionGroup) {
     return _PastMoveStatValues(
       accuracy,
       effectChance,
@@ -2154,9 +2154,9 @@ mixin _$PastMoveStatValues {
   int get pp => throw _privateConstructorUsedError;
   @JsonKey(name: 'effect_entries')
   List<VerboseEffect> get effectEntries => throw _privateConstructorUsedError;
-  NamedAPIResource get type => throw _privateConstructorUsedError;
+  NamedApiResource get type => throw _privateConstructorUsedError;
   @JsonKey(name: 'version_group')
-  NamedAPIResource get versionGroup => throw _privateConstructorUsedError;
+  NamedApiResource get versionGroup => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -2175,11 +2175,11 @@ abstract class $PastMoveStatValuesCopyWith<$Res> {
       int power,
       int pp,
       @JsonKey(name: 'effect_entries') List<VerboseEffect> effectEntries,
-      NamedAPIResource type,
-      @JsonKey(name: 'version_group') NamedAPIResource versionGroup});
+      NamedApiResource type,
+      @JsonKey(name: 'version_group') NamedApiResource versionGroup});
 
-  $NamedAPIResourceCopyWith<$Res> get type;
-  $NamedAPIResourceCopyWith<$Res> get versionGroup;
+  $NamedApiResourceCopyWith<$Res> get type;
+  $NamedApiResourceCopyWith<$Res> get versionGroup;
 }
 
 /// @nodoc
@@ -2225,24 +2225,24 @@ class _$PastMoveStatValuesCopyWithImpl<$Res>
       type: type == freezed
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
       versionGroup: versionGroup == freezed
           ? _value.versionGroup
           : versionGroup // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
     ));
   }
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get type {
-    return $NamedAPIResourceCopyWith<$Res>(_value.type, (value) {
+  $NamedApiResourceCopyWith<$Res> get type {
+    return $NamedApiResourceCopyWith<$Res>(_value.type, (value) {
       return _then(_value.copyWith(type: value));
     });
   }
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get versionGroup {
-    return $NamedAPIResourceCopyWith<$Res>(_value.versionGroup, (value) {
+  $NamedApiResourceCopyWith<$Res> get versionGroup {
+    return $NamedApiResourceCopyWith<$Res>(_value.versionGroup, (value) {
       return _then(_value.copyWith(versionGroup: value));
     });
   }
@@ -2261,13 +2261,13 @@ abstract class _$PastMoveStatValuesCopyWith<$Res>
       int power,
       int pp,
       @JsonKey(name: 'effect_entries') List<VerboseEffect> effectEntries,
-      NamedAPIResource type,
-      @JsonKey(name: 'version_group') NamedAPIResource versionGroup});
+      NamedApiResource type,
+      @JsonKey(name: 'version_group') NamedApiResource versionGroup});
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get type;
+  $NamedApiResourceCopyWith<$Res> get type;
   @override
-  $NamedAPIResourceCopyWith<$Res> get versionGroup;
+  $NamedApiResourceCopyWith<$Res> get versionGroup;
 }
 
 /// @nodoc
@@ -2315,11 +2315,11 @@ class __$PastMoveStatValuesCopyWithImpl<$Res>
       type == freezed
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
       versionGroup == freezed
           ? _value.versionGroup
           : versionGroup // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
     ));
   }
 }
@@ -2352,10 +2352,10 @@ class _$_PastMoveStatValues implements _PastMoveStatValues {
   @JsonKey(name: 'effect_entries')
   final List<VerboseEffect> effectEntries;
   @override
-  final NamedAPIResource type;
+  final NamedApiResource type;
   @override
   @JsonKey(name: 'version_group')
-  final NamedAPIResource versionGroup;
+  final NamedApiResource versionGroup;
 
   @override
   String toString() {
@@ -2408,8 +2408,8 @@ abstract class _PastMoveStatValues implements PastMoveStatValues {
           int power,
           int pp,
           @JsonKey(name: 'effect_entries') List<VerboseEffect> effectEntries,
-          NamedAPIResource type,
-          @JsonKey(name: 'version_group') NamedAPIResource versionGroup) =
+          NamedApiResource type,
+          @JsonKey(name: 'version_group') NamedApiResource versionGroup) =
       _$_PastMoveStatValues;
 
   factory _PastMoveStatValues.fromJson(Map<String, dynamic> json) =
@@ -2428,10 +2428,10 @@ abstract class _PastMoveStatValues implements PastMoveStatValues {
   @JsonKey(name: 'effect_entries')
   List<VerboseEffect> get effectEntries;
   @override
-  NamedAPIResource get type;
+  NamedApiResource get type;
   @override
   @JsonKey(name: 'version_group')
-  NamedAPIResource get versionGroup;
+  NamedApiResource get versionGroup;
   @override
   @JsonKey(ignore: true)
   _$PastMoveStatValuesCopyWith<_PastMoveStatValues> get copyWith =>
@@ -2447,7 +2447,7 @@ class _$MoveAilmentTearOff {
   const _$MoveAilmentTearOff();
 
   _MoveAilment call(
-      int id, String name, List<NamedAPIResource> moves, List<Name> names) {
+      int id, String name, List<NamedApiResource> moves, List<Name> names) {
     return _MoveAilment(
       id,
       name,
@@ -2468,7 +2468,7 @@ const $MoveAilment = _$MoveAilmentTearOff();
 mixin _$MoveAilment {
   int get id => throw _privateConstructorUsedError;
   String get name => throw _privateConstructorUsedError;
-  List<NamedAPIResource> get moves => throw _privateConstructorUsedError;
+  List<NamedApiResource> get moves => throw _privateConstructorUsedError;
   List<Name> get names => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -2483,7 +2483,7 @@ abstract class $MoveAilmentCopyWith<$Res> {
           MoveAilment value, $Res Function(MoveAilment) then) =
       _$MoveAilmentCopyWithImpl<$Res>;
   $Res call(
-      {int id, String name, List<NamedAPIResource> moves, List<Name> names});
+      {int id, String name, List<NamedApiResource> moves, List<Name> names});
 }
 
 /// @nodoc
@@ -2513,7 +2513,7 @@ class _$MoveAilmentCopyWithImpl<$Res> implements $MoveAilmentCopyWith<$Res> {
       moves: moves == freezed
           ? _value.moves
           : moves // ignore: cast_nullable_to_non_nullable
-              as List<NamedAPIResource>,
+              as List<NamedApiResource>,
       names: names == freezed
           ? _value.names
           : names // ignore: cast_nullable_to_non_nullable
@@ -2530,7 +2530,7 @@ abstract class _$MoveAilmentCopyWith<$Res>
       __$MoveAilmentCopyWithImpl<$Res>;
   @override
   $Res call(
-      {int id, String name, List<NamedAPIResource> moves, List<Name> names});
+      {int id, String name, List<NamedApiResource> moves, List<Name> names});
 }
 
 /// @nodoc
@@ -2562,7 +2562,7 @@ class __$MoveAilmentCopyWithImpl<$Res> extends _$MoveAilmentCopyWithImpl<$Res>
       moves == freezed
           ? _value.moves
           : moves // ignore: cast_nullable_to_non_nullable
-              as List<NamedAPIResource>,
+              as List<NamedApiResource>,
       names == freezed
           ? _value.names
           : names // ignore: cast_nullable_to_non_nullable
@@ -2584,7 +2584,7 @@ class _$_MoveAilment implements _MoveAilment {
   @override
   final String name;
   @override
-  final List<NamedAPIResource> moves;
+  final List<NamedApiResource> moves;
   @override
   final List<Name> names;
 
@@ -2625,7 +2625,7 @@ class _$_MoveAilment implements _MoveAilment {
 
 abstract class _MoveAilment implements MoveAilment {
   const factory _MoveAilment(
-          int id, String name, List<NamedAPIResource> moves, List<Name> names) =
+          int id, String name, List<NamedApiResource> moves, List<Name> names) =
       _$_MoveAilment;
 
   factory _MoveAilment.fromJson(Map<String, dynamic> json) =
@@ -2636,7 +2636,7 @@ abstract class _MoveAilment implements MoveAilment {
   @override
   String get name;
   @override
-  List<NamedAPIResource> get moves;
+  List<NamedApiResource> get moves;
   @override
   List<Name> get names;
   @override
@@ -2840,7 +2840,7 @@ MoveCategory _$MoveCategoryFromJson(Map<String, dynamic> json) {
 class _$MoveCategoryTearOff {
   const _$MoveCategoryTearOff();
 
-  _MoveCategory call(int id, String name, List<NamedAPIResource> moves,
+  _MoveCategory call(int id, String name, List<NamedApiResource> moves,
       List<Description> descriptions) {
     return _MoveCategory(
       id,
@@ -2862,7 +2862,7 @@ const $MoveCategory = _$MoveCategoryTearOff();
 mixin _$MoveCategory {
   int get id => throw _privateConstructorUsedError;
   String get name => throw _privateConstructorUsedError;
-  List<NamedAPIResource> get moves => throw _privateConstructorUsedError;
+  List<NamedApiResource> get moves => throw _privateConstructorUsedError;
   List<Description> get descriptions => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -2879,7 +2879,7 @@ abstract class $MoveCategoryCopyWith<$Res> {
   $Res call(
       {int id,
       String name,
-      List<NamedAPIResource> moves,
+      List<NamedApiResource> moves,
       List<Description> descriptions});
 }
 
@@ -2910,7 +2910,7 @@ class _$MoveCategoryCopyWithImpl<$Res> implements $MoveCategoryCopyWith<$Res> {
       moves: moves == freezed
           ? _value.moves
           : moves // ignore: cast_nullable_to_non_nullable
-              as List<NamedAPIResource>,
+              as List<NamedApiResource>,
       descriptions: descriptions == freezed
           ? _value.descriptions
           : descriptions // ignore: cast_nullable_to_non_nullable
@@ -2929,7 +2929,7 @@ abstract class _$MoveCategoryCopyWith<$Res>
   $Res call(
       {int id,
       String name,
-      List<NamedAPIResource> moves,
+      List<NamedApiResource> moves,
       List<Description> descriptions});
 }
 
@@ -2962,7 +2962,7 @@ class __$MoveCategoryCopyWithImpl<$Res> extends _$MoveCategoryCopyWithImpl<$Res>
       moves == freezed
           ? _value.moves
           : moves // ignore: cast_nullable_to_non_nullable
-              as List<NamedAPIResource>,
+              as List<NamedApiResource>,
       descriptions == freezed
           ? _value.descriptions
           : descriptions // ignore: cast_nullable_to_non_nullable
@@ -2984,7 +2984,7 @@ class _$_MoveCategory implements _MoveCategory {
   @override
   final String name;
   @override
-  final List<NamedAPIResource> moves;
+  final List<NamedApiResource> moves;
   @override
   final List<Description> descriptions;
 
@@ -3025,7 +3025,7 @@ class _$_MoveCategory implements _MoveCategory {
 }
 
 abstract class _MoveCategory implements MoveCategory {
-  const factory _MoveCategory(int id, String name, List<NamedAPIResource> moves,
+  const factory _MoveCategory(int id, String name, List<NamedApiResource> moves,
       List<Description> descriptions) = _$_MoveCategory;
 
   factory _MoveCategory.fromJson(Map<String, dynamic> json) =
@@ -3036,7 +3036,7 @@ abstract class _MoveCategory implements MoveCategory {
   @override
   String get name;
   @override
-  List<NamedAPIResource> get moves;
+  List<NamedApiResource> get moves;
   @override
   List<Description> get descriptions;
   @override
@@ -3054,7 +3054,7 @@ class _$MoveDamageClassTearOff {
   const _$MoveDamageClassTearOff();
 
   _MoveDamageClass call(int id, String name, List<Description> descriptions,
-      List<NamedAPIResource> moves, List<Name> names) {
+      List<NamedApiResource> moves, List<Name> names) {
     return _MoveDamageClass(
       id,
       name,
@@ -3077,7 +3077,7 @@ mixin _$MoveDamageClass {
   int get id => throw _privateConstructorUsedError;
   String get name => throw _privateConstructorUsedError;
   List<Description> get descriptions => throw _privateConstructorUsedError;
-  List<NamedAPIResource> get moves => throw _privateConstructorUsedError;
+  List<NamedApiResource> get moves => throw _privateConstructorUsedError;
   List<Name> get names => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -3095,7 +3095,7 @@ abstract class $MoveDamageClassCopyWith<$Res> {
       {int id,
       String name,
       List<Description> descriptions,
-      List<NamedAPIResource> moves,
+      List<NamedApiResource> moves,
       List<Name> names});
 }
 
@@ -3132,7 +3132,7 @@ class _$MoveDamageClassCopyWithImpl<$Res>
       moves: moves == freezed
           ? _value.moves
           : moves // ignore: cast_nullable_to_non_nullable
-              as List<NamedAPIResource>,
+              as List<NamedApiResource>,
       names: names == freezed
           ? _value.names
           : names // ignore: cast_nullable_to_non_nullable
@@ -3152,7 +3152,7 @@ abstract class _$MoveDamageClassCopyWith<$Res>
       {int id,
       String name,
       List<Description> descriptions,
-      List<NamedAPIResource> moves,
+      List<NamedApiResource> moves,
       List<Name> names});
 }
 
@@ -3191,7 +3191,7 @@ class __$MoveDamageClassCopyWithImpl<$Res>
       moves == freezed
           ? _value.moves
           : moves // ignore: cast_nullable_to_non_nullable
-              as List<NamedAPIResource>,
+              as List<NamedApiResource>,
       names == freezed
           ? _value.names
           : names // ignore: cast_nullable_to_non_nullable
@@ -3216,7 +3216,7 @@ class _$_MoveDamageClass implements _MoveDamageClass {
   @override
   final List<Description> descriptions;
   @override
-  final List<NamedAPIResource> moves;
+  final List<NamedApiResource> moves;
   @override
   final List<Name> names;
 
@@ -3263,7 +3263,7 @@ abstract class _MoveDamageClass implements MoveDamageClass {
       int id,
       String name,
       List<Description> descriptions,
-      List<NamedAPIResource> moves,
+      List<NamedApiResource> moves,
       List<Name> names) = _$_MoveDamageClass;
 
   factory _MoveDamageClass.fromJson(Map<String, dynamic> json) =
@@ -3276,7 +3276,7 @@ abstract class _MoveDamageClass implements MoveDamageClass {
   @override
   List<Description> get descriptions;
   @override
-  List<NamedAPIResource> get moves;
+  List<NamedApiResource> get moves;
   @override
   List<Name> get names;
   @override
@@ -3298,7 +3298,7 @@ class _$MoveLearnMethodTearOff {
       String name,
       List<Description> descriptions,
       List<Name> names,
-      @JsonKey(name: 'version_groups') List<NamedAPIResource> versionGroups) {
+      @JsonKey(name: 'version_groups') List<NamedApiResource> versionGroups) {
     return _MoveLearnMethod(
       id,
       name,
@@ -3323,7 +3323,7 @@ mixin _$MoveLearnMethod {
   List<Description> get descriptions => throw _privateConstructorUsedError;
   List<Name> get names => throw _privateConstructorUsedError;
   @JsonKey(name: 'version_groups')
-  List<NamedAPIResource> get versionGroups =>
+  List<NamedApiResource> get versionGroups =>
       throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -3342,7 +3342,7 @@ abstract class $MoveLearnMethodCopyWith<$Res> {
       String name,
       List<Description> descriptions,
       List<Name> names,
-      @JsonKey(name: 'version_groups') List<NamedAPIResource> versionGroups});
+      @JsonKey(name: 'version_groups') List<NamedApiResource> versionGroups});
 }
 
 /// @nodoc
@@ -3382,7 +3382,7 @@ class _$MoveLearnMethodCopyWithImpl<$Res>
       versionGroups: versionGroups == freezed
           ? _value.versionGroups
           : versionGroups // ignore: cast_nullable_to_non_nullable
-              as List<NamedAPIResource>,
+              as List<NamedApiResource>,
     ));
   }
 }
@@ -3399,7 +3399,7 @@ abstract class _$MoveLearnMethodCopyWith<$Res>
       String name,
       List<Description> descriptions,
       List<Name> names,
-      @JsonKey(name: 'version_groups') List<NamedAPIResource> versionGroups});
+      @JsonKey(name: 'version_groups') List<NamedApiResource> versionGroups});
 }
 
 /// @nodoc
@@ -3441,7 +3441,7 @@ class __$MoveLearnMethodCopyWithImpl<$Res>
       versionGroups == freezed
           ? _value.versionGroups
           : versionGroups // ignore: cast_nullable_to_non_nullable
-              as List<NamedAPIResource>,
+              as List<NamedApiResource>,
     ));
   }
 }
@@ -3465,7 +3465,7 @@ class _$_MoveLearnMethod implements _MoveLearnMethod {
   final List<Name> names;
   @override
   @JsonKey(name: 'version_groups')
-  final List<NamedAPIResource> versionGroups;
+  final List<NamedApiResource> versionGroups;
 
   @override
   String toString() {
@@ -3513,7 +3513,7 @@ abstract class _MoveLearnMethod implements MoveLearnMethod {
       List<Description> descriptions,
       List<Name> names,
       @JsonKey(name: 'version_groups')
-          List<NamedAPIResource> versionGroups) = _$_MoveLearnMethod;
+          List<NamedApiResource> versionGroups) = _$_MoveLearnMethod;
 
   factory _MoveLearnMethod.fromJson(Map<String, dynamic> json) =
       _$_MoveLearnMethod.fromJson;
@@ -3528,7 +3528,7 @@ abstract class _MoveLearnMethod implements MoveLearnMethod {
   List<Name> get names;
   @override
   @JsonKey(name: 'version_groups')
-  List<NamedAPIResource> get versionGroups;
+  List<NamedApiResource> get versionGroups;
   @override
   @JsonKey(ignore: true)
   _$MoveLearnMethodCopyWith<_MoveLearnMethod> get copyWith =>
@@ -3544,7 +3544,7 @@ class _$MoveTargetTearOff {
   const _$MoveTargetTearOff();
 
   _MoveTarget call(int id, String name, List<Description> descriptions,
-      List<NamedAPIResource> moves, List<Name> names) {
+      List<NamedApiResource> moves, List<Name> names) {
     return _MoveTarget(
       id,
       name,
@@ -3567,7 +3567,7 @@ mixin _$MoveTarget {
   int get id => throw _privateConstructorUsedError;
   String get name => throw _privateConstructorUsedError;
   List<Description> get descriptions => throw _privateConstructorUsedError;
-  List<NamedAPIResource> get moves => throw _privateConstructorUsedError;
+  List<NamedApiResource> get moves => throw _privateConstructorUsedError;
   List<Name> get names => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -3585,7 +3585,7 @@ abstract class $MoveTargetCopyWith<$Res> {
       {int id,
       String name,
       List<Description> descriptions,
-      List<NamedAPIResource> moves,
+      List<NamedApiResource> moves,
       List<Name> names});
 }
 
@@ -3621,7 +3621,7 @@ class _$MoveTargetCopyWithImpl<$Res> implements $MoveTargetCopyWith<$Res> {
       moves: moves == freezed
           ? _value.moves
           : moves // ignore: cast_nullable_to_non_nullable
-              as List<NamedAPIResource>,
+              as List<NamedApiResource>,
       names: names == freezed
           ? _value.names
           : names // ignore: cast_nullable_to_non_nullable
@@ -3640,7 +3640,7 @@ abstract class _$MoveTargetCopyWith<$Res> implements $MoveTargetCopyWith<$Res> {
       {int id,
       String name,
       List<Description> descriptions,
-      List<NamedAPIResource> moves,
+      List<NamedApiResource> moves,
       List<Name> names});
 }
 
@@ -3678,7 +3678,7 @@ class __$MoveTargetCopyWithImpl<$Res> extends _$MoveTargetCopyWithImpl<$Res>
       moves == freezed
           ? _value.moves
           : moves // ignore: cast_nullable_to_non_nullable
-              as List<NamedAPIResource>,
+              as List<NamedApiResource>,
       names == freezed
           ? _value.names
           : names // ignore: cast_nullable_to_non_nullable
@@ -3703,7 +3703,7 @@ class _$_MoveTarget implements _MoveTarget {
   @override
   final List<Description> descriptions;
   @override
-  final List<NamedAPIResource> moves;
+  final List<NamedApiResource> moves;
   @override
   final List<Name> names;
 
@@ -3747,7 +3747,7 @@ class _$_MoveTarget implements _MoveTarget {
 
 abstract class _MoveTarget implements MoveTarget {
   const factory _MoveTarget(int id, String name, List<Description> descriptions,
-      List<NamedAPIResource> moves, List<Name> names) = _$_MoveTarget;
+      List<NamedApiResource> moves, List<Name> names) = _$_MoveTarget;
 
   factory _MoveTarget.fromJson(Map<String, dynamic> json) =
       _$_MoveTarget.fromJson;
@@ -3759,7 +3759,7 @@ abstract class _MoveTarget implements MoveTarget {
   @override
   List<Description> get descriptions;
   @override
-  List<NamedAPIResource> get moves;
+  List<NamedApiResource> get moves;
   @override
   List<Name> get names;
   @override

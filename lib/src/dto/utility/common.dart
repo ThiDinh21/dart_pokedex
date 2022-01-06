@@ -1,23 +1,35 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:poke_dart/src/aliases.dart';
+import 'package:poke_dart/src/dto/encounters.dart';
+import 'package:poke_dart/src/dto/games.dart';
+import 'package:poke_dart/src/dto/machines.dart';
+import 'package:poke_dart/src/dto/utility/languages.dart';
 
 part 'common.freezed.dart';
 part 'common.g.dart';
 
 @freezed
-class APIResource with _$APIResource {
-  const factory APIResource(
+class ApiResource with _$ApiResource {
+  const factory ApiResource(
+    /// The URL of the referenced resource.
     String url,
-  ) = _APIResource;
+  ) = _ApiResource;
 
-  factory APIResource.fromJson(Json json) => _$APIResourceFromJson(json);
+  factory ApiResource.fromJson(Json json) => _$ApiResourceFromJson(json);
 }
 
 @freezed
 class Description with _$Description {
   const factory Description(
+    /// The localized description for an API resource in a specific language.
     String description,
-    NamedAPIResource language,
+
+    /// The language this name is in.
+    ///
+    /// See also:
+    ///
+    /// [Language]
+    NamedApiResource language,
   ) = _Description;
 
   factory Description.fromJson(Json json) => _$DescriptionFromJson(json);
@@ -26,8 +38,15 @@ class Description with _$Description {
 @freezed
 class Effect with _$Effect {
   const factory Effect(
+    /// The localized effect text for an API resource in a specific language.
     String effect,
-    NamedAPIResource language,
+
+    /// The language this effect is in.
+    ///
+    /// See also:
+    ///
+    /// [Language]
+    NamedApiResource language,
   ) = _Effect;
 
   factory Effect.fromJson(Json json) => _$EffectFromJson(json);
@@ -36,11 +55,28 @@ class Effect with _$Effect {
 @freezed
 class Encounter with _$Encounter {
   const factory Encounter(
+    /// The lowest level the Pokémon could be encountered at.
     @JsonKey(name: 'min_level') int minLevel,
+
+    /// The highest level the Pokémon could be encountered at.
     @JsonKey(name: 'max_level') int maxLevel,
-    @JsonKey(name: 'condition_values') List<NamedAPIResource> conditionValues,
+
+    /// A list of condition values that must be in effect for this encounter to occur.
+    ///
+    /// See also:
+    ///
+    /// [EncounterConditionValue]
+    @JsonKey(name: 'condition_values') List<NamedApiResource> conditionValues,
+
+    /// Percent chance that this encounter will occur.
     int chance,
-    NamedAPIResource method,
+
+    /// The method by which this encounter happens.
+    ///
+    /// See also:
+    ///
+    /// [EncounterMethod]
+    NamedApiResource method,
   ) = _Encounter;
 
   factory Encounter.fromJson(Json json) => _$EncounterFromJson(json);
@@ -49,9 +85,22 @@ class Encounter with _$Encounter {
 @freezed
 class FlavorText with _$FlavorText {
   const factory FlavorText(
+    /// The localized flavor text for an API resource in a specific language.
     @JsonKey(name: 'flavor_text') String flavorText,
-    NamedAPIResource language,
-    NamedAPIResource version,
+
+    /// The language this name is in.
+    ///
+    /// See also:
+    ///
+    /// [Language]
+    NamedApiResource language,
+
+    /// The game version this flavor text is extracted from.
+    ///
+    /// See also:
+    ///
+    /// [Version]
+    NamedApiResource version,
   ) = _FlavorText;
 
   factory FlavorText.fromJson(Json json) => _$FlavorTextFromJson(json);
@@ -60,8 +109,15 @@ class FlavorText with _$FlavorText {
 @freezed
 class GenerationGameIndex with _$GenerationGameIndex {
   const factory GenerationGameIndex(
+    /// The internal id of an API resource within game data.
     @JsonKey(name: 'game_index') int gameIndex,
-    NamedAPIResource generation,
+
+    /// The generation relevent to this game index.
+    ///
+    /// See also:
+    ///
+    /// [Generation]
+    NamedApiResource generation,
   ) = _GenerationGameIndex;
 
   factory GenerationGameIndex.fromJson(Json json) =>
@@ -71,8 +127,19 @@ class GenerationGameIndex with _$GenerationGameIndex {
 @freezed
 class MachineVersionDetail with _$MachineVersionDetail {
   const factory MachineVersionDetail(
-    APIResource machine,
-    @JsonKey(name: 'version_group') NamedAPIResource versionGroup,
+    /// The machine that teaches a move from an item.
+    ///
+    /// See also:
+    ///
+    /// [Machine]
+    ApiResource machine,
+
+    /// The version group of this specific machine.
+    ///
+    /// See also:
+    ///
+    /// [VersionGroup]
+    @JsonKey(name: 'version_group') NamedApiResource versionGroup,
   ) = _MachineVersionDetail;
 
   factory MachineVersionDetail.fromJson(Json json) =>
@@ -82,30 +149,49 @@ class MachineVersionDetail with _$MachineVersionDetail {
 @freezed
 class Name with _$Name {
   const factory Name(
+    /// The localized name for an API resource in a specific language.
     String name,
-    NamedAPIResource language,
+
+    /// The language this name is in.
+    ///
+    /// See also:
+    ///
+    /// [Language]
+    NamedApiResource language,
   ) = _Name;
 
   factory Name.fromJson(Json json) => _$NameFromJson(json);
 }
 
 @freezed
-class NamedAPIResource with _$NamedAPIResource {
-  const factory NamedAPIResource(
+class NamedApiResource with _$NamedApiResource {
+  const factory NamedApiResource(
+    /// The name of the referenced resource.
     String name,
-    String url,
-  ) = _NamedAPIResource;
 
-  factory NamedAPIResource.fromJson(Json json) =>
-      _$NamedAPIResourceFromJson(json);
+    /// The URL of the referenced resource.
+    String url,
+  ) = _NamedApiResource;
+
+  factory NamedApiResource.fromJson(Json json) =>
+      _$NamedApiResourceFromJson(json);
 }
 
 @freezed
 class VerboseEffect with _$VerboseEffect {
   const factory VerboseEffect(
+    /// The localized effect text for an API resource in a specific language.
     String effect,
+
+    /// The localized effect text in brief.
     @JsonKey(name: 'short_effect') String shortEffect,
-    NamedAPIResource language,
+
+    /// The language this effect is in.
+    ///
+    /// See also:
+    ///
+    /// [Language]
+    NamedApiResource language,
   ) = _VerboseEffect;
 
   factory VerboseEffect.fromJson(Json json) => _$VerboseEffectFromJson(json);
@@ -114,8 +200,17 @@ class VerboseEffect with _$VerboseEffect {
 @freezed
 class VersionEncounterDetail with _$VersionEncounterDetail {
   const factory VersionEncounterDetail(
-    NamedAPIResource version,
+    /// The game version this encounter happens in.
+    ///
+    /// See also:
+    ///
+    /// [Version]
+    NamedApiResource version,
+
+    /// The total percentage of all encounter potential.
     @JsonKey(name: 'max_chance') int maxChance,
+
+    /// A list of encounters and their specifics.
     @JsonKey(name: 'encounter_details') List<Encounter> encounterDetails,
   ) = _VersionEncounterDetail;
 
@@ -126,8 +221,15 @@ class VersionEncounterDetail with _$VersionEncounterDetail {
 @freezed
 class VersionGameIndex with _$VersionGameIndex {
   const factory VersionGameIndex(
+    /// The internal id of an API resource within game data.
     @JsonKey(name: 'game_index') int gameIndex,
-    NamedAPIResource version,
+
+    /// The version relevent to this game index.
+    ///
+    /// See also:
+    ///
+    /// [Version]
+    NamedApiResource version,
   ) = _VersionGameIndex;
 
   factory VersionGameIndex.fromJson(Json json) =>
@@ -137,9 +239,22 @@ class VersionGameIndex with _$VersionGameIndex {
 @freezed
 class VersionGroupFlavorText with _$VersionGroupFlavorText {
   const factory VersionGroupFlavorText(
+    /// The localized name for an API resource in a specific language.
     String text,
-    NamedAPIResource language,
-    @JsonKey(name: 'version_group') NamedAPIResource versionGroup,
+
+    /// The language this name is in.
+    ///
+    /// See also:
+    ///
+    /// [Language]
+    NamedApiResource language,
+
+    /// The version group which uses this flavor text.
+    ///
+    /// See also:
+    ///
+    /// [VersionGroup]
+    @JsonKey(name: 'version_group') NamedApiResource versionGroup,
   ) = _VersionGroupFlavorText;
 
   factory VersionGroupFlavorText.fromJson(Json json) =>
@@ -147,27 +262,41 @@ class VersionGroupFlavorText with _$VersionGroupFlavorText {
 }
 
 @freezed
-class NamedAPIResourceList with _$NamedAPIResourceList {
-  const factory NamedAPIResourceList(
+class NamedApiResourceList with _$NamedApiResourceList {
+  const factory NamedApiResourceList(
+    /// The total number of resources available from this API.
     int count,
-    String? next,
-    String? previous,
-    List<NamedAPIResource> results,
-  ) = _NamedAPIResourceList;
 
-  factory NamedAPIResourceList.fromJson(Json json) =>
-      _$NamedAPIResourceListFromJson(json);
+    /// The URL for the next page in the list.
+    String? next,
+
+    /// The URL for the previous page in the list.
+    String? previous,
+
+    /// A list of named API resources.
+    List<NamedApiResource> results,
+  ) = _NamedApiResourceList;
+
+  factory NamedApiResourceList.fromJson(Json json) =>
+      _$NamedApiResourceListFromJson(json);
 }
 
 @freezed
-class APIResourceList with _$APIResourceList {
-  const factory APIResourceList(
+class ApiResourceList with _$ApiResourceList {
+  const factory ApiResourceList(
+    /// The total number of resources available from this API.
     int count,
-    String? next,
-    String? previous,
-    List<APIResource> results,
-  ) = _APIResourceList;
 
-  factory APIResourceList.fromJson(Json json) =>
-      _$APIResourceListFromJson(json);
+    /// The URL for the next page in the list.
+    String? next,
+
+    /// The URL for the previous page in the list.
+    String? previous,
+
+    /// A list of API resources.
+    List<ApiResource> results,
+  ) = _ApiResourceList;
+
+  factory ApiResourceList.fromJson(Json json) =>
+      _$ApiResourceListFromJson(json);
 }

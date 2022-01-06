@@ -10,7 +10,7 @@ _$_Ability _$$_AbilityFromJson(Map<String, dynamic> json) => _$_Ability(
       json['id'] as int,
       json['name'] as String,
       json['is_main_series'] as bool,
-      NamedAPIResource.fromJson(json['generation'] as Map<String, dynamic>),
+      NamedApiResource.fromJson(json['generation'] as Map<String, dynamic>),
       (json['names'] as List<dynamic>)
           .map((e) => Name.fromJson(e as Map<String, dynamic>))
           .toList(),
@@ -47,7 +47,7 @@ _$_AbilityEffectChange _$$_AbilityEffectChangeFromJson(
       (json['effect_entries'] as List<dynamic>)
           .map((e) => Effect.fromJson(e as Map<String, dynamic>))
           .toList(),
-      NamedAPIResource.fromJson(json['version_group'] as Map<String, dynamic>),
+      NamedApiResource.fromJson(json['version_group'] as Map<String, dynamic>),
     );
 
 Map<String, dynamic> _$$_AbilityEffectChangeToJson(
@@ -60,8 +60,8 @@ Map<String, dynamic> _$$_AbilityEffectChangeToJson(
 _$_AbilityFlavorText _$$_AbilityFlavorTextFromJson(Map<String, dynamic> json) =>
     _$_AbilityFlavorText(
       json['flavor_text'] as String,
-      NamedAPIResource.fromJson(json['language'] as Map<String, dynamic>),
-      NamedAPIResource.fromJson(json['version_group'] as Map<String, dynamic>),
+      NamedApiResource.fromJson(json['language'] as Map<String, dynamic>),
+      NamedApiResource.fromJson(json['version_group'] as Map<String, dynamic>),
     );
 
 Map<String, dynamic> _$$_AbilityFlavorTextToJson(
@@ -76,7 +76,7 @@ _$_AbilityPokemon _$$_AbilityPokemonFromJson(Map<String, dynamic> json) =>
     _$_AbilityPokemon(
       json['is_hidden'] as bool,
       json['slot'] as int,
-      NamedAPIResource.fromJson(json['pokemon'] as Map<String, dynamic>),
+      NamedApiResource.fromJson(json['pokemon'] as Map<String, dynamic>),
     );
 
 Map<String, dynamic> _$$_AbilityPokemonToJson(_$_AbilityPokemon instance) =>
@@ -107,7 +107,7 @@ _$_EggGroup _$$_EggGroupFromJson(Map<String, dynamic> json) => _$_EggGroup(
           .map((e) => Name.fromJson(e as Map<String, dynamic>))
           .toList(),
       (json['pokemon_species'] as List<dynamic>)
-          .map((e) => NamedAPIResource.fromJson(e as Map<String, dynamic>))
+          .map((e) => NamedApiResource.fromJson(e as Map<String, dynamic>))
           .toList(),
     );
 
@@ -126,7 +126,7 @@ _$_Gender _$$_GenderFromJson(Map<String, dynamic> json) => _$_Gender(
           .map((e) => PokemonSpeciesGender.fromJson(e as Map<String, dynamic>))
           .toList(),
       (json['required_for_evolution'] as List<dynamic>)
-          .map((e) => NamedAPIResource.fromJson(e as Map<String, dynamic>))
+          .map((e) => NamedApiResource.fromJson(e as Map<String, dynamic>))
           .toList(),
     );
 
@@ -141,7 +141,7 @@ _$_PokemonSpeciesGender _$$_PokemonSpeciesGenderFromJson(
         Map<String, dynamic> json) =>
     _$_PokemonSpeciesGender(
       json['rate'] as int,
-      NamedAPIResource.fromJson(
+      NamedApiResource.fromJson(
           json['pokemon_species'] as Map<String, dynamic>),
     );
 
@@ -165,7 +165,7 @@ _$_GrowthRate _$$_GrowthRateFromJson(Map<String, dynamic> json) =>
               GrowthRateExperienceLevel.fromJson(e as Map<String, dynamic>))
           .toList(),
       (json['pokemon_species'] as List<dynamic>)
-          .map((e) => NamedAPIResource.fromJson(e as Map<String, dynamic>))
+          .map((e) => NamedApiResource.fromJson(e as Map<String, dynamic>))
           .toList(),
     );
 
@@ -196,12 +196,12 @@ Map<String, dynamic> _$$_GrowthRateExperienceLevelToJson(
 _$_Nature _$$_NatureFromJson(Map<String, dynamic> json) => _$_Nature(
       json['id'] as int,
       json['name'] as String,
-      NamedAPIResource.fromJson(json['decreased_stat'] as Map<String, dynamic>),
-      NamedAPIResource.fromJson(json['increased_stat'] as Map<String, dynamic>),
-      NamedAPIResource.fromJson(json['hates_flavor'] as Map<String, dynamic>),
-      NamedAPIResource.fromJson(json['likes_flavor'] as Map<String, dynamic>),
+      NamedApiResource.fromJson(json['decreased_stat'] as Map<String, dynamic>),
+      NamedApiResource.fromJson(json['increased_stat'] as Map<String, dynamic>),
+      NamedApiResource.fromJson(json['hates_flavor'] as Map<String, dynamic>),
+      NamedApiResource.fromJson(json['likes_flavor'] as Map<String, dynamic>),
       (json['pokeathlon_stat_changes'] as List<dynamic>)
-          .map((e) => NamedAPIResource.fromJson(e as Map<String, dynamic>))
+          .map((e) => NamedApiResource.fromJson(e as Map<String, dynamic>))
           .toList(),
       (json['move_battle_style_preferences'] as List<dynamic>)
           .map((e) =>
@@ -227,7 +227,7 @@ Map<String, dynamic> _$$_NatureToJson(_$_Nature instance) => <String, dynamic>{
 _$_NatureStatChange _$$_NatureStatChangeFromJson(Map<String, dynamic> json) =>
     _$_NatureStatChange(
       json['max_change'] as int,
-      NamedAPIResource.fromJson(
+      NamedApiResource.fromJson(
           json['pokeathlon_stat'] as Map<String, dynamic>),
     );
 
@@ -242,7 +242,7 @@ _$_MoveBattleStylePreference _$$_MoveBattleStylePreferenceFromJson(
     _$_MoveBattleStylePreference(
       json['low_hp_preference'] as int,
       json['high_hp_preference'] as int,
-      NamedAPIResource.fromJson(
+      NamedApiResource.fromJson(
           json['move_battle_style'] as Map<String, dynamic>),
     );
 
@@ -297,7 +297,7 @@ _$_NaturePokeathlonStatAffect _$$_NaturePokeathlonStatAffectFromJson(
         Map<String, dynamic> json) =>
     _$_NaturePokeathlonStatAffect(
       json['max_change'] as int,
-      NamedAPIResource.fromJson(json['nature'] as Map<String, dynamic>),
+      NamedApiResource.fromJson(json['nature'] as Map<String, dynamic>),
     );
 
 Map<String, dynamic> _$$_NaturePokeathlonStatAffectToJson(
@@ -319,7 +319,7 @@ _$_Pokemon _$$_PokemonFromJson(Map<String, dynamic> json) => _$_Pokemon(
           .map((e) => PokemonAbility.fromJson(e as Map<String, dynamic>))
           .toList(),
       (json['forms'] as List<dynamic>)
-          .map((e) => NamedAPIResource.fromJson(e as Map<String, dynamic>))
+          .map((e) => NamedApiResource.fromJson(e as Map<String, dynamic>))
           .toList(),
       (json['game_indices'] as List<dynamic>)
           .map((e) => VersionGameIndex.fromJson(e as Map<String, dynamic>))
@@ -335,7 +335,7 @@ _$_Pokemon _$$_PokemonFromJson(Map<String, dynamic> json) => _$_Pokemon(
           .map((e) => PokemonTypePast.fromJson(e as Map<String, dynamic>))
           .toList(),
       PokemonSprites.fromJson(json['sprites'] as Map<String, dynamic>),
-      NamedAPIResource.fromJson(json['species'] as Map<String, dynamic>),
+      NamedApiResource.fromJson(json['species'] as Map<String, dynamic>),
       (json['stats'] as List<dynamic>)
           .map((e) => PokemonStat.fromJson(e as Map<String, dynamic>))
           .toList(),
@@ -370,7 +370,7 @@ _$_PokemonAbility _$$_PokemonAbilityFromJson(Map<String, dynamic> json) =>
     _$_PokemonAbility(
       json['is_hidden'] as bool,
       json['slot'] as int,
-      NamedAPIResource.fromJson(json['ability'] as Map<String, dynamic>),
+      NamedApiResource.fromJson(json['ability'] as Map<String, dynamic>),
     );
 
 Map<String, dynamic> _$$_PokemonAbilityToJson(_$_PokemonAbility instance) =>
@@ -383,7 +383,7 @@ Map<String, dynamic> _$$_PokemonAbilityToJson(_$_PokemonAbility instance) =>
 _$_PokemonType _$$_PokemonTypeFromJson(Map<String, dynamic> json) =>
     _$_PokemonType(
       json['slot'] as int,
-      NamedAPIResource.fromJson(json['type'] as Map<String, dynamic>),
+      NamedApiResource.fromJson(json['type'] as Map<String, dynamic>),
     );
 
 Map<String, dynamic> _$$_PokemonTypeToJson(_$_PokemonType instance) =>
@@ -395,7 +395,7 @@ Map<String, dynamic> _$$_PokemonTypeToJson(_$_PokemonType instance) =>
 _$_PokemonFormType _$$_PokemonFormTypeFromJson(Map<String, dynamic> json) =>
     _$_PokemonFormType(
       json['slot'] as int,
-      NamedAPIResource.fromJson(json['type'] as Map<String, dynamic>),
+      NamedApiResource.fromJson(json['type'] as Map<String, dynamic>),
     );
 
 Map<String, dynamic> _$$_PokemonFormTypeToJson(_$_PokemonFormType instance) =>
@@ -406,7 +406,7 @@ Map<String, dynamic> _$$_PokemonFormTypeToJson(_$_PokemonFormType instance) =>
 
 _$_PokemonTypePast _$$_PokemonTypePastFromJson(Map<String, dynamic> json) =>
     _$_PokemonTypePast(
-      NamedAPIResource.fromJson(json['generation'] as Map<String, dynamic>),
+      NamedApiResource.fromJson(json['generation'] as Map<String, dynamic>),
       (json['types'] as List<dynamic>)
           .map((e) => PokemonType.fromJson(e as Map<String, dynamic>))
           .toList(),
@@ -420,7 +420,7 @@ Map<String, dynamic> _$$_PokemonTypePastToJson(_$_PokemonTypePast instance) =>
 
 _$_PokemonHeldItem _$$_PokemonHeldItemFromJson(Map<String, dynamic> json) =>
     _$_PokemonHeldItem(
-      NamedAPIResource.fromJson(json['item'] as Map<String, dynamic>),
+      NamedApiResource.fromJson(json['item'] as Map<String, dynamic>),
       (json['version_details'] as List<dynamic>)
           .map(
               (e) => PokemonHeldItemVersion.fromJson(e as Map<String, dynamic>))
@@ -436,7 +436,7 @@ Map<String, dynamic> _$$_PokemonHeldItemToJson(_$_PokemonHeldItem instance) =>
 _$_PokemonHeldItemVersion _$$_PokemonHeldItemVersionFromJson(
         Map<String, dynamic> json) =>
     _$_PokemonHeldItemVersion(
-      NamedAPIResource.fromJson(json['version'] as Map<String, dynamic>),
+      NamedApiResource.fromJson(json['version'] as Map<String, dynamic>),
       json['rarity'] as int,
     );
 
@@ -449,7 +449,7 @@ Map<String, dynamic> _$$_PokemonHeldItemVersionToJson(
 
 _$_PokemonMove _$$_PokemonMoveFromJson(Map<String, dynamic> json) =>
     _$_PokemonMove(
-      NamedAPIResource.fromJson(json['move'] as Map<String, dynamic>),
+      NamedApiResource.fromJson(json['move'] as Map<String, dynamic>),
       (json['version_group_details'] as List<dynamic>)
           .map((e) => PokemonMoveVersion.fromJson(e as Map<String, dynamic>))
           .toList(),
@@ -464,9 +464,9 @@ Map<String, dynamic> _$$_PokemonMoveToJson(_$_PokemonMove instance) =>
 _$_PokemonMoveVersion _$$_PokemonMoveVersionFromJson(
         Map<String, dynamic> json) =>
     _$_PokemonMoveVersion(
-      NamedAPIResource.fromJson(
+      NamedApiResource.fromJson(
           json['move_learn_method'] as Map<String, dynamic>),
-      NamedAPIResource.fromJson(json['version_group'] as Map<String, dynamic>),
+      NamedApiResource.fromJson(json['version_group'] as Map<String, dynamic>),
       json['level_learned_at'] as int,
     );
 
@@ -480,7 +480,7 @@ Map<String, dynamic> _$$_PokemonMoveVersionToJson(
 
 _$_PokemonStat _$$_PokemonStatFromJson(Map<String, dynamic> json) =>
     _$_PokemonStat(
-      NamedAPIResource.fromJson(json['stat'] as Map<String, dynamic>),
+      NamedApiResource.fromJson(json['stat'] as Map<String, dynamic>),
       json['effort'] as int,
       json['base_stat'] as int,
     );
@@ -519,7 +519,7 @@ Map<String, dynamic> _$$_PokemonSpritesToJson(_$_PokemonSprites instance) =>
 _$_PokemonLocationAreas _$$_PokemonLocationAreasFromJson(
         Map<String, dynamic> json) =>
     _$_PokemonLocationAreas(
-      NamedAPIResource.fromJson(json['location_area'] as Map<String, dynamic>),
+      NamedApiResource.fromJson(json['location_area'] as Map<String, dynamic>),
       (json['version_details'] as List<dynamic>)
           .map(
               (e) => VersionEncounterDetail.fromJson(e as Map<String, dynamic>))
@@ -541,7 +541,7 @@ _$_PokemonColor _$$_PokemonColorFromJson(Map<String, dynamic> json) =>
           .map((e) => Name.fromJson(e as Map<String, dynamic>))
           .toList(),
       (json['pokemon_species'] as List<dynamic>)
-          .map((e) => NamedAPIResource.fromJson(e as Map<String, dynamic>))
+          .map((e) => NamedApiResource.fromJson(e as Map<String, dynamic>))
           .toList(),
     );
 
@@ -563,10 +563,10 @@ _$_PokemonForm _$$_PokemonFormFromJson(Map<String, dynamic> json) =>
       json['is_battle_only'] as bool,
       json['is_mega'] as bool,
       json['form_name'] as String,
-      NamedAPIResource.fromJson(json['pokemon'] as Map<String, dynamic>),
-      NamedAPIResource.fromJson(json['types'] as Map<String, dynamic>),
+      NamedApiResource.fromJson(json['pokemon'] as Map<String, dynamic>),
+      NamedApiResource.fromJson(json['types'] as Map<String, dynamic>),
       PokemonFormSprites.fromJson(json['sprites'] as Map<String, dynamic>),
-      NamedAPIResource.fromJson(json['version_group'] as Map<String, dynamic>),
+      NamedApiResource.fromJson(json['version_group'] as Map<String, dynamic>),
       (json['names'] as List<dynamic>)
           .map((e) => Name.fromJson(e as Map<String, dynamic>))
           .toList(),
@@ -619,7 +619,7 @@ _$_PokemonHabitat _$$_PokemonHabitatFromJson(Map<String, dynamic> json) =>
           .map((e) => Name.fromJson(e as Map<String, dynamic>))
           .toList(),
       (json['pokemon_species'] as List<dynamic>)
-          .map((e) => NamedAPIResource.fromJson(e as Map<String, dynamic>))
+          .map((e) => NamedApiResource.fromJson(e as Map<String, dynamic>))
           .toList(),
     );
 
@@ -642,7 +642,7 @@ _$_PokemonShape _$$_PokemonShapeFromJson(Map<String, dynamic> json) =>
           .map((e) => Name.fromJson(e as Map<String, dynamic>))
           .toList(),
       (json['pokemon_species'] as List<dynamic>)
-          .map((e) => NamedAPIResource.fromJson(e as Map<String, dynamic>))
+          .map((e) => NamedApiResource.fromJson(e as Map<String, dynamic>))
           .toList(),
     );
 
@@ -658,7 +658,7 @@ Map<String, dynamic> _$$_PokemonShapeToJson(_$_PokemonShape instance) =>
 _$_AwesomeName _$$_AwesomeNameFromJson(Map<String, dynamic> json) =>
     _$_AwesomeName(
       json['awesome_name'] as String,
-      NamedAPIResource.fromJson(json['language'] as Map<String, dynamic>),
+      NamedApiResource.fromJson(json['language'] as Map<String, dynamic>),
     );
 
 Map<String, dynamic> _$$_AwesomeNameToJson(_$_AwesomeName instance) =>
@@ -681,22 +681,22 @@ _$_PokemonSpecies _$$_PokemonSpeciesFromJson(Map<String, dynamic> json) =>
       json['hatch_counter'] as int,
       json['has_gender_differences'] as bool,
       json['forms_switchable'] as bool,
-      NamedAPIResource.fromJson(json['growth_rate'] as Map<String, dynamic>),
+      NamedApiResource.fromJson(json['growth_rate'] as Map<String, dynamic>),
       (json['pokedex_numbers'] as List<dynamic>)
           .map(
               (e) => PokemonSpeciesDexEntry.fromJson(e as Map<String, dynamic>))
           .toList(),
       (json['egg_groups'] as List<dynamic>)
-          .map((e) => NamedAPIResource.fromJson(e as Map<String, dynamic>))
+          .map((e) => NamedApiResource.fromJson(e as Map<String, dynamic>))
           .toList(),
-      NamedAPIResource.fromJson(json['color'] as Map<String, dynamic>),
-      NamedAPIResource.fromJson(json['shape'] as Map<String, dynamic>),
+      NamedApiResource.fromJson(json['color'] as Map<String, dynamic>),
+      NamedApiResource.fromJson(json['shape'] as Map<String, dynamic>),
       (json['evolves_from_species'] as List<dynamic>)
-          .map((e) => NamedAPIResource.fromJson(e as Map<String, dynamic>))
+          .map((e) => NamedApiResource.fromJson(e as Map<String, dynamic>))
           .toList(),
-      APIResource.fromJson(json['evolution_chain'] as Map<String, dynamic>),
-      NamedAPIResource.fromJson(json['habitat'] as Map<String, dynamic>),
-      NamedAPIResource.fromJson(json['generation'] as Map<String, dynamic>),
+      ApiResource.fromJson(json['evolution_chain'] as Map<String, dynamic>),
+      NamedApiResource.fromJson(json['habitat'] as Map<String, dynamic>),
+      NamedApiResource.fromJson(json['generation'] as Map<String, dynamic>),
       (json['names'] as List<dynamic>)
           .map((e) => Name.fromJson(e as Map<String, dynamic>))
           .toList(),
@@ -750,7 +750,7 @@ Map<String, dynamic> _$$_PokemonSpeciesToJson(_$_PokemonSpecies instance) =>
 
 _$_Genus _$$_GenusFromJson(Map<String, dynamic> json) => _$_Genus(
       json['genus'] as String,
-      NamedAPIResource.fromJson(json['language'] as Map<String, dynamic>),
+      NamedApiResource.fromJson(json['language'] as Map<String, dynamic>),
     );
 
 Map<String, dynamic> _$$_GenusToJson(_$_Genus instance) => <String, dynamic>{
@@ -762,7 +762,7 @@ _$_PokemonSpeciesDexEntry _$$_PokemonSpeciesDexEntryFromJson(
         Map<String, dynamic> json) =>
     _$_PokemonSpeciesDexEntry(
       json['entry_number'] as int,
-      NamedAPIResource.fromJson(json['pokedex'] as Map<String, dynamic>),
+      NamedApiResource.fromJson(json['pokedex'] as Map<String, dynamic>),
     );
 
 Map<String, dynamic> _$$_PokemonSpeciesDexEntryToJson(
@@ -777,7 +777,7 @@ _$_PalParkEncounterArea _$$_PalParkEncounterAreaFromJson(
     _$_PalParkEncounterArea(
       json['base_score'] as int,
       json['rate'] as int,
-      NamedAPIResource.fromJson(json['area'] as Map<String, dynamic>),
+      NamedApiResource.fromJson(json['area'] as Map<String, dynamic>),
     );
 
 Map<String, dynamic> _$$_PalParkEncounterAreaToJson(
@@ -792,7 +792,7 @@ _$_PokemonSpeciesVariety _$$_PokemonSpeciesVarietyFromJson(
         Map<String, dynamic> json) =>
     _$_PokemonSpeciesVariety(
       json['is_default'] as bool,
-      NamedAPIResource.fromJson(json['pokemon'] as Map<String, dynamic>),
+      NamedApiResource.fromJson(json['pokemon'] as Map<String, dynamic>),
     );
 
 Map<String, dynamic> _$$_PokemonSpeciesVarietyToJson(
@@ -812,9 +812,9 @@ _$_Stat _$$_StatFromJson(Map<String, dynamic> json) => _$_Stat(
       NatureStatAffectSets.fromJson(
           json['affecting_natures'] as Map<String, dynamic>),
       (json['characteristics'] as List<dynamic>)
-          .map((e) => APIResource.fromJson(e as Map<String, dynamic>))
+          .map((e) => ApiResource.fromJson(e as Map<String, dynamic>))
           .toList(),
-      NamedAPIResource.fromJson(
+      NamedApiResource.fromJson(
           json['move_damage_class'] as Map<String, dynamic>),
       (json['names'] as List<dynamic>)
           .map((e) => Name.fromJson(e as Map<String, dynamic>))
@@ -854,7 +854,7 @@ Map<String, dynamic> _$$_MoveStatAffectSetsToJson(
 _$_MoveStatAffect _$$_MoveStatAffectFromJson(Map<String, dynamic> json) =>
     _$_MoveStatAffect(
       json['change'] as int,
-      NamedAPIResource.fromJson(json['move'] as Map<String, dynamic>),
+      NamedApiResource.fromJson(json['move'] as Map<String, dynamic>),
     );
 
 Map<String, dynamic> _$$_MoveStatAffectToJson(_$_MoveStatAffect instance) =>
@@ -867,10 +867,10 @@ _$_NatureStatAffectSets _$$_NatureStatAffectSetsFromJson(
         Map<String, dynamic> json) =>
     _$_NatureStatAffectSets(
       (json['increase'] as List<dynamic>)
-          .map((e) => NamedAPIResource.fromJson(e as Map<String, dynamic>))
+          .map((e) => NamedApiResource.fromJson(e as Map<String, dynamic>))
           .toList(),
       (json['decrease'] as List<dynamic>)
-          .map((e) => NamedAPIResource.fromJson(e as Map<String, dynamic>))
+          .map((e) => NamedApiResource.fromJson(e as Map<String, dynamic>))
           .toList(),
     );
 
@@ -891,8 +891,8 @@ _$_Type _$$_TypeFromJson(Map<String, dynamic> json) => _$_Type(
       (json['game_indices'] as List<dynamic>)
           .map((e) => GenerationGameIndex.fromJson(e as Map<String, dynamic>))
           .toList(),
-      NamedAPIResource.fromJson(json['generation'] as Map<String, dynamic>),
-      NamedAPIResource.fromJson(
+      NamedApiResource.fromJson(json['generation'] as Map<String, dynamic>),
+      NamedApiResource.fromJson(
           json['move_damage_class'] as Map<String, dynamic>),
       (json['names'] as List<dynamic>)
           .map((e) => Name.fromJson(e as Map<String, dynamic>))
@@ -901,7 +901,7 @@ _$_Type _$$_TypeFromJson(Map<String, dynamic> json) => _$_Type(
           .map((e) => TypePokemon.fromJson(e as Map<String, dynamic>))
           .toList(),
       (json['moves'] as List<dynamic>)
-          .map((e) => NamedAPIResource.fromJson(e as Map<String, dynamic>))
+          .map((e) => NamedApiResource.fromJson(e as Map<String, dynamic>))
           .toList(),
     );
 
@@ -921,7 +921,7 @@ Map<String, dynamic> _$$_TypeToJson(_$_Type instance) => <String, dynamic>{
 _$_TypePokemon _$$_TypePokemonFromJson(Map<String, dynamic> json) =>
     _$_TypePokemon(
       json['slot'] as int,
-      NamedAPIResource.fromJson(json['pokemon'] as Map<String, dynamic>),
+      NamedApiResource.fromJson(json['pokemon'] as Map<String, dynamic>),
     );
 
 Map<String, dynamic> _$$_TypePokemonToJson(_$_TypePokemon instance) =>
@@ -933,22 +933,22 @@ Map<String, dynamic> _$$_TypePokemonToJson(_$_TypePokemon instance) =>
 _$_TypeRelations _$$_TypeRelationsFromJson(Map<String, dynamic> json) =>
     _$_TypeRelations(
       (json['no_damage_to'] as List<dynamic>)
-          .map((e) => NamedAPIResource.fromJson(e as Map<String, dynamic>))
+          .map((e) => NamedApiResource.fromJson(e as Map<String, dynamic>))
           .toList(),
       (json['half_damage_to'] as List<dynamic>)
-          .map((e) => NamedAPIResource.fromJson(e as Map<String, dynamic>))
+          .map((e) => NamedApiResource.fromJson(e as Map<String, dynamic>))
           .toList(),
       (json['double_damage_to'] as List<dynamic>)
-          .map((e) => NamedAPIResource.fromJson(e as Map<String, dynamic>))
+          .map((e) => NamedApiResource.fromJson(e as Map<String, dynamic>))
           .toList(),
       (json['no_damage_from'] as List<dynamic>)
-          .map((e) => NamedAPIResource.fromJson(e as Map<String, dynamic>))
+          .map((e) => NamedApiResource.fromJson(e as Map<String, dynamic>))
           .toList(),
       (json['half_damage_from'] as List<dynamic>)
-          .map((e) => NamedAPIResource.fromJson(e as Map<String, dynamic>))
+          .map((e) => NamedApiResource.fromJson(e as Map<String, dynamic>))
           .toList(),
       (json['double_damage_from'] as List<dynamic>)
-          .map((e) => NamedAPIResource.fromJson(e as Map<String, dynamic>))
+          .map((e) => NamedApiResource.fromJson(e as Map<String, dynamic>))
           .toList(),
     );
 
@@ -964,7 +964,7 @@ Map<String, dynamic> _$$_TypeRelationsToJson(_$_TypeRelations instance) =>
 
 _$_TypeRelationsPast _$$_TypeRelationsPastFromJson(Map<String, dynamic> json) =>
     _$_TypeRelationsPast(
-      NamedAPIResource.fromJson(json['generation'] as Map<String, dynamic>),
+      NamedApiResource.fromJson(json['generation'] as Map<String, dynamic>),
       TypeRelations.fromJson(json['damage_relations'] as Map<String, dynamic>),
     );
 

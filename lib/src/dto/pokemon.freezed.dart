@@ -27,7 +27,7 @@ class _$AbilityTearOff {
       String name,
       @JsonKey(name: 'is_main_series')
           bool isMainSeries,
-      NamedAPIResource generation,
+      NamedApiResource generation,
       List<Name> names,
       @JsonKey(name: 'effect_entries')
           List<VerboseEffect> effectEntries,
@@ -63,7 +63,7 @@ mixin _$Ability {
   String get name => throw _privateConstructorUsedError;
   @JsonKey(name: 'is_main_series')
   bool get isMainSeries => throw _privateConstructorUsedError;
-  NamedAPIResource get generation => throw _privateConstructorUsedError;
+  NamedApiResource get generation => throw _privateConstructorUsedError;
   List<Name> get names => throw _privateConstructorUsedError;
   @JsonKey(name: 'effect_entries')
   List<VerboseEffect> get effectEntries => throw _privateConstructorUsedError;
@@ -89,7 +89,7 @@ abstract class $AbilityCopyWith<$Res> {
       String name,
       @JsonKey(name: 'is_main_series')
           bool isMainSeries,
-      NamedAPIResource generation,
+      NamedApiResource generation,
       List<Name> names,
       @JsonKey(name: 'effect_entries')
           List<VerboseEffect> effectEntries,
@@ -99,7 +99,7 @@ abstract class $AbilityCopyWith<$Res> {
           List<AbilityFlavorText> flavorTextEntries,
       List<AbilityPokemon> pokemon});
 
-  $NamedAPIResourceCopyWith<$Res> get generation;
+  $NamedApiResourceCopyWith<$Res> get generation;
 }
 
 /// @nodoc
@@ -138,7 +138,7 @@ class _$AbilityCopyWithImpl<$Res> implements $AbilityCopyWith<$Res> {
       generation: generation == freezed
           ? _value.generation
           : generation // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
       names: names == freezed
           ? _value.names
           : names // ignore: cast_nullable_to_non_nullable
@@ -163,8 +163,8 @@ class _$AbilityCopyWithImpl<$Res> implements $AbilityCopyWith<$Res> {
   }
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get generation {
-    return $NamedAPIResourceCopyWith<$Res>(_value.generation, (value) {
+  $NamedApiResourceCopyWith<$Res> get generation {
+    return $NamedApiResourceCopyWith<$Res>(_value.generation, (value) {
       return _then(_value.copyWith(generation: value));
     });
   }
@@ -180,7 +180,7 @@ abstract class _$AbilityCopyWith<$Res> implements $AbilityCopyWith<$Res> {
       String name,
       @JsonKey(name: 'is_main_series')
           bool isMainSeries,
-      NamedAPIResource generation,
+      NamedApiResource generation,
       List<Name> names,
       @JsonKey(name: 'effect_entries')
           List<VerboseEffect> effectEntries,
@@ -191,7 +191,7 @@ abstract class _$AbilityCopyWith<$Res> implements $AbilityCopyWith<$Res> {
       List<AbilityPokemon> pokemon});
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get generation;
+  $NamedApiResourceCopyWith<$Res> get generation;
 }
 
 /// @nodoc
@@ -231,7 +231,7 @@ class __$AbilityCopyWithImpl<$Res> extends _$AbilityCopyWithImpl<$Res>
       generation == freezed
           ? _value.generation
           : generation // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
       names == freezed
           ? _value.names
           : names // ignore: cast_nullable_to_non_nullable
@@ -281,7 +281,7 @@ class _$_Ability implements _Ability {
   @JsonKey(name: 'is_main_series')
   final bool isMainSeries;
   @override
-  final NamedAPIResource generation;
+  final NamedApiResource generation;
   @override
   final List<Name> names;
   @override
@@ -352,7 +352,7 @@ abstract class _Ability implements Ability {
       String name,
       @JsonKey(name: 'is_main_series')
           bool isMainSeries,
-      NamedAPIResource generation,
+      NamedApiResource generation,
       List<Name> names,
       @JsonKey(name: 'effect_entries')
           List<VerboseEffect> effectEntries,
@@ -372,7 +372,7 @@ abstract class _Ability implements Ability {
   @JsonKey(name: 'is_main_series')
   bool get isMainSeries;
   @override
-  NamedAPIResource get generation;
+  NamedApiResource get generation;
   @override
   List<Name> get names;
   @override
@@ -402,7 +402,7 @@ class _$AbilityEffectChangeTearOff {
 
   _AbilityEffectChange call(
       @JsonKey(name: 'effect_entries') List<Effect> effectEntries,
-      @JsonKey(name: 'version_group') NamedAPIResource versionGroup) {
+      @JsonKey(name: 'version_group') NamedApiResource versionGroup) {
     return _AbilityEffectChange(
       effectEntries,
       versionGroup,
@@ -422,7 +422,7 @@ mixin _$AbilityEffectChange {
   @JsonKey(name: 'effect_entries')
   List<Effect> get effectEntries => throw _privateConstructorUsedError;
   @JsonKey(name: 'version_group')
-  NamedAPIResource get versionGroup => throw _privateConstructorUsedError;
+  NamedApiResource get versionGroup => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -437,9 +437,9 @@ abstract class $AbilityEffectChangeCopyWith<$Res> {
       _$AbilityEffectChangeCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'effect_entries') List<Effect> effectEntries,
-      @JsonKey(name: 'version_group') NamedAPIResource versionGroup});
+      @JsonKey(name: 'version_group') NamedApiResource versionGroup});
 
-  $NamedAPIResourceCopyWith<$Res> get versionGroup;
+  $NamedApiResourceCopyWith<$Res> get versionGroup;
 }
 
 /// @nodoc
@@ -464,13 +464,13 @@ class _$AbilityEffectChangeCopyWithImpl<$Res>
       versionGroup: versionGroup == freezed
           ? _value.versionGroup
           : versionGroup // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
     ));
   }
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get versionGroup {
-    return $NamedAPIResourceCopyWith<$Res>(_value.versionGroup, (value) {
+  $NamedApiResourceCopyWith<$Res> get versionGroup {
+    return $NamedApiResourceCopyWith<$Res>(_value.versionGroup, (value) {
       return _then(_value.copyWith(versionGroup: value));
     });
   }
@@ -485,10 +485,10 @@ abstract class _$AbilityEffectChangeCopyWith<$Res>
   @override
   $Res call(
       {@JsonKey(name: 'effect_entries') List<Effect> effectEntries,
-      @JsonKey(name: 'version_group') NamedAPIResource versionGroup});
+      @JsonKey(name: 'version_group') NamedApiResource versionGroup});
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get versionGroup;
+  $NamedApiResourceCopyWith<$Res> get versionGroup;
 }
 
 /// @nodoc
@@ -515,7 +515,7 @@ class __$AbilityEffectChangeCopyWithImpl<$Res>
       versionGroup == freezed
           ? _value.versionGroup
           : versionGroup // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
     ));
   }
 }
@@ -535,7 +535,7 @@ class _$_AbilityEffectChange implements _AbilityEffectChange {
   final List<Effect> effectEntries;
   @override
   @JsonKey(name: 'version_group')
-  final NamedAPIResource versionGroup;
+  final NamedApiResource versionGroup;
 
   @override
   String toString() {
@@ -574,7 +574,7 @@ class _$_AbilityEffectChange implements _AbilityEffectChange {
 abstract class _AbilityEffectChange implements AbilityEffectChange {
   const factory _AbilityEffectChange(
           @JsonKey(name: 'effect_entries') List<Effect> effectEntries,
-          @JsonKey(name: 'version_group') NamedAPIResource versionGroup) =
+          @JsonKey(name: 'version_group') NamedApiResource versionGroup) =
       _$_AbilityEffectChange;
 
   factory _AbilityEffectChange.fromJson(Map<String, dynamic> json) =
@@ -585,7 +585,7 @@ abstract class _AbilityEffectChange implements AbilityEffectChange {
   List<Effect> get effectEntries;
   @override
   @JsonKey(name: 'version_group')
-  NamedAPIResource get versionGroup;
+  NamedApiResource get versionGroup;
   @override
   @JsonKey(ignore: true)
   _$AbilityEffectChangeCopyWith<_AbilityEffectChange> get copyWith =>
@@ -602,8 +602,8 @@ class _$AbilityFlavorTextTearOff {
 
   _AbilityFlavorText call(
       @JsonKey(name: 'flavor_text') String flavorText,
-      NamedAPIResource language,
-      @JsonKey(name: 'version_group') NamedAPIResource versionGroup) {
+      NamedApiResource language,
+      @JsonKey(name: 'version_group') NamedApiResource versionGroup) {
     return _AbilityFlavorText(
       flavorText,
       language,
@@ -623,9 +623,9 @@ const $AbilityFlavorText = _$AbilityFlavorTextTearOff();
 mixin _$AbilityFlavorText {
   @JsonKey(name: 'flavor_text')
   String get flavorText => throw _privateConstructorUsedError;
-  NamedAPIResource get language => throw _privateConstructorUsedError;
+  NamedApiResource get language => throw _privateConstructorUsedError;
   @JsonKey(name: 'version_group')
-  NamedAPIResource get versionGroup => throw _privateConstructorUsedError;
+  NamedApiResource get versionGroup => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -640,11 +640,11 @@ abstract class $AbilityFlavorTextCopyWith<$Res> {
       _$AbilityFlavorTextCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'flavor_text') String flavorText,
-      NamedAPIResource language,
-      @JsonKey(name: 'version_group') NamedAPIResource versionGroup});
+      NamedApiResource language,
+      @JsonKey(name: 'version_group') NamedApiResource versionGroup});
 
-  $NamedAPIResourceCopyWith<$Res> get language;
-  $NamedAPIResourceCopyWith<$Res> get versionGroup;
+  $NamedApiResourceCopyWith<$Res> get language;
+  $NamedApiResourceCopyWith<$Res> get versionGroup;
 }
 
 /// @nodoc
@@ -670,24 +670,24 @@ class _$AbilityFlavorTextCopyWithImpl<$Res>
       language: language == freezed
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
       versionGroup: versionGroup == freezed
           ? _value.versionGroup
           : versionGroup // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
     ));
   }
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get language {
-    return $NamedAPIResourceCopyWith<$Res>(_value.language, (value) {
+  $NamedApiResourceCopyWith<$Res> get language {
+    return $NamedApiResourceCopyWith<$Res>(_value.language, (value) {
       return _then(_value.copyWith(language: value));
     });
   }
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get versionGroup {
-    return $NamedAPIResourceCopyWith<$Res>(_value.versionGroup, (value) {
+  $NamedApiResourceCopyWith<$Res> get versionGroup {
+    return $NamedApiResourceCopyWith<$Res>(_value.versionGroup, (value) {
       return _then(_value.copyWith(versionGroup: value));
     });
   }
@@ -702,13 +702,13 @@ abstract class _$AbilityFlavorTextCopyWith<$Res>
   @override
   $Res call(
       {@JsonKey(name: 'flavor_text') String flavorText,
-      NamedAPIResource language,
-      @JsonKey(name: 'version_group') NamedAPIResource versionGroup});
+      NamedApiResource language,
+      @JsonKey(name: 'version_group') NamedApiResource versionGroup});
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get language;
+  $NamedApiResourceCopyWith<$Res> get language;
   @override
-  $NamedAPIResourceCopyWith<$Res> get versionGroup;
+  $NamedApiResourceCopyWith<$Res> get versionGroup;
 }
 
 /// @nodoc
@@ -736,11 +736,11 @@ class __$AbilityFlavorTextCopyWithImpl<$Res>
       language == freezed
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
       versionGroup == freezed
           ? _value.versionGroup
           : versionGroup // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
     ));
   }
 }
@@ -758,10 +758,10 @@ class _$_AbilityFlavorText implements _AbilityFlavorText {
   @JsonKey(name: 'flavor_text')
   final String flavorText;
   @override
-  final NamedAPIResource language;
+  final NamedApiResource language;
   @override
   @JsonKey(name: 'version_group')
-  final NamedAPIResource versionGroup;
+  final NamedApiResource versionGroup;
 
   @override
   String toString() {
@@ -801,8 +801,8 @@ class _$_AbilityFlavorText implements _AbilityFlavorText {
 abstract class _AbilityFlavorText implements AbilityFlavorText {
   const factory _AbilityFlavorText(
           @JsonKey(name: 'flavor_text') String flavorText,
-          NamedAPIResource language,
-          @JsonKey(name: 'version_group') NamedAPIResource versionGroup) =
+          NamedApiResource language,
+          @JsonKey(name: 'version_group') NamedApiResource versionGroup) =
       _$_AbilityFlavorText;
 
   factory _AbilityFlavorText.fromJson(Map<String, dynamic> json) =
@@ -812,10 +812,10 @@ abstract class _AbilityFlavorText implements AbilityFlavorText {
   @JsonKey(name: 'flavor_text')
   String get flavorText;
   @override
-  NamedAPIResource get language;
+  NamedApiResource get language;
   @override
   @JsonKey(name: 'version_group')
-  NamedAPIResource get versionGroup;
+  NamedApiResource get versionGroup;
   @override
   @JsonKey(ignore: true)
   _$AbilityFlavorTextCopyWith<_AbilityFlavorText> get copyWith =>
@@ -831,7 +831,7 @@ class _$AbilityPokemonTearOff {
   const _$AbilityPokemonTearOff();
 
   _AbilityPokemon call(@JsonKey(name: 'is_hidden') bool isHidden, int slot,
-      NamedAPIResource pokemon) {
+      NamedApiResource pokemon) {
     return _AbilityPokemon(
       isHidden,
       slot,
@@ -852,7 +852,7 @@ mixin _$AbilityPokemon {
   @JsonKey(name: 'is_hidden')
   bool get isHidden => throw _privateConstructorUsedError;
   int get slot => throw _privateConstructorUsedError;
-  NamedAPIResource get pokemon => throw _privateConstructorUsedError;
+  NamedApiResource get pokemon => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -868,9 +868,9 @@ abstract class $AbilityPokemonCopyWith<$Res> {
   $Res call(
       {@JsonKey(name: 'is_hidden') bool isHidden,
       int slot,
-      NamedAPIResource pokemon});
+      NamedApiResource pokemon});
 
-  $NamedAPIResourceCopyWith<$Res> get pokemon;
+  $NamedApiResourceCopyWith<$Res> get pokemon;
 }
 
 /// @nodoc
@@ -900,13 +900,13 @@ class _$AbilityPokemonCopyWithImpl<$Res>
       pokemon: pokemon == freezed
           ? _value.pokemon
           : pokemon // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
     ));
   }
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get pokemon {
-    return $NamedAPIResourceCopyWith<$Res>(_value.pokemon, (value) {
+  $NamedApiResourceCopyWith<$Res> get pokemon {
+    return $NamedApiResourceCopyWith<$Res>(_value.pokemon, (value) {
       return _then(_value.copyWith(pokemon: value));
     });
   }
@@ -922,10 +922,10 @@ abstract class _$AbilityPokemonCopyWith<$Res>
   $Res call(
       {@JsonKey(name: 'is_hidden') bool isHidden,
       int slot,
-      NamedAPIResource pokemon});
+      NamedApiResource pokemon});
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get pokemon;
+  $NamedApiResourceCopyWith<$Res> get pokemon;
 }
 
 /// @nodoc
@@ -957,7 +957,7 @@ class __$AbilityPokemonCopyWithImpl<$Res>
       pokemon == freezed
           ? _value.pokemon
           : pokemon // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
     ));
   }
 }
@@ -977,7 +977,7 @@ class _$_AbilityPokemon implements _AbilityPokemon {
   @override
   final int slot;
   @override
-  final NamedAPIResource pokemon;
+  final NamedApiResource pokemon;
 
   @override
   String toString() {
@@ -1014,7 +1014,7 @@ class _$_AbilityPokemon implements _AbilityPokemon {
 
 abstract class _AbilityPokemon implements AbilityPokemon {
   const factory _AbilityPokemon(@JsonKey(name: 'is_hidden') bool isHidden,
-      int slot, NamedAPIResource pokemon) = _$_AbilityPokemon;
+      int slot, NamedApiResource pokemon) = _$_AbilityPokemon;
 
   factory _AbilityPokemon.fromJson(Map<String, dynamic> json) =
       _$_AbilityPokemon.fromJson;
@@ -1025,7 +1025,7 @@ abstract class _AbilityPokemon implements AbilityPokemon {
   @override
   int get slot;
   @override
-  NamedAPIResource get pokemon;
+  NamedApiResource get pokemon;
   @override
   @JsonKey(ignore: true)
   _$AbilityPokemonCopyWith<_AbilityPokemon> get copyWith =>
@@ -1249,7 +1249,7 @@ class _$EggGroupTearOff {
   const _$EggGroupTearOff();
 
   _EggGroup call(int id, String name, List<Name> names,
-      @JsonKey(name: 'pokemon_species') List<NamedAPIResource> pokemonSpecies) {
+      @JsonKey(name: 'pokemon_species') List<NamedApiResource> pokemonSpecies) {
     return _EggGroup(
       id,
       name,
@@ -1272,7 +1272,7 @@ mixin _$EggGroup {
   String get name => throw _privateConstructorUsedError;
   List<Name> get names => throw _privateConstructorUsedError;
   @JsonKey(name: 'pokemon_species')
-  List<NamedAPIResource> get pokemonSpecies =>
+  List<NamedApiResource> get pokemonSpecies =>
       throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -1289,7 +1289,7 @@ abstract class $EggGroupCopyWith<$Res> {
       {int id,
       String name,
       List<Name> names,
-      @JsonKey(name: 'pokemon_species') List<NamedAPIResource> pokemonSpecies});
+      @JsonKey(name: 'pokemon_species') List<NamedApiResource> pokemonSpecies});
 }
 
 /// @nodoc
@@ -1323,7 +1323,7 @@ class _$EggGroupCopyWithImpl<$Res> implements $EggGroupCopyWith<$Res> {
       pokemonSpecies: pokemonSpecies == freezed
           ? _value.pokemonSpecies
           : pokemonSpecies // ignore: cast_nullable_to_non_nullable
-              as List<NamedAPIResource>,
+              as List<NamedApiResource>,
     ));
   }
 }
@@ -1337,7 +1337,7 @@ abstract class _$EggGroupCopyWith<$Res> implements $EggGroupCopyWith<$Res> {
       {int id,
       String name,
       List<Name> names,
-      @JsonKey(name: 'pokemon_species') List<NamedAPIResource> pokemonSpecies});
+      @JsonKey(name: 'pokemon_species') List<NamedApiResource> pokemonSpecies});
 }
 
 /// @nodoc
@@ -1372,7 +1372,7 @@ class __$EggGroupCopyWithImpl<$Res> extends _$EggGroupCopyWithImpl<$Res>
       pokemonSpecies == freezed
           ? _value.pokemonSpecies
           : pokemonSpecies // ignore: cast_nullable_to_non_nullable
-              as List<NamedAPIResource>,
+              as List<NamedApiResource>,
     ));
   }
 }
@@ -1394,7 +1394,7 @@ class _$_EggGroup implements _EggGroup {
   final List<Name> names;
   @override
   @JsonKey(name: 'pokemon_species')
-  final List<NamedAPIResource> pokemonSpecies;
+  final List<NamedApiResource> pokemonSpecies;
 
   @override
   String toString() {
@@ -1438,7 +1438,7 @@ abstract class _EggGroup implements EggGroup {
       String name,
       List<Name> names,
       @JsonKey(name: 'pokemon_species')
-          List<NamedAPIResource> pokemonSpecies) = _$_EggGroup;
+          List<NamedApiResource> pokemonSpecies) = _$_EggGroup;
 
   factory _EggGroup.fromJson(Map<String, dynamic> json) = _$_EggGroup.fromJson;
 
@@ -1450,7 +1450,7 @@ abstract class _EggGroup implements EggGroup {
   List<Name> get names;
   @override
   @JsonKey(name: 'pokemon_species')
-  List<NamedAPIResource> get pokemonSpecies;
+  List<NamedApiResource> get pokemonSpecies;
   @override
   @JsonKey(ignore: true)
   _$EggGroupCopyWith<_EggGroup> get copyWith =>
@@ -1471,7 +1471,7 @@ class _$GenderTearOff {
       @JsonKey(name: 'pokemon_species_details')
           List<PokemonSpeciesGender> pokemonSpeciesDetails,
       @JsonKey(name: 'required_for_evolution')
-          List<NamedAPIResource> requiredForEvolution) {
+          List<NamedApiResource> requiredForEvolution) {
     return _Gender(
       id,
       name,
@@ -1496,7 +1496,7 @@ mixin _$Gender {
   List<PokemonSpeciesGender> get pokemonSpeciesDetails =>
       throw _privateConstructorUsedError;
   @JsonKey(name: 'required_for_evolution')
-  List<NamedAPIResource> get requiredForEvolution =>
+  List<NamedApiResource> get requiredForEvolution =>
       throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -1514,7 +1514,7 @@ abstract class $GenderCopyWith<$Res> {
       @JsonKey(name: 'pokemon_species_details')
           List<PokemonSpeciesGender> pokemonSpeciesDetails,
       @JsonKey(name: 'required_for_evolution')
-          List<NamedAPIResource> requiredForEvolution});
+          List<NamedApiResource> requiredForEvolution});
 }
 
 /// @nodoc
@@ -1548,7 +1548,7 @@ class _$GenderCopyWithImpl<$Res> implements $GenderCopyWith<$Res> {
       requiredForEvolution: requiredForEvolution == freezed
           ? _value.requiredForEvolution
           : requiredForEvolution // ignore: cast_nullable_to_non_nullable
-              as List<NamedAPIResource>,
+              as List<NamedApiResource>,
     ));
   }
 }
@@ -1564,7 +1564,7 @@ abstract class _$GenderCopyWith<$Res> implements $GenderCopyWith<$Res> {
       @JsonKey(name: 'pokemon_species_details')
           List<PokemonSpeciesGender> pokemonSpeciesDetails,
       @JsonKey(name: 'required_for_evolution')
-          List<NamedAPIResource> requiredForEvolution});
+          List<NamedApiResource> requiredForEvolution});
 }
 
 /// @nodoc
@@ -1599,7 +1599,7 @@ class __$GenderCopyWithImpl<$Res> extends _$GenderCopyWithImpl<$Res>
       requiredForEvolution == freezed
           ? _value.requiredForEvolution
           : requiredForEvolution // ignore: cast_nullable_to_non_nullable
-              as List<NamedAPIResource>,
+              as List<NamedApiResource>,
     ));
   }
 }
@@ -1625,7 +1625,7 @@ class _$_Gender implements _Gender {
   final List<PokemonSpeciesGender> pokemonSpeciesDetails;
   @override
   @JsonKey(name: 'required_for_evolution')
-  final List<NamedAPIResource> requiredForEvolution;
+  final List<NamedApiResource> requiredForEvolution;
 
   @override
   String toString() {
@@ -1671,7 +1671,7 @@ abstract class _Gender implements Gender {
       @JsonKey(name: 'pokemon_species_details')
           List<PokemonSpeciesGender> pokemonSpeciesDetails,
       @JsonKey(name: 'required_for_evolution')
-          List<NamedAPIResource> requiredForEvolution) = _$_Gender;
+          List<NamedApiResource> requiredForEvolution) = _$_Gender;
 
   factory _Gender.fromJson(Map<String, dynamic> json) = _$_Gender.fromJson;
 
@@ -1684,7 +1684,7 @@ abstract class _Gender implements Gender {
   List<PokemonSpeciesGender> get pokemonSpeciesDetails;
   @override
   @JsonKey(name: 'required_for_evolution')
-  List<NamedAPIResource> get requiredForEvolution;
+  List<NamedApiResource> get requiredForEvolution;
   @override
   @JsonKey(ignore: true)
   _$GenderCopyWith<_Gender> get copyWith => throw _privateConstructorUsedError;
@@ -1699,7 +1699,7 @@ class _$PokemonSpeciesGenderTearOff {
   const _$PokemonSpeciesGenderTearOff();
 
   _PokemonSpeciesGender call(int rate,
-      @JsonKey(name: 'pokemon_species') NamedAPIResource pokemonSpecies) {
+      @JsonKey(name: 'pokemon_species') NamedApiResource pokemonSpecies) {
     return _PokemonSpeciesGender(
       rate,
       pokemonSpecies,
@@ -1718,7 +1718,7 @@ const $PokemonSpeciesGender = _$PokemonSpeciesGenderTearOff();
 mixin _$PokemonSpeciesGender {
   int get rate => throw _privateConstructorUsedError;
   @JsonKey(name: 'pokemon_species')
-  NamedAPIResource get pokemonSpecies => throw _privateConstructorUsedError;
+  NamedApiResource get pokemonSpecies => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -1733,9 +1733,9 @@ abstract class $PokemonSpeciesGenderCopyWith<$Res> {
       _$PokemonSpeciesGenderCopyWithImpl<$Res>;
   $Res call(
       {int rate,
-      @JsonKey(name: 'pokemon_species') NamedAPIResource pokemonSpecies});
+      @JsonKey(name: 'pokemon_species') NamedApiResource pokemonSpecies});
 
-  $NamedAPIResourceCopyWith<$Res> get pokemonSpecies;
+  $NamedApiResourceCopyWith<$Res> get pokemonSpecies;
 }
 
 /// @nodoc
@@ -1760,13 +1760,13 @@ class _$PokemonSpeciesGenderCopyWithImpl<$Res>
       pokemonSpecies: pokemonSpecies == freezed
           ? _value.pokemonSpecies
           : pokemonSpecies // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
     ));
   }
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get pokemonSpecies {
-    return $NamedAPIResourceCopyWith<$Res>(_value.pokemonSpecies, (value) {
+  $NamedApiResourceCopyWith<$Res> get pokemonSpecies {
+    return $NamedApiResourceCopyWith<$Res>(_value.pokemonSpecies, (value) {
       return _then(_value.copyWith(pokemonSpecies: value));
     });
   }
@@ -1781,10 +1781,10 @@ abstract class _$PokemonSpeciesGenderCopyWith<$Res>
   @override
   $Res call(
       {int rate,
-      @JsonKey(name: 'pokemon_species') NamedAPIResource pokemonSpecies});
+      @JsonKey(name: 'pokemon_species') NamedApiResource pokemonSpecies});
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get pokemonSpecies;
+  $NamedApiResourceCopyWith<$Res> get pokemonSpecies;
 }
 
 /// @nodoc
@@ -1811,7 +1811,7 @@ class __$PokemonSpeciesGenderCopyWithImpl<$Res>
       pokemonSpecies == freezed
           ? _value.pokemonSpecies
           : pokemonSpecies // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
     ));
   }
 }
@@ -1829,7 +1829,7 @@ class _$_PokemonSpeciesGender implements _PokemonSpeciesGender {
   final int rate;
   @override
   @JsonKey(name: 'pokemon_species')
-  final NamedAPIResource pokemonSpecies;
+  final NamedApiResource pokemonSpecies;
 
   @override
   String toString() {
@@ -1866,7 +1866,7 @@ class _$_PokemonSpeciesGender implements _PokemonSpeciesGender {
 
 abstract class _PokemonSpeciesGender implements PokemonSpeciesGender {
   const factory _PokemonSpeciesGender(int rate,
-          @JsonKey(name: 'pokemon_species') NamedAPIResource pokemonSpecies) =
+          @JsonKey(name: 'pokemon_species') NamedApiResource pokemonSpecies) =
       _$_PokemonSpeciesGender;
 
   factory _PokemonSpeciesGender.fromJson(Map<String, dynamic> json) =
@@ -1876,7 +1876,7 @@ abstract class _PokemonSpeciesGender implements PokemonSpeciesGender {
   int get rate;
   @override
   @JsonKey(name: 'pokemon_species')
-  NamedAPIResource get pokemonSpecies;
+  NamedApiResource get pokemonSpecies;
   @override
   @JsonKey(ignore: true)
   _$PokemonSpeciesGenderCopyWith<_PokemonSpeciesGender> get copyWith =>
@@ -1897,7 +1897,7 @@ class _$GrowthRateTearOff {
       String formula,
       List<Description> descriptions,
       List<GrowthRateExperienceLevel> levels,
-      @JsonKey(name: 'pokemon_species') List<NamedAPIResource> pokemonSpecies) {
+      @JsonKey(name: 'pokemon_species') List<NamedApiResource> pokemonSpecies) {
     return _GrowthRate(
       id,
       name,
@@ -1925,7 +1925,7 @@ mixin _$GrowthRate {
   List<GrowthRateExperienceLevel> get levels =>
       throw _privateConstructorUsedError;
   @JsonKey(name: 'pokemon_species')
-  List<NamedAPIResource> get pokemonSpecies =>
+  List<NamedApiResource> get pokemonSpecies =>
       throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -1945,7 +1945,7 @@ abstract class $GrowthRateCopyWith<$Res> {
       String formula,
       List<Description> descriptions,
       List<GrowthRateExperienceLevel> levels,
-      @JsonKey(name: 'pokemon_species') List<NamedAPIResource> pokemonSpecies});
+      @JsonKey(name: 'pokemon_species') List<NamedApiResource> pokemonSpecies});
 }
 
 /// @nodoc
@@ -1989,7 +1989,7 @@ class _$GrowthRateCopyWithImpl<$Res> implements $GrowthRateCopyWith<$Res> {
       pokemonSpecies: pokemonSpecies == freezed
           ? _value.pokemonSpecies
           : pokemonSpecies // ignore: cast_nullable_to_non_nullable
-              as List<NamedAPIResource>,
+              as List<NamedApiResource>,
     ));
   }
 }
@@ -2006,7 +2006,7 @@ abstract class _$GrowthRateCopyWith<$Res> implements $GrowthRateCopyWith<$Res> {
       String formula,
       List<Description> descriptions,
       List<GrowthRateExperienceLevel> levels,
-      @JsonKey(name: 'pokemon_species') List<NamedAPIResource> pokemonSpecies});
+      @JsonKey(name: 'pokemon_species') List<NamedApiResource> pokemonSpecies});
 }
 
 /// @nodoc
@@ -2052,7 +2052,7 @@ class __$GrowthRateCopyWithImpl<$Res> extends _$GrowthRateCopyWithImpl<$Res>
       pokemonSpecies == freezed
           ? _value.pokemonSpecies
           : pokemonSpecies // ignore: cast_nullable_to_non_nullable
-              as List<NamedAPIResource>,
+              as List<NamedApiResource>,
     ));
   }
 }
@@ -2078,7 +2078,7 @@ class _$_GrowthRate implements _GrowthRate {
   final List<GrowthRateExperienceLevel> levels;
   @override
   @JsonKey(name: 'pokemon_species')
-  final List<NamedAPIResource> pokemonSpecies;
+  final List<NamedApiResource> pokemonSpecies;
 
   @override
   String toString() {
@@ -2129,7 +2129,7 @@ abstract class _GrowthRate implements GrowthRate {
       List<Description> descriptions,
       List<GrowthRateExperienceLevel> levels,
       @JsonKey(name: 'pokemon_species')
-          List<NamedAPIResource> pokemonSpecies) = _$_GrowthRate;
+          List<NamedApiResource> pokemonSpecies) = _$_GrowthRate;
 
   factory _GrowthRate.fromJson(Map<String, dynamic> json) =
       _$_GrowthRate.fromJson;
@@ -2146,7 +2146,7 @@ abstract class _GrowthRate implements GrowthRate {
   List<GrowthRateExperienceLevel> get levels;
   @override
   @JsonKey(name: 'pokemon_species')
-  List<NamedAPIResource> get pokemonSpecies;
+  List<NamedApiResource> get pokemonSpecies;
   @override
   @JsonKey(ignore: true)
   _$GrowthRateCopyWith<_GrowthRate> get copyWith =>
@@ -2339,15 +2339,15 @@ class _$NatureTearOff {
       int id,
       String name,
       @JsonKey(name: 'decreased_stat')
-          NamedAPIResource decreasedStat,
+          NamedApiResource decreasedStat,
       @JsonKey(name: 'increased_stat')
-          NamedAPIResource increasedStat,
+          NamedApiResource increasedStat,
       @JsonKey(name: 'hates_flavor')
-          NamedAPIResource hatesFlavor,
+          NamedApiResource hatesFlavor,
       @JsonKey(name: 'likes_flavor')
-          NamedAPIResource likesFlavor,
+          NamedApiResource likesFlavor,
       @JsonKey(name: 'pokeathlon_stat_changes')
-          List<NamedAPIResource> pokeathlonStatChanges,
+          List<NamedApiResource> pokeathlonStatChanges,
       @JsonKey(name: 'move_battle_style_preferences')
           List<MoveBattleStylePreference> moveBattleStylePreferences,
       List<Name> names) {
@@ -2377,15 +2377,15 @@ mixin _$Nature {
   int get id => throw _privateConstructorUsedError;
   String get name => throw _privateConstructorUsedError;
   @JsonKey(name: 'decreased_stat')
-  NamedAPIResource get decreasedStat => throw _privateConstructorUsedError;
+  NamedApiResource get decreasedStat => throw _privateConstructorUsedError;
   @JsonKey(name: 'increased_stat')
-  NamedAPIResource get increasedStat => throw _privateConstructorUsedError;
+  NamedApiResource get increasedStat => throw _privateConstructorUsedError;
   @JsonKey(name: 'hates_flavor')
-  NamedAPIResource get hatesFlavor => throw _privateConstructorUsedError;
+  NamedApiResource get hatesFlavor => throw _privateConstructorUsedError;
   @JsonKey(name: 'likes_flavor')
-  NamedAPIResource get likesFlavor => throw _privateConstructorUsedError;
+  NamedApiResource get likesFlavor => throw _privateConstructorUsedError;
   @JsonKey(name: 'pokeathlon_stat_changes')
-  List<NamedAPIResource> get pokeathlonStatChanges =>
+  List<NamedApiResource> get pokeathlonStatChanges =>
       throw _privateConstructorUsedError;
   @JsonKey(name: 'move_battle_style_preferences')
   List<MoveBattleStylePreference> get moveBattleStylePreferences =>
@@ -2405,23 +2405,23 @@ abstract class $NatureCopyWith<$Res> {
       {int id,
       String name,
       @JsonKey(name: 'decreased_stat')
-          NamedAPIResource decreasedStat,
+          NamedApiResource decreasedStat,
       @JsonKey(name: 'increased_stat')
-          NamedAPIResource increasedStat,
+          NamedApiResource increasedStat,
       @JsonKey(name: 'hates_flavor')
-          NamedAPIResource hatesFlavor,
+          NamedApiResource hatesFlavor,
       @JsonKey(name: 'likes_flavor')
-          NamedAPIResource likesFlavor,
+          NamedApiResource likesFlavor,
       @JsonKey(name: 'pokeathlon_stat_changes')
-          List<NamedAPIResource> pokeathlonStatChanges,
+          List<NamedApiResource> pokeathlonStatChanges,
       @JsonKey(name: 'move_battle_style_preferences')
           List<MoveBattleStylePreference> moveBattleStylePreferences,
       List<Name> names});
 
-  $NamedAPIResourceCopyWith<$Res> get decreasedStat;
-  $NamedAPIResourceCopyWith<$Res> get increasedStat;
-  $NamedAPIResourceCopyWith<$Res> get hatesFlavor;
-  $NamedAPIResourceCopyWith<$Res> get likesFlavor;
+  $NamedApiResourceCopyWith<$Res> get decreasedStat;
+  $NamedApiResourceCopyWith<$Res> get increasedStat;
+  $NamedApiResourceCopyWith<$Res> get hatesFlavor;
+  $NamedApiResourceCopyWith<$Res> get likesFlavor;
 }
 
 /// @nodoc
@@ -2456,23 +2456,23 @@ class _$NatureCopyWithImpl<$Res> implements $NatureCopyWith<$Res> {
       decreasedStat: decreasedStat == freezed
           ? _value.decreasedStat
           : decreasedStat // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
       increasedStat: increasedStat == freezed
           ? _value.increasedStat
           : increasedStat // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
       hatesFlavor: hatesFlavor == freezed
           ? _value.hatesFlavor
           : hatesFlavor // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
       likesFlavor: likesFlavor == freezed
           ? _value.likesFlavor
           : likesFlavor // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
       pokeathlonStatChanges: pokeathlonStatChanges == freezed
           ? _value.pokeathlonStatChanges
           : pokeathlonStatChanges // ignore: cast_nullable_to_non_nullable
-              as List<NamedAPIResource>,
+              as List<NamedApiResource>,
       moveBattleStylePreferences: moveBattleStylePreferences == freezed
           ? _value.moveBattleStylePreferences
           : moveBattleStylePreferences // ignore: cast_nullable_to_non_nullable
@@ -2485,29 +2485,29 @@ class _$NatureCopyWithImpl<$Res> implements $NatureCopyWith<$Res> {
   }
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get decreasedStat {
-    return $NamedAPIResourceCopyWith<$Res>(_value.decreasedStat, (value) {
+  $NamedApiResourceCopyWith<$Res> get decreasedStat {
+    return $NamedApiResourceCopyWith<$Res>(_value.decreasedStat, (value) {
       return _then(_value.copyWith(decreasedStat: value));
     });
   }
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get increasedStat {
-    return $NamedAPIResourceCopyWith<$Res>(_value.increasedStat, (value) {
+  $NamedApiResourceCopyWith<$Res> get increasedStat {
+    return $NamedApiResourceCopyWith<$Res>(_value.increasedStat, (value) {
       return _then(_value.copyWith(increasedStat: value));
     });
   }
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get hatesFlavor {
-    return $NamedAPIResourceCopyWith<$Res>(_value.hatesFlavor, (value) {
+  $NamedApiResourceCopyWith<$Res> get hatesFlavor {
+    return $NamedApiResourceCopyWith<$Res>(_value.hatesFlavor, (value) {
       return _then(_value.copyWith(hatesFlavor: value));
     });
   }
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get likesFlavor {
-    return $NamedAPIResourceCopyWith<$Res>(_value.likesFlavor, (value) {
+  $NamedApiResourceCopyWith<$Res> get likesFlavor {
+    return $NamedApiResourceCopyWith<$Res>(_value.likesFlavor, (value) {
       return _then(_value.copyWith(likesFlavor: value));
     });
   }
@@ -2522,27 +2522,27 @@ abstract class _$NatureCopyWith<$Res> implements $NatureCopyWith<$Res> {
       {int id,
       String name,
       @JsonKey(name: 'decreased_stat')
-          NamedAPIResource decreasedStat,
+          NamedApiResource decreasedStat,
       @JsonKey(name: 'increased_stat')
-          NamedAPIResource increasedStat,
+          NamedApiResource increasedStat,
       @JsonKey(name: 'hates_flavor')
-          NamedAPIResource hatesFlavor,
+          NamedApiResource hatesFlavor,
       @JsonKey(name: 'likes_flavor')
-          NamedAPIResource likesFlavor,
+          NamedApiResource likesFlavor,
       @JsonKey(name: 'pokeathlon_stat_changes')
-          List<NamedAPIResource> pokeathlonStatChanges,
+          List<NamedApiResource> pokeathlonStatChanges,
       @JsonKey(name: 'move_battle_style_preferences')
           List<MoveBattleStylePreference> moveBattleStylePreferences,
       List<Name> names});
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get decreasedStat;
+  $NamedApiResourceCopyWith<$Res> get decreasedStat;
   @override
-  $NamedAPIResourceCopyWith<$Res> get increasedStat;
+  $NamedApiResourceCopyWith<$Res> get increasedStat;
   @override
-  $NamedAPIResourceCopyWith<$Res> get hatesFlavor;
+  $NamedApiResourceCopyWith<$Res> get hatesFlavor;
   @override
-  $NamedAPIResourceCopyWith<$Res> get likesFlavor;
+  $NamedApiResourceCopyWith<$Res> get likesFlavor;
 }
 
 /// @nodoc
@@ -2578,23 +2578,23 @@ class __$NatureCopyWithImpl<$Res> extends _$NatureCopyWithImpl<$Res>
       decreasedStat == freezed
           ? _value.decreasedStat
           : decreasedStat // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
       increasedStat == freezed
           ? _value.increasedStat
           : increasedStat // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
       hatesFlavor == freezed
           ? _value.hatesFlavor
           : hatesFlavor // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
       likesFlavor == freezed
           ? _value.likesFlavor
           : likesFlavor // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
       pokeathlonStatChanges == freezed
           ? _value.pokeathlonStatChanges
           : pokeathlonStatChanges // ignore: cast_nullable_to_non_nullable
-              as List<NamedAPIResource>,
+              as List<NamedApiResource>,
       moveBattleStylePreferences == freezed
           ? _value.moveBattleStylePreferences
           : moveBattleStylePreferences // ignore: cast_nullable_to_non_nullable
@@ -2636,19 +2636,19 @@ class _$_Nature implements _Nature {
   final String name;
   @override
   @JsonKey(name: 'decreased_stat')
-  final NamedAPIResource decreasedStat;
+  final NamedApiResource decreasedStat;
   @override
   @JsonKey(name: 'increased_stat')
-  final NamedAPIResource increasedStat;
+  final NamedApiResource increasedStat;
   @override
   @JsonKey(name: 'hates_flavor')
-  final NamedAPIResource hatesFlavor;
+  final NamedApiResource hatesFlavor;
   @override
   @JsonKey(name: 'likes_flavor')
-  final NamedAPIResource likesFlavor;
+  final NamedApiResource likesFlavor;
   @override
   @JsonKey(name: 'pokeathlon_stat_changes')
-  final List<NamedAPIResource> pokeathlonStatChanges;
+  final List<NamedApiResource> pokeathlonStatChanges;
   @override
   @JsonKey(name: 'move_battle_style_preferences')
   final List<MoveBattleStylePreference> moveBattleStylePreferences;
@@ -2711,15 +2711,15 @@ abstract class _Nature implements Nature {
       int id,
       String name,
       @JsonKey(name: 'decreased_stat')
-          NamedAPIResource decreasedStat,
+          NamedApiResource decreasedStat,
       @JsonKey(name: 'increased_stat')
-          NamedAPIResource increasedStat,
+          NamedApiResource increasedStat,
       @JsonKey(name: 'hates_flavor')
-          NamedAPIResource hatesFlavor,
+          NamedApiResource hatesFlavor,
       @JsonKey(name: 'likes_flavor')
-          NamedAPIResource likesFlavor,
+          NamedApiResource likesFlavor,
       @JsonKey(name: 'pokeathlon_stat_changes')
-          List<NamedAPIResource> pokeathlonStatChanges,
+          List<NamedApiResource> pokeathlonStatChanges,
       @JsonKey(name: 'move_battle_style_preferences')
           List<MoveBattleStylePreference> moveBattleStylePreferences,
       List<Name> names) = _$_Nature;
@@ -2732,19 +2732,19 @@ abstract class _Nature implements Nature {
   String get name;
   @override
   @JsonKey(name: 'decreased_stat')
-  NamedAPIResource get decreasedStat;
+  NamedApiResource get decreasedStat;
   @override
   @JsonKey(name: 'increased_stat')
-  NamedAPIResource get increasedStat;
+  NamedApiResource get increasedStat;
   @override
   @JsonKey(name: 'hates_flavor')
-  NamedAPIResource get hatesFlavor;
+  NamedApiResource get hatesFlavor;
   @override
   @JsonKey(name: 'likes_flavor')
-  NamedAPIResource get likesFlavor;
+  NamedApiResource get likesFlavor;
   @override
   @JsonKey(name: 'pokeathlon_stat_changes')
-  List<NamedAPIResource> get pokeathlonStatChanges;
+  List<NamedApiResource> get pokeathlonStatChanges;
   @override
   @JsonKey(name: 'move_battle_style_preferences')
   List<MoveBattleStylePreference> get moveBattleStylePreferences;
@@ -2764,7 +2764,7 @@ class _$NatureStatChangeTearOff {
   const _$NatureStatChangeTearOff();
 
   _NatureStatChange call(@JsonKey(name: 'max_change') int maxChange,
-      @JsonKey(name: 'pokeathlon_stat') NamedAPIResource pokeathlonStat) {
+      @JsonKey(name: 'pokeathlon_stat') NamedApiResource pokeathlonStat) {
     return _NatureStatChange(
       maxChange,
       pokeathlonStat,
@@ -2784,7 +2784,7 @@ mixin _$NatureStatChange {
   @JsonKey(name: 'max_change')
   int get maxChange => throw _privateConstructorUsedError;
   @JsonKey(name: 'pokeathlon_stat')
-  NamedAPIResource get pokeathlonStat => throw _privateConstructorUsedError;
+  NamedApiResource get pokeathlonStat => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -2799,9 +2799,9 @@ abstract class $NatureStatChangeCopyWith<$Res> {
       _$NatureStatChangeCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'max_change') int maxChange,
-      @JsonKey(name: 'pokeathlon_stat') NamedAPIResource pokeathlonStat});
+      @JsonKey(name: 'pokeathlon_stat') NamedApiResource pokeathlonStat});
 
-  $NamedAPIResourceCopyWith<$Res> get pokeathlonStat;
+  $NamedApiResourceCopyWith<$Res> get pokeathlonStat;
 }
 
 /// @nodoc
@@ -2826,13 +2826,13 @@ class _$NatureStatChangeCopyWithImpl<$Res>
       pokeathlonStat: pokeathlonStat == freezed
           ? _value.pokeathlonStat
           : pokeathlonStat // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
     ));
   }
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get pokeathlonStat {
-    return $NamedAPIResourceCopyWith<$Res>(_value.pokeathlonStat, (value) {
+  $NamedApiResourceCopyWith<$Res> get pokeathlonStat {
+    return $NamedApiResourceCopyWith<$Res>(_value.pokeathlonStat, (value) {
       return _then(_value.copyWith(pokeathlonStat: value));
     });
   }
@@ -2847,10 +2847,10 @@ abstract class _$NatureStatChangeCopyWith<$Res>
   @override
   $Res call(
       {@JsonKey(name: 'max_change') int maxChange,
-      @JsonKey(name: 'pokeathlon_stat') NamedAPIResource pokeathlonStat});
+      @JsonKey(name: 'pokeathlon_stat') NamedApiResource pokeathlonStat});
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get pokeathlonStat;
+  $NamedApiResourceCopyWith<$Res> get pokeathlonStat;
 }
 
 /// @nodoc
@@ -2877,7 +2877,7 @@ class __$NatureStatChangeCopyWithImpl<$Res>
       pokeathlonStat == freezed
           ? _value.pokeathlonStat
           : pokeathlonStat // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
     ));
   }
 }
@@ -2896,7 +2896,7 @@ class _$_NatureStatChange implements _NatureStatChange {
   final int maxChange;
   @override
   @JsonKey(name: 'pokeathlon_stat')
-  final NamedAPIResource pokeathlonStat;
+  final NamedApiResource pokeathlonStat;
 
   @override
   String toString() {
@@ -2932,7 +2932,7 @@ class _$_NatureStatChange implements _NatureStatChange {
 
 abstract class _NatureStatChange implements NatureStatChange {
   const factory _NatureStatChange(@JsonKey(name: 'max_change') int maxChange,
-          @JsonKey(name: 'pokeathlon_stat') NamedAPIResource pokeathlonStat) =
+          @JsonKey(name: 'pokeathlon_stat') NamedApiResource pokeathlonStat) =
       _$_NatureStatChange;
 
   factory _NatureStatChange.fromJson(Map<String, dynamic> json) =
@@ -2943,7 +2943,7 @@ abstract class _NatureStatChange implements NatureStatChange {
   int get maxChange;
   @override
   @JsonKey(name: 'pokeathlon_stat')
-  NamedAPIResource get pokeathlonStat;
+  NamedApiResource get pokeathlonStat;
   @override
   @JsonKey(ignore: true)
   _$NatureStatChangeCopyWith<_NatureStatChange> get copyWith =>
@@ -2962,7 +2962,7 @@ class _$MoveBattleStylePreferenceTearOff {
   _MoveBattleStylePreference call(
       @JsonKey(name: 'low_hp_preference') int lowHpPreference,
       @JsonKey(name: 'high_hp_preference') int highHpPreference,
-      @JsonKey(name: 'move_battle_style') NamedAPIResource moveBattleStyle) {
+      @JsonKey(name: 'move_battle_style') NamedApiResource moveBattleStyle) {
     return _MoveBattleStylePreference(
       lowHpPreference,
       highHpPreference,
@@ -2985,7 +2985,7 @@ mixin _$MoveBattleStylePreference {
   @JsonKey(name: 'high_hp_preference')
   int get highHpPreference => throw _privateConstructorUsedError;
   @JsonKey(name: 'move_battle_style')
-  NamedAPIResource get moveBattleStyle => throw _privateConstructorUsedError;
+  NamedApiResource get moveBattleStyle => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -3001,9 +3001,9 @@ abstract class $MoveBattleStylePreferenceCopyWith<$Res> {
   $Res call(
       {@JsonKey(name: 'low_hp_preference') int lowHpPreference,
       @JsonKey(name: 'high_hp_preference') int highHpPreference,
-      @JsonKey(name: 'move_battle_style') NamedAPIResource moveBattleStyle});
+      @JsonKey(name: 'move_battle_style') NamedApiResource moveBattleStyle});
 
-  $NamedAPIResourceCopyWith<$Res> get moveBattleStyle;
+  $NamedApiResourceCopyWith<$Res> get moveBattleStyle;
 }
 
 /// @nodoc
@@ -3033,13 +3033,13 @@ class _$MoveBattleStylePreferenceCopyWithImpl<$Res>
       moveBattleStyle: moveBattleStyle == freezed
           ? _value.moveBattleStyle
           : moveBattleStyle // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
     ));
   }
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get moveBattleStyle {
-    return $NamedAPIResourceCopyWith<$Res>(_value.moveBattleStyle, (value) {
+  $NamedApiResourceCopyWith<$Res> get moveBattleStyle {
+    return $NamedApiResourceCopyWith<$Res>(_value.moveBattleStyle, (value) {
       return _then(_value.copyWith(moveBattleStyle: value));
     });
   }
@@ -3055,10 +3055,10 @@ abstract class _$MoveBattleStylePreferenceCopyWith<$Res>
   $Res call(
       {@JsonKey(name: 'low_hp_preference') int lowHpPreference,
       @JsonKey(name: 'high_hp_preference') int highHpPreference,
-      @JsonKey(name: 'move_battle_style') NamedAPIResource moveBattleStyle});
+      @JsonKey(name: 'move_battle_style') NamedApiResource moveBattleStyle});
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get moveBattleStyle;
+  $NamedApiResourceCopyWith<$Res> get moveBattleStyle;
 }
 
 /// @nodoc
@@ -3091,7 +3091,7 @@ class __$MoveBattleStylePreferenceCopyWithImpl<$Res>
       moveBattleStyle == freezed
           ? _value.moveBattleStyle
           : moveBattleStyle // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
     ));
   }
 }
@@ -3115,7 +3115,7 @@ class _$_MoveBattleStylePreference implements _MoveBattleStylePreference {
   final int highHpPreference;
   @override
   @JsonKey(name: 'move_battle_style')
-  final NamedAPIResource moveBattleStyle;
+  final NamedApiResource moveBattleStyle;
 
   @override
   String toString() {
@@ -3162,7 +3162,7 @@ abstract class _MoveBattleStylePreference implements MoveBattleStylePreference {
       @JsonKey(name: 'high_hp_preference')
           int highHpPreference,
       @JsonKey(name: 'move_battle_style')
-          NamedAPIResource moveBattleStyle) = _$_MoveBattleStylePreference;
+          NamedApiResource moveBattleStyle) = _$_MoveBattleStylePreference;
 
   factory _MoveBattleStylePreference.fromJson(Map<String, dynamic> json) =
       _$_MoveBattleStylePreference.fromJson;
@@ -3175,7 +3175,7 @@ abstract class _MoveBattleStylePreference implements MoveBattleStylePreference {
   int get highHpPreference;
   @override
   @JsonKey(name: 'move_battle_style')
-  NamedAPIResource get moveBattleStyle;
+  NamedApiResource get moveBattleStyle;
   @override
   @JsonKey(ignore: true)
   _$MoveBattleStylePreferenceCopyWith<_MoveBattleStylePreference>
@@ -3624,7 +3624,7 @@ class _$NaturePokeathlonStatAffectTearOff {
   const _$NaturePokeathlonStatAffectTearOff();
 
   _NaturePokeathlonStatAffect call(
-      @JsonKey(name: 'max_change') int maxChange, NamedAPIResource nature) {
+      @JsonKey(name: 'max_change') int maxChange, NamedApiResource nature) {
     return _NaturePokeathlonStatAffect(
       maxChange,
       nature,
@@ -3643,7 +3643,7 @@ const $NaturePokeathlonStatAffect = _$NaturePokeathlonStatAffectTearOff();
 mixin _$NaturePokeathlonStatAffect {
   @JsonKey(name: 'max_change')
   int get maxChange => throw _privateConstructorUsedError;
-  NamedAPIResource get nature => throw _privateConstructorUsedError;
+  NamedApiResource get nature => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -3657,9 +3657,9 @@ abstract class $NaturePokeathlonStatAffectCopyWith<$Res> {
           $Res Function(NaturePokeathlonStatAffect) then) =
       _$NaturePokeathlonStatAffectCopyWithImpl<$Res>;
   $Res call(
-      {@JsonKey(name: 'max_change') int maxChange, NamedAPIResource nature});
+      {@JsonKey(name: 'max_change') int maxChange, NamedApiResource nature});
 
-  $NamedAPIResourceCopyWith<$Res> get nature;
+  $NamedApiResourceCopyWith<$Res> get nature;
 }
 
 /// @nodoc
@@ -3684,13 +3684,13 @@ class _$NaturePokeathlonStatAffectCopyWithImpl<$Res>
       nature: nature == freezed
           ? _value.nature
           : nature // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
     ));
   }
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get nature {
-    return $NamedAPIResourceCopyWith<$Res>(_value.nature, (value) {
+  $NamedApiResourceCopyWith<$Res> get nature {
+    return $NamedApiResourceCopyWith<$Res>(_value.nature, (value) {
       return _then(_value.copyWith(nature: value));
     });
   }
@@ -3705,10 +3705,10 @@ abstract class _$NaturePokeathlonStatAffectCopyWith<$Res>
       __$NaturePokeathlonStatAffectCopyWithImpl<$Res>;
   @override
   $Res call(
-      {@JsonKey(name: 'max_change') int maxChange, NamedAPIResource nature});
+      {@JsonKey(name: 'max_change') int maxChange, NamedApiResource nature});
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get nature;
+  $NamedApiResourceCopyWith<$Res> get nature;
 }
 
 /// @nodoc
@@ -3736,7 +3736,7 @@ class __$NaturePokeathlonStatAffectCopyWithImpl<$Res>
       nature == freezed
           ? _value.nature
           : nature // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
     ));
   }
 }
@@ -3754,7 +3754,7 @@ class _$_NaturePokeathlonStatAffect implements _NaturePokeathlonStatAffect {
   @JsonKey(name: 'max_change')
   final int maxChange;
   @override
-  final NamedAPIResource nature;
+  final NamedApiResource nature;
 
   @override
   String toString() {
@@ -3791,7 +3791,7 @@ class _$_NaturePokeathlonStatAffect implements _NaturePokeathlonStatAffect {
 abstract class _NaturePokeathlonStatAffect
     implements NaturePokeathlonStatAffect {
   const factory _NaturePokeathlonStatAffect(
-          @JsonKey(name: 'max_change') int maxChange, NamedAPIResource nature) =
+          @JsonKey(name: 'max_change') int maxChange, NamedApiResource nature) =
       _$_NaturePokeathlonStatAffect;
 
   factory _NaturePokeathlonStatAffect.fromJson(Map<String, dynamic> json) =
@@ -3801,7 +3801,7 @@ abstract class _NaturePokeathlonStatAffect
   @JsonKey(name: 'max_change')
   int get maxChange;
   @override
-  NamedAPIResource get nature;
+  NamedApiResource get nature;
   @override
   @JsonKey(ignore: true)
   _$NaturePokeathlonStatAffectCopyWith<_NaturePokeathlonStatAffect>
@@ -3825,14 +3825,14 @@ class _$PokemonTearOff {
       int order,
       int weight,
       List<PokemonAbility> abilities,
-      List<NamedAPIResource> forms,
+      List<NamedApiResource> forms,
       @JsonKey(name: 'game_indices') List<VersionGameIndex> gameIndices,
       @JsonKey(name: 'held_items') List<PokemonHeldItem> heldItems,
       @JsonKey(name: 'location_area_encounters') String locationAreaEncounters,
       List<PokemonMove> moves,
       @JsonKey(name: 'past_types') List<PokemonTypePast> pastTypes,
       PokemonSprites sprites,
-      NamedAPIResource species,
+      NamedApiResource species,
       List<PokemonStat> stats,
       List<PokemonType> types) {
     return _Pokemon(
@@ -3877,7 +3877,7 @@ mixin _$Pokemon {
   int get order => throw _privateConstructorUsedError;
   int get weight => throw _privateConstructorUsedError;
   List<PokemonAbility> get abilities => throw _privateConstructorUsedError;
-  List<NamedAPIResource> get forms => throw _privateConstructorUsedError;
+  List<NamedApiResource> get forms => throw _privateConstructorUsedError;
   @JsonKey(name: 'game_indices')
   List<VersionGameIndex> get gameIndices => throw _privateConstructorUsedError;
   @JsonKey(name: 'held_items')
@@ -3888,7 +3888,7 @@ mixin _$Pokemon {
   @JsonKey(name: 'past_types')
   List<PokemonTypePast> get pastTypes => throw _privateConstructorUsedError;
   PokemonSprites get sprites => throw _privateConstructorUsedError;
-  NamedAPIResource get species => throw _privateConstructorUsedError;
+  NamedApiResource get species => throw _privateConstructorUsedError;
   List<PokemonStat> get stats => throw _privateConstructorUsedError;
   List<PokemonType> get types => throw _privateConstructorUsedError;
 
@@ -3910,19 +3910,19 @@ abstract class $PokemonCopyWith<$Res> {
       int order,
       int weight,
       List<PokemonAbility> abilities,
-      List<NamedAPIResource> forms,
+      List<NamedApiResource> forms,
       @JsonKey(name: 'game_indices') List<VersionGameIndex> gameIndices,
       @JsonKey(name: 'held_items') List<PokemonHeldItem> heldItems,
       @JsonKey(name: 'location_area_encounters') String locationAreaEncounters,
       List<PokemonMove> moves,
       @JsonKey(name: 'past_types') List<PokemonTypePast> pastTypes,
       PokemonSprites sprites,
-      NamedAPIResource species,
+      NamedApiResource species,
       List<PokemonStat> stats,
       List<PokemonType> types});
 
   $PokemonSpritesCopyWith<$Res> get sprites;
-  $NamedAPIResourceCopyWith<$Res> get species;
+  $NamedApiResourceCopyWith<$Res> get species;
 }
 
 /// @nodoc
@@ -3990,7 +3990,7 @@ class _$PokemonCopyWithImpl<$Res> implements $PokemonCopyWith<$Res> {
       forms: forms == freezed
           ? _value.forms
           : forms // ignore: cast_nullable_to_non_nullable
-              as List<NamedAPIResource>,
+              as List<NamedApiResource>,
       gameIndices: gameIndices == freezed
           ? _value.gameIndices
           : gameIndices // ignore: cast_nullable_to_non_nullable
@@ -4018,7 +4018,7 @@ class _$PokemonCopyWithImpl<$Res> implements $PokemonCopyWith<$Res> {
       species: species == freezed
           ? _value.species
           : species // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
       stats: stats == freezed
           ? _value.stats
           : stats // ignore: cast_nullable_to_non_nullable
@@ -4038,8 +4038,8 @@ class _$PokemonCopyWithImpl<$Res> implements $PokemonCopyWith<$Res> {
   }
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get species {
-    return $NamedAPIResourceCopyWith<$Res>(_value.species, (value) {
+  $NamedApiResourceCopyWith<$Res> get species {
+    return $NamedApiResourceCopyWith<$Res>(_value.species, (value) {
       return _then(_value.copyWith(species: value));
     });
   }
@@ -4059,21 +4059,21 @@ abstract class _$PokemonCopyWith<$Res> implements $PokemonCopyWith<$Res> {
       int order,
       int weight,
       List<PokemonAbility> abilities,
-      List<NamedAPIResource> forms,
+      List<NamedApiResource> forms,
       @JsonKey(name: 'game_indices') List<VersionGameIndex> gameIndices,
       @JsonKey(name: 'held_items') List<PokemonHeldItem> heldItems,
       @JsonKey(name: 'location_area_encounters') String locationAreaEncounters,
       List<PokemonMove> moves,
       @JsonKey(name: 'past_types') List<PokemonTypePast> pastTypes,
       PokemonSprites sprites,
-      NamedAPIResource species,
+      NamedApiResource species,
       List<PokemonStat> stats,
       List<PokemonType> types});
 
   @override
   $PokemonSpritesCopyWith<$Res> get sprites;
   @override
-  $NamedAPIResourceCopyWith<$Res> get species;
+  $NamedApiResourceCopyWith<$Res> get species;
 }
 
 /// @nodoc
@@ -4142,7 +4142,7 @@ class __$PokemonCopyWithImpl<$Res> extends _$PokemonCopyWithImpl<$Res>
       forms == freezed
           ? _value.forms
           : forms // ignore: cast_nullable_to_non_nullable
-              as List<NamedAPIResource>,
+              as List<NamedApiResource>,
       gameIndices == freezed
           ? _value.gameIndices
           : gameIndices // ignore: cast_nullable_to_non_nullable
@@ -4170,7 +4170,7 @@ class __$PokemonCopyWithImpl<$Res> extends _$PokemonCopyWithImpl<$Res>
       species == freezed
           ? _value.species
           : species // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
       stats == freezed
           ? _value.stats
           : stats // ignore: cast_nullable_to_non_nullable
@@ -4228,7 +4228,7 @@ class _$_Pokemon implements _Pokemon {
   @override
   final List<PokemonAbility> abilities;
   @override
-  final List<NamedAPIResource> forms;
+  final List<NamedApiResource> forms;
   @override
   @JsonKey(name: 'game_indices')
   final List<VersionGameIndex> gameIndices;
@@ -4246,7 +4246,7 @@ class _$_Pokemon implements _Pokemon {
   @override
   final PokemonSprites sprites;
   @override
-  final NamedAPIResource species;
+  final NamedApiResource species;
   @override
   final List<PokemonStat> stats;
   @override
@@ -4328,14 +4328,14 @@ abstract class _Pokemon implements Pokemon {
       int order,
       int weight,
       List<PokemonAbility> abilities,
-      List<NamedAPIResource> forms,
+      List<NamedApiResource> forms,
       @JsonKey(name: 'game_indices') List<VersionGameIndex> gameIndices,
       @JsonKey(name: 'held_items') List<PokemonHeldItem> heldItems,
       @JsonKey(name: 'location_area_encounters') String locationAreaEncounters,
       List<PokemonMove> moves,
       @JsonKey(name: 'past_types') List<PokemonTypePast> pastTypes,
       PokemonSprites sprites,
-      NamedAPIResource species,
+      NamedApiResource species,
       List<PokemonStat> stats,
       List<PokemonType> types) = _$_Pokemon;
 
@@ -4360,7 +4360,7 @@ abstract class _Pokemon implements Pokemon {
   @override
   List<PokemonAbility> get abilities;
   @override
-  List<NamedAPIResource> get forms;
+  List<NamedApiResource> get forms;
   @override
   @JsonKey(name: 'game_indices')
   List<VersionGameIndex> get gameIndices;
@@ -4378,7 +4378,7 @@ abstract class _Pokemon implements Pokemon {
   @override
   PokemonSprites get sprites;
   @override
-  NamedAPIResource get species;
+  NamedApiResource get species;
   @override
   List<PokemonStat> get stats;
   @override
@@ -4398,7 +4398,7 @@ class _$PokemonAbilityTearOff {
   const _$PokemonAbilityTearOff();
 
   _PokemonAbility call(@JsonKey(name: 'is_hidden') bool isHidden, int slot,
-      NamedAPIResource ability) {
+      NamedApiResource ability) {
     return _PokemonAbility(
       isHidden,
       slot,
@@ -4419,7 +4419,7 @@ mixin _$PokemonAbility {
   @JsonKey(name: 'is_hidden')
   bool get isHidden => throw _privateConstructorUsedError;
   int get slot => throw _privateConstructorUsedError;
-  NamedAPIResource get ability => throw _privateConstructorUsedError;
+  NamedApiResource get ability => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -4435,9 +4435,9 @@ abstract class $PokemonAbilityCopyWith<$Res> {
   $Res call(
       {@JsonKey(name: 'is_hidden') bool isHidden,
       int slot,
-      NamedAPIResource ability});
+      NamedApiResource ability});
 
-  $NamedAPIResourceCopyWith<$Res> get ability;
+  $NamedApiResourceCopyWith<$Res> get ability;
 }
 
 /// @nodoc
@@ -4467,13 +4467,13 @@ class _$PokemonAbilityCopyWithImpl<$Res>
       ability: ability == freezed
           ? _value.ability
           : ability // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
     ));
   }
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get ability {
-    return $NamedAPIResourceCopyWith<$Res>(_value.ability, (value) {
+  $NamedApiResourceCopyWith<$Res> get ability {
+    return $NamedApiResourceCopyWith<$Res>(_value.ability, (value) {
       return _then(_value.copyWith(ability: value));
     });
   }
@@ -4489,10 +4489,10 @@ abstract class _$PokemonAbilityCopyWith<$Res>
   $Res call(
       {@JsonKey(name: 'is_hidden') bool isHidden,
       int slot,
-      NamedAPIResource ability});
+      NamedApiResource ability});
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get ability;
+  $NamedApiResourceCopyWith<$Res> get ability;
 }
 
 /// @nodoc
@@ -4524,7 +4524,7 @@ class __$PokemonAbilityCopyWithImpl<$Res>
       ability == freezed
           ? _value.ability
           : ability // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
     ));
   }
 }
@@ -4544,7 +4544,7 @@ class _$_PokemonAbility implements _PokemonAbility {
   @override
   final int slot;
   @override
-  final NamedAPIResource ability;
+  final NamedApiResource ability;
 
   @override
   String toString() {
@@ -4581,7 +4581,7 @@ class _$_PokemonAbility implements _PokemonAbility {
 
 abstract class _PokemonAbility implements PokemonAbility {
   const factory _PokemonAbility(@JsonKey(name: 'is_hidden') bool isHidden,
-      int slot, NamedAPIResource ability) = _$_PokemonAbility;
+      int slot, NamedApiResource ability) = _$_PokemonAbility;
 
   factory _PokemonAbility.fromJson(Map<String, dynamic> json) =
       _$_PokemonAbility.fromJson;
@@ -4592,7 +4592,7 @@ abstract class _PokemonAbility implements PokemonAbility {
   @override
   int get slot;
   @override
-  NamedAPIResource get ability;
+  NamedApiResource get ability;
   @override
   @JsonKey(ignore: true)
   _$PokemonAbilityCopyWith<_PokemonAbility> get copyWith =>
@@ -4607,7 +4607,7 @@ PokemonType _$PokemonTypeFromJson(Map<String, dynamic> json) {
 class _$PokemonTypeTearOff {
   const _$PokemonTypeTearOff();
 
-  _PokemonType call(int slot, NamedAPIResource type) {
+  _PokemonType call(int slot, NamedApiResource type) {
     return _PokemonType(
       slot,
       type,
@@ -4625,7 +4625,7 @@ const $PokemonType = _$PokemonTypeTearOff();
 /// @nodoc
 mixin _$PokemonType {
   int get slot => throw _privateConstructorUsedError;
-  NamedAPIResource get type => throw _privateConstructorUsedError;
+  NamedApiResource get type => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -4638,9 +4638,9 @@ abstract class $PokemonTypeCopyWith<$Res> {
   factory $PokemonTypeCopyWith(
           PokemonType value, $Res Function(PokemonType) then) =
       _$PokemonTypeCopyWithImpl<$Res>;
-  $Res call({int slot, NamedAPIResource type});
+  $Res call({int slot, NamedApiResource type});
 
-  $NamedAPIResourceCopyWith<$Res> get type;
+  $NamedApiResourceCopyWith<$Res> get type;
 }
 
 /// @nodoc
@@ -4664,13 +4664,13 @@ class _$PokemonTypeCopyWithImpl<$Res> implements $PokemonTypeCopyWith<$Res> {
       type: type == freezed
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
     ));
   }
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get type {
-    return $NamedAPIResourceCopyWith<$Res>(_value.type, (value) {
+  $NamedApiResourceCopyWith<$Res> get type {
+    return $NamedApiResourceCopyWith<$Res>(_value.type, (value) {
       return _then(_value.copyWith(type: value));
     });
   }
@@ -4683,10 +4683,10 @@ abstract class _$PokemonTypeCopyWith<$Res>
           _PokemonType value, $Res Function(_PokemonType) then) =
       __$PokemonTypeCopyWithImpl<$Res>;
   @override
-  $Res call({int slot, NamedAPIResource type});
+  $Res call({int slot, NamedApiResource type});
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get type;
+  $NamedApiResourceCopyWith<$Res> get type;
 }
 
 /// @nodoc
@@ -4712,7 +4712,7 @@ class __$PokemonTypeCopyWithImpl<$Res> extends _$PokemonTypeCopyWithImpl<$Res>
       type == freezed
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
     ));
   }
 }
@@ -4728,7 +4728,7 @@ class _$_PokemonType implements _PokemonType {
   @override
   final int slot;
   @override
-  final NamedAPIResource type;
+  final NamedApiResource type;
 
   @override
   String toString() {
@@ -4762,7 +4762,7 @@ class _$_PokemonType implements _PokemonType {
 }
 
 abstract class _PokemonType implements PokemonType {
-  const factory _PokemonType(int slot, NamedAPIResource type) = _$_PokemonType;
+  const factory _PokemonType(int slot, NamedApiResource type) = _$_PokemonType;
 
   factory _PokemonType.fromJson(Map<String, dynamic> json) =
       _$_PokemonType.fromJson;
@@ -4770,7 +4770,7 @@ abstract class _PokemonType implements PokemonType {
   @override
   int get slot;
   @override
-  NamedAPIResource get type;
+  NamedApiResource get type;
   @override
   @JsonKey(ignore: true)
   _$PokemonTypeCopyWith<_PokemonType> get copyWith =>
@@ -4785,7 +4785,7 @@ PokemonFormType _$PokemonFormTypeFromJson(Map<String, dynamic> json) {
 class _$PokemonFormTypeTearOff {
   const _$PokemonFormTypeTearOff();
 
-  _PokemonFormType call(int slot, NamedAPIResource type) {
+  _PokemonFormType call(int slot, NamedApiResource type) {
     return _PokemonFormType(
       slot,
       type,
@@ -4803,7 +4803,7 @@ const $PokemonFormType = _$PokemonFormTypeTearOff();
 /// @nodoc
 mixin _$PokemonFormType {
   int get slot => throw _privateConstructorUsedError;
-  NamedAPIResource get type => throw _privateConstructorUsedError;
+  NamedApiResource get type => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -4816,9 +4816,9 @@ abstract class $PokemonFormTypeCopyWith<$Res> {
   factory $PokemonFormTypeCopyWith(
           PokemonFormType value, $Res Function(PokemonFormType) then) =
       _$PokemonFormTypeCopyWithImpl<$Res>;
-  $Res call({int slot, NamedAPIResource type});
+  $Res call({int slot, NamedApiResource type});
 
-  $NamedAPIResourceCopyWith<$Res> get type;
+  $NamedApiResourceCopyWith<$Res> get type;
 }
 
 /// @nodoc
@@ -4843,13 +4843,13 @@ class _$PokemonFormTypeCopyWithImpl<$Res>
       type: type == freezed
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
     ));
   }
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get type {
-    return $NamedAPIResourceCopyWith<$Res>(_value.type, (value) {
+  $NamedApiResourceCopyWith<$Res> get type {
+    return $NamedApiResourceCopyWith<$Res>(_value.type, (value) {
       return _then(_value.copyWith(type: value));
     });
   }
@@ -4862,10 +4862,10 @@ abstract class _$PokemonFormTypeCopyWith<$Res>
           _PokemonFormType value, $Res Function(_PokemonFormType) then) =
       __$PokemonFormTypeCopyWithImpl<$Res>;
   @override
-  $Res call({int slot, NamedAPIResource type});
+  $Res call({int slot, NamedApiResource type});
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get type;
+  $NamedApiResourceCopyWith<$Res> get type;
 }
 
 /// @nodoc
@@ -4892,7 +4892,7 @@ class __$PokemonFormTypeCopyWithImpl<$Res>
       type == freezed
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
     ));
   }
 }
@@ -4908,7 +4908,7 @@ class _$_PokemonFormType implements _PokemonFormType {
   @override
   final int slot;
   @override
-  final NamedAPIResource type;
+  final NamedApiResource type;
 
   @override
   String toString() {
@@ -4942,7 +4942,7 @@ class _$_PokemonFormType implements _PokemonFormType {
 }
 
 abstract class _PokemonFormType implements PokemonFormType {
-  const factory _PokemonFormType(int slot, NamedAPIResource type) =
+  const factory _PokemonFormType(int slot, NamedApiResource type) =
       _$_PokemonFormType;
 
   factory _PokemonFormType.fromJson(Map<String, dynamic> json) =
@@ -4951,7 +4951,7 @@ abstract class _PokemonFormType implements PokemonFormType {
   @override
   int get slot;
   @override
-  NamedAPIResource get type;
+  NamedApiResource get type;
   @override
   @JsonKey(ignore: true)
   _$PokemonFormTypeCopyWith<_PokemonFormType> get copyWith =>
@@ -4966,7 +4966,7 @@ PokemonTypePast _$PokemonTypePastFromJson(Map<String, dynamic> json) {
 class _$PokemonTypePastTearOff {
   const _$PokemonTypePastTearOff();
 
-  _PokemonTypePast call(NamedAPIResource generation, List<PokemonType> types) {
+  _PokemonTypePast call(NamedApiResource generation, List<PokemonType> types) {
     return _PokemonTypePast(
       generation,
       types,
@@ -4983,7 +4983,7 @@ const $PokemonTypePast = _$PokemonTypePastTearOff();
 
 /// @nodoc
 mixin _$PokemonTypePast {
-  NamedAPIResource get generation => throw _privateConstructorUsedError;
+  NamedApiResource get generation => throw _privateConstructorUsedError;
   List<PokemonType> get types => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -4997,9 +4997,9 @@ abstract class $PokemonTypePastCopyWith<$Res> {
   factory $PokemonTypePastCopyWith(
           PokemonTypePast value, $Res Function(PokemonTypePast) then) =
       _$PokemonTypePastCopyWithImpl<$Res>;
-  $Res call({NamedAPIResource generation, List<PokemonType> types});
+  $Res call({NamedApiResource generation, List<PokemonType> types});
 
-  $NamedAPIResourceCopyWith<$Res> get generation;
+  $NamedApiResourceCopyWith<$Res> get generation;
 }
 
 /// @nodoc
@@ -5020,7 +5020,7 @@ class _$PokemonTypePastCopyWithImpl<$Res>
       generation: generation == freezed
           ? _value.generation
           : generation // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
       types: types == freezed
           ? _value.types
           : types // ignore: cast_nullable_to_non_nullable
@@ -5029,8 +5029,8 @@ class _$PokemonTypePastCopyWithImpl<$Res>
   }
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get generation {
-    return $NamedAPIResourceCopyWith<$Res>(_value.generation, (value) {
+  $NamedApiResourceCopyWith<$Res> get generation {
+    return $NamedApiResourceCopyWith<$Res>(_value.generation, (value) {
       return _then(_value.copyWith(generation: value));
     });
   }
@@ -5043,10 +5043,10 @@ abstract class _$PokemonTypePastCopyWith<$Res>
           _PokemonTypePast value, $Res Function(_PokemonTypePast) then) =
       __$PokemonTypePastCopyWithImpl<$Res>;
   @override
-  $Res call({NamedAPIResource generation, List<PokemonType> types});
+  $Res call({NamedApiResource generation, List<PokemonType> types});
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get generation;
+  $NamedApiResourceCopyWith<$Res> get generation;
 }
 
 /// @nodoc
@@ -5069,7 +5069,7 @@ class __$PokemonTypePastCopyWithImpl<$Res>
       generation == freezed
           ? _value.generation
           : generation // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
       types == freezed
           ? _value.types
           : types // ignore: cast_nullable_to_non_nullable
@@ -5087,7 +5087,7 @@ class _$_PokemonTypePast implements _PokemonTypePast {
       _$$_PokemonTypePastFromJson(json);
 
   @override
-  final NamedAPIResource generation;
+  final NamedApiResource generation;
   @override
   final List<PokemonType> types;
 
@@ -5125,14 +5125,14 @@ class _$_PokemonTypePast implements _PokemonTypePast {
 
 abstract class _PokemonTypePast implements PokemonTypePast {
   const factory _PokemonTypePast(
-          NamedAPIResource generation, List<PokemonType> types) =
+          NamedApiResource generation, List<PokemonType> types) =
       _$_PokemonTypePast;
 
   factory _PokemonTypePast.fromJson(Map<String, dynamic> json) =
       _$_PokemonTypePast.fromJson;
 
   @override
-  NamedAPIResource get generation;
+  NamedApiResource get generation;
   @override
   List<PokemonType> get types;
   @override
@@ -5150,7 +5150,7 @@ class _$PokemonHeldItemTearOff {
   const _$PokemonHeldItemTearOff();
 
   _PokemonHeldItem call(
-      NamedAPIResource item,
+      NamedApiResource item,
       @JsonKey(name: 'version_details')
           List<PokemonHeldItemVersion> versionDetails) {
     return _PokemonHeldItem(
@@ -5169,7 +5169,7 @@ const $PokemonHeldItem = _$PokemonHeldItemTearOff();
 
 /// @nodoc
 mixin _$PokemonHeldItem {
-  NamedAPIResource get item => throw _privateConstructorUsedError;
+  NamedApiResource get item => throw _privateConstructorUsedError;
   @JsonKey(name: 'version_details')
   List<PokemonHeldItemVersion> get versionDetails =>
       throw _privateConstructorUsedError;
@@ -5186,11 +5186,11 @@ abstract class $PokemonHeldItemCopyWith<$Res> {
           PokemonHeldItem value, $Res Function(PokemonHeldItem) then) =
       _$PokemonHeldItemCopyWithImpl<$Res>;
   $Res call(
-      {NamedAPIResource item,
+      {NamedApiResource item,
       @JsonKey(name: 'version_details')
           List<PokemonHeldItemVersion> versionDetails});
 
-  $NamedAPIResourceCopyWith<$Res> get item;
+  $NamedApiResourceCopyWith<$Res> get item;
 }
 
 /// @nodoc
@@ -5211,7 +5211,7 @@ class _$PokemonHeldItemCopyWithImpl<$Res>
       item: item == freezed
           ? _value.item
           : item // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
       versionDetails: versionDetails == freezed
           ? _value.versionDetails
           : versionDetails // ignore: cast_nullable_to_non_nullable
@@ -5220,8 +5220,8 @@ class _$PokemonHeldItemCopyWithImpl<$Res>
   }
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get item {
-    return $NamedAPIResourceCopyWith<$Res>(_value.item, (value) {
+  $NamedApiResourceCopyWith<$Res> get item {
+    return $NamedApiResourceCopyWith<$Res>(_value.item, (value) {
       return _then(_value.copyWith(item: value));
     });
   }
@@ -5235,12 +5235,12 @@ abstract class _$PokemonHeldItemCopyWith<$Res>
       __$PokemonHeldItemCopyWithImpl<$Res>;
   @override
   $Res call(
-      {NamedAPIResource item,
+      {NamedApiResource item,
       @JsonKey(name: 'version_details')
           List<PokemonHeldItemVersion> versionDetails});
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get item;
+  $NamedApiResourceCopyWith<$Res> get item;
 }
 
 /// @nodoc
@@ -5263,7 +5263,7 @@ class __$PokemonHeldItemCopyWithImpl<$Res>
       item == freezed
           ? _value.item
           : item // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
       versionDetails == freezed
           ? _value.versionDetails
           : versionDetails // ignore: cast_nullable_to_non_nullable
@@ -5282,7 +5282,7 @@ class _$_PokemonHeldItem implements _PokemonHeldItem {
       _$$_PokemonHeldItemFromJson(json);
 
   @override
-  final NamedAPIResource item;
+  final NamedApiResource item;
   @override
   @JsonKey(name: 'version_details')
   final List<PokemonHeldItemVersion> versionDetails;
@@ -5321,7 +5321,7 @@ class _$_PokemonHeldItem implements _PokemonHeldItem {
 
 abstract class _PokemonHeldItem implements PokemonHeldItem {
   const factory _PokemonHeldItem(
-      NamedAPIResource item,
+      NamedApiResource item,
       @JsonKey(name: 'version_details')
           List<PokemonHeldItemVersion> versionDetails) = _$_PokemonHeldItem;
 
@@ -5329,7 +5329,7 @@ abstract class _PokemonHeldItem implements PokemonHeldItem {
       _$_PokemonHeldItem.fromJson;
 
   @override
-  NamedAPIResource get item;
+  NamedApiResource get item;
   @override
   @JsonKey(name: 'version_details')
   List<PokemonHeldItemVersion> get versionDetails;
@@ -5348,7 +5348,7 @@ PokemonHeldItemVersion _$PokemonHeldItemVersionFromJson(
 class _$PokemonHeldItemVersionTearOff {
   const _$PokemonHeldItemVersionTearOff();
 
-  _PokemonHeldItemVersion call(NamedAPIResource version, int rarity) {
+  _PokemonHeldItemVersion call(NamedApiResource version, int rarity) {
     return _PokemonHeldItemVersion(
       version,
       rarity,
@@ -5365,7 +5365,7 @@ const $PokemonHeldItemVersion = _$PokemonHeldItemVersionTearOff();
 
 /// @nodoc
 mixin _$PokemonHeldItemVersion {
-  NamedAPIResource get version => throw _privateConstructorUsedError;
+  NamedApiResource get version => throw _privateConstructorUsedError;
   int get rarity => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -5379,9 +5379,9 @@ abstract class $PokemonHeldItemVersionCopyWith<$Res> {
   factory $PokemonHeldItemVersionCopyWith(PokemonHeldItemVersion value,
           $Res Function(PokemonHeldItemVersion) then) =
       _$PokemonHeldItemVersionCopyWithImpl<$Res>;
-  $Res call({NamedAPIResource version, int rarity});
+  $Res call({NamedApiResource version, int rarity});
 
-  $NamedAPIResourceCopyWith<$Res> get version;
+  $NamedApiResourceCopyWith<$Res> get version;
 }
 
 /// @nodoc
@@ -5402,7 +5402,7 @@ class _$PokemonHeldItemVersionCopyWithImpl<$Res>
       version: version == freezed
           ? _value.version
           : version // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
       rarity: rarity == freezed
           ? _value.rarity
           : rarity // ignore: cast_nullable_to_non_nullable
@@ -5411,8 +5411,8 @@ class _$PokemonHeldItemVersionCopyWithImpl<$Res>
   }
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get version {
-    return $NamedAPIResourceCopyWith<$Res>(_value.version, (value) {
+  $NamedApiResourceCopyWith<$Res> get version {
+    return $NamedApiResourceCopyWith<$Res>(_value.version, (value) {
       return _then(_value.copyWith(version: value));
     });
   }
@@ -5425,10 +5425,10 @@ abstract class _$PokemonHeldItemVersionCopyWith<$Res>
           $Res Function(_PokemonHeldItemVersion) then) =
       __$PokemonHeldItemVersionCopyWithImpl<$Res>;
   @override
-  $Res call({NamedAPIResource version, int rarity});
+  $Res call({NamedApiResource version, int rarity});
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get version;
+  $NamedApiResourceCopyWith<$Res> get version;
 }
 
 /// @nodoc
@@ -5451,7 +5451,7 @@ class __$PokemonHeldItemVersionCopyWithImpl<$Res>
       version == freezed
           ? _value.version
           : version // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
       rarity == freezed
           ? _value.rarity
           : rarity // ignore: cast_nullable_to_non_nullable
@@ -5469,7 +5469,7 @@ class _$_PokemonHeldItemVersion implements _PokemonHeldItemVersion {
       _$$_PokemonHeldItemVersionFromJson(json);
 
   @override
-  final NamedAPIResource version;
+  final NamedApiResource version;
   @override
   final int rarity;
 
@@ -5506,14 +5506,14 @@ class _$_PokemonHeldItemVersion implements _PokemonHeldItemVersion {
 }
 
 abstract class _PokemonHeldItemVersion implements PokemonHeldItemVersion {
-  const factory _PokemonHeldItemVersion(NamedAPIResource version, int rarity) =
+  const factory _PokemonHeldItemVersion(NamedApiResource version, int rarity) =
       _$_PokemonHeldItemVersion;
 
   factory _PokemonHeldItemVersion.fromJson(Map<String, dynamic> json) =
       _$_PokemonHeldItemVersion.fromJson;
 
   @override
-  NamedAPIResource get version;
+  NamedApiResource get version;
   @override
   int get rarity;
   @override
@@ -5531,7 +5531,7 @@ class _$PokemonMoveTearOff {
   const _$PokemonMoveTearOff();
 
   _PokemonMove call(
-      NamedAPIResource move,
+      NamedApiResource move,
       @JsonKey(name: 'version_group_details')
           List<PokemonMoveVersion> versionGroupDetails) {
     return _PokemonMove(
@@ -5550,7 +5550,7 @@ const $PokemonMove = _$PokemonMoveTearOff();
 
 /// @nodoc
 mixin _$PokemonMove {
-  NamedAPIResource get move => throw _privateConstructorUsedError;
+  NamedApiResource get move => throw _privateConstructorUsedError;
   @JsonKey(name: 'version_group_details')
   List<PokemonMoveVersion> get versionGroupDetails =>
       throw _privateConstructorUsedError;
@@ -5567,11 +5567,11 @@ abstract class $PokemonMoveCopyWith<$Res> {
           PokemonMove value, $Res Function(PokemonMove) then) =
       _$PokemonMoveCopyWithImpl<$Res>;
   $Res call(
-      {NamedAPIResource move,
+      {NamedApiResource move,
       @JsonKey(name: 'version_group_details')
           List<PokemonMoveVersion> versionGroupDetails});
 
-  $NamedAPIResourceCopyWith<$Res> get move;
+  $NamedApiResourceCopyWith<$Res> get move;
 }
 
 /// @nodoc
@@ -5591,7 +5591,7 @@ class _$PokemonMoveCopyWithImpl<$Res> implements $PokemonMoveCopyWith<$Res> {
       move: move == freezed
           ? _value.move
           : move // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
       versionGroupDetails: versionGroupDetails == freezed
           ? _value.versionGroupDetails
           : versionGroupDetails // ignore: cast_nullable_to_non_nullable
@@ -5600,8 +5600,8 @@ class _$PokemonMoveCopyWithImpl<$Res> implements $PokemonMoveCopyWith<$Res> {
   }
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get move {
-    return $NamedAPIResourceCopyWith<$Res>(_value.move, (value) {
+  $NamedApiResourceCopyWith<$Res> get move {
+    return $NamedApiResourceCopyWith<$Res>(_value.move, (value) {
       return _then(_value.copyWith(move: value));
     });
   }
@@ -5615,12 +5615,12 @@ abstract class _$PokemonMoveCopyWith<$Res>
       __$PokemonMoveCopyWithImpl<$Res>;
   @override
   $Res call(
-      {NamedAPIResource move,
+      {NamedApiResource move,
       @JsonKey(name: 'version_group_details')
           List<PokemonMoveVersion> versionGroupDetails});
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get move;
+  $NamedApiResourceCopyWith<$Res> get move;
 }
 
 /// @nodoc
@@ -5642,7 +5642,7 @@ class __$PokemonMoveCopyWithImpl<$Res> extends _$PokemonMoveCopyWithImpl<$Res>
       move == freezed
           ? _value.move
           : move // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
       versionGroupDetails == freezed
           ? _value.versionGroupDetails
           : versionGroupDetails // ignore: cast_nullable_to_non_nullable
@@ -5661,7 +5661,7 @@ class _$_PokemonMove implements _PokemonMove {
       _$$_PokemonMoveFromJson(json);
 
   @override
-  final NamedAPIResource move;
+  final NamedApiResource move;
   @override
   @JsonKey(name: 'version_group_details')
   final List<PokemonMoveVersion> versionGroupDetails;
@@ -5700,7 +5700,7 @@ class _$_PokemonMove implements _PokemonMove {
 
 abstract class _PokemonMove implements PokemonMove {
   const factory _PokemonMove(
-      NamedAPIResource move,
+      NamedApiResource move,
       @JsonKey(name: 'version_group_details')
           List<PokemonMoveVersion> versionGroupDetails) = _$_PokemonMove;
 
@@ -5708,7 +5708,7 @@ abstract class _PokemonMove implements PokemonMove {
       _$_PokemonMove.fromJson;
 
   @override
-  NamedAPIResource get move;
+  NamedApiResource get move;
   @override
   @JsonKey(name: 'version_group_details')
   List<PokemonMoveVersion> get versionGroupDetails;
@@ -5727,8 +5727,8 @@ class _$PokemonMoveVersionTearOff {
   const _$PokemonMoveVersionTearOff();
 
   _PokemonMoveVersion call(
-      @JsonKey(name: 'move_learn_method') NamedAPIResource moveLearnMethod,
-      @JsonKey(name: 'version_group') NamedAPIResource versionGroup,
+      @JsonKey(name: 'move_learn_method') NamedApiResource moveLearnMethod,
+      @JsonKey(name: 'version_group') NamedApiResource versionGroup,
       @JsonKey(name: 'level_learned_at') int levelLearnedAt) {
     return _PokemonMoveVersion(
       moveLearnMethod,
@@ -5748,9 +5748,9 @@ const $PokemonMoveVersion = _$PokemonMoveVersionTearOff();
 /// @nodoc
 mixin _$PokemonMoveVersion {
   @JsonKey(name: 'move_learn_method')
-  NamedAPIResource get moveLearnMethod => throw _privateConstructorUsedError;
+  NamedApiResource get moveLearnMethod => throw _privateConstructorUsedError;
   @JsonKey(name: 'version_group')
-  NamedAPIResource get versionGroup => throw _privateConstructorUsedError;
+  NamedApiResource get versionGroup => throw _privateConstructorUsedError;
   @JsonKey(name: 'level_learned_at')
   int get levelLearnedAt => throw _privateConstructorUsedError;
 
@@ -5766,12 +5766,12 @@ abstract class $PokemonMoveVersionCopyWith<$Res> {
           PokemonMoveVersion value, $Res Function(PokemonMoveVersion) then) =
       _$PokemonMoveVersionCopyWithImpl<$Res>;
   $Res call(
-      {@JsonKey(name: 'move_learn_method') NamedAPIResource moveLearnMethod,
-      @JsonKey(name: 'version_group') NamedAPIResource versionGroup,
+      {@JsonKey(name: 'move_learn_method') NamedApiResource moveLearnMethod,
+      @JsonKey(name: 'version_group') NamedApiResource versionGroup,
       @JsonKey(name: 'level_learned_at') int levelLearnedAt});
 
-  $NamedAPIResourceCopyWith<$Res> get moveLearnMethod;
-  $NamedAPIResourceCopyWith<$Res> get versionGroup;
+  $NamedApiResourceCopyWith<$Res> get moveLearnMethod;
+  $NamedApiResourceCopyWith<$Res> get versionGroup;
 }
 
 /// @nodoc
@@ -5793,11 +5793,11 @@ class _$PokemonMoveVersionCopyWithImpl<$Res>
       moveLearnMethod: moveLearnMethod == freezed
           ? _value.moveLearnMethod
           : moveLearnMethod // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
       versionGroup: versionGroup == freezed
           ? _value.versionGroup
           : versionGroup // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
       levelLearnedAt: levelLearnedAt == freezed
           ? _value.levelLearnedAt
           : levelLearnedAt // ignore: cast_nullable_to_non_nullable
@@ -5806,15 +5806,15 @@ class _$PokemonMoveVersionCopyWithImpl<$Res>
   }
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get moveLearnMethod {
-    return $NamedAPIResourceCopyWith<$Res>(_value.moveLearnMethod, (value) {
+  $NamedApiResourceCopyWith<$Res> get moveLearnMethod {
+    return $NamedApiResourceCopyWith<$Res>(_value.moveLearnMethod, (value) {
       return _then(_value.copyWith(moveLearnMethod: value));
     });
   }
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get versionGroup {
-    return $NamedAPIResourceCopyWith<$Res>(_value.versionGroup, (value) {
+  $NamedApiResourceCopyWith<$Res> get versionGroup {
+    return $NamedApiResourceCopyWith<$Res>(_value.versionGroup, (value) {
       return _then(_value.copyWith(versionGroup: value));
     });
   }
@@ -5828,14 +5828,14 @@ abstract class _$PokemonMoveVersionCopyWith<$Res>
       __$PokemonMoveVersionCopyWithImpl<$Res>;
   @override
   $Res call(
-      {@JsonKey(name: 'move_learn_method') NamedAPIResource moveLearnMethod,
-      @JsonKey(name: 'version_group') NamedAPIResource versionGroup,
+      {@JsonKey(name: 'move_learn_method') NamedApiResource moveLearnMethod,
+      @JsonKey(name: 'version_group') NamedApiResource versionGroup,
       @JsonKey(name: 'level_learned_at') int levelLearnedAt});
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get moveLearnMethod;
+  $NamedApiResourceCopyWith<$Res> get moveLearnMethod;
   @override
-  $NamedAPIResourceCopyWith<$Res> get versionGroup;
+  $NamedApiResourceCopyWith<$Res> get versionGroup;
 }
 
 /// @nodoc
@@ -5859,11 +5859,11 @@ class __$PokemonMoveVersionCopyWithImpl<$Res>
       moveLearnMethod == freezed
           ? _value.moveLearnMethod
           : moveLearnMethod // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
       versionGroup == freezed
           ? _value.versionGroup
           : versionGroup // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
       levelLearnedAt == freezed
           ? _value.levelLearnedAt
           : levelLearnedAt // ignore: cast_nullable_to_non_nullable
@@ -5885,10 +5885,10 @@ class _$_PokemonMoveVersion implements _PokemonMoveVersion {
 
   @override
   @JsonKey(name: 'move_learn_method')
-  final NamedAPIResource moveLearnMethod;
+  final NamedApiResource moveLearnMethod;
   @override
   @JsonKey(name: 'version_group')
-  final NamedAPIResource versionGroup;
+  final NamedApiResource versionGroup;
   @override
   @JsonKey(name: 'level_learned_at')
   final int levelLearnedAt;
@@ -5931,8 +5931,8 @@ class _$_PokemonMoveVersion implements _PokemonMoveVersion {
 
 abstract class _PokemonMoveVersion implements PokemonMoveVersion {
   const factory _PokemonMoveVersion(
-          @JsonKey(name: 'move_learn_method') NamedAPIResource moveLearnMethod,
-          @JsonKey(name: 'version_group') NamedAPIResource versionGroup,
+          @JsonKey(name: 'move_learn_method') NamedApiResource moveLearnMethod,
+          @JsonKey(name: 'version_group') NamedApiResource versionGroup,
           @JsonKey(name: 'level_learned_at') int levelLearnedAt) =
       _$_PokemonMoveVersion;
 
@@ -5941,10 +5941,10 @@ abstract class _PokemonMoveVersion implements PokemonMoveVersion {
 
   @override
   @JsonKey(name: 'move_learn_method')
-  NamedAPIResource get moveLearnMethod;
+  NamedApiResource get moveLearnMethod;
   @override
   @JsonKey(name: 'version_group')
-  NamedAPIResource get versionGroup;
+  NamedApiResource get versionGroup;
   @override
   @JsonKey(name: 'level_learned_at')
   int get levelLearnedAt;
@@ -5962,7 +5962,7 @@ PokemonStat _$PokemonStatFromJson(Map<String, dynamic> json) {
 class _$PokemonStatTearOff {
   const _$PokemonStatTearOff();
 
-  _PokemonStat call(NamedAPIResource stat, int effort,
+  _PokemonStat call(NamedApiResource stat, int effort,
       @JsonKey(name: 'base_stat') int baseStat) {
     return _PokemonStat(
       stat,
@@ -5981,7 +5981,7 @@ const $PokemonStat = _$PokemonStatTearOff();
 
 /// @nodoc
 mixin _$PokemonStat {
-  NamedAPIResource get stat => throw _privateConstructorUsedError;
+  NamedApiResource get stat => throw _privateConstructorUsedError;
   int get effort => throw _privateConstructorUsedError;
   @JsonKey(name: 'base_stat')
   int get baseStat => throw _privateConstructorUsedError;
@@ -5998,11 +5998,11 @@ abstract class $PokemonStatCopyWith<$Res> {
           PokemonStat value, $Res Function(PokemonStat) then) =
       _$PokemonStatCopyWithImpl<$Res>;
   $Res call(
-      {NamedAPIResource stat,
+      {NamedApiResource stat,
       int effort,
       @JsonKey(name: 'base_stat') int baseStat});
 
-  $NamedAPIResourceCopyWith<$Res> get stat;
+  $NamedApiResourceCopyWith<$Res> get stat;
 }
 
 /// @nodoc
@@ -6023,7 +6023,7 @@ class _$PokemonStatCopyWithImpl<$Res> implements $PokemonStatCopyWith<$Res> {
       stat: stat == freezed
           ? _value.stat
           : stat // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
       effort: effort == freezed
           ? _value.effort
           : effort // ignore: cast_nullable_to_non_nullable
@@ -6036,8 +6036,8 @@ class _$PokemonStatCopyWithImpl<$Res> implements $PokemonStatCopyWith<$Res> {
   }
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get stat {
-    return $NamedAPIResourceCopyWith<$Res>(_value.stat, (value) {
+  $NamedApiResourceCopyWith<$Res> get stat {
+    return $NamedApiResourceCopyWith<$Res>(_value.stat, (value) {
       return _then(_value.copyWith(stat: value));
     });
   }
@@ -6051,12 +6051,12 @@ abstract class _$PokemonStatCopyWith<$Res>
       __$PokemonStatCopyWithImpl<$Res>;
   @override
   $Res call(
-      {NamedAPIResource stat,
+      {NamedApiResource stat,
       int effort,
       @JsonKey(name: 'base_stat') int baseStat});
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get stat;
+  $NamedApiResourceCopyWith<$Res> get stat;
 }
 
 /// @nodoc
@@ -6079,7 +6079,7 @@ class __$PokemonStatCopyWithImpl<$Res> extends _$PokemonStatCopyWithImpl<$Res>
       stat == freezed
           ? _value.stat
           : stat // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
       effort == freezed
           ? _value.effort
           : effort // ignore: cast_nullable_to_non_nullable
@@ -6102,7 +6102,7 @@ class _$_PokemonStat implements _PokemonStat {
       _$$_PokemonStatFromJson(json);
 
   @override
-  final NamedAPIResource stat;
+  final NamedApiResource stat;
   @override
   final int effort;
   @override
@@ -6143,14 +6143,14 @@ class _$_PokemonStat implements _PokemonStat {
 }
 
 abstract class _PokemonStat implements PokemonStat {
-  const factory _PokemonStat(NamedAPIResource stat, int effort,
+  const factory _PokemonStat(NamedApiResource stat, int effort,
       @JsonKey(name: 'base_stat') int baseStat) = _$_PokemonStat;
 
   factory _PokemonStat.fromJson(Map<String, dynamic> json) =
       _$_PokemonStat.fromJson;
 
   @override
-  NamedAPIResource get stat;
+  NamedApiResource get stat;
   @override
   int get effort;
   @override
@@ -6520,7 +6520,7 @@ class _$PokemonLocationAreasTearOff {
 
   _PokemonLocationAreas call(
       @JsonKey(name: 'location_area')
-          NamedAPIResource locationArea,
+          NamedApiResource locationArea,
       @JsonKey(name: 'version_details')
           List<VersionEncounterDetail> versionDetails) {
     return _PokemonLocationAreas(
@@ -6540,7 +6540,7 @@ const $PokemonLocationAreas = _$PokemonLocationAreasTearOff();
 /// @nodoc
 mixin _$PokemonLocationAreas {
   @JsonKey(name: 'location_area')
-  NamedAPIResource get locationArea => throw _privateConstructorUsedError;
+  NamedApiResource get locationArea => throw _privateConstructorUsedError;
   @JsonKey(name: 'version_details')
   List<VersionEncounterDetail> get versionDetails =>
       throw _privateConstructorUsedError;
@@ -6558,11 +6558,11 @@ abstract class $PokemonLocationAreasCopyWith<$Res> {
       _$PokemonLocationAreasCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'location_area')
-          NamedAPIResource locationArea,
+          NamedApiResource locationArea,
       @JsonKey(name: 'version_details')
           List<VersionEncounterDetail> versionDetails});
 
-  $NamedAPIResourceCopyWith<$Res> get locationArea;
+  $NamedApiResourceCopyWith<$Res> get locationArea;
 }
 
 /// @nodoc
@@ -6583,7 +6583,7 @@ class _$PokemonLocationAreasCopyWithImpl<$Res>
       locationArea: locationArea == freezed
           ? _value.locationArea
           : locationArea // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
       versionDetails: versionDetails == freezed
           ? _value.versionDetails
           : versionDetails // ignore: cast_nullable_to_non_nullable
@@ -6592,8 +6592,8 @@ class _$PokemonLocationAreasCopyWithImpl<$Res>
   }
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get locationArea {
-    return $NamedAPIResourceCopyWith<$Res>(_value.locationArea, (value) {
+  $NamedApiResourceCopyWith<$Res> get locationArea {
+    return $NamedApiResourceCopyWith<$Res>(_value.locationArea, (value) {
       return _then(_value.copyWith(locationArea: value));
     });
   }
@@ -6608,12 +6608,12 @@ abstract class _$PokemonLocationAreasCopyWith<$Res>
   @override
   $Res call(
       {@JsonKey(name: 'location_area')
-          NamedAPIResource locationArea,
+          NamedApiResource locationArea,
       @JsonKey(name: 'version_details')
           List<VersionEncounterDetail> versionDetails});
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get locationArea;
+  $NamedApiResourceCopyWith<$Res> get locationArea;
 }
 
 /// @nodoc
@@ -6636,7 +6636,7 @@ class __$PokemonLocationAreasCopyWithImpl<$Res>
       locationArea == freezed
           ? _value.locationArea
           : locationArea // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
       versionDetails == freezed
           ? _value.versionDetails
           : versionDetails // ignore: cast_nullable_to_non_nullable
@@ -6657,7 +6657,7 @@ class _$_PokemonLocationAreas implements _PokemonLocationAreas {
 
   @override
   @JsonKey(name: 'location_area')
-  final NamedAPIResource locationArea;
+  final NamedApiResource locationArea;
   @override
   @JsonKey(name: 'version_details')
   final List<VersionEncounterDetail> versionDetails;
@@ -6699,7 +6699,7 @@ class _$_PokemonLocationAreas implements _PokemonLocationAreas {
 abstract class _PokemonLocationAreas implements PokemonLocationAreas {
   const factory _PokemonLocationAreas(
           @JsonKey(name: 'location_area')
-              NamedAPIResource locationArea,
+              NamedApiResource locationArea,
           @JsonKey(name: 'version_details')
               List<VersionEncounterDetail> versionDetails) =
       _$_PokemonLocationAreas;
@@ -6709,7 +6709,7 @@ abstract class _PokemonLocationAreas implements PokemonLocationAreas {
 
   @override
   @JsonKey(name: 'location_area')
-  NamedAPIResource get locationArea;
+  NamedApiResource get locationArea;
   @override
   @JsonKey(name: 'version_details')
   List<VersionEncounterDetail> get versionDetails;
@@ -6728,7 +6728,7 @@ class _$PokemonColorTearOff {
   const _$PokemonColorTearOff();
 
   _PokemonColor call(int id, String name, List<Name> names,
-      @JsonKey(name: 'pokemon_species') List<NamedAPIResource> pokemonSpecies) {
+      @JsonKey(name: 'pokemon_species') List<NamedApiResource> pokemonSpecies) {
     return _PokemonColor(
       id,
       name,
@@ -6751,7 +6751,7 @@ mixin _$PokemonColor {
   String get name => throw _privateConstructorUsedError;
   List<Name> get names => throw _privateConstructorUsedError;
   @JsonKey(name: 'pokemon_species')
-  List<NamedAPIResource> get pokemonSpecies =>
+  List<NamedApiResource> get pokemonSpecies =>
       throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -6769,7 +6769,7 @@ abstract class $PokemonColorCopyWith<$Res> {
       {int id,
       String name,
       List<Name> names,
-      @JsonKey(name: 'pokemon_species') List<NamedAPIResource> pokemonSpecies});
+      @JsonKey(name: 'pokemon_species') List<NamedApiResource> pokemonSpecies});
 }
 
 /// @nodoc
@@ -6803,7 +6803,7 @@ class _$PokemonColorCopyWithImpl<$Res> implements $PokemonColorCopyWith<$Res> {
       pokemonSpecies: pokemonSpecies == freezed
           ? _value.pokemonSpecies
           : pokemonSpecies // ignore: cast_nullable_to_non_nullable
-              as List<NamedAPIResource>,
+              as List<NamedApiResource>,
     ));
   }
 }
@@ -6819,7 +6819,7 @@ abstract class _$PokemonColorCopyWith<$Res>
       {int id,
       String name,
       List<Name> names,
-      @JsonKey(name: 'pokemon_species') List<NamedAPIResource> pokemonSpecies});
+      @JsonKey(name: 'pokemon_species') List<NamedApiResource> pokemonSpecies});
 }
 
 /// @nodoc
@@ -6855,7 +6855,7 @@ class __$PokemonColorCopyWithImpl<$Res> extends _$PokemonColorCopyWithImpl<$Res>
       pokemonSpecies == freezed
           ? _value.pokemonSpecies
           : pokemonSpecies // ignore: cast_nullable_to_non_nullable
-              as List<NamedAPIResource>,
+              as List<NamedApiResource>,
     ));
   }
 }
@@ -6877,7 +6877,7 @@ class _$_PokemonColor implements _PokemonColor {
   final List<Name> names;
   @override
   @JsonKey(name: 'pokemon_species')
-  final List<NamedAPIResource> pokemonSpecies;
+  final List<NamedApiResource> pokemonSpecies;
 
   @override
   String toString() {
@@ -6921,7 +6921,7 @@ abstract class _PokemonColor implements PokemonColor {
       String name,
       List<Name> names,
       @JsonKey(name: 'pokemon_species')
-          List<NamedAPIResource> pokemonSpecies) = _$_PokemonColor;
+          List<NamedApiResource> pokemonSpecies) = _$_PokemonColor;
 
   factory _PokemonColor.fromJson(Map<String, dynamic> json) =
       _$_PokemonColor.fromJson;
@@ -6934,7 +6934,7 @@ abstract class _PokemonColor implements PokemonColor {
   List<Name> get names;
   @override
   @JsonKey(name: 'pokemon_species')
-  List<NamedAPIResource> get pokemonSpecies;
+  List<NamedApiResource> get pokemonSpecies;
   @override
   @JsonKey(ignore: true)
   _$PokemonColorCopyWith<_PokemonColor> get copyWith =>
@@ -6958,10 +6958,10 @@ class _$PokemonFormTearOff {
       @JsonKey(name: 'is_battle_only') bool isBattleOnly,
       @JsonKey(name: 'is_mega') bool isMega,
       @JsonKey(name: 'form_name') String formName,
-      NamedAPIResource pokemon,
-      NamedAPIResource types,
+      NamedApiResource pokemon,
+      NamedApiResource types,
       PokemonFormSprites sprites,
-      @JsonKey(name: 'version_group') NamedAPIResource versionGroup,
+      @JsonKey(name: 'version_group') NamedApiResource versionGroup,
       List<Name> names,
       @JsonKey(name: 'form_names') List<Name> formNames) {
     return _PokemonForm(
@@ -7005,11 +7005,11 @@ mixin _$PokemonForm {
   bool get isMega => throw _privateConstructorUsedError;
   @JsonKey(name: 'form_name')
   String get formName => throw _privateConstructorUsedError;
-  NamedAPIResource get pokemon => throw _privateConstructorUsedError;
-  NamedAPIResource get types => throw _privateConstructorUsedError;
+  NamedApiResource get pokemon => throw _privateConstructorUsedError;
+  NamedApiResource get types => throw _privateConstructorUsedError;
   PokemonFormSprites get sprites => throw _privateConstructorUsedError;
   @JsonKey(name: 'version_group')
-  NamedAPIResource get versionGroup => throw _privateConstructorUsedError;
+  NamedApiResource get versionGroup => throw _privateConstructorUsedError;
   List<Name> get names => throw _privateConstructorUsedError;
   @JsonKey(name: 'form_names')
   List<Name> get formNames => throw _privateConstructorUsedError;
@@ -7034,17 +7034,17 @@ abstract class $PokemonFormCopyWith<$Res> {
       @JsonKey(name: 'is_battle_only') bool isBattleOnly,
       @JsonKey(name: 'is_mega') bool isMega,
       @JsonKey(name: 'form_name') String formName,
-      NamedAPIResource pokemon,
-      NamedAPIResource types,
+      NamedApiResource pokemon,
+      NamedApiResource types,
       PokemonFormSprites sprites,
-      @JsonKey(name: 'version_group') NamedAPIResource versionGroup,
+      @JsonKey(name: 'version_group') NamedApiResource versionGroup,
       List<Name> names,
       @JsonKey(name: 'form_names') List<Name> formNames});
 
-  $NamedAPIResourceCopyWith<$Res> get pokemon;
-  $NamedAPIResourceCopyWith<$Res> get types;
+  $NamedApiResourceCopyWith<$Res> get pokemon;
+  $NamedApiResourceCopyWith<$Res> get types;
   $PokemonFormSpritesCopyWith<$Res> get sprites;
-  $NamedAPIResourceCopyWith<$Res> get versionGroup;
+  $NamedApiResourceCopyWith<$Res> get versionGroup;
 }
 
 /// @nodoc
@@ -7108,11 +7108,11 @@ class _$PokemonFormCopyWithImpl<$Res> implements $PokemonFormCopyWith<$Res> {
       pokemon: pokemon == freezed
           ? _value.pokemon
           : pokemon // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
       types: types == freezed
           ? _value.types
           : types // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
       sprites: sprites == freezed
           ? _value.sprites
           : sprites // ignore: cast_nullable_to_non_nullable
@@ -7120,7 +7120,7 @@ class _$PokemonFormCopyWithImpl<$Res> implements $PokemonFormCopyWith<$Res> {
       versionGroup: versionGroup == freezed
           ? _value.versionGroup
           : versionGroup // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
       names: names == freezed
           ? _value.names
           : names // ignore: cast_nullable_to_non_nullable
@@ -7133,15 +7133,15 @@ class _$PokemonFormCopyWithImpl<$Res> implements $PokemonFormCopyWith<$Res> {
   }
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get pokemon {
-    return $NamedAPIResourceCopyWith<$Res>(_value.pokemon, (value) {
+  $NamedApiResourceCopyWith<$Res> get pokemon {
+    return $NamedApiResourceCopyWith<$Res>(_value.pokemon, (value) {
       return _then(_value.copyWith(pokemon: value));
     });
   }
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get types {
-    return $NamedAPIResourceCopyWith<$Res>(_value.types, (value) {
+  $NamedApiResourceCopyWith<$Res> get types {
+    return $NamedApiResourceCopyWith<$Res>(_value.types, (value) {
       return _then(_value.copyWith(types: value));
     });
   }
@@ -7154,8 +7154,8 @@ class _$PokemonFormCopyWithImpl<$Res> implements $PokemonFormCopyWith<$Res> {
   }
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get versionGroup {
-    return $NamedAPIResourceCopyWith<$Res>(_value.versionGroup, (value) {
+  $NamedApiResourceCopyWith<$Res> get versionGroup {
+    return $NamedApiResourceCopyWith<$Res>(_value.versionGroup, (value) {
       return _then(_value.copyWith(versionGroup: value));
     });
   }
@@ -7177,21 +7177,21 @@ abstract class _$PokemonFormCopyWith<$Res>
       @JsonKey(name: 'is_battle_only') bool isBattleOnly,
       @JsonKey(name: 'is_mega') bool isMega,
       @JsonKey(name: 'form_name') String formName,
-      NamedAPIResource pokemon,
-      NamedAPIResource types,
+      NamedApiResource pokemon,
+      NamedApiResource types,
       PokemonFormSprites sprites,
-      @JsonKey(name: 'version_group') NamedAPIResource versionGroup,
+      @JsonKey(name: 'version_group') NamedApiResource versionGroup,
       List<Name> names,
       @JsonKey(name: 'form_names') List<Name> formNames});
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get pokemon;
+  $NamedApiResourceCopyWith<$Res> get pokemon;
   @override
-  $NamedAPIResourceCopyWith<$Res> get types;
+  $NamedApiResourceCopyWith<$Res> get types;
   @override
   $PokemonFormSpritesCopyWith<$Res> get sprites;
   @override
-  $NamedAPIResourceCopyWith<$Res> get versionGroup;
+  $NamedApiResourceCopyWith<$Res> get versionGroup;
 }
 
 /// @nodoc
@@ -7257,11 +7257,11 @@ class __$PokemonFormCopyWithImpl<$Res> extends _$PokemonFormCopyWithImpl<$Res>
       pokemon == freezed
           ? _value.pokemon
           : pokemon // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
       types == freezed
           ? _value.types
           : types // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
       sprites == freezed
           ? _value.sprites
           : sprites // ignore: cast_nullable_to_non_nullable
@@ -7269,7 +7269,7 @@ class __$PokemonFormCopyWithImpl<$Res> extends _$PokemonFormCopyWithImpl<$Res>
       versionGroup == freezed
           ? _value.versionGroup
           : versionGroup // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
       names == freezed
           ? _value.names
           : names // ignore: cast_nullable_to_non_nullable
@@ -7326,14 +7326,14 @@ class _$_PokemonForm implements _PokemonForm {
   @JsonKey(name: 'form_name')
   final String formName;
   @override
-  final NamedAPIResource pokemon;
+  final NamedApiResource pokemon;
   @override
-  final NamedAPIResource types;
+  final NamedApiResource types;
   @override
   final PokemonFormSprites sprites;
   @override
   @JsonKey(name: 'version_group')
-  final NamedAPIResource versionGroup;
+  final NamedApiResource versionGroup;
   @override
   final List<Name> names;
   @override
@@ -7407,10 +7407,10 @@ abstract class _PokemonForm implements PokemonForm {
       @JsonKey(name: 'is_battle_only') bool isBattleOnly,
       @JsonKey(name: 'is_mega') bool isMega,
       @JsonKey(name: 'form_name') String formName,
-      NamedAPIResource pokemon,
-      NamedAPIResource types,
+      NamedApiResource pokemon,
+      NamedApiResource types,
       PokemonFormSprites sprites,
-      @JsonKey(name: 'version_group') NamedAPIResource versionGroup,
+      @JsonKey(name: 'version_group') NamedApiResource versionGroup,
       List<Name> names,
       @JsonKey(name: 'form_names') List<Name> formNames) = _$_PokemonForm;
 
@@ -7439,14 +7439,14 @@ abstract class _PokemonForm implements PokemonForm {
   @JsonKey(name: 'form_name')
   String get formName;
   @override
-  NamedAPIResource get pokemon;
+  NamedApiResource get pokemon;
   @override
-  NamedAPIResource get types;
+  NamedApiResource get types;
   @override
   PokemonFormSprites get sprites;
   @override
   @JsonKey(name: 'version_group')
-  NamedAPIResource get versionGroup;
+  NamedApiResource get versionGroup;
   @override
   List<Name> get names;
   @override
@@ -7706,7 +7706,7 @@ class _$PokemonHabitatTearOff {
   const _$PokemonHabitatTearOff();
 
   _PokemonHabitat call(int id, String name, List<Name> names,
-      @JsonKey(name: 'pokemon_species') List<NamedAPIResource> pokemonSpecies) {
+      @JsonKey(name: 'pokemon_species') List<NamedApiResource> pokemonSpecies) {
     return _PokemonHabitat(
       id,
       name,
@@ -7729,7 +7729,7 @@ mixin _$PokemonHabitat {
   String get name => throw _privateConstructorUsedError;
   List<Name> get names => throw _privateConstructorUsedError;
   @JsonKey(name: 'pokemon_species')
-  List<NamedAPIResource> get pokemonSpecies =>
+  List<NamedApiResource> get pokemonSpecies =>
       throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -7747,7 +7747,7 @@ abstract class $PokemonHabitatCopyWith<$Res> {
       {int id,
       String name,
       List<Name> names,
-      @JsonKey(name: 'pokemon_species') List<NamedAPIResource> pokemonSpecies});
+      @JsonKey(name: 'pokemon_species') List<NamedApiResource> pokemonSpecies});
 }
 
 /// @nodoc
@@ -7782,7 +7782,7 @@ class _$PokemonHabitatCopyWithImpl<$Res>
       pokemonSpecies: pokemonSpecies == freezed
           ? _value.pokemonSpecies
           : pokemonSpecies // ignore: cast_nullable_to_non_nullable
-              as List<NamedAPIResource>,
+              as List<NamedApiResource>,
     ));
   }
 }
@@ -7798,7 +7798,7 @@ abstract class _$PokemonHabitatCopyWith<$Res>
       {int id,
       String name,
       List<Name> names,
-      @JsonKey(name: 'pokemon_species') List<NamedAPIResource> pokemonSpecies});
+      @JsonKey(name: 'pokemon_species') List<NamedApiResource> pokemonSpecies});
 }
 
 /// @nodoc
@@ -7835,7 +7835,7 @@ class __$PokemonHabitatCopyWithImpl<$Res>
       pokemonSpecies == freezed
           ? _value.pokemonSpecies
           : pokemonSpecies // ignore: cast_nullable_to_non_nullable
-              as List<NamedAPIResource>,
+              as List<NamedApiResource>,
     ));
   }
 }
@@ -7857,7 +7857,7 @@ class _$_PokemonHabitat implements _PokemonHabitat {
   final List<Name> names;
   @override
   @JsonKey(name: 'pokemon_species')
-  final List<NamedAPIResource> pokemonSpecies;
+  final List<NamedApiResource> pokemonSpecies;
 
   @override
   String toString() {
@@ -7901,7 +7901,7 @@ abstract class _PokemonHabitat implements PokemonHabitat {
       String name,
       List<Name> names,
       @JsonKey(name: 'pokemon_species')
-          List<NamedAPIResource> pokemonSpecies) = _$_PokemonHabitat;
+          List<NamedApiResource> pokemonSpecies) = _$_PokemonHabitat;
 
   factory _PokemonHabitat.fromJson(Map<String, dynamic> json) =
       _$_PokemonHabitat.fromJson;
@@ -7914,7 +7914,7 @@ abstract class _PokemonHabitat implements PokemonHabitat {
   List<Name> get names;
   @override
   @JsonKey(name: 'pokemon_species')
-  List<NamedAPIResource> get pokemonSpecies;
+  List<NamedApiResource> get pokemonSpecies;
   @override
   @JsonKey(ignore: true)
   _$PokemonHabitatCopyWith<_PokemonHabitat> get copyWith =>
@@ -7934,7 +7934,7 @@ class _$PokemonShapeTearOff {
       String name,
       @JsonKey(name: 'awesome_names') List<AwesomeName> awesomeNames,
       List<Name> names,
-      @JsonKey(name: 'pokemon_species') List<NamedAPIResource> pokemonSpecies) {
+      @JsonKey(name: 'pokemon_species') List<NamedApiResource> pokemonSpecies) {
     return _PokemonShape(
       id,
       name,
@@ -7960,7 +7960,7 @@ mixin _$PokemonShape {
   List<AwesomeName> get awesomeNames => throw _privateConstructorUsedError;
   List<Name> get names => throw _privateConstructorUsedError;
   @JsonKey(name: 'pokemon_species')
-  List<NamedAPIResource> get pokemonSpecies =>
+  List<NamedApiResource> get pokemonSpecies =>
       throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -7979,7 +7979,7 @@ abstract class $PokemonShapeCopyWith<$Res> {
       String name,
       @JsonKey(name: 'awesome_names') List<AwesomeName> awesomeNames,
       List<Name> names,
-      @JsonKey(name: 'pokemon_species') List<NamedAPIResource> pokemonSpecies});
+      @JsonKey(name: 'pokemon_species') List<NamedApiResource> pokemonSpecies});
 }
 
 /// @nodoc
@@ -8018,7 +8018,7 @@ class _$PokemonShapeCopyWithImpl<$Res> implements $PokemonShapeCopyWith<$Res> {
       pokemonSpecies: pokemonSpecies == freezed
           ? _value.pokemonSpecies
           : pokemonSpecies // ignore: cast_nullable_to_non_nullable
-              as List<NamedAPIResource>,
+              as List<NamedApiResource>,
     ));
   }
 }
@@ -8035,7 +8035,7 @@ abstract class _$PokemonShapeCopyWith<$Res>
       String name,
       @JsonKey(name: 'awesome_names') List<AwesomeName> awesomeNames,
       List<Name> names,
-      @JsonKey(name: 'pokemon_species') List<NamedAPIResource> pokemonSpecies});
+      @JsonKey(name: 'pokemon_species') List<NamedApiResource> pokemonSpecies});
 }
 
 /// @nodoc
@@ -8076,7 +8076,7 @@ class __$PokemonShapeCopyWithImpl<$Res> extends _$PokemonShapeCopyWithImpl<$Res>
       pokemonSpecies == freezed
           ? _value.pokemonSpecies
           : pokemonSpecies // ignore: cast_nullable_to_non_nullable
-              as List<NamedAPIResource>,
+              as List<NamedApiResource>,
     ));
   }
 }
@@ -8105,7 +8105,7 @@ class _$_PokemonShape implements _PokemonShape {
   final List<Name> names;
   @override
   @JsonKey(name: 'pokemon_species')
-  final List<NamedAPIResource> pokemonSpecies;
+  final List<NamedApiResource> pokemonSpecies;
 
   @override
   String toString() {
@@ -8154,7 +8154,7 @@ abstract class _PokemonShape implements PokemonShape {
           List<AwesomeName> awesomeNames,
       List<Name> names,
       @JsonKey(name: 'pokemon_species')
-          List<NamedAPIResource> pokemonSpecies) = _$_PokemonShape;
+          List<NamedApiResource> pokemonSpecies) = _$_PokemonShape;
 
   factory _PokemonShape.fromJson(Map<String, dynamic> json) =
       _$_PokemonShape.fromJson;
@@ -8170,7 +8170,7 @@ abstract class _PokemonShape implements PokemonShape {
   List<Name> get names;
   @override
   @JsonKey(name: 'pokemon_species')
-  List<NamedAPIResource> get pokemonSpecies;
+  List<NamedApiResource> get pokemonSpecies;
   @override
   @JsonKey(ignore: true)
   _$PokemonShapeCopyWith<_PokemonShape> get copyWith =>
@@ -8186,7 +8186,7 @@ class _$AwesomeNameTearOff {
   const _$AwesomeNameTearOff();
 
   _AwesomeName call(@JsonKey(name: 'awesome_name') String awesomeName,
-      NamedAPIResource language) {
+      NamedApiResource language) {
     return _AwesomeName(
       awesomeName,
       language,
@@ -8205,7 +8205,7 @@ const $AwesomeName = _$AwesomeNameTearOff();
 mixin _$AwesomeName {
   @JsonKey(name: 'awesome_name')
   String get awesomeName => throw _privateConstructorUsedError;
-  NamedAPIResource get language => throw _privateConstructorUsedError;
+  NamedApiResource get language => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -8220,9 +8220,9 @@ abstract class $AwesomeNameCopyWith<$Res> {
       _$AwesomeNameCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'awesome_name') String awesomeName,
-      NamedAPIResource language});
+      NamedApiResource language});
 
-  $NamedAPIResourceCopyWith<$Res> get language;
+  $NamedApiResourceCopyWith<$Res> get language;
 }
 
 /// @nodoc
@@ -8246,13 +8246,13 @@ class _$AwesomeNameCopyWithImpl<$Res> implements $AwesomeNameCopyWith<$Res> {
       language: language == freezed
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
     ));
   }
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get language {
-    return $NamedAPIResourceCopyWith<$Res>(_value.language, (value) {
+  $NamedApiResourceCopyWith<$Res> get language {
+    return $NamedApiResourceCopyWith<$Res>(_value.language, (value) {
       return _then(_value.copyWith(language: value));
     });
   }
@@ -8267,10 +8267,10 @@ abstract class _$AwesomeNameCopyWith<$Res>
   @override
   $Res call(
       {@JsonKey(name: 'awesome_name') String awesomeName,
-      NamedAPIResource language});
+      NamedApiResource language});
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get language;
+  $NamedApiResourceCopyWith<$Res> get language;
 }
 
 /// @nodoc
@@ -8296,7 +8296,7 @@ class __$AwesomeNameCopyWithImpl<$Res> extends _$AwesomeNameCopyWithImpl<$Res>
       language == freezed
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
     ));
   }
 }
@@ -8314,7 +8314,7 @@ class _$_AwesomeName implements _AwesomeName {
   @JsonKey(name: 'awesome_name')
   final String awesomeName;
   @override
-  final NamedAPIResource language;
+  final NamedApiResource language;
 
   @override
   String toString() {
@@ -8350,7 +8350,7 @@ class _$_AwesomeName implements _AwesomeName {
 
 abstract class _AwesomeName implements AwesomeName {
   const factory _AwesomeName(@JsonKey(name: 'awesome_name') String awesomeName,
-      NamedAPIResource language) = _$_AwesomeName;
+      NamedApiResource language) = _$_AwesomeName;
 
   factory _AwesomeName.fromJson(Map<String, dynamic> json) =
       _$_AwesomeName.fromJson;
@@ -8359,7 +8359,7 @@ abstract class _AwesomeName implements AwesomeName {
   @JsonKey(name: 'awesome_name')
   String get awesomeName;
   @override
-  NamedAPIResource get language;
+  NamedApiResource get language;
   @override
   @JsonKey(ignore: true)
   _$AwesomeNameCopyWith<_AwesomeName> get copyWith =>
@@ -8397,19 +8397,19 @@ class _$PokemonSpeciesTearOff {
       @JsonKey(name: 'forms_switchable')
           bool formsSwitchable,
       @JsonKey(name: 'growth_rate')
-          NamedAPIResource growthRate,
+          NamedApiResource growthRate,
       @JsonKey(name: 'pokedex_numbers')
           List<PokemonSpeciesDexEntry> pokedexNumbers,
       @JsonKey(name: 'egg_groups')
-          List<NamedAPIResource> eggGroups,
-      NamedAPIResource color,
-      NamedAPIResource shape,
+          List<NamedApiResource> eggGroups,
+      NamedApiResource color,
+      NamedApiResource shape,
       @JsonKey(name: 'evolves_from_species')
-          List<NamedAPIResource> evolvesFromSpecies,
+          List<NamedApiResource> evolvesFromSpecies,
       @JsonKey(name: 'evolution_chain')
-          APIResource evolutionChain,
-      NamedAPIResource habitat,
-      NamedAPIResource generation,
+          ApiResource evolutionChain,
+      NamedApiResource habitat,
+      NamedApiResource generation,
       List<Name> names,
       @JsonKey(name: 'pal_park_encounters')
           List<PalParkEncounterArea> palParkEncounters,
@@ -8482,21 +8482,21 @@ mixin _$PokemonSpecies {
   @JsonKey(name: 'forms_switchable')
   bool get formsSwitchable => throw _privateConstructorUsedError;
   @JsonKey(name: 'growth_rate')
-  NamedAPIResource get growthRate => throw _privateConstructorUsedError;
+  NamedApiResource get growthRate => throw _privateConstructorUsedError;
   @JsonKey(name: 'pokedex_numbers')
   List<PokemonSpeciesDexEntry> get pokedexNumbers =>
       throw _privateConstructorUsedError;
   @JsonKey(name: 'egg_groups')
-  List<NamedAPIResource> get eggGroups => throw _privateConstructorUsedError;
-  NamedAPIResource get color => throw _privateConstructorUsedError;
-  NamedAPIResource get shape => throw _privateConstructorUsedError;
+  List<NamedApiResource> get eggGroups => throw _privateConstructorUsedError;
+  NamedApiResource get color => throw _privateConstructorUsedError;
+  NamedApiResource get shape => throw _privateConstructorUsedError;
   @JsonKey(name: 'evolves_from_species')
-  List<NamedAPIResource> get evolvesFromSpecies =>
+  List<NamedApiResource> get evolvesFromSpecies =>
       throw _privateConstructorUsedError;
   @JsonKey(name: 'evolution_chain')
-  APIResource get evolutionChain => throw _privateConstructorUsedError;
-  NamedAPIResource get habitat => throw _privateConstructorUsedError;
-  NamedAPIResource get generation => throw _privateConstructorUsedError;
+  ApiResource get evolutionChain => throw _privateConstructorUsedError;
+  NamedApiResource get habitat => throw _privateConstructorUsedError;
+  NamedApiResource get generation => throw _privateConstructorUsedError;
   List<Name> get names => throw _privateConstructorUsedError;
   @JsonKey(name: 'pal_park_encounters')
   List<PalParkEncounterArea> get palParkEncounters =>
@@ -8543,19 +8543,19 @@ abstract class $PokemonSpeciesCopyWith<$Res> {
       @JsonKey(name: 'forms_switchable')
           bool formsSwitchable,
       @JsonKey(name: 'growth_rate')
-          NamedAPIResource growthRate,
+          NamedApiResource growthRate,
       @JsonKey(name: 'pokedex_numbers')
           List<PokemonSpeciesDexEntry> pokedexNumbers,
       @JsonKey(name: 'egg_groups')
-          List<NamedAPIResource> eggGroups,
-      NamedAPIResource color,
-      NamedAPIResource shape,
+          List<NamedApiResource> eggGroups,
+      NamedApiResource color,
+      NamedApiResource shape,
       @JsonKey(name: 'evolves_from_species')
-          List<NamedAPIResource> evolvesFromSpecies,
+          List<NamedApiResource> evolvesFromSpecies,
       @JsonKey(name: 'evolution_chain')
-          APIResource evolutionChain,
-      NamedAPIResource habitat,
-      NamedAPIResource generation,
+          ApiResource evolutionChain,
+      NamedApiResource habitat,
+      NamedApiResource generation,
       List<Name> names,
       @JsonKey(name: 'pal_park_encounters')
           List<PalParkEncounterArea> palParkEncounters,
@@ -8566,12 +8566,12 @@ abstract class $PokemonSpeciesCopyWith<$Res> {
       List<Genus> genera,
       List<PokemonSpeciesVariety> varieties});
 
-  $NamedAPIResourceCopyWith<$Res> get growthRate;
-  $NamedAPIResourceCopyWith<$Res> get color;
-  $NamedAPIResourceCopyWith<$Res> get shape;
-  $APIResourceCopyWith<$Res> get evolutionChain;
-  $NamedAPIResourceCopyWith<$Res> get habitat;
-  $NamedAPIResourceCopyWith<$Res> get generation;
+  $NamedApiResourceCopyWith<$Res> get growthRate;
+  $NamedApiResourceCopyWith<$Res> get color;
+  $NamedApiResourceCopyWith<$Res> get shape;
+  $ApiResourceCopyWith<$Res> get evolutionChain;
+  $NamedApiResourceCopyWith<$Res> get habitat;
+  $NamedApiResourceCopyWith<$Res> get generation;
 }
 
 /// @nodoc
@@ -8665,7 +8665,7 @@ class _$PokemonSpeciesCopyWithImpl<$Res>
       growthRate: growthRate == freezed
           ? _value.growthRate
           : growthRate // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
       pokedexNumbers: pokedexNumbers == freezed
           ? _value.pokedexNumbers
           : pokedexNumbers // ignore: cast_nullable_to_non_nullable
@@ -8673,31 +8673,31 @@ class _$PokemonSpeciesCopyWithImpl<$Res>
       eggGroups: eggGroups == freezed
           ? _value.eggGroups
           : eggGroups // ignore: cast_nullable_to_non_nullable
-              as List<NamedAPIResource>,
+              as List<NamedApiResource>,
       color: color == freezed
           ? _value.color
           : color // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
       shape: shape == freezed
           ? _value.shape
           : shape // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
       evolvesFromSpecies: evolvesFromSpecies == freezed
           ? _value.evolvesFromSpecies
           : evolvesFromSpecies // ignore: cast_nullable_to_non_nullable
-              as List<NamedAPIResource>,
+              as List<NamedApiResource>,
       evolutionChain: evolutionChain == freezed
           ? _value.evolutionChain
           : evolutionChain // ignore: cast_nullable_to_non_nullable
-              as APIResource,
+              as ApiResource,
       habitat: habitat == freezed
           ? _value.habitat
           : habitat // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
       generation: generation == freezed
           ? _value.generation
           : generation // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
       names: names == freezed
           ? _value.names
           : names // ignore: cast_nullable_to_non_nullable
@@ -8726,43 +8726,43 @@ class _$PokemonSpeciesCopyWithImpl<$Res>
   }
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get growthRate {
-    return $NamedAPIResourceCopyWith<$Res>(_value.growthRate, (value) {
+  $NamedApiResourceCopyWith<$Res> get growthRate {
+    return $NamedApiResourceCopyWith<$Res>(_value.growthRate, (value) {
       return _then(_value.copyWith(growthRate: value));
     });
   }
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get color {
-    return $NamedAPIResourceCopyWith<$Res>(_value.color, (value) {
+  $NamedApiResourceCopyWith<$Res> get color {
+    return $NamedApiResourceCopyWith<$Res>(_value.color, (value) {
       return _then(_value.copyWith(color: value));
     });
   }
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get shape {
-    return $NamedAPIResourceCopyWith<$Res>(_value.shape, (value) {
+  $NamedApiResourceCopyWith<$Res> get shape {
+    return $NamedApiResourceCopyWith<$Res>(_value.shape, (value) {
       return _then(_value.copyWith(shape: value));
     });
   }
 
   @override
-  $APIResourceCopyWith<$Res> get evolutionChain {
-    return $APIResourceCopyWith<$Res>(_value.evolutionChain, (value) {
+  $ApiResourceCopyWith<$Res> get evolutionChain {
+    return $ApiResourceCopyWith<$Res>(_value.evolutionChain, (value) {
       return _then(_value.copyWith(evolutionChain: value));
     });
   }
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get habitat {
-    return $NamedAPIResourceCopyWith<$Res>(_value.habitat, (value) {
+  $NamedApiResourceCopyWith<$Res> get habitat {
+    return $NamedApiResourceCopyWith<$Res>(_value.habitat, (value) {
       return _then(_value.copyWith(habitat: value));
     });
   }
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get generation {
-    return $NamedAPIResourceCopyWith<$Res>(_value.generation, (value) {
+  $NamedApiResourceCopyWith<$Res> get generation {
+    return $NamedApiResourceCopyWith<$Res>(_value.generation, (value) {
       return _then(_value.copyWith(generation: value));
     });
   }
@@ -8798,19 +8798,19 @@ abstract class _$PokemonSpeciesCopyWith<$Res>
       @JsonKey(name: 'forms_switchable')
           bool formsSwitchable,
       @JsonKey(name: 'growth_rate')
-          NamedAPIResource growthRate,
+          NamedApiResource growthRate,
       @JsonKey(name: 'pokedex_numbers')
           List<PokemonSpeciesDexEntry> pokedexNumbers,
       @JsonKey(name: 'egg_groups')
-          List<NamedAPIResource> eggGroups,
-      NamedAPIResource color,
-      NamedAPIResource shape,
+          List<NamedApiResource> eggGroups,
+      NamedApiResource color,
+      NamedApiResource shape,
       @JsonKey(name: 'evolves_from_species')
-          List<NamedAPIResource> evolvesFromSpecies,
+          List<NamedApiResource> evolvesFromSpecies,
       @JsonKey(name: 'evolution_chain')
-          APIResource evolutionChain,
-      NamedAPIResource habitat,
-      NamedAPIResource generation,
+          ApiResource evolutionChain,
+      NamedApiResource habitat,
+      NamedApiResource generation,
       List<Name> names,
       @JsonKey(name: 'pal_park_encounters')
           List<PalParkEncounterArea> palParkEncounters,
@@ -8822,17 +8822,17 @@ abstract class _$PokemonSpeciesCopyWith<$Res>
       List<PokemonSpeciesVariety> varieties});
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get growthRate;
+  $NamedApiResourceCopyWith<$Res> get growthRate;
   @override
-  $NamedAPIResourceCopyWith<$Res> get color;
+  $NamedApiResourceCopyWith<$Res> get color;
   @override
-  $NamedAPIResourceCopyWith<$Res> get shape;
+  $NamedApiResourceCopyWith<$Res> get shape;
   @override
-  $APIResourceCopyWith<$Res> get evolutionChain;
+  $ApiResourceCopyWith<$Res> get evolutionChain;
   @override
-  $NamedAPIResourceCopyWith<$Res> get habitat;
+  $NamedApiResourceCopyWith<$Res> get habitat;
   @override
-  $NamedAPIResourceCopyWith<$Res> get generation;
+  $NamedApiResourceCopyWith<$Res> get generation;
 }
 
 /// @nodoc
@@ -8928,7 +8928,7 @@ class __$PokemonSpeciesCopyWithImpl<$Res>
       growthRate == freezed
           ? _value.growthRate
           : growthRate // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
       pokedexNumbers == freezed
           ? _value.pokedexNumbers
           : pokedexNumbers // ignore: cast_nullable_to_non_nullable
@@ -8936,31 +8936,31 @@ class __$PokemonSpeciesCopyWithImpl<$Res>
       eggGroups == freezed
           ? _value.eggGroups
           : eggGroups // ignore: cast_nullable_to_non_nullable
-              as List<NamedAPIResource>,
+              as List<NamedApiResource>,
       color == freezed
           ? _value.color
           : color // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
       shape == freezed
           ? _value.shape
           : shape // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
       evolvesFromSpecies == freezed
           ? _value.evolvesFromSpecies
           : evolvesFromSpecies // ignore: cast_nullable_to_non_nullable
-              as List<NamedAPIResource>,
+              as List<NamedApiResource>,
       evolutionChain == freezed
           ? _value.evolutionChain
           : evolutionChain // ignore: cast_nullable_to_non_nullable
-              as APIResource,
+              as ApiResource,
       habitat == freezed
           ? _value.habitat
           : habitat // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
       generation == freezed
           ? _value.generation
           : generation // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
       names == freezed
           ? _value.names
           : names // ignore: cast_nullable_to_non_nullable
@@ -9059,27 +9059,27 @@ class _$_PokemonSpecies implements _PokemonSpecies {
   final bool formsSwitchable;
   @override
   @JsonKey(name: 'growth_rate')
-  final NamedAPIResource growthRate;
+  final NamedApiResource growthRate;
   @override
   @JsonKey(name: 'pokedex_numbers')
   final List<PokemonSpeciesDexEntry> pokedexNumbers;
   @override
   @JsonKey(name: 'egg_groups')
-  final List<NamedAPIResource> eggGroups;
+  final List<NamedApiResource> eggGroups;
   @override
-  final NamedAPIResource color;
+  final NamedApiResource color;
   @override
-  final NamedAPIResource shape;
+  final NamedApiResource shape;
   @override
   @JsonKey(name: 'evolves_from_species')
-  final List<NamedAPIResource> evolvesFromSpecies;
+  final List<NamedApiResource> evolvesFromSpecies;
   @override
   @JsonKey(name: 'evolution_chain')
-  final APIResource evolutionChain;
+  final ApiResource evolutionChain;
   @override
-  final NamedAPIResource habitat;
+  final NamedApiResource habitat;
   @override
-  final NamedAPIResource generation;
+  final NamedApiResource generation;
   @override
   final List<Name> names;
   @override
@@ -9218,19 +9218,19 @@ abstract class _PokemonSpecies implements PokemonSpecies {
       @JsonKey(name: 'forms_switchable')
           bool formsSwitchable,
       @JsonKey(name: 'growth_rate')
-          NamedAPIResource growthRate,
+          NamedApiResource growthRate,
       @JsonKey(name: 'pokedex_numbers')
           List<PokemonSpeciesDexEntry> pokedexNumbers,
       @JsonKey(name: 'egg_groups')
-          List<NamedAPIResource> eggGroups,
-      NamedAPIResource color,
-      NamedAPIResource shape,
+          List<NamedApiResource> eggGroups,
+      NamedApiResource color,
+      NamedApiResource shape,
       @JsonKey(name: 'evolves_from_species')
-          List<NamedAPIResource> evolvesFromSpecies,
+          List<NamedApiResource> evolvesFromSpecies,
       @JsonKey(name: 'evolution_chain')
-          APIResource evolutionChain,
-      NamedAPIResource habitat,
-      NamedAPIResource generation,
+          ApiResource evolutionChain,
+      NamedApiResource habitat,
+      NamedApiResource generation,
       List<Name> names,
       @JsonKey(name: 'pal_park_encounters')
           List<PalParkEncounterArea> palParkEncounters,
@@ -9279,27 +9279,27 @@ abstract class _PokemonSpecies implements PokemonSpecies {
   bool get formsSwitchable;
   @override
   @JsonKey(name: 'growth_rate')
-  NamedAPIResource get growthRate;
+  NamedApiResource get growthRate;
   @override
   @JsonKey(name: 'pokedex_numbers')
   List<PokemonSpeciesDexEntry> get pokedexNumbers;
   @override
   @JsonKey(name: 'egg_groups')
-  List<NamedAPIResource> get eggGroups;
+  List<NamedApiResource> get eggGroups;
   @override
-  NamedAPIResource get color;
+  NamedApiResource get color;
   @override
-  NamedAPIResource get shape;
+  NamedApiResource get shape;
   @override
   @JsonKey(name: 'evolves_from_species')
-  List<NamedAPIResource> get evolvesFromSpecies;
+  List<NamedApiResource> get evolvesFromSpecies;
   @override
   @JsonKey(name: 'evolution_chain')
-  APIResource get evolutionChain;
+  ApiResource get evolutionChain;
   @override
-  NamedAPIResource get habitat;
+  NamedApiResource get habitat;
   @override
-  NamedAPIResource get generation;
+  NamedApiResource get generation;
   @override
   List<Name> get names;
   @override
@@ -9329,7 +9329,7 @@ Genus _$GenusFromJson(Map<String, dynamic> json) {
 class _$GenusTearOff {
   const _$GenusTearOff();
 
-  _Genus call(String genus, NamedAPIResource language) {
+  _Genus call(String genus, NamedApiResource language) {
     return _Genus(
       genus,
       language,
@@ -9347,7 +9347,7 @@ const $Genus = _$GenusTearOff();
 /// @nodoc
 mixin _$Genus {
   String get genus => throw _privateConstructorUsedError;
-  NamedAPIResource get language => throw _privateConstructorUsedError;
+  NamedApiResource get language => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -9358,9 +9358,9 @@ mixin _$Genus {
 abstract class $GenusCopyWith<$Res> {
   factory $GenusCopyWith(Genus value, $Res Function(Genus) then) =
       _$GenusCopyWithImpl<$Res>;
-  $Res call({String genus, NamedAPIResource language});
+  $Res call({String genus, NamedApiResource language});
 
-  $NamedAPIResourceCopyWith<$Res> get language;
+  $NamedApiResourceCopyWith<$Res> get language;
 }
 
 /// @nodoc
@@ -9384,13 +9384,13 @@ class _$GenusCopyWithImpl<$Res> implements $GenusCopyWith<$Res> {
       language: language == freezed
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
     ));
   }
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get language {
-    return $NamedAPIResourceCopyWith<$Res>(_value.language, (value) {
+  $NamedApiResourceCopyWith<$Res> get language {
+    return $NamedApiResourceCopyWith<$Res>(_value.language, (value) {
       return _then(_value.copyWith(language: value));
     });
   }
@@ -9401,10 +9401,10 @@ abstract class _$GenusCopyWith<$Res> implements $GenusCopyWith<$Res> {
   factory _$GenusCopyWith(_Genus value, $Res Function(_Genus) then) =
       __$GenusCopyWithImpl<$Res>;
   @override
-  $Res call({String genus, NamedAPIResource language});
+  $Res call({String genus, NamedApiResource language});
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get language;
+  $NamedApiResourceCopyWith<$Res> get language;
 }
 
 /// @nodoc
@@ -9429,7 +9429,7 @@ class __$GenusCopyWithImpl<$Res> extends _$GenusCopyWithImpl<$Res>
       language == freezed
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
     ));
   }
 }
@@ -9445,7 +9445,7 @@ class _$_Genus implements _Genus {
   @override
   final String genus;
   @override
-  final NamedAPIResource language;
+  final NamedApiResource language;
 
   @override
   String toString() {
@@ -9479,14 +9479,14 @@ class _$_Genus implements _Genus {
 }
 
 abstract class _Genus implements Genus {
-  const factory _Genus(String genus, NamedAPIResource language) = _$_Genus;
+  const factory _Genus(String genus, NamedApiResource language) = _$_Genus;
 
   factory _Genus.fromJson(Map<String, dynamic> json) = _$_Genus.fromJson;
 
   @override
   String get genus;
   @override
-  NamedAPIResource get language;
+  NamedApiResource get language;
   @override
   @JsonKey(ignore: true)
   _$GenusCopyWith<_Genus> get copyWith => throw _privateConstructorUsedError;
@@ -9502,7 +9502,7 @@ class _$PokemonSpeciesDexEntryTearOff {
   const _$PokemonSpeciesDexEntryTearOff();
 
   _PokemonSpeciesDexEntry call(@JsonKey(name: 'entry_number') int entryNumber,
-      NamedAPIResource pokedex) {
+      NamedApiResource pokedex) {
     return _PokemonSpeciesDexEntry(
       entryNumber,
       pokedex,
@@ -9521,7 +9521,7 @@ const $PokemonSpeciesDexEntry = _$PokemonSpeciesDexEntryTearOff();
 mixin _$PokemonSpeciesDexEntry {
   @JsonKey(name: 'entry_number')
   int get entryNumber => throw _privateConstructorUsedError;
-  NamedAPIResource get pokedex => throw _privateConstructorUsedError;
+  NamedApiResource get pokedex => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -9536,9 +9536,9 @@ abstract class $PokemonSpeciesDexEntryCopyWith<$Res> {
       _$PokemonSpeciesDexEntryCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'entry_number') int entryNumber,
-      NamedAPIResource pokedex});
+      NamedApiResource pokedex});
 
-  $NamedAPIResourceCopyWith<$Res> get pokedex;
+  $NamedApiResourceCopyWith<$Res> get pokedex;
 }
 
 /// @nodoc
@@ -9563,13 +9563,13 @@ class _$PokemonSpeciesDexEntryCopyWithImpl<$Res>
       pokedex: pokedex == freezed
           ? _value.pokedex
           : pokedex // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
     ));
   }
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get pokedex {
-    return $NamedAPIResourceCopyWith<$Res>(_value.pokedex, (value) {
+  $NamedApiResourceCopyWith<$Res> get pokedex {
+    return $NamedApiResourceCopyWith<$Res>(_value.pokedex, (value) {
       return _then(_value.copyWith(pokedex: value));
     });
   }
@@ -9584,10 +9584,10 @@ abstract class _$PokemonSpeciesDexEntryCopyWith<$Res>
   @override
   $Res call(
       {@JsonKey(name: 'entry_number') int entryNumber,
-      NamedAPIResource pokedex});
+      NamedApiResource pokedex});
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get pokedex;
+  $NamedApiResourceCopyWith<$Res> get pokedex;
 }
 
 /// @nodoc
@@ -9614,7 +9614,7 @@ class __$PokemonSpeciesDexEntryCopyWithImpl<$Res>
       pokedex == freezed
           ? _value.pokedex
           : pokedex // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
     ));
   }
 }
@@ -9632,7 +9632,7 @@ class _$_PokemonSpeciesDexEntry implements _PokemonSpeciesDexEntry {
   @JsonKey(name: 'entry_number')
   final int entryNumber;
   @override
-  final NamedAPIResource pokedex;
+  final NamedApiResource pokedex;
 
   @override
   String toString() {
@@ -9670,7 +9670,7 @@ class _$_PokemonSpeciesDexEntry implements _PokemonSpeciesDexEntry {
 abstract class _PokemonSpeciesDexEntry implements PokemonSpeciesDexEntry {
   const factory _PokemonSpeciesDexEntry(
       @JsonKey(name: 'entry_number') int entryNumber,
-      NamedAPIResource pokedex) = _$_PokemonSpeciesDexEntry;
+      NamedApiResource pokedex) = _$_PokemonSpeciesDexEntry;
 
   factory _PokemonSpeciesDexEntry.fromJson(Map<String, dynamic> json) =
       _$_PokemonSpeciesDexEntry.fromJson;
@@ -9679,7 +9679,7 @@ abstract class _PokemonSpeciesDexEntry implements PokemonSpeciesDexEntry {
   @JsonKey(name: 'entry_number')
   int get entryNumber;
   @override
-  NamedAPIResource get pokedex;
+  NamedApiResource get pokedex;
   @override
   @JsonKey(ignore: true)
   _$PokemonSpeciesDexEntryCopyWith<_PokemonSpeciesDexEntry> get copyWith =>
@@ -9695,7 +9695,7 @@ class _$PalParkEncounterAreaTearOff {
   const _$PalParkEncounterAreaTearOff();
 
   _PalParkEncounterArea call(@JsonKey(name: 'base_score') int baseScore,
-      int rate, NamedAPIResource area) {
+      int rate, NamedApiResource area) {
     return _PalParkEncounterArea(
       baseScore,
       rate,
@@ -9716,7 +9716,7 @@ mixin _$PalParkEncounterArea {
   @JsonKey(name: 'base_score')
   int get baseScore => throw _privateConstructorUsedError;
   int get rate => throw _privateConstructorUsedError;
-  NamedAPIResource get area => throw _privateConstructorUsedError;
+  NamedApiResource get area => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -9732,9 +9732,9 @@ abstract class $PalParkEncounterAreaCopyWith<$Res> {
   $Res call(
       {@JsonKey(name: 'base_score') int baseScore,
       int rate,
-      NamedAPIResource area});
+      NamedApiResource area});
 
-  $NamedAPIResourceCopyWith<$Res> get area;
+  $NamedApiResourceCopyWith<$Res> get area;
 }
 
 /// @nodoc
@@ -9764,13 +9764,13 @@ class _$PalParkEncounterAreaCopyWithImpl<$Res>
       area: area == freezed
           ? _value.area
           : area // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
     ));
   }
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get area {
-    return $NamedAPIResourceCopyWith<$Res>(_value.area, (value) {
+  $NamedApiResourceCopyWith<$Res> get area {
+    return $NamedApiResourceCopyWith<$Res>(_value.area, (value) {
       return _then(_value.copyWith(area: value));
     });
   }
@@ -9786,10 +9786,10 @@ abstract class _$PalParkEncounterAreaCopyWith<$Res>
   $Res call(
       {@JsonKey(name: 'base_score') int baseScore,
       int rate,
-      NamedAPIResource area});
+      NamedApiResource area});
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get area;
+  $NamedApiResourceCopyWith<$Res> get area;
 }
 
 /// @nodoc
@@ -9821,7 +9821,7 @@ class __$PalParkEncounterAreaCopyWithImpl<$Res>
       area == freezed
           ? _value.area
           : area // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
     ));
   }
 }
@@ -9841,7 +9841,7 @@ class _$_PalParkEncounterArea implements _PalParkEncounterArea {
   @override
   final int rate;
   @override
-  final NamedAPIResource area;
+  final NamedApiResource area;
 
   @override
   String toString() {
@@ -9881,7 +9881,7 @@ abstract class _PalParkEncounterArea implements PalParkEncounterArea {
   const factory _PalParkEncounterArea(
       @JsonKey(name: 'base_score') int baseScore,
       int rate,
-      NamedAPIResource area) = _$_PalParkEncounterArea;
+      NamedApiResource area) = _$_PalParkEncounterArea;
 
   factory _PalParkEncounterArea.fromJson(Map<String, dynamic> json) =
       _$_PalParkEncounterArea.fromJson;
@@ -9892,7 +9892,7 @@ abstract class _PalParkEncounterArea implements PalParkEncounterArea {
   @override
   int get rate;
   @override
-  NamedAPIResource get area;
+  NamedApiResource get area;
   @override
   @JsonKey(ignore: true)
   _$PalParkEncounterAreaCopyWith<_PalParkEncounterArea> get copyWith =>
@@ -9909,7 +9909,7 @@ class _$PokemonSpeciesVarietyTearOff {
   const _$PokemonSpeciesVarietyTearOff();
 
   _PokemonSpeciesVariety call(
-      @JsonKey(name: 'is_default') bool isDefault, NamedAPIResource pokemon) {
+      @JsonKey(name: 'is_default') bool isDefault, NamedApiResource pokemon) {
     return _PokemonSpeciesVariety(
       isDefault,
       pokemon,
@@ -9928,7 +9928,7 @@ const $PokemonSpeciesVariety = _$PokemonSpeciesVarietyTearOff();
 mixin _$PokemonSpeciesVariety {
   @JsonKey(name: 'is_default')
   bool get isDefault => throw _privateConstructorUsedError;
-  NamedAPIResource get pokemon => throw _privateConstructorUsedError;
+  NamedApiResource get pokemon => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -9942,9 +9942,9 @@ abstract class $PokemonSpeciesVarietyCopyWith<$Res> {
           $Res Function(PokemonSpeciesVariety) then) =
       _$PokemonSpeciesVarietyCopyWithImpl<$Res>;
   $Res call(
-      {@JsonKey(name: 'is_default') bool isDefault, NamedAPIResource pokemon});
+      {@JsonKey(name: 'is_default') bool isDefault, NamedApiResource pokemon});
 
-  $NamedAPIResourceCopyWith<$Res> get pokemon;
+  $NamedApiResourceCopyWith<$Res> get pokemon;
 }
 
 /// @nodoc
@@ -9969,13 +9969,13 @@ class _$PokemonSpeciesVarietyCopyWithImpl<$Res>
       pokemon: pokemon == freezed
           ? _value.pokemon
           : pokemon // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
     ));
   }
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get pokemon {
-    return $NamedAPIResourceCopyWith<$Res>(_value.pokemon, (value) {
+  $NamedApiResourceCopyWith<$Res> get pokemon {
+    return $NamedApiResourceCopyWith<$Res>(_value.pokemon, (value) {
       return _then(_value.copyWith(pokemon: value));
     });
   }
@@ -9989,10 +9989,10 @@ abstract class _$PokemonSpeciesVarietyCopyWith<$Res>
       __$PokemonSpeciesVarietyCopyWithImpl<$Res>;
   @override
   $Res call(
-      {@JsonKey(name: 'is_default') bool isDefault, NamedAPIResource pokemon});
+      {@JsonKey(name: 'is_default') bool isDefault, NamedApiResource pokemon});
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get pokemon;
+  $NamedApiResourceCopyWith<$Res> get pokemon;
 }
 
 /// @nodoc
@@ -10019,7 +10019,7 @@ class __$PokemonSpeciesVarietyCopyWithImpl<$Res>
       pokemon == freezed
           ? _value.pokemon
           : pokemon // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
     ));
   }
 }
@@ -10037,7 +10037,7 @@ class _$_PokemonSpeciesVariety implements _PokemonSpeciesVariety {
   @JsonKey(name: 'is_default')
   final bool isDefault;
   @override
-  final NamedAPIResource pokemon;
+  final NamedApiResource pokemon;
 
   @override
   String toString() {
@@ -10074,7 +10074,7 @@ class _$_PokemonSpeciesVariety implements _PokemonSpeciesVariety {
 abstract class _PokemonSpeciesVariety implements PokemonSpeciesVariety {
   const factory _PokemonSpeciesVariety(
       @JsonKey(name: 'is_default') bool isDefault,
-      NamedAPIResource pokemon) = _$_PokemonSpeciesVariety;
+      NamedApiResource pokemon) = _$_PokemonSpeciesVariety;
 
   factory _PokemonSpeciesVariety.fromJson(Map<String, dynamic> json) =
       _$_PokemonSpeciesVariety.fromJson;
@@ -10083,7 +10083,7 @@ abstract class _PokemonSpeciesVariety implements PokemonSpeciesVariety {
   @JsonKey(name: 'is_default')
   bool get isDefault;
   @override
-  NamedAPIResource get pokemon;
+  NamedApiResource get pokemon;
   @override
   @JsonKey(ignore: true)
   _$PokemonSpeciesVarietyCopyWith<_PokemonSpeciesVariety> get copyWith =>
@@ -10105,8 +10105,8 @@ class _$StatTearOff {
       @JsonKey(name: 'is_battle_only') bool isBattleOnly,
       @JsonKey(name: 'affecting_moves') MoveStatAffectSets affectingMoves,
       @JsonKey(name: 'affecting_natures') NatureStatAffectSets affectingNatures,
-      List<APIResource> characteristics,
-      @JsonKey(name: 'move_damage_class') NamedAPIResource moveDamageClass,
+      List<ApiResource> characteristics,
+      @JsonKey(name: 'move_damage_class') NamedApiResource moveDamageClass,
       List<Name> names) {
     return _Stat(
       id,
@@ -10142,9 +10142,9 @@ mixin _$Stat {
   @JsonKey(name: 'affecting_natures')
   NatureStatAffectSets get affectingNatures =>
       throw _privateConstructorUsedError;
-  List<APIResource> get characteristics => throw _privateConstructorUsedError;
+  List<ApiResource> get characteristics => throw _privateConstructorUsedError;
   @JsonKey(name: 'move_damage_class')
-  NamedAPIResource get moveDamageClass => throw _privateConstructorUsedError;
+  NamedApiResource get moveDamageClass => throw _privateConstructorUsedError;
   List<Name> get names => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -10163,13 +10163,13 @@ abstract class $StatCopyWith<$Res> {
       @JsonKey(name: 'is_battle_only') bool isBattleOnly,
       @JsonKey(name: 'affecting_moves') MoveStatAffectSets affectingMoves,
       @JsonKey(name: 'affecting_natures') NatureStatAffectSets affectingNatures,
-      List<APIResource> characteristics,
-      @JsonKey(name: 'move_damage_class') NamedAPIResource moveDamageClass,
+      List<ApiResource> characteristics,
+      @JsonKey(name: 'move_damage_class') NamedApiResource moveDamageClass,
       List<Name> names});
 
   $MoveStatAffectSetsCopyWith<$Res> get affectingMoves;
   $NatureStatAffectSetsCopyWith<$Res> get affectingNatures;
-  $NamedAPIResourceCopyWith<$Res> get moveDamageClass;
+  $NamedApiResourceCopyWith<$Res> get moveDamageClass;
 }
 
 /// @nodoc
@@ -10220,11 +10220,11 @@ class _$StatCopyWithImpl<$Res> implements $StatCopyWith<$Res> {
       characteristics: characteristics == freezed
           ? _value.characteristics
           : characteristics // ignore: cast_nullable_to_non_nullable
-              as List<APIResource>,
+              as List<ApiResource>,
       moveDamageClass: moveDamageClass == freezed
           ? _value.moveDamageClass
           : moveDamageClass // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
       names: names == freezed
           ? _value.names
           : names // ignore: cast_nullable_to_non_nullable
@@ -10248,8 +10248,8 @@ class _$StatCopyWithImpl<$Res> implements $StatCopyWith<$Res> {
   }
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get moveDamageClass {
-    return $NamedAPIResourceCopyWith<$Res>(_value.moveDamageClass, (value) {
+  $NamedApiResourceCopyWith<$Res> get moveDamageClass {
+    return $NamedApiResourceCopyWith<$Res>(_value.moveDamageClass, (value) {
       return _then(_value.copyWith(moveDamageClass: value));
     });
   }
@@ -10267,8 +10267,8 @@ abstract class _$StatCopyWith<$Res> implements $StatCopyWith<$Res> {
       @JsonKey(name: 'is_battle_only') bool isBattleOnly,
       @JsonKey(name: 'affecting_moves') MoveStatAffectSets affectingMoves,
       @JsonKey(name: 'affecting_natures') NatureStatAffectSets affectingNatures,
-      List<APIResource> characteristics,
-      @JsonKey(name: 'move_damage_class') NamedAPIResource moveDamageClass,
+      List<ApiResource> characteristics,
+      @JsonKey(name: 'move_damage_class') NamedApiResource moveDamageClass,
       List<Name> names});
 
   @override
@@ -10276,7 +10276,7 @@ abstract class _$StatCopyWith<$Res> implements $StatCopyWith<$Res> {
   @override
   $NatureStatAffectSetsCopyWith<$Res> get affectingNatures;
   @override
-  $NamedAPIResourceCopyWith<$Res> get moveDamageClass;
+  $NamedApiResourceCopyWith<$Res> get moveDamageClass;
 }
 
 /// @nodoc
@@ -10328,11 +10328,11 @@ class __$StatCopyWithImpl<$Res> extends _$StatCopyWithImpl<$Res>
       characteristics == freezed
           ? _value.characteristics
           : characteristics // ignore: cast_nullable_to_non_nullable
-              as List<APIResource>,
+              as List<ApiResource>,
       moveDamageClass == freezed
           ? _value.moveDamageClass
           : moveDamageClass // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
       names == freezed
           ? _value.names
           : names // ignore: cast_nullable_to_non_nullable
@@ -10374,10 +10374,10 @@ class _$_Stat implements _Stat {
   @JsonKey(name: 'affecting_natures')
   final NatureStatAffectSets affectingNatures;
   @override
-  final List<APIResource> characteristics;
+  final List<ApiResource> characteristics;
   @override
   @JsonKey(name: 'move_damage_class')
-  final NamedAPIResource moveDamageClass;
+  final NamedApiResource moveDamageClass;
   @override
   final List<Name> names;
 
@@ -10439,8 +10439,8 @@ abstract class _Stat implements Stat {
       @JsonKey(name: 'is_battle_only') bool isBattleOnly,
       @JsonKey(name: 'affecting_moves') MoveStatAffectSets affectingMoves,
       @JsonKey(name: 'affecting_natures') NatureStatAffectSets affectingNatures,
-      List<APIResource> characteristics,
-      @JsonKey(name: 'move_damage_class') NamedAPIResource moveDamageClass,
+      List<ApiResource> characteristics,
+      @JsonKey(name: 'move_damage_class') NamedApiResource moveDamageClass,
       List<Name> names) = _$_Stat;
 
   factory _Stat.fromJson(Map<String, dynamic> json) = _$_Stat.fromJson;
@@ -10462,10 +10462,10 @@ abstract class _Stat implements Stat {
   @JsonKey(name: 'affecting_natures')
   NatureStatAffectSets get affectingNatures;
   @override
-  List<APIResource> get characteristics;
+  List<ApiResource> get characteristics;
   @override
   @JsonKey(name: 'move_damage_class')
-  NamedAPIResource get moveDamageClass;
+  NamedApiResource get moveDamageClass;
   @override
   List<Name> get names;
   @override
@@ -10652,7 +10652,7 @@ MoveStatAffect _$MoveStatAffectFromJson(Map<String, dynamic> json) {
 class _$MoveStatAffectTearOff {
   const _$MoveStatAffectTearOff();
 
-  _MoveStatAffect call(int change, NamedAPIResource move) {
+  _MoveStatAffect call(int change, NamedApiResource move) {
     return _MoveStatAffect(
       change,
       move,
@@ -10670,7 +10670,7 @@ const $MoveStatAffect = _$MoveStatAffectTearOff();
 /// @nodoc
 mixin _$MoveStatAffect {
   int get change => throw _privateConstructorUsedError;
-  NamedAPIResource get move => throw _privateConstructorUsedError;
+  NamedApiResource get move => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -10683,9 +10683,9 @@ abstract class $MoveStatAffectCopyWith<$Res> {
   factory $MoveStatAffectCopyWith(
           MoveStatAffect value, $Res Function(MoveStatAffect) then) =
       _$MoveStatAffectCopyWithImpl<$Res>;
-  $Res call({int change, NamedAPIResource move});
+  $Res call({int change, NamedApiResource move});
 
-  $NamedAPIResourceCopyWith<$Res> get move;
+  $NamedApiResourceCopyWith<$Res> get move;
 }
 
 /// @nodoc
@@ -10710,13 +10710,13 @@ class _$MoveStatAffectCopyWithImpl<$Res>
       move: move == freezed
           ? _value.move
           : move // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
     ));
   }
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get move {
-    return $NamedAPIResourceCopyWith<$Res>(_value.move, (value) {
+  $NamedApiResourceCopyWith<$Res> get move {
+    return $NamedApiResourceCopyWith<$Res>(_value.move, (value) {
       return _then(_value.copyWith(move: value));
     });
   }
@@ -10729,10 +10729,10 @@ abstract class _$MoveStatAffectCopyWith<$Res>
           _MoveStatAffect value, $Res Function(_MoveStatAffect) then) =
       __$MoveStatAffectCopyWithImpl<$Res>;
   @override
-  $Res call({int change, NamedAPIResource move});
+  $Res call({int change, NamedApiResource move});
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get move;
+  $NamedApiResourceCopyWith<$Res> get move;
 }
 
 /// @nodoc
@@ -10759,7 +10759,7 @@ class __$MoveStatAffectCopyWithImpl<$Res>
       move == freezed
           ? _value.move
           : move // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
     ));
   }
 }
@@ -10775,7 +10775,7 @@ class _$_MoveStatAffect implements _MoveStatAffect {
   @override
   final int change;
   @override
-  final NamedAPIResource move;
+  final NamedApiResource move;
 
   @override
   String toString() {
@@ -10809,7 +10809,7 @@ class _$_MoveStatAffect implements _MoveStatAffect {
 }
 
 abstract class _MoveStatAffect implements MoveStatAffect {
-  const factory _MoveStatAffect(int change, NamedAPIResource move) =
+  const factory _MoveStatAffect(int change, NamedApiResource move) =
       _$_MoveStatAffect;
 
   factory _MoveStatAffect.fromJson(Map<String, dynamic> json) =
@@ -10818,7 +10818,7 @@ abstract class _MoveStatAffect implements MoveStatAffect {
   @override
   int get change;
   @override
-  NamedAPIResource get move;
+  NamedApiResource get move;
   @override
   @JsonKey(ignore: true)
   _$MoveStatAffectCopyWith<_MoveStatAffect> get copyWith =>
@@ -10834,7 +10834,7 @@ class _$NatureStatAffectSetsTearOff {
   const _$NatureStatAffectSetsTearOff();
 
   _NatureStatAffectSets call(
-      List<NamedAPIResource> increase, List<NamedAPIResource> decrease) {
+      List<NamedApiResource> increase, List<NamedApiResource> decrease) {
     return _NatureStatAffectSets(
       increase,
       decrease,
@@ -10851,8 +10851,8 @@ const $NatureStatAffectSets = _$NatureStatAffectSetsTearOff();
 
 /// @nodoc
 mixin _$NatureStatAffectSets {
-  List<NamedAPIResource> get increase => throw _privateConstructorUsedError;
-  List<NamedAPIResource> get decrease => throw _privateConstructorUsedError;
+  List<NamedApiResource> get increase => throw _privateConstructorUsedError;
+  List<NamedApiResource> get decrease => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -10865,7 +10865,7 @@ abstract class $NatureStatAffectSetsCopyWith<$Res> {
   factory $NatureStatAffectSetsCopyWith(NatureStatAffectSets value,
           $Res Function(NatureStatAffectSets) then) =
       _$NatureStatAffectSetsCopyWithImpl<$Res>;
-  $Res call({List<NamedAPIResource> increase, List<NamedAPIResource> decrease});
+  $Res call({List<NamedApiResource> increase, List<NamedApiResource> decrease});
 }
 
 /// @nodoc
@@ -10886,11 +10886,11 @@ class _$NatureStatAffectSetsCopyWithImpl<$Res>
       increase: increase == freezed
           ? _value.increase
           : increase // ignore: cast_nullable_to_non_nullable
-              as List<NamedAPIResource>,
+              as List<NamedApiResource>,
       decrease: decrease == freezed
           ? _value.decrease
           : decrease // ignore: cast_nullable_to_non_nullable
-              as List<NamedAPIResource>,
+              as List<NamedApiResource>,
     ));
   }
 }
@@ -10902,7 +10902,7 @@ abstract class _$NatureStatAffectSetsCopyWith<$Res>
           $Res Function(_NatureStatAffectSets) then) =
       __$NatureStatAffectSetsCopyWithImpl<$Res>;
   @override
-  $Res call({List<NamedAPIResource> increase, List<NamedAPIResource> decrease});
+  $Res call({List<NamedApiResource> increase, List<NamedApiResource> decrease});
 }
 
 /// @nodoc
@@ -10925,11 +10925,11 @@ class __$NatureStatAffectSetsCopyWithImpl<$Res>
       increase == freezed
           ? _value.increase
           : increase // ignore: cast_nullable_to_non_nullable
-              as List<NamedAPIResource>,
+              as List<NamedApiResource>,
       decrease == freezed
           ? _value.decrease
           : decrease // ignore: cast_nullable_to_non_nullable
-              as List<NamedAPIResource>,
+              as List<NamedApiResource>,
     ));
   }
 }
@@ -10943,9 +10943,9 @@ class _$_NatureStatAffectSets implements _NatureStatAffectSets {
       _$$_NatureStatAffectSetsFromJson(json);
 
   @override
-  final List<NamedAPIResource> increase;
+  final List<NamedApiResource> increase;
   @override
-  final List<NamedAPIResource> decrease;
+  final List<NamedApiResource> decrease;
 
   @override
   String toString() {
@@ -10981,16 +10981,16 @@ class _$_NatureStatAffectSets implements _NatureStatAffectSets {
 
 abstract class _NatureStatAffectSets implements NatureStatAffectSets {
   const factory _NatureStatAffectSets(
-          List<NamedAPIResource> increase, List<NamedAPIResource> decrease) =
+          List<NamedApiResource> increase, List<NamedApiResource> decrease) =
       _$_NatureStatAffectSets;
 
   factory _NatureStatAffectSets.fromJson(Map<String, dynamic> json) =
       _$_NatureStatAffectSets.fromJson;
 
   @override
-  List<NamedAPIResource> get increase;
+  List<NamedApiResource> get increase;
   @override
-  List<NamedAPIResource> get decrease;
+  List<NamedApiResource> get decrease;
   @override
   @JsonKey(ignore: true)
   _$NatureStatAffectSetsCopyWith<_NatureStatAffectSets> get copyWith =>
@@ -11014,12 +11014,12 @@ class _$TypeTearOff {
           List<TypeRelationsPast> pastDamageRelations,
       @JsonKey(name: 'game_indices')
           List<GenerationGameIndex> gameIndices,
-      NamedAPIResource generation,
+      NamedApiResource generation,
       @JsonKey(name: 'move_damage_class')
-          NamedAPIResource moveDamageClass,
+          NamedApiResource moveDamageClass,
       List<Name> names,
       List<TypePokemon> pokemon,
-      List<NamedAPIResource> moves) {
+      List<NamedApiResource> moves) {
     return _Type(
       id,
       name,
@@ -11054,12 +11054,12 @@ mixin _$Type {
   @JsonKey(name: 'game_indices')
   List<GenerationGameIndex> get gameIndices =>
       throw _privateConstructorUsedError;
-  NamedAPIResource get generation => throw _privateConstructorUsedError;
+  NamedApiResource get generation => throw _privateConstructorUsedError;
   @JsonKey(name: 'move_damage_class')
-  NamedAPIResource get moveDamageClass => throw _privateConstructorUsedError;
+  NamedApiResource get moveDamageClass => throw _privateConstructorUsedError;
   List<Name> get names => throw _privateConstructorUsedError;
   List<TypePokemon> get pokemon => throw _privateConstructorUsedError;
-  List<NamedAPIResource> get moves => throw _privateConstructorUsedError;
+  List<NamedApiResource> get moves => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -11079,16 +11079,16 @@ abstract class $TypeCopyWith<$Res> {
           List<TypeRelationsPast> pastDamageRelations,
       @JsonKey(name: 'game_indices')
           List<GenerationGameIndex> gameIndices,
-      NamedAPIResource generation,
+      NamedApiResource generation,
       @JsonKey(name: 'move_damage_class')
-          NamedAPIResource moveDamageClass,
+          NamedApiResource moveDamageClass,
       List<Name> names,
       List<TypePokemon> pokemon,
-      List<NamedAPIResource> moves});
+      List<NamedApiResource> moves});
 
   $TypeRelationsCopyWith<$Res> get damageRelations;
-  $NamedAPIResourceCopyWith<$Res> get generation;
-  $NamedAPIResourceCopyWith<$Res> get moveDamageClass;
+  $NamedApiResourceCopyWith<$Res> get generation;
+  $NamedApiResourceCopyWith<$Res> get moveDamageClass;
 }
 
 /// @nodoc
@@ -11136,11 +11136,11 @@ class _$TypeCopyWithImpl<$Res> implements $TypeCopyWith<$Res> {
       generation: generation == freezed
           ? _value.generation
           : generation // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
       moveDamageClass: moveDamageClass == freezed
           ? _value.moveDamageClass
           : moveDamageClass // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
       names: names == freezed
           ? _value.names
           : names // ignore: cast_nullable_to_non_nullable
@@ -11152,7 +11152,7 @@ class _$TypeCopyWithImpl<$Res> implements $TypeCopyWith<$Res> {
       moves: moves == freezed
           ? _value.moves
           : moves // ignore: cast_nullable_to_non_nullable
-              as List<NamedAPIResource>,
+              as List<NamedApiResource>,
     ));
   }
 
@@ -11164,15 +11164,15 @@ class _$TypeCopyWithImpl<$Res> implements $TypeCopyWith<$Res> {
   }
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get generation {
-    return $NamedAPIResourceCopyWith<$Res>(_value.generation, (value) {
+  $NamedApiResourceCopyWith<$Res> get generation {
+    return $NamedApiResourceCopyWith<$Res>(_value.generation, (value) {
       return _then(_value.copyWith(generation: value));
     });
   }
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get moveDamageClass {
-    return $NamedAPIResourceCopyWith<$Res>(_value.moveDamageClass, (value) {
+  $NamedApiResourceCopyWith<$Res> get moveDamageClass {
+    return $NamedApiResourceCopyWith<$Res>(_value.moveDamageClass, (value) {
       return _then(_value.copyWith(moveDamageClass: value));
     });
   }
@@ -11192,19 +11192,19 @@ abstract class _$TypeCopyWith<$Res> implements $TypeCopyWith<$Res> {
           List<TypeRelationsPast> pastDamageRelations,
       @JsonKey(name: 'game_indices')
           List<GenerationGameIndex> gameIndices,
-      NamedAPIResource generation,
+      NamedApiResource generation,
       @JsonKey(name: 'move_damage_class')
-          NamedAPIResource moveDamageClass,
+          NamedApiResource moveDamageClass,
       List<Name> names,
       List<TypePokemon> pokemon,
-      List<NamedAPIResource> moves});
+      List<NamedApiResource> moves});
 
   @override
   $TypeRelationsCopyWith<$Res> get damageRelations;
   @override
-  $NamedAPIResourceCopyWith<$Res> get generation;
+  $NamedApiResourceCopyWith<$Res> get generation;
   @override
-  $NamedAPIResourceCopyWith<$Res> get moveDamageClass;
+  $NamedApiResourceCopyWith<$Res> get moveDamageClass;
 }
 
 /// @nodoc
@@ -11253,11 +11253,11 @@ class __$TypeCopyWithImpl<$Res> extends _$TypeCopyWithImpl<$Res>
       generation == freezed
           ? _value.generation
           : generation // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
       moveDamageClass == freezed
           ? _value.moveDamageClass
           : moveDamageClass // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
       names == freezed
           ? _value.names
           : names // ignore: cast_nullable_to_non_nullable
@@ -11269,7 +11269,7 @@ class __$TypeCopyWithImpl<$Res> extends _$TypeCopyWithImpl<$Res>
       moves == freezed
           ? _value.moves
           : moves // ignore: cast_nullable_to_non_nullable
-              as List<NamedAPIResource>,
+              as List<NamedApiResource>,
     ));
   }
 }
@@ -11305,16 +11305,16 @@ class _$_Type implements _Type {
   @JsonKey(name: 'game_indices')
   final List<GenerationGameIndex> gameIndices;
   @override
-  final NamedAPIResource generation;
+  final NamedApiResource generation;
   @override
   @JsonKey(name: 'move_damage_class')
-  final NamedAPIResource moveDamageClass;
+  final NamedApiResource moveDamageClass;
   @override
   final List<Name> names;
   @override
   final List<TypePokemon> pokemon;
   @override
-  final List<NamedAPIResource> moves;
+  final List<NamedApiResource> moves;
 
   @override
   String toString() {
@@ -11378,12 +11378,12 @@ abstract class _Type implements Type {
           List<TypeRelationsPast> pastDamageRelations,
       @JsonKey(name: 'game_indices')
           List<GenerationGameIndex> gameIndices,
-      NamedAPIResource generation,
+      NamedApiResource generation,
       @JsonKey(name: 'move_damage_class')
-          NamedAPIResource moveDamageClass,
+          NamedApiResource moveDamageClass,
       List<Name> names,
       List<TypePokemon> pokemon,
-      List<NamedAPIResource> moves) = _$_Type;
+      List<NamedApiResource> moves) = _$_Type;
 
   factory _Type.fromJson(Map<String, dynamic> json) = _$_Type.fromJson;
 
@@ -11401,16 +11401,16 @@ abstract class _Type implements Type {
   @JsonKey(name: 'game_indices')
   List<GenerationGameIndex> get gameIndices;
   @override
-  NamedAPIResource get generation;
+  NamedApiResource get generation;
   @override
   @JsonKey(name: 'move_damage_class')
-  NamedAPIResource get moveDamageClass;
+  NamedApiResource get moveDamageClass;
   @override
   List<Name> get names;
   @override
   List<TypePokemon> get pokemon;
   @override
-  List<NamedAPIResource> get moves;
+  List<NamedApiResource> get moves;
   @override
   @JsonKey(ignore: true)
   _$TypeCopyWith<_Type> get copyWith => throw _privateConstructorUsedError;
@@ -11424,7 +11424,7 @@ TypePokemon _$TypePokemonFromJson(Map<String, dynamic> json) {
 class _$TypePokemonTearOff {
   const _$TypePokemonTearOff();
 
-  _TypePokemon call(int slot, NamedAPIResource pokemon) {
+  _TypePokemon call(int slot, NamedApiResource pokemon) {
     return _TypePokemon(
       slot,
       pokemon,
@@ -11442,7 +11442,7 @@ const $TypePokemon = _$TypePokemonTearOff();
 /// @nodoc
 mixin _$TypePokemon {
   int get slot => throw _privateConstructorUsedError;
-  NamedAPIResource get pokemon => throw _privateConstructorUsedError;
+  NamedApiResource get pokemon => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -11455,9 +11455,9 @@ abstract class $TypePokemonCopyWith<$Res> {
   factory $TypePokemonCopyWith(
           TypePokemon value, $Res Function(TypePokemon) then) =
       _$TypePokemonCopyWithImpl<$Res>;
-  $Res call({int slot, NamedAPIResource pokemon});
+  $Res call({int slot, NamedApiResource pokemon});
 
-  $NamedAPIResourceCopyWith<$Res> get pokemon;
+  $NamedApiResourceCopyWith<$Res> get pokemon;
 }
 
 /// @nodoc
@@ -11481,13 +11481,13 @@ class _$TypePokemonCopyWithImpl<$Res> implements $TypePokemonCopyWith<$Res> {
       pokemon: pokemon == freezed
           ? _value.pokemon
           : pokemon // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
     ));
   }
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get pokemon {
-    return $NamedAPIResourceCopyWith<$Res>(_value.pokemon, (value) {
+  $NamedApiResourceCopyWith<$Res> get pokemon {
+    return $NamedApiResourceCopyWith<$Res>(_value.pokemon, (value) {
       return _then(_value.copyWith(pokemon: value));
     });
   }
@@ -11500,10 +11500,10 @@ abstract class _$TypePokemonCopyWith<$Res>
           _TypePokemon value, $Res Function(_TypePokemon) then) =
       __$TypePokemonCopyWithImpl<$Res>;
   @override
-  $Res call({int slot, NamedAPIResource pokemon});
+  $Res call({int slot, NamedApiResource pokemon});
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get pokemon;
+  $NamedApiResourceCopyWith<$Res> get pokemon;
 }
 
 /// @nodoc
@@ -11529,7 +11529,7 @@ class __$TypePokemonCopyWithImpl<$Res> extends _$TypePokemonCopyWithImpl<$Res>
       pokemon == freezed
           ? _value.pokemon
           : pokemon // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
     ));
   }
 }
@@ -11545,7 +11545,7 @@ class _$_TypePokemon implements _TypePokemon {
   @override
   final int slot;
   @override
-  final NamedAPIResource pokemon;
+  final NamedApiResource pokemon;
 
   @override
   String toString() {
@@ -11579,7 +11579,7 @@ class _$_TypePokemon implements _TypePokemon {
 }
 
 abstract class _TypePokemon implements TypePokemon {
-  const factory _TypePokemon(int slot, NamedAPIResource pokemon) =
+  const factory _TypePokemon(int slot, NamedApiResource pokemon) =
       _$_TypePokemon;
 
   factory _TypePokemon.fromJson(Map<String, dynamic> json) =
@@ -11588,7 +11588,7 @@ abstract class _TypePokemon implements TypePokemon {
   @override
   int get slot;
   @override
-  NamedAPIResource get pokemon;
+  NamedApiResource get pokemon;
   @override
   @JsonKey(ignore: true)
   _$TypePokemonCopyWith<_TypePokemon> get copyWith =>
@@ -11605,17 +11605,17 @@ class _$TypeRelationsTearOff {
 
   _TypeRelations call(
       @JsonKey(name: 'no_damage_to')
-          List<NamedAPIResource> noDamageTo,
+          List<NamedApiResource> noDamageTo,
       @JsonKey(name: 'half_damage_to')
-          List<NamedAPIResource> halfDamageTo,
+          List<NamedApiResource> halfDamageTo,
       @JsonKey(name: 'double_damage_to')
-          List<NamedAPIResource> doubleDamageTo,
+          List<NamedApiResource> doubleDamageTo,
       @JsonKey(name: 'no_damage_from')
-          List<NamedAPIResource> noDamageFrom,
+          List<NamedApiResource> noDamageFrom,
       @JsonKey(name: 'half_damage_from')
-          List<NamedAPIResource> halfDamageFrom,
+          List<NamedApiResource> halfDamageFrom,
       @JsonKey(name: 'double_damage_from')
-          List<NamedAPIResource> doubleDamageFrom) {
+          List<NamedApiResource> doubleDamageFrom) {
     return _TypeRelations(
       noDamageTo,
       halfDamageTo,
@@ -11637,19 +11637,19 @@ const $TypeRelations = _$TypeRelationsTearOff();
 /// @nodoc
 mixin _$TypeRelations {
   @JsonKey(name: 'no_damage_to')
-  List<NamedAPIResource> get noDamageTo => throw _privateConstructorUsedError;
+  List<NamedApiResource> get noDamageTo => throw _privateConstructorUsedError;
   @JsonKey(name: 'half_damage_to')
-  List<NamedAPIResource> get halfDamageTo => throw _privateConstructorUsedError;
+  List<NamedApiResource> get halfDamageTo => throw _privateConstructorUsedError;
   @JsonKey(name: 'double_damage_to')
-  List<NamedAPIResource> get doubleDamageTo =>
+  List<NamedApiResource> get doubleDamageTo =>
       throw _privateConstructorUsedError;
   @JsonKey(name: 'no_damage_from')
-  List<NamedAPIResource> get noDamageFrom => throw _privateConstructorUsedError;
+  List<NamedApiResource> get noDamageFrom => throw _privateConstructorUsedError;
   @JsonKey(name: 'half_damage_from')
-  List<NamedAPIResource> get halfDamageFrom =>
+  List<NamedApiResource> get halfDamageFrom =>
       throw _privateConstructorUsedError;
   @JsonKey(name: 'double_damage_from')
-  List<NamedAPIResource> get doubleDamageFrom =>
+  List<NamedApiResource> get doubleDamageFrom =>
       throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -11665,17 +11665,17 @@ abstract class $TypeRelationsCopyWith<$Res> {
       _$TypeRelationsCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'no_damage_to')
-          List<NamedAPIResource> noDamageTo,
+          List<NamedApiResource> noDamageTo,
       @JsonKey(name: 'half_damage_to')
-          List<NamedAPIResource> halfDamageTo,
+          List<NamedApiResource> halfDamageTo,
       @JsonKey(name: 'double_damage_to')
-          List<NamedAPIResource> doubleDamageTo,
+          List<NamedApiResource> doubleDamageTo,
       @JsonKey(name: 'no_damage_from')
-          List<NamedAPIResource> noDamageFrom,
+          List<NamedApiResource> noDamageFrom,
       @JsonKey(name: 'half_damage_from')
-          List<NamedAPIResource> halfDamageFrom,
+          List<NamedApiResource> halfDamageFrom,
       @JsonKey(name: 'double_damage_from')
-          List<NamedAPIResource> doubleDamageFrom});
+          List<NamedApiResource> doubleDamageFrom});
 }
 
 /// @nodoc
@@ -11700,27 +11700,27 @@ class _$TypeRelationsCopyWithImpl<$Res>
       noDamageTo: noDamageTo == freezed
           ? _value.noDamageTo
           : noDamageTo // ignore: cast_nullable_to_non_nullable
-              as List<NamedAPIResource>,
+              as List<NamedApiResource>,
       halfDamageTo: halfDamageTo == freezed
           ? _value.halfDamageTo
           : halfDamageTo // ignore: cast_nullable_to_non_nullable
-              as List<NamedAPIResource>,
+              as List<NamedApiResource>,
       doubleDamageTo: doubleDamageTo == freezed
           ? _value.doubleDamageTo
           : doubleDamageTo // ignore: cast_nullable_to_non_nullable
-              as List<NamedAPIResource>,
+              as List<NamedApiResource>,
       noDamageFrom: noDamageFrom == freezed
           ? _value.noDamageFrom
           : noDamageFrom // ignore: cast_nullable_to_non_nullable
-              as List<NamedAPIResource>,
+              as List<NamedApiResource>,
       halfDamageFrom: halfDamageFrom == freezed
           ? _value.halfDamageFrom
           : halfDamageFrom // ignore: cast_nullable_to_non_nullable
-              as List<NamedAPIResource>,
+              as List<NamedApiResource>,
       doubleDamageFrom: doubleDamageFrom == freezed
           ? _value.doubleDamageFrom
           : doubleDamageFrom // ignore: cast_nullable_to_non_nullable
-              as List<NamedAPIResource>,
+              as List<NamedApiResource>,
     ));
   }
 }
@@ -11734,17 +11734,17 @@ abstract class _$TypeRelationsCopyWith<$Res>
   @override
   $Res call(
       {@JsonKey(name: 'no_damage_to')
-          List<NamedAPIResource> noDamageTo,
+          List<NamedApiResource> noDamageTo,
       @JsonKey(name: 'half_damage_to')
-          List<NamedAPIResource> halfDamageTo,
+          List<NamedApiResource> halfDamageTo,
       @JsonKey(name: 'double_damage_to')
-          List<NamedAPIResource> doubleDamageTo,
+          List<NamedApiResource> doubleDamageTo,
       @JsonKey(name: 'no_damage_from')
-          List<NamedAPIResource> noDamageFrom,
+          List<NamedApiResource> noDamageFrom,
       @JsonKey(name: 'half_damage_from')
-          List<NamedAPIResource> halfDamageFrom,
+          List<NamedApiResource> halfDamageFrom,
       @JsonKey(name: 'double_damage_from')
-          List<NamedAPIResource> doubleDamageFrom});
+          List<NamedApiResource> doubleDamageFrom});
 }
 
 /// @nodoc
@@ -11771,27 +11771,27 @@ class __$TypeRelationsCopyWithImpl<$Res>
       noDamageTo == freezed
           ? _value.noDamageTo
           : noDamageTo // ignore: cast_nullable_to_non_nullable
-              as List<NamedAPIResource>,
+              as List<NamedApiResource>,
       halfDamageTo == freezed
           ? _value.halfDamageTo
           : halfDamageTo // ignore: cast_nullable_to_non_nullable
-              as List<NamedAPIResource>,
+              as List<NamedApiResource>,
       doubleDamageTo == freezed
           ? _value.doubleDamageTo
           : doubleDamageTo // ignore: cast_nullable_to_non_nullable
-              as List<NamedAPIResource>,
+              as List<NamedApiResource>,
       noDamageFrom == freezed
           ? _value.noDamageFrom
           : noDamageFrom // ignore: cast_nullable_to_non_nullable
-              as List<NamedAPIResource>,
+              as List<NamedApiResource>,
       halfDamageFrom == freezed
           ? _value.halfDamageFrom
           : halfDamageFrom // ignore: cast_nullable_to_non_nullable
-              as List<NamedAPIResource>,
+              as List<NamedApiResource>,
       doubleDamageFrom == freezed
           ? _value.doubleDamageFrom
           : doubleDamageFrom // ignore: cast_nullable_to_non_nullable
-              as List<NamedAPIResource>,
+              as List<NamedApiResource>,
     ));
   }
 }
@@ -11812,22 +11812,22 @@ class _$_TypeRelations implements _TypeRelations {
 
   @override
   @JsonKey(name: 'no_damage_to')
-  final List<NamedAPIResource> noDamageTo;
+  final List<NamedApiResource> noDamageTo;
   @override
   @JsonKey(name: 'half_damage_to')
-  final List<NamedAPIResource> halfDamageTo;
+  final List<NamedApiResource> halfDamageTo;
   @override
   @JsonKey(name: 'double_damage_to')
-  final List<NamedAPIResource> doubleDamageTo;
+  final List<NamedApiResource> doubleDamageTo;
   @override
   @JsonKey(name: 'no_damage_from')
-  final List<NamedAPIResource> noDamageFrom;
+  final List<NamedApiResource> noDamageFrom;
   @override
   @JsonKey(name: 'half_damage_from')
-  final List<NamedAPIResource> halfDamageFrom;
+  final List<NamedApiResource> halfDamageFrom;
   @override
   @JsonKey(name: 'double_damage_from')
-  final List<NamedAPIResource> doubleDamageFrom;
+  final List<NamedApiResource> doubleDamageFrom;
 
   @override
   String toString() {
@@ -11877,39 +11877,39 @@ class _$_TypeRelations implements _TypeRelations {
 abstract class _TypeRelations implements TypeRelations {
   const factory _TypeRelations(
       @JsonKey(name: 'no_damage_to')
-          List<NamedAPIResource> noDamageTo,
+          List<NamedApiResource> noDamageTo,
       @JsonKey(name: 'half_damage_to')
-          List<NamedAPIResource> halfDamageTo,
+          List<NamedApiResource> halfDamageTo,
       @JsonKey(name: 'double_damage_to')
-          List<NamedAPIResource> doubleDamageTo,
+          List<NamedApiResource> doubleDamageTo,
       @JsonKey(name: 'no_damage_from')
-          List<NamedAPIResource> noDamageFrom,
+          List<NamedApiResource> noDamageFrom,
       @JsonKey(name: 'half_damage_from')
-          List<NamedAPIResource> halfDamageFrom,
+          List<NamedApiResource> halfDamageFrom,
       @JsonKey(name: 'double_damage_from')
-          List<NamedAPIResource> doubleDamageFrom) = _$_TypeRelations;
+          List<NamedApiResource> doubleDamageFrom) = _$_TypeRelations;
 
   factory _TypeRelations.fromJson(Map<String, dynamic> json) =
       _$_TypeRelations.fromJson;
 
   @override
   @JsonKey(name: 'no_damage_to')
-  List<NamedAPIResource> get noDamageTo;
+  List<NamedApiResource> get noDamageTo;
   @override
   @JsonKey(name: 'half_damage_to')
-  List<NamedAPIResource> get halfDamageTo;
+  List<NamedApiResource> get halfDamageTo;
   @override
   @JsonKey(name: 'double_damage_to')
-  List<NamedAPIResource> get doubleDamageTo;
+  List<NamedApiResource> get doubleDamageTo;
   @override
   @JsonKey(name: 'no_damage_from')
-  List<NamedAPIResource> get noDamageFrom;
+  List<NamedApiResource> get noDamageFrom;
   @override
   @JsonKey(name: 'half_damage_from')
-  List<NamedAPIResource> get halfDamageFrom;
+  List<NamedApiResource> get halfDamageFrom;
   @override
   @JsonKey(name: 'double_damage_from')
-  List<NamedAPIResource> get doubleDamageFrom;
+  List<NamedApiResource> get doubleDamageFrom;
   @override
   @JsonKey(ignore: true)
   _$TypeRelationsCopyWith<_TypeRelations> get copyWith =>
@@ -11924,7 +11924,7 @@ TypeRelationsPast _$TypeRelationsPastFromJson(Map<String, dynamic> json) {
 class _$TypeRelationsPastTearOff {
   const _$TypeRelationsPastTearOff();
 
-  _TypeRelationsPast call(NamedAPIResource generation,
+  _TypeRelationsPast call(NamedApiResource generation,
       @JsonKey(name: 'damage_relations') TypeRelations damageRelations) {
     return _TypeRelationsPast(
       generation,
@@ -11942,7 +11942,7 @@ const $TypeRelationsPast = _$TypeRelationsPastTearOff();
 
 /// @nodoc
 mixin _$TypeRelationsPast {
-  NamedAPIResource get generation => throw _privateConstructorUsedError;
+  NamedApiResource get generation => throw _privateConstructorUsedError;
   @JsonKey(name: 'damage_relations')
   TypeRelations get damageRelations => throw _privateConstructorUsedError;
 
@@ -11958,10 +11958,10 @@ abstract class $TypeRelationsPastCopyWith<$Res> {
           TypeRelationsPast value, $Res Function(TypeRelationsPast) then) =
       _$TypeRelationsPastCopyWithImpl<$Res>;
   $Res call(
-      {NamedAPIResource generation,
+      {NamedApiResource generation,
       @JsonKey(name: 'damage_relations') TypeRelations damageRelations});
 
-  $NamedAPIResourceCopyWith<$Res> get generation;
+  $NamedApiResourceCopyWith<$Res> get generation;
   $TypeRelationsCopyWith<$Res> get damageRelations;
 }
 
@@ -11983,7 +11983,7 @@ class _$TypeRelationsPastCopyWithImpl<$Res>
       generation: generation == freezed
           ? _value.generation
           : generation // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
       damageRelations: damageRelations == freezed
           ? _value.damageRelations
           : damageRelations // ignore: cast_nullable_to_non_nullable
@@ -11992,8 +11992,8 @@ class _$TypeRelationsPastCopyWithImpl<$Res>
   }
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get generation {
-    return $NamedAPIResourceCopyWith<$Res>(_value.generation, (value) {
+  $NamedApiResourceCopyWith<$Res> get generation {
+    return $NamedApiResourceCopyWith<$Res>(_value.generation, (value) {
       return _then(_value.copyWith(generation: value));
     });
   }
@@ -12014,11 +12014,11 @@ abstract class _$TypeRelationsPastCopyWith<$Res>
       __$TypeRelationsPastCopyWithImpl<$Res>;
   @override
   $Res call(
-      {NamedAPIResource generation,
+      {NamedApiResource generation,
       @JsonKey(name: 'damage_relations') TypeRelations damageRelations});
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get generation;
+  $NamedApiResourceCopyWith<$Res> get generation;
   @override
   $TypeRelationsCopyWith<$Res> get damageRelations;
 }
@@ -12043,7 +12043,7 @@ class __$TypeRelationsPastCopyWithImpl<$Res>
       generation == freezed
           ? _value.generation
           : generation // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
       damageRelations == freezed
           ? _value.damageRelations
           : damageRelations // ignore: cast_nullable_to_non_nullable
@@ -12062,7 +12062,7 @@ class _$_TypeRelationsPast implements _TypeRelationsPast {
       _$$_TypeRelationsPastFromJson(json);
 
   @override
-  final NamedAPIResource generation;
+  final NamedApiResource generation;
   @override
   @JsonKey(name: 'damage_relations')
   final TypeRelations damageRelations;
@@ -12101,7 +12101,7 @@ class _$_TypeRelationsPast implements _TypeRelationsPast {
 }
 
 abstract class _TypeRelationsPast implements TypeRelationsPast {
-  const factory _TypeRelationsPast(NamedAPIResource generation,
+  const factory _TypeRelationsPast(NamedApiResource generation,
           @JsonKey(name: 'damage_relations') TypeRelations damageRelations) =
       _$_TypeRelationsPast;
 
@@ -12109,7 +12109,7 @@ abstract class _TypeRelationsPast implements TypeRelationsPast {
       _$_TypeRelationsPast.fromJson;
 
   @override
-  NamedAPIResource get generation;
+  NamedApiResource get generation;
   @override
   @JsonKey(name: 'damage_relations')
   TypeRelations get damageRelations;

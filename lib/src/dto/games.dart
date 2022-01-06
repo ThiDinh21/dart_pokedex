@@ -12,13 +12,13 @@ class Generation with _$Generation {
   const factory Generation(
     int id,
     String name,
-    List<NamedAPIResource> abilities,
+    List<NamedApiResource> abilities,
     List<Name> names,
-    @JsonKey(name: 'main_region') NamedAPIResource mainRegion,
-    List<NamedAPIResource> moves,
-    @JsonKey(name: 'pokemon_species') List<NamedAPIResource> pokemonSpecies,
-    List<NamedAPIResource> types,
-    @JsonKey(name: 'version_groups') List<NamedAPIResource> versionGroups,
+    @JsonKey(name: 'main_region') NamedApiResource mainRegion,
+    List<NamedApiResource> moves,
+    @JsonKey(name: 'pokemon_species') List<NamedApiResource> pokemonSpecies,
+    List<NamedApiResource> types,
+    @JsonKey(name: 'version_groups') List<NamedApiResource> versionGroups,
   ) = _Generation;
 
   factory Generation.fromJson(Json json) => _$GenerationFromJson(json);
@@ -33,8 +33,8 @@ class PokedexData with _$PokedexData {
     List<Description> descriptions,
     List<Name> names,
     @JsonKey(name: 'pokemon_entries') List<PokemonEntry> pokemonEntries,
-    NamedAPIResource region,
-    @JsonKey(name: 'version_groups') List<NamedAPIResource> versionGroups,
+    NamedApiResource region,
+    @JsonKey(name: 'version_groups') List<NamedApiResource> versionGroups,
   ) = _PokedexData;
 
   factory PokedexData.fromJson(Json json) => _$PokedexDataFromJson(json);
@@ -44,7 +44,7 @@ class PokedexData with _$PokedexData {
 class PokemonEntry with _$PokemonEntry {
   const factory PokemonEntry(
     @JsonKey(name: 'entry_number') int entryNumber,
-    @JsonKey(name: 'pokemon_species') NamedAPIResource pokemonSpecies,
+    @JsonKey(name: 'pokemon_species') NamedApiResource pokemonSpecies,
   ) = _PokemonEntry;
 
   factory PokemonEntry.fromJson(Json json) => _$PokemonEntryFromJson(json);
@@ -56,7 +56,7 @@ class Version with _$Version {
     int id,
     String name,
     List<Name> names,
-    @JsonKey(name: 'version_group') NamedAPIResource versionGroup,
+    @JsonKey(name: 'version_group') NamedApiResource versionGroup,
   ) = _Version;
 
   factory Version.fromJson(Json json) => _$VersionFromJson(json);
@@ -68,12 +68,12 @@ class VersionGroup with _$VersionGroup {
     int id,
     String name,
     int order,
-    NamedAPIResource generation,
+    NamedApiResource generation,
     @JsonKey(name: 'move_learn_methods')
-        List<NamedAPIResource> moveLearnMethods,
-    List<NamedAPIResource> pokedexes,
-    List<NamedAPIResource> regions,
-    List<NamedAPIResource> versions,
+        List<NamedApiResource> moveLearnMethods,
+    List<NamedApiResource> pokedexes,
+    List<NamedApiResource> regions,
+    List<NamedApiResource> versions,
   ) = _VersionGroup;
 
   factory VersionGroup.fromJson(Json json) => _$VersionGroupFromJson(json);

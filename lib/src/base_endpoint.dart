@@ -16,12 +16,12 @@ abstract class BaseEndpoint<R> {
     required int id,
   });
 
-  Future<APIResourceList> getPage({
+  Future<ApiResourceList> getPage({
     int limit = 20,
     int offset = 0,
   });
 
-  Future<APIResourceList> getAll();
+  Future<ApiResourceList> getAll();
 }
 
 abstract class BaseNamedEndpoint<R> {
@@ -30,12 +30,12 @@ abstract class BaseNamedEndpoint<R> {
     String? name,
   });
 
-  Future<NamedAPIResourceList> getPage({
+  Future<NamedApiResourceList> getPage({
     int limit = 20,
     int offset = 0,
   });
 
-  Future<NamedAPIResourceList> getAll();
+  Future<NamedApiResourceList> getAll();
 }
 
 abstract class BasePokeApiEndpoints {

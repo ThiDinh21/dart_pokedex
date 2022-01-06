@@ -11,23 +11,23 @@ _$_Generation _$$_GenerationFromJson(Map<String, dynamic> json) =>
       json['id'] as int,
       json['name'] as String,
       (json['abilities'] as List<dynamic>)
-          .map((e) => NamedAPIResource.fromJson(e as Map<String, dynamic>))
+          .map((e) => NamedApiResource.fromJson(e as Map<String, dynamic>))
           .toList(),
       (json['names'] as List<dynamic>)
           .map((e) => Name.fromJson(e as Map<String, dynamic>))
           .toList(),
-      NamedAPIResource.fromJson(json['main_region'] as Map<String, dynamic>),
+      NamedApiResource.fromJson(json['main_region'] as Map<String, dynamic>),
       (json['moves'] as List<dynamic>)
-          .map((e) => NamedAPIResource.fromJson(e as Map<String, dynamic>))
+          .map((e) => NamedApiResource.fromJson(e as Map<String, dynamic>))
           .toList(),
       (json['pokemon_species'] as List<dynamic>)
-          .map((e) => NamedAPIResource.fromJson(e as Map<String, dynamic>))
+          .map((e) => NamedApiResource.fromJson(e as Map<String, dynamic>))
           .toList(),
       (json['types'] as List<dynamic>)
-          .map((e) => NamedAPIResource.fromJson(e as Map<String, dynamic>))
+          .map((e) => NamedApiResource.fromJson(e as Map<String, dynamic>))
           .toList(),
       (json['version_groups'] as List<dynamic>)
-          .map((e) => NamedAPIResource.fromJson(e as Map<String, dynamic>))
+          .map((e) => NamedApiResource.fromJson(e as Map<String, dynamic>))
           .toList(),
     );
 
@@ -58,9 +58,9 @@ _$_PokedexData _$$_PokedexDataFromJson(Map<String, dynamic> json) =>
       (json['pokemon_entries'] as List<dynamic>)
           .map((e) => PokemonEntry.fromJson(e as Map<String, dynamic>))
           .toList(),
-      NamedAPIResource.fromJson(json['region'] as Map<String, dynamic>),
+      NamedApiResource.fromJson(json['region'] as Map<String, dynamic>),
       (json['version_groups'] as List<dynamic>)
-          .map((e) => NamedAPIResource.fromJson(e as Map<String, dynamic>))
+          .map((e) => NamedApiResource.fromJson(e as Map<String, dynamic>))
           .toList(),
     );
 
@@ -79,7 +79,7 @@ Map<String, dynamic> _$$_PokedexDataToJson(_$_PokedexData instance) =>
 _$_PokemonEntry _$$_PokemonEntryFromJson(Map<String, dynamic> json) =>
     _$_PokemonEntry(
       json['entry_number'] as int,
-      NamedAPIResource.fromJson(
+      NamedApiResource.fromJson(
           json['pokemon_species'] as Map<String, dynamic>),
     );
 
@@ -95,7 +95,7 @@ _$_Version _$$_VersionFromJson(Map<String, dynamic> json) => _$_Version(
       (json['names'] as List<dynamic>)
           .map((e) => Name.fromJson(e as Map<String, dynamic>))
           .toList(),
-      NamedAPIResource.fromJson(json['version_group'] as Map<String, dynamic>),
+      NamedApiResource.fromJson(json['version_group'] as Map<String, dynamic>),
     );
 
 Map<String, dynamic> _$$_VersionToJson(_$_Version instance) =>
@@ -111,18 +111,18 @@ _$_VersionGroup _$$_VersionGroupFromJson(Map<String, dynamic> json) =>
       json['id'] as int,
       json['name'] as String,
       json['order'] as int,
-      NamedAPIResource.fromJson(json['generation'] as Map<String, dynamic>),
+      NamedApiResource.fromJson(json['generation'] as Map<String, dynamic>),
       (json['move_learn_methods'] as List<dynamic>)
-          .map((e) => NamedAPIResource.fromJson(e as Map<String, dynamic>))
+          .map((e) => NamedApiResource.fromJson(e as Map<String, dynamic>))
           .toList(),
       (json['pokedexes'] as List<dynamic>)
-          .map((e) => NamedAPIResource.fromJson(e as Map<String, dynamic>))
+          .map((e) => NamedApiResource.fromJson(e as Map<String, dynamic>))
           .toList(),
       (json['regions'] as List<dynamic>)
-          .map((e) => NamedAPIResource.fromJson(e as Map<String, dynamic>))
+          .map((e) => NamedApiResource.fromJson(e as Map<String, dynamic>))
           .toList(),
       (json['versions'] as List<dynamic>)
-          .map((e) => NamedAPIResource.fromJson(e as Map<String, dynamic>))
+          .map((e) => NamedApiResource.fromJson(e as Map<String, dynamic>))
           .toList(),
     );
 

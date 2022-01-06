@@ -32,16 +32,16 @@ class Endpoint<Resource>
   }
 
   @override
-  Future<APIResourceList> getPage({
+  Future<ApiResourceList> getPage({
     int limit = 20,
     int offset = 0,
   }) {
     return client
-        .get<APIResourceList>('$_baseUrl$path?limit=$limit&?offset=$offset');
+        .get<ApiResourceList>('$_baseUrl$path?limit=$limit&?offset=$offset');
   }
 
   @override
-  Future<APIResourceList> getAll() {
+  Future<ApiResourceList> getAll() {
     return getPage(limit: -1);
   }
 }
@@ -69,17 +69,17 @@ class NamedEndpoint<T>
   }
 
   @override
-  Future<NamedAPIResourceList> getPage({
+  Future<NamedApiResourceList> getPage({
     int limit = 20,
     int offset = 0,
   }) {
-    return client.get<NamedAPIResourceList>(
+    return client.get<NamedApiResourceList>(
       '$_baseUrl$path?limit=$limit&offset=$offset',
     );
   }
 
   @override
-  Future<NamedAPIResourceList> getAll() {
+  Future<NamedApiResourceList> getAll() {
     return getPage(limit: -1);
   }
 }

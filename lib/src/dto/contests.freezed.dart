@@ -25,7 +25,7 @@ class _$ContestTypeTearOff {
   _ContestType call(
       int id,
       String name,
-      @JsonKey(name: 'berry_flavor') NamedAPIResource berryFlavor,
+      @JsonKey(name: 'berry_flavor') NamedApiResource berryFlavor,
       List<ContestName> names) {
     return _ContestType(
       id,
@@ -48,7 +48,7 @@ mixin _$ContestType {
   int get id => throw _privateConstructorUsedError;
   String get name => throw _privateConstructorUsedError;
   @JsonKey(name: 'berry_flavor')
-  NamedAPIResource get berryFlavor => throw _privateConstructorUsedError;
+  NamedApiResource get berryFlavor => throw _privateConstructorUsedError;
   List<ContestName> get names => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -65,10 +65,10 @@ abstract class $ContestTypeCopyWith<$Res> {
   $Res call(
       {int id,
       String name,
-      @JsonKey(name: 'berry_flavor') NamedAPIResource berryFlavor,
+      @JsonKey(name: 'berry_flavor') NamedApiResource berryFlavor,
       List<ContestName> names});
 
-  $NamedAPIResourceCopyWith<$Res> get berryFlavor;
+  $NamedApiResourceCopyWith<$Res> get berryFlavor;
 }
 
 /// @nodoc
@@ -98,7 +98,7 @@ class _$ContestTypeCopyWithImpl<$Res> implements $ContestTypeCopyWith<$Res> {
       berryFlavor: berryFlavor == freezed
           ? _value.berryFlavor
           : berryFlavor // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
       names: names == freezed
           ? _value.names
           : names // ignore: cast_nullable_to_non_nullable
@@ -107,8 +107,8 @@ class _$ContestTypeCopyWithImpl<$Res> implements $ContestTypeCopyWith<$Res> {
   }
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get berryFlavor {
-    return $NamedAPIResourceCopyWith<$Res>(_value.berryFlavor, (value) {
+  $NamedApiResourceCopyWith<$Res> get berryFlavor {
+    return $NamedApiResourceCopyWith<$Res>(_value.berryFlavor, (value) {
       return _then(_value.copyWith(berryFlavor: value));
     });
   }
@@ -124,11 +124,11 @@ abstract class _$ContestTypeCopyWith<$Res>
   $Res call(
       {int id,
       String name,
-      @JsonKey(name: 'berry_flavor') NamedAPIResource berryFlavor,
+      @JsonKey(name: 'berry_flavor') NamedApiResource berryFlavor,
       List<ContestName> names});
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get berryFlavor;
+  $NamedApiResourceCopyWith<$Res> get berryFlavor;
 }
 
 /// @nodoc
@@ -160,7 +160,7 @@ class __$ContestTypeCopyWithImpl<$Res> extends _$ContestTypeCopyWithImpl<$Res>
       berryFlavor == freezed
           ? _value.berryFlavor
           : berryFlavor // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
       names == freezed
           ? _value.names
           : names // ignore: cast_nullable_to_non_nullable
@@ -184,7 +184,7 @@ class _$_ContestType implements _ContestType {
   final String name;
   @override
   @JsonKey(name: 'berry_flavor')
-  final NamedAPIResource berryFlavor;
+  final NamedApiResource berryFlavor;
   @override
   final List<ContestName> names;
 
@@ -228,7 +228,7 @@ abstract class _ContestType implements ContestType {
   const factory _ContestType(
       int id,
       String name,
-      @JsonKey(name: 'berry_flavor') NamedAPIResource berryFlavor,
+      @JsonKey(name: 'berry_flavor') NamedApiResource berryFlavor,
       List<ContestName> names) = _$_ContestType;
 
   factory _ContestType.fromJson(Map<String, dynamic> json) =
@@ -240,7 +240,7 @@ abstract class _ContestType implements ContestType {
   String get name;
   @override
   @JsonKey(name: 'berry_flavor')
-  NamedAPIResource get berryFlavor;
+  NamedApiResource get berryFlavor;
   @override
   List<ContestName> get names;
   @override
@@ -257,7 +257,7 @@ ContestName _$ContestNameFromJson(Map<String, dynamic> json) {
 class _$ContestNameTearOff {
   const _$ContestNameTearOff();
 
-  _ContestName call(String name, String color, NamedAPIResource language) {
+  _ContestName call(String name, String color, NamedApiResource language) {
     return _ContestName(
       name,
       color,
@@ -277,7 +277,7 @@ const $ContestName = _$ContestNameTearOff();
 mixin _$ContestName {
   String get name => throw _privateConstructorUsedError;
   String get color => throw _privateConstructorUsedError;
-  NamedAPIResource get language => throw _privateConstructorUsedError;
+  NamedApiResource get language => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -290,9 +290,9 @@ abstract class $ContestNameCopyWith<$Res> {
   factory $ContestNameCopyWith(
           ContestName value, $Res Function(ContestName) then) =
       _$ContestNameCopyWithImpl<$Res>;
-  $Res call({String name, String color, NamedAPIResource language});
+  $Res call({String name, String color, NamedApiResource language});
 
-  $NamedAPIResourceCopyWith<$Res> get language;
+  $NamedApiResourceCopyWith<$Res> get language;
 }
 
 /// @nodoc
@@ -321,13 +321,13 @@ class _$ContestNameCopyWithImpl<$Res> implements $ContestNameCopyWith<$Res> {
       language: language == freezed
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
     ));
   }
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get language {
-    return $NamedAPIResourceCopyWith<$Res>(_value.language, (value) {
+  $NamedApiResourceCopyWith<$Res> get language {
+    return $NamedApiResourceCopyWith<$Res>(_value.language, (value) {
       return _then(_value.copyWith(language: value));
     });
   }
@@ -340,10 +340,10 @@ abstract class _$ContestNameCopyWith<$Res>
           _ContestName value, $Res Function(_ContestName) then) =
       __$ContestNameCopyWithImpl<$Res>;
   @override
-  $Res call({String name, String color, NamedAPIResource language});
+  $Res call({String name, String color, NamedApiResource language});
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get language;
+  $NamedApiResourceCopyWith<$Res> get language;
 }
 
 /// @nodoc
@@ -374,7 +374,7 @@ class __$ContestNameCopyWithImpl<$Res> extends _$ContestNameCopyWithImpl<$Res>
       language == freezed
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
     ));
   }
 }
@@ -392,7 +392,7 @@ class _$_ContestName implements _ContestName {
   @override
   final String color;
   @override
-  final NamedAPIResource language;
+  final NamedApiResource language;
 
   @override
   String toString() {
@@ -429,7 +429,7 @@ class _$_ContestName implements _ContestName {
 
 abstract class _ContestName implements ContestName {
   const factory _ContestName(
-      String name, String color, NamedAPIResource language) = _$_ContestName;
+      String name, String color, NamedApiResource language) = _$_ContestName;
 
   factory _ContestName.fromJson(Map<String, dynamic> json) =
       _$_ContestName.fromJson;
@@ -439,7 +439,7 @@ abstract class _ContestName implements ContestName {
   @override
   String get color;
   @override
-  NamedAPIResource get language;
+  NamedApiResource get language;
   @override
   @JsonKey(ignore: true)
   _$ContestNameCopyWith<_ContestName> get copyWith =>
@@ -721,7 +721,7 @@ class _$SuperContestEffectTearOff {
       int id,
       int appeal,
       @JsonKey(name: 'flavor_text_entries') List<FlavorText> flavorTextEntries,
-      List<NamedAPIResource> moves) {
+      List<NamedApiResource> moves) {
     return _SuperContestEffect(
       id,
       appeal,
@@ -744,7 +744,7 @@ mixin _$SuperContestEffect {
   int get appeal => throw _privateConstructorUsedError;
   @JsonKey(name: 'flavor_text_entries')
   List<FlavorText> get flavorTextEntries => throw _privateConstructorUsedError;
-  List<NamedAPIResource> get moves => throw _privateConstructorUsedError;
+  List<NamedApiResource> get moves => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -761,7 +761,7 @@ abstract class $SuperContestEffectCopyWith<$Res> {
       {int id,
       int appeal,
       @JsonKey(name: 'flavor_text_entries') List<FlavorText> flavorTextEntries,
-      List<NamedAPIResource> moves});
+      List<NamedApiResource> moves});
 }
 
 /// @nodoc
@@ -796,7 +796,7 @@ class _$SuperContestEffectCopyWithImpl<$Res>
       moves: moves == freezed
           ? _value.moves
           : moves // ignore: cast_nullable_to_non_nullable
-              as List<NamedAPIResource>,
+              as List<NamedApiResource>,
     ));
   }
 }
@@ -812,7 +812,7 @@ abstract class _$SuperContestEffectCopyWith<$Res>
       {int id,
       int appeal,
       @JsonKey(name: 'flavor_text_entries') List<FlavorText> flavorTextEntries,
-      List<NamedAPIResource> moves});
+      List<NamedApiResource> moves});
 }
 
 /// @nodoc
@@ -849,7 +849,7 @@ class __$SuperContestEffectCopyWithImpl<$Res>
       moves == freezed
           ? _value.moves
           : moves // ignore: cast_nullable_to_non_nullable
-              as List<NamedAPIResource>,
+              as List<NamedApiResource>,
     ));
   }
 }
@@ -871,7 +871,7 @@ class _$_SuperContestEffect implements _SuperContestEffect {
   @JsonKey(name: 'flavor_text_entries')
   final List<FlavorText> flavorTextEntries;
   @override
-  final List<NamedAPIResource> moves;
+  final List<NamedApiResource> moves;
 
   @override
   String toString() {
@@ -914,7 +914,7 @@ abstract class _SuperContestEffect implements SuperContestEffect {
       int id,
       int appeal,
       @JsonKey(name: 'flavor_text_entries') List<FlavorText> flavorTextEntries,
-      List<NamedAPIResource> moves) = _$_SuperContestEffect;
+      List<NamedApiResource> moves) = _$_SuperContestEffect;
 
   factory _SuperContestEffect.fromJson(Map<String, dynamic> json) =
       _$_SuperContestEffect.fromJson;
@@ -927,7 +927,7 @@ abstract class _SuperContestEffect implements SuperContestEffect {
   @JsonKey(name: 'flavor_text_entries')
   List<FlavorText> get flavorTextEntries;
   @override
-  List<NamedAPIResource> get moves;
+  List<NamedApiResource> get moves;
   @override
   @JsonKey(ignore: true)
   _$SuperContestEffectCopyWith<_SuperContestEffect> get copyWith =>

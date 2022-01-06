@@ -24,7 +24,7 @@ class EncounterCondition with _$EncounterCondition {
     int id,
     String name,
     List<Name> names,
-    List<NamedAPIResource> values,
+    List<NamedApiResource> values,
   ) = _EncounterCondition;
 
   factory EncounterCondition.fromJson(Json json) =>
@@ -36,7 +36,7 @@ class EncounterConditionValue with _$EncounterConditionValue {
   const factory EncounterConditionValue(
     int id,
     String name,
-    NamedAPIResource condition,
+    NamedApiResource condition,
     List<Name> names,
   ) = _EncounterConditionValue;
 

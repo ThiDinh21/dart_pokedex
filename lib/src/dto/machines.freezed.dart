@@ -22,8 +22,8 @@ Machine _$MachineFromJson(Map<String, dynamic> json) {
 class _$MachineTearOff {
   const _$MachineTearOff();
 
-  _Machine call(int id, NamedAPIResource item, NamedAPIResource move,
-      @JsonKey(name: 'version_group') NamedAPIResource versionGroup) {
+  _Machine call(int id, NamedApiResource item, NamedApiResource move,
+      @JsonKey(name: 'version_group') NamedApiResource versionGroup) {
     return _Machine(
       id,
       item,
@@ -43,10 +43,10 @@ const $Machine = _$MachineTearOff();
 /// @nodoc
 mixin _$Machine {
   int get id => throw _privateConstructorUsedError;
-  NamedAPIResource get item => throw _privateConstructorUsedError;
-  NamedAPIResource get move => throw _privateConstructorUsedError;
+  NamedApiResource get item => throw _privateConstructorUsedError;
+  NamedApiResource get move => throw _privateConstructorUsedError;
   @JsonKey(name: 'version_group')
-  NamedAPIResource get versionGroup => throw _privateConstructorUsedError;
+  NamedApiResource get versionGroup => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -59,13 +59,13 @@ abstract class $MachineCopyWith<$Res> {
       _$MachineCopyWithImpl<$Res>;
   $Res call(
       {int id,
-      NamedAPIResource item,
-      NamedAPIResource move,
-      @JsonKey(name: 'version_group') NamedAPIResource versionGroup});
+      NamedApiResource item,
+      NamedApiResource move,
+      @JsonKey(name: 'version_group') NamedApiResource versionGroup});
 
-  $NamedAPIResourceCopyWith<$Res> get item;
-  $NamedAPIResourceCopyWith<$Res> get move;
-  $NamedAPIResourceCopyWith<$Res> get versionGroup;
+  $NamedApiResourceCopyWith<$Res> get item;
+  $NamedApiResourceCopyWith<$Res> get move;
+  $NamedApiResourceCopyWith<$Res> get versionGroup;
 }
 
 /// @nodoc
@@ -91,35 +91,35 @@ class _$MachineCopyWithImpl<$Res> implements $MachineCopyWith<$Res> {
       item: item == freezed
           ? _value.item
           : item // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
       move: move == freezed
           ? _value.move
           : move // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
       versionGroup: versionGroup == freezed
           ? _value.versionGroup
           : versionGroup // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
     ));
   }
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get item {
-    return $NamedAPIResourceCopyWith<$Res>(_value.item, (value) {
+  $NamedApiResourceCopyWith<$Res> get item {
+    return $NamedApiResourceCopyWith<$Res>(_value.item, (value) {
       return _then(_value.copyWith(item: value));
     });
   }
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get move {
-    return $NamedAPIResourceCopyWith<$Res>(_value.move, (value) {
+  $NamedApiResourceCopyWith<$Res> get move {
+    return $NamedApiResourceCopyWith<$Res>(_value.move, (value) {
       return _then(_value.copyWith(move: value));
     });
   }
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get versionGroup {
-    return $NamedAPIResourceCopyWith<$Res>(_value.versionGroup, (value) {
+  $NamedApiResourceCopyWith<$Res> get versionGroup {
+    return $NamedApiResourceCopyWith<$Res>(_value.versionGroup, (value) {
       return _then(_value.copyWith(versionGroup: value));
     });
   }
@@ -132,16 +132,16 @@ abstract class _$MachineCopyWith<$Res> implements $MachineCopyWith<$Res> {
   @override
   $Res call(
       {int id,
-      NamedAPIResource item,
-      NamedAPIResource move,
-      @JsonKey(name: 'version_group') NamedAPIResource versionGroup});
+      NamedApiResource item,
+      NamedApiResource move,
+      @JsonKey(name: 'version_group') NamedApiResource versionGroup});
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get item;
+  $NamedApiResourceCopyWith<$Res> get item;
   @override
-  $NamedAPIResourceCopyWith<$Res> get move;
+  $NamedApiResourceCopyWith<$Res> get move;
   @override
-  $NamedAPIResourceCopyWith<$Res> get versionGroup;
+  $NamedApiResourceCopyWith<$Res> get versionGroup;
 }
 
 /// @nodoc
@@ -168,15 +168,15 @@ class __$MachineCopyWithImpl<$Res> extends _$MachineCopyWithImpl<$Res>
       item == freezed
           ? _value.item
           : item // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
       move == freezed
           ? _value.move
           : move // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
       versionGroup == freezed
           ? _value.versionGroup
           : versionGroup // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
     ));
   }
 }
@@ -193,12 +193,12 @@ class _$_Machine implements _Machine {
   @override
   final int id;
   @override
-  final NamedAPIResource item;
+  final NamedApiResource item;
   @override
-  final NamedAPIResource move;
+  final NamedApiResource move;
   @override
   @JsonKey(name: 'version_group')
-  final NamedAPIResource versionGroup;
+  final NamedApiResource versionGroup;
 
   @override
   String toString() {
@@ -237,8 +237,8 @@ class _$_Machine implements _Machine {
 }
 
 abstract class _Machine implements Machine {
-  const factory _Machine(int id, NamedAPIResource item, NamedAPIResource move,
-          @JsonKey(name: 'version_group') NamedAPIResource versionGroup) =
+  const factory _Machine(int id, NamedApiResource item, NamedApiResource move,
+          @JsonKey(name: 'version_group') NamedApiResource versionGroup) =
       _$_Machine;
 
   factory _Machine.fromJson(Map<String, dynamic> json) = _$_Machine.fromJson;
@@ -246,12 +246,12 @@ abstract class _Machine implements Machine {
   @override
   int get id;
   @override
-  NamedAPIResource get item;
+  NamedApiResource get item;
   @override
-  NamedAPIResource get move;
+  NamedApiResource get move;
   @override
   @JsonKey(name: 'version_group')
-  NamedAPIResource get versionGroup;
+  NamedApiResource get versionGroup;
   @override
   @JsonKey(ignore: true)
   _$MachineCopyWith<_Machine> get copyWith =>

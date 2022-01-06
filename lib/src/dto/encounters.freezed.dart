@@ -228,7 +228,7 @@ class _$EncounterConditionTearOff {
   const _$EncounterConditionTearOff();
 
   _EncounterCondition call(
-      int id, String name, List<Name> names, List<NamedAPIResource> values) {
+      int id, String name, List<Name> names, List<NamedApiResource> values) {
     return _EncounterCondition(
       id,
       name,
@@ -250,7 +250,7 @@ mixin _$EncounterCondition {
   int get id => throw _privateConstructorUsedError;
   String get name => throw _privateConstructorUsedError;
   List<Name> get names => throw _privateConstructorUsedError;
-  List<NamedAPIResource> get values => throw _privateConstructorUsedError;
+  List<NamedApiResource> get values => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -264,7 +264,7 @@ abstract class $EncounterConditionCopyWith<$Res> {
           EncounterCondition value, $Res Function(EncounterCondition) then) =
       _$EncounterConditionCopyWithImpl<$Res>;
   $Res call(
-      {int id, String name, List<Name> names, List<NamedAPIResource> values});
+      {int id, String name, List<Name> names, List<NamedApiResource> values});
 }
 
 /// @nodoc
@@ -299,7 +299,7 @@ class _$EncounterConditionCopyWithImpl<$Res>
       values: values == freezed
           ? _value.values
           : values // ignore: cast_nullable_to_non_nullable
-              as List<NamedAPIResource>,
+              as List<NamedApiResource>,
     ));
   }
 }
@@ -312,7 +312,7 @@ abstract class _$EncounterConditionCopyWith<$Res>
       __$EncounterConditionCopyWithImpl<$Res>;
   @override
   $Res call(
-      {int id, String name, List<Name> names, List<NamedAPIResource> values});
+      {int id, String name, List<Name> names, List<NamedApiResource> values});
 }
 
 /// @nodoc
@@ -349,7 +349,7 @@ class __$EncounterConditionCopyWithImpl<$Res>
       values == freezed
           ? _value.values
           : values // ignore: cast_nullable_to_non_nullable
-              as List<NamedAPIResource>,
+              as List<NamedApiResource>,
     ));
   }
 }
@@ -369,7 +369,7 @@ class _$_EncounterCondition implements _EncounterCondition {
   @override
   final List<Name> names;
   @override
-  final List<NamedAPIResource> values;
+  final List<NamedApiResource> values;
 
   @override
   String toString() {
@@ -408,7 +408,7 @@ class _$_EncounterCondition implements _EncounterCondition {
 
 abstract class _EncounterCondition implements EncounterCondition {
   const factory _EncounterCondition(int id, String name, List<Name> names,
-      List<NamedAPIResource> values) = _$_EncounterCondition;
+      List<NamedApiResource> values) = _$_EncounterCondition;
 
   factory _EncounterCondition.fromJson(Map<String, dynamic> json) =
       _$_EncounterCondition.fromJson;
@@ -420,7 +420,7 @@ abstract class _EncounterCondition implements EncounterCondition {
   @override
   List<Name> get names;
   @override
-  List<NamedAPIResource> get values;
+  List<NamedApiResource> get values;
   @override
   @JsonKey(ignore: true)
   _$EncounterConditionCopyWith<_EncounterCondition> get copyWith =>
@@ -437,7 +437,7 @@ class _$EncounterConditionValueTearOff {
   const _$EncounterConditionValueTearOff();
 
   _EncounterConditionValue call(
-      int id, String name, NamedAPIResource condition, List<Name> names) {
+      int id, String name, NamedApiResource condition, List<Name> names) {
     return _EncounterConditionValue(
       id,
       name,
@@ -458,7 +458,7 @@ const $EncounterConditionValue = _$EncounterConditionValueTearOff();
 mixin _$EncounterConditionValue {
   int get id => throw _privateConstructorUsedError;
   String get name => throw _privateConstructorUsedError;
-  NamedAPIResource get condition => throw _privateConstructorUsedError;
+  NamedApiResource get condition => throw _privateConstructorUsedError;
   List<Name> get names => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -473,9 +473,9 @@ abstract class $EncounterConditionValueCopyWith<$Res> {
           $Res Function(EncounterConditionValue) then) =
       _$EncounterConditionValueCopyWithImpl<$Res>;
   $Res call(
-      {int id, String name, NamedAPIResource condition, List<Name> names});
+      {int id, String name, NamedApiResource condition, List<Name> names});
 
-  $NamedAPIResourceCopyWith<$Res> get condition;
+  $NamedApiResourceCopyWith<$Res> get condition;
 }
 
 /// @nodoc
@@ -506,7 +506,7 @@ class _$EncounterConditionValueCopyWithImpl<$Res>
       condition: condition == freezed
           ? _value.condition
           : condition // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
       names: names == freezed
           ? _value.names
           : names // ignore: cast_nullable_to_non_nullable
@@ -515,8 +515,8 @@ class _$EncounterConditionValueCopyWithImpl<$Res>
   }
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get condition {
-    return $NamedAPIResourceCopyWith<$Res>(_value.condition, (value) {
+  $NamedApiResourceCopyWith<$Res> get condition {
+    return $NamedApiResourceCopyWith<$Res>(_value.condition, (value) {
       return _then(_value.copyWith(condition: value));
     });
   }
@@ -530,10 +530,10 @@ abstract class _$EncounterConditionValueCopyWith<$Res>
       __$EncounterConditionValueCopyWithImpl<$Res>;
   @override
   $Res call(
-      {int id, String name, NamedAPIResource condition, List<Name> names});
+      {int id, String name, NamedApiResource condition, List<Name> names});
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get condition;
+  $NamedApiResourceCopyWith<$Res> get condition;
 }
 
 /// @nodoc
@@ -567,7 +567,7 @@ class __$EncounterConditionValueCopyWithImpl<$Res>
       condition == freezed
           ? _value.condition
           : condition // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedApiResource,
       names == freezed
           ? _value.names
           : names // ignore: cast_nullable_to_non_nullable
@@ -590,7 +590,7 @@ class _$_EncounterConditionValue implements _EncounterConditionValue {
   @override
   final String name;
   @override
-  final NamedAPIResource condition;
+  final NamedApiResource condition;
   @override
   final List<Name> names;
 
@@ -632,7 +632,7 @@ class _$_EncounterConditionValue implements _EncounterConditionValue {
 
 abstract class _EncounterConditionValue implements EncounterConditionValue {
   const factory _EncounterConditionValue(
-          int id, String name, NamedAPIResource condition, List<Name> names) =
+          int id, String name, NamedApiResource condition, List<Name> names) =
       _$_EncounterConditionValue;
 
   factory _EncounterConditionValue.fromJson(Map<String, dynamic> json) =
@@ -643,7 +643,7 @@ abstract class _EncounterConditionValue implements EncounterConditionValue {
   @override
   String get name;
   @override
-  NamedAPIResource get condition;
+  NamedApiResource get condition;
   @override
   List<Name> get names;
   @override

@@ -10,7 +10,7 @@ class ContestType with _$ContestType {
   const factory ContestType(
     int id,
     String name,
-    @JsonKey(name: 'berry_flavor') NamedAPIResource berryFlavor,
+    @JsonKey(name: 'berry_flavor') NamedApiResource berryFlavor,
     List<ContestName> names,
   ) = _ContestType;
 
@@ -22,7 +22,7 @@ class ContestName with _$ContestName {
   const factory ContestName(
     String name,
     String color,
-    NamedAPIResource language,
+    NamedApiResource language,
   ) = _ContestName;
 
   factory ContestName.fromJson(Json json) => _$ContestNameFromJson(json);
@@ -47,7 +47,7 @@ class SuperContestEffect with _$SuperContestEffect {
     int id,
     int appeal,
     @JsonKey(name: 'flavor_text_entries') List<FlavorText> flavorTextEntries,
-    List<NamedAPIResource> moves,
+    List<NamedApiResource> moves,
   ) = _SuperContestEffect;
 
   factory SuperContestEffect.fromJson(Json json) =>
