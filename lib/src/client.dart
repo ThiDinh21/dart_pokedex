@@ -3,8 +3,8 @@ import 'dart:convert';
 import 'package:http/http.dart';
 import 'package:poke_dart/src/aliases.dart';
 import 'package:poke_dart/src/endpoint.dart';
-import 'package:poke_dart/src/base_converter.dart';
-import 'package:poke_dart/src/converter.dart';
+import 'package:poke_dart/src/base_converter_factory.dart';
+import 'package:poke_dart/src/converter_factory.dart';
 
 class Pokedex extends PokeApiEndpoints {
   Pokedex({PokeApiClient? client}) : super(client ?? PokeApiClient());

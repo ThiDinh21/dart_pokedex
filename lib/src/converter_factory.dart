@@ -1,7 +1,7 @@
 import 'dart:core' as core show Type;
 import 'dart:core';
 
-import 'package:poke_dart/src/base_converter.dart';
+import 'package:poke_dart/src/base_converter_factory.dart';
 import 'package:poke_dart/src/client.dart';
 import 'package:poke_dart/src/dto/berries.dart';
 import 'package:poke_dart/src/dto/contests.dart';
