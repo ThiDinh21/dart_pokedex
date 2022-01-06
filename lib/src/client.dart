@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:http/http.dart';
 import 'package:poke_dart/src/aliases.dart';
 import 'package:poke_dart/src/base.dart';
+import 'package:poke_dart/src/base_converter.dart';
 import 'package:poke_dart/src/converter.dart';
 
 class Pokedex extends BasePokeApiEndpoints {
@@ -11,15 +12,15 @@ class Pokedex extends BasePokeApiEndpoints {
 
 class PokeApiClient {
   final Client _client;
-  final ConverterFactory _converterFactory;
+  final BaseConverterFactory _converterFactory;
 
   factory PokeApiClient({
     Client? client,
-    ConverterFactory? converterFactory,
+    BaseConverterFactory? converterFactory,
   }) {
     return PokeApiClient._(
       client ?? Client(),
-      converterFactory ?? BaseConverterFactory(),
+      converterFactory ?? ConverterFactory(),
     );
   }
 
