@@ -4,7 +4,7 @@ import 'dart:core' as core show Type;
 
 import 'package:http/http.dart';
 import 'package:poke_dart/src/aliases.dart';
-import 'package:poke_dart/src/api.dart';
+import 'package:poke_dart/src/client.dart';
 import 'package:poke_dart/src/converter.dart';
 import 'package:poke_dart/src/dto/berries.dart';
 import 'package:poke_dart/src/dto/contests.dart';
@@ -77,33 +77,7 @@ class BasePokeApiEndpoints extends PokeApiEndpoints {
         );
 }
 
-class BasePokeApiClient implements PokeApiClient {
-  factory BasePokeApiClient({
-    Client? client,
-    ConverterFactory? converterFactory,
-  }) {
-    return BasePokeApiClient._(
-      client ?? Client(),
-      converterFactory ?? BaseConverterFactory(),
-    );
-  }
 
-  BasePokeApiClient._(
-    this._client,
-    this._converterFactory,
-  );
-
-  final Client _client;
-  final ConverterFactory _converterFactory;
-
-  @override
-  Future<T> get<T>(String url) async {
-    final response = await _client.get(Uri.parse(url));
-    return _converterFactory
-        .get<T>()
-        .fromJson(jsonDecode(response.body) as Json) as T;
-  }
-}
 
 class BaseEndpoint<Resource>
     with ResourceEndpointMixin<Resource>

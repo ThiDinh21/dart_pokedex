@@ -3,7 +3,7 @@
 /// More dartdocs go here.
 library poke_dart;
 
-export 'package:poke_dart/src/api.dart';
+export 'package:poke_dart/src/client.dart';
 export 'package:poke_dart/src/converter.dart';
 export 'package:poke_dart/src/dto/berries.dart';
 export 'package:poke_dart/src/dto/berries.dart';
