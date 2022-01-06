@@ -119,3 +119,6 @@ app.*.symbols
 
 # main
 **/main.dart
+
+# others
+ignored/

@@ -1,7 +1,3 @@
-import 'dart:convert';
-
-import 'package:http/http.dart' as http;
-import 'package:poke_dart/src/aliases.dart';
 import 'package:poke_dart/src/dto/berries.dart';
 import 'package:poke_dart/src/dto/contests.dart';
 import 'package:poke_dart/src/dto/encounters.dart';
@@ -42,7 +38,7 @@ abstract class NamedEndpoint<R> {
   Future<NamedAPIResourceList> getAll();
 }
 
-class PokeAPIEndpoints {
+class PokeApiEndpoints {
   final NamedEndpoint<Berry> berries;
   final NamedEndpoint<BerryFirmness> berryFirmness;
   final NamedEndpoint<BerryFlavor> berryFlavors;
@@ -57,7 +53,7 @@ class PokeAPIEndpoints {
   final NamedEndpoint<Generation> generations;
   final NamedEndpoint<PokedexData> pokedexes;
   final NamedEndpoint<Version> version;
-  final NamedEndpoint<VersionGroup> versionGroup;
+  final NamedEndpoint<VersionGroup> versionGroups;
   final NamedEndpoint<Item> item;
   final NamedEndpoint<ItemAttribute> itemAttributes;
   final NamedEndpoint<ItemCategory> itemCategories;
@@ -92,7 +88,7 @@ class PokeAPIEndpoints {
   final NamedEndpoint<Type> types;
   final NamedEndpoint<Language> languages;
 
-  const PokeAPIEndpoints({
+  const PokeApiEndpoints({
     required this.berries,
     required this.berryFirmness,
     required this.berryFlavors,
@@ -107,7 +103,7 @@ class PokeAPIEndpoints {
     required this.generations,
     required this.pokedexes,
     required this.version,
-    required this.versionGroup,
+    required this.versionGroups,
     required this.item,
     required this.itemAttributes,
     required this.itemCategories,
