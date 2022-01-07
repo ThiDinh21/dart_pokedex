@@ -8,9 +8,16 @@ part 'encounters.g.dart';
 @freezed
 class EncounterMethod with _$EncounterMethod {
   const factory EncounterMethod(
+    /// The identifier for this resource.
     int id,
+
+    /// The name for this resource.
     String name,
+
+    /// A good value for sorting.
     int order,
+
+    /// The name of this resource listed in different languages.
     List<Name> names,
   ) = _EncounterMethod;
 
@@ -21,9 +28,20 @@ class EncounterMethod with _$EncounterMethod {
 @freezed
 class EncounterCondition with _$EncounterCondition {
   const factory EncounterCondition(
+    /// The identifier for this resource.
     int id,
+
+    /// The name for this resource.
     String name,
+
+    /// The name of this resource listed in different languages.
     List<Name> names,
+
+    /// A list of possible values for this encounter condition.
+    ///
+    /// See also:
+    ///
+    /// [EncounterConditionValue]
     List<NamedApiResource> values,
   ) = _EncounterCondition;
 
@@ -34,9 +52,20 @@ class EncounterCondition with _$EncounterCondition {
 @freezed
 class EncounterConditionValue with _$EncounterConditionValue {
   const factory EncounterConditionValue(
+    /// The identifier for this resource.
     int id,
+
+    /// The name for this resource.
     String name,
+
+    /// The condition this encounter condition value pertains to.
+    ///
+    /// See also:
+    ///
+    /// [EncounterCondition]
     NamedApiResource condition,
+
+    /// The name of this resource listed in different languages.
     List<Name> names,
   ) = _EncounterConditionValue;
 
