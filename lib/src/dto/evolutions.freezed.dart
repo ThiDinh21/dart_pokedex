@@ -43,9 +43,21 @@ const $EvolutionChain = _$EvolutionChainTearOff();
 
 /// @nodoc
 mixin _$EvolutionChain {
+  /// The identifier for this resource.
   int get id => throw _privateConstructorUsedError;
+
+  /// The item that a Pokémon would be holding when mating
+  /// that would trigger the egg hatching a baby Pokémon rather than a basic Pokémon.
+  ///
+  /// See also:
+  ///
+  /// [Item]
   @JsonKey(name: 'baby_trigger_item')
   NamedApiResource get babyTriggerItem => throw _privateConstructorUsedError;
+
+  /// The base chain link object.
+  /// Each link contains evolution details for a Pokémon in the chain.
+  /// Each link references the next Pokémon in the natural evolution order.
   ChainLink get chain => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -176,11 +188,24 @@ class _$_EvolutionChain implements _EvolutionChain {
       _$$_EvolutionChainFromJson(json);
 
   @override
+
+  /// The identifier for this resource.
   final int id;
   @override
+
+  /// The item that a Pokémon would be holding when mating
+  /// that would trigger the egg hatching a baby Pokémon rather than a basic Pokémon.
+  ///
+  /// See also:
+  ///
+  /// [Item]
   @JsonKey(name: 'baby_trigger_item')
   final NamedApiResource babyTriggerItem;
   @override
+
+  /// The base chain link object.
+  /// Each link contains evolution details for a Pokémon in the chain.
+  /// Each link references the next Pokémon in the natural evolution order.
   final ChainLink chain;
 
   @override
@@ -227,11 +252,24 @@ abstract class _EvolutionChain implements EvolutionChain {
       _$_EvolutionChain.fromJson;
 
   @override
+
+  /// The identifier for this resource.
   int get id;
   @override
+
+  /// The item that a Pokémon would be holding when mating
+  /// that would trigger the egg hatching a baby Pokémon rather than a basic Pokémon.
+  ///
+  /// See also:
+  ///
+  /// [Item]
   @JsonKey(name: 'baby_trigger_item')
   NamedApiResource get babyTriggerItem;
   @override
+
+  /// The base chain link object.
+  /// Each link contains evolution details for a Pokémon in the chain.
+  /// Each link references the next Pokémon in the natural evolution order.
   ChainLink get chain;
   @override
   @JsonKey(ignore: true)
@@ -273,12 +311,24 @@ const $ChainLink = _$ChainLinkTearOff();
 
 /// @nodoc
 mixin _$ChainLink {
+  /// Whether or not this link is for a baby Pokémon.
+  /// This would only ever be true on the base link.
   @JsonKey(name: 'is_baby')
   bool get isBaby => throw _privateConstructorUsedError;
+
+  /// The Pokémon species at this point in the evolution chain.
+  ///
+  /// See also:
+  ///
+  /// [PokemonSpecies]
   NamedApiResource get species => throw _privateConstructorUsedError;
+
+  /// All details regarding the specific details of the referenced Pokémon species evolution.
   @JsonKey(name: 'evolution_details')
   List<EvolutionDetail> get evolutionDetails =>
       throw _privateConstructorUsedError;
+
+  /// A List of chain objects.
   @JsonKey(name: 'evolves_to')
   List<ChainLink> get evolvesTo => throw _privateConstructorUsedError;
 
@@ -416,14 +466,27 @@ class _$_ChainLink implements _ChainLink {
       _$$_ChainLinkFromJson(json);
 
   @override
+
+  /// Whether or not this link is for a baby Pokémon.
+  /// This would only ever be true on the base link.
   @JsonKey(name: 'is_baby')
   final bool isBaby;
   @override
+
+  /// The Pokémon species at this point in the evolution chain.
+  ///
+  /// See also:
+  ///
+  /// [PokemonSpecies]
   final NamedApiResource species;
   @override
+
+  /// All details regarding the specific details of the referenced Pokémon species evolution.
   @JsonKey(name: 'evolution_details')
   final List<EvolutionDetail> evolutionDetails;
   @override
+
+  /// A List of chain objects.
   @JsonKey(name: 'evolves_to')
   final List<ChainLink> evolvesTo;
 
@@ -477,14 +540,27 @@ abstract class _ChainLink implements ChainLink {
       _$_ChainLink.fromJson;
 
   @override
+
+  /// Whether or not this link is for a baby Pokémon.
+  /// This would only ever be true on the base link.
   @JsonKey(name: 'is_baby')
   bool get isBaby;
   @override
+
+  /// The Pokémon species at this point in the evolution chain.
+  ///
+  /// See also:
+  ///
+  /// [PokemonSpecies]
   NamedApiResource get species;
   @override
+
+  /// All details regarding the specific details of the referenced Pokémon species evolution.
   @JsonKey(name: 'evolution_details')
   List<EvolutionDetail> get evolutionDetails;
   @override
+
+  /// A List of chain objects.
   @JsonKey(name: 'evolves_to')
   List<ChainLink> get evolvesTo;
   @override
@@ -552,36 +628,120 @@ const $EvolutionDetail = _$EvolutionDetailTearOff();
 
 /// @nodoc
 mixin _$EvolutionDetail {
+  /// The item required to cause evolution this into Pokémon species.
+  ///
+  /// See also:
+  ///
+  /// [Item]
   NamedApiResource get item => throw _privateConstructorUsedError;
+
+  /// The type of event that triggers evolution into this Pokémon species.
+  ///
+  /// See also:
+  ///
+  /// [EvolutionTrigger]
   NamedApiResource get trigger => throw _privateConstructorUsedError;
+
+  /// The id of the gender of the evolving Pokémon species must be
+  /// in order to evolve into this Pokémon species.
   int get gender => throw _privateConstructorUsedError;
+
+  /// The item the evolving Pokémon species must be holding
+  /// during the evolution trigger event to evolve into this Pokémon species.
+  ///
+  /// See also:
+  ///
+  /// [Item]
   @JsonKey(name: 'held_item')
   NamedApiResource get heldItem => throw _privateConstructorUsedError;
+
+  /// The move that must be known by the evolving Pokémon species
+  /// during the evolution trigger event in order to evolve into this Pokémon species.
+  ///
+  /// See also:
+  ///
+  /// [Move]
   @JsonKey(name: 'known_move')
   NamedApiResource get knownMove => throw _privateConstructorUsedError;
+
+  /// The evolving Pokémon species must know a move with this type
+  /// during the evolution trigger event in order to evolve into this Pokémon species.
+  ///
+  /// See also:
+  ///
+  /// [Type]
   @JsonKey(name: 'known_move_type')
   NamedApiResource get knownMoveType => throw _privateConstructorUsedError;
+
+  /// The location the evolution must be triggered at.
+  ///
+  /// See also:
+  ///
+  /// [Location]
   NamedApiResource get location => throw _privateConstructorUsedError;
+
+  /// The minimum required level of the evolving Pokémon species to evolve
+  /// into this Pokémon species.
   @JsonKey(name: 'min_level')
   int get minLevel => throw _privateConstructorUsedError;
+
+  /// The minimum required level of happiness the evolving Pokémon species
+  /// to evolve into this Pokémon species.
   @JsonKey(name: 'min_happiness')
   int get minHappiness => throw _privateConstructorUsedError;
+
+  /// The minimum required level of beauty the evolving Pokémon species
+  /// to evolve into this Pokémon species.
   @JsonKey(name: 'min_beauty')
   int get minBeauty => throw _privateConstructorUsedError;
+
+  /// The minimum required level of affection the evolving Pokémon species
+  /// to evolve into this Pokémon species.
   @JsonKey(name: 'min_affection')
   int get minAffection => throw _privateConstructorUsedError;
+
+  /// Whether or not it must be raining in the overworld
+  /// to cause evolution this Pokémon species.
   @JsonKey(name: 'needs_overworld_rain')
   bool get needsOverworldRain => throw _privateConstructorUsedError;
+
+  /// The Pokémon species that must be in the players party
+  /// in order for the evolving Pokémon species to evolve into this Pokémon species.
+  ///
+  /// See also:
+  ///
+  /// [PokemonSpecies]
   @JsonKey(name: 'party_species')
   NamedApiResource get partySpecies => throw _privateConstructorUsedError;
+
+  /// The player must have a Pokémon of this type in their party
+  /// during the evolution trigger event in order for the evolving Pokémon species
+  /// to evolve into this Pokémon species.
+  ///
+  /// See also:
+  ///
+  /// [Type]
   @JsonKey(name: 'party_type')
   NamedApiResource get partyType => throw _privateConstructorUsedError;
+
+  /// The required relation between the Pokémon's Attack and Defense stats.
+  /// 1 means Attack > Defense. 0 means Attack = Defense. -1 means Attack < Defense.
   @JsonKey(name: 'relative_physical_stats')
   int get relativePhysicalStats => throw _privateConstructorUsedError;
+
+  /// The required time of day. Day or night.
   @JsonKey(name: 'time_of_day')
   String get timeOfDay => throw _privateConstructorUsedError;
+
+  /// Pokémon species for which this one must be traded.
+  ///
+  /// See also:
+  ///
+  /// [PokemonSpecies]
   @JsonKey(name: 'trade_species')
   NamedApiResource get tradeSpecies => throw _privateConstructorUsedError;
+
+  /// Whether or not the 3DS needs to be turned upside-down as this Pokémon levels up.
   @JsonKey(name: 'turn_upside_down')
   bool get turnUpsideDown => throw _privateConstructorUsedError;
 
@@ -980,53 +1140,138 @@ class _$_EvolutionDetail implements _EvolutionDetail {
       _$$_EvolutionDetailFromJson(json);
 
   @override
+
+  /// The item required to cause evolution this into Pokémon species.
+  ///
+  /// See also:
+  ///
+  /// [Item]
   final NamedApiResource item;
   @override
+
+  /// The type of event that triggers evolution into this Pokémon species.
+  ///
+  /// See also:
+  ///
+  /// [EvolutionTrigger]
   final NamedApiResource trigger;
   @override
+
+  /// The id of the gender of the evolving Pokémon species must be
+  /// in order to evolve into this Pokémon species.
   final int gender;
   @override
+
+  /// The item the evolving Pokémon species must be holding
+  /// during the evolution trigger event to evolve into this Pokémon species.
+  ///
+  /// See also:
+  ///
+  /// [Item]
   @JsonKey(name: 'held_item')
   final NamedApiResource heldItem;
   @override
+
+  /// The move that must be known by the evolving Pokémon species
+  /// during the evolution trigger event in order to evolve into this Pokémon species.
+  ///
+  /// See also:
+  ///
+  /// [Move]
   @JsonKey(name: 'known_move')
   final NamedApiResource knownMove;
   @override
+
+  /// The evolving Pokémon species must know a move with this type
+  /// during the evolution trigger event in order to evolve into this Pokémon species.
+  ///
+  /// See also:
+  ///
+  /// [Type]
   @JsonKey(name: 'known_move_type')
   final NamedApiResource knownMoveType;
   @override
+
+  /// The location the evolution must be triggered at.
+  ///
+  /// See also:
+  ///
+  /// [Location]
   final NamedApiResource location;
   @override
+
+  /// The minimum required level of the evolving Pokémon species to evolve
+  /// into this Pokémon species.
   @JsonKey(name: 'min_level')
   final int minLevel;
   @override
+
+  /// The minimum required level of happiness the evolving Pokémon species
+  /// to evolve into this Pokémon species.
   @JsonKey(name: 'min_happiness')
   final int minHappiness;
   @override
+
+  /// The minimum required level of beauty the evolving Pokémon species
+  /// to evolve into this Pokémon species.
   @JsonKey(name: 'min_beauty')
   final int minBeauty;
   @override
+
+  /// The minimum required level of affection the evolving Pokémon species
+  /// to evolve into this Pokémon species.
   @JsonKey(name: 'min_affection')
   final int minAffection;
   @override
+
+  /// Whether or not it must be raining in the overworld
+  /// to cause evolution this Pokémon species.
   @JsonKey(name: 'needs_overworld_rain')
   final bool needsOverworldRain;
   @override
+
+  /// The Pokémon species that must be in the players party
+  /// in order for the evolving Pokémon species to evolve into this Pokémon species.
+  ///
+  /// See also:
+  ///
+  /// [PokemonSpecies]
   @JsonKey(name: 'party_species')
   final NamedApiResource partySpecies;
   @override
+
+  /// The player must have a Pokémon of this type in their party
+  /// during the evolution trigger event in order for the evolving Pokémon species
+  /// to evolve into this Pokémon species.
+  ///
+  /// See also:
+  ///
+  /// [Type]
   @JsonKey(name: 'party_type')
   final NamedApiResource partyType;
   @override
+
+  /// The required relation between the Pokémon's Attack and Defense stats.
+  /// 1 means Attack > Defense. 0 means Attack = Defense. -1 means Attack < Defense.
   @JsonKey(name: 'relative_physical_stats')
   final int relativePhysicalStats;
   @override
+
+  /// The required time of day. Day or night.
   @JsonKey(name: 'time_of_day')
   final String timeOfDay;
   @override
+
+  /// Pokémon species for which this one must be traded.
+  ///
+  /// See also:
+  ///
+  /// [PokemonSpecies]
   @JsonKey(name: 'trade_species')
   final NamedApiResource tradeSpecies;
   @override
+
+  /// Whether or not the 3DS needs to be turned upside-down as this Pokémon levels up.
   @JsonKey(name: 'turn_upside_down')
   final bool turnUpsideDown;
 
@@ -1127,53 +1372,138 @@ abstract class _EvolutionDetail implements EvolutionDetail {
       _$_EvolutionDetail.fromJson;
 
   @override
+
+  /// The item required to cause evolution this into Pokémon species.
+  ///
+  /// See also:
+  ///
+  /// [Item]
   NamedApiResource get item;
   @override
+
+  /// The type of event that triggers evolution into this Pokémon species.
+  ///
+  /// See also:
+  ///
+  /// [EvolutionTrigger]
   NamedApiResource get trigger;
   @override
+
+  /// The id of the gender of the evolving Pokémon species must be
+  /// in order to evolve into this Pokémon species.
   int get gender;
   @override
+
+  /// The item the evolving Pokémon species must be holding
+  /// during the evolution trigger event to evolve into this Pokémon species.
+  ///
+  /// See also:
+  ///
+  /// [Item]
   @JsonKey(name: 'held_item')
   NamedApiResource get heldItem;
   @override
+
+  /// The move that must be known by the evolving Pokémon species
+  /// during the evolution trigger event in order to evolve into this Pokémon species.
+  ///
+  /// See also:
+  ///
+  /// [Move]
   @JsonKey(name: 'known_move')
   NamedApiResource get knownMove;
   @override
+
+  /// The evolving Pokémon species must know a move with this type
+  /// during the evolution trigger event in order to evolve into this Pokémon species.
+  ///
+  /// See also:
+  ///
+  /// [Type]
   @JsonKey(name: 'known_move_type')
   NamedApiResource get knownMoveType;
   @override
+
+  /// The location the evolution must be triggered at.
+  ///
+  /// See also:
+  ///
+  /// [Location]
   NamedApiResource get location;
   @override
+
+  /// The minimum required level of the evolving Pokémon species to evolve
+  /// into this Pokémon species.
   @JsonKey(name: 'min_level')
   int get minLevel;
   @override
+
+  /// The minimum required level of happiness the evolving Pokémon species
+  /// to evolve into this Pokémon species.
   @JsonKey(name: 'min_happiness')
   int get minHappiness;
   @override
+
+  /// The minimum required level of beauty the evolving Pokémon species
+  /// to evolve into this Pokémon species.
   @JsonKey(name: 'min_beauty')
   int get minBeauty;
   @override
+
+  /// The minimum required level of affection the evolving Pokémon species
+  /// to evolve into this Pokémon species.
   @JsonKey(name: 'min_affection')
   int get minAffection;
   @override
+
+  /// Whether or not it must be raining in the overworld
+  /// to cause evolution this Pokémon species.
   @JsonKey(name: 'needs_overworld_rain')
   bool get needsOverworldRain;
   @override
+
+  /// The Pokémon species that must be in the players party
+  /// in order for the evolving Pokémon species to evolve into this Pokémon species.
+  ///
+  /// See also:
+  ///
+  /// [PokemonSpecies]
   @JsonKey(name: 'party_species')
   NamedApiResource get partySpecies;
   @override
+
+  /// The player must have a Pokémon of this type in their party
+  /// during the evolution trigger event in order for the evolving Pokémon species
+  /// to evolve into this Pokémon species.
+  ///
+  /// See also:
+  ///
+  /// [Type]
   @JsonKey(name: 'party_type')
   NamedApiResource get partyType;
   @override
+
+  /// The required relation between the Pokémon's Attack and Defense stats.
+  /// 1 means Attack > Defense. 0 means Attack = Defense. -1 means Attack < Defense.
   @JsonKey(name: 'relative_physical_stats')
   int get relativePhysicalStats;
   @override
+
+  /// The required time of day. Day or night.
   @JsonKey(name: 'time_of_day')
   String get timeOfDay;
   @override
+
+  /// Pokémon species for which this one must be traded.
+  ///
+  /// See also:
+  ///
+  /// [PokemonSpecies]
   @JsonKey(name: 'trade_species')
   NamedApiResource get tradeSpecies;
   @override
+
+  /// Whether or not the 3DS needs to be turned upside-down as this Pokémon levels up.
   @JsonKey(name: 'turn_upside_down')
   bool get turnUpsideDown;
   @override
@@ -1210,9 +1540,20 @@ const $EvolutionTrigger = _$EvolutionTriggerTearOff();
 
 /// @nodoc
 mixin _$EvolutionTrigger {
+  /// The identifier for this resource.
   int get id => throw _privateConstructorUsedError;
+
+  /// The name for this resource.
   String get name => throw _privateConstructorUsedError;
+
+  /// The name of this resource listed in different languages.
   List<Name> get names => throw _privateConstructorUsedError;
+
+  /// A list of pokemon species that result from this evolution trigger.
+  ///
+  /// See also:
+  ///
+  /// [PokemonSpecies]
   @JsonKey(name: 'pokemon_species')
   List<NamedApiResource> get pokemonSpecies =>
       throw _privateConstructorUsedError;
@@ -1335,12 +1676,24 @@ class _$_EvolutionTrigger implements _EvolutionTrigger {
       _$$_EvolutionTriggerFromJson(json);
 
   @override
+
+  /// The identifier for this resource.
   final int id;
   @override
+
+  /// The name for this resource.
   final String name;
   @override
+
+  /// The name of this resource listed in different languages.
   final List<Name> names;
   @override
+
+  /// A list of pokemon species that result from this evolution trigger.
+  ///
+  /// See also:
+  ///
+  /// [PokemonSpecies]
   @JsonKey(name: 'pokemon_species')
   final List<NamedApiResource> pokemonSpecies;
 
@@ -1392,12 +1745,24 @@ abstract class _EvolutionTrigger implements EvolutionTrigger {
       _$_EvolutionTrigger.fromJson;
 
   @override
+
+  /// The identifier for this resource.
   int get id;
   @override
+
+  /// The name for this resource.
   String get name;
   @override
+
+  /// The name of this resource listed in different languages.
   List<Name> get names;
   @override
+
+  /// A list of pokemon species that result from this evolution trigger.
+  ///
+  /// See also:
+  ///
+  /// [PokemonSpecies]
   @JsonKey(name: 'pokemon_species')
   List<NamedApiResource> get pokemonSpecies;
   @override

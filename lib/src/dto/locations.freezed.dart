@@ -49,13 +49,32 @@ const $Location = _$LocationTearOff();
 
 /// @nodoc
 mixin _$Location {
+  /// The identifier for this resource.
   int get id => throw _privateConstructorUsedError;
+
+  /// The name for this resource.
   String get name => throw _privateConstructorUsedError;
+
+  /// The region this location can be found in.
+  ///
+  /// See also:
+  ///
+  /// [Region]
   NamedApiResource get region => throw _privateConstructorUsedError;
+
+  /// The name of this resource listed in different languages.
   List<Name> get names => throw _privateConstructorUsedError;
+
+  /// A list of game indices relevent to this location by generation.
   @JsonKey(name: 'game_indices')
   List<GenerationGameIndex> get gameIndices =>
       throw _privateConstructorUsedError;
+
+  /// Areas that can be found within this location.
+  ///
+  /// See also:
+  ///
+  /// [LocationArea]
   List<NamedApiResource> get areas => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -206,17 +225,37 @@ class _$_Location implements _Location {
       _$$_LocationFromJson(json);
 
   @override
+
+  /// The identifier for this resource.
   final int id;
   @override
+
+  /// The name for this resource.
   final String name;
   @override
+
+  /// The region this location can be found in.
+  ///
+  /// See also:
+  ///
+  /// [Region]
   final NamedApiResource region;
   @override
+
+  /// The name of this resource listed in different languages.
   final List<Name> names;
   @override
+
+  /// A list of game indices relevent to this location by generation.
   @JsonKey(name: 'game_indices')
   final List<GenerationGameIndex> gameIndices;
   @override
+
+  /// Areas that can be found within this location.
+  ///
+  /// See also:
+  ///
+  /// [LocationArea]
   final List<NamedApiResource> areas;
 
   @override
@@ -271,17 +310,37 @@ abstract class _Location implements Location {
   factory _Location.fromJson(Map<String, dynamic> json) = _$_Location.fromJson;
 
   @override
+
+  /// The identifier for this resource.
   int get id;
   @override
+
+  /// The name for this resource.
   String get name;
   @override
+
+  /// The region this location can be found in.
+  ///
+  /// See also:
+  ///
+  /// [Region]
   NamedApiResource get region;
   @override
+
+  /// The name of this resource listed in different languages.
   List<Name> get names;
   @override
+
+  /// A list of game indices relevent to this location by generation.
   @JsonKey(name: 'game_indices')
   List<GenerationGameIndex> get gameIndices;
   @override
+
+  /// Areas that can be found within this location.
+  ///
+  /// See also:
+  ///
+  /// [LocationArea]
   List<NamedApiResource> get areas;
   @override
   @JsonKey(ignore: true)
@@ -329,15 +388,34 @@ const $LocationArea = _$LocationAreaTearOff();
 
 /// @nodoc
 mixin _$LocationArea {
+  /// The identifier for this resource.
   int get id => throw _privateConstructorUsedError;
+
+  /// The name for this resource.
   String get name => throw _privateConstructorUsedError;
+
+  /// The internal id of an API resource within game data.
   @JsonKey(name: 'game_index')
   int get gameIndex => throw _privateConstructorUsedError;
+
+  /// A list of methods in which Pokémon may be encountered in this area
+  /// and how likely the method will occur depending on the version of the game.
   @JsonKey(name: 'encounter_method_rates')
   List<EncounterMethodRate> get encounterMethodRates =>
       throw _privateConstructorUsedError;
+
+  /// The region this location area can be found in.
+  ///
+  /// See also:
+  ///
+  /// [Location]
   NamedApiResource get location => throw _privateConstructorUsedError;
+
+  /// The name of this resource listed in different languages.
   List<Name> get names => throw _privateConstructorUsedError;
+
+  /// A list of Pokémon that can be encountered in this area
+  /// along with version specific details about the encounter.
   @JsonKey(name: 'pokemon_encounters')
   List<PokemonEncounter> get pokemonEncounters =>
       throw _privateConstructorUsedError;
@@ -518,20 +596,40 @@ class _$_LocationArea implements _LocationArea {
       _$$_LocationAreaFromJson(json);
 
   @override
+
+  /// The identifier for this resource.
   final int id;
   @override
+
+  /// The name for this resource.
   final String name;
   @override
+
+  /// The internal id of an API resource within game data.
   @JsonKey(name: 'game_index')
   final int gameIndex;
   @override
+
+  /// A list of methods in which Pokémon may be encountered in this area
+  /// and how likely the method will occur depending on the version of the game.
   @JsonKey(name: 'encounter_method_rates')
   final List<EncounterMethodRate> encounterMethodRates;
   @override
+
+  /// The region this location area can be found in.
+  ///
+  /// See also:
+  ///
+  /// [Location]
   final NamedApiResource location;
   @override
+
+  /// The name of this resource listed in different languages.
   final List<Name> names;
   @override
+
+  /// A list of Pokémon that can be encountered in this area
+  /// along with version specific details about the encounter.
   @JsonKey(name: 'pokemon_encounters')
   final List<PokemonEncounter> pokemonEncounters;
 
@@ -595,20 +693,40 @@ abstract class _LocationArea implements LocationArea {
       _$_LocationArea.fromJson;
 
   @override
+
+  /// The identifier for this resource.
   int get id;
   @override
+
+  /// The name for this resource.
   String get name;
   @override
+
+  /// The internal id of an API resource within game data.
   @JsonKey(name: 'game_index')
   int get gameIndex;
   @override
+
+  /// A list of methods in which Pokémon may be encountered in this area
+  /// and how likely the method will occur depending on the version of the game.
   @JsonKey(name: 'encounter_method_rates')
   List<EncounterMethodRate> get encounterMethodRates;
   @override
+
+  /// The region this location area can be found in.
+  ///
+  /// See also:
+  ///
+  /// [Location]
   NamedApiResource get location;
   @override
+
+  /// The name of this resource listed in different languages.
   List<Name> get names;
   @override
+
+  /// A list of Pokémon that can be encountered in this area
+  /// along with version specific details about the encounter.
   @JsonKey(name: 'pokemon_encounters')
   List<PokemonEncounter> get pokemonEncounters;
   @override
@@ -646,8 +764,15 @@ const $EncounterMethodRate = _$EncounterMethodRateTearOff();
 
 /// @nodoc
 mixin _$EncounterMethodRate {
+  /// The method in which Pokémon may be encountered in an area.
+  ///
+  /// See also:
+  ///
+  /// [EncounterMethod]
   @JsonKey(name: 'encounter_method')
   NamedApiResource get encounterMethod => throw _privateConstructorUsedError;
+
+  /// The chance of the encounter to occur on a version of the game.
   @JsonKey(name: 'version_details')
   List<EncounterVersionDetails> get versionDetails =>
       throw _privateConstructorUsedError;
@@ -763,9 +888,17 @@ class _$_EncounterMethodRate implements _EncounterMethodRate {
       _$$_EncounterMethodRateFromJson(json);
 
   @override
+
+  /// The method in which Pokémon may be encountered in an area.
+  ///
+  /// See also:
+  ///
+  /// [EncounterMethod]
   @JsonKey(name: 'encounter_method')
   final NamedApiResource encounterMethod;
   @override
+
+  /// The chance of the encounter to occur on a version of the game.
   @JsonKey(name: 'version_details')
   final List<EncounterVersionDetails> versionDetails;
 
@@ -815,9 +948,17 @@ abstract class _EncounterMethodRate implements EncounterMethodRate {
       _$_EncounterMethodRate.fromJson;
 
   @override
+
+  /// The method in which Pokémon may be encountered in an area.
+  ///
+  /// See also:
+  ///
+  /// [EncounterMethod]
   @JsonKey(name: 'encounter_method')
   NamedApiResource get encounterMethod;
   @override
+
+  /// The chance of the encounter to occur on a version of the game.
   @JsonKey(name: 'version_details')
   List<EncounterVersionDetails> get versionDetails;
   @override
@@ -852,7 +993,14 @@ const $EncounterVersionDetails = _$EncounterVersionDetailsTearOff();
 
 /// @nodoc
 mixin _$EncounterVersionDetails {
+  /// The chance of an encounter to occur.
   int get rate => throw _privateConstructorUsedError;
+
+  /// The version of the game in which the encounter can occur with the given chance.
+  ///
+  /// See also:
+  ///
+  /// [Version]
   NamedApiResource get version => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -957,8 +1105,16 @@ class _$_EncounterVersionDetails implements _EncounterVersionDetails {
       _$$_EncounterVersionDetailsFromJson(json);
 
   @override
+
+  /// The chance of an encounter to occur.
   final int rate;
   @override
+
+  /// The version of the game in which the encounter can occur with the given chance.
+  ///
+  /// See also:
+  ///
+  /// [Version]
   final NamedApiResource version;
 
   @override
@@ -1001,8 +1157,16 @@ abstract class _EncounterVersionDetails implements EncounterVersionDetails {
       _$_EncounterVersionDetails.fromJson;
 
   @override
+
+  /// The chance of an encounter to occur.
   int get rate;
   @override
+
+  /// The version of the game in which the encounter can occur with the given chance.
+  ///
+  /// See also:
+  ///
+  /// [Version]
   NamedApiResource get version;
   @override
   @JsonKey(ignore: true)
@@ -1038,7 +1202,15 @@ const $PokemonEncounter = _$PokemonEncounterTearOff();
 
 /// @nodoc
 mixin _$PokemonEncounter {
+  /// The Pokémon being encountered.
+  ///
+  /// See also:
+  ///
+  /// [Pokemon]
   NamedApiResource get pokemon => throw _privateConstructorUsedError;
+
+  /// A list of versions and encounters with Pokémon that might happen
+  /// in the referenced location area.
   @JsonKey(name: 'version_details')
   List<VersionEncounterDetail> get versionDetails =>
       throw _privateConstructorUsedError;
@@ -1151,8 +1323,17 @@ class _$_PokemonEncounter implements _PokemonEncounter {
       _$$_PokemonEncounterFromJson(json);
 
   @override
+
+  /// The Pokémon being encountered.
+  ///
+  /// See also:
+  ///
+  /// [Pokemon]
   final NamedApiResource pokemon;
   @override
+
+  /// A list of versions and encounters with Pokémon that might happen
+  /// in the referenced location area.
   @JsonKey(name: 'version_details')
   final List<VersionEncounterDetail> versionDetails;
 
@@ -1198,8 +1379,17 @@ abstract class _PokemonEncounter implements PokemonEncounter {
       _$_PokemonEncounter.fromJson;
 
   @override
+
+  /// The Pokémon being encountered.
+  ///
+  /// See also:
+  ///
+  /// [Pokemon]
   NamedApiResource get pokemon;
   @override
+
+  /// A list of versions and encounters with Pokémon that might happen
+  /// in the referenced location area.
   @JsonKey(name: 'version_details')
   List<VersionEncounterDetail> get versionDetails;
   @override
@@ -1240,9 +1430,16 @@ const $PalParkArea = _$PalParkAreaTearOff();
 
 /// @nodoc
 mixin _$PalParkArea {
+  /// The identifier for this resource.
   int get id => throw _privateConstructorUsedError;
+
+  /// The name for this resource.
   String get name => throw _privateConstructorUsedError;
+
+  /// The name of this resource listed in different languages.
   List<Name> get names => throw _privateConstructorUsedError;
+
+  /// A list of Pokémon encountered in thi pal park area along with details.
   @JsonKey(name: 'pokemon_encounters')
   List<PalParkEncounterSpecies> get pokemonEncounters =>
       throw _privateConstructorUsedError;
@@ -1365,12 +1562,20 @@ class _$_PalParkArea implements _PalParkArea {
       _$$_PalParkAreaFromJson(json);
 
   @override
+
+  /// The identifier for this resource.
   final int id;
   @override
+
+  /// The name for this resource.
   final String name;
   @override
+
+  /// The name of this resource listed in different languages.
   final List<Name> names;
   @override
+
+  /// A list of Pokémon encountered in thi pal park area along with details.
   @JsonKey(name: 'pokemon_encounters')
   final List<PalParkEncounterSpecies> pokemonEncounters;
 
@@ -1422,12 +1627,20 @@ abstract class _PalParkArea implements PalParkArea {
       _$_PalParkArea.fromJson;
 
   @override
+
+  /// The identifier for this resource.
   int get id;
   @override
+
+  /// The name for this resource.
   String get name;
   @override
+
+  /// The name of this resource listed in different languages.
   List<Name> get names;
   @override
+
+  /// A list of Pokémon encountered in thi pal park area along with details.
   @JsonKey(name: 'pokemon_encounters')
   List<PalParkEncounterSpecies> get pokemonEncounters;
   @override
@@ -1466,9 +1679,19 @@ const $PalParkEncounterSpecies = _$PalParkEncounterSpeciesTearOff();
 
 /// @nodoc
 mixin _$PalParkEncounterSpecies {
+  /// The base score given to the player when this Pokémon is caught
+  /// during a pal park run.
   @JsonKey(name: 'base_score')
   int get baseScore => throw _privateConstructorUsedError;
+
+  /// The base rate for encountering this Pokémon in this pal park area.
   int get rate => throw _privateConstructorUsedError;
+
+  /// The Pokémon species being encountered.
+  ///
+  /// See also:
+  ///
+  /// [PokemonSpecies]
   @JsonKey(name: 'pokemon_species')
   NamedApiResource get pokemonSpecies => throw _privateConstructorUsedError;
 
@@ -1591,11 +1814,22 @@ class _$_PalParkEncounterSpecies implements _PalParkEncounterSpecies {
       _$$_PalParkEncounterSpeciesFromJson(json);
 
   @override
+
+  /// The base score given to the player when this Pokémon is caught
+  /// during a pal park run.
   @JsonKey(name: 'base_score')
   final int baseScore;
   @override
+
+  /// The base rate for encountering this Pokémon in this pal park area.
   final int rate;
   @override
+
+  /// The Pokémon species being encountered.
+  ///
+  /// See also:
+  ///
+  /// [PokemonSpecies]
   @JsonKey(name: 'pokemon_species')
   final NamedApiResource pokemonSpecies;
 
@@ -1645,11 +1879,22 @@ abstract class _PalParkEncounterSpecies implements PalParkEncounterSpecies {
       _$_PalParkEncounterSpecies.fromJson;
 
   @override
+
+  /// The base score given to the player when this Pokémon is caught
+  /// during a pal park run.
   @JsonKey(name: 'base_score')
   int get baseScore;
   @override
+
+  /// The base rate for encountering this Pokémon in this pal park area.
   int get rate;
   @override
+
+  /// The Pokémon species being encountered.
+  ///
+  /// See also:
+  ///
+  /// [PokemonSpecies]
   @JsonKey(name: 'pokemon_species')
   NamedApiResource get pokemonSpecies;
   @override
@@ -1695,13 +1940,38 @@ const $Region = _$RegionTearOff();
 
 /// @nodoc
 mixin _$Region {
+  /// The identifier for this resource.
   int get id => throw _privateConstructorUsedError;
+
+  /// A list of locations that can be found in this region.
+  ///
+  /// See also:
+  ///
+  /// [Location]
   List<NamedApiResource> get locations => throw _privateConstructorUsedError;
+
+  /// The name for this resource.
   String get name => throw _privateConstructorUsedError;
+
+  /// The name of this resource listed in different languages.
   List<Name> get names => throw _privateConstructorUsedError;
+
+  /// The generation this region was introduced in.
   @JsonKey(name: 'main_generation')
   NamedApiResource get mainGeneration => throw _privateConstructorUsedError;
+
+  /// A list of pokédexes that catalogue Pokémon in this region.
+  ///
+  /// See also:
+  ///
+  /// [PokedexData]
   List<NamedApiResource> get pokedexes => throw _privateConstructorUsedError;
+
+  /// A list of version groups where this region can be visited.
+  ///
+  /// See also:
+  ///
+  /// [VersionGroup]
   @JsonKey(name: 'version_groups')
   List<NamedApiResource> get versionGroups =>
       throw _privateConstructorUsedError;
@@ -1871,19 +2141,45 @@ class _$_Region implements _Region {
       _$$_RegionFromJson(json);
 
   @override
+
+  /// The identifier for this resource.
   final int id;
   @override
+
+  /// A list of locations that can be found in this region.
+  ///
+  /// See also:
+  ///
+  /// [Location]
   final List<NamedApiResource> locations;
   @override
+
+  /// The name for this resource.
   final String name;
   @override
+
+  /// The name of this resource listed in different languages.
   final List<Name> names;
   @override
+
+  /// The generation this region was introduced in.
   @JsonKey(name: 'main_generation')
   final NamedApiResource mainGeneration;
   @override
+
+  /// A list of pokédexes that catalogue Pokémon in this region.
+  ///
+  /// See also:
+  ///
+  /// [PokedexData]
   final List<NamedApiResource> pokedexes;
   @override
+
+  /// A list of version groups where this region can be visited.
+  ///
+  /// See also:
+  ///
+  /// [VersionGroup]
   @JsonKey(name: 'version_groups')
   final List<NamedApiResource> versionGroups;
 
@@ -1945,19 +2241,45 @@ abstract class _Region implements Region {
   factory _Region.fromJson(Map<String, dynamic> json) = _$_Region.fromJson;
 
   @override
+
+  /// The identifier for this resource.
   int get id;
   @override
+
+  /// A list of locations that can be found in this region.
+  ///
+  /// See also:
+  ///
+  /// [Location]
   List<NamedApiResource> get locations;
   @override
+
+  /// The name for this resource.
   String get name;
   @override
+
+  /// The name of this resource listed in different languages.
   List<Name> get names;
   @override
+
+  /// The generation this region was introduced in.
   @JsonKey(name: 'main_generation')
   NamedApiResource get mainGeneration;
   @override
+
+  /// A list of pokédexes that catalogue Pokémon in this region.
+  ///
+  /// See also:
+  ///
+  /// [PokedexData]
   List<NamedApiResource> get pokedexes;
   @override
+
+  /// A list of version groups where this region can be visited.
+  ///
+  /// See also:
+  ///
+  /// [VersionGroup]
   @JsonKey(name: 'version_groups')
   List<NamedApiResource> get versionGroups;
   @override

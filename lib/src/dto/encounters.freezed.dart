@@ -41,9 +41,16 @@ const $EncounterMethod = _$EncounterMethodTearOff();
 
 /// @nodoc
 mixin _$EncounterMethod {
+  /// The identifier for this resource.
   int get id => throw _privateConstructorUsedError;
+
+  /// The name for this resource.
   String get name => throw _privateConstructorUsedError;
+
+  /// A good value for sorting.
   int get order => throw _privateConstructorUsedError;
+
+  /// The name of this resource listed in different languages.
   List<Name> get names => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -155,12 +162,20 @@ class _$_EncounterMethod implements _EncounterMethod {
       _$$_EncounterMethodFromJson(json);
 
   @override
+
+  /// The identifier for this resource.
   final int id;
   @override
+
+  /// The name for this resource.
   final String name;
   @override
+
+  /// A good value for sorting.
   final int order;
   @override
+
+  /// The name of this resource listed in different languages.
   final List<Name> names;
 
   @override
@@ -206,12 +221,20 @@ abstract class _EncounterMethod implements EncounterMethod {
       _$_EncounterMethod.fromJson;
 
   @override
+
+  /// The identifier for this resource.
   int get id;
   @override
+
+  /// The name for this resource.
   String get name;
   @override
+
+  /// A good value for sorting.
   int get order;
   @override
+
+  /// The name of this resource listed in different languages.
   List<Name> get names;
   @override
   @JsonKey(ignore: true)
@@ -247,9 +270,20 @@ const $EncounterCondition = _$EncounterConditionTearOff();
 
 /// @nodoc
 mixin _$EncounterCondition {
+  /// The identifier for this resource.
   int get id => throw _privateConstructorUsedError;
+
+  /// The name for this resource.
   String get name => throw _privateConstructorUsedError;
+
+  /// The name of this resource listed in different languages.
   List<Name> get names => throw _privateConstructorUsedError;
+
+  /// A list of possible values for this encounter condition.
+  ///
+  /// See also:
+  ///
+  /// [EncounterConditionValue]
   List<NamedApiResource> get values => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -363,12 +397,24 @@ class _$_EncounterCondition implements _EncounterCondition {
       _$$_EncounterConditionFromJson(json);
 
   @override
+
+  /// The identifier for this resource.
   final int id;
   @override
+
+  /// The name for this resource.
   final String name;
   @override
+
+  /// The name of this resource listed in different languages.
   final List<Name> names;
   @override
+
+  /// A list of possible values for this encounter condition.
+  ///
+  /// See also:
+  ///
+  /// [EncounterConditionValue]
   final List<NamedApiResource> values;
 
   @override
@@ -414,12 +460,24 @@ abstract class _EncounterCondition implements EncounterCondition {
       _$_EncounterCondition.fromJson;
 
   @override
+
+  /// The identifier for this resource.
   int get id;
   @override
+
+  /// The name for this resource.
   String get name;
   @override
+
+  /// The name of this resource listed in different languages.
   List<Name> get names;
   @override
+
+  /// A list of possible values for this encounter condition.
+  ///
+  /// See also:
+  ///
+  /// [EncounterConditionValue]
   List<NamedApiResource> get values;
   @override
   @JsonKey(ignore: true)
@@ -456,9 +514,20 @@ const $EncounterConditionValue = _$EncounterConditionValueTearOff();
 
 /// @nodoc
 mixin _$EncounterConditionValue {
+  /// The identifier for this resource.
   int get id => throw _privateConstructorUsedError;
+
+  /// The name for this resource.
   String get name => throw _privateConstructorUsedError;
+
+  /// The condition this encounter condition value pertains to.
+  ///
+  /// See also:
+  ///
+  /// [EncounterCondition]
   NamedApiResource get condition => throw _privateConstructorUsedError;
+
+  /// The name of this resource listed in different languages.
   List<Name> get names => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -586,12 +655,24 @@ class _$_EncounterConditionValue implements _EncounterConditionValue {
       _$$_EncounterConditionValueFromJson(json);
 
   @override
+
+  /// The identifier for this resource.
   final int id;
   @override
+
+  /// The name for this resource.
   final String name;
   @override
+
+  /// The condition this encounter condition value pertains to.
+  ///
+  /// See also:
+  ///
+  /// [EncounterCondition]
   final NamedApiResource condition;
   @override
+
+  /// The name of this resource listed in different languages.
   final List<Name> names;
 
   @override
@@ -639,12 +720,24 @@ abstract class _EncounterConditionValue implements EncounterConditionValue {
       _$_EncounterConditionValue.fromJson;
 
   @override
+
+  /// The identifier for this resource.
   int get id;
   @override
+
+  /// The name for this resource.
   String get name;
   @override
+
+  /// The condition this encounter condition value pertains to.
+  ///
+  /// See also:
+  ///
+  /// [EncounterCondition]
   NamedApiResource get condition;
   @override
+
+  /// The name of this resource listed in different languages.
   List<Name> get names;
   @override
   @JsonKey(ignore: true)

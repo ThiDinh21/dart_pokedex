@@ -191,7 +191,14 @@ const $Description = _$DescriptionTearOff();
 
 /// @nodoc
 mixin _$Description {
+  /// The localized description for an API resource in a specific language.
   String get description => throw _privateConstructorUsedError;
+
+  /// The language this name is in.
+  ///
+  /// See also:
+  ///
+  /// [Language]
   NamedApiResource get language => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -293,8 +300,16 @@ class _$_Description implements _Description {
       _$$_DescriptionFromJson(json);
 
   @override
+
+  /// The localized description for an API resource in a specific language.
   final String description;
   @override
+
+  /// The language this name is in.
+  ///
+  /// See also:
+  ///
+  /// [Language]
   final NamedApiResource language;
 
   @override
@@ -337,8 +352,16 @@ abstract class _Description implements Description {
       _$_Description.fromJson;
 
   @override
+
+  /// The localized description for an API resource in a specific language.
   String get description;
   @override
+
+  /// The language this name is in.
+  ///
+  /// See also:
+  ///
+  /// [Language]
   NamedApiResource get language;
   @override
   @JsonKey(ignore: true)
@@ -371,7 +394,14 @@ const $Effect = _$EffectTearOff();
 
 /// @nodoc
 mixin _$Effect {
+  /// The localized effect text for an API resource in a specific language.
   String get effect => throw _privateConstructorUsedError;
+
+  /// The language this effect is in.
+  ///
+  /// See also:
+  ///
+  /// [Language]
   NamedApiResource get language => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -468,8 +498,16 @@ class _$_Effect implements _Effect {
       _$$_EffectFromJson(json);
 
   @override
+
+  /// The localized effect text for an API resource in a specific language.
   final String effect;
   @override
+
+  /// The language this effect is in.
+  ///
+  /// See also:
+  ///
+  /// [Language]
   final NamedApiResource language;
 
   @override
@@ -509,8 +547,16 @@ abstract class _Effect implements Effect {
   factory _Effect.fromJson(Map<String, dynamic> json) = _$_Effect.fromJson;
 
   @override
+
+  /// The localized effect text for an API resource in a specific language.
   String get effect;
   @override
+
+  /// The language this effect is in.
+  ///
+  /// See also:
+  ///
+  /// [Language]
   NamedApiResource get language;
   @override
   @JsonKey(ignore: true)
@@ -550,14 +596,31 @@ const $Encounter = _$EncounterTearOff();
 
 /// @nodoc
 mixin _$Encounter {
+  /// The lowest level the Pokémon could be encountered at.
   @JsonKey(name: 'min_level')
   int get minLevel => throw _privateConstructorUsedError;
+
+  /// The highest level the Pokémon could be encountered at.
   @JsonKey(name: 'max_level')
   int get maxLevel => throw _privateConstructorUsedError;
+
+  /// A list of condition values that must be in effect for this encounter to occur.
+  ///
+  /// See also:
+  ///
+  /// [EncounterConditionValue]
   @JsonKey(name: 'condition_values')
   List<NamedApiResource> get conditionValues =>
       throw _privateConstructorUsedError;
+
+  /// Percent chance that this encounter will occur.
   int get chance => throw _privateConstructorUsedError;
+
+  /// The method by which this encounter happens.
+  ///
+  /// See also:
+  ///
+  /// [EncounterMethod]
   NamedApiResource get method => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -701,17 +764,35 @@ class _$_Encounter implements _Encounter {
       _$$_EncounterFromJson(json);
 
   @override
+
+  /// The lowest level the Pokémon could be encountered at.
   @JsonKey(name: 'min_level')
   final int minLevel;
   @override
+
+  /// The highest level the Pokémon could be encountered at.
   @JsonKey(name: 'max_level')
   final int maxLevel;
   @override
+
+  /// A list of condition values that must be in effect for this encounter to occur.
+  ///
+  /// See also:
+  ///
+  /// [EncounterConditionValue]
   @JsonKey(name: 'condition_values')
   final List<NamedApiResource> conditionValues;
   @override
+
+  /// Percent chance that this encounter will occur.
   final int chance;
   @override
+
+  /// The method by which this encounter happens.
+  ///
+  /// See also:
+  ///
+  /// [EncounterMethod]
   final NamedApiResource method;
 
   @override
@@ -764,17 +845,35 @@ abstract class _Encounter implements Encounter {
       _$_Encounter.fromJson;
 
   @override
+
+  /// The lowest level the Pokémon could be encountered at.
   @JsonKey(name: 'min_level')
   int get minLevel;
   @override
+
+  /// The highest level the Pokémon could be encountered at.
   @JsonKey(name: 'max_level')
   int get maxLevel;
   @override
+
+  /// A list of condition values that must be in effect for this encounter to occur.
+  ///
+  /// See also:
+  ///
+  /// [EncounterConditionValue]
   @JsonKey(name: 'condition_values')
   List<NamedApiResource> get conditionValues;
   @override
+
+  /// Percent chance that this encounter will occur.
   int get chance;
   @override
+
+  /// The method by which this encounter happens.
+  ///
+  /// See also:
+  ///
+  /// [EncounterMethod]
   NamedApiResource get method;
   @override
   @JsonKey(ignore: true)
@@ -809,9 +908,22 @@ const $FlavorText = _$FlavorTextTearOff();
 
 /// @nodoc
 mixin _$FlavorText {
+  /// The localized flavor text for an API resource in a specific language.
   @JsonKey(name: 'flavor_text')
   String get flavorText => throw _privateConstructorUsedError;
+
+  /// The language this name is in.
+  ///
+  /// See also:
+  ///
+  /// [Language]
   NamedApiResource get language => throw _privateConstructorUsedError;
+
+  /// The game version this flavor text is extracted from.
+  ///
+  /// See also:
+  ///
+  /// [Version]
   NamedApiResource get version => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -939,11 +1051,25 @@ class _$_FlavorText implements _FlavorText {
       _$$_FlavorTextFromJson(json);
 
   @override
+
+  /// The localized flavor text for an API resource in a specific language.
   @JsonKey(name: 'flavor_text')
   final String flavorText;
   @override
+
+  /// The language this name is in.
+  ///
+  /// See also:
+  ///
+  /// [Language]
   final NamedApiResource language;
   @override
+
+  /// The game version this flavor text is extracted from.
+  ///
+  /// See also:
+  ///
+  /// [Version]
   final NamedApiResource version;
 
   @override
@@ -988,11 +1114,25 @@ abstract class _FlavorText implements FlavorText {
       _$_FlavorText.fromJson;
 
   @override
+
+  /// The localized flavor text for an API resource in a specific language.
   @JsonKey(name: 'flavor_text')
   String get flavorText;
   @override
+
+  /// The language this name is in.
+  ///
+  /// See also:
+  ///
+  /// [Language]
   NamedApiResource get language;
   @override
+
+  /// The game version this flavor text is extracted from.
+  ///
+  /// See also:
+  ///
+  /// [Version]
   NamedApiResource get version;
   @override
   @JsonKey(ignore: true)
@@ -1026,8 +1166,15 @@ const $GenerationGameIndex = _$GenerationGameIndexTearOff();
 
 /// @nodoc
 mixin _$GenerationGameIndex {
+  /// The internal id of an API resource within game data.
   @JsonKey(name: 'game_index')
   int get gameIndex => throw _privateConstructorUsedError;
+
+  /// The generation relevent to this game index.
+  ///
+  /// See also:
+  ///
+  /// [Generation]
   NamedApiResource get generation => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -1136,9 +1283,17 @@ class _$_GenerationGameIndex implements _GenerationGameIndex {
       _$$_GenerationGameIndexFromJson(json);
 
   @override
+
+  /// The internal id of an API resource within game data.
   @JsonKey(name: 'game_index')
   final int gameIndex;
   @override
+
+  /// The generation relevent to this game index.
+  ///
+  /// See also:
+  ///
+  /// [Generation]
   final NamedApiResource generation;
 
   @override
@@ -1182,9 +1337,17 @@ abstract class _GenerationGameIndex implements GenerationGameIndex {
       _$_GenerationGameIndex.fromJson;
 
   @override
+
+  /// The internal id of an API resource within game data.
   @JsonKey(name: 'game_index')
   int get gameIndex;
   @override
+
+  /// The generation relevent to this game index.
+  ///
+  /// See also:
+  ///
+  /// [Generation]
   NamedApiResource get generation;
   @override
   @JsonKey(ignore: true)
@@ -1218,7 +1381,18 @@ const $MachineVersionDetail = _$MachineVersionDetailTearOff();
 
 /// @nodoc
 mixin _$MachineVersionDetail {
+  /// The machine that teaches a move from an item.
+  ///
+  /// See also:
+  ///
+  /// [Machine]
   ApiResource get machine => throw _privateConstructorUsedError;
+
+  /// The version group of this specific machine.
+  ///
+  /// See also:
+  ///
+  /// [VersionGroup]
   @JsonKey(name: 'version_group')
   NamedApiResource get versionGroup => throw _privateConstructorUsedError;
 
@@ -1338,8 +1512,20 @@ class _$_MachineVersionDetail implements _MachineVersionDetail {
       _$$_MachineVersionDetailFromJson(json);
 
   @override
+
+  /// The machine that teaches a move from an item.
+  ///
+  /// See also:
+  ///
+  /// [Machine]
   final ApiResource machine;
   @override
+
+  /// The version group of this specific machine.
+  ///
+  /// See also:
+  ///
+  /// [VersionGroup]
   @JsonKey(name: 'version_group')
   final NamedApiResource versionGroup;
 
@@ -1385,8 +1571,20 @@ abstract class _MachineVersionDetail implements MachineVersionDetail {
       _$_MachineVersionDetail.fromJson;
 
   @override
+
+  /// The machine that teaches a move from an item.
+  ///
+  /// See also:
+  ///
+  /// [Machine]
   ApiResource get machine;
   @override
+
+  /// The version group of this specific machine.
+  ///
+  /// See also:
+  ///
+  /// [VersionGroup]
   @JsonKey(name: 'version_group')
   NamedApiResource get versionGroup;
   @override
@@ -1420,7 +1618,14 @@ const $Name = _$NameTearOff();
 
 /// @nodoc
 mixin _$Name {
+  /// The localized name for an API resource in a specific language.
   String get name => throw _privateConstructorUsedError;
+
+  /// The language this name is in.
+  ///
+  /// See also:
+  ///
+  /// [Language]
   NamedApiResource get language => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -1516,8 +1721,16 @@ class _$_Name implements _Name {
   factory _$_Name.fromJson(Map<String, dynamic> json) => _$$_NameFromJson(json);
 
   @override
+
+  /// The localized name for an API resource in a specific language.
   final String name;
   @override
+
+  /// The language this name is in.
+  ///
+  /// See also:
+  ///
+  /// [Language]
   final NamedApiResource language;
 
   @override
@@ -1557,8 +1770,16 @@ abstract class _Name implements Name {
   factory _Name.fromJson(Map<String, dynamic> json) = _$_Name.fromJson;
 
   @override
+
+  /// The localized name for an API resource in a specific language.
   String get name;
   @override
+
+  /// The language this name is in.
+  ///
+  /// See also:
+  ///
+  /// [Language]
   NamedApiResource get language;
   @override
   @JsonKey(ignore: true)
@@ -1590,7 +1811,10 @@ const $NamedApiResource = _$NamedApiResourceTearOff();
 
 /// @nodoc
 mixin _$NamedApiResource {
+  /// The name of the referenced resource.
   String get name => throw _privateConstructorUsedError;
+
+  /// The URL of the referenced resource.
   String get url => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -1682,8 +1906,12 @@ class _$_NamedApiResource implements _NamedApiResource {
       _$$_NamedApiResourceFromJson(json);
 
   @override
+
+  /// The name of the referenced resource.
   final String name;
   @override
+
+  /// The URL of the referenced resource.
   final String url;
 
   @override
@@ -1725,8 +1953,12 @@ abstract class _NamedApiResource implements NamedApiResource {
       _$_NamedApiResource.fromJson;
 
   @override
+
+  /// The name of the referenced resource.
   String get name;
   @override
+
+  /// The URL of the referenced resource.
   String get url;
   @override
   @JsonKey(ignore: true)
@@ -1763,9 +1995,18 @@ const $VerboseEffect = _$VerboseEffectTearOff();
 
 /// @nodoc
 mixin _$VerboseEffect {
+  /// The localized effect text for an API resource in a specific language.
   String get effect => throw _privateConstructorUsedError;
+
+  /// The localized effect text in brief.
   @JsonKey(name: 'short_effect')
   String get shortEffect => throw _privateConstructorUsedError;
+
+  /// The language this effect is in.
+  ///
+  /// See also:
+  ///
+  /// [Language]
   NamedApiResource get language => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -1886,11 +2127,21 @@ class _$_VerboseEffect implements _VerboseEffect {
       _$$_VerboseEffectFromJson(json);
 
   @override
+
+  /// The localized effect text for an API resource in a specific language.
   final String effect;
   @override
+
+  /// The localized effect text in brief.
   @JsonKey(name: 'short_effect')
   final String shortEffect;
   @override
+
+  /// The language this effect is in.
+  ///
+  /// See also:
+  ///
+  /// [Language]
   final NamedApiResource language;
 
   @override
@@ -1937,11 +2188,21 @@ abstract class _VerboseEffect implements VerboseEffect {
       _$_VerboseEffect.fromJson;
 
   @override
+
+  /// The localized effect text for an API resource in a specific language.
   String get effect;
   @override
+
+  /// The localized effect text in brief.
   @JsonKey(name: 'short_effect')
   String get shortEffect;
   @override
+
+  /// The language this effect is in.
+  ///
+  /// See also:
+  ///
+  /// [Language]
   NamedApiResource get language;
   @override
   @JsonKey(ignore: true)
@@ -1979,9 +2240,18 @@ const $VersionEncounterDetail = _$VersionEncounterDetailTearOff();
 
 /// @nodoc
 mixin _$VersionEncounterDetail {
+  /// The game version this encounter happens in.
+  ///
+  /// See also:
+  ///
+  /// [Version]
   NamedApiResource get version => throw _privateConstructorUsedError;
+
+  /// The total percentage of all encounter potential.
   @JsonKey(name: 'max_chance')
   int get maxChance => throw _privateConstructorUsedError;
+
+  /// A list of encounters and their specifics.
   @JsonKey(name: 'encounter_details')
   List<Encounter> get encounterDetails => throw _privateConstructorUsedError;
 
@@ -2105,11 +2375,21 @@ class _$_VersionEncounterDetail implements _VersionEncounterDetail {
       _$$_VersionEncounterDetailFromJson(json);
 
   @override
+
+  /// The game version this encounter happens in.
+  ///
+  /// See also:
+  ///
+  /// [Version]
   final NamedApiResource version;
   @override
+
+  /// The total percentage of all encounter potential.
   @JsonKey(name: 'max_chance')
   final int maxChance;
   @override
+
+  /// A list of encounters and their specifics.
   @JsonKey(name: 'encounter_details')
   final List<Encounter> encounterDetails;
 
@@ -2160,11 +2440,21 @@ abstract class _VersionEncounterDetail implements VersionEncounterDetail {
       _$_VersionEncounterDetail.fromJson;
 
   @override
+
+  /// The game version this encounter happens in.
+  ///
+  /// See also:
+  ///
+  /// [Version]
   NamedApiResource get version;
   @override
+
+  /// The total percentage of all encounter potential.
   @JsonKey(name: 'max_chance')
   int get maxChance;
   @override
+
+  /// A list of encounters and their specifics.
   @JsonKey(name: 'encounter_details')
   List<Encounter> get encounterDetails;
   @override
@@ -2199,8 +2489,15 @@ const $VersionGameIndex = _$VersionGameIndexTearOff();
 
 /// @nodoc
 mixin _$VersionGameIndex {
+  /// The internal id of an API resource within game data.
   @JsonKey(name: 'game_index')
   int get gameIndex => throw _privateConstructorUsedError;
+
+  /// The version relevent to this game index.
+  ///
+  /// See also:
+  ///
+  /// [Version]
   NamedApiResource get version => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -2307,9 +2604,17 @@ class _$_VersionGameIndex implements _VersionGameIndex {
       _$$_VersionGameIndexFromJson(json);
 
   @override
+
+  /// The internal id of an API resource within game data.
   @JsonKey(name: 'game_index')
   final int gameIndex;
   @override
+
+  /// The version relevent to this game index.
+  ///
+  /// See also:
+  ///
+  /// [Version]
   final NamedApiResource version;
 
   @override
@@ -2351,9 +2656,17 @@ abstract class _VersionGameIndex implements VersionGameIndex {
       _$_VersionGameIndex.fromJson;
 
   @override
+
+  /// The internal id of an API resource within game data.
   @JsonKey(name: 'game_index')
   int get gameIndex;
   @override
+
+  /// The version relevent to this game index.
+  ///
+  /// See also:
+  ///
+  /// [Version]
   NamedApiResource get version;
   @override
   @JsonKey(ignore: true)
@@ -2389,8 +2702,21 @@ const $VersionGroupFlavorText = _$VersionGroupFlavorTextTearOff();
 
 /// @nodoc
 mixin _$VersionGroupFlavorText {
+  /// The localized name for an API resource in a specific language.
   String get text => throw _privateConstructorUsedError;
+
+  /// The language this name is in.
+  ///
+  /// See also:
+  ///
+  /// [Language]
   NamedApiResource get language => throw _privateConstructorUsedError;
+
+  /// The version group which uses this flavor text.
+  ///
+  /// See also:
+  ///
+  /// [VersionGroup]
   @JsonKey(name: 'version_group')
   NamedApiResource get versionGroup => throw _privateConstructorUsedError;
 
@@ -2522,10 +2848,24 @@ class _$_VersionGroupFlavorText implements _VersionGroupFlavorText {
       _$$_VersionGroupFlavorTextFromJson(json);
 
   @override
+
+  /// The localized name for an API resource in a specific language.
   final String text;
   @override
+
+  /// The language this name is in.
+  ///
+  /// See also:
+  ///
+  /// [Language]
   final NamedApiResource language;
   @override
+
+  /// The version group which uses this flavor text.
+  ///
+  /// See also:
+  ///
+  /// [VersionGroup]
   @JsonKey(name: 'version_group')
   final NamedApiResource versionGroup;
 
@@ -2573,10 +2913,24 @@ abstract class _VersionGroupFlavorText implements VersionGroupFlavorText {
       _$_VersionGroupFlavorText.fromJson;
 
   @override
+
+  /// The localized name for an API resource in a specific language.
   String get text;
   @override
+
+  /// The language this name is in.
+  ///
+  /// See also:
+  ///
+  /// [Language]
   NamedApiResource get language;
   @override
+
+  /// The version group which uses this flavor text.
+  ///
+  /// See also:
+  ///
+  /// [VersionGroup]
   @JsonKey(name: 'version_group')
   NamedApiResource get versionGroup;
   @override
@@ -2613,9 +2967,16 @@ const $NamedApiResourceList = _$NamedApiResourceListTearOff();
 
 /// @nodoc
 mixin _$NamedApiResourceList {
+  /// The total number of resources available from this API.
   int get count => throw _privateConstructorUsedError;
+
+  /// The URL for the next page in the list.
   String? get next => throw _privateConstructorUsedError;
+
+  /// The URL for the previous page in the list.
   String? get previous => throw _privateConstructorUsedError;
+
+  /// A list of named API resources.
   List<NamedApiResource> get results => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -2736,12 +3097,20 @@ class _$_NamedApiResourceList implements _NamedApiResourceList {
       _$$_NamedApiResourceListFromJson(json);
 
   @override
+
+  /// The total number of resources available from this API.
   final int count;
   @override
+
+  /// The URL for the next page in the list.
   final String? next;
   @override
+
+  /// The URL for the previous page in the list.
   final String? previous;
   @override
+
+  /// A list of named API resources.
   final List<NamedApiResource> results;
 
   @override
@@ -2788,12 +3157,20 @@ abstract class _NamedApiResourceList implements NamedApiResourceList {
       _$_NamedApiResourceList.fromJson;
 
   @override
+
+  /// The total number of resources available from this API.
   int get count;
   @override
+
+  /// The URL for the next page in the list.
   String? get next;
   @override
+
+  /// The URL for the previous page in the list.
   String? get previous;
   @override
+
+  /// A list of named API resources.
   List<NamedApiResource> get results;
   @override
   @JsonKey(ignore: true)
@@ -2829,9 +3206,16 @@ const $ApiResourceList = _$ApiResourceListTearOff();
 
 /// @nodoc
 mixin _$ApiResourceList {
+  /// The total number of resources available from this API.
   int get count => throw _privateConstructorUsedError;
+
+  /// The URL for the next page in the list.
   String? get next => throw _privateConstructorUsedError;
+
+  /// The URL for the previous page in the list.
   String? get previous => throw _privateConstructorUsedError;
+
+  /// A list of API resources.
   List<ApiResource> get results => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -2945,12 +3329,20 @@ class _$_ApiResourceList implements _ApiResourceList {
       _$$_ApiResourceListFromJson(json);
 
   @override
+
+  /// The total number of resources available from this API.
   final int count;
   @override
+
+  /// The URL for the next page in the list.
   final String? next;
   @override
+
+  /// The URL for the previous page in the list.
   final String? previous;
   @override
+
+  /// A list of API resources.
   final List<ApiResource> results;
 
   @override
@@ -2996,12 +3388,20 @@ abstract class _ApiResourceList implements ApiResourceList {
       _$_ApiResourceList.fromJson;
 
   @override
+
+  /// The total number of resources available from this API.
   int get count;
   @override
+
+  /// The URL for the next page in the list.
   String? get next;
   @override
+
+  /// The URL for the previous page in the list.
   String? get previous;
   @override
+
+  /// A list of API resources.
   List<ApiResource> get results;
   @override
   @JsonKey(ignore: true)

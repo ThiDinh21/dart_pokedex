@@ -55,17 +55,58 @@ const $Generation = _$GenerationTearOff();
 
 /// @nodoc
 mixin _$Generation {
+  /// The identifier for this resource.
   int get id => throw _privateConstructorUsedError;
+
+  /// The name for this resource.
   String get name => throw _privateConstructorUsedError;
+
+  /// A list of abilities that were introduced in this generation.
+  ///
+  /// See also:
+  ///
+  /// [Ability]
   List<NamedApiResource> get abilities => throw _privateConstructorUsedError;
+
+  /// The name of this resource listed in different languages.
   List<Name> get names => throw _privateConstructorUsedError;
+
+  /// The main region travelled in this generation.
+  ///
+  /// See also:
+  ///
+  /// [Region]
   @JsonKey(name: 'main_region')
   NamedApiResource get mainRegion => throw _privateConstructorUsedError;
+
+  /// A list of moves that were introduced in this generation.
+  ///
+  /// See also:
+  ///
+  /// [Move]
   List<NamedApiResource> get moves => throw _privateConstructorUsedError;
+
+  /// A list of Pokémon species that were introduced in this generation.
+  ///
+  /// See also:
+  ///
+  /// [PokemonSpecies]
   @JsonKey(name: 'pokemon_species')
   List<NamedApiResource> get pokemonSpecies =>
       throw _privateConstructorUsedError;
+
+  /// A list of types that were introduced in this generation.
+  ///
+  /// See also:
+  ///
+  /// [Type]
   List<NamedApiResource> get types => throw _privateConstructorUsedError;
+
+  /// A list of version groups that were introduced in this generation.
+  ///
+  /// See also:
+  ///
+  /// [VersionGroup]
   @JsonKey(name: 'version_groups')
   List<NamedApiResource> get versionGroups =>
       throw _privateConstructorUsedError;
@@ -265,24 +306,66 @@ class _$_Generation implements _Generation {
       _$$_GenerationFromJson(json);
 
   @override
+
+  /// The identifier for this resource.
   final int id;
   @override
+
+  /// The name for this resource.
   final String name;
   @override
+
+  /// A list of abilities that were introduced in this generation.
+  ///
+  /// See also:
+  ///
+  /// [Ability]
   final List<NamedApiResource> abilities;
   @override
+
+  /// The name of this resource listed in different languages.
   final List<Name> names;
   @override
+
+  /// The main region travelled in this generation.
+  ///
+  /// See also:
+  ///
+  /// [Region]
   @JsonKey(name: 'main_region')
   final NamedApiResource mainRegion;
   @override
+
+  /// A list of moves that were introduced in this generation.
+  ///
+  /// See also:
+  ///
+  /// [Move]
   final List<NamedApiResource> moves;
   @override
+
+  /// A list of Pokémon species that were introduced in this generation.
+  ///
+  /// See also:
+  ///
+  /// [PokemonSpecies]
   @JsonKey(name: 'pokemon_species')
   final List<NamedApiResource> pokemonSpecies;
   @override
+
+  /// A list of types that were introduced in this generation.
+  ///
+  /// See also:
+  ///
+  /// [Type]
   final List<NamedApiResource> types;
   @override
+
+  /// A list of version groups that were introduced in this generation.
+  ///
+  /// See also:
+  ///
+  /// [VersionGroup]
   @JsonKey(name: 'version_groups')
   final List<NamedApiResource> versionGroups;
 
@@ -353,24 +436,66 @@ abstract class _Generation implements Generation {
       _$_Generation.fromJson;
 
   @override
+
+  /// The identifier for this resource.
   int get id;
   @override
+
+  /// The name for this resource.
   String get name;
   @override
+
+  /// A list of abilities that were introduced in this generation.
+  ///
+  /// See also:
+  ///
+  /// [Ability]
   List<NamedApiResource> get abilities;
   @override
+
+  /// The name of this resource listed in different languages.
   List<Name> get names;
   @override
+
+  /// The main region travelled in this generation.
+  ///
+  /// See also:
+  ///
+  /// [Region]
   @JsonKey(name: 'main_region')
   NamedApiResource get mainRegion;
   @override
+
+  /// A list of moves that were introduced in this generation.
+  ///
+  /// See also:
+  ///
+  /// [Move]
   List<NamedApiResource> get moves;
   @override
+
+  /// A list of Pokémon species that were introduced in this generation.
+  ///
+  /// See also:
+  ///
+  /// [PokemonSpecies]
   @JsonKey(name: 'pokemon_species')
   List<NamedApiResource> get pokemonSpecies;
   @override
+
+  /// A list of types that were introduced in this generation.
+  ///
+  /// See also:
+  ///
+  /// [Type]
   List<NamedApiResource> get types;
   @override
+
+  /// A list of version groups that were introduced in this generation.
+  ///
+  /// See also:
+  ///
+  /// [VersionGroup]
   @JsonKey(name: 'version_groups')
   List<NamedApiResource> get versionGroups;
   @override
@@ -418,15 +543,38 @@ const $PokedexData = _$PokedexDataTearOff();
 
 /// @nodoc
 mixin _$PokedexData {
+  /// The identifier for this resource.
   int get id => throw _privateConstructorUsedError;
+
+  /// The name for this resource.
   String get name => throw _privateConstructorUsedError;
+
+  /// Whether or not this Pokédex originated in the main series of the video games.
   @JsonKey(name: 'is_main_series')
   bool get isMainSeries => throw _privateConstructorUsedError;
+
+  /// The description of this resource listed in different languages.
   List<Description> get descriptions => throw _privateConstructorUsedError;
+
+  /// The name of this resource listed in different languages.
   List<Name> get names => throw _privateConstructorUsedError;
+
+  /// A list of Pokémon catalogued in this Pokédex and their indexes.
   @JsonKey(name: 'pokemon_entries')
   List<PokemonEntry> get pokemonEntries => throw _privateConstructorUsedError;
+
+  /// The region this Pokédex catalogues Pokémon for.
+  ///
+  /// See also:
+  ///
+  /// [Region]
   NamedApiResource get region => throw _privateConstructorUsedError;
+
+  /// A list of version groups this Pokédex is relevant to.
+  ///
+  /// See also:
+  ///
+  /// [VersionGroup]
   @JsonKey(name: 'version_groups')
   List<NamedApiResource> get versionGroups =>
       throw _privateConstructorUsedError;
@@ -614,22 +762,46 @@ class _$_PokedexData implements _PokedexData {
       _$$_PokedexDataFromJson(json);
 
   @override
+
+  /// The identifier for this resource.
   final int id;
   @override
+
+  /// The name for this resource.
   final String name;
   @override
+
+  /// Whether or not this Pokédex originated in the main series of the video games.
   @JsonKey(name: 'is_main_series')
   final bool isMainSeries;
   @override
+
+  /// The description of this resource listed in different languages.
   final List<Description> descriptions;
   @override
+
+  /// The name of this resource listed in different languages.
   final List<Name> names;
   @override
+
+  /// A list of Pokémon catalogued in this Pokédex and their indexes.
   @JsonKey(name: 'pokemon_entries')
   final List<PokemonEntry> pokemonEntries;
   @override
+
+  /// The region this Pokédex catalogues Pokémon for.
+  ///
+  /// See also:
+  ///
+  /// [Region]
   final NamedApiResource region;
   @override
+
+  /// A list of version groups this Pokédex is relevant to.
+  ///
+  /// See also:
+  ///
+  /// [VersionGroup]
   @JsonKey(name: 'version_groups')
   final List<NamedApiResource> versionGroups;
 
@@ -698,22 +870,46 @@ abstract class _PokedexData implements PokedexData {
       _$_PokedexData.fromJson;
 
   @override
+
+  /// The identifier for this resource.
   int get id;
   @override
+
+  /// The name for this resource.
   String get name;
   @override
+
+  /// Whether or not this Pokédex originated in the main series of the video games.
   @JsonKey(name: 'is_main_series')
   bool get isMainSeries;
   @override
+
+  /// The description of this resource listed in different languages.
   List<Description> get descriptions;
   @override
+
+  /// The name of this resource listed in different languages.
   List<Name> get names;
   @override
+
+  /// A list of Pokémon catalogued in this Pokédex and their indexes.
   @JsonKey(name: 'pokemon_entries')
   List<PokemonEntry> get pokemonEntries;
   @override
+
+  /// The region this Pokédex catalogues Pokémon for.
+  ///
+  /// See also:
+  ///
+  /// [Region]
   NamedApiResource get region;
   @override
+
+  /// A list of version groups this Pokédex is relevant to.
+  ///
+  /// See also:
+  ///
+  /// [VersionGroup]
   @JsonKey(name: 'version_groups')
   List<NamedApiResource> get versionGroups;
   @override
@@ -748,8 +944,15 @@ const $PokemonEntry = _$PokemonEntryTearOff();
 
 /// @nodoc
 mixin _$PokemonEntry {
+  /// The index of this Pokémon species entry within the Pokédex.
   @JsonKey(name: 'entry_number')
   int get entryNumber => throw _privateConstructorUsedError;
+
+  /// The Pokémon species being encountered.
+  ///
+  /// See also:
+  ///
+  /// [PokemonSpecies]
   @JsonKey(name: 'pokemon_species')
   NamedApiResource get pokemonSpecies => throw _privateConstructorUsedError;
 
@@ -857,9 +1060,17 @@ class _$_PokemonEntry implements _PokemonEntry {
       _$$_PokemonEntryFromJson(json);
 
   @override
+
+  /// The index of this Pokémon species entry within the Pokédex.
   @JsonKey(name: 'entry_number')
   final int entryNumber;
   @override
+
+  /// The Pokémon species being encountered.
+  ///
+  /// See also:
+  ///
+  /// [PokemonSpecies]
   @JsonKey(name: 'pokemon_species')
   final NamedApiResource pokemonSpecies;
 
@@ -905,9 +1116,17 @@ abstract class _PokemonEntry implements PokemonEntry {
       _$_PokemonEntry.fromJson;
 
   @override
+
+  /// The index of this Pokémon species entry within the Pokédex.
   @JsonKey(name: 'entry_number')
   int get entryNumber;
   @override
+
+  /// The Pokémon species being encountered.
+  ///
+  /// See also:
+  ///
+  /// [PokemonSpecies]
   @JsonKey(name: 'pokemon_species')
   NamedApiResource get pokemonSpecies;
   @override
@@ -944,9 +1163,20 @@ const $Version = _$VersionTearOff();
 
 /// @nodoc
 mixin _$Version {
+  /// The identifier for this resource.
   int get id => throw _privateConstructorUsedError;
+
+  /// The name for this resource.
   String get name => throw _privateConstructorUsedError;
+
+  /// The name of this resource listed in different languages.
   List<Name> get names => throw _privateConstructorUsedError;
+
+  /// The version group this version belongs to.
+  ///
+  /// See also:
+  ///
+  /// [VersionGroup]
   @JsonKey(name: 'version_group')
   NamedApiResource get versionGroup => throw _privateConstructorUsedError;
 
@@ -1073,12 +1303,24 @@ class _$_Version implements _Version {
       _$$_VersionFromJson(json);
 
   @override
+
+  /// The identifier for this resource.
   final int id;
   @override
+
+  /// The name for this resource.
   final String name;
   @override
+
+  /// The name of this resource listed in different languages.
   final List<Name> names;
   @override
+
+  /// The version group this version belongs to.
+  ///
+  /// See also:
+  ///
+  /// [VersionGroup]
   @JsonKey(name: 'version_group')
   final NamedApiResource versionGroup;
 
@@ -1126,12 +1368,24 @@ abstract class _Version implements Version {
   factory _Version.fromJson(Map<String, dynamic> json) = _$_Version.fromJson;
 
   @override
+
+  /// The identifier for this resource.
   int get id;
   @override
+
+  /// The name for this resource.
   String get name;
   @override
+
+  /// The name of this resource listed in different languages.
   List<Name> get names;
   @override
+
+  /// The version group this version belongs to.
+  ///
+  /// See also:
+  ///
+  /// [VersionGroup]
   @JsonKey(name: 'version_group')
   NamedApiResource get versionGroup;
   @override
@@ -1180,15 +1434,51 @@ const $VersionGroup = _$VersionGroupTearOff();
 
 /// @nodoc
 mixin _$VersionGroup {
+  /// The identifier for this resource.
   int get id => throw _privateConstructorUsedError;
+
+  /// The name for this resource.
   String get name => throw _privateConstructorUsedError;
+
+  /// Order for sorting.
+  /// Almost by date of release, except similar versions are grouped together.
   int get order => throw _privateConstructorUsedError;
+
+  /// The generation this version was introduced in.
+  ///
+  /// See also:
+  ///
+  /// [Generation]
   NamedApiResource get generation => throw _privateConstructorUsedError;
+
+  /// A list of methods in which Pokémon can learn moves in this version group.
+  ///
+  /// See also:
+  ///
+  /// [MoveLearnMethod]
   @JsonKey(name: 'move_learn_methods')
   List<NamedApiResource> get moveLearnMethods =>
       throw _privateConstructorUsedError;
+
+  /// A list of Pokédexes introduces in this version group.
+  ///
+  /// See also:
+  ///
+  /// [PokedexData]
   List<NamedApiResource> get pokedexes => throw _privateConstructorUsedError;
+
+  /// A list of regions that can be visited in this version group.
+  ///
+  /// See also:
+  ///
+  /// [Region]
   List<NamedApiResource> get regions => throw _privateConstructorUsedError;
+
+  /// The versions this version group owns.
+  ///
+  /// See also:
+  ///
+  /// [Version]
   List<NamedApiResource> get versions => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -1376,21 +1666,58 @@ class _$_VersionGroup implements _VersionGroup {
       _$$_VersionGroupFromJson(json);
 
   @override
+
+  /// The identifier for this resource.
   final int id;
   @override
+
+  /// The name for this resource.
   final String name;
   @override
+
+  /// Order for sorting.
+  /// Almost by date of release, except similar versions are grouped together.
   final int order;
   @override
+
+  /// The generation this version was introduced in.
+  ///
+  /// See also:
+  ///
+  /// [Generation]
   final NamedApiResource generation;
   @override
+
+  /// A list of methods in which Pokémon can learn moves in this version group.
+  ///
+  /// See also:
+  ///
+  /// [MoveLearnMethod]
   @JsonKey(name: 'move_learn_methods')
   final List<NamedApiResource> moveLearnMethods;
   @override
+
+  /// A list of Pokédexes introduces in this version group.
+  ///
+  /// See also:
+  ///
+  /// [PokedexData]
   final List<NamedApiResource> pokedexes;
   @override
+
+  /// A list of regions that can be visited in this version group.
+  ///
+  /// See also:
+  ///
+  /// [Region]
   final List<NamedApiResource> regions;
   @override
+
+  /// The versions this version group owns.
+  ///
+  /// See also:
+  ///
+  /// [Version]
   final List<NamedApiResource> versions;
 
   @override
@@ -1454,21 +1781,58 @@ abstract class _VersionGroup implements VersionGroup {
       _$_VersionGroup.fromJson;
 
   @override
+
+  /// The identifier for this resource.
   int get id;
   @override
+
+  /// The name for this resource.
   String get name;
   @override
+
+  /// Order for sorting.
+  /// Almost by date of release, except similar versions are grouped together.
   int get order;
   @override
+
+  /// The generation this version was introduced in.
+  ///
+  /// See also:
+  ///
+  /// [Generation]
   NamedApiResource get generation;
   @override
+
+  /// A list of methods in which Pokémon can learn moves in this version group.
+  ///
+  /// See also:
+  ///
+  /// [MoveLearnMethod]
   @JsonKey(name: 'move_learn_methods')
   List<NamedApiResource> get moveLearnMethods;
   @override
+
+  /// A list of Pokédexes introduces in this version group.
+  ///
+  /// See also:
+  ///
+  /// [PokedexData]
   List<NamedApiResource> get pokedexes;
   @override
+
+  /// A list of regions that can be visited in this version group.
+  ///
+  /// See also:
+  ///
+  /// [Region]
   List<NamedApiResource> get regions;
   @override
+
+  /// The versions this version group owns.
+  ///
+  /// See also:
+  ///
+  /// [Version]
   List<NamedApiResource> get versions;
   @override
   @JsonKey(ignore: true)

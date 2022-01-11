@@ -43,6 +43,8 @@ class _$MoveTearOff {
           List<VerboseEffect> effectEntries,
       @JsonKey(name: 'effect_changes')
           List<AbilityEffectChange> effectChanges,
+      @JsonKey(name: 'learned_by_pokemon')
+          NamedApiResource learnedByPokemon,
       @JsonKey(name: 'flavor_text_entries')
           List<MoveFlavorText> flavorTextEntries,
       NamedApiResource generation,
@@ -71,6 +73,7 @@ class _$MoveTearOff {
       damageClass,
       effectEntries,
       effectChanges,
+      learnedByPokemon,
       flavorTextEntries,
       generation,
       machines,
@@ -94,27 +97,67 @@ const $Move = _$MoveTearOff();
 
 /// @nodoc
 mixin _$Move {
+  /// The identifier for this resource.
   int get id => throw _privateConstructorUsedError;
+
+  /// The name for this resource.
   String get name => throw _privateConstructorUsedError;
+
+  /// The percent value of how likely this move is to be successful.
   int get accuracy => throw _privateConstructorUsedError;
+
+  /// The percent value of how likely it is this moves effect will happen.
   @JsonKey(name: 'effect_chance')
   int get effectChance => throw _privateConstructorUsedError;
+
+  /// Power points. The number of times this move can be used.
   int get pp => throw _privateConstructorUsedError;
+
+  /// A value between -8 and 8. Sets the order in which moves are executed during battle.
+  /// See [Bulbapedia](https://bulbapedia.bulbagarden.net/wiki/Priority) for greater detail.
   int get priority => throw _privateConstructorUsedError;
+
+  /// The base power of this move with a value of 0 if it does not have a base power.
   int get power => throw _privateConstructorUsedError;
+
+  /// A detail of normal and super contest combos that require this move.
   @JsonKey(name: 'contest_combos')
   ContestComboSets get contestCombos => throw _privateConstructorUsedError;
+
+  /// The type of appeal this move gives a Pokémon when used in a contest.
+  ///
+  /// See also:
+  ///
+  /// [ContestType]
   @JsonKey(name: 'contest_type')
   NamedApiResource get contestType => throw _privateConstructorUsedError;
+
+  /// The effect the move has when used in a contest
+  ///
+  /// See also:
+  ///
+  /// [ContestEffect].
   @JsonKey(name: 'contest_effect')
   ApiResource get contestEffect => throw _privateConstructorUsedError;
+
+  /// The type of damage the move inflicts on the target, e.g. physical.
+  ///
+  /// See also:
+  ///
+  /// [MoveDamageClass]
   @JsonKey(name: 'damage_class')
   NamedApiResource get damageClass => throw _privateConstructorUsedError;
+
+  /// The effect of this move listed in different languages.
   @JsonKey(name: 'effect_entries')
   List<VerboseEffect> get effectEntries => throw _privateConstructorUsedError;
+
+  /// The list of previous effects this move has had across version groups of the games.
   @JsonKey(name: 'effect_changes')
   List<AbilityEffectChange> get effectChanges =>
       throw _privateConstructorUsedError;
+  @JsonKey(name: 'learned_by_pokemon')
+  NamedApiResource get learnedByPokemon => throw _privateConstructorUsedError;
   @JsonKey(name: 'flavor_text_entries')
   List<MoveFlavorText> get flavorTextEntries =>
       throw _privateConstructorUsedError;
@@ -161,6 +204,8 @@ abstract class $MoveCopyWith<$Res> {
           List<VerboseEffect> effectEntries,
       @JsonKey(name: 'effect_changes')
           List<AbilityEffectChange> effectChanges,
+      @JsonKey(name: 'learned_by_pokemon')
+          NamedApiResource learnedByPokemon,
       @JsonKey(name: 'flavor_text_entries')
           List<MoveFlavorText> flavorTextEntries,
       NamedApiResource generation,
@@ -180,6 +225,7 @@ abstract class $MoveCopyWith<$Res> {
   $NamedApiResourceCopyWith<$Res> get contestType;
   $ApiResourceCopyWith<$Res> get contestEffect;
   $NamedApiResourceCopyWith<$Res> get damageClass;
+  $NamedApiResourceCopyWith<$Res> get learnedByPokemon;
   $NamedApiResourceCopyWith<$Res> get generation;
   $MoveMetaDataCopyWith<$Res> get meta;
   $PastMoveStatValuesCopyWith<$Res> get pastValues;
@@ -211,6 +257,7 @@ class _$MoveCopyWithImpl<$Res> implements $MoveCopyWith<$Res> {
     Object? damageClass = freezed,
     Object? effectEntries = freezed,
     Object? effectChanges = freezed,
+    Object? learnedByPokemon = freezed,
     Object? flavorTextEntries = freezed,
     Object? generation = freezed,
     Object? machines = freezed,
@@ -275,6 +322,10 @@ class _$MoveCopyWithImpl<$Res> implements $MoveCopyWith<$Res> {
           ? _value.effectChanges
           : effectChanges // ignore: cast_nullable_to_non_nullable
               as List<AbilityEffectChange>,
+      learnedByPokemon: learnedByPokemon == freezed
+          ? _value.learnedByPokemon
+          : learnedByPokemon // ignore: cast_nullable_to_non_nullable
+              as NamedApiResource,
       flavorTextEntries: flavorTextEntries == freezed
           ? _value.flavorTextEntries
           : flavorTextEntries // ignore: cast_nullable_to_non_nullable
@@ -347,6 +398,13 @@ class _$MoveCopyWithImpl<$Res> implements $MoveCopyWith<$Res> {
   }
 
   @override
+  $NamedApiResourceCopyWith<$Res> get learnedByPokemon {
+    return $NamedApiResourceCopyWith<$Res>(_value.learnedByPokemon, (value) {
+      return _then(_value.copyWith(learnedByPokemon: value));
+    });
+  }
+
+  @override
   $NamedApiResourceCopyWith<$Res> get generation {
     return $NamedApiResourceCopyWith<$Res>(_value.generation, (value) {
       return _then(_value.copyWith(generation: value));
@@ -415,6 +473,8 @@ abstract class _$MoveCopyWith<$Res> implements $MoveCopyWith<$Res> {
           List<VerboseEffect> effectEntries,
       @JsonKey(name: 'effect_changes')
           List<AbilityEffectChange> effectChanges,
+      @JsonKey(name: 'learned_by_pokemon')
+          NamedApiResource learnedByPokemon,
       @JsonKey(name: 'flavor_text_entries')
           List<MoveFlavorText> flavorTextEntries,
       NamedApiResource generation,
@@ -438,6 +498,8 @@ abstract class _$MoveCopyWith<$Res> implements $MoveCopyWith<$Res> {
   $ApiResourceCopyWith<$Res> get contestEffect;
   @override
   $NamedApiResourceCopyWith<$Res> get damageClass;
+  @override
+  $NamedApiResourceCopyWith<$Res> get learnedByPokemon;
   @override
   $NamedApiResourceCopyWith<$Res> get generation;
   @override
@@ -476,6 +538,7 @@ class __$MoveCopyWithImpl<$Res> extends _$MoveCopyWithImpl<$Res>
     Object? damageClass = freezed,
     Object? effectEntries = freezed,
     Object? effectChanges = freezed,
+    Object? learnedByPokemon = freezed,
     Object? flavorTextEntries = freezed,
     Object? generation = freezed,
     Object? machines = freezed,
@@ -540,6 +603,10 @@ class __$MoveCopyWithImpl<$Res> extends _$MoveCopyWithImpl<$Res>
           ? _value.effectChanges
           : effectChanges // ignore: cast_nullable_to_non_nullable
               as List<AbilityEffectChange>,
+      learnedByPokemon == freezed
+          ? _value.learnedByPokemon
+          : learnedByPokemon // ignore: cast_nullable_to_non_nullable
+              as NamedApiResource,
       flavorTextEntries == freezed
           ? _value.flavorTextEntries
           : flavorTextEntries // ignore: cast_nullable_to_non_nullable
@@ -601,6 +668,7 @@ class _$_Move implements _Move {
       @JsonKey(name: 'damage_class') this.damageClass,
       @JsonKey(name: 'effect_entries') this.effectEntries,
       @JsonKey(name: 'effect_changes') this.effectChanges,
+      @JsonKey(name: 'learned_by_pokemon') this.learnedByPokemon,
       @JsonKey(name: 'flavor_text_entries') this.flavorTextEntries,
       this.generation,
       this.machines,
@@ -615,38 +683,80 @@ class _$_Move implements _Move {
   factory _$_Move.fromJson(Map<String, dynamic> json) => _$$_MoveFromJson(json);
 
   @override
+
+  /// The identifier for this resource.
   final int id;
   @override
+
+  /// The name for this resource.
   final String name;
   @override
+
+  /// The percent value of how likely this move is to be successful.
   final int accuracy;
   @override
+
+  /// The percent value of how likely it is this moves effect will happen.
   @JsonKey(name: 'effect_chance')
   final int effectChance;
   @override
+
+  /// Power points. The number of times this move can be used.
   final int pp;
   @override
+
+  /// A value between -8 and 8. Sets the order in which moves are executed during battle.
+  /// See [Bulbapedia](https://bulbapedia.bulbagarden.net/wiki/Priority) for greater detail.
   final int priority;
   @override
+
+  /// The base power of this move with a value of 0 if it does not have a base power.
   final int power;
   @override
+
+  /// A detail of normal and super contest combos that require this move.
   @JsonKey(name: 'contest_combos')
   final ContestComboSets contestCombos;
   @override
+
+  /// The type of appeal this move gives a Pokémon when used in a contest.
+  ///
+  /// See also:
+  ///
+  /// [ContestType]
   @JsonKey(name: 'contest_type')
   final NamedApiResource contestType;
   @override
+
+  /// The effect the move has when used in a contest
+  ///
+  /// See also:
+  ///
+  /// [ContestEffect].
   @JsonKey(name: 'contest_effect')
   final ApiResource contestEffect;
   @override
+
+  /// The type of damage the move inflicts on the target, e.g. physical.
+  ///
+  /// See also:
+  ///
+  /// [MoveDamageClass]
   @JsonKey(name: 'damage_class')
   final NamedApiResource damageClass;
   @override
+
+  /// The effect of this move listed in different languages.
   @JsonKey(name: 'effect_entries')
   final List<VerboseEffect> effectEntries;
   @override
+
+  /// The list of previous effects this move has had across version groups of the games.
   @JsonKey(name: 'effect_changes')
   final List<AbilityEffectChange> effectChanges;
+  @override
+  @JsonKey(name: 'learned_by_pokemon')
+  final NamedApiResource learnedByPokemon;
   @override
   @JsonKey(name: 'flavor_text_entries')
   final List<MoveFlavorText> flavorTextEntries;
@@ -674,7 +784,7 @@ class _$_Move implements _Move {
 
   @override
   String toString() {
-    return 'Move(id: $id, name: $name, accuracy: $accuracy, effectChance: $effectChance, pp: $pp, priority: $priority, power: $power, contestCombos: $contestCombos, contestType: $contestType, contestEffect: $contestEffect, damageClass: $damageClass, effectEntries: $effectEntries, effectChanges: $effectChanges, flavorTextEntries: $flavorTextEntries, generation: $generation, machines: $machines, meta: $meta, names: $names, pastValues: $pastValues, statChanges: $statChanges, superContestEffect: $superContestEffect, target: $target, type: $type)';
+    return 'Move(id: $id, name: $name, accuracy: $accuracy, effectChance: $effectChance, pp: $pp, priority: $priority, power: $power, contestCombos: $contestCombos, contestType: $contestType, contestEffect: $contestEffect, damageClass: $damageClass, effectEntries: $effectEntries, effectChanges: $effectChanges, learnedByPokemon: $learnedByPokemon, flavorTextEntries: $flavorTextEntries, generation: $generation, machines: $machines, meta: $meta, names: $names, pastValues: $pastValues, statChanges: $statChanges, superContestEffect: $superContestEffect, target: $target, type: $type)';
   }
 
   @override
@@ -702,6 +812,8 @@ class _$_Move implements _Move {
                 .equals(other.effectEntries, effectEntries) &&
             const DeepCollectionEquality()
                 .equals(other.effectChanges, effectChanges) &&
+            const DeepCollectionEquality()
+                .equals(other.learnedByPokemon, learnedByPokemon) &&
             const DeepCollectionEquality()
                 .equals(other.flavorTextEntries, flavorTextEntries) &&
             const DeepCollectionEquality()
@@ -735,6 +847,7 @@ class _$_Move implements _Move {
         const DeepCollectionEquality().hash(damageClass),
         const DeepCollectionEquality().hash(effectEntries),
         const DeepCollectionEquality().hash(effectChanges),
+        const DeepCollectionEquality().hash(learnedByPokemon),
         const DeepCollectionEquality().hash(flavorTextEntries),
         const DeepCollectionEquality().hash(generation),
         const DeepCollectionEquality().hash(machines),
@@ -780,6 +893,8 @@ abstract class _Move implements Move {
           List<VerboseEffect> effectEntries,
       @JsonKey(name: 'effect_changes')
           List<AbilityEffectChange> effectChanges,
+      @JsonKey(name: 'learned_by_pokemon')
+          NamedApiResource learnedByPokemon,
       @JsonKey(name: 'flavor_text_entries')
           List<MoveFlavorText> flavorTextEntries,
       NamedApiResource generation,
@@ -798,38 +913,80 @@ abstract class _Move implements Move {
   factory _Move.fromJson(Map<String, dynamic> json) = _$_Move.fromJson;
 
   @override
+
+  /// The identifier for this resource.
   int get id;
   @override
+
+  /// The name for this resource.
   String get name;
   @override
+
+  /// The percent value of how likely this move is to be successful.
   int get accuracy;
   @override
+
+  /// The percent value of how likely it is this moves effect will happen.
   @JsonKey(name: 'effect_chance')
   int get effectChance;
   @override
+
+  /// Power points. The number of times this move can be used.
   int get pp;
   @override
+
+  /// A value between -8 and 8. Sets the order in which moves are executed during battle.
+  /// See [Bulbapedia](https://bulbapedia.bulbagarden.net/wiki/Priority) for greater detail.
   int get priority;
   @override
+
+  /// The base power of this move with a value of 0 if it does not have a base power.
   int get power;
   @override
+
+  /// A detail of normal and super contest combos that require this move.
   @JsonKey(name: 'contest_combos')
   ContestComboSets get contestCombos;
   @override
+
+  /// The type of appeal this move gives a Pokémon when used in a contest.
+  ///
+  /// See also:
+  ///
+  /// [ContestType]
   @JsonKey(name: 'contest_type')
   NamedApiResource get contestType;
   @override
+
+  /// The effect the move has when used in a contest
+  ///
+  /// See also:
+  ///
+  /// [ContestEffect].
   @JsonKey(name: 'contest_effect')
   ApiResource get contestEffect;
   @override
+
+  /// The type of damage the move inflicts on the target, e.g. physical.
+  ///
+  /// See also:
+  ///
+  /// [MoveDamageClass]
   @JsonKey(name: 'damage_class')
   NamedApiResource get damageClass;
   @override
+
+  /// The effect of this move listed in different languages.
   @JsonKey(name: 'effect_entries')
   List<VerboseEffect> get effectEntries;
   @override
+
+  /// The list of previous effects this move has had across version groups of the games.
   @JsonKey(name: 'effect_changes')
   List<AbilityEffectChange> get effectChanges;
+  @override
+  @JsonKey(name: 'learned_by_pokemon')
+  NamedApiResource get learnedByPokemon;
   @override
   @JsonKey(name: 'flavor_text_entries')
   List<MoveFlavorText> get flavorTextEntries;

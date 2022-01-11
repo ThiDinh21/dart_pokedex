@@ -24,6 +24,8 @@ _$_Move _$$_MoveFromJson(Map<String, dynamic> json) => _$_Move(
       (json['effect_changes'] as List<dynamic>)
           .map((e) => AbilityEffectChange.fromJson(e as Map<String, dynamic>))
           .toList(),
+      NamedApiResource.fromJson(
+          json['learned_by_pokemon'] as Map<String, dynamic>),
       (json['flavor_text_entries'] as List<dynamic>)
           .map((e) => MoveFlavorText.fromJson(e as Map<String, dynamic>))
           .toList(),
@@ -59,6 +61,7 @@ Map<String, dynamic> _$$_MoveToJson(_$_Move instance) => <String, dynamic>{
       'damage_class': instance.damageClass,
       'effect_entries': instance.effectEntries,
       'effect_changes': instance.effectChanges,
+      'learned_by_pokemon': instance.learnedByPokemon,
       'flavor_text_entries': instance.flavorTextEntries,
       'generation': instance.generation,
       'machines': instance.machines,

@@ -45,10 +45,21 @@ const $ContestType = _$ContestTypeTearOff();
 
 /// @nodoc
 mixin _$ContestType {
+  /// The identifier for this resource.
   int get id => throw _privateConstructorUsedError;
+
+  /// The name for this resource.
   String get name => throw _privateConstructorUsedError;
+
+  /// The berry flavor that correlates with this contest type.
+  ///
+  /// See also:
+  ///
+  /// [BerryFlavor]
   @JsonKey(name: 'berry_flavor')
   NamedApiResource get berryFlavor => throw _privateConstructorUsedError;
+
+  /// The name of this contest type listed in different languages.
   List<ContestName> get names => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -179,13 +190,25 @@ class _$_ContestType implements _ContestType {
       _$$_ContestTypeFromJson(json);
 
   @override
+
+  /// The identifier for this resource.
   final int id;
   @override
+
+  /// The name for this resource.
   final String name;
   @override
+
+  /// The berry flavor that correlates with this contest type.
+  ///
+  /// See also:
+  ///
+  /// [BerryFlavor]
   @JsonKey(name: 'berry_flavor')
   final NamedApiResource berryFlavor;
   @override
+
+  /// The name of this contest type listed in different languages.
   final List<ContestName> names;
 
   @override
@@ -235,13 +258,25 @@ abstract class _ContestType implements ContestType {
       _$_ContestType.fromJson;
 
   @override
+
+  /// The identifier for this resource.
   int get id;
   @override
+
+  /// The name for this resource.
   String get name;
   @override
+
+  /// The berry flavor that correlates with this contest type.
+  ///
+  /// See also:
+  ///
+  /// [BerryFlavor]
   @JsonKey(name: 'berry_flavor')
   NamedApiResource get berryFlavor;
   @override
+
+  /// The name of this contest type listed in different languages.
   List<ContestName> get names;
   @override
   @JsonKey(ignore: true)
@@ -275,8 +310,17 @@ const $ContestName = _$ContestNameTearOff();
 
 /// @nodoc
 mixin _$ContestName {
+  /// The name for this contest.
   String get name => throw _privateConstructorUsedError;
+
+  /// The color associated with this contest's name.
   String get color => throw _privateConstructorUsedError;
+
+  /// The language that this name is in.
+  ///
+  /// See also:
+  ///
+  /// [Language]
   NamedApiResource get language => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -388,10 +432,20 @@ class _$_ContestName implements _ContestName {
       _$$_ContestNameFromJson(json);
 
   @override
+
+  /// The name for this contest.
   final String name;
   @override
+
+  /// The color associated with this contest's name.
   final String color;
   @override
+
+  /// The language that this name is in.
+  ///
+  /// See also:
+  ///
+  /// [Language]
   final NamedApiResource language;
 
   @override
@@ -435,10 +489,20 @@ abstract class _ContestName implements ContestName {
       _$_ContestName.fromJson;
 
   @override
+
+  /// The name for this contest.
   String get name;
   @override
+
+  /// The color associated with this contest's name.
   String get color;
   @override
+
+  /// The language that this name is in.
+  ///
+  /// See also:
+  ///
+  /// [Language]
   NamedApiResource get language;
   @override
   @JsonKey(ignore: true)
@@ -481,11 +545,20 @@ const $ContestEffect = _$ContestEffectTearOff();
 
 /// @nodoc
 mixin _$ContestEffect {
+  /// The identifier for this resource.
   int get id => throw _privateConstructorUsedError;
+
+  /// The base number of hearts the user of this move gets.
   int get appeal => throw _privateConstructorUsedError;
+
+  /// The base number of hearts the user's opponent loses.
   int get jam => throw _privateConstructorUsedError;
+
+  /// The result of this contest effect listed in different languages.
   @JsonKey(name: 'effect_entries')
   List<Effect> get effectEntries => throw _privateConstructorUsedError;
+
+  /// The flavor text of this contest effect listed in different languages.
   @JsonKey(name: 'flavor_text_entries')
   List<FlavorText> get flavorTextEntries => throw _privateConstructorUsedError;
 
@@ -627,15 +700,25 @@ class _$_ContestEffect implements _ContestEffect {
       _$$_ContestEffectFromJson(json);
 
   @override
+
+  /// The identifier for this resource.
   final int id;
   @override
+
+  /// The base number of hearts the user of this move gets.
   final int appeal;
   @override
+
+  /// The base number of hearts the user's opponent loses.
   final int jam;
   @override
+
+  /// The result of this contest effect listed in different languages.
   @JsonKey(name: 'effect_entries')
   final List<Effect> effectEntries;
   @override
+
+  /// The flavor text of this contest effect listed in different languages.
   @JsonKey(name: 'flavor_text_entries')
   final List<FlavorText> flavorTextEntries;
 
@@ -692,15 +775,25 @@ abstract class _ContestEffect implements ContestEffect {
       _$_ContestEffect.fromJson;
 
   @override
+
+  /// The identifier for this resource.
   int get id;
   @override
+
+  /// The base number of hearts the user of this move gets.
   int get appeal;
   @override
+
+  /// The base number of hearts the user's opponent loses.
   int get jam;
   @override
+
+  /// The result of this contest effect listed in different languages.
   @JsonKey(name: 'effect_entries')
   List<Effect> get effectEntries;
   @override
+
+  /// The flavor text of this contest effect listed in different languages.
   @JsonKey(name: 'flavor_text_entries')
   List<FlavorText> get flavorTextEntries;
   @override
@@ -740,10 +833,21 @@ const $SuperContestEffect = _$SuperContestEffectTearOff();
 
 /// @nodoc
 mixin _$SuperContestEffect {
+  /// The identifier for this resource.
   int get id => throw _privateConstructorUsedError;
+
+  /// The level of appeal this super contest effect has.
   int get appeal => throw _privateConstructorUsedError;
+
+  /// The flavor text of this super contest effect listed in different languages.
   @JsonKey(name: 'flavor_text_entries')
   List<FlavorText> get flavorTextEntries => throw _privateConstructorUsedError;
+
+  /// A list of moves that have the effect when used in super contests.
+  ///
+  /// See also:
+  ///
+  /// [Move]
   List<NamedApiResource> get moves => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -864,13 +968,25 @@ class _$_SuperContestEffect implements _SuperContestEffect {
       _$$_SuperContestEffectFromJson(json);
 
   @override
+
+  /// The identifier for this resource.
   final int id;
   @override
+
+  /// The level of appeal this super contest effect has.
   final int appeal;
   @override
+
+  /// The flavor text of this super contest effect listed in different languages.
   @JsonKey(name: 'flavor_text_entries')
   final List<FlavorText> flavorTextEntries;
   @override
+
+  /// A list of moves that have the effect when used in super contests.
+  ///
+  /// See also:
+  ///
+  /// [Move]
   final List<NamedApiResource> moves;
 
   @override
@@ -920,13 +1036,25 @@ abstract class _SuperContestEffect implements SuperContestEffect {
       _$_SuperContestEffect.fromJson;
 
   @override
+
+  /// The identifier for this resource.
   int get id;
   @override
+
+  /// The level of appeal this super contest effect has.
   int get appeal;
   @override
+
+  /// The flavor text of this super contest effect listed in different languages.
   @JsonKey(name: 'flavor_text_entries')
   List<FlavorText> get flavorTextEntries;
   @override
+
+  /// A list of moves that have the effect when used in super contests.
+  ///
+  /// See also:
+  ///
+  /// [Move]
   List<NamedApiResource> get moves;
   @override
   @JsonKey(ignore: true)

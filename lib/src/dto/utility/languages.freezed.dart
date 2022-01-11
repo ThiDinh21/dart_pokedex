@@ -44,11 +44,22 @@ const $Language = _$LanguageTearOff();
 
 /// @nodoc
 mixin _$Language {
+  /// The identifier for this resource.
   int get id => throw _privateConstructorUsedError;
+
+  /// The name for this resource.
   String get name => throw _privateConstructorUsedError;
+
+  /// Whether or not the games are published in this language.
   bool get official => throw _privateConstructorUsedError;
+
+  /// The two-letter code of the country where this language is spoken. Note that it is not unique.
   String get iso639 => throw _privateConstructorUsedError;
+
+  /// The two-letter code of the language. Note that it is not unique.
   String get iso3166 => throw _privateConstructorUsedError;
+
+  /// The name of this resource listed in different languages.
   List<Name> get names => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -187,16 +198,28 @@ class _$_Language implements _Language {
       _$$_LanguageFromJson(json);
 
   @override
+
+  /// The identifier for this resource.
   final int id;
   @override
+
+  /// The name for this resource.
   final String name;
   @override
+
+  /// Whether or not the games are published in this language.
   final bool official;
   @override
+
+  /// The two-letter code of the country where this language is spoken. Note that it is not unique.
   final String iso639;
   @override
+
+  /// The two-letter code of the language. Note that it is not unique.
   final String iso3166;
   @override
+
+  /// The name of this resource listed in different languages.
   final List<Name> names;
 
   @override
@@ -245,16 +268,28 @@ abstract class _Language implements Language {
   factory _Language.fromJson(Map<String, dynamic> json) = _$_Language.fromJson;
 
   @override
+
+  /// The identifier for this resource.
   int get id;
   @override
+
+  /// The name for this resource.
   String get name;
   @override
+
+  /// Whether or not the games are published in this language.
   bool get official;
   @override
+
+  /// The two-letter code of the country where this language is spoken. Note that it is not unique.
   String get iso639;
   @override
+
+  /// The two-letter code of the language. Note that it is not unique.
   String get iso3166;
   @override
+
+  /// The name of this resource listed in different languages.
   List<Name> get names;
   @override
   @JsonKey(ignore: true)

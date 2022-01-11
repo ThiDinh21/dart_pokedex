@@ -61,21 +61,62 @@ const $Berry = _$BerryTearOff();
 
 /// @nodoc
 mixin _$Berry {
+  /// The identifier for this resource.
   int get id => throw _privateConstructorUsedError;
+
+  /// The name for this resource.
   String get name => throw _privateConstructorUsedError;
+
+  /// Time it takes the tree to grow one stage, in hours.
+  /// Berry trees go through four of these growth stages
+  /// before they can be picked.
   @JsonKey(name: 'growth_time')
   int get growthTime => throw _privateConstructorUsedError;
+
+  /// The maximum number of these berries that can grow
+  /// on one tree in Generation IV.
   @JsonKey(name: 'max_harvest')
   int get maxHarvest => throw _privateConstructorUsedError;
+
+  /// The power of the move "Natural Gift" when used with this Berry.
   @JsonKey(name: 'natural_gift_power')
   int get naturalGiftPower => throw _privateConstructorUsedError;
+
+  /// The size of this Berry, in millimeters.
   int get size => throw _privateConstructorUsedError;
+
+  /// The smoothness of this Berry, used in making Pokéblocks or Poffins.
   int get smoothness => throw _privateConstructorUsedError;
+
+  /// The speed at which this Berry dries out the soil as it grows.
+  /// A higher rate means the soil dries more quickly.
   @JsonKey(name: 'soil_dryness')
   int get soilDryness => throw _privateConstructorUsedError;
+
+  /// The firmness of this berry, used in making Pokéblocks or Poffins.
+  ///
+  /// See also:
+  ///
+  /// [BerryFirmness]
   NamedApiResource get firmness => throw _privateConstructorUsedError;
+
+  /// A list of references to each flavor a berry can have
+  /// and the potency of each of those flavors in regard to this berry.
   List<BerryFlavorMap> get flavors => throw _privateConstructorUsedError;
+
+  /// Berries are actually items.
+  /// This is a reference to the item specific data for this berry.
+  ///
+  /// See also:
+  ///
+  /// [Item]
   NamedApiResource get item => throw _privateConstructorUsedError;
+
+  /// The type inherited by "Natural Gift" when used with this Berry.
+  ///
+  /// See also:
+  ///
+  /// [Type]
   @JsonKey(name: 'natural_gift_type')
   NamedApiResource get naturalGiftType => throw _privateConstructorUsedError;
 
@@ -329,32 +370,74 @@ class _$_Berry implements _Berry {
       _$$_BerryFromJson(json);
 
   @override
+
+  /// The identifier for this resource.
   final int id;
   @override
+
+  /// The name for this resource.
   final String name;
   @override
+
+  /// Time it takes the tree to grow one stage, in hours.
+  /// Berry trees go through four of these growth stages
+  /// before they can be picked.
   @JsonKey(name: 'growth_time')
   final int growthTime;
   @override
+
+  /// The maximum number of these berries that can grow
+  /// on one tree in Generation IV.
   @JsonKey(name: 'max_harvest')
   final int maxHarvest;
   @override
+
+  /// The power of the move "Natural Gift" when used with this Berry.
   @JsonKey(name: 'natural_gift_power')
   final int naturalGiftPower;
   @override
+
+  /// The size of this Berry, in millimeters.
   final int size;
   @override
+
+  /// The smoothness of this Berry, used in making Pokéblocks or Poffins.
   final int smoothness;
   @override
+
+  /// The speed at which this Berry dries out the soil as it grows.
+  /// A higher rate means the soil dries more quickly.
   @JsonKey(name: 'soil_dryness')
   final int soilDryness;
   @override
+
+  /// The firmness of this berry, used in making Pokéblocks or Poffins.
+  ///
+  /// See also:
+  ///
+  /// [BerryFirmness]
   final NamedApiResource firmness;
   @override
+
+  /// A list of references to each flavor a berry can have
+  /// and the potency of each of those flavors in regard to this berry.
   final List<BerryFlavorMap> flavors;
   @override
+
+  /// Berries are actually items.
+  /// This is a reference to the item specific data for this berry.
+  ///
+  /// See also:
+  ///
+  /// [Item]
   final NamedApiResource item;
   @override
+
+  /// The type inherited by "Natural Gift" when used with this Berry.
+  ///
+  /// See also:
+  ///
+  /// [Type]
   @JsonKey(name: 'natural_gift_type')
   final NamedApiResource naturalGiftType;
 
@@ -438,32 +521,74 @@ abstract class _Berry implements Berry {
   factory _Berry.fromJson(Map<String, dynamic> json) = _$_Berry.fromJson;
 
   @override
+
+  /// The identifier for this resource.
   int get id;
   @override
+
+  /// The name for this resource.
   String get name;
   @override
+
+  /// Time it takes the tree to grow one stage, in hours.
+  /// Berry trees go through four of these growth stages
+  /// before they can be picked.
   @JsonKey(name: 'growth_time')
   int get growthTime;
   @override
+
+  /// The maximum number of these berries that can grow
+  /// on one tree in Generation IV.
   @JsonKey(name: 'max_harvest')
   int get maxHarvest;
   @override
+
+  /// The power of the move "Natural Gift" when used with this Berry.
   @JsonKey(name: 'natural_gift_power')
   int get naturalGiftPower;
   @override
+
+  /// The size of this Berry, in millimeters.
   int get size;
   @override
+
+  /// The smoothness of this Berry, used in making Pokéblocks or Poffins.
   int get smoothness;
   @override
+
+  /// The speed at which this Berry dries out the soil as it grows.
+  /// A higher rate means the soil dries more quickly.
   @JsonKey(name: 'soil_dryness')
   int get soilDryness;
   @override
+
+  /// The firmness of this berry, used in making Pokéblocks or Poffins.
+  ///
+  /// See also:
+  ///
+  /// [BerryFirmness]
   NamedApiResource get firmness;
   @override
+
+  /// A list of references to each flavor a berry can have
+  /// and the potency of each of those flavors in regard to this berry.
   List<BerryFlavorMap> get flavors;
   @override
+
+  /// Berries are actually items.
+  /// This is a reference to the item specific data for this berry.
+  ///
+  /// See also:
+  ///
+  /// [Item]
   NamedApiResource get item;
   @override
+
+  /// The type inherited by "Natural Gift" when used with this Berry.
+  ///
+  /// See also:
+  ///
+  /// [Type]
   @JsonKey(name: 'natural_gift_type')
   NamedApiResource get naturalGiftType;
   @override
@@ -496,7 +621,14 @@ const $BerryFlavorMap = _$BerryFlavorMapTearOff();
 
 /// @nodoc
 mixin _$BerryFlavorMap {
+  /// How powerful the referenced flavor is for this berry.
   int get potency => throw _privateConstructorUsedError;
+
+  /// The referenced berry flavor.
+  ///
+  /// See also:
+  ///
+  /// [BerryFlavor]
   NamedApiResource get flavor => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -600,8 +732,16 @@ class _$_BerryFlavorMap implements _BerryFlavorMap {
       _$$_BerryFlavorMapFromJson(json);
 
   @override
+
+  /// How powerful the referenced flavor is for this berry.
   final int potency;
   @override
+
+  /// The referenced berry flavor.
+  ///
+  /// See also:
+  ///
+  /// [BerryFlavor]
   final NamedApiResource flavor;
 
   @override
@@ -643,8 +783,16 @@ abstract class _BerryFlavorMap implements BerryFlavorMap {
       _$_BerryFlavorMap.fromJson;
 
   @override
+
+  /// How powerful the referenced flavor is for this berry.
   int get potency;
   @override
+
+  /// The referenced berry flavor.
+  ///
+  /// See also:
+  ///
+  /// [BerryFlavor]
   NamedApiResource get flavor;
   @override
   @JsonKey(ignore: true)
@@ -680,9 +828,20 @@ const $BerryFirmness = _$BerryFirmnessTearOff();
 
 /// @nodoc
 mixin _$BerryFirmness {
+  /// The identifier for this resource.
   int get id => throw _privateConstructorUsedError;
+
+  /// The name for this resource.
   String get name => throw _privateConstructorUsedError;
+
+  /// A list of the berries with this firmness.
+  ///
+  /// See also:
+  ///
+  /// [Berry]
   List<NamedApiResource> get berries => throw _privateConstructorUsedError;
+
+  /// The name of this resource listed in different languages.
   List<Name> get names => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -796,12 +955,24 @@ class _$_BerryFirmness implements _BerryFirmness {
       _$$_BerryFirmnessFromJson(json);
 
   @override
+
+  /// The identifier for this resource.
   final int id;
   @override
+
+  /// The name for this resource.
   final String name;
   @override
+
+  /// A list of the berries with this firmness.
+  ///
+  /// See also:
+  ///
+  /// [Berry]
   final List<NamedApiResource> berries;
   @override
+
+  /// The name of this resource listed in different languages.
   final List<Name> names;
 
   @override
@@ -847,12 +1018,24 @@ abstract class _BerryFirmness implements BerryFirmness {
       _$_BerryFirmness.fromJson;
 
   @override
+
+  /// The identifier for this resource.
   int get id;
   @override
+
+  /// The name for this resource.
   String get name;
   @override
+
+  /// A list of the berries with this firmness.
+  ///
+  /// See also:
+  ///
+  /// [Berry]
   List<NamedApiResource> get berries;
   @override
+
+  /// The name of this resource listed in different languages.
   List<Name> get names;
   @override
   @JsonKey(ignore: true)
@@ -893,11 +1076,24 @@ const $BerryFlavor = _$BerryFlavorTearOff();
 
 /// @nodoc
 mixin _$BerryFlavor {
+  /// The identifier for this resource.
   int get id => throw _privateConstructorUsedError;
+
+  /// The name for this resource.
   String get name => throw _privateConstructorUsedError;
+
+  /// A list of the berries with this flavor.
   List<FlavorBerryMap> get berries => throw _privateConstructorUsedError;
+
+  /// The contest type that correlates with this berry flavor.
+  ///
+  /// See also:
+  ///
+  /// [ContestType]
   @JsonKey(name: 'contest_type')
   NamedApiResource get contestType => throw _privateConstructorUsedError;
+
+  /// The name of this resource listed in different languages.
   List<Name> get names => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -1040,15 +1236,29 @@ class _$_BerryFlavor implements _BerryFlavor {
       _$$_BerryFlavorFromJson(json);
 
   @override
+
+  /// The identifier for this resource.
   final int id;
   @override
+
+  /// The name for this resource.
   final String name;
   @override
+
+  /// A list of the berries with this flavor.
   final List<FlavorBerryMap> berries;
   @override
+
+  /// The contest type that correlates with this berry flavor.
+  ///
+  /// See also:
+  ///
+  /// [ContestType]
   @JsonKey(name: 'contest_type')
   final NamedApiResource contestType;
   @override
+
+  /// The name of this resource listed in different languages.
   final List<Name> names;
 
   @override
@@ -1101,15 +1311,29 @@ abstract class _BerryFlavor implements BerryFlavor {
       _$_BerryFlavor.fromJson;
 
   @override
+
+  /// The identifier for this resource.
   int get id;
   @override
+
+  /// The name for this resource.
   String get name;
   @override
+
+  /// A list of the berries with this flavor.
   List<FlavorBerryMap> get berries;
   @override
+
+  /// The contest type that correlates with this berry flavor.
+  ///
+  /// See also:
+  ///
+  /// [ContestType]
   @JsonKey(name: 'contest_type')
   NamedApiResource get contestType;
   @override
+
+  /// The name of this resource listed in different languages.
   List<Name> get names;
   @override
   @JsonKey(ignore: true)
@@ -1142,7 +1366,14 @@ const $FlavorBerryMap = _$FlavorBerryMapTearOff();
 
 /// @nodoc
 mixin _$FlavorBerryMap {
+  /// How powerful the referenced flavor is for this berry.
   int get potency => throw _privateConstructorUsedError;
+
+  /// The berry with the referenced flavor.
+  ///
+  /// See also:
+  ///
+  /// [Berry]
   NamedApiResource get berry => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -1246,8 +1477,16 @@ class _$_FlavorBerryMap implements _FlavorBerryMap {
       _$$_FlavorBerryMapFromJson(json);
 
   @override
+
+  /// How powerful the referenced flavor is for this berry.
   final int potency;
   @override
+
+  /// The berry with the referenced flavor.
+  ///
+  /// See also:
+  ///
+  /// [Berry]
   final NamedApiResource berry;
 
   @override
@@ -1289,8 +1528,16 @@ abstract class _FlavorBerryMap implements FlavorBerryMap {
       _$_FlavorBerryMap.fromJson;
 
   @override
+
+  /// How powerful the referenced flavor is for this berry.
   int get potency;
   @override
+
+  /// The berry with the referenced flavor.
+  ///
+  /// See also:
+  ///
+  /// [Berry]
   NamedApiResource get berry;
   @override
   @JsonKey(ignore: true)

@@ -74,30 +74,75 @@ const $Item = _$ItemTearOff();
 
 /// @nodoc
 mixin _$Item {
+  /// The identifier for this resource.
   int get id => throw _privateConstructorUsedError;
+
+  /// The name for this resource.
   String get name => throw _privateConstructorUsedError;
+
+  /// The price of this item in stores.
   int get cost => throw _privateConstructorUsedError;
+
+  /// The power of the move Fling when used with this item.
   @JsonKey(name: 'fling_power')
   int get flingPower => throw _privateConstructorUsedError;
+
+  /// The effect of the move Fling when used with this item.
+  ///
+  /// See also:
+  ///
+  /// [ItemFlingEffect]
   @JsonKey(name: 'fling_effect')
   NamedApiResource get flingEffect => throw _privateConstructorUsedError;
+
+  /// A list of attributes this item has.
+  ///
+  /// See also:
+  ///
+  /// [ItemAttribute]
   List<NamedApiResource> get attributes => throw _privateConstructorUsedError;
+
+  /// The category of items this item falls into.
+  ///
+  /// See also:
+  ///
+  /// [ItemCategory]
   NamedApiResource get category => throw _privateConstructorUsedError;
+
+  /// The effect of this ability listed in different languages.
   @JsonKey(name: 'effect_entries')
   List<VerboseEffect> get effectEntries => throw _privateConstructorUsedError;
+
+  /// The flavor text of this ability listed in different languages.
   @JsonKey(name: 'flavor_text_entries')
   List<VersionGroupFlavorText> get flavorTextEntries =>
       throw _privateConstructorUsedError;
+
+  /// A list of game indices relevent to this item by generation.
   @JsonKey(name: 'game_indices')
   List<GenerationGameIndex> get gameIndices =>
       throw _privateConstructorUsedError;
+
+  /// The name of this item listed in different languages.
   List<Name> get names => throw _privateConstructorUsedError;
+
+  /// A set of sprites used to depict this item in the game.
   ItemSprites get sprites => throw _privateConstructorUsedError;
+
+  /// A list of Pokémon that might be found in the wild holding this item
   @JsonKey(name: 'held_by_pokemon')
   List<ItemHolderPokemon> get heldByPokemon =>
       throw _privateConstructorUsedError;
+
+  /// An evolution chain this item requires to produce a bay during mating.
+  ///
+  /// See also:
+  ///
+  /// [EvolutionChain]
   @JsonKey(name: 'baby_trigger_for')
   ApiResource get babyTriggerFor => throw _privateConstructorUsedError;
+
+  /// A list of the machines related to this item.
   List<MachineVersionDetail> get machines => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -412,41 +457,87 @@ class _$_Item implements _Item {
   factory _$_Item.fromJson(Map<String, dynamic> json) => _$$_ItemFromJson(json);
 
   @override
+
+  /// The identifier for this resource.
   final int id;
   @override
+
+  /// The name for this resource.
   final String name;
   @override
+
+  /// The price of this item in stores.
   final int cost;
   @override
+
+  /// The power of the move Fling when used with this item.
   @JsonKey(name: 'fling_power')
   final int flingPower;
   @override
+
+  /// The effect of the move Fling when used with this item.
+  ///
+  /// See also:
+  ///
+  /// [ItemFlingEffect]
   @JsonKey(name: 'fling_effect')
   final NamedApiResource flingEffect;
   @override
+
+  /// A list of attributes this item has.
+  ///
+  /// See also:
+  ///
+  /// [ItemAttribute]
   final List<NamedApiResource> attributes;
   @override
+
+  /// The category of items this item falls into.
+  ///
+  /// See also:
+  ///
+  /// [ItemCategory]
   final NamedApiResource category;
   @override
+
+  /// The effect of this ability listed in different languages.
   @JsonKey(name: 'effect_entries')
   final List<VerboseEffect> effectEntries;
   @override
+
+  /// The flavor text of this ability listed in different languages.
   @JsonKey(name: 'flavor_text_entries')
   final List<VersionGroupFlavorText> flavorTextEntries;
   @override
+
+  /// A list of game indices relevent to this item by generation.
   @JsonKey(name: 'game_indices')
   final List<GenerationGameIndex> gameIndices;
   @override
+
+  /// The name of this item listed in different languages.
   final List<Name> names;
   @override
+
+  /// A set of sprites used to depict this item in the game.
   final ItemSprites sprites;
   @override
+
+  /// A list of Pokémon that might be found in the wild holding this item
   @JsonKey(name: 'held_by_pokemon')
   final List<ItemHolderPokemon> heldByPokemon;
   @override
+
+  /// An evolution chain this item requires to produce a bay during mating.
+  ///
+  /// See also:
+  ///
+  /// [EvolutionChain]
   @JsonKey(name: 'baby_trigger_for')
   final ApiResource babyTriggerFor;
   @override
+
+  /// A list of the machines related to this item.
   final List<MachineVersionDetail> machines;
 
   @override
@@ -542,41 +633,87 @@ abstract class _Item implements Item {
   factory _Item.fromJson(Map<String, dynamic> json) = _$_Item.fromJson;
 
   @override
+
+  /// The identifier for this resource.
   int get id;
   @override
+
+  /// The name for this resource.
   String get name;
   @override
+
+  /// The price of this item in stores.
   int get cost;
   @override
+
+  /// The power of the move Fling when used with this item.
   @JsonKey(name: 'fling_power')
   int get flingPower;
   @override
+
+  /// The effect of the move Fling when used with this item.
+  ///
+  /// See also:
+  ///
+  /// [ItemFlingEffect]
   @JsonKey(name: 'fling_effect')
   NamedApiResource get flingEffect;
   @override
+
+  /// A list of attributes this item has.
+  ///
+  /// See also:
+  ///
+  /// [ItemAttribute]
   List<NamedApiResource> get attributes;
   @override
+
+  /// The category of items this item falls into.
+  ///
+  /// See also:
+  ///
+  /// [ItemCategory]
   NamedApiResource get category;
   @override
+
+  /// The effect of this ability listed in different languages.
   @JsonKey(name: 'effect_entries')
   List<VerboseEffect> get effectEntries;
   @override
+
+  /// The flavor text of this ability listed in different languages.
   @JsonKey(name: 'flavor_text_entries')
   List<VersionGroupFlavorText> get flavorTextEntries;
   @override
+
+  /// A list of game indices relevent to this item by generation.
   @JsonKey(name: 'game_indices')
   List<GenerationGameIndex> get gameIndices;
   @override
+
+  /// The name of this item listed in different languages.
   List<Name> get names;
   @override
+
+  /// A set of sprites used to depict this item in the game.
   ItemSprites get sprites;
   @override
+
+  /// A list of Pokémon that might be found in the wild holding this item
   @JsonKey(name: 'held_by_pokemon')
   List<ItemHolderPokemon> get heldByPokemon;
   @override
+
+  /// An evolution chain this item requires to produce a bay during mating.
+  ///
+  /// See also:
+  ///
+  /// [EvolutionChain]
   @JsonKey(name: 'baby_trigger_for')
   ApiResource get babyTriggerFor;
   @override
+
+  /// A list of the machines related to this item.
   List<MachineVersionDetail> get machines;
   @override
   @JsonKey(ignore: true)
@@ -607,6 +744,8 @@ const $ItemSprites = _$ItemSpritesTearOff();
 
 /// @nodoc
 mixin _$ItemSprites {
+  /// The default depiction of this item.
+// Since default is a Dart keyword we have to use this instead
   @JsonKey(name: 'default')
   String get value => throw _privateConstructorUsedError;
 
@@ -687,6 +826,9 @@ class _$_ItemSprites implements _ItemSprites {
       _$$_ItemSpritesFromJson(json);
 
   @override
+
+  /// The default depiction of this item.
+// Since default is a Dart keyword we have to use this instead
   @JsonKey(name: 'default')
   final String value;
 
@@ -726,6 +868,9 @@ abstract class _ItemSprites implements ItemSprites {
       _$_ItemSprites.fromJson;
 
   @override
+
+  /// The default depiction of this item.
+// Since default is a Dart keyword we have to use this instead
   @JsonKey(name: 'default')
   String get value;
   @override
@@ -762,7 +907,14 @@ const $ItemHolderPokemon = _$ItemHolderPokemonTearOff();
 
 /// @nodoc
 mixin _$ItemHolderPokemon {
+  /// The Pokémon that holds this item.
+  ///
+  /// See also:
+  ///
+  /// [Pokemon]
   NamedApiResource get pokemon => throw _privateConstructorUsedError;
+
+  /// The details for the version that this item is held in by the Pokémon.
   @JsonKey(name: 'version_details')
   List<ItemHolderPokemonVersionDetail> get versionDetails =>
       throw _privateConstructorUsedError;
@@ -875,8 +1027,16 @@ class _$_ItemHolderPokemon implements _ItemHolderPokemon {
       _$$_ItemHolderPokemonFromJson(json);
 
   @override
+
+  /// The Pokémon that holds this item.
+  ///
+  /// See also:
+  ///
+  /// [Pokemon]
   final NamedApiResource pokemon;
   @override
+
+  /// The details for the version that this item is held in by the Pokémon.
   @JsonKey(name: 'version_details')
   final List<ItemHolderPokemonVersionDetail> versionDetails;
 
@@ -923,8 +1083,16 @@ abstract class _ItemHolderPokemon implements ItemHolderPokemon {
       _$_ItemHolderPokemon.fromJson;
 
   @override
+
+  /// The Pokémon that holds this item.
+  ///
+  /// See also:
+  ///
+  /// [Pokemon]
   NamedApiResource get pokemon;
   @override
+
+  /// The details for the version that this item is held in by the Pokémon.
   @JsonKey(name: 'version_details')
   List<ItemHolderPokemonVersionDetail> get versionDetails;
   @override
@@ -960,7 +1128,14 @@ const $ItemHolderPokemonVersionDetail =
 
 /// @nodoc
 mixin _$ItemHolderPokemonVersionDetail {
+  /// How often this Pokémon holds this item in this version.
   int get rarity => throw _privateConstructorUsedError;
+
+  /// The version that this item is held in by the Pokémon.
+  ///
+  /// See also:
+  ///
+  /// [Version]
   NamedApiResource get version => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -1070,8 +1245,16 @@ class _$_ItemHolderPokemonVersionDetail
       _$$_ItemHolderPokemonVersionDetailFromJson(json);
 
   @override
+
+  /// How often this Pokémon holds this item in this version.
   final int rarity;
   @override
+
+  /// The version that this item is held in by the Pokémon.
+  ///
+  /// See also:
+  ///
+  /// [Version]
   final NamedApiResource version;
 
   @override
@@ -1115,8 +1298,16 @@ abstract class _ItemHolderPokemonVersionDetail
       _$_ItemHolderPokemonVersionDetail.fromJson;
 
   @override
+
+  /// How often this Pokémon holds this item in this version.
   int get rarity;
   @override
+
+  /// The version that this item is held in by the Pokémon.
+  ///
+  /// See also:
+  ///
+  /// [Version]
   NamedApiResource get version;
   @override
   @JsonKey(ignore: true)
@@ -1153,10 +1344,23 @@ const $ItemAttribute = _$ItemAttributeTearOff();
 
 /// @nodoc
 mixin _$ItemAttribute {
+  /// The identifier for this resource.
   int get id => throw _privateConstructorUsedError;
+
+  /// The name for this resource.
   String get name => throw _privateConstructorUsedError;
+
+  /// A list of items that have this attribute.
+  ///
+  /// See also:
+  ///
+  /// [Item]
   List<NamedApiResource> get items => throw _privateConstructorUsedError;
+
+  /// The name of this item attribute listed in different languages.
   List<Name> get names => throw _privateConstructorUsedError;
+
+  /// The description of this item attribute listed in different languages.
   List<Description> get descriptions => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -1289,14 +1493,28 @@ class _$_ItemAttribute implements _ItemAttribute {
       _$$_ItemAttributeFromJson(json);
 
   @override
+
+  /// The identifier for this resource.
   final int id;
   @override
+
+  /// The name for this resource.
   final String name;
   @override
+
+  /// A list of items that have this attribute.
+  ///
+  /// See also:
+  ///
+  /// [Item]
   final List<NamedApiResource> items;
   @override
+
+  /// The name of this item attribute listed in different languages.
   final List<Name> names;
   @override
+
+  /// The description of this item attribute listed in different languages.
   final List<Description> descriptions;
 
   @override
@@ -1349,14 +1567,28 @@ abstract class _ItemAttribute implements ItemAttribute {
       _$_ItemAttribute.fromJson;
 
   @override
+
+  /// The identifier for this resource.
   int get id;
   @override
+
+  /// The name for this resource.
   String get name;
   @override
+
+  /// A list of items that have this attribute.
+  ///
+  /// See also:
+  ///
+  /// [Item]
   List<NamedApiResource> get items;
   @override
+
+  /// The name of this item attribute listed in different languages.
   List<Name> get names;
   @override
+
+  /// The description of this item attribute listed in different languages.
   List<Description> get descriptions;
   @override
   @JsonKey(ignore: true)
@@ -1393,10 +1625,27 @@ const $ItemCategory = _$ItemCategoryTearOff();
 
 /// @nodoc
 mixin _$ItemCategory {
+  /// The identifier for this resource.
   int get id => throw _privateConstructorUsedError;
+
+  /// The name for this resource.
   String get name => throw _privateConstructorUsedError;
+
+  /// A list of items that are a part of this category.
+  ///
+  /// See also:
+  ///
+  /// [Item]
   List<NamedApiResource> get items => throw _privateConstructorUsedError;
+
+  /// The name of this item category listed in different languages.
   List<Name> get names => throw _privateConstructorUsedError;
+
+  /// The pocket items in this category would be put in.
+  ///
+  /// See also:
+  ///
+  /// [ItemPocket]
   NamedApiResource get pocket => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -1539,14 +1788,32 @@ class _$_ItemCategory implements _ItemCategory {
       _$$_ItemCategoryFromJson(json);
 
   @override
+
+  /// The identifier for this resource.
   final int id;
   @override
+
+  /// The name for this resource.
   final String name;
   @override
+
+  /// A list of items that are a part of this category.
+  ///
+  /// See also:
+  ///
+  /// [Item]
   final List<NamedApiResource> items;
   @override
+
+  /// The name of this item category listed in different languages.
   final List<Name> names;
   @override
+
+  /// The pocket items in this category would be put in.
+  ///
+  /// See also:
+  ///
+  /// [ItemPocket]
   final NamedApiResource pocket;
 
   @override
@@ -1594,14 +1861,32 @@ abstract class _ItemCategory implements ItemCategory {
       _$_ItemCategory.fromJson;
 
   @override
+
+  /// The identifier for this resource.
   int get id;
   @override
+
+  /// The name for this resource.
   String get name;
   @override
+
+  /// A list of items that are a part of this category.
+  ///
+  /// See also:
+  ///
+  /// [Item]
   List<NamedApiResource> get items;
   @override
+
+  /// The name of this item category listed in different languages.
   List<Name> get names;
   @override
+
+  /// The pocket items in this category would be put in.
+  ///
+  /// See also:
+  ///
+  /// [ItemPocket]
   NamedApiResource get pocket;
   @override
   @JsonKey(ignore: true)
@@ -1640,10 +1925,21 @@ const $ItemFlingEffect = _$ItemFlingEffectTearOff();
 
 /// @nodoc
 mixin _$ItemFlingEffect {
+  /// The identifier for this resource.
   int get id => throw _privateConstructorUsedError;
+
+  /// The name for this resource.
   String get name => throw _privateConstructorUsedError;
+
+  /// The result of this fling effect listed in different languages.
   @JsonKey(name: 'effect_entries')
   List<Effect> get effectEntries => throw _privateConstructorUsedError;
+
+  /// A list of items that have this fling effect.
+  ///
+  /// See also:
+  ///
+  /// [Item]
   List<NamedApiResource> get items => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -1764,13 +2060,25 @@ class _$_ItemFlingEffect implements _ItemFlingEffect {
       _$$_ItemFlingEffectFromJson(json);
 
   @override
+
+  /// The identifier for this resource.
   final int id;
   @override
+
+  /// The name for this resource.
   final String name;
   @override
+
+  /// The result of this fling effect listed in different languages.
   @JsonKey(name: 'effect_entries')
   final List<Effect> effectEntries;
   @override
+
+  /// A list of items that have this fling effect.
+  ///
+  /// See also:
+  ///
+  /// [Item]
   final List<NamedApiResource> items;
 
   @override
@@ -1820,13 +2128,25 @@ abstract class _ItemFlingEffect implements ItemFlingEffect {
       _$_ItemFlingEffect.fromJson;
 
   @override
+
+  /// The identifier for this resource.
   int get id;
   @override
+
+  /// The name for this resource.
   String get name;
   @override
+
+  /// The result of this fling effect listed in different languages.
   @JsonKey(name: 'effect_entries')
   List<Effect> get effectEntries;
   @override
+
+  /// A list of items that have this fling effect.
+  ///
+  /// See also:
+  ///
+  /// [Item]
   List<NamedApiResource> get items;
   @override
   @JsonKey(ignore: true)
@@ -1862,9 +2182,20 @@ const $ItemPocket = _$ItemPocketTearOff();
 
 /// @nodoc
 mixin _$ItemPocket {
+  /// The identifier for this resource.
   int get id => throw _privateConstructorUsedError;
+
+  /// The name for this resource.
   String get name => throw _privateConstructorUsedError;
+
+  /// A list of item categories that are relevant to this item pocket.
+  ///
+  /// See also:
+  ///
+  /// [ItemCategory]
   List<NamedApiResource> get categories => throw _privateConstructorUsedError;
+
+  /// The name of this resource listed in different languages.
   List<Name> get names => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -1981,12 +2312,24 @@ class _$_ItemPocket implements _ItemPocket {
       _$$_ItemPocketFromJson(json);
 
   @override
+
+  /// The identifier for this resource.
   final int id;
   @override
+
+  /// The name for this resource.
   final String name;
   @override
+
+  /// A list of item categories that are relevant to this item pocket.
+  ///
+  /// See also:
+  ///
+  /// [ItemCategory]
   final List<NamedApiResource> categories;
   @override
+
+  /// The name of this resource listed in different languages.
   final List<Name> names;
 
   @override
@@ -2033,12 +2376,24 @@ abstract class _ItemPocket implements ItemPocket {
       _$_ItemPocket.fromJson;
 
   @override
+
+  /// The identifier for this resource.
   int get id;
   @override
+
+  /// The name for this resource.
   String get name;
   @override
+
+  /// A list of item categories that are relevant to this item pocket.
+  ///
+  /// See also:
+  ///
+  /// [ItemCategory]
   List<NamedApiResource> get categories;
   @override
+
+  /// The name of this resource listed in different languages.
   List<Name> get names;
   @override
   @JsonKey(ignore: true)

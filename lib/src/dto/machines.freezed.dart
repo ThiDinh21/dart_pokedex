@@ -42,9 +42,28 @@ const $Machine = _$MachineTearOff();
 
 /// @nodoc
 mixin _$Machine {
+  /// The identifier for this resource.
   int get id => throw _privateConstructorUsedError;
+
+  /// The TM or HM item that corresponds to this machine.
+  ///
+  /// See also:
+  ///
+  /// [Item]
   NamedApiResource get item => throw _privateConstructorUsedError;
+
+  /// The move that is taught by this machine.
+  ///
+  /// See also:
+  ///
+  /// [Move]
   NamedApiResource get move => throw _privateConstructorUsedError;
+
+  /// The version group that this machine applies to.
+  ///
+  /// See also:
+  ///
+  /// [VersionGroup]
   @JsonKey(name: 'version_group')
   NamedApiResource get versionGroup => throw _privateConstructorUsedError;
 
@@ -191,12 +210,32 @@ class _$_Machine implements _Machine {
       _$$_MachineFromJson(json);
 
   @override
+
+  /// The identifier for this resource.
   final int id;
   @override
+
+  /// The TM or HM item that corresponds to this machine.
+  ///
+  /// See also:
+  ///
+  /// [Item]
   final NamedApiResource item;
   @override
+
+  /// The move that is taught by this machine.
+  ///
+  /// See also:
+  ///
+  /// [Move]
   final NamedApiResource move;
   @override
+
+  /// The version group that this machine applies to.
+  ///
+  /// See also:
+  ///
+  /// [VersionGroup]
   @JsonKey(name: 'version_group')
   final NamedApiResource versionGroup;
 
@@ -244,12 +283,32 @@ abstract class _Machine implements Machine {
   factory _Machine.fromJson(Map<String, dynamic> json) = _$_Machine.fromJson;
 
   @override
+
+  /// The identifier for this resource.
   int get id;
   @override
+
+  /// The TM or HM item that corresponds to this machine.
+  ///
+  /// See also:
+  ///
+  /// [Item]
   NamedApiResource get item;
   @override
+
+  /// The move that is taught by this machine.
+  ///
+  /// See also:
+  ///
+  /// [Move]
   NamedApiResource get move;
   @override
+
+  /// The version group that this machine applies to.
+  ///
+  /// See also:
+  ///
+  /// [VersionGroup]
   @JsonKey(name: 'version_group')
   NamedApiResource get versionGroup;
   @override
