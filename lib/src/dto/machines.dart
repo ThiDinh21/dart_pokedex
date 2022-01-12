@@ -18,21 +18,21 @@ class Machine with _$Machine {
     /// See also:
     ///
     /// [Item]
-    NamedApiResource item,
+    NamedAPIResource item,
 
     /// The move that is taught by this machine.
     ///
     /// See also:
     ///
     /// [Move]
-    NamedApiResource move,
+    NamedAPIResource move,
 
     /// The version group that this machine applies to.
     ///
     /// See also:
     ///
     /// [VersionGroup]
-    @JsonKey(name: 'version_group') NamedApiResource versionGroup,
+    @JsonKey(name: 'version_group') NamedAPIResource versionGroup,
   ) = _Machine;
 
   factory Machine.fromJson(Json json) => _$MachineFromJson(json);

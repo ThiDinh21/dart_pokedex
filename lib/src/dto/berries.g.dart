@@ -15,12 +15,12 @@ _$_Berry _$$_BerryFromJson(Map<String, dynamic> json) => _$_Berry(
       json['size'] as int,
       json['smoothness'] as int,
       json['soil_dryness'] as int,
-      NamedApiResource.fromJson(json['firmness'] as Map<String, dynamic>),
+      NamedAPIResource.fromJson(json['firmness'] as Map<String, dynamic>),
       (json['flavors'] as List<dynamic>)
           .map((e) => BerryFlavorMap.fromJson(e as Map<String, dynamic>))
           .toList(),
-      NamedApiResource.fromJson(json['item'] as Map<String, dynamic>),
-      NamedApiResource.fromJson(
+      NamedAPIResource.fromJson(json['item'] as Map<String, dynamic>),
+      NamedAPIResource.fromJson(
           json['natural_gift_type'] as Map<String, dynamic>),
     );
 
@@ -42,7 +42,7 @@ Map<String, dynamic> _$$_BerryToJson(_$_Berry instance) => <String, dynamic>{
 _$_BerryFlavorMap _$$_BerryFlavorMapFromJson(Map<String, dynamic> json) =>
     _$_BerryFlavorMap(
       json['potency'] as int,
-      NamedApiResource.fromJson(json['flavor'] as Map<String, dynamic>),
+      NamedAPIResource.fromJson(json['flavor'] as Map<String, dynamic>),
     );
 
 Map<String, dynamic> _$$_BerryFlavorMapToJson(_$_BerryFlavorMap instance) =>
@@ -56,7 +56,7 @@ _$_BerryFirmness _$$_BerryFirmnessFromJson(Map<String, dynamic> json) =>
       json['id'] as int,
       json['name'] as String,
       (json['berries'] as List<dynamic>)
-          .map((e) => NamedApiResource.fromJson(e as Map<String, dynamic>))
+          .map((e) => NamedAPIResource.fromJson(e as Map<String, dynamic>))
           .toList(),
       (json['names'] as List<dynamic>)
           .map((e) => Name.fromJson(e as Map<String, dynamic>))
@@ -78,7 +78,7 @@ _$_BerryFlavor _$$_BerryFlavorFromJson(Map<String, dynamic> json) =>
       (json['berries'] as List<dynamic>)
           .map((e) => FlavorBerryMap.fromJson(e as Map<String, dynamic>))
           .toList(),
-      NamedApiResource.fromJson(json['contest_type'] as Map<String, dynamic>),
+      NamedAPIResource.fromJson(json['contest_type'] as Map<String, dynamic>),
       (json['names'] as List<dynamic>)
           .map((e) => Name.fromJson(e as Map<String, dynamic>))
           .toList(),
@@ -96,7 +96,7 @@ Map<String, dynamic> _$$_BerryFlavorToJson(_$_BerryFlavor instance) =>
 _$_FlavorBerryMap _$$_FlavorBerryMapFromJson(Map<String, dynamic> json) =>
     _$_FlavorBerryMap(
       json['potency'] as int,
-      NamedApiResource.fromJson(json['berry'] as Map<String, dynamic>),
+      NamedAPIResource.fromJson(json['berry'] as Map<String, dynamic>),
     );
 
 Map<String, dynamic> _$$_FlavorBerryMapToJson(_$_FlavorBerryMap instance) =>

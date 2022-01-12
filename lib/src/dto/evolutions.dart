@@ -23,7 +23,7 @@ class EvolutionChain with _$EvolutionChain {
     /// See also:
     ///
     /// [Item]
-    @JsonKey(name: 'baby_trigger_item') NamedApiResource babyTriggerItem,
+    @JsonKey(name: 'baby_trigger_item') NamedAPIResource babyTriggerItem,
 
     /// The base chain link object.
     /// Each link contains evolution details for a Pokémon in the chain.
@@ -46,7 +46,7 @@ class ChainLink with _$ChainLink {
     /// See also:
     ///
     /// [PokemonSpecies]
-    NamedApiResource species,
+    NamedAPIResource species,
 
     /// All details regarding the specific details of the referenced Pokémon species evolution.
     @JsonKey(name: 'evolution_details') List<EvolutionDetail> evolutionDetails,
@@ -66,14 +66,14 @@ class EvolutionDetail with _$EvolutionDetail {
     /// See also:
     ///
     /// [Item]
-    NamedApiResource item,
+    NamedAPIResource item,
 
     /// The type of event that triggers evolution into this Pokémon species.
     ///
     /// See also:
     ///
     /// [EvolutionTrigger]
-    NamedApiResource trigger,
+    NamedAPIResource trigger,
 
     /// The id of the gender of the evolving Pokémon species must be
     /// in order to evolve into this Pokémon species.
@@ -85,7 +85,7 @@ class EvolutionDetail with _$EvolutionDetail {
     /// See also:
     ///
     /// [Item]
-    @JsonKey(name: 'held_item') NamedApiResource heldItem,
+    @JsonKey(name: 'held_item') NamedAPIResource heldItem,
 
     /// The move that must be known by the evolving Pokémon species
     /// during the evolution trigger event in order to evolve into this Pokémon species.
@@ -93,7 +93,7 @@ class EvolutionDetail with _$EvolutionDetail {
     /// See also:
     ///
     /// [Move]
-    @JsonKey(name: 'known_move') NamedApiResource knownMove,
+    @JsonKey(name: 'known_move') NamedAPIResource knownMove,
 
     /// The evolving Pokémon species must know a move with this type
     /// during the evolution trigger event in order to evolve into this Pokémon species.
@@ -101,14 +101,14 @@ class EvolutionDetail with _$EvolutionDetail {
     /// See also:
     ///
     /// [Type]
-    @JsonKey(name: 'known_move_type') NamedApiResource knownMoveType,
+    @JsonKey(name: 'known_move_type') NamedAPIResource knownMoveType,
 
     /// The location the evolution must be triggered at.
     ///
     /// See also:
     ///
     /// [Location]
-    NamedApiResource location,
+    NamedAPIResource location,
 
     /// The minimum required level of the evolving Pokémon species to evolve
     /// into this Pokémon species.
@@ -136,7 +136,7 @@ class EvolutionDetail with _$EvolutionDetail {
     /// See also:
     ///
     /// [PokemonSpecies]
-    @JsonKey(name: 'party_species') NamedApiResource partySpecies,
+    @JsonKey(name: 'party_species') NamedAPIResource partySpecies,
 
     /// The player must have a Pokémon of this type in their party
     /// during the evolution trigger event in order for the evolving Pokémon species
@@ -145,7 +145,7 @@ class EvolutionDetail with _$EvolutionDetail {
     /// See also:
     ///
     /// [Type]
-    @JsonKey(name: 'party_type') NamedApiResource partyType,
+    @JsonKey(name: 'party_type') NamedAPIResource partyType,
 
     /// The required relation between the Pokémon's Attack and Defense stats.
     /// 1 means Attack > Defense. 0 means Attack = Defense. -1 means Attack < Defense.
@@ -159,7 +159,7 @@ class EvolutionDetail with _$EvolutionDetail {
     /// See also:
     ///
     /// [PokemonSpecies]
-    @JsonKey(name: 'trade_species') NamedApiResource tradeSpecies,
+    @JsonKey(name: 'trade_species') NamedAPIResource tradeSpecies,
 
     /// Whether or not the 3DS needs to be turned upside-down as this Pokémon levels up.
     @JsonKey(name: 'turn_upside_down') bool turnUpsideDown,
@@ -186,7 +186,7 @@ class EvolutionTrigger with _$EvolutionTrigger {
     /// See also:
     ///
     /// [PokemonSpecies]
-    @JsonKey(name: 'pokemon_species') List<NamedApiResource> pokemonSpecies,
+    @JsonKey(name: 'pokemon_species') List<NamedAPIResource> pokemonSpecies,
   ) = _EvolutionTrigger;
 
   factory EvolutionTrigger.fromJson(Json json) =>

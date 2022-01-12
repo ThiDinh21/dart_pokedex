@@ -22,7 +22,7 @@ class Location with _$Location {
     /// See also:
     ///
     /// [Region]
-    NamedApiResource region,
+    NamedAPIResource region,
 
     /// The name of this resource listed in different languages.
     List<Name> names,
@@ -35,7 +35,7 @@ class Location with _$Location {
     /// See also:
     ///
     /// [LocationArea]
-    List<NamedApiResource> areas,
+    List<NamedAPIResource> areas,
   ) = _Location;
 
   factory Location.fromJson(Json json) => _$LocationFromJson(json);
@@ -63,7 +63,7 @@ class LocationArea with _$LocationArea {
     /// See also:
     ///
     /// [Location]
-    NamedApiResource location,
+    NamedAPIResource location,
 
     /// The name of this resource listed in different languages.
     List<Name> names,
@@ -85,7 +85,7 @@ class EncounterMethodRate with _$EncounterMethodRate {
     /// See also:
     ///
     /// [EncounterMethod]
-    @JsonKey(name: 'encounter_method') NamedApiResource encounterMethod,
+    @JsonKey(name: 'encounter_method') NamedAPIResource encounterMethod,
 
     /// The chance of the encounter to occur on a version of the game.
     @JsonKey(name: 'version_details')
@@ -107,7 +107,7 @@ class EncounterVersionDetails with _$EncounterVersionDetails {
     /// See also:
     ///
     /// [Version]
-    NamedApiResource version,
+    NamedAPIResource version,
   ) = _EncounterVersionDetails;
 
   factory EncounterVersionDetails.fromJson(Json json) =>
@@ -122,7 +122,7 @@ class PokemonEncounter with _$PokemonEncounter {
     /// See also:
     ///
     /// [Pokemon]
-    NamedApiResource pokemon,
+    NamedAPIResource pokemon,
 
     /// A list of versions and encounters with Pokémon that might happen
     /// in the referenced location area.
@@ -169,7 +169,7 @@ class PalParkEncounterSpecies with _$PalParkEncounterSpecies {
     /// See also:
     ///
     /// [PokemonSpecies]
-    @JsonKey(name: 'pokemon_species') NamedApiResource pokemonSpecies,
+    @JsonKey(name: 'pokemon_species') NamedAPIResource pokemonSpecies,
   ) = _PalParkEncounterSpecies;
 
   factory PalParkEncounterSpecies.fromJson(Json json) =>
@@ -187,7 +187,7 @@ class Region with _$Region {
     /// See also:
     ///
     /// [Location]
-    List<NamedApiResource> locations,
+    List<NamedAPIResource> locations,
 
     /// The name for this resource.
     String name,
@@ -196,21 +196,21 @@ class Region with _$Region {
     List<Name> names,
 
     /// The generation this region was introduced in.
-    @JsonKey(name: 'main_generation') NamedApiResource mainGeneration,
+    @JsonKey(name: 'main_generation') NamedAPIResource mainGeneration,
 
     /// A list of pokédexes that catalogue Pokémon in this region.
     ///
     /// See also:
     ///
     /// [PokedexData]
-    List<NamedApiResource> pokedexes,
+    List<NamedAPIResource> pokedexes,
 
     /// A list of version groups where this region can be visited.
     ///
     /// See also:
     ///
     /// [VersionGroup]
-    @JsonKey(name: 'version_groups') List<NamedApiResource> versionGroups,
+    @JsonKey(name: 'version_groups') List<NamedAPIResource> versionGroups,
   ) = _Region;
 
   factory Region.fromJson(Json json) => _$RegionFromJson(json);

@@ -9,13 +9,13 @@ part 'common.freezed.dart';
 part 'common.g.dart';
 
 @freezed
-class ApiResource with _$ApiResource {
-  const factory ApiResource(
+class APIResource with _$APIResource {
+  const factory APIResource(
     /// The URL of the referenced resource.
     String url,
-  ) = _ApiResource;
+  ) = _APIResource;
 
-  factory ApiResource.fromJson(Json json) => _$ApiResourceFromJson(json);
+  factory APIResource.fromJson(Json json) => _$APIResourceFromJson(json);
 }
 
 @freezed
@@ -29,7 +29,7 @@ class Description with _$Description {
     /// See also:
     ///
     /// [Language]
-    NamedApiResource language,
+    NamedAPIResource language,
   ) = _Description;
 
   factory Description.fromJson(Json json) => _$DescriptionFromJson(json);
@@ -46,7 +46,7 @@ class Effect with _$Effect {
     /// See also:
     ///
     /// [Language]
-    NamedApiResource language,
+    NamedAPIResource language,
   ) = _Effect;
 
   factory Effect.fromJson(Json json) => _$EffectFromJson(json);
@@ -66,7 +66,7 @@ class Encounter with _$Encounter {
     /// See also:
     ///
     /// [EncounterConditionValue]
-    @JsonKey(name: 'condition_values') List<NamedApiResource> conditionValues,
+    @JsonKey(name: 'condition_values') List<NamedAPIResource> conditionValues,
 
     /// Percent chance that this encounter will occur.
     int chance,
@@ -76,7 +76,7 @@ class Encounter with _$Encounter {
     /// See also:
     ///
     /// [EncounterMethod]
-    NamedApiResource method,
+    NamedAPIResource method,
   ) = _Encounter;
 
   factory Encounter.fromJson(Json json) => _$EncounterFromJson(json);
@@ -93,14 +93,14 @@ class FlavorText with _$FlavorText {
     /// See also:
     ///
     /// [Language]
-    NamedApiResource language,
+    NamedAPIResource language,
 
     /// The game version this flavor text is extracted from.
     ///
     /// See also:
     ///
     /// [Version]
-    NamedApiResource version,
+    NamedAPIResource version,
   ) = _FlavorText;
 
   factory FlavorText.fromJson(Json json) => _$FlavorTextFromJson(json);
@@ -117,7 +117,7 @@ class GenerationGameIndex with _$GenerationGameIndex {
     /// See also:
     ///
     /// [Generation]
-    NamedApiResource generation,
+    NamedAPIResource generation,
   ) = _GenerationGameIndex;
 
   factory GenerationGameIndex.fromJson(Json json) =>
@@ -132,14 +132,14 @@ class MachineVersionDetail with _$MachineVersionDetail {
     /// See also:
     ///
     /// [Machine]
-    ApiResource machine,
+    APIResource machine,
 
     /// The version group of this specific machine.
     ///
     /// See also:
     ///
     /// [VersionGroup]
-    @JsonKey(name: 'version_group') NamedApiResource versionGroup,
+    @JsonKey(name: 'version_group') NamedAPIResource versionGroup,
   ) = _MachineVersionDetail;
 
   factory MachineVersionDetail.fromJson(Json json) =>
@@ -157,24 +157,24 @@ class Name with _$Name {
     /// See also:
     ///
     /// [Language]
-    NamedApiResource language,
+    NamedAPIResource language,
   ) = _Name;
 
   factory Name.fromJson(Json json) => _$NameFromJson(json);
 }
 
 @freezed
-class NamedApiResource with _$NamedApiResource {
-  const factory NamedApiResource(
+class NamedAPIResource with _$NamedAPIResource {
+  const factory NamedAPIResource(
     /// The name of the referenced resource.
     String name,
 
     /// The URL of the referenced resource.
     String url,
-  ) = _NamedApiResource;
+  ) = _NamedAPIResource;
 
-  factory NamedApiResource.fromJson(Json json) =>
-      _$NamedApiResourceFromJson(json);
+  factory NamedAPIResource.fromJson(Json json) =>
+      _$NamedAPIResourceFromJson(json);
 }
 
 @freezed
@@ -191,7 +191,7 @@ class VerboseEffect with _$VerboseEffect {
     /// See also:
     ///
     /// [Language]
-    NamedApiResource language,
+    NamedAPIResource language,
   ) = _VerboseEffect;
 
   factory VerboseEffect.fromJson(Json json) => _$VerboseEffectFromJson(json);
@@ -205,7 +205,7 @@ class VersionEncounterDetail with _$VersionEncounterDetail {
     /// See also:
     ///
     /// [Version]
-    NamedApiResource version,
+    NamedAPIResource version,
 
     /// The total percentage of all encounter potential.
     @JsonKey(name: 'max_chance') int maxChance,
@@ -229,7 +229,7 @@ class VersionGameIndex with _$VersionGameIndex {
     /// See also:
     ///
     /// [Version]
-    NamedApiResource version,
+    NamedAPIResource version,
   ) = _VersionGameIndex;
 
   factory VersionGameIndex.fromJson(Json json) =>
@@ -247,14 +247,14 @@ class VersionGroupFlavorText with _$VersionGroupFlavorText {
     /// See also:
     ///
     /// [Language]
-    NamedApiResource language,
+    NamedAPIResource language,
 
     /// The version group which uses this flavor text.
     ///
     /// See also:
     ///
     /// [VersionGroup]
-    @JsonKey(name: 'version_group') NamedApiResource versionGroup,
+    @JsonKey(name: 'version_group') NamedAPIResource versionGroup,
   ) = _VersionGroupFlavorText;
 
   factory VersionGroupFlavorText.fromJson(Json json) =>
@@ -262,8 +262,8 @@ class VersionGroupFlavorText with _$VersionGroupFlavorText {
 }
 
 @freezed
-class NamedApiResourceList with _$NamedApiResourceList {
-  const factory NamedApiResourceList(
+class NamedAPIResourceList with _$NamedAPIResourceList {
+  const factory NamedAPIResourceList(
     /// The total number of resources available from this API.
     int count,
 
@@ -274,16 +274,16 @@ class NamedApiResourceList with _$NamedApiResourceList {
     String? previous,
 
     /// A list of named API resources.
-    List<NamedApiResource> results,
-  ) = _NamedApiResourceList;
+    List<NamedAPIResource> results,
+  ) = _NamedAPIResourceList;
 
-  factory NamedApiResourceList.fromJson(Json json) =>
-      _$NamedApiResourceListFromJson(json);
+  factory NamedAPIResourceList.fromJson(Json json) =>
+      _$NamedAPIResourceListFromJson(json);
 }
 
 @freezed
-class ApiResourceList with _$ApiResourceList {
-  const factory ApiResourceList(
+class APIResourceList with _$APIResourceList {
+  const factory APIResourceList(
     /// The total number of resources available from this API.
     int count,
 
@@ -294,9 +294,9 @@ class ApiResourceList with _$ApiResourceList {
     String? previous,
 
     /// A list of API resources.
-    List<ApiResource> results,
-  ) = _ApiResourceList;
+    List<APIResource> results,
+  ) = _APIResourceList;
 
-  factory ApiResourceList.fromJson(Json json) =>
-      _$ApiResourceListFromJson(json);
+  factory APIResourceList.fromJson(Json json) =>
+      _$APIResourceListFromJson(json);
 }

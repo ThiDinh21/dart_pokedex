@@ -22,8 +22,8 @@ Machine _$MachineFromJson(Map<String, dynamic> json) {
 class _$MachineTearOff {
   const _$MachineTearOff();
 
-  _Machine call(int id, NamedApiResource item, NamedApiResource move,
-      @JsonKey(name: 'version_group') NamedApiResource versionGroup) {
+  _Machine call(int id, NamedAPIResource item, NamedAPIResource move,
+      @JsonKey(name: 'version_group') NamedAPIResource versionGroup) {
     return _Machine(
       id,
       item,
@@ -50,14 +50,14 @@ mixin _$Machine {
   /// See also:
   ///
   /// [Item]
-  NamedApiResource get item => throw _privateConstructorUsedError;
+  NamedAPIResource get item => throw _privateConstructorUsedError;
 
   /// The move that is taught by this machine.
   ///
   /// See also:
   ///
   /// [Move]
-  NamedApiResource get move => throw _privateConstructorUsedError;
+  NamedAPIResource get move => throw _privateConstructorUsedError;
 
   /// The version group that this machine applies to.
   ///
@@ -65,7 +65,7 @@ mixin _$Machine {
   ///
   /// [VersionGroup]
   @JsonKey(name: 'version_group')
-  NamedApiResource get versionGroup => throw _privateConstructorUsedError;
+  NamedAPIResource get versionGroup => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -78,13 +78,13 @@ abstract class $MachineCopyWith<$Res> {
       _$MachineCopyWithImpl<$Res>;
   $Res call(
       {int id,
-      NamedApiResource item,
-      NamedApiResource move,
-      @JsonKey(name: 'version_group') NamedApiResource versionGroup});
+      NamedAPIResource item,
+      NamedAPIResource move,
+      @JsonKey(name: 'version_group') NamedAPIResource versionGroup});
 
-  $NamedApiResourceCopyWith<$Res> get item;
-  $NamedApiResourceCopyWith<$Res> get move;
-  $NamedApiResourceCopyWith<$Res> get versionGroup;
+  $NamedAPIResourceCopyWith<$Res> get item;
+  $NamedAPIResourceCopyWith<$Res> get move;
+  $NamedAPIResourceCopyWith<$Res> get versionGroup;
 }
 
 /// @nodoc
@@ -110,35 +110,35 @@ class _$MachineCopyWithImpl<$Res> implements $MachineCopyWith<$Res> {
       item: item == freezed
           ? _value.item
           : item // ignore: cast_nullable_to_non_nullable
-              as NamedApiResource,
+              as NamedAPIResource,
       move: move == freezed
           ? _value.move
           : move // ignore: cast_nullable_to_non_nullable
-              as NamedApiResource,
+              as NamedAPIResource,
       versionGroup: versionGroup == freezed
           ? _value.versionGroup
           : versionGroup // ignore: cast_nullable_to_non_nullable
-              as NamedApiResource,
+              as NamedAPIResource,
     ));
   }
 
   @override
-  $NamedApiResourceCopyWith<$Res> get item {
-    return $NamedApiResourceCopyWith<$Res>(_value.item, (value) {
+  $NamedAPIResourceCopyWith<$Res> get item {
+    return $NamedAPIResourceCopyWith<$Res>(_value.item, (value) {
       return _then(_value.copyWith(item: value));
     });
   }
 
   @override
-  $NamedApiResourceCopyWith<$Res> get move {
-    return $NamedApiResourceCopyWith<$Res>(_value.move, (value) {
+  $NamedAPIResourceCopyWith<$Res> get move {
+    return $NamedAPIResourceCopyWith<$Res>(_value.move, (value) {
       return _then(_value.copyWith(move: value));
     });
   }
 
   @override
-  $NamedApiResourceCopyWith<$Res> get versionGroup {
-    return $NamedApiResourceCopyWith<$Res>(_value.versionGroup, (value) {
+  $NamedAPIResourceCopyWith<$Res> get versionGroup {
+    return $NamedAPIResourceCopyWith<$Res>(_value.versionGroup, (value) {
       return _then(_value.copyWith(versionGroup: value));
     });
   }
@@ -151,16 +151,16 @@ abstract class _$MachineCopyWith<$Res> implements $MachineCopyWith<$Res> {
   @override
   $Res call(
       {int id,
-      NamedApiResource item,
-      NamedApiResource move,
-      @JsonKey(name: 'version_group') NamedApiResource versionGroup});
+      NamedAPIResource item,
+      NamedAPIResource move,
+      @JsonKey(name: 'version_group') NamedAPIResource versionGroup});
 
   @override
-  $NamedApiResourceCopyWith<$Res> get item;
+  $NamedAPIResourceCopyWith<$Res> get item;
   @override
-  $NamedApiResourceCopyWith<$Res> get move;
+  $NamedAPIResourceCopyWith<$Res> get move;
   @override
-  $NamedApiResourceCopyWith<$Res> get versionGroup;
+  $NamedAPIResourceCopyWith<$Res> get versionGroup;
 }
 
 /// @nodoc
@@ -187,15 +187,15 @@ class __$MachineCopyWithImpl<$Res> extends _$MachineCopyWithImpl<$Res>
       item == freezed
           ? _value.item
           : item // ignore: cast_nullable_to_non_nullable
-              as NamedApiResource,
+              as NamedAPIResource,
       move == freezed
           ? _value.move
           : move // ignore: cast_nullable_to_non_nullable
-              as NamedApiResource,
+              as NamedAPIResource,
       versionGroup == freezed
           ? _value.versionGroup
           : versionGroup // ignore: cast_nullable_to_non_nullable
-              as NamedApiResource,
+              as NamedAPIResource,
     ));
   }
 }
@@ -220,7 +220,7 @@ class _$_Machine implements _Machine {
   /// See also:
   ///
   /// [Item]
-  final NamedApiResource item;
+  final NamedAPIResource item;
   @override
 
   /// The move that is taught by this machine.
@@ -228,7 +228,7 @@ class _$_Machine implements _Machine {
   /// See also:
   ///
   /// [Move]
-  final NamedApiResource move;
+  final NamedAPIResource move;
   @override
 
   /// The version group that this machine applies to.
@@ -237,7 +237,7 @@ class _$_Machine implements _Machine {
   ///
   /// [VersionGroup]
   @JsonKey(name: 'version_group')
-  final NamedApiResource versionGroup;
+  final NamedAPIResource versionGroup;
 
   @override
   String toString() {
@@ -276,8 +276,8 @@ class _$_Machine implements _Machine {
 }
 
 abstract class _Machine implements Machine {
-  const factory _Machine(int id, NamedApiResource item, NamedApiResource move,
-          @JsonKey(name: 'version_group') NamedApiResource versionGroup) =
+  const factory _Machine(int id, NamedAPIResource item, NamedAPIResource move,
+          @JsonKey(name: 'version_group') NamedAPIResource versionGroup) =
       _$_Machine;
 
   factory _Machine.fromJson(Map<String, dynamic> json) = _$_Machine.fromJson;
@@ -293,7 +293,7 @@ abstract class _Machine implements Machine {
   /// See also:
   ///
   /// [Item]
-  NamedApiResource get item;
+  NamedAPIResource get item;
   @override
 
   /// The move that is taught by this machine.
@@ -301,7 +301,7 @@ abstract class _Machine implements Machine {
   /// See also:
   ///
   /// [Move]
-  NamedApiResource get move;
+  NamedAPIResource get move;
   @override
 
   /// The version group that this machine applies to.
@@ -310,7 +310,7 @@ abstract class _Machine implements Machine {
   ///
   /// [VersionGroup]
   @JsonKey(name: 'version_group')
-  NamedApiResource get versionGroup;
+  NamedAPIResource get versionGroup;
   @override
   @JsonKey(ignore: true)
   _$MachineCopyWith<_Machine> get copyWith =>

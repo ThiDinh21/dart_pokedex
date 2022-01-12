@@ -25,13 +25,13 @@ class _$GenerationTearOff {
   _Generation call(
       int id,
       String name,
-      List<NamedApiResource> abilities,
+      List<NamedAPIResource> abilities,
       List<Name> names,
-      @JsonKey(name: 'main_region') NamedApiResource mainRegion,
-      List<NamedApiResource> moves,
-      @JsonKey(name: 'pokemon_species') List<NamedApiResource> pokemonSpecies,
-      List<NamedApiResource> types,
-      @JsonKey(name: 'version_groups') List<NamedApiResource> versionGroups) {
+      @JsonKey(name: 'main_region') NamedAPIResource mainRegion,
+      List<NamedAPIResource> moves,
+      @JsonKey(name: 'pokemon_species') List<NamedAPIResource> pokemonSpecies,
+      List<NamedAPIResource> types,
+      @JsonKey(name: 'version_groups') List<NamedAPIResource> versionGroups) {
     return _Generation(
       id,
       name,
@@ -66,7 +66,7 @@ mixin _$Generation {
   /// See also:
   ///
   /// [Ability]
-  List<NamedApiResource> get abilities => throw _privateConstructorUsedError;
+  List<NamedAPIResource> get abilities => throw _privateConstructorUsedError;
 
   /// The name of this resource listed in different languages.
   List<Name> get names => throw _privateConstructorUsedError;
@@ -77,14 +77,14 @@ mixin _$Generation {
   ///
   /// [Region]
   @JsonKey(name: 'main_region')
-  NamedApiResource get mainRegion => throw _privateConstructorUsedError;
+  NamedAPIResource get mainRegion => throw _privateConstructorUsedError;
 
   /// A list of moves that were introduced in this generation.
   ///
   /// See also:
   ///
   /// [Move]
-  List<NamedApiResource> get moves => throw _privateConstructorUsedError;
+  List<NamedAPIResource> get moves => throw _privateConstructorUsedError;
 
   /// A list of Pokémon species that were introduced in this generation.
   ///
@@ -92,7 +92,7 @@ mixin _$Generation {
   ///
   /// [PokemonSpecies]
   @JsonKey(name: 'pokemon_species')
-  List<NamedApiResource> get pokemonSpecies =>
+  List<NamedAPIResource> get pokemonSpecies =>
       throw _privateConstructorUsedError;
 
   /// A list of types that were introduced in this generation.
@@ -100,7 +100,7 @@ mixin _$Generation {
   /// See also:
   ///
   /// [Type]
-  List<NamedApiResource> get types => throw _privateConstructorUsedError;
+  List<NamedAPIResource> get types => throw _privateConstructorUsedError;
 
   /// A list of version groups that were introduced in this generation.
   ///
@@ -108,7 +108,7 @@ mixin _$Generation {
   ///
   /// [VersionGroup]
   @JsonKey(name: 'version_groups')
-  List<NamedApiResource> get versionGroups =>
+  List<NamedAPIResource> get versionGroups =>
       throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -125,15 +125,15 @@ abstract class $GenerationCopyWith<$Res> {
   $Res call(
       {int id,
       String name,
-      List<NamedApiResource> abilities,
+      List<NamedAPIResource> abilities,
       List<Name> names,
-      @JsonKey(name: 'main_region') NamedApiResource mainRegion,
-      List<NamedApiResource> moves,
-      @JsonKey(name: 'pokemon_species') List<NamedApiResource> pokemonSpecies,
-      List<NamedApiResource> types,
-      @JsonKey(name: 'version_groups') List<NamedApiResource> versionGroups});
+      @JsonKey(name: 'main_region') NamedAPIResource mainRegion,
+      List<NamedAPIResource> moves,
+      @JsonKey(name: 'pokemon_species') List<NamedAPIResource> pokemonSpecies,
+      List<NamedAPIResource> types,
+      @JsonKey(name: 'version_groups') List<NamedAPIResource> versionGroups});
 
-  $NamedApiResourceCopyWith<$Res> get mainRegion;
+  $NamedAPIResourceCopyWith<$Res> get mainRegion;
 }
 
 /// @nodoc
@@ -168,7 +168,7 @@ class _$GenerationCopyWithImpl<$Res> implements $GenerationCopyWith<$Res> {
       abilities: abilities == freezed
           ? _value.abilities
           : abilities // ignore: cast_nullable_to_non_nullable
-              as List<NamedApiResource>,
+              as List<NamedAPIResource>,
       names: names == freezed
           ? _value.names
           : names // ignore: cast_nullable_to_non_nullable
@@ -176,29 +176,29 @@ class _$GenerationCopyWithImpl<$Res> implements $GenerationCopyWith<$Res> {
       mainRegion: mainRegion == freezed
           ? _value.mainRegion
           : mainRegion // ignore: cast_nullable_to_non_nullable
-              as NamedApiResource,
+              as NamedAPIResource,
       moves: moves == freezed
           ? _value.moves
           : moves // ignore: cast_nullable_to_non_nullable
-              as List<NamedApiResource>,
+              as List<NamedAPIResource>,
       pokemonSpecies: pokemonSpecies == freezed
           ? _value.pokemonSpecies
           : pokemonSpecies // ignore: cast_nullable_to_non_nullable
-              as List<NamedApiResource>,
+              as List<NamedAPIResource>,
       types: types == freezed
           ? _value.types
           : types // ignore: cast_nullable_to_non_nullable
-              as List<NamedApiResource>,
+              as List<NamedAPIResource>,
       versionGroups: versionGroups == freezed
           ? _value.versionGroups
           : versionGroups // ignore: cast_nullable_to_non_nullable
-              as List<NamedApiResource>,
+              as List<NamedAPIResource>,
     ));
   }
 
   @override
-  $NamedApiResourceCopyWith<$Res> get mainRegion {
-    return $NamedApiResourceCopyWith<$Res>(_value.mainRegion, (value) {
+  $NamedAPIResourceCopyWith<$Res> get mainRegion {
+    return $NamedAPIResourceCopyWith<$Res>(_value.mainRegion, (value) {
       return _then(_value.copyWith(mainRegion: value));
     });
   }
@@ -213,16 +213,16 @@ abstract class _$GenerationCopyWith<$Res> implements $GenerationCopyWith<$Res> {
   $Res call(
       {int id,
       String name,
-      List<NamedApiResource> abilities,
+      List<NamedAPIResource> abilities,
       List<Name> names,
-      @JsonKey(name: 'main_region') NamedApiResource mainRegion,
-      List<NamedApiResource> moves,
-      @JsonKey(name: 'pokemon_species') List<NamedApiResource> pokemonSpecies,
-      List<NamedApiResource> types,
-      @JsonKey(name: 'version_groups') List<NamedApiResource> versionGroups});
+      @JsonKey(name: 'main_region') NamedAPIResource mainRegion,
+      List<NamedAPIResource> moves,
+      @JsonKey(name: 'pokemon_species') List<NamedAPIResource> pokemonSpecies,
+      List<NamedAPIResource> types,
+      @JsonKey(name: 'version_groups') List<NamedAPIResource> versionGroups});
 
   @override
-  $NamedApiResourceCopyWith<$Res> get mainRegion;
+  $NamedAPIResourceCopyWith<$Res> get mainRegion;
 }
 
 /// @nodoc
@@ -259,7 +259,7 @@ class __$GenerationCopyWithImpl<$Res> extends _$GenerationCopyWithImpl<$Res>
       abilities == freezed
           ? _value.abilities
           : abilities // ignore: cast_nullable_to_non_nullable
-              as List<NamedApiResource>,
+              as List<NamedAPIResource>,
       names == freezed
           ? _value.names
           : names // ignore: cast_nullable_to_non_nullable
@@ -267,23 +267,23 @@ class __$GenerationCopyWithImpl<$Res> extends _$GenerationCopyWithImpl<$Res>
       mainRegion == freezed
           ? _value.mainRegion
           : mainRegion // ignore: cast_nullable_to_non_nullable
-              as NamedApiResource,
+              as NamedAPIResource,
       moves == freezed
           ? _value.moves
           : moves // ignore: cast_nullable_to_non_nullable
-              as List<NamedApiResource>,
+              as List<NamedAPIResource>,
       pokemonSpecies == freezed
           ? _value.pokemonSpecies
           : pokemonSpecies // ignore: cast_nullable_to_non_nullable
-              as List<NamedApiResource>,
+              as List<NamedAPIResource>,
       types == freezed
           ? _value.types
           : types // ignore: cast_nullable_to_non_nullable
-              as List<NamedApiResource>,
+              as List<NamedAPIResource>,
       versionGroups == freezed
           ? _value.versionGroups
           : versionGroups // ignore: cast_nullable_to_non_nullable
-              as List<NamedApiResource>,
+              as List<NamedAPIResource>,
     ));
   }
 }
@@ -320,7 +320,7 @@ class _$_Generation implements _Generation {
   /// See also:
   ///
   /// [Ability]
-  final List<NamedApiResource> abilities;
+  final List<NamedAPIResource> abilities;
   @override
 
   /// The name of this resource listed in different languages.
@@ -333,7 +333,7 @@ class _$_Generation implements _Generation {
   ///
   /// [Region]
   @JsonKey(name: 'main_region')
-  final NamedApiResource mainRegion;
+  final NamedAPIResource mainRegion;
   @override
 
   /// A list of moves that were introduced in this generation.
@@ -341,7 +341,7 @@ class _$_Generation implements _Generation {
   /// See also:
   ///
   /// [Move]
-  final List<NamedApiResource> moves;
+  final List<NamedAPIResource> moves;
   @override
 
   /// A list of Pokémon species that were introduced in this generation.
@@ -350,7 +350,7 @@ class _$_Generation implements _Generation {
   ///
   /// [PokemonSpecies]
   @JsonKey(name: 'pokemon_species')
-  final List<NamedApiResource> pokemonSpecies;
+  final List<NamedAPIResource> pokemonSpecies;
   @override
 
   /// A list of types that were introduced in this generation.
@@ -358,7 +358,7 @@ class _$_Generation implements _Generation {
   /// See also:
   ///
   /// [Type]
-  final List<NamedApiResource> types;
+  final List<NamedAPIResource> types;
   @override
 
   /// A list of version groups that were introduced in this generation.
@@ -367,7 +367,7 @@ class _$_Generation implements _Generation {
   ///
   /// [VersionGroup]
   @JsonKey(name: 'version_groups')
-  final List<NamedApiResource> versionGroups;
+  final List<NamedAPIResource> versionGroups;
 
   @override
   String toString() {
@@ -421,16 +421,16 @@ abstract class _Generation implements Generation {
   const factory _Generation(
       int id,
       String name,
-      List<NamedApiResource> abilities,
+      List<NamedAPIResource> abilities,
       List<Name> names,
       @JsonKey(name: 'main_region')
-          NamedApiResource mainRegion,
-      List<NamedApiResource> moves,
+          NamedAPIResource mainRegion,
+      List<NamedAPIResource> moves,
       @JsonKey(name: 'pokemon_species')
-          List<NamedApiResource> pokemonSpecies,
-      List<NamedApiResource> types,
+          List<NamedAPIResource> pokemonSpecies,
+      List<NamedAPIResource> types,
       @JsonKey(name: 'version_groups')
-          List<NamedApiResource> versionGroups) = _$_Generation;
+          List<NamedAPIResource> versionGroups) = _$_Generation;
 
   factory _Generation.fromJson(Map<String, dynamic> json) =
       _$_Generation.fromJson;
@@ -450,7 +450,7 @@ abstract class _Generation implements Generation {
   /// See also:
   ///
   /// [Ability]
-  List<NamedApiResource> get abilities;
+  List<NamedAPIResource> get abilities;
   @override
 
   /// The name of this resource listed in different languages.
@@ -463,7 +463,7 @@ abstract class _Generation implements Generation {
   ///
   /// [Region]
   @JsonKey(name: 'main_region')
-  NamedApiResource get mainRegion;
+  NamedAPIResource get mainRegion;
   @override
 
   /// A list of moves that were introduced in this generation.
@@ -471,7 +471,7 @@ abstract class _Generation implements Generation {
   /// See also:
   ///
   /// [Move]
-  List<NamedApiResource> get moves;
+  List<NamedAPIResource> get moves;
   @override
 
   /// A list of Pokémon species that were introduced in this generation.
@@ -480,7 +480,7 @@ abstract class _Generation implements Generation {
   ///
   /// [PokemonSpecies]
   @JsonKey(name: 'pokemon_species')
-  List<NamedApiResource> get pokemonSpecies;
+  List<NamedAPIResource> get pokemonSpecies;
   @override
 
   /// A list of types that were introduced in this generation.
@@ -488,7 +488,7 @@ abstract class _Generation implements Generation {
   /// See also:
   ///
   /// [Type]
-  List<NamedApiResource> get types;
+  List<NamedAPIResource> get types;
   @override
 
   /// A list of version groups that were introduced in this generation.
@@ -497,7 +497,7 @@ abstract class _Generation implements Generation {
   ///
   /// [VersionGroup]
   @JsonKey(name: 'version_groups')
-  List<NamedApiResource> get versionGroups;
+  List<NamedAPIResource> get versionGroups;
   @override
   @JsonKey(ignore: true)
   _$GenerationCopyWith<_Generation> get copyWith =>
@@ -519,8 +519,8 @@ class _$PokedexDataTearOff {
       List<Description> descriptions,
       List<Name> names,
       @JsonKey(name: 'pokemon_entries') List<PokemonEntry> pokemonEntries,
-      NamedApiResource region,
-      @JsonKey(name: 'version_groups') List<NamedApiResource> versionGroups) {
+      NamedAPIResource region,
+      @JsonKey(name: 'version_groups') List<NamedAPIResource> versionGroups) {
     return _PokedexData(
       id,
       name,
@@ -568,7 +568,7 @@ mixin _$PokedexData {
   /// See also:
   ///
   /// [Region]
-  NamedApiResource get region => throw _privateConstructorUsedError;
+  NamedAPIResource get region => throw _privateConstructorUsedError;
 
   /// A list of version groups this Pokédex is relevant to.
   ///
@@ -576,7 +576,7 @@ mixin _$PokedexData {
   ///
   /// [VersionGroup]
   @JsonKey(name: 'version_groups')
-  List<NamedApiResource> get versionGroups =>
+  List<NamedAPIResource> get versionGroups =>
       throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -597,10 +597,10 @@ abstract class $PokedexDataCopyWith<$Res> {
       List<Description> descriptions,
       List<Name> names,
       @JsonKey(name: 'pokemon_entries') List<PokemonEntry> pokemonEntries,
-      NamedApiResource region,
-      @JsonKey(name: 'version_groups') List<NamedApiResource> versionGroups});
+      NamedAPIResource region,
+      @JsonKey(name: 'version_groups') List<NamedAPIResource> versionGroups});
 
-  $NamedApiResourceCopyWith<$Res> get region;
+  $NamedAPIResourceCopyWith<$Res> get region;
 }
 
 /// @nodoc
@@ -650,17 +650,17 @@ class _$PokedexDataCopyWithImpl<$Res> implements $PokedexDataCopyWith<$Res> {
       region: region == freezed
           ? _value.region
           : region // ignore: cast_nullable_to_non_nullable
-              as NamedApiResource,
+              as NamedAPIResource,
       versionGroups: versionGroups == freezed
           ? _value.versionGroups
           : versionGroups // ignore: cast_nullable_to_non_nullable
-              as List<NamedApiResource>,
+              as List<NamedAPIResource>,
     ));
   }
 
   @override
-  $NamedApiResourceCopyWith<$Res> get region {
-    return $NamedApiResourceCopyWith<$Res>(_value.region, (value) {
+  $NamedAPIResourceCopyWith<$Res> get region {
+    return $NamedAPIResourceCopyWith<$Res>(_value.region, (value) {
       return _then(_value.copyWith(region: value));
     });
   }
@@ -680,11 +680,11 @@ abstract class _$PokedexDataCopyWith<$Res>
       List<Description> descriptions,
       List<Name> names,
       @JsonKey(name: 'pokemon_entries') List<PokemonEntry> pokemonEntries,
-      NamedApiResource region,
-      @JsonKey(name: 'version_groups') List<NamedApiResource> versionGroups});
+      NamedAPIResource region,
+      @JsonKey(name: 'version_groups') List<NamedAPIResource> versionGroups});
 
   @override
-  $NamedApiResourceCopyWith<$Res> get region;
+  $NamedAPIResourceCopyWith<$Res> get region;
 }
 
 /// @nodoc
@@ -736,11 +736,11 @@ class __$PokedexDataCopyWithImpl<$Res> extends _$PokedexDataCopyWithImpl<$Res>
       region == freezed
           ? _value.region
           : region // ignore: cast_nullable_to_non_nullable
-              as NamedApiResource,
+              as NamedAPIResource,
       versionGroups == freezed
           ? _value.versionGroups
           : versionGroups // ignore: cast_nullable_to_non_nullable
-              as List<NamedApiResource>,
+              as List<NamedAPIResource>,
     ));
   }
 }
@@ -794,7 +794,7 @@ class _$_PokedexData implements _PokedexData {
   /// See also:
   ///
   /// [Region]
-  final NamedApiResource region;
+  final NamedAPIResource region;
   @override
 
   /// A list of version groups this Pokédex is relevant to.
@@ -803,7 +803,7 @@ class _$_PokedexData implements _PokedexData {
   ///
   /// [VersionGroup]
   @JsonKey(name: 'version_groups')
-  final List<NamedApiResource> versionGroups;
+  final List<NamedAPIResource> versionGroups;
 
   @override
   String toString() {
@@ -862,9 +862,9 @@ abstract class _PokedexData implements PokedexData {
       List<Name> names,
       @JsonKey(name: 'pokemon_entries')
           List<PokemonEntry> pokemonEntries,
-      NamedApiResource region,
+      NamedAPIResource region,
       @JsonKey(name: 'version_groups')
-          List<NamedApiResource> versionGroups) = _$_PokedexData;
+          List<NamedAPIResource> versionGroups) = _$_PokedexData;
 
   factory _PokedexData.fromJson(Map<String, dynamic> json) =
       _$_PokedexData.fromJson;
@@ -902,7 +902,7 @@ abstract class _PokedexData implements PokedexData {
   /// See also:
   ///
   /// [Region]
-  NamedApiResource get region;
+  NamedAPIResource get region;
   @override
 
   /// A list of version groups this Pokédex is relevant to.
@@ -911,7 +911,7 @@ abstract class _PokedexData implements PokedexData {
   ///
   /// [VersionGroup]
   @JsonKey(name: 'version_groups')
-  List<NamedApiResource> get versionGroups;
+  List<NamedAPIResource> get versionGroups;
   @override
   @JsonKey(ignore: true)
   _$PokedexDataCopyWith<_PokedexData> get copyWith =>
@@ -927,7 +927,7 @@ class _$PokemonEntryTearOff {
   const _$PokemonEntryTearOff();
 
   _PokemonEntry call(@JsonKey(name: 'entry_number') int entryNumber,
-      @JsonKey(name: 'pokemon_species') NamedApiResource pokemonSpecies) {
+      @JsonKey(name: 'pokemon_species') NamedAPIResource pokemonSpecies) {
     return _PokemonEntry(
       entryNumber,
       pokemonSpecies,
@@ -954,7 +954,7 @@ mixin _$PokemonEntry {
   ///
   /// [PokemonSpecies]
   @JsonKey(name: 'pokemon_species')
-  NamedApiResource get pokemonSpecies => throw _privateConstructorUsedError;
+  NamedAPIResource get pokemonSpecies => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -969,9 +969,9 @@ abstract class $PokemonEntryCopyWith<$Res> {
       _$PokemonEntryCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'entry_number') int entryNumber,
-      @JsonKey(name: 'pokemon_species') NamedApiResource pokemonSpecies});
+      @JsonKey(name: 'pokemon_species') NamedAPIResource pokemonSpecies});
 
-  $NamedApiResourceCopyWith<$Res> get pokemonSpecies;
+  $NamedAPIResourceCopyWith<$Res> get pokemonSpecies;
 }
 
 /// @nodoc
@@ -995,13 +995,13 @@ class _$PokemonEntryCopyWithImpl<$Res> implements $PokemonEntryCopyWith<$Res> {
       pokemonSpecies: pokemonSpecies == freezed
           ? _value.pokemonSpecies
           : pokemonSpecies // ignore: cast_nullable_to_non_nullable
-              as NamedApiResource,
+              as NamedAPIResource,
     ));
   }
 
   @override
-  $NamedApiResourceCopyWith<$Res> get pokemonSpecies {
-    return $NamedApiResourceCopyWith<$Res>(_value.pokemonSpecies, (value) {
+  $NamedAPIResourceCopyWith<$Res> get pokemonSpecies {
+    return $NamedAPIResourceCopyWith<$Res>(_value.pokemonSpecies, (value) {
       return _then(_value.copyWith(pokemonSpecies: value));
     });
   }
@@ -1016,10 +1016,10 @@ abstract class _$PokemonEntryCopyWith<$Res>
   @override
   $Res call(
       {@JsonKey(name: 'entry_number') int entryNumber,
-      @JsonKey(name: 'pokemon_species') NamedApiResource pokemonSpecies});
+      @JsonKey(name: 'pokemon_species') NamedAPIResource pokemonSpecies});
 
   @override
-  $NamedApiResourceCopyWith<$Res> get pokemonSpecies;
+  $NamedAPIResourceCopyWith<$Res> get pokemonSpecies;
 }
 
 /// @nodoc
@@ -1045,7 +1045,7 @@ class __$PokemonEntryCopyWithImpl<$Res> extends _$PokemonEntryCopyWithImpl<$Res>
       pokemonSpecies == freezed
           ? _value.pokemonSpecies
           : pokemonSpecies // ignore: cast_nullable_to_non_nullable
-              as NamedApiResource,
+              as NamedAPIResource,
     ));
   }
 }
@@ -1072,7 +1072,7 @@ class _$_PokemonEntry implements _PokemonEntry {
   ///
   /// [PokemonSpecies]
   @JsonKey(name: 'pokemon_species')
-  final NamedApiResource pokemonSpecies;
+  final NamedAPIResource pokemonSpecies;
 
   @override
   String toString() {
@@ -1109,7 +1109,7 @@ class _$_PokemonEntry implements _PokemonEntry {
 
 abstract class _PokemonEntry implements PokemonEntry {
   const factory _PokemonEntry(@JsonKey(name: 'entry_number') int entryNumber,
-          @JsonKey(name: 'pokemon_species') NamedApiResource pokemonSpecies) =
+          @JsonKey(name: 'pokemon_species') NamedAPIResource pokemonSpecies) =
       _$_PokemonEntry;
 
   factory _PokemonEntry.fromJson(Map<String, dynamic> json) =
@@ -1128,7 +1128,7 @@ abstract class _PokemonEntry implements PokemonEntry {
   ///
   /// [PokemonSpecies]
   @JsonKey(name: 'pokemon_species')
-  NamedApiResource get pokemonSpecies;
+  NamedAPIResource get pokemonSpecies;
   @override
   @JsonKey(ignore: true)
   _$PokemonEntryCopyWith<_PokemonEntry> get copyWith =>
@@ -1144,7 +1144,7 @@ class _$VersionTearOff {
   const _$VersionTearOff();
 
   _Version call(int id, String name, List<Name> names,
-      @JsonKey(name: 'version_group') NamedApiResource versionGroup) {
+      @JsonKey(name: 'version_group') NamedAPIResource versionGroup) {
     return _Version(
       id,
       name,
@@ -1178,7 +1178,7 @@ mixin _$Version {
   ///
   /// [VersionGroup]
   @JsonKey(name: 'version_group')
-  NamedApiResource get versionGroup => throw _privateConstructorUsedError;
+  NamedAPIResource get versionGroup => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -1193,9 +1193,9 @@ abstract class $VersionCopyWith<$Res> {
       {int id,
       String name,
       List<Name> names,
-      @JsonKey(name: 'version_group') NamedApiResource versionGroup});
+      @JsonKey(name: 'version_group') NamedAPIResource versionGroup});
 
-  $NamedApiResourceCopyWith<$Res> get versionGroup;
+  $NamedAPIResourceCopyWith<$Res> get versionGroup;
 }
 
 /// @nodoc
@@ -1229,13 +1229,13 @@ class _$VersionCopyWithImpl<$Res> implements $VersionCopyWith<$Res> {
       versionGroup: versionGroup == freezed
           ? _value.versionGroup
           : versionGroup // ignore: cast_nullable_to_non_nullable
-              as NamedApiResource,
+              as NamedAPIResource,
     ));
   }
 
   @override
-  $NamedApiResourceCopyWith<$Res> get versionGroup {
-    return $NamedApiResourceCopyWith<$Res>(_value.versionGroup, (value) {
+  $NamedAPIResourceCopyWith<$Res> get versionGroup {
+    return $NamedAPIResourceCopyWith<$Res>(_value.versionGroup, (value) {
       return _then(_value.copyWith(versionGroup: value));
     });
   }
@@ -1250,10 +1250,10 @@ abstract class _$VersionCopyWith<$Res> implements $VersionCopyWith<$Res> {
       {int id,
       String name,
       List<Name> names,
-      @JsonKey(name: 'version_group') NamedApiResource versionGroup});
+      @JsonKey(name: 'version_group') NamedAPIResource versionGroup});
 
   @override
-  $NamedApiResourceCopyWith<$Res> get versionGroup;
+  $NamedAPIResourceCopyWith<$Res> get versionGroup;
 }
 
 /// @nodoc
@@ -1288,7 +1288,7 @@ class __$VersionCopyWithImpl<$Res> extends _$VersionCopyWithImpl<$Res>
       versionGroup == freezed
           ? _value.versionGroup
           : versionGroup // ignore: cast_nullable_to_non_nullable
-              as NamedApiResource,
+              as NamedAPIResource,
     ));
   }
 }
@@ -1322,7 +1322,7 @@ class _$_Version implements _Version {
   ///
   /// [VersionGroup]
   @JsonKey(name: 'version_group')
-  final NamedApiResource versionGroup;
+  final NamedAPIResource versionGroup;
 
   @override
   String toString() {
@@ -1362,7 +1362,7 @@ class _$_Version implements _Version {
 
 abstract class _Version implements Version {
   const factory _Version(int id, String name, List<Name> names,
-          @JsonKey(name: 'version_group') NamedApiResource versionGroup) =
+          @JsonKey(name: 'version_group') NamedAPIResource versionGroup) =
       _$_Version;
 
   factory _Version.fromJson(Map<String, dynamic> json) = _$_Version.fromJson;
@@ -1387,7 +1387,7 @@ abstract class _Version implements Version {
   ///
   /// [VersionGroup]
   @JsonKey(name: 'version_group')
-  NamedApiResource get versionGroup;
+  NamedAPIResource get versionGroup;
   @override
   @JsonKey(ignore: true)
   _$VersionCopyWith<_Version> get copyWith =>
@@ -1406,12 +1406,12 @@ class _$VersionGroupTearOff {
       int id,
       String name,
       int order,
-      NamedApiResource generation,
+      NamedAPIResource generation,
       @JsonKey(name: 'move_learn_methods')
-          List<NamedApiResource> moveLearnMethods,
-      List<NamedApiResource> pokedexes,
-      List<NamedApiResource> regions,
-      List<NamedApiResource> versions) {
+          List<NamedAPIResource> moveLearnMethods,
+      List<NamedAPIResource> pokedexes,
+      List<NamedAPIResource> regions,
+      List<NamedAPIResource> versions) {
     return _VersionGroup(
       id,
       name,
@@ -1449,7 +1449,7 @@ mixin _$VersionGroup {
   /// See also:
   ///
   /// [Generation]
-  NamedApiResource get generation => throw _privateConstructorUsedError;
+  NamedAPIResource get generation => throw _privateConstructorUsedError;
 
   /// A list of methods in which Pokémon can learn moves in this version group.
   ///
@@ -1457,7 +1457,7 @@ mixin _$VersionGroup {
   ///
   /// [MoveLearnMethod]
   @JsonKey(name: 'move_learn_methods')
-  List<NamedApiResource> get moveLearnMethods =>
+  List<NamedAPIResource> get moveLearnMethods =>
       throw _privateConstructorUsedError;
 
   /// A list of Pokédexes introduces in this version group.
@@ -1465,21 +1465,21 @@ mixin _$VersionGroup {
   /// See also:
   ///
   /// [PokedexData]
-  List<NamedApiResource> get pokedexes => throw _privateConstructorUsedError;
+  List<NamedAPIResource> get pokedexes => throw _privateConstructorUsedError;
 
   /// A list of regions that can be visited in this version group.
   ///
   /// See also:
   ///
   /// [Region]
-  List<NamedApiResource> get regions => throw _privateConstructorUsedError;
+  List<NamedAPIResource> get regions => throw _privateConstructorUsedError;
 
   /// The versions this version group owns.
   ///
   /// See also:
   ///
   /// [Version]
-  List<NamedApiResource> get versions => throw _privateConstructorUsedError;
+  List<NamedAPIResource> get versions => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -1496,14 +1496,14 @@ abstract class $VersionGroupCopyWith<$Res> {
       {int id,
       String name,
       int order,
-      NamedApiResource generation,
+      NamedAPIResource generation,
       @JsonKey(name: 'move_learn_methods')
-          List<NamedApiResource> moveLearnMethods,
-      List<NamedApiResource> pokedexes,
-      List<NamedApiResource> regions,
-      List<NamedApiResource> versions});
+          List<NamedAPIResource> moveLearnMethods,
+      List<NamedAPIResource> pokedexes,
+      List<NamedAPIResource> regions,
+      List<NamedAPIResource> versions});
 
-  $NamedApiResourceCopyWith<$Res> get generation;
+  $NamedAPIResourceCopyWith<$Res> get generation;
 }
 
 /// @nodoc
@@ -1541,29 +1541,29 @@ class _$VersionGroupCopyWithImpl<$Res> implements $VersionGroupCopyWith<$Res> {
       generation: generation == freezed
           ? _value.generation
           : generation // ignore: cast_nullable_to_non_nullable
-              as NamedApiResource,
+              as NamedAPIResource,
       moveLearnMethods: moveLearnMethods == freezed
           ? _value.moveLearnMethods
           : moveLearnMethods // ignore: cast_nullable_to_non_nullable
-              as List<NamedApiResource>,
+              as List<NamedAPIResource>,
       pokedexes: pokedexes == freezed
           ? _value.pokedexes
           : pokedexes // ignore: cast_nullable_to_non_nullable
-              as List<NamedApiResource>,
+              as List<NamedAPIResource>,
       regions: regions == freezed
           ? _value.regions
           : regions // ignore: cast_nullable_to_non_nullable
-              as List<NamedApiResource>,
+              as List<NamedAPIResource>,
       versions: versions == freezed
           ? _value.versions
           : versions // ignore: cast_nullable_to_non_nullable
-              as List<NamedApiResource>,
+              as List<NamedAPIResource>,
     ));
   }
 
   @override
-  $NamedApiResourceCopyWith<$Res> get generation {
-    return $NamedApiResourceCopyWith<$Res>(_value.generation, (value) {
+  $NamedAPIResourceCopyWith<$Res> get generation {
+    return $NamedAPIResourceCopyWith<$Res>(_value.generation, (value) {
       return _then(_value.copyWith(generation: value));
     });
   }
@@ -1580,15 +1580,15 @@ abstract class _$VersionGroupCopyWith<$Res>
       {int id,
       String name,
       int order,
-      NamedApiResource generation,
+      NamedAPIResource generation,
       @JsonKey(name: 'move_learn_methods')
-          List<NamedApiResource> moveLearnMethods,
-      List<NamedApiResource> pokedexes,
-      List<NamedApiResource> regions,
-      List<NamedApiResource> versions});
+          List<NamedAPIResource> moveLearnMethods,
+      List<NamedAPIResource> pokedexes,
+      List<NamedAPIResource> regions,
+      List<NamedAPIResource> versions});
 
   @override
-  $NamedApiResourceCopyWith<$Res> get generation;
+  $NamedAPIResourceCopyWith<$Res> get generation;
 }
 
 /// @nodoc
@@ -1628,23 +1628,23 @@ class __$VersionGroupCopyWithImpl<$Res> extends _$VersionGroupCopyWithImpl<$Res>
       generation == freezed
           ? _value.generation
           : generation // ignore: cast_nullable_to_non_nullable
-              as NamedApiResource,
+              as NamedAPIResource,
       moveLearnMethods == freezed
           ? _value.moveLearnMethods
           : moveLearnMethods // ignore: cast_nullable_to_non_nullable
-              as List<NamedApiResource>,
+              as List<NamedAPIResource>,
       pokedexes == freezed
           ? _value.pokedexes
           : pokedexes // ignore: cast_nullable_to_non_nullable
-              as List<NamedApiResource>,
+              as List<NamedAPIResource>,
       regions == freezed
           ? _value.regions
           : regions // ignore: cast_nullable_to_non_nullable
-              as List<NamedApiResource>,
+              as List<NamedAPIResource>,
       versions == freezed
           ? _value.versions
           : versions // ignore: cast_nullable_to_non_nullable
-              as List<NamedApiResource>,
+              as List<NamedAPIResource>,
     ));
   }
 }
@@ -1685,7 +1685,7 @@ class _$_VersionGroup implements _VersionGroup {
   /// See also:
   ///
   /// [Generation]
-  final NamedApiResource generation;
+  final NamedAPIResource generation;
   @override
 
   /// A list of methods in which Pokémon can learn moves in this version group.
@@ -1694,7 +1694,7 @@ class _$_VersionGroup implements _VersionGroup {
   ///
   /// [MoveLearnMethod]
   @JsonKey(name: 'move_learn_methods')
-  final List<NamedApiResource> moveLearnMethods;
+  final List<NamedAPIResource> moveLearnMethods;
   @override
 
   /// A list of Pokédexes introduces in this version group.
@@ -1702,7 +1702,7 @@ class _$_VersionGroup implements _VersionGroup {
   /// See also:
   ///
   /// [PokedexData]
-  final List<NamedApiResource> pokedexes;
+  final List<NamedAPIResource> pokedexes;
   @override
 
   /// A list of regions that can be visited in this version group.
@@ -1710,7 +1710,7 @@ class _$_VersionGroup implements _VersionGroup {
   /// See also:
   ///
   /// [Region]
-  final List<NamedApiResource> regions;
+  final List<NamedAPIResource> regions;
   @override
 
   /// The versions this version group owns.
@@ -1718,7 +1718,7 @@ class _$_VersionGroup implements _VersionGroup {
   /// See also:
   ///
   /// [Version]
-  final List<NamedApiResource> versions;
+  final List<NamedAPIResource> versions;
 
   @override
   String toString() {
@@ -1770,12 +1770,12 @@ abstract class _VersionGroup implements VersionGroup {
       int id,
       String name,
       int order,
-      NamedApiResource generation,
+      NamedAPIResource generation,
       @JsonKey(name: 'move_learn_methods')
-          List<NamedApiResource> moveLearnMethods,
-      List<NamedApiResource> pokedexes,
-      List<NamedApiResource> regions,
-      List<NamedApiResource> versions) = _$_VersionGroup;
+          List<NamedAPIResource> moveLearnMethods,
+      List<NamedAPIResource> pokedexes,
+      List<NamedAPIResource> regions,
+      List<NamedAPIResource> versions) = _$_VersionGroup;
 
   factory _VersionGroup.fromJson(Map<String, dynamic> json) =
       _$_VersionGroup.fromJson;
@@ -1800,7 +1800,7 @@ abstract class _VersionGroup implements VersionGroup {
   /// See also:
   ///
   /// [Generation]
-  NamedApiResource get generation;
+  NamedAPIResource get generation;
   @override
 
   /// A list of methods in which Pokémon can learn moves in this version group.
@@ -1809,7 +1809,7 @@ abstract class _VersionGroup implements VersionGroup {
   ///
   /// [MoveLearnMethod]
   @JsonKey(name: 'move_learn_methods')
-  List<NamedApiResource> get moveLearnMethods;
+  List<NamedAPIResource> get moveLearnMethods;
   @override
 
   /// A list of Pokédexes introduces in this version group.
@@ -1817,7 +1817,7 @@ abstract class _VersionGroup implements VersionGroup {
   /// See also:
   ///
   /// [PokedexData]
-  List<NamedApiResource> get pokedexes;
+  List<NamedAPIResource> get pokedexes;
   @override
 
   /// A list of regions that can be visited in this version group.
@@ -1825,7 +1825,7 @@ abstract class _VersionGroup implements VersionGroup {
   /// See also:
   ///
   /// [Region]
-  List<NamedApiResource> get regions;
+  List<NamedAPIResource> get regions;
   @override
 
   /// The versions this version group owns.
@@ -1833,7 +1833,7 @@ abstract class _VersionGroup implements VersionGroup {
   /// See also:
   ///
   /// [Version]
-  List<NamedApiResource> get versions;
+  List<NamedAPIResource> get versions;
   @override
   @JsonKey(ignore: true)
   _$VersionGroupCopyWith<_VersionGroup> get copyWith =>

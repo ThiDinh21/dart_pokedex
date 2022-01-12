@@ -6,25 +6,25 @@ import 'package:poke_dart/src/base_converter_factory.dart';
 import 'package:poke_dart/src/converter_factory.dart';
 import 'package:poke_dart/src/endpoint.dart';
 
-class Pokedex extends PokeApiEndpoints {
-  Pokedex({PokeApiClient? client}) : super(client ?? PokeApiClient());
+class Pokedex extends PokeAPIEndpoints {
+  Pokedex({PokeAPIClient? client}) : super(client ?? PokeAPIClient());
 }
 
-class PokeApiClient {
+class PokeAPIClient {
   final Client _client;
   final BaseConverterFactory _converterFactory;
 
-  factory PokeApiClient({
+  factory PokeAPIClient({
     Client? client,
     BaseConverterFactory? converterFactory,
   }) {
-    return PokeApiClient._(
+    return PokeAPIClient._(
       client ?? Client(),
       converterFactory ?? ConverterFactory(),
     );
   }
 
-  PokeApiClient._(
+  PokeAPIClient._(
     this._client,
     this._converterFactory,
   );

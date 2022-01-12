@@ -44,7 +44,7 @@ class Berry with _$Berry {
     /// See also:
     ///
     /// [BerryFirmness]
-    NamedApiResource firmness,
+    NamedAPIResource firmness,
 
     /// A list of references to each flavor a berry can have
     /// and the potency of each of those flavors in regard to this berry.
@@ -56,14 +56,14 @@ class Berry with _$Berry {
     /// See also:
     ///
     /// [Item]
-    NamedApiResource item,
+    NamedAPIResource item,
 
     /// The type inherited by "Natural Gift" when used with this Berry.
     ///
     /// See also:
     ///
     /// [Type]
-    @JsonKey(name: 'natural_gift_type') NamedApiResource naturalGiftType,
+    @JsonKey(name: 'natural_gift_type') NamedAPIResource naturalGiftType,
   ) = _Berry;
 
   factory Berry.fromJson(Json json) => _$BerryFromJson(json);
@@ -80,7 +80,7 @@ class BerryFlavorMap with _$BerryFlavorMap {
     /// See also:
     ///
     /// [BerryFlavor]
-    NamedApiResource flavor,
+    NamedAPIResource flavor,
   ) = _BerryFlavorMap;
 
   factory BerryFlavorMap.fromJson(Json json) => _$BerryFlavorMapFromJson(json);
@@ -100,7 +100,7 @@ class BerryFirmness with _$BerryFirmness {
     /// See also:
     ///
     /// [Berry]
-    List<NamedApiResource> berries,
+    List<NamedAPIResource> berries,
 
     /// The name of this resource listed in different languages.
     List<Name> names,
@@ -126,7 +126,7 @@ class BerryFlavor with _$BerryFlavor {
     /// See also:
     ///
     /// [ContestType]
-    @JsonKey(name: 'contest_type') NamedApiResource contestType,
+    @JsonKey(name: 'contest_type') NamedAPIResource contestType,
 
     /// The name of this resource listed in different languages.
     List<Name> names,
@@ -146,7 +146,7 @@ class FlavorBerryMap with _$FlavorBerryMap {
     /// See also:
     ///
     /// [Berry]
-    NamedApiResource berry,
+    NamedAPIResource berry,
   ) = _FlavorBerryMap;
 
   factory FlavorBerryMap.fromJson(Json json) => _$FlavorBerryMapFromJson(json);

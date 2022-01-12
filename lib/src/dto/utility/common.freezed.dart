@@ -14,54 +14,54 @@ T _$identity<T>(T value) => value;
 final _privateConstructorUsedError = UnsupportedError(
     'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
-ApiResource _$ApiResourceFromJson(Map<String, dynamic> json) {
-  return _ApiResource.fromJson(json);
+APIResource _$APIResourceFromJson(Map<String, dynamic> json) {
+  return _APIResource.fromJson(json);
 }
 
 /// @nodoc
-class _$ApiResourceTearOff {
-  const _$ApiResourceTearOff();
+class _$APIResourceTearOff {
+  const _$APIResourceTearOff();
 
-  _ApiResource call(String url) {
-    return _ApiResource(
+  _APIResource call(String url) {
+    return _APIResource(
       url,
     );
   }
 
-  ApiResource fromJson(Map<String, Object?> json) {
-    return ApiResource.fromJson(json);
+  APIResource fromJson(Map<String, Object?> json) {
+    return APIResource.fromJson(json);
   }
 }
 
 /// @nodoc
-const $ApiResource = _$ApiResourceTearOff();
+const $APIResource = _$APIResourceTearOff();
 
 /// @nodoc
-mixin _$ApiResource {
+mixin _$APIResource {
   /// The URL of the referenced resource.
   String get url => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $ApiResourceCopyWith<ApiResource> get copyWith =>
+  $APIResourceCopyWith<APIResource> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $ApiResourceCopyWith<$Res> {
-  factory $ApiResourceCopyWith(
-          ApiResource value, $Res Function(ApiResource) then) =
-      _$ApiResourceCopyWithImpl<$Res>;
+abstract class $APIResourceCopyWith<$Res> {
+  factory $APIResourceCopyWith(
+          APIResource value, $Res Function(APIResource) then) =
+      _$APIResourceCopyWithImpl<$Res>;
   $Res call({String url});
 }
 
 /// @nodoc
-class _$ApiResourceCopyWithImpl<$Res> implements $ApiResourceCopyWith<$Res> {
-  _$ApiResourceCopyWithImpl(this._value, this._then);
+class _$APIResourceCopyWithImpl<$Res> implements $APIResourceCopyWith<$Res> {
+  _$APIResourceCopyWithImpl(this._value, this._then);
 
-  final ApiResource _value;
+  final APIResource _value;
   // ignore: unused_field
-  final $Res Function(ApiResource) _then;
+  final $Res Function(APIResource) _then;
 
   @override
   $Res call({
@@ -77,30 +77,30 @@ class _$ApiResourceCopyWithImpl<$Res> implements $ApiResourceCopyWith<$Res> {
 }
 
 /// @nodoc
-abstract class _$ApiResourceCopyWith<$Res>
-    implements $ApiResourceCopyWith<$Res> {
-  factory _$ApiResourceCopyWith(
-          _ApiResource value, $Res Function(_ApiResource) then) =
-      __$ApiResourceCopyWithImpl<$Res>;
+abstract class _$APIResourceCopyWith<$Res>
+    implements $APIResourceCopyWith<$Res> {
+  factory _$APIResourceCopyWith(
+          _APIResource value, $Res Function(_APIResource) then) =
+      __$APIResourceCopyWithImpl<$Res>;
   @override
   $Res call({String url});
 }
 
 /// @nodoc
-class __$ApiResourceCopyWithImpl<$Res> extends _$ApiResourceCopyWithImpl<$Res>
-    implements _$ApiResourceCopyWith<$Res> {
-  __$ApiResourceCopyWithImpl(
-      _ApiResource _value, $Res Function(_ApiResource) _then)
-      : super(_value, (v) => _then(v as _ApiResource));
+class __$APIResourceCopyWithImpl<$Res> extends _$APIResourceCopyWithImpl<$Res>
+    implements _$APIResourceCopyWith<$Res> {
+  __$APIResourceCopyWithImpl(
+      _APIResource _value, $Res Function(_APIResource) _then)
+      : super(_value, (v) => _then(v as _APIResource));
 
   @override
-  _ApiResource get _value => super._value as _ApiResource;
+  _APIResource get _value => super._value as _APIResource;
 
   @override
   $Res call({
     Object? url = freezed,
   }) {
-    return _then(_ApiResource(
+    return _then(_APIResource(
       url == freezed
           ? _value.url
           : url // ignore: cast_nullable_to_non_nullable
@@ -111,11 +111,11 @@ class __$ApiResourceCopyWithImpl<$Res> extends _$ApiResourceCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_ApiResource implements _ApiResource {
-  const _$_ApiResource(this.url);
+class _$_APIResource implements _APIResource {
+  const _$_APIResource(this.url);
 
-  factory _$_ApiResource.fromJson(Map<String, dynamic> json) =>
-      _$$_ApiResourceFromJson(json);
+  factory _$_APIResource.fromJson(Map<String, dynamic> json) =>
+      _$$_APIResourceFromJson(json);
 
   @override
 
@@ -124,14 +124,14 @@ class _$_ApiResource implements _ApiResource {
 
   @override
   String toString() {
-    return 'ApiResource(url: $url)';
+    return 'APIResource(url: $url)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _ApiResource &&
+            other is _APIResource &&
             const DeepCollectionEquality().equals(other.url, url));
   }
 
@@ -141,20 +141,20 @@ class _$_ApiResource implements _ApiResource {
 
   @JsonKey(ignore: true)
   @override
-  _$ApiResourceCopyWith<_ApiResource> get copyWith =>
-      __$ApiResourceCopyWithImpl<_ApiResource>(this, _$identity);
+  _$APIResourceCopyWith<_APIResource> get copyWith =>
+      __$APIResourceCopyWithImpl<_APIResource>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_ApiResourceToJson(this);
+    return _$$_APIResourceToJson(this);
   }
 }
 
-abstract class _ApiResource implements ApiResource {
-  const factory _ApiResource(String url) = _$_ApiResource;
+abstract class _APIResource implements APIResource {
+  const factory _APIResource(String url) = _$_APIResource;
 
-  factory _ApiResource.fromJson(Map<String, dynamic> json) =
-      _$_ApiResource.fromJson;
+  factory _APIResource.fromJson(Map<String, dynamic> json) =
+      _$_APIResource.fromJson;
 
   @override
 
@@ -162,7 +162,7 @@ abstract class _ApiResource implements ApiResource {
   String get url;
   @override
   @JsonKey(ignore: true)
-  _$ApiResourceCopyWith<_ApiResource> get copyWith =>
+  _$APIResourceCopyWith<_APIResource> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
@@ -174,7 +174,7 @@ Description _$DescriptionFromJson(Map<String, dynamic> json) {
 class _$DescriptionTearOff {
   const _$DescriptionTearOff();
 
-  _Description call(String description, NamedApiResource language) {
+  _Description call(String description, NamedAPIResource language) {
     return _Description(
       description,
       language,
@@ -199,7 +199,7 @@ mixin _$Description {
   /// See also:
   ///
   /// [Language]
-  NamedApiResource get language => throw _privateConstructorUsedError;
+  NamedAPIResource get language => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -212,9 +212,9 @@ abstract class $DescriptionCopyWith<$Res> {
   factory $DescriptionCopyWith(
           Description value, $Res Function(Description) then) =
       _$DescriptionCopyWithImpl<$Res>;
-  $Res call({String description, NamedApiResource language});
+  $Res call({String description, NamedAPIResource language});
 
-  $NamedApiResourceCopyWith<$Res> get language;
+  $NamedAPIResourceCopyWith<$Res> get language;
 }
 
 /// @nodoc
@@ -238,13 +238,13 @@ class _$DescriptionCopyWithImpl<$Res> implements $DescriptionCopyWith<$Res> {
       language: language == freezed
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
-              as NamedApiResource,
+              as NamedAPIResource,
     ));
   }
 
   @override
-  $NamedApiResourceCopyWith<$Res> get language {
-    return $NamedApiResourceCopyWith<$Res>(_value.language, (value) {
+  $NamedAPIResourceCopyWith<$Res> get language {
+    return $NamedAPIResourceCopyWith<$Res>(_value.language, (value) {
       return _then(_value.copyWith(language: value));
     });
   }
@@ -257,10 +257,10 @@ abstract class _$DescriptionCopyWith<$Res>
           _Description value, $Res Function(_Description) then) =
       __$DescriptionCopyWithImpl<$Res>;
   @override
-  $Res call({String description, NamedApiResource language});
+  $Res call({String description, NamedAPIResource language});
 
   @override
-  $NamedApiResourceCopyWith<$Res> get language;
+  $NamedAPIResourceCopyWith<$Res> get language;
 }
 
 /// @nodoc
@@ -286,7 +286,7 @@ class __$DescriptionCopyWithImpl<$Res> extends _$DescriptionCopyWithImpl<$Res>
       language == freezed
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
-              as NamedApiResource,
+              as NamedAPIResource,
     ));
   }
 }
@@ -310,7 +310,7 @@ class _$_Description implements _Description {
   /// See also:
   ///
   /// [Language]
-  final NamedApiResource language;
+  final NamedAPIResource language;
 
   @override
   String toString() {
@@ -345,7 +345,7 @@ class _$_Description implements _Description {
 }
 
 abstract class _Description implements Description {
-  const factory _Description(String description, NamedApiResource language) =
+  const factory _Description(String description, NamedAPIResource language) =
       _$_Description;
 
   factory _Description.fromJson(Map<String, dynamic> json) =
@@ -362,7 +362,7 @@ abstract class _Description implements Description {
   /// See also:
   ///
   /// [Language]
-  NamedApiResource get language;
+  NamedAPIResource get language;
   @override
   @JsonKey(ignore: true)
   _$DescriptionCopyWith<_Description> get copyWith =>
@@ -377,7 +377,7 @@ Effect _$EffectFromJson(Map<String, dynamic> json) {
 class _$EffectTearOff {
   const _$EffectTearOff();
 
-  _Effect call(String effect, NamedApiResource language) {
+  _Effect call(String effect, NamedAPIResource language) {
     return _Effect(
       effect,
       language,
@@ -402,7 +402,7 @@ mixin _$Effect {
   /// See also:
   ///
   /// [Language]
-  NamedApiResource get language => throw _privateConstructorUsedError;
+  NamedAPIResource get language => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -413,9 +413,9 @@ mixin _$Effect {
 abstract class $EffectCopyWith<$Res> {
   factory $EffectCopyWith(Effect value, $Res Function(Effect) then) =
       _$EffectCopyWithImpl<$Res>;
-  $Res call({String effect, NamedApiResource language});
+  $Res call({String effect, NamedAPIResource language});
 
-  $NamedApiResourceCopyWith<$Res> get language;
+  $NamedAPIResourceCopyWith<$Res> get language;
 }
 
 /// @nodoc
@@ -439,13 +439,13 @@ class _$EffectCopyWithImpl<$Res> implements $EffectCopyWith<$Res> {
       language: language == freezed
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
-              as NamedApiResource,
+              as NamedAPIResource,
     ));
   }
 
   @override
-  $NamedApiResourceCopyWith<$Res> get language {
-    return $NamedApiResourceCopyWith<$Res>(_value.language, (value) {
+  $NamedAPIResourceCopyWith<$Res> get language {
+    return $NamedAPIResourceCopyWith<$Res>(_value.language, (value) {
       return _then(_value.copyWith(language: value));
     });
   }
@@ -456,10 +456,10 @@ abstract class _$EffectCopyWith<$Res> implements $EffectCopyWith<$Res> {
   factory _$EffectCopyWith(_Effect value, $Res Function(_Effect) then) =
       __$EffectCopyWithImpl<$Res>;
   @override
-  $Res call({String effect, NamedApiResource language});
+  $Res call({String effect, NamedAPIResource language});
 
   @override
-  $NamedApiResourceCopyWith<$Res> get language;
+  $NamedAPIResourceCopyWith<$Res> get language;
 }
 
 /// @nodoc
@@ -484,7 +484,7 @@ class __$EffectCopyWithImpl<$Res> extends _$EffectCopyWithImpl<$Res>
       language == freezed
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
-              as NamedApiResource,
+              as NamedAPIResource,
     ));
   }
 }
@@ -508,7 +508,7 @@ class _$_Effect implements _Effect {
   /// See also:
   ///
   /// [Language]
-  final NamedApiResource language;
+  final NamedAPIResource language;
 
   @override
   String toString() {
@@ -542,7 +542,7 @@ class _$_Effect implements _Effect {
 }
 
 abstract class _Effect implements Effect {
-  const factory _Effect(String effect, NamedApiResource language) = _$_Effect;
+  const factory _Effect(String effect, NamedAPIResource language) = _$_Effect;
 
   factory _Effect.fromJson(Map<String, dynamic> json) = _$_Effect.fromJson;
 
@@ -557,7 +557,7 @@ abstract class _Effect implements Effect {
   /// See also:
   ///
   /// [Language]
-  NamedApiResource get language;
+  NamedAPIResource get language;
   @override
   @JsonKey(ignore: true)
   _$EffectCopyWith<_Effect> get copyWith => throw _privateConstructorUsedError;
@@ -574,9 +574,9 @@ class _$EncounterTearOff {
   _Encounter call(
       @JsonKey(name: 'min_level') int minLevel,
       @JsonKey(name: 'max_level') int maxLevel,
-      @JsonKey(name: 'condition_values') List<NamedApiResource> conditionValues,
+      @JsonKey(name: 'condition_values') List<NamedAPIResource> conditionValues,
       int chance,
-      NamedApiResource method) {
+      NamedAPIResource method) {
     return _Encounter(
       minLevel,
       maxLevel,
@@ -610,7 +610,7 @@ mixin _$Encounter {
   ///
   /// [EncounterConditionValue]
   @JsonKey(name: 'condition_values')
-  List<NamedApiResource> get conditionValues =>
+  List<NamedAPIResource> get conditionValues =>
       throw _privateConstructorUsedError;
 
   /// Percent chance that this encounter will occur.
@@ -621,7 +621,7 @@ mixin _$Encounter {
   /// See also:
   ///
   /// [EncounterMethod]
-  NamedApiResource get method => throw _privateConstructorUsedError;
+  NamedAPIResource get method => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -636,11 +636,11 @@ abstract class $EncounterCopyWith<$Res> {
   $Res call(
       {@JsonKey(name: 'min_level') int minLevel,
       @JsonKey(name: 'max_level') int maxLevel,
-      @JsonKey(name: 'condition_values') List<NamedApiResource> conditionValues,
+      @JsonKey(name: 'condition_values') List<NamedAPIResource> conditionValues,
       int chance,
-      NamedApiResource method});
+      NamedAPIResource method});
 
-  $NamedApiResourceCopyWith<$Res> get method;
+  $NamedAPIResourceCopyWith<$Res> get method;
 }
 
 /// @nodoc
@@ -671,7 +671,7 @@ class _$EncounterCopyWithImpl<$Res> implements $EncounterCopyWith<$Res> {
       conditionValues: conditionValues == freezed
           ? _value.conditionValues
           : conditionValues // ignore: cast_nullable_to_non_nullable
-              as List<NamedApiResource>,
+              as List<NamedAPIResource>,
       chance: chance == freezed
           ? _value.chance
           : chance // ignore: cast_nullable_to_non_nullable
@@ -679,13 +679,13 @@ class _$EncounterCopyWithImpl<$Res> implements $EncounterCopyWith<$Res> {
       method: method == freezed
           ? _value.method
           : method // ignore: cast_nullable_to_non_nullable
-              as NamedApiResource,
+              as NamedAPIResource,
     ));
   }
 
   @override
-  $NamedApiResourceCopyWith<$Res> get method {
-    return $NamedApiResourceCopyWith<$Res>(_value.method, (value) {
+  $NamedAPIResourceCopyWith<$Res> get method {
+    return $NamedAPIResourceCopyWith<$Res>(_value.method, (value) {
       return _then(_value.copyWith(method: value));
     });
   }
@@ -700,12 +700,12 @@ abstract class _$EncounterCopyWith<$Res> implements $EncounterCopyWith<$Res> {
   $Res call(
       {@JsonKey(name: 'min_level') int minLevel,
       @JsonKey(name: 'max_level') int maxLevel,
-      @JsonKey(name: 'condition_values') List<NamedApiResource> conditionValues,
+      @JsonKey(name: 'condition_values') List<NamedAPIResource> conditionValues,
       int chance,
-      NamedApiResource method});
+      NamedAPIResource method});
 
   @override
-  $NamedApiResourceCopyWith<$Res> get method;
+  $NamedAPIResourceCopyWith<$Res> get method;
 }
 
 /// @nodoc
@@ -737,7 +737,7 @@ class __$EncounterCopyWithImpl<$Res> extends _$EncounterCopyWithImpl<$Res>
       conditionValues == freezed
           ? _value.conditionValues
           : conditionValues // ignore: cast_nullable_to_non_nullable
-              as List<NamedApiResource>,
+              as List<NamedAPIResource>,
       chance == freezed
           ? _value.chance
           : chance // ignore: cast_nullable_to_non_nullable
@@ -745,7 +745,7 @@ class __$EncounterCopyWithImpl<$Res> extends _$EncounterCopyWithImpl<$Res>
       method == freezed
           ? _value.method
           : method // ignore: cast_nullable_to_non_nullable
-              as NamedApiResource,
+              as NamedAPIResource,
     ));
   }
 }
@@ -781,7 +781,7 @@ class _$_Encounter implements _Encounter {
   ///
   /// [EncounterConditionValue]
   @JsonKey(name: 'condition_values')
-  final List<NamedApiResource> conditionValues;
+  final List<NamedAPIResource> conditionValues;
   @override
 
   /// Percent chance that this encounter will occur.
@@ -793,7 +793,7 @@ class _$_Encounter implements _Encounter {
   /// See also:
   ///
   /// [EncounterMethod]
-  final NamedApiResource method;
+  final NamedAPIResource method;
 
   @override
   String toString() {
@@ -837,9 +837,9 @@ abstract class _Encounter implements Encounter {
   const factory _Encounter(
       @JsonKey(name: 'min_level') int minLevel,
       @JsonKey(name: 'max_level') int maxLevel,
-      @JsonKey(name: 'condition_values') List<NamedApiResource> conditionValues,
+      @JsonKey(name: 'condition_values') List<NamedAPIResource> conditionValues,
       int chance,
-      NamedApiResource method) = _$_Encounter;
+      NamedAPIResource method) = _$_Encounter;
 
   factory _Encounter.fromJson(Map<String, dynamic> json) =
       _$_Encounter.fromJson;
@@ -862,7 +862,7 @@ abstract class _Encounter implements Encounter {
   ///
   /// [EncounterConditionValue]
   @JsonKey(name: 'condition_values')
-  List<NamedApiResource> get conditionValues;
+  List<NamedAPIResource> get conditionValues;
   @override
 
   /// Percent chance that this encounter will occur.
@@ -874,7 +874,7 @@ abstract class _Encounter implements Encounter {
   /// See also:
   ///
   /// [EncounterMethod]
-  NamedApiResource get method;
+  NamedAPIResource get method;
   @override
   @JsonKey(ignore: true)
   _$EncounterCopyWith<_Encounter> get copyWith =>
@@ -890,7 +890,7 @@ class _$FlavorTextTearOff {
   const _$FlavorTextTearOff();
 
   _FlavorText call(@JsonKey(name: 'flavor_text') String flavorText,
-      NamedApiResource language, NamedApiResource version) {
+      NamedAPIResource language, NamedAPIResource version) {
     return _FlavorText(
       flavorText,
       language,
@@ -917,14 +917,14 @@ mixin _$FlavorText {
   /// See also:
   ///
   /// [Language]
-  NamedApiResource get language => throw _privateConstructorUsedError;
+  NamedAPIResource get language => throw _privateConstructorUsedError;
 
   /// The game version this flavor text is extracted from.
   ///
   /// See also:
   ///
   /// [Version]
-  NamedApiResource get version => throw _privateConstructorUsedError;
+  NamedAPIResource get version => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -939,11 +939,11 @@ abstract class $FlavorTextCopyWith<$Res> {
       _$FlavorTextCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'flavor_text') String flavorText,
-      NamedApiResource language,
-      NamedApiResource version});
+      NamedAPIResource language,
+      NamedAPIResource version});
 
-  $NamedApiResourceCopyWith<$Res> get language;
-  $NamedApiResourceCopyWith<$Res> get version;
+  $NamedAPIResourceCopyWith<$Res> get language;
+  $NamedAPIResourceCopyWith<$Res> get version;
 }
 
 /// @nodoc
@@ -968,24 +968,24 @@ class _$FlavorTextCopyWithImpl<$Res> implements $FlavorTextCopyWith<$Res> {
       language: language == freezed
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
-              as NamedApiResource,
+              as NamedAPIResource,
       version: version == freezed
           ? _value.version
           : version // ignore: cast_nullable_to_non_nullable
-              as NamedApiResource,
+              as NamedAPIResource,
     ));
   }
 
   @override
-  $NamedApiResourceCopyWith<$Res> get language {
-    return $NamedApiResourceCopyWith<$Res>(_value.language, (value) {
+  $NamedAPIResourceCopyWith<$Res> get language {
+    return $NamedAPIResourceCopyWith<$Res>(_value.language, (value) {
       return _then(_value.copyWith(language: value));
     });
   }
 
   @override
-  $NamedApiResourceCopyWith<$Res> get version {
-    return $NamedApiResourceCopyWith<$Res>(_value.version, (value) {
+  $NamedAPIResourceCopyWith<$Res> get version {
+    return $NamedAPIResourceCopyWith<$Res>(_value.version, (value) {
       return _then(_value.copyWith(version: value));
     });
   }
@@ -999,13 +999,13 @@ abstract class _$FlavorTextCopyWith<$Res> implements $FlavorTextCopyWith<$Res> {
   @override
   $Res call(
       {@JsonKey(name: 'flavor_text') String flavorText,
-      NamedApiResource language,
-      NamedApiResource version});
+      NamedAPIResource language,
+      NamedAPIResource version});
 
   @override
-  $NamedApiResourceCopyWith<$Res> get language;
+  $NamedAPIResourceCopyWith<$Res> get language;
   @override
-  $NamedApiResourceCopyWith<$Res> get version;
+  $NamedAPIResourceCopyWith<$Res> get version;
 }
 
 /// @nodoc
@@ -1032,11 +1032,11 @@ class __$FlavorTextCopyWithImpl<$Res> extends _$FlavorTextCopyWithImpl<$Res>
       language == freezed
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
-              as NamedApiResource,
+              as NamedAPIResource,
       version == freezed
           ? _value.version
           : version // ignore: cast_nullable_to_non_nullable
-              as NamedApiResource,
+              as NamedAPIResource,
     ));
   }
 }
@@ -1062,7 +1062,7 @@ class _$_FlavorText implements _FlavorText {
   /// See also:
   ///
   /// [Language]
-  final NamedApiResource language;
+  final NamedAPIResource language;
   @override
 
   /// The game version this flavor text is extracted from.
@@ -1070,7 +1070,7 @@ class _$_FlavorText implements _FlavorText {
   /// See also:
   ///
   /// [Version]
-  final NamedApiResource version;
+  final NamedAPIResource version;
 
   @override
   String toString() {
@@ -1108,7 +1108,7 @@ class _$_FlavorText implements _FlavorText {
 
 abstract class _FlavorText implements FlavorText {
   const factory _FlavorText(@JsonKey(name: 'flavor_text') String flavorText,
-      NamedApiResource language, NamedApiResource version) = _$_FlavorText;
+      NamedAPIResource language, NamedAPIResource version) = _$_FlavorText;
 
   factory _FlavorText.fromJson(Map<String, dynamic> json) =
       _$_FlavorText.fromJson;
@@ -1125,7 +1125,7 @@ abstract class _FlavorText implements FlavorText {
   /// See also:
   ///
   /// [Language]
-  NamedApiResource get language;
+  NamedAPIResource get language;
   @override
 
   /// The game version this flavor text is extracted from.
@@ -1133,7 +1133,7 @@ abstract class _FlavorText implements FlavorText {
   /// See also:
   ///
   /// [Version]
-  NamedApiResource get version;
+  NamedAPIResource get version;
   @override
   @JsonKey(ignore: true)
   _$FlavorTextCopyWith<_FlavorText> get copyWith =>
@@ -1149,7 +1149,7 @@ class _$GenerationGameIndexTearOff {
   const _$GenerationGameIndexTearOff();
 
   _GenerationGameIndex call(
-      @JsonKey(name: 'game_index') int gameIndex, NamedApiResource generation) {
+      @JsonKey(name: 'game_index') int gameIndex, NamedAPIResource generation) {
     return _GenerationGameIndex(
       gameIndex,
       generation,
@@ -1175,7 +1175,7 @@ mixin _$GenerationGameIndex {
   /// See also:
   ///
   /// [Generation]
-  NamedApiResource get generation => throw _privateConstructorUsedError;
+  NamedAPIResource get generation => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -1190,9 +1190,9 @@ abstract class $GenerationGameIndexCopyWith<$Res> {
       _$GenerationGameIndexCopyWithImpl<$Res>;
   $Res call(
       {@JsonKey(name: 'game_index') int gameIndex,
-      NamedApiResource generation});
+      NamedAPIResource generation});
 
-  $NamedApiResourceCopyWith<$Res> get generation;
+  $NamedAPIResourceCopyWith<$Res> get generation;
 }
 
 /// @nodoc
@@ -1217,13 +1217,13 @@ class _$GenerationGameIndexCopyWithImpl<$Res>
       generation: generation == freezed
           ? _value.generation
           : generation // ignore: cast_nullable_to_non_nullable
-              as NamedApiResource,
+              as NamedAPIResource,
     ));
   }
 
   @override
-  $NamedApiResourceCopyWith<$Res> get generation {
-    return $NamedApiResourceCopyWith<$Res>(_value.generation, (value) {
+  $NamedAPIResourceCopyWith<$Res> get generation {
+    return $NamedAPIResourceCopyWith<$Res>(_value.generation, (value) {
       return _then(_value.copyWith(generation: value));
     });
   }
@@ -1238,10 +1238,10 @@ abstract class _$GenerationGameIndexCopyWith<$Res>
   @override
   $Res call(
       {@JsonKey(name: 'game_index') int gameIndex,
-      NamedApiResource generation});
+      NamedAPIResource generation});
 
   @override
-  $NamedApiResourceCopyWith<$Res> get generation;
+  $NamedAPIResourceCopyWith<$Res> get generation;
 }
 
 /// @nodoc
@@ -1268,7 +1268,7 @@ class __$GenerationGameIndexCopyWithImpl<$Res>
       generation == freezed
           ? _value.generation
           : generation // ignore: cast_nullable_to_non_nullable
-              as NamedApiResource,
+              as NamedAPIResource,
     ));
   }
 }
@@ -1294,7 +1294,7 @@ class _$_GenerationGameIndex implements _GenerationGameIndex {
   /// See also:
   ///
   /// [Generation]
-  final NamedApiResource generation;
+  final NamedAPIResource generation;
 
   @override
   String toString() {
@@ -1331,7 +1331,7 @@ class _$_GenerationGameIndex implements _GenerationGameIndex {
 
 abstract class _GenerationGameIndex implements GenerationGameIndex {
   const factory _GenerationGameIndex(@JsonKey(name: 'game_index') int gameIndex,
-      NamedApiResource generation) = _$_GenerationGameIndex;
+      NamedAPIResource generation) = _$_GenerationGameIndex;
 
   factory _GenerationGameIndex.fromJson(Map<String, dynamic> json) =
       _$_GenerationGameIndex.fromJson;
@@ -1348,7 +1348,7 @@ abstract class _GenerationGameIndex implements GenerationGameIndex {
   /// See also:
   ///
   /// [Generation]
-  NamedApiResource get generation;
+  NamedAPIResource get generation;
   @override
   @JsonKey(ignore: true)
   _$GenerationGameIndexCopyWith<_GenerationGameIndex> get copyWith =>
@@ -1363,8 +1363,8 @@ MachineVersionDetail _$MachineVersionDetailFromJson(Map<String, dynamic> json) {
 class _$MachineVersionDetailTearOff {
   const _$MachineVersionDetailTearOff();
 
-  _MachineVersionDetail call(ApiResource machine,
-      @JsonKey(name: 'version_group') NamedApiResource versionGroup) {
+  _MachineVersionDetail call(APIResource machine,
+      @JsonKey(name: 'version_group') NamedAPIResource versionGroup) {
     return _MachineVersionDetail(
       machine,
       versionGroup,
@@ -1386,7 +1386,7 @@ mixin _$MachineVersionDetail {
   /// See also:
   ///
   /// [Machine]
-  ApiResource get machine => throw _privateConstructorUsedError;
+  APIResource get machine => throw _privateConstructorUsedError;
 
   /// The version group of this specific machine.
   ///
@@ -1394,7 +1394,7 @@ mixin _$MachineVersionDetail {
   ///
   /// [VersionGroup]
   @JsonKey(name: 'version_group')
-  NamedApiResource get versionGroup => throw _privateConstructorUsedError;
+  NamedAPIResource get versionGroup => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -1408,11 +1408,11 @@ abstract class $MachineVersionDetailCopyWith<$Res> {
           $Res Function(MachineVersionDetail) then) =
       _$MachineVersionDetailCopyWithImpl<$Res>;
   $Res call(
-      {ApiResource machine,
-      @JsonKey(name: 'version_group') NamedApiResource versionGroup});
+      {APIResource machine,
+      @JsonKey(name: 'version_group') NamedAPIResource versionGroup});
 
-  $ApiResourceCopyWith<$Res> get machine;
-  $NamedApiResourceCopyWith<$Res> get versionGroup;
+  $APIResourceCopyWith<$Res> get machine;
+  $NamedAPIResourceCopyWith<$Res> get versionGroup;
 }
 
 /// @nodoc
@@ -1433,24 +1433,24 @@ class _$MachineVersionDetailCopyWithImpl<$Res>
       machine: machine == freezed
           ? _value.machine
           : machine // ignore: cast_nullable_to_non_nullable
-              as ApiResource,
+              as APIResource,
       versionGroup: versionGroup == freezed
           ? _value.versionGroup
           : versionGroup // ignore: cast_nullable_to_non_nullable
-              as NamedApiResource,
+              as NamedAPIResource,
     ));
   }
 
   @override
-  $ApiResourceCopyWith<$Res> get machine {
-    return $ApiResourceCopyWith<$Res>(_value.machine, (value) {
+  $APIResourceCopyWith<$Res> get machine {
+    return $APIResourceCopyWith<$Res>(_value.machine, (value) {
       return _then(_value.copyWith(machine: value));
     });
   }
 
   @override
-  $NamedApiResourceCopyWith<$Res> get versionGroup {
-    return $NamedApiResourceCopyWith<$Res>(_value.versionGroup, (value) {
+  $NamedAPIResourceCopyWith<$Res> get versionGroup {
+    return $NamedAPIResourceCopyWith<$Res>(_value.versionGroup, (value) {
       return _then(_value.copyWith(versionGroup: value));
     });
   }
@@ -1464,13 +1464,13 @@ abstract class _$MachineVersionDetailCopyWith<$Res>
       __$MachineVersionDetailCopyWithImpl<$Res>;
   @override
   $Res call(
-      {ApiResource machine,
-      @JsonKey(name: 'version_group') NamedApiResource versionGroup});
+      {APIResource machine,
+      @JsonKey(name: 'version_group') NamedAPIResource versionGroup});
 
   @override
-  $ApiResourceCopyWith<$Res> get machine;
+  $APIResourceCopyWith<$Res> get machine;
   @override
-  $NamedApiResourceCopyWith<$Res> get versionGroup;
+  $NamedAPIResourceCopyWith<$Res> get versionGroup;
 }
 
 /// @nodoc
@@ -1493,11 +1493,11 @@ class __$MachineVersionDetailCopyWithImpl<$Res>
       machine == freezed
           ? _value.machine
           : machine // ignore: cast_nullable_to_non_nullable
-              as ApiResource,
+              as APIResource,
       versionGroup == freezed
           ? _value.versionGroup
           : versionGroup // ignore: cast_nullable_to_non_nullable
-              as NamedApiResource,
+              as NamedAPIResource,
     ));
   }
 }
@@ -1518,7 +1518,7 @@ class _$_MachineVersionDetail implements _MachineVersionDetail {
   /// See also:
   ///
   /// [Machine]
-  final ApiResource machine;
+  final APIResource machine;
   @override
 
   /// The version group of this specific machine.
@@ -1527,7 +1527,7 @@ class _$_MachineVersionDetail implements _MachineVersionDetail {
   ///
   /// [VersionGroup]
   @JsonKey(name: 'version_group')
-  final NamedApiResource versionGroup;
+  final NamedAPIResource versionGroup;
 
   @override
   String toString() {
@@ -1563,8 +1563,8 @@ class _$_MachineVersionDetail implements _MachineVersionDetail {
 }
 
 abstract class _MachineVersionDetail implements MachineVersionDetail {
-  const factory _MachineVersionDetail(ApiResource machine,
-          @JsonKey(name: 'version_group') NamedApiResource versionGroup) =
+  const factory _MachineVersionDetail(APIResource machine,
+          @JsonKey(name: 'version_group') NamedAPIResource versionGroup) =
       _$_MachineVersionDetail;
 
   factory _MachineVersionDetail.fromJson(Map<String, dynamic> json) =
@@ -1577,7 +1577,7 @@ abstract class _MachineVersionDetail implements MachineVersionDetail {
   /// See also:
   ///
   /// [Machine]
-  ApiResource get machine;
+  APIResource get machine;
   @override
 
   /// The version group of this specific machine.
@@ -1586,7 +1586,7 @@ abstract class _MachineVersionDetail implements MachineVersionDetail {
   ///
   /// [VersionGroup]
   @JsonKey(name: 'version_group')
-  NamedApiResource get versionGroup;
+  NamedAPIResource get versionGroup;
   @override
   @JsonKey(ignore: true)
   _$MachineVersionDetailCopyWith<_MachineVersionDetail> get copyWith =>
@@ -1601,7 +1601,7 @@ Name _$NameFromJson(Map<String, dynamic> json) {
 class _$NameTearOff {
   const _$NameTearOff();
 
-  _Name call(String name, NamedApiResource language) {
+  _Name call(String name, NamedAPIResource language) {
     return _Name(
       name,
       language,
@@ -1626,7 +1626,7 @@ mixin _$Name {
   /// See also:
   ///
   /// [Language]
-  NamedApiResource get language => throw _privateConstructorUsedError;
+  NamedAPIResource get language => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -1637,9 +1637,9 @@ mixin _$Name {
 abstract class $NameCopyWith<$Res> {
   factory $NameCopyWith(Name value, $Res Function(Name) then) =
       _$NameCopyWithImpl<$Res>;
-  $Res call({String name, NamedApiResource language});
+  $Res call({String name, NamedAPIResource language});
 
-  $NamedApiResourceCopyWith<$Res> get language;
+  $NamedAPIResourceCopyWith<$Res> get language;
 }
 
 /// @nodoc
@@ -1663,13 +1663,13 @@ class _$NameCopyWithImpl<$Res> implements $NameCopyWith<$Res> {
       language: language == freezed
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
-              as NamedApiResource,
+              as NamedAPIResource,
     ));
   }
 
   @override
-  $NamedApiResourceCopyWith<$Res> get language {
-    return $NamedApiResourceCopyWith<$Res>(_value.language, (value) {
+  $NamedAPIResourceCopyWith<$Res> get language {
+    return $NamedAPIResourceCopyWith<$Res>(_value.language, (value) {
       return _then(_value.copyWith(language: value));
     });
   }
@@ -1680,10 +1680,10 @@ abstract class _$NameCopyWith<$Res> implements $NameCopyWith<$Res> {
   factory _$NameCopyWith(_Name value, $Res Function(_Name) then) =
       __$NameCopyWithImpl<$Res>;
   @override
-  $Res call({String name, NamedApiResource language});
+  $Res call({String name, NamedAPIResource language});
 
   @override
-  $NamedApiResourceCopyWith<$Res> get language;
+  $NamedAPIResourceCopyWith<$Res> get language;
 }
 
 /// @nodoc
@@ -1708,7 +1708,7 @@ class __$NameCopyWithImpl<$Res> extends _$NameCopyWithImpl<$Res>
       language == freezed
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
-              as NamedApiResource,
+              as NamedAPIResource,
     ));
   }
 }
@@ -1731,7 +1731,7 @@ class _$_Name implements _Name {
   /// See also:
   ///
   /// [Language]
-  final NamedApiResource language;
+  final NamedAPIResource language;
 
   @override
   String toString() {
@@ -1765,7 +1765,7 @@ class _$_Name implements _Name {
 }
 
 abstract class _Name implements Name {
-  const factory _Name(String name, NamedApiResource language) = _$_Name;
+  const factory _Name(String name, NamedAPIResource language) = _$_Name;
 
   factory _Name.fromJson(Map<String, dynamic> json) = _$_Name.fromJson;
 
@@ -1780,37 +1780,37 @@ abstract class _Name implements Name {
   /// See also:
   ///
   /// [Language]
-  NamedApiResource get language;
+  NamedAPIResource get language;
   @override
   @JsonKey(ignore: true)
   _$NameCopyWith<_Name> get copyWith => throw _privateConstructorUsedError;
 }
 
-NamedApiResource _$NamedApiResourceFromJson(Map<String, dynamic> json) {
-  return _NamedApiResource.fromJson(json);
+NamedAPIResource _$NamedAPIResourceFromJson(Map<String, dynamic> json) {
+  return _NamedAPIResource.fromJson(json);
 }
 
 /// @nodoc
-class _$NamedApiResourceTearOff {
-  const _$NamedApiResourceTearOff();
+class _$NamedAPIResourceTearOff {
+  const _$NamedAPIResourceTearOff();
 
-  _NamedApiResource call(String name, String url) {
-    return _NamedApiResource(
+  _NamedAPIResource call(String name, String url) {
+    return _NamedAPIResource(
       name,
       url,
     );
   }
 
-  NamedApiResource fromJson(Map<String, Object?> json) {
-    return NamedApiResource.fromJson(json);
+  NamedAPIResource fromJson(Map<String, Object?> json) {
+    return NamedAPIResource.fromJson(json);
   }
 }
 
 /// @nodoc
-const $NamedApiResource = _$NamedApiResourceTearOff();
+const $NamedAPIResource = _$NamedAPIResourceTearOff();
 
 /// @nodoc
-mixin _$NamedApiResource {
+mixin _$NamedAPIResource {
   /// The name of the referenced resource.
   String get name => throw _privateConstructorUsedError;
 
@@ -1819,26 +1819,26 @@ mixin _$NamedApiResource {
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $NamedApiResourceCopyWith<NamedApiResource> get copyWith =>
+  $NamedAPIResourceCopyWith<NamedAPIResource> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $NamedApiResourceCopyWith<$Res> {
-  factory $NamedApiResourceCopyWith(
-          NamedApiResource value, $Res Function(NamedApiResource) then) =
-      _$NamedApiResourceCopyWithImpl<$Res>;
+abstract class $NamedAPIResourceCopyWith<$Res> {
+  factory $NamedAPIResourceCopyWith(
+          NamedAPIResource value, $Res Function(NamedAPIResource) then) =
+      _$NamedAPIResourceCopyWithImpl<$Res>;
   $Res call({String name, String url});
 }
 
 /// @nodoc
-class _$NamedApiResourceCopyWithImpl<$Res>
-    implements $NamedApiResourceCopyWith<$Res> {
-  _$NamedApiResourceCopyWithImpl(this._value, this._then);
+class _$NamedAPIResourceCopyWithImpl<$Res>
+    implements $NamedAPIResourceCopyWith<$Res> {
+  _$NamedAPIResourceCopyWithImpl(this._value, this._then);
 
-  final NamedApiResource _value;
+  final NamedAPIResource _value;
   // ignore: unused_field
-  final $Res Function(NamedApiResource) _then;
+  final $Res Function(NamedAPIResource) _then;
 
   @override
   $Res call({
@@ -1859,32 +1859,32 @@ class _$NamedApiResourceCopyWithImpl<$Res>
 }
 
 /// @nodoc
-abstract class _$NamedApiResourceCopyWith<$Res>
-    implements $NamedApiResourceCopyWith<$Res> {
-  factory _$NamedApiResourceCopyWith(
-          _NamedApiResource value, $Res Function(_NamedApiResource) then) =
-      __$NamedApiResourceCopyWithImpl<$Res>;
+abstract class _$NamedAPIResourceCopyWith<$Res>
+    implements $NamedAPIResourceCopyWith<$Res> {
+  factory _$NamedAPIResourceCopyWith(
+          _NamedAPIResource value, $Res Function(_NamedAPIResource) then) =
+      __$NamedAPIResourceCopyWithImpl<$Res>;
   @override
   $Res call({String name, String url});
 }
 
 /// @nodoc
-class __$NamedApiResourceCopyWithImpl<$Res>
-    extends _$NamedApiResourceCopyWithImpl<$Res>
-    implements _$NamedApiResourceCopyWith<$Res> {
-  __$NamedApiResourceCopyWithImpl(
-      _NamedApiResource _value, $Res Function(_NamedApiResource) _then)
-      : super(_value, (v) => _then(v as _NamedApiResource));
+class __$NamedAPIResourceCopyWithImpl<$Res>
+    extends _$NamedAPIResourceCopyWithImpl<$Res>
+    implements _$NamedAPIResourceCopyWith<$Res> {
+  __$NamedAPIResourceCopyWithImpl(
+      _NamedAPIResource _value, $Res Function(_NamedAPIResource) _then)
+      : super(_value, (v) => _then(v as _NamedAPIResource));
 
   @override
-  _NamedApiResource get _value => super._value as _NamedApiResource;
+  _NamedAPIResource get _value => super._value as _NamedAPIResource;
 
   @override
   $Res call({
     Object? name = freezed,
     Object? url = freezed,
   }) {
-    return _then(_NamedApiResource(
+    return _then(_NamedAPIResource(
       name == freezed
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
@@ -1899,11 +1899,11 @@ class __$NamedApiResourceCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_NamedApiResource implements _NamedApiResource {
-  const _$_NamedApiResource(this.name, this.url);
+class _$_NamedAPIResource implements _NamedAPIResource {
+  const _$_NamedAPIResource(this.name, this.url);
 
-  factory _$_NamedApiResource.fromJson(Map<String, dynamic> json) =>
-      _$$_NamedApiResourceFromJson(json);
+  factory _$_NamedAPIResource.fromJson(Map<String, dynamic> json) =>
+      _$$_NamedAPIResourceFromJson(json);
 
   @override
 
@@ -1916,14 +1916,14 @@ class _$_NamedApiResource implements _NamedApiResource {
 
   @override
   String toString() {
-    return 'NamedApiResource(name: $name, url: $url)';
+    return 'NamedAPIResource(name: $name, url: $url)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _NamedApiResource &&
+            other is _NamedAPIResource &&
             const DeepCollectionEquality().equals(other.name, name) &&
             const DeepCollectionEquality().equals(other.url, url));
   }
@@ -1936,21 +1936,21 @@ class _$_NamedApiResource implements _NamedApiResource {
 
   @JsonKey(ignore: true)
   @override
-  _$NamedApiResourceCopyWith<_NamedApiResource> get copyWith =>
-      __$NamedApiResourceCopyWithImpl<_NamedApiResource>(this, _$identity);
+  _$NamedAPIResourceCopyWith<_NamedAPIResource> get copyWith =>
+      __$NamedAPIResourceCopyWithImpl<_NamedAPIResource>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_NamedApiResourceToJson(this);
+    return _$$_NamedAPIResourceToJson(this);
   }
 }
 
-abstract class _NamedApiResource implements NamedApiResource {
-  const factory _NamedApiResource(String name, String url) =
-      _$_NamedApiResource;
+abstract class _NamedAPIResource implements NamedAPIResource {
+  const factory _NamedAPIResource(String name, String url) =
+      _$_NamedAPIResource;
 
-  factory _NamedApiResource.fromJson(Map<String, dynamic> json) =
-      _$_NamedApiResource.fromJson;
+  factory _NamedAPIResource.fromJson(Map<String, dynamic> json) =
+      _$_NamedAPIResource.fromJson;
 
   @override
 
@@ -1962,7 +1962,7 @@ abstract class _NamedApiResource implements NamedApiResource {
   String get url;
   @override
   @JsonKey(ignore: true)
-  _$NamedApiResourceCopyWith<_NamedApiResource> get copyWith =>
+  _$NamedAPIResourceCopyWith<_NamedAPIResource> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
@@ -1977,7 +1977,7 @@ class _$VerboseEffectTearOff {
   _VerboseEffect call(
       String effect,
       @JsonKey(name: 'short_effect') String shortEffect,
-      NamedApiResource language) {
+      NamedAPIResource language) {
     return _VerboseEffect(
       effect,
       shortEffect,
@@ -2007,7 +2007,7 @@ mixin _$VerboseEffect {
   /// See also:
   ///
   /// [Language]
-  NamedApiResource get language => throw _privateConstructorUsedError;
+  NamedAPIResource get language => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -2023,9 +2023,9 @@ abstract class $VerboseEffectCopyWith<$Res> {
   $Res call(
       {String effect,
       @JsonKey(name: 'short_effect') String shortEffect,
-      NamedApiResource language});
+      NamedAPIResource language});
 
-  $NamedApiResourceCopyWith<$Res> get language;
+  $NamedAPIResourceCopyWith<$Res> get language;
 }
 
 /// @nodoc
@@ -2055,13 +2055,13 @@ class _$VerboseEffectCopyWithImpl<$Res>
       language: language == freezed
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
-              as NamedApiResource,
+              as NamedAPIResource,
     ));
   }
 
   @override
-  $NamedApiResourceCopyWith<$Res> get language {
-    return $NamedApiResourceCopyWith<$Res>(_value.language, (value) {
+  $NamedAPIResourceCopyWith<$Res> get language {
+    return $NamedAPIResourceCopyWith<$Res>(_value.language, (value) {
       return _then(_value.copyWith(language: value));
     });
   }
@@ -2077,10 +2077,10 @@ abstract class _$VerboseEffectCopyWith<$Res>
   $Res call(
       {String effect,
       @JsonKey(name: 'short_effect') String shortEffect,
-      NamedApiResource language});
+      NamedAPIResource language});
 
   @override
-  $NamedApiResourceCopyWith<$Res> get language;
+  $NamedAPIResourceCopyWith<$Res> get language;
 }
 
 /// @nodoc
@@ -2112,7 +2112,7 @@ class __$VerboseEffectCopyWithImpl<$Res>
       language == freezed
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
-              as NamedApiResource,
+              as NamedAPIResource,
     ));
   }
 }
@@ -2142,7 +2142,7 @@ class _$_VerboseEffect implements _VerboseEffect {
   /// See also:
   ///
   /// [Language]
-  final NamedApiResource language;
+  final NamedAPIResource language;
 
   @override
   String toString() {
@@ -2182,7 +2182,7 @@ abstract class _VerboseEffect implements VerboseEffect {
   const factory _VerboseEffect(
       String effect,
       @JsonKey(name: 'short_effect') String shortEffect,
-      NamedApiResource language) = _$_VerboseEffect;
+      NamedAPIResource language) = _$_VerboseEffect;
 
   factory _VerboseEffect.fromJson(Map<String, dynamic> json) =
       _$_VerboseEffect.fromJson;
@@ -2203,7 +2203,7 @@ abstract class _VerboseEffect implements VerboseEffect {
   /// See also:
   ///
   /// [Language]
-  NamedApiResource get language;
+  NamedAPIResource get language;
   @override
   @JsonKey(ignore: true)
   _$VerboseEffectCopyWith<_VerboseEffect> get copyWith =>
@@ -2220,7 +2220,7 @@ class _$VersionEncounterDetailTearOff {
   const _$VersionEncounterDetailTearOff();
 
   _VersionEncounterDetail call(
-      NamedApiResource version,
+      NamedAPIResource version,
       @JsonKey(name: 'max_chance') int maxChance,
       @JsonKey(name: 'encounter_details') List<Encounter> encounterDetails) {
     return _VersionEncounterDetail(
@@ -2245,7 +2245,7 @@ mixin _$VersionEncounterDetail {
   /// See also:
   ///
   /// [Version]
-  NamedApiResource get version => throw _privateConstructorUsedError;
+  NamedAPIResource get version => throw _privateConstructorUsedError;
 
   /// The total percentage of all encounter potential.
   @JsonKey(name: 'max_chance')
@@ -2267,11 +2267,11 @@ abstract class $VersionEncounterDetailCopyWith<$Res> {
           $Res Function(VersionEncounterDetail) then) =
       _$VersionEncounterDetailCopyWithImpl<$Res>;
   $Res call(
-      {NamedApiResource version,
+      {NamedAPIResource version,
       @JsonKey(name: 'max_chance') int maxChance,
       @JsonKey(name: 'encounter_details') List<Encounter> encounterDetails});
 
-  $NamedApiResourceCopyWith<$Res> get version;
+  $NamedAPIResourceCopyWith<$Res> get version;
 }
 
 /// @nodoc
@@ -2293,7 +2293,7 @@ class _$VersionEncounterDetailCopyWithImpl<$Res>
       version: version == freezed
           ? _value.version
           : version // ignore: cast_nullable_to_non_nullable
-              as NamedApiResource,
+              as NamedAPIResource,
       maxChance: maxChance == freezed
           ? _value.maxChance
           : maxChance // ignore: cast_nullable_to_non_nullable
@@ -2306,8 +2306,8 @@ class _$VersionEncounterDetailCopyWithImpl<$Res>
   }
 
   @override
-  $NamedApiResourceCopyWith<$Res> get version {
-    return $NamedApiResourceCopyWith<$Res>(_value.version, (value) {
+  $NamedAPIResourceCopyWith<$Res> get version {
+    return $NamedAPIResourceCopyWith<$Res>(_value.version, (value) {
       return _then(_value.copyWith(version: value));
     });
   }
@@ -2321,12 +2321,12 @@ abstract class _$VersionEncounterDetailCopyWith<$Res>
       __$VersionEncounterDetailCopyWithImpl<$Res>;
   @override
   $Res call(
-      {NamedApiResource version,
+      {NamedAPIResource version,
       @JsonKey(name: 'max_chance') int maxChance,
       @JsonKey(name: 'encounter_details') List<Encounter> encounterDetails});
 
   @override
-  $NamedApiResourceCopyWith<$Res> get version;
+  $NamedAPIResourceCopyWith<$Res> get version;
 }
 
 /// @nodoc
@@ -2350,7 +2350,7 @@ class __$VersionEncounterDetailCopyWithImpl<$Res>
       version == freezed
           ? _value.version
           : version // ignore: cast_nullable_to_non_nullable
-              as NamedApiResource,
+              as NamedAPIResource,
       maxChance == freezed
           ? _value.maxChance
           : maxChance // ignore: cast_nullable_to_non_nullable
@@ -2381,7 +2381,7 @@ class _$_VersionEncounterDetail implements _VersionEncounterDetail {
   /// See also:
   ///
   /// [Version]
-  final NamedApiResource version;
+  final NamedAPIResource version;
   @override
 
   /// The total percentage of all encounter potential.
@@ -2430,7 +2430,7 @@ class _$_VersionEncounterDetail implements _VersionEncounterDetail {
 
 abstract class _VersionEncounterDetail implements VersionEncounterDetail {
   const factory _VersionEncounterDetail(
-      NamedApiResource version,
+      NamedAPIResource version,
       @JsonKey(name: 'max_chance')
           int maxChance,
       @JsonKey(name: 'encounter_details')
@@ -2446,7 +2446,7 @@ abstract class _VersionEncounterDetail implements VersionEncounterDetail {
   /// See also:
   ///
   /// [Version]
-  NamedApiResource get version;
+  NamedAPIResource get version;
   @override
 
   /// The total percentage of all encounter potential.
@@ -2472,7 +2472,7 @@ class _$VersionGameIndexTearOff {
   const _$VersionGameIndexTearOff();
 
   _VersionGameIndex call(
-      @JsonKey(name: 'game_index') int gameIndex, NamedApiResource version) {
+      @JsonKey(name: 'game_index') int gameIndex, NamedAPIResource version) {
     return _VersionGameIndex(
       gameIndex,
       version,
@@ -2498,7 +2498,7 @@ mixin _$VersionGameIndex {
   /// See also:
   ///
   /// [Version]
-  NamedApiResource get version => throw _privateConstructorUsedError;
+  NamedAPIResource get version => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -2512,9 +2512,9 @@ abstract class $VersionGameIndexCopyWith<$Res> {
           VersionGameIndex value, $Res Function(VersionGameIndex) then) =
       _$VersionGameIndexCopyWithImpl<$Res>;
   $Res call(
-      {@JsonKey(name: 'game_index') int gameIndex, NamedApiResource version});
+      {@JsonKey(name: 'game_index') int gameIndex, NamedAPIResource version});
 
-  $NamedApiResourceCopyWith<$Res> get version;
+  $NamedAPIResourceCopyWith<$Res> get version;
 }
 
 /// @nodoc
@@ -2539,13 +2539,13 @@ class _$VersionGameIndexCopyWithImpl<$Res>
       version: version == freezed
           ? _value.version
           : version // ignore: cast_nullable_to_non_nullable
-              as NamedApiResource,
+              as NamedAPIResource,
     ));
   }
 
   @override
-  $NamedApiResourceCopyWith<$Res> get version {
-    return $NamedApiResourceCopyWith<$Res>(_value.version, (value) {
+  $NamedAPIResourceCopyWith<$Res> get version {
+    return $NamedAPIResourceCopyWith<$Res>(_value.version, (value) {
       return _then(_value.copyWith(version: value));
     });
   }
@@ -2559,10 +2559,10 @@ abstract class _$VersionGameIndexCopyWith<$Res>
       __$VersionGameIndexCopyWithImpl<$Res>;
   @override
   $Res call(
-      {@JsonKey(name: 'game_index') int gameIndex, NamedApiResource version});
+      {@JsonKey(name: 'game_index') int gameIndex, NamedAPIResource version});
 
   @override
-  $NamedApiResourceCopyWith<$Res> get version;
+  $NamedAPIResourceCopyWith<$Res> get version;
 }
 
 /// @nodoc
@@ -2589,7 +2589,7 @@ class __$VersionGameIndexCopyWithImpl<$Res>
       version == freezed
           ? _value.version
           : version // ignore: cast_nullable_to_non_nullable
-              as NamedApiResource,
+              as NamedAPIResource,
     ));
   }
 }
@@ -2615,7 +2615,7 @@ class _$_VersionGameIndex implements _VersionGameIndex {
   /// See also:
   ///
   /// [Version]
-  final NamedApiResource version;
+  final NamedAPIResource version;
 
   @override
   String toString() {
@@ -2650,7 +2650,7 @@ class _$_VersionGameIndex implements _VersionGameIndex {
 
 abstract class _VersionGameIndex implements VersionGameIndex {
   const factory _VersionGameIndex(@JsonKey(name: 'game_index') int gameIndex,
-      NamedApiResource version) = _$_VersionGameIndex;
+      NamedAPIResource version) = _$_VersionGameIndex;
 
   factory _VersionGameIndex.fromJson(Map<String, dynamic> json) =
       _$_VersionGameIndex.fromJson;
@@ -2667,7 +2667,7 @@ abstract class _VersionGameIndex implements VersionGameIndex {
   /// See also:
   ///
   /// [Version]
-  NamedApiResource get version;
+  NamedAPIResource get version;
   @override
   @JsonKey(ignore: true)
   _$VersionGameIndexCopyWith<_VersionGameIndex> get copyWith =>
@@ -2683,8 +2683,8 @@ VersionGroupFlavorText _$VersionGroupFlavorTextFromJson(
 class _$VersionGroupFlavorTextTearOff {
   const _$VersionGroupFlavorTextTearOff();
 
-  _VersionGroupFlavorText call(String text, NamedApiResource language,
-      @JsonKey(name: 'version_group') NamedApiResource versionGroup) {
+  _VersionGroupFlavorText call(String text, NamedAPIResource language,
+      @JsonKey(name: 'version_group') NamedAPIResource versionGroup) {
     return _VersionGroupFlavorText(
       text,
       language,
@@ -2710,7 +2710,7 @@ mixin _$VersionGroupFlavorText {
   /// See also:
   ///
   /// [Language]
-  NamedApiResource get language => throw _privateConstructorUsedError;
+  NamedAPIResource get language => throw _privateConstructorUsedError;
 
   /// The version group which uses this flavor text.
   ///
@@ -2718,7 +2718,7 @@ mixin _$VersionGroupFlavorText {
   ///
   /// [VersionGroup]
   @JsonKey(name: 'version_group')
-  NamedApiResource get versionGroup => throw _privateConstructorUsedError;
+  NamedAPIResource get versionGroup => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -2733,11 +2733,11 @@ abstract class $VersionGroupFlavorTextCopyWith<$Res> {
       _$VersionGroupFlavorTextCopyWithImpl<$Res>;
   $Res call(
       {String text,
-      NamedApiResource language,
-      @JsonKey(name: 'version_group') NamedApiResource versionGroup});
+      NamedAPIResource language,
+      @JsonKey(name: 'version_group') NamedAPIResource versionGroup});
 
-  $NamedApiResourceCopyWith<$Res> get language;
-  $NamedApiResourceCopyWith<$Res> get versionGroup;
+  $NamedAPIResourceCopyWith<$Res> get language;
+  $NamedAPIResourceCopyWith<$Res> get versionGroup;
 }
 
 /// @nodoc
@@ -2763,24 +2763,24 @@ class _$VersionGroupFlavorTextCopyWithImpl<$Res>
       language: language == freezed
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
-              as NamedApiResource,
+              as NamedAPIResource,
       versionGroup: versionGroup == freezed
           ? _value.versionGroup
           : versionGroup // ignore: cast_nullable_to_non_nullable
-              as NamedApiResource,
+              as NamedAPIResource,
     ));
   }
 
   @override
-  $NamedApiResourceCopyWith<$Res> get language {
-    return $NamedApiResourceCopyWith<$Res>(_value.language, (value) {
+  $NamedAPIResourceCopyWith<$Res> get language {
+    return $NamedAPIResourceCopyWith<$Res>(_value.language, (value) {
       return _then(_value.copyWith(language: value));
     });
   }
 
   @override
-  $NamedApiResourceCopyWith<$Res> get versionGroup {
-    return $NamedApiResourceCopyWith<$Res>(_value.versionGroup, (value) {
+  $NamedAPIResourceCopyWith<$Res> get versionGroup {
+    return $NamedAPIResourceCopyWith<$Res>(_value.versionGroup, (value) {
       return _then(_value.copyWith(versionGroup: value));
     });
   }
@@ -2795,13 +2795,13 @@ abstract class _$VersionGroupFlavorTextCopyWith<$Res>
   @override
   $Res call(
       {String text,
-      NamedApiResource language,
-      @JsonKey(name: 'version_group') NamedApiResource versionGroup});
+      NamedAPIResource language,
+      @JsonKey(name: 'version_group') NamedAPIResource versionGroup});
 
   @override
-  $NamedApiResourceCopyWith<$Res> get language;
+  $NamedAPIResourceCopyWith<$Res> get language;
   @override
-  $NamedApiResourceCopyWith<$Res> get versionGroup;
+  $NamedAPIResourceCopyWith<$Res> get versionGroup;
 }
 
 /// @nodoc
@@ -2829,11 +2829,11 @@ class __$VersionGroupFlavorTextCopyWithImpl<$Res>
       language == freezed
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
-              as NamedApiResource,
+              as NamedAPIResource,
       versionGroup == freezed
           ? _value.versionGroup
           : versionGroup // ignore: cast_nullable_to_non_nullable
-              as NamedApiResource,
+              as NamedAPIResource,
     ));
   }
 }
@@ -2858,7 +2858,7 @@ class _$_VersionGroupFlavorText implements _VersionGroupFlavorText {
   /// See also:
   ///
   /// [Language]
-  final NamedApiResource language;
+  final NamedAPIResource language;
   @override
 
   /// The version group which uses this flavor text.
@@ -2867,7 +2867,7 @@ class _$_VersionGroupFlavorText implements _VersionGroupFlavorText {
   ///
   /// [VersionGroup]
   @JsonKey(name: 'version_group')
-  final NamedApiResource versionGroup;
+  final NamedAPIResource versionGroup;
 
   @override
   String toString() {
@@ -2905,8 +2905,8 @@ class _$_VersionGroupFlavorText implements _VersionGroupFlavorText {
 }
 
 abstract class _VersionGroupFlavorText implements VersionGroupFlavorText {
-  const factory _VersionGroupFlavorText(String text, NamedApiResource language,
-          @JsonKey(name: 'version_group') NamedApiResource versionGroup) =
+  const factory _VersionGroupFlavorText(String text, NamedAPIResource language,
+          @JsonKey(name: 'version_group') NamedAPIResource versionGroup) =
       _$_VersionGroupFlavorText;
 
   factory _VersionGroupFlavorText.fromJson(Map<String, dynamic> json) =
@@ -2923,7 +2923,7 @@ abstract class _VersionGroupFlavorText implements VersionGroupFlavorText {
   /// See also:
   ///
   /// [Language]
-  NamedApiResource get language;
+  NamedAPIResource get language;
   @override
 
   /// The version group which uses this flavor text.
@@ -2932,24 +2932,24 @@ abstract class _VersionGroupFlavorText implements VersionGroupFlavorText {
   ///
   /// [VersionGroup]
   @JsonKey(name: 'version_group')
-  NamedApiResource get versionGroup;
+  NamedAPIResource get versionGroup;
   @override
   @JsonKey(ignore: true)
   _$VersionGroupFlavorTextCopyWith<_VersionGroupFlavorText> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
-NamedApiResourceList _$NamedApiResourceListFromJson(Map<String, dynamic> json) {
-  return _NamedApiResourceList.fromJson(json);
+NamedAPIResourceList _$NamedAPIResourceListFromJson(Map<String, dynamic> json) {
+  return _NamedAPIResourceList.fromJson(json);
 }
 
 /// @nodoc
-class _$NamedApiResourceListTearOff {
-  const _$NamedApiResourceListTearOff();
+class _$NamedAPIResourceListTearOff {
+  const _$NamedAPIResourceListTearOff();
 
-  _NamedApiResourceList call(int count, String? next, String? previous,
-      List<NamedApiResource> results) {
-    return _NamedApiResourceList(
+  _NamedAPIResourceList call(int count, String? next, String? previous,
+      List<NamedAPIResource> results) {
+    return _NamedAPIResourceList(
       count,
       next,
       previous,
@@ -2957,16 +2957,16 @@ class _$NamedApiResourceListTearOff {
     );
   }
 
-  NamedApiResourceList fromJson(Map<String, Object?> json) {
-    return NamedApiResourceList.fromJson(json);
+  NamedAPIResourceList fromJson(Map<String, Object?> json) {
+    return NamedAPIResourceList.fromJson(json);
   }
 }
 
 /// @nodoc
-const $NamedApiResourceList = _$NamedApiResourceListTearOff();
+const $NamedAPIResourceList = _$NamedAPIResourceListTearOff();
 
 /// @nodoc
-mixin _$NamedApiResourceList {
+mixin _$NamedAPIResourceList {
   /// The total number of resources available from this API.
   int get count => throw _privateConstructorUsedError;
 
@@ -2977,34 +2977,34 @@ mixin _$NamedApiResourceList {
   String? get previous => throw _privateConstructorUsedError;
 
   /// A list of named API resources.
-  List<NamedApiResource> get results => throw _privateConstructorUsedError;
+  List<NamedAPIResource> get results => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $NamedApiResourceListCopyWith<NamedApiResourceList> get copyWith =>
+  $NamedAPIResourceListCopyWith<NamedAPIResourceList> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $NamedApiResourceListCopyWith<$Res> {
-  factory $NamedApiResourceListCopyWith(NamedApiResourceList value,
-          $Res Function(NamedApiResourceList) then) =
-      _$NamedApiResourceListCopyWithImpl<$Res>;
+abstract class $NamedAPIResourceListCopyWith<$Res> {
+  factory $NamedAPIResourceListCopyWith(NamedAPIResourceList value,
+          $Res Function(NamedAPIResourceList) then) =
+      _$NamedAPIResourceListCopyWithImpl<$Res>;
   $Res call(
       {int count,
       String? next,
       String? previous,
-      List<NamedApiResource> results});
+      List<NamedAPIResource> results});
 }
 
 /// @nodoc
-class _$NamedApiResourceListCopyWithImpl<$Res>
-    implements $NamedApiResourceListCopyWith<$Res> {
-  _$NamedApiResourceListCopyWithImpl(this._value, this._then);
+class _$NamedAPIResourceListCopyWithImpl<$Res>
+    implements $NamedAPIResourceListCopyWith<$Res> {
+  _$NamedAPIResourceListCopyWithImpl(this._value, this._then);
 
-  final NamedApiResourceList _value;
+  final NamedAPIResourceList _value;
   // ignore: unused_field
-  final $Res Function(NamedApiResourceList) _then;
+  final $Res Function(NamedAPIResourceList) _then;
 
   @override
   $Res call({
@@ -3029,35 +3029,35 @@ class _$NamedApiResourceListCopyWithImpl<$Res>
       results: results == freezed
           ? _value.results
           : results // ignore: cast_nullable_to_non_nullable
-              as List<NamedApiResource>,
+              as List<NamedAPIResource>,
     ));
   }
 }
 
 /// @nodoc
-abstract class _$NamedApiResourceListCopyWith<$Res>
-    implements $NamedApiResourceListCopyWith<$Res> {
-  factory _$NamedApiResourceListCopyWith(_NamedApiResourceList value,
-          $Res Function(_NamedApiResourceList) then) =
-      __$NamedApiResourceListCopyWithImpl<$Res>;
+abstract class _$NamedAPIResourceListCopyWith<$Res>
+    implements $NamedAPIResourceListCopyWith<$Res> {
+  factory _$NamedAPIResourceListCopyWith(_NamedAPIResourceList value,
+          $Res Function(_NamedAPIResourceList) then) =
+      __$NamedAPIResourceListCopyWithImpl<$Res>;
   @override
   $Res call(
       {int count,
       String? next,
       String? previous,
-      List<NamedApiResource> results});
+      List<NamedAPIResource> results});
 }
 
 /// @nodoc
-class __$NamedApiResourceListCopyWithImpl<$Res>
-    extends _$NamedApiResourceListCopyWithImpl<$Res>
-    implements _$NamedApiResourceListCopyWith<$Res> {
-  __$NamedApiResourceListCopyWithImpl(
-      _NamedApiResourceList _value, $Res Function(_NamedApiResourceList) _then)
-      : super(_value, (v) => _then(v as _NamedApiResourceList));
+class __$NamedAPIResourceListCopyWithImpl<$Res>
+    extends _$NamedAPIResourceListCopyWithImpl<$Res>
+    implements _$NamedAPIResourceListCopyWith<$Res> {
+  __$NamedAPIResourceListCopyWithImpl(
+      _NamedAPIResourceList _value, $Res Function(_NamedAPIResourceList) _then)
+      : super(_value, (v) => _then(v as _NamedAPIResourceList));
 
   @override
-  _NamedApiResourceList get _value => super._value as _NamedApiResourceList;
+  _NamedAPIResourceList get _value => super._value as _NamedAPIResourceList;
 
   @override
   $Res call({
@@ -3066,7 +3066,7 @@ class __$NamedApiResourceListCopyWithImpl<$Res>
     Object? previous = freezed,
     Object? results = freezed,
   }) {
-    return _then(_NamedApiResourceList(
+    return _then(_NamedAPIResourceList(
       count == freezed
           ? _value.count
           : count // ignore: cast_nullable_to_non_nullable
@@ -3082,19 +3082,19 @@ class __$NamedApiResourceListCopyWithImpl<$Res>
       results == freezed
           ? _value.results
           : results // ignore: cast_nullable_to_non_nullable
-              as List<NamedApiResource>,
+              as List<NamedAPIResource>,
     ));
   }
 }
 
 /// @nodoc
 @JsonSerializable()
-class _$_NamedApiResourceList implements _NamedApiResourceList {
-  const _$_NamedApiResourceList(
+class _$_NamedAPIResourceList implements _NamedAPIResourceList {
+  const _$_NamedAPIResourceList(
       this.count, this.next, this.previous, this.results);
 
-  factory _$_NamedApiResourceList.fromJson(Map<String, dynamic> json) =>
-      _$$_NamedApiResourceListFromJson(json);
+  factory _$_NamedAPIResourceList.fromJson(Map<String, dynamic> json) =>
+      _$$_NamedAPIResourceListFromJson(json);
 
   @override
 
@@ -3111,18 +3111,18 @@ class _$_NamedApiResourceList implements _NamedApiResourceList {
   @override
 
   /// A list of named API resources.
-  final List<NamedApiResource> results;
+  final List<NamedAPIResource> results;
 
   @override
   String toString() {
-    return 'NamedApiResourceList(count: $count, next: $next, previous: $previous, results: $results)';
+    return 'NamedAPIResourceList(count: $count, next: $next, previous: $previous, results: $results)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _NamedApiResourceList &&
+            other is _NamedAPIResourceList &&
             const DeepCollectionEquality().equals(other.count, count) &&
             const DeepCollectionEquality().equals(other.next, next) &&
             const DeepCollectionEquality().equals(other.previous, previous) &&
@@ -3139,22 +3139,22 @@ class _$_NamedApiResourceList implements _NamedApiResourceList {
 
   @JsonKey(ignore: true)
   @override
-  _$NamedApiResourceListCopyWith<_NamedApiResourceList> get copyWith =>
-      __$NamedApiResourceListCopyWithImpl<_NamedApiResourceList>(
+  _$NamedAPIResourceListCopyWith<_NamedAPIResourceList> get copyWith =>
+      __$NamedAPIResourceListCopyWithImpl<_NamedAPIResourceList>(
           this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_NamedApiResourceListToJson(this);
+    return _$$_NamedAPIResourceListToJson(this);
   }
 }
 
-abstract class _NamedApiResourceList implements NamedApiResourceList {
-  const factory _NamedApiResourceList(int count, String? next, String? previous,
-      List<NamedApiResource> results) = _$_NamedApiResourceList;
+abstract class _NamedAPIResourceList implements NamedAPIResourceList {
+  const factory _NamedAPIResourceList(int count, String? next, String? previous,
+      List<NamedAPIResource> results) = _$_NamedAPIResourceList;
 
-  factory _NamedApiResourceList.fromJson(Map<String, dynamic> json) =
-      _$_NamedApiResourceList.fromJson;
+  factory _NamedAPIResourceList.fromJson(Map<String, dynamic> json) =
+      _$_NamedAPIResourceList.fromJson;
 
   @override
 
@@ -3171,24 +3171,24 @@ abstract class _NamedApiResourceList implements NamedApiResourceList {
   @override
 
   /// A list of named API resources.
-  List<NamedApiResource> get results;
+  List<NamedAPIResource> get results;
   @override
   @JsonKey(ignore: true)
-  _$NamedApiResourceListCopyWith<_NamedApiResourceList> get copyWith =>
+  _$NamedAPIResourceListCopyWith<_NamedAPIResourceList> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
-ApiResourceList _$ApiResourceListFromJson(Map<String, dynamic> json) {
-  return _ApiResourceList.fromJson(json);
+APIResourceList _$APIResourceListFromJson(Map<String, dynamic> json) {
+  return _APIResourceList.fromJson(json);
 }
 
 /// @nodoc
-class _$ApiResourceListTearOff {
-  const _$ApiResourceListTearOff();
+class _$APIResourceListTearOff {
+  const _$APIResourceListTearOff();
 
-  _ApiResourceList call(
-      int count, String? next, String? previous, List<ApiResource> results) {
-    return _ApiResourceList(
+  _APIResourceList call(
+      int count, String? next, String? previous, List<APIResource> results) {
+    return _APIResourceList(
       count,
       next,
       previous,
@@ -3196,16 +3196,16 @@ class _$ApiResourceListTearOff {
     );
   }
 
-  ApiResourceList fromJson(Map<String, Object?> json) {
-    return ApiResourceList.fromJson(json);
+  APIResourceList fromJson(Map<String, Object?> json) {
+    return APIResourceList.fromJson(json);
   }
 }
 
 /// @nodoc
-const $ApiResourceList = _$ApiResourceListTearOff();
+const $APIResourceList = _$APIResourceListTearOff();
 
 /// @nodoc
-mixin _$ApiResourceList {
+mixin _$APIResourceList {
   /// The total number of resources available from this API.
   int get count => throw _privateConstructorUsedError;
 
@@ -3216,31 +3216,31 @@ mixin _$ApiResourceList {
   String? get previous => throw _privateConstructorUsedError;
 
   /// A list of API resources.
-  List<ApiResource> get results => throw _privateConstructorUsedError;
+  List<APIResource> get results => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $ApiResourceListCopyWith<ApiResourceList> get copyWith =>
+  $APIResourceListCopyWith<APIResourceList> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $ApiResourceListCopyWith<$Res> {
-  factory $ApiResourceListCopyWith(
-          ApiResourceList value, $Res Function(ApiResourceList) then) =
-      _$ApiResourceListCopyWithImpl<$Res>;
+abstract class $APIResourceListCopyWith<$Res> {
+  factory $APIResourceListCopyWith(
+          APIResourceList value, $Res Function(APIResourceList) then) =
+      _$APIResourceListCopyWithImpl<$Res>;
   $Res call(
-      {int count, String? next, String? previous, List<ApiResource> results});
+      {int count, String? next, String? previous, List<APIResource> results});
 }
 
 /// @nodoc
-class _$ApiResourceListCopyWithImpl<$Res>
-    implements $ApiResourceListCopyWith<$Res> {
-  _$ApiResourceListCopyWithImpl(this._value, this._then);
+class _$APIResourceListCopyWithImpl<$Res>
+    implements $APIResourceListCopyWith<$Res> {
+  _$APIResourceListCopyWithImpl(this._value, this._then);
 
-  final ApiResourceList _value;
+  final APIResourceList _value;
   // ignore: unused_field
-  final $Res Function(ApiResourceList) _then;
+  final $Res Function(APIResourceList) _then;
 
   @override
   $Res call({
@@ -3265,32 +3265,32 @@ class _$ApiResourceListCopyWithImpl<$Res>
       results: results == freezed
           ? _value.results
           : results // ignore: cast_nullable_to_non_nullable
-              as List<ApiResource>,
+              as List<APIResource>,
     ));
   }
 }
 
 /// @nodoc
-abstract class _$ApiResourceListCopyWith<$Res>
-    implements $ApiResourceListCopyWith<$Res> {
-  factory _$ApiResourceListCopyWith(
-          _ApiResourceList value, $Res Function(_ApiResourceList) then) =
-      __$ApiResourceListCopyWithImpl<$Res>;
+abstract class _$APIResourceListCopyWith<$Res>
+    implements $APIResourceListCopyWith<$Res> {
+  factory _$APIResourceListCopyWith(
+          _APIResourceList value, $Res Function(_APIResourceList) then) =
+      __$APIResourceListCopyWithImpl<$Res>;
   @override
   $Res call(
-      {int count, String? next, String? previous, List<ApiResource> results});
+      {int count, String? next, String? previous, List<APIResource> results});
 }
 
 /// @nodoc
-class __$ApiResourceListCopyWithImpl<$Res>
-    extends _$ApiResourceListCopyWithImpl<$Res>
-    implements _$ApiResourceListCopyWith<$Res> {
-  __$ApiResourceListCopyWithImpl(
-      _ApiResourceList _value, $Res Function(_ApiResourceList) _then)
-      : super(_value, (v) => _then(v as _ApiResourceList));
+class __$APIResourceListCopyWithImpl<$Res>
+    extends _$APIResourceListCopyWithImpl<$Res>
+    implements _$APIResourceListCopyWith<$Res> {
+  __$APIResourceListCopyWithImpl(
+      _APIResourceList _value, $Res Function(_APIResourceList) _then)
+      : super(_value, (v) => _then(v as _APIResourceList));
 
   @override
-  _ApiResourceList get _value => super._value as _ApiResourceList;
+  _APIResourceList get _value => super._value as _APIResourceList;
 
   @override
   $Res call({
@@ -3299,7 +3299,7 @@ class __$ApiResourceListCopyWithImpl<$Res>
     Object? previous = freezed,
     Object? results = freezed,
   }) {
-    return _then(_ApiResourceList(
+    return _then(_APIResourceList(
       count == freezed
           ? _value.count
           : count // ignore: cast_nullable_to_non_nullable
@@ -3315,18 +3315,18 @@ class __$ApiResourceListCopyWithImpl<$Res>
       results == freezed
           ? _value.results
           : results // ignore: cast_nullable_to_non_nullable
-              as List<ApiResource>,
+              as List<APIResource>,
     ));
   }
 }
 
 /// @nodoc
 @JsonSerializable()
-class _$_ApiResourceList implements _ApiResourceList {
-  const _$_ApiResourceList(this.count, this.next, this.previous, this.results);
+class _$_APIResourceList implements _APIResourceList {
+  const _$_APIResourceList(this.count, this.next, this.previous, this.results);
 
-  factory _$_ApiResourceList.fromJson(Map<String, dynamic> json) =>
-      _$$_ApiResourceListFromJson(json);
+  factory _$_APIResourceList.fromJson(Map<String, dynamic> json) =>
+      _$$_APIResourceListFromJson(json);
 
   @override
 
@@ -3343,18 +3343,18 @@ class _$_ApiResourceList implements _ApiResourceList {
   @override
 
   /// A list of API resources.
-  final List<ApiResource> results;
+  final List<APIResource> results;
 
   @override
   String toString() {
-    return 'ApiResourceList(count: $count, next: $next, previous: $previous, results: $results)';
+    return 'APIResourceList(count: $count, next: $next, previous: $previous, results: $results)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _ApiResourceList &&
+            other is _APIResourceList &&
             const DeepCollectionEquality().equals(other.count, count) &&
             const DeepCollectionEquality().equals(other.next, next) &&
             const DeepCollectionEquality().equals(other.previous, previous) &&
@@ -3371,21 +3371,21 @@ class _$_ApiResourceList implements _ApiResourceList {
 
   @JsonKey(ignore: true)
   @override
-  _$ApiResourceListCopyWith<_ApiResourceList> get copyWith =>
-      __$ApiResourceListCopyWithImpl<_ApiResourceList>(this, _$identity);
+  _$APIResourceListCopyWith<_APIResourceList> get copyWith =>
+      __$APIResourceListCopyWithImpl<_APIResourceList>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_ApiResourceListToJson(this);
+    return _$$_APIResourceListToJson(this);
   }
 }
 
-abstract class _ApiResourceList implements ApiResourceList {
-  const factory _ApiResourceList(int count, String? next, String? previous,
-      List<ApiResource> results) = _$_ApiResourceList;
+abstract class _APIResourceList implements APIResourceList {
+  const factory _APIResourceList(int count, String? next, String? previous,
+      List<APIResource> results) = _$_APIResourceList;
 
-  factory _ApiResourceList.fromJson(Map<String, dynamic> json) =
-      _$_ApiResourceList.fromJson;
+  factory _APIResourceList.fromJson(Map<String, dynamic> json) =
+      _$_APIResourceList.fromJson;
 
   @override
 
@@ -3402,9 +3402,9 @@ abstract class _ApiResourceList implements ApiResourceList {
   @override
 
   /// A list of API resources.
-  List<ApiResource> get results;
+  List<APIResource> get results;
   @override
   @JsonKey(ignore: true)
-  _$ApiResourceListCopyWith<_ApiResourceList> get copyWith =>
+  _$APIResourceListCopyWith<_APIResourceList> get copyWith =>
       throw _privateConstructorUsedError;
 }

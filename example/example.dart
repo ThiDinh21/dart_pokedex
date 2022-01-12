@@ -5,6 +5,6 @@ import 'package:poke_dart/poke_dart.dart';
 Future<void> main() async {
   final pokedex = Pokedex();
   final x = await pokedex.pokemon.get(id: 10);
-  final y = const ApiResource('a');
+  final y = const APIResource('a');
   print(x);
 }

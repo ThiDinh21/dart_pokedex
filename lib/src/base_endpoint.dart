@@ -16,12 +16,12 @@ abstract class BaseEndpoint<R> {
     required int id,
   });
 
-  Future<ApiResourceList> getPage({
+  Future<APIResourceList> getPage({
     int limit = 20,
     int offset = 0,
   });
 
-  Future<ApiResourceList> getAll();
+  Future<APIResourceList> getAll();
 }
 
 abstract class BaseNamedEndpoint<R> {
@@ -30,15 +30,15 @@ abstract class BaseNamedEndpoint<R> {
     String? name,
   });
 
-  Future<NamedApiResourceList> getPage({
+  Future<NamedAPIResourceList> getPage({
     int limit = 20,
     int offset = 0,
   });
 
-  Future<NamedApiResourceList> getAll();
+  Future<NamedAPIResourceList> getAll();
 }
 
-abstract class BasePokeApiEndpoints {
+abstract class BasePokeAPIEndpoints {
   final BaseNamedEndpoint<Berry> berries;
   final BaseNamedEndpoint<BerryFirmness> berryFirmness;
   final BaseNamedEndpoint<BerryFlavor> berryFlavors;
@@ -88,7 +88,7 @@ abstract class BasePokeApiEndpoints {
   final BaseNamedEndpoint<Type> types;
   final BaseNamedEndpoint<Language> languages;
 
-  const BasePokeApiEndpoints({
+  const BasePokeAPIEndpoints({
     required this.berries,
     required this.berryFirmness,
     required this.berryFlavors,

@@ -42,7 +42,7 @@ class EncounterCondition with _$EncounterCondition {
     /// See also:
     ///
     /// [EncounterConditionValue]
-    List<NamedApiResource> values,
+    List<NamedAPIResource> values,
   ) = _EncounterCondition;
 
   factory EncounterCondition.fromJson(Json json) =>
@@ -63,7 +63,7 @@ class EncounterConditionValue with _$EncounterConditionValue {
     /// See also:
     ///
     /// [EncounterCondition]
-    NamedApiResource condition,
+    NamedAPIResource condition,
 
     /// The name of this resource listed in different languages.
     List<Name> names,

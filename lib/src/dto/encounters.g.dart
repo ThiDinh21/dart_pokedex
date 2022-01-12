@@ -33,7 +33,7 @@ _$_EncounterCondition _$$_EncounterConditionFromJson(
           .map((e) => Name.fromJson(e as Map<String, dynamic>))
           .toList(),
       (json['values'] as List<dynamic>)
-          .map((e) => NamedApiResource.fromJson(e as Map<String, dynamic>))
+          .map((e) => NamedAPIResource.fromJson(e as Map<String, dynamic>))
           .toList(),
     );
 
@@ -51,7 +51,7 @@ _$_EncounterConditionValue _$$_EncounterConditionValueFromJson(
     _$_EncounterConditionValue(
       json['id'] as int,
       json['name'] as String,
-      NamedApiResource.fromJson(json['condition'] as Map<String, dynamic>),
+      NamedAPIResource.fromJson(json['condition'] as Map<String, dynamic>),
       (json['names'] as List<dynamic>)
           .map((e) => Name.fromJson(e as Map<String, dynamic>))
           .toList(),

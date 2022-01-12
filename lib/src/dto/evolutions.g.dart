@@ -9,7 +9,7 @@ part of 'evolutions.dart';
 _$_EvolutionChain _$$_EvolutionChainFromJson(Map<String, dynamic> json) =>
     _$_EvolutionChain(
       json['id'] as int,
-      NamedApiResource.fromJson(
+      NamedAPIResource.fromJson(
           json['baby_trigger_item'] as Map<String, dynamic>),
       ChainLink.fromJson(json['chain'] as Map<String, dynamic>),
     );
@@ -23,7 +23,7 @@ Map<String, dynamic> _$$_EvolutionChainToJson(_$_EvolutionChain instance) =>
 
 _$_ChainLink _$$_ChainLinkFromJson(Map<String, dynamic> json) => _$_ChainLink(
       json['is_baby'] as bool,
-      NamedApiResource.fromJson(json['species'] as Map<String, dynamic>),
+      NamedAPIResource.fromJson(json['species'] as Map<String, dynamic>),
       (json['evolution_details'] as List<dynamic>)
           .map((e) => EvolutionDetail.fromJson(e as Map<String, dynamic>))
           .toList(),
@@ -42,24 +42,24 @@ Map<String, dynamic> _$$_ChainLinkToJson(_$_ChainLink instance) =>
 
 _$_EvolutionDetail _$$_EvolutionDetailFromJson(Map<String, dynamic> json) =>
     _$_EvolutionDetail(
-      NamedApiResource.fromJson(json['item'] as Map<String, dynamic>),
-      NamedApiResource.fromJson(json['trigger'] as Map<String, dynamic>),
+      NamedAPIResource.fromJson(json['item'] as Map<String, dynamic>),
+      NamedAPIResource.fromJson(json['trigger'] as Map<String, dynamic>),
       json['gender'] as int,
-      NamedApiResource.fromJson(json['held_item'] as Map<String, dynamic>),
-      NamedApiResource.fromJson(json['known_move'] as Map<String, dynamic>),
-      NamedApiResource.fromJson(
+      NamedAPIResource.fromJson(json['held_item'] as Map<String, dynamic>),
+      NamedAPIResource.fromJson(json['known_move'] as Map<String, dynamic>),
+      NamedAPIResource.fromJson(
           json['known_move_type'] as Map<String, dynamic>),
-      NamedApiResource.fromJson(json['location'] as Map<String, dynamic>),
+      NamedAPIResource.fromJson(json['location'] as Map<String, dynamic>),
       json['min_level'] as int,
       json['min_happiness'] as int,
       json['min_beauty'] as int,
       json['min_affection'] as int,
       json['needs_overworld_rain'] as bool,
-      NamedApiResource.fromJson(json['party_species'] as Map<String, dynamic>),
-      NamedApiResource.fromJson(json['party_type'] as Map<String, dynamic>),
+      NamedAPIResource.fromJson(json['party_species'] as Map<String, dynamic>),
+      NamedAPIResource.fromJson(json['party_type'] as Map<String, dynamic>),
       json['relative_physical_stats'] as int,
       json['time_of_day'] as String,
-      NamedApiResource.fromJson(json['trade_species'] as Map<String, dynamic>),
+      NamedAPIResource.fromJson(json['trade_species'] as Map<String, dynamic>),
       json['turn_upside_down'] as bool,
     );
 
@@ -93,7 +93,7 @@ _$_EvolutionTrigger _$$_EvolutionTriggerFromJson(Map<String, dynamic> json) =>
           .map((e) => Name.fromJson(e as Map<String, dynamic>))
           .toList(),
       (json['pokemon_species'] as List<dynamic>)
-          .map((e) => NamedApiResource.fromJson(e as Map<String, dynamic>))
+          .map((e) => NamedAPIResource.fromJson(e as Map<String, dynamic>))
           .toList(),
     );
 

@@ -42,21 +42,21 @@ class Move with _$Move {
     /// See also:
     ///
     /// [ContestType]
-    @JsonKey(name: 'contest_type') NamedApiResource contestType,
+    @JsonKey(name: 'contest_type') NamedAPIResource contestType,
 
     /// The effect the move has when used in a contest.
     ///
     /// See also:
     ///
     /// [ContestEffect].
-    @JsonKey(name: 'contest_effect') ApiResource contestEffect,
+    @JsonKey(name: 'contest_effect') APIResource contestEffect,
 
     /// The type of damage the move inflicts on the target, e.g. physical.
     ///
     /// See also:
     ///
     /// [MoveDamageClass]
-    @JsonKey(name: 'damage_class') NamedApiResource damageClass,
+    @JsonKey(name: 'damage_class') NamedAPIResource damageClass,
 
     /// The effect of this move listed in different languages.
     @JsonKey(name: 'effect_entries') List<VerboseEffect> effectEntries,
@@ -69,7 +69,7 @@ class Move with _$Move {
     /// See also:
     ///
     /// [Pokemon]
-    @JsonKey(name: 'learned_by_pokemon') NamedApiResource learnedByPokemon,
+    @JsonKey(name: 'learned_by_pokemon') NamedAPIResource learnedByPokemon,
 
     /// The flavor text of this move listed in different languages.
     @JsonKey(name: 'flavor_text_entries')
@@ -80,7 +80,7 @@ class Move with _$Move {
     /// See also:
     ///
     /// [Generation]
-    NamedApiResource generation,
+    NamedAPIResource generation,
 
     /// A list of the machines that teach this move.
     List<MachineVersionDetail> machines,
@@ -102,21 +102,21 @@ class Move with _$Move {
     /// See also:
     ///
     /// [SuperContestEffect]
-    @JsonKey(name: 'super_contest_effect') ApiResource superContestEffect,
+    @JsonKey(name: 'super_contest_effect') APIResource superContestEffect,
 
     /// The type of target that will receive the effects of the attack.
     ///
     /// See also:
     ///
     /// [MoveTarget]
-    NamedApiResource target,
+    NamedAPIResource target,
 
     /// The elemental type of this move.
     ///
     /// See also:
     ///
     /// [Type]
-    NamedApiResource type,
+    NamedAPIResource type,
   ) = _Move;
 
   factory Move.fromJson(Json json) => _$MoveFromJson(json);
@@ -142,10 +142,10 @@ class ContestComboSets with _$ContestComboSets {
 class ContestComboDetail with _$ContestComboDetail {
   const factory ContestComboDetail(
     /// A list of moves to use before this move.
-    @JsonKey(name: 'use_before') List<NamedApiResource> useBefore,
+    @JsonKey(name: 'use_before') List<NamedAPIResource> useBefore,
 
     /// A list of moves to use after this move.
-    @JsonKey(name: 'use_after') List<NamedApiResource> useAfter,
+    @JsonKey(name: 'use_after') List<NamedAPIResource> useAfter,
   ) = _ContestComboDetail;
 
   factory ContestComboDetail.fromJson(Json json) =>
@@ -163,14 +163,14 @@ class MoveFlavorText with _$MoveFlavorText {
     /// See also:
     ///
     /// [Language]
-    NamedApiResource language,
+    NamedAPIResource language,
 
     /// The version group that uses this flavor text.
     ///
     /// See also:
     ///
     /// [VersionGroup]
-    @JsonKey(name: 'version_group') NamedApiResource versionGroup,
+    @JsonKey(name: 'version_group') NamedAPIResource versionGroup,
   ) = _MoveFlavorText;
 
   factory MoveFlavorText.fromJson(Json json) => _$MoveFlavorTextFromJson(json);
@@ -184,14 +184,14 @@ class MoveMetaData with _$MoveMetaData {
     /// See also:
     ///
     /// [MoveAilment]
-    NamedApiResource ailment,
+    NamedAPIResource ailment,
 
     /// The category of move this move falls under, e.g. damage or ailment.
     ///
     /// See also:
     ///
     /// [MoveCategory]
-    NamedApiResource category,
+    NamedAPIResource category,
 
     /// The minimum number of times this move hits. Null if it always only hits once.
     @JsonKey(name: 'min_hits') int minHits,
@@ -240,7 +240,7 @@ class MoveStatChange with _$MoveStatChange {
     /// See also:
     ///
     /// [Stat]
-    NamedApiResource stat,
+    NamedAPIResource stat,
   ) = _MoveStatChange;
 
   factory MoveStatChange.fromJson(Json json) => _$MoveStatChangeFromJson(json);
@@ -269,14 +269,14 @@ class PastMoveStatValues with _$PastMoveStatValues {
     /// See also:
     ///
     /// [Type]
-    NamedApiResource type,
+    NamedAPIResource type,
 
     /// The version group in which these move stat values were in effect.
     ///
     /// See also:
     ///
     /// [VersionGroup]
-    @JsonKey(name: 'version_group') NamedApiResource versionGroup,
+    @JsonKey(name: 'version_group') NamedAPIResource versionGroup,
   ) = _PastMoveStatValues;
 
   factory PastMoveStatValues.fromJson(Json json) =>
@@ -297,7 +297,7 @@ class MoveAilment with _$MoveAilment {
     /// See also:
     ///
     /// [Move]
-    List<NamedApiResource> moves,
+    List<NamedAPIResource> moves,
 
     /// The name of this resource listed in different languages.
     List<Name> names,
@@ -337,7 +337,7 @@ class MoveCategory with _$MoveCategory {
     /// See also:
     ///
     /// [Move]
-    List<NamedApiResource> moves,
+    List<NamedAPIResource> moves,
 
     /// The description of this resource listed in different languages.
     List<Description> descriptions,
@@ -363,7 +363,7 @@ class MoveDamageClass with _$MoveDamageClass {
     /// See also:
     ///
     /// [Move]
-    List<NamedApiResource> moves,
+    List<NamedAPIResource> moves,
 
     /// The name of this resource listed in different languages.
     List<Name> names,
@@ -393,7 +393,7 @@ class MoveLearnMethod with _$MoveLearnMethod {
     /// See also:
     ///
     /// [VersionGroup]
-    @JsonKey(name: 'version_groups') List<NamedApiResource> versionGroups,
+    @JsonKey(name: 'version_groups') List<NamedAPIResource> versionGroups,
   ) = _MoveLearnMethod;
 
   factory MoveLearnMethod.fromJson(Json json) =>
@@ -417,7 +417,7 @@ class MoveTarget with _$MoveTarget {
     /// See also:
     ///
     /// [Move]
-    List<NamedApiResource> moves,
+    List<NamedAPIResource> moves,
 
     /// The name of this resource listed in different languages.
     List<Name> names,

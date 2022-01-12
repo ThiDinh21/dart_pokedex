@@ -29,9 +29,9 @@ class _$ItemTearOff {
       @JsonKey(name: 'fling_power')
           int flingPower,
       @JsonKey(name: 'fling_effect')
-          NamedApiResource flingEffect,
-      List<NamedApiResource> attributes,
-      NamedApiResource category,
+          NamedAPIResource flingEffect,
+      List<NamedAPIResource> attributes,
+      NamedAPIResource category,
       @JsonKey(name: 'effect_entries')
           List<VerboseEffect> effectEntries,
       @JsonKey(name: 'flavor_text_entries')
@@ -43,7 +43,7 @@ class _$ItemTearOff {
       @JsonKey(name: 'held_by_pokemon')
           List<ItemHolderPokemon> heldByPokemon,
       @JsonKey(name: 'baby_trigger_for')
-          ApiResource babyTriggerFor,
+          APIResource babyTriggerFor,
       List<MachineVersionDetail> machines) {
     return _Item(
       id,
@@ -93,21 +93,21 @@ mixin _$Item {
   ///
   /// [ItemFlingEffect]
   @JsonKey(name: 'fling_effect')
-  NamedApiResource get flingEffect => throw _privateConstructorUsedError;
+  NamedAPIResource get flingEffect => throw _privateConstructorUsedError;
 
   /// A list of attributes this item has.
   ///
   /// See also:
   ///
   /// [ItemAttribute]
-  List<NamedApiResource> get attributes => throw _privateConstructorUsedError;
+  List<NamedAPIResource> get attributes => throw _privateConstructorUsedError;
 
   /// The category of items this item falls into.
   ///
   /// See also:
   ///
   /// [ItemCategory]
-  NamedApiResource get category => throw _privateConstructorUsedError;
+  NamedAPIResource get category => throw _privateConstructorUsedError;
 
   /// The effect of this ability listed in different languages.
   @JsonKey(name: 'effect_entries')
@@ -140,7 +140,7 @@ mixin _$Item {
   ///
   /// [EvolutionChain]
   @JsonKey(name: 'baby_trigger_for')
-  ApiResource get babyTriggerFor => throw _privateConstructorUsedError;
+  APIResource get babyTriggerFor => throw _privateConstructorUsedError;
 
   /// A list of the machines related to this item.
   List<MachineVersionDetail> get machines => throw _privateConstructorUsedError;
@@ -161,9 +161,9 @@ abstract class $ItemCopyWith<$Res> {
       @JsonKey(name: 'fling_power')
           int flingPower,
       @JsonKey(name: 'fling_effect')
-          NamedApiResource flingEffect,
-      List<NamedApiResource> attributes,
-      NamedApiResource category,
+          NamedAPIResource flingEffect,
+      List<NamedAPIResource> attributes,
+      NamedAPIResource category,
       @JsonKey(name: 'effect_entries')
           List<VerboseEffect> effectEntries,
       @JsonKey(name: 'flavor_text_entries')
@@ -175,13 +175,13 @@ abstract class $ItemCopyWith<$Res> {
       @JsonKey(name: 'held_by_pokemon')
           List<ItemHolderPokemon> heldByPokemon,
       @JsonKey(name: 'baby_trigger_for')
-          ApiResource babyTriggerFor,
+          APIResource babyTriggerFor,
       List<MachineVersionDetail> machines});
 
-  $NamedApiResourceCopyWith<$Res> get flingEffect;
-  $NamedApiResourceCopyWith<$Res> get category;
+  $NamedAPIResourceCopyWith<$Res> get flingEffect;
+  $NamedAPIResourceCopyWith<$Res> get category;
   $ItemSpritesCopyWith<$Res> get sprites;
-  $ApiResourceCopyWith<$Res> get babyTriggerFor;
+  $APIResourceCopyWith<$Res> get babyTriggerFor;
 }
 
 /// @nodoc
@@ -230,15 +230,15 @@ class _$ItemCopyWithImpl<$Res> implements $ItemCopyWith<$Res> {
       flingEffect: flingEffect == freezed
           ? _value.flingEffect
           : flingEffect // ignore: cast_nullable_to_non_nullable
-              as NamedApiResource,
+              as NamedAPIResource,
       attributes: attributes == freezed
           ? _value.attributes
           : attributes // ignore: cast_nullable_to_non_nullable
-              as List<NamedApiResource>,
+              as List<NamedAPIResource>,
       category: category == freezed
           ? _value.category
           : category // ignore: cast_nullable_to_non_nullable
-              as NamedApiResource,
+              as NamedAPIResource,
       effectEntries: effectEntries == freezed
           ? _value.effectEntries
           : effectEntries // ignore: cast_nullable_to_non_nullable
@@ -266,7 +266,7 @@ class _$ItemCopyWithImpl<$Res> implements $ItemCopyWith<$Res> {
       babyTriggerFor: babyTriggerFor == freezed
           ? _value.babyTriggerFor
           : babyTriggerFor // ignore: cast_nullable_to_non_nullable
-              as ApiResource,
+              as APIResource,
       machines: machines == freezed
           ? _value.machines
           : machines // ignore: cast_nullable_to_non_nullable
@@ -275,15 +275,15 @@ class _$ItemCopyWithImpl<$Res> implements $ItemCopyWith<$Res> {
   }
 
   @override
-  $NamedApiResourceCopyWith<$Res> get flingEffect {
-    return $NamedApiResourceCopyWith<$Res>(_value.flingEffect, (value) {
+  $NamedAPIResourceCopyWith<$Res> get flingEffect {
+    return $NamedAPIResourceCopyWith<$Res>(_value.flingEffect, (value) {
       return _then(_value.copyWith(flingEffect: value));
     });
   }
 
   @override
-  $NamedApiResourceCopyWith<$Res> get category {
-    return $NamedApiResourceCopyWith<$Res>(_value.category, (value) {
+  $NamedAPIResourceCopyWith<$Res> get category {
+    return $NamedAPIResourceCopyWith<$Res>(_value.category, (value) {
       return _then(_value.copyWith(category: value));
     });
   }
@@ -296,8 +296,8 @@ class _$ItemCopyWithImpl<$Res> implements $ItemCopyWith<$Res> {
   }
 
   @override
-  $ApiResourceCopyWith<$Res> get babyTriggerFor {
-    return $ApiResourceCopyWith<$Res>(_value.babyTriggerFor, (value) {
+  $APIResourceCopyWith<$Res> get babyTriggerFor {
+    return $APIResourceCopyWith<$Res>(_value.babyTriggerFor, (value) {
       return _then(_value.copyWith(babyTriggerFor: value));
     });
   }
@@ -315,9 +315,9 @@ abstract class _$ItemCopyWith<$Res> implements $ItemCopyWith<$Res> {
       @JsonKey(name: 'fling_power')
           int flingPower,
       @JsonKey(name: 'fling_effect')
-          NamedApiResource flingEffect,
-      List<NamedApiResource> attributes,
-      NamedApiResource category,
+          NamedAPIResource flingEffect,
+      List<NamedAPIResource> attributes,
+      NamedAPIResource category,
       @JsonKey(name: 'effect_entries')
           List<VerboseEffect> effectEntries,
       @JsonKey(name: 'flavor_text_entries')
@@ -329,17 +329,17 @@ abstract class _$ItemCopyWith<$Res> implements $ItemCopyWith<$Res> {
       @JsonKey(name: 'held_by_pokemon')
           List<ItemHolderPokemon> heldByPokemon,
       @JsonKey(name: 'baby_trigger_for')
-          ApiResource babyTriggerFor,
+          APIResource babyTriggerFor,
       List<MachineVersionDetail> machines});
 
   @override
-  $NamedApiResourceCopyWith<$Res> get flingEffect;
+  $NamedAPIResourceCopyWith<$Res> get flingEffect;
   @override
-  $NamedApiResourceCopyWith<$Res> get category;
+  $NamedAPIResourceCopyWith<$Res> get category;
   @override
   $ItemSpritesCopyWith<$Res> get sprites;
   @override
-  $ApiResourceCopyWith<$Res> get babyTriggerFor;
+  $APIResourceCopyWith<$Res> get babyTriggerFor;
 }
 
 /// @nodoc
@@ -389,15 +389,15 @@ class __$ItemCopyWithImpl<$Res> extends _$ItemCopyWithImpl<$Res>
       flingEffect == freezed
           ? _value.flingEffect
           : flingEffect // ignore: cast_nullable_to_non_nullable
-              as NamedApiResource,
+              as NamedAPIResource,
       attributes == freezed
           ? _value.attributes
           : attributes // ignore: cast_nullable_to_non_nullable
-              as List<NamedApiResource>,
+              as List<NamedAPIResource>,
       category == freezed
           ? _value.category
           : category // ignore: cast_nullable_to_non_nullable
-              as NamedApiResource,
+              as NamedAPIResource,
       effectEntries == freezed
           ? _value.effectEntries
           : effectEntries // ignore: cast_nullable_to_non_nullable
@@ -425,7 +425,7 @@ class __$ItemCopyWithImpl<$Res> extends _$ItemCopyWithImpl<$Res>
       babyTriggerFor == freezed
           ? _value.babyTriggerFor
           : babyTriggerFor // ignore: cast_nullable_to_non_nullable
-              as ApiResource,
+              as APIResource,
       machines == freezed
           ? _value.machines
           : machines // ignore: cast_nullable_to_non_nullable
@@ -481,7 +481,7 @@ class _$_Item implements _Item {
   ///
   /// [ItemFlingEffect]
   @JsonKey(name: 'fling_effect')
-  final NamedApiResource flingEffect;
+  final NamedAPIResource flingEffect;
   @override
 
   /// A list of attributes this item has.
@@ -489,7 +489,7 @@ class _$_Item implements _Item {
   /// See also:
   ///
   /// [ItemAttribute]
-  final List<NamedApiResource> attributes;
+  final List<NamedAPIResource> attributes;
   @override
 
   /// The category of items this item falls into.
@@ -497,7 +497,7 @@ class _$_Item implements _Item {
   /// See also:
   ///
   /// [ItemCategory]
-  final NamedApiResource category;
+  final NamedAPIResource category;
   @override
 
   /// The effect of this ability listed in different languages.
@@ -534,7 +534,7 @@ class _$_Item implements _Item {
   ///
   /// [EvolutionChain]
   @JsonKey(name: 'baby_trigger_for')
-  final ApiResource babyTriggerFor;
+  final APIResource babyTriggerFor;
   @override
 
   /// A list of the machines related to this item.
@@ -613,9 +613,9 @@ abstract class _Item implements Item {
       @JsonKey(name: 'fling_power')
           int flingPower,
       @JsonKey(name: 'fling_effect')
-          NamedApiResource flingEffect,
-      List<NamedApiResource> attributes,
-      NamedApiResource category,
+          NamedAPIResource flingEffect,
+      List<NamedAPIResource> attributes,
+      NamedAPIResource category,
       @JsonKey(name: 'effect_entries')
           List<VerboseEffect> effectEntries,
       @JsonKey(name: 'flavor_text_entries')
@@ -627,7 +627,7 @@ abstract class _Item implements Item {
       @JsonKey(name: 'held_by_pokemon')
           List<ItemHolderPokemon> heldByPokemon,
       @JsonKey(name: 'baby_trigger_for')
-          ApiResource babyTriggerFor,
+          APIResource babyTriggerFor,
       List<MachineVersionDetail> machines) = _$_Item;
 
   factory _Item.fromJson(Map<String, dynamic> json) = _$_Item.fromJson;
@@ -657,7 +657,7 @@ abstract class _Item implements Item {
   ///
   /// [ItemFlingEffect]
   @JsonKey(name: 'fling_effect')
-  NamedApiResource get flingEffect;
+  NamedAPIResource get flingEffect;
   @override
 
   /// A list of attributes this item has.
@@ -665,7 +665,7 @@ abstract class _Item implements Item {
   /// See also:
   ///
   /// [ItemAttribute]
-  List<NamedApiResource> get attributes;
+  List<NamedAPIResource> get attributes;
   @override
 
   /// The category of items this item falls into.
@@ -673,7 +673,7 @@ abstract class _Item implements Item {
   /// See also:
   ///
   /// [ItemCategory]
-  NamedApiResource get category;
+  NamedAPIResource get category;
   @override
 
   /// The effect of this ability listed in different languages.
@@ -710,7 +710,7 @@ abstract class _Item implements Item {
   ///
   /// [EvolutionChain]
   @JsonKey(name: 'baby_trigger_for')
-  ApiResource get babyTriggerFor;
+  APIResource get babyTriggerFor;
   @override
 
   /// A list of the machines related to this item.
@@ -888,7 +888,7 @@ class _$ItemHolderPokemonTearOff {
   const _$ItemHolderPokemonTearOff();
 
   _ItemHolderPokemon call(
-      NamedApiResource pokemon,
+      NamedAPIResource pokemon,
       @JsonKey(name: 'version_details')
           List<ItemHolderPokemonVersionDetail> versionDetails) {
     return _ItemHolderPokemon(
@@ -912,7 +912,7 @@ mixin _$ItemHolderPokemon {
   /// See also:
   ///
   /// [Pokemon]
-  NamedApiResource get pokemon => throw _privateConstructorUsedError;
+  NamedAPIResource get pokemon => throw _privateConstructorUsedError;
 
   /// The details for the version that this item is held in by the Pokémon.
   @JsonKey(name: 'version_details')
@@ -931,11 +931,11 @@ abstract class $ItemHolderPokemonCopyWith<$Res> {
           ItemHolderPokemon value, $Res Function(ItemHolderPokemon) then) =
       _$ItemHolderPokemonCopyWithImpl<$Res>;
   $Res call(
-      {NamedApiResource pokemon,
+      {NamedAPIResource pokemon,
       @JsonKey(name: 'version_details')
           List<ItemHolderPokemonVersionDetail> versionDetails});
 
-  $NamedApiResourceCopyWith<$Res> get pokemon;
+  $NamedAPIResourceCopyWith<$Res> get pokemon;
 }
 
 /// @nodoc
@@ -956,7 +956,7 @@ class _$ItemHolderPokemonCopyWithImpl<$Res>
       pokemon: pokemon == freezed
           ? _value.pokemon
           : pokemon // ignore: cast_nullable_to_non_nullable
-              as NamedApiResource,
+              as NamedAPIResource,
       versionDetails: versionDetails == freezed
           ? _value.versionDetails
           : versionDetails // ignore: cast_nullable_to_non_nullable
@@ -965,8 +965,8 @@ class _$ItemHolderPokemonCopyWithImpl<$Res>
   }
 
   @override
-  $NamedApiResourceCopyWith<$Res> get pokemon {
-    return $NamedApiResourceCopyWith<$Res>(_value.pokemon, (value) {
+  $NamedAPIResourceCopyWith<$Res> get pokemon {
+    return $NamedAPIResourceCopyWith<$Res>(_value.pokemon, (value) {
       return _then(_value.copyWith(pokemon: value));
     });
   }
@@ -980,12 +980,12 @@ abstract class _$ItemHolderPokemonCopyWith<$Res>
       __$ItemHolderPokemonCopyWithImpl<$Res>;
   @override
   $Res call(
-      {NamedApiResource pokemon,
+      {NamedAPIResource pokemon,
       @JsonKey(name: 'version_details')
           List<ItemHolderPokemonVersionDetail> versionDetails});
 
   @override
-  $NamedApiResourceCopyWith<$Res> get pokemon;
+  $NamedAPIResourceCopyWith<$Res> get pokemon;
 }
 
 /// @nodoc
@@ -1008,7 +1008,7 @@ class __$ItemHolderPokemonCopyWithImpl<$Res>
       pokemon == freezed
           ? _value.pokemon
           : pokemon // ignore: cast_nullable_to_non_nullable
-              as NamedApiResource,
+              as NamedAPIResource,
       versionDetails == freezed
           ? _value.versionDetails
           : versionDetails // ignore: cast_nullable_to_non_nullable
@@ -1033,7 +1033,7 @@ class _$_ItemHolderPokemon implements _ItemHolderPokemon {
   /// See also:
   ///
   /// [Pokemon]
-  final NamedApiResource pokemon;
+  final NamedAPIResource pokemon;
   @override
 
   /// The details for the version that this item is held in by the Pokémon.
@@ -1074,7 +1074,7 @@ class _$_ItemHolderPokemon implements _ItemHolderPokemon {
 
 abstract class _ItemHolderPokemon implements ItemHolderPokemon {
   const factory _ItemHolderPokemon(
-          NamedApiResource pokemon,
+          NamedAPIResource pokemon,
           @JsonKey(name: 'version_details')
               List<ItemHolderPokemonVersionDetail> versionDetails) =
       _$_ItemHolderPokemon;
@@ -1089,7 +1089,7 @@ abstract class _ItemHolderPokemon implements ItemHolderPokemon {
   /// See also:
   ///
   /// [Pokemon]
-  NamedApiResource get pokemon;
+  NamedAPIResource get pokemon;
   @override
 
   /// The details for the version that this item is held in by the Pokémon.
@@ -1110,7 +1110,7 @@ ItemHolderPokemonVersionDetail _$ItemHolderPokemonVersionDetailFromJson(
 class _$ItemHolderPokemonVersionDetailTearOff {
   const _$ItemHolderPokemonVersionDetailTearOff();
 
-  _ItemHolderPokemonVersionDetail call(int rarity, NamedApiResource version) {
+  _ItemHolderPokemonVersionDetail call(int rarity, NamedAPIResource version) {
     return _ItemHolderPokemonVersionDetail(
       rarity,
       version,
@@ -1136,7 +1136,7 @@ mixin _$ItemHolderPokemonVersionDetail {
   /// See also:
   ///
   /// [Version]
-  NamedApiResource get version => throw _privateConstructorUsedError;
+  NamedAPIResource get version => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -1150,9 +1150,9 @@ abstract class $ItemHolderPokemonVersionDetailCopyWith<$Res> {
           ItemHolderPokemonVersionDetail value,
           $Res Function(ItemHolderPokemonVersionDetail) then) =
       _$ItemHolderPokemonVersionDetailCopyWithImpl<$Res>;
-  $Res call({int rarity, NamedApiResource version});
+  $Res call({int rarity, NamedAPIResource version});
 
-  $NamedApiResourceCopyWith<$Res> get version;
+  $NamedAPIResourceCopyWith<$Res> get version;
 }
 
 /// @nodoc
@@ -1177,13 +1177,13 @@ class _$ItemHolderPokemonVersionDetailCopyWithImpl<$Res>
       version: version == freezed
           ? _value.version
           : version // ignore: cast_nullable_to_non_nullable
-              as NamedApiResource,
+              as NamedAPIResource,
     ));
   }
 
   @override
-  $NamedApiResourceCopyWith<$Res> get version {
-    return $NamedApiResourceCopyWith<$Res>(_value.version, (value) {
+  $NamedAPIResourceCopyWith<$Res> get version {
+    return $NamedAPIResourceCopyWith<$Res>(_value.version, (value) {
       return _then(_value.copyWith(version: value));
     });
   }
@@ -1197,10 +1197,10 @@ abstract class _$ItemHolderPokemonVersionDetailCopyWith<$Res>
           $Res Function(_ItemHolderPokemonVersionDetail) then) =
       __$ItemHolderPokemonVersionDetailCopyWithImpl<$Res>;
   @override
-  $Res call({int rarity, NamedApiResource version});
+  $Res call({int rarity, NamedAPIResource version});
 
   @override
-  $NamedApiResourceCopyWith<$Res> get version;
+  $NamedAPIResourceCopyWith<$Res> get version;
 }
 
 /// @nodoc
@@ -1229,7 +1229,7 @@ class __$ItemHolderPokemonVersionDetailCopyWithImpl<$Res>
       version == freezed
           ? _value.version
           : version // ignore: cast_nullable_to_non_nullable
-              as NamedApiResource,
+              as NamedAPIResource,
     ));
   }
 }
@@ -1255,7 +1255,7 @@ class _$_ItemHolderPokemonVersionDetail
   /// See also:
   ///
   /// [Version]
-  final NamedApiResource version;
+  final NamedAPIResource version;
 
   @override
   String toString() {
@@ -1292,7 +1292,7 @@ class _$_ItemHolderPokemonVersionDetail
 abstract class _ItemHolderPokemonVersionDetail
     implements ItemHolderPokemonVersionDetail {
   const factory _ItemHolderPokemonVersionDetail(
-      int rarity, NamedApiResource version) = _$_ItemHolderPokemonVersionDetail;
+      int rarity, NamedAPIResource version) = _$_ItemHolderPokemonVersionDetail;
 
   factory _ItemHolderPokemonVersionDetail.fromJson(Map<String, dynamic> json) =
       _$_ItemHolderPokemonVersionDetail.fromJson;
@@ -1308,7 +1308,7 @@ abstract class _ItemHolderPokemonVersionDetail
   /// See also:
   ///
   /// [Version]
-  NamedApiResource get version;
+  NamedAPIResource get version;
   @override
   @JsonKey(ignore: true)
   _$ItemHolderPokemonVersionDetailCopyWith<_ItemHolderPokemonVersionDetail>
@@ -1323,7 +1323,7 @@ ItemAttribute _$ItemAttributeFromJson(Map<String, dynamic> json) {
 class _$ItemAttributeTearOff {
   const _$ItemAttributeTearOff();
 
-  _ItemAttribute call(int id, String name, List<NamedApiResource> items,
+  _ItemAttribute call(int id, String name, List<NamedAPIResource> items,
       List<Name> names, List<Description> descriptions) {
     return _ItemAttribute(
       id,
@@ -1355,7 +1355,7 @@ mixin _$ItemAttribute {
   /// See also:
   ///
   /// [Item]
-  List<NamedApiResource> get items => throw _privateConstructorUsedError;
+  List<NamedAPIResource> get items => throw _privateConstructorUsedError;
 
   /// The name of this item attribute listed in different languages.
   List<Name> get names => throw _privateConstructorUsedError;
@@ -1377,7 +1377,7 @@ abstract class $ItemAttributeCopyWith<$Res> {
   $Res call(
       {int id,
       String name,
-      List<NamedApiResource> items,
+      List<NamedAPIResource> items,
       List<Name> names,
       List<Description> descriptions});
 }
@@ -1411,7 +1411,7 @@ class _$ItemAttributeCopyWithImpl<$Res>
       items: items == freezed
           ? _value.items
           : items // ignore: cast_nullable_to_non_nullable
-              as List<NamedApiResource>,
+              as List<NamedAPIResource>,
       names: names == freezed
           ? _value.names
           : names // ignore: cast_nullable_to_non_nullable
@@ -1434,7 +1434,7 @@ abstract class _$ItemAttributeCopyWith<$Res>
   $Res call(
       {int id,
       String name,
-      List<NamedApiResource> items,
+      List<NamedAPIResource> items,
       List<Name> names,
       List<Description> descriptions});
 }
@@ -1470,7 +1470,7 @@ class __$ItemAttributeCopyWithImpl<$Res>
       items == freezed
           ? _value.items
           : items // ignore: cast_nullable_to_non_nullable
-              as List<NamedApiResource>,
+              as List<NamedAPIResource>,
       names == freezed
           ? _value.names
           : names // ignore: cast_nullable_to_non_nullable
@@ -1507,7 +1507,7 @@ class _$_ItemAttribute implements _ItemAttribute {
   /// See also:
   ///
   /// [Item]
-  final List<NamedApiResource> items;
+  final List<NamedAPIResource> items;
   @override
 
   /// The name of this item attribute listed in different languages.
@@ -1559,7 +1559,7 @@ abstract class _ItemAttribute implements ItemAttribute {
   const factory _ItemAttribute(
       int id,
       String name,
-      List<NamedApiResource> items,
+      List<NamedAPIResource> items,
       List<Name> names,
       List<Description> descriptions) = _$_ItemAttribute;
 
@@ -1581,7 +1581,7 @@ abstract class _ItemAttribute implements ItemAttribute {
   /// See also:
   ///
   /// [Item]
-  List<NamedApiResource> get items;
+  List<NamedAPIResource> get items;
   @override
 
   /// The name of this item attribute listed in different languages.
@@ -1604,8 +1604,8 @@ ItemCategory _$ItemCategoryFromJson(Map<String, dynamic> json) {
 class _$ItemCategoryTearOff {
   const _$ItemCategoryTearOff();
 
-  _ItemCategory call(int id, String name, List<NamedApiResource> items,
-      List<Name> names, NamedApiResource pocket) {
+  _ItemCategory call(int id, String name, List<NamedAPIResource> items,
+      List<Name> names, NamedAPIResource pocket) {
     return _ItemCategory(
       id,
       name,
@@ -1636,7 +1636,7 @@ mixin _$ItemCategory {
   /// See also:
   ///
   /// [Item]
-  List<NamedApiResource> get items => throw _privateConstructorUsedError;
+  List<NamedAPIResource> get items => throw _privateConstructorUsedError;
 
   /// The name of this item category listed in different languages.
   List<Name> get names => throw _privateConstructorUsedError;
@@ -1646,7 +1646,7 @@ mixin _$ItemCategory {
   /// See also:
   ///
   /// [ItemPocket]
-  NamedApiResource get pocket => throw _privateConstructorUsedError;
+  NamedAPIResource get pocket => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -1662,11 +1662,11 @@ abstract class $ItemCategoryCopyWith<$Res> {
   $Res call(
       {int id,
       String name,
-      List<NamedApiResource> items,
+      List<NamedAPIResource> items,
       List<Name> names,
-      NamedApiResource pocket});
+      NamedAPIResource pocket});
 
-  $NamedApiResourceCopyWith<$Res> get pocket;
+  $NamedAPIResourceCopyWith<$Res> get pocket;
 }
 
 /// @nodoc
@@ -1697,7 +1697,7 @@ class _$ItemCategoryCopyWithImpl<$Res> implements $ItemCategoryCopyWith<$Res> {
       items: items == freezed
           ? _value.items
           : items // ignore: cast_nullable_to_non_nullable
-              as List<NamedApiResource>,
+              as List<NamedAPIResource>,
       names: names == freezed
           ? _value.names
           : names // ignore: cast_nullable_to_non_nullable
@@ -1705,13 +1705,13 @@ class _$ItemCategoryCopyWithImpl<$Res> implements $ItemCategoryCopyWith<$Res> {
       pocket: pocket == freezed
           ? _value.pocket
           : pocket // ignore: cast_nullable_to_non_nullable
-              as NamedApiResource,
+              as NamedAPIResource,
     ));
   }
 
   @override
-  $NamedApiResourceCopyWith<$Res> get pocket {
-    return $NamedApiResourceCopyWith<$Res>(_value.pocket, (value) {
+  $NamedAPIResourceCopyWith<$Res> get pocket {
+    return $NamedAPIResourceCopyWith<$Res>(_value.pocket, (value) {
       return _then(_value.copyWith(pocket: value));
     });
   }
@@ -1727,12 +1727,12 @@ abstract class _$ItemCategoryCopyWith<$Res>
   $Res call(
       {int id,
       String name,
-      List<NamedApiResource> items,
+      List<NamedAPIResource> items,
       List<Name> names,
-      NamedApiResource pocket});
+      NamedAPIResource pocket});
 
   @override
-  $NamedApiResourceCopyWith<$Res> get pocket;
+  $NamedAPIResourceCopyWith<$Res> get pocket;
 }
 
 /// @nodoc
@@ -1765,7 +1765,7 @@ class __$ItemCategoryCopyWithImpl<$Res> extends _$ItemCategoryCopyWithImpl<$Res>
       items == freezed
           ? _value.items
           : items // ignore: cast_nullable_to_non_nullable
-              as List<NamedApiResource>,
+              as List<NamedAPIResource>,
       names == freezed
           ? _value.names
           : names // ignore: cast_nullable_to_non_nullable
@@ -1773,7 +1773,7 @@ class __$ItemCategoryCopyWithImpl<$Res> extends _$ItemCategoryCopyWithImpl<$Res>
       pocket == freezed
           ? _value.pocket
           : pocket // ignore: cast_nullable_to_non_nullable
-              as NamedApiResource,
+              as NamedAPIResource,
     ));
   }
 }
@@ -1802,7 +1802,7 @@ class _$_ItemCategory implements _ItemCategory {
   /// See also:
   ///
   /// [Item]
-  final List<NamedApiResource> items;
+  final List<NamedAPIResource> items;
   @override
 
   /// The name of this item category listed in different languages.
@@ -1814,7 +1814,7 @@ class _$_ItemCategory implements _ItemCategory {
   /// See also:
   ///
   /// [ItemPocket]
-  final NamedApiResource pocket;
+  final NamedAPIResource pocket;
 
   @override
   String toString() {
@@ -1854,8 +1854,8 @@ class _$_ItemCategory implements _ItemCategory {
 }
 
 abstract class _ItemCategory implements ItemCategory {
-  const factory _ItemCategory(int id, String name, List<NamedApiResource> items,
-      List<Name> names, NamedApiResource pocket) = _$_ItemCategory;
+  const factory _ItemCategory(int id, String name, List<NamedAPIResource> items,
+      List<Name> names, NamedAPIResource pocket) = _$_ItemCategory;
 
   factory _ItemCategory.fromJson(Map<String, dynamic> json) =
       _$_ItemCategory.fromJson;
@@ -1875,7 +1875,7 @@ abstract class _ItemCategory implements ItemCategory {
   /// See also:
   ///
   /// [Item]
-  List<NamedApiResource> get items;
+  List<NamedAPIResource> get items;
   @override
 
   /// The name of this item category listed in different languages.
@@ -1887,7 +1887,7 @@ abstract class _ItemCategory implements ItemCategory {
   /// See also:
   ///
   /// [ItemPocket]
-  NamedApiResource get pocket;
+  NamedAPIResource get pocket;
   @override
   @JsonKey(ignore: true)
   _$ItemCategoryCopyWith<_ItemCategory> get copyWith =>
@@ -1906,7 +1906,7 @@ class _$ItemFlingEffectTearOff {
       int id,
       String name,
       @JsonKey(name: 'effect_entries') List<Effect> effectEntries,
-      List<NamedApiResource> items) {
+      List<NamedAPIResource> items) {
     return _ItemFlingEffect(
       id,
       name,
@@ -1940,7 +1940,7 @@ mixin _$ItemFlingEffect {
   /// See also:
   ///
   /// [Item]
-  List<NamedApiResource> get items => throw _privateConstructorUsedError;
+  List<NamedAPIResource> get items => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -1957,7 +1957,7 @@ abstract class $ItemFlingEffectCopyWith<$Res> {
       {int id,
       String name,
       @JsonKey(name: 'effect_entries') List<Effect> effectEntries,
-      List<NamedApiResource> items});
+      List<NamedAPIResource> items});
 }
 
 /// @nodoc
@@ -1992,7 +1992,7 @@ class _$ItemFlingEffectCopyWithImpl<$Res>
       items: items == freezed
           ? _value.items
           : items // ignore: cast_nullable_to_non_nullable
-              as List<NamedApiResource>,
+              as List<NamedAPIResource>,
     ));
   }
 }
@@ -2008,7 +2008,7 @@ abstract class _$ItemFlingEffectCopyWith<$Res>
       {int id,
       String name,
       @JsonKey(name: 'effect_entries') List<Effect> effectEntries,
-      List<NamedApiResource> items});
+      List<NamedAPIResource> items});
 }
 
 /// @nodoc
@@ -2045,7 +2045,7 @@ class __$ItemFlingEffectCopyWithImpl<$Res>
       items == freezed
           ? _value.items
           : items // ignore: cast_nullable_to_non_nullable
-              as List<NamedApiResource>,
+              as List<NamedAPIResource>,
     ));
   }
 }
@@ -2079,7 +2079,7 @@ class _$_ItemFlingEffect implements _ItemFlingEffect {
   /// See also:
   ///
   /// [Item]
-  final List<NamedApiResource> items;
+  final List<NamedAPIResource> items;
 
   @override
   String toString() {
@@ -2122,7 +2122,7 @@ abstract class _ItemFlingEffect implements ItemFlingEffect {
       int id,
       String name,
       @JsonKey(name: 'effect_entries') List<Effect> effectEntries,
-      List<NamedApiResource> items) = _$_ItemFlingEffect;
+      List<NamedAPIResource> items) = _$_ItemFlingEffect;
 
   factory _ItemFlingEffect.fromJson(Map<String, dynamic> json) =
       _$_ItemFlingEffect.fromJson;
@@ -2147,7 +2147,7 @@ abstract class _ItemFlingEffect implements ItemFlingEffect {
   /// See also:
   ///
   /// [Item]
-  List<NamedApiResource> get items;
+  List<NamedAPIResource> get items;
   @override
   @JsonKey(ignore: true)
   _$ItemFlingEffectCopyWith<_ItemFlingEffect> get copyWith =>
@@ -2162,7 +2162,7 @@ ItemPocket _$ItemPocketFromJson(Map<String, dynamic> json) {
 class _$ItemPocketTearOff {
   const _$ItemPocketTearOff();
 
-  _ItemPocket call(int id, String name, List<NamedApiResource> categories,
+  _ItemPocket call(int id, String name, List<NamedAPIResource> categories,
       List<Name> names) {
     return _ItemPocket(
       id,
@@ -2193,7 +2193,7 @@ mixin _$ItemPocket {
   /// See also:
   ///
   /// [ItemCategory]
-  List<NamedApiResource> get categories => throw _privateConstructorUsedError;
+  List<NamedAPIResource> get categories => throw _privateConstructorUsedError;
 
   /// The name of this resource listed in different languages.
   List<Name> get names => throw _privateConstructorUsedError;
@@ -2212,7 +2212,7 @@ abstract class $ItemPocketCopyWith<$Res> {
   $Res call(
       {int id,
       String name,
-      List<NamedApiResource> categories,
+      List<NamedAPIResource> categories,
       List<Name> names});
 }
 
@@ -2243,7 +2243,7 @@ class _$ItemPocketCopyWithImpl<$Res> implements $ItemPocketCopyWith<$Res> {
       categories: categories == freezed
           ? _value.categories
           : categories // ignore: cast_nullable_to_non_nullable
-              as List<NamedApiResource>,
+              as List<NamedAPIResource>,
       names: names == freezed
           ? _value.names
           : names // ignore: cast_nullable_to_non_nullable
@@ -2261,7 +2261,7 @@ abstract class _$ItemPocketCopyWith<$Res> implements $ItemPocketCopyWith<$Res> {
   $Res call(
       {int id,
       String name,
-      List<NamedApiResource> categories,
+      List<NamedAPIResource> categories,
       List<Name> names});
 }
 
@@ -2294,7 +2294,7 @@ class __$ItemPocketCopyWithImpl<$Res> extends _$ItemPocketCopyWithImpl<$Res>
       categories == freezed
           ? _value.categories
           : categories // ignore: cast_nullable_to_non_nullable
-              as List<NamedApiResource>,
+              as List<NamedAPIResource>,
       names == freezed
           ? _value.names
           : names // ignore: cast_nullable_to_non_nullable
@@ -2326,7 +2326,7 @@ class _$_ItemPocket implements _ItemPocket {
   /// See also:
   ///
   /// [ItemCategory]
-  final List<NamedApiResource> categories;
+  final List<NamedAPIResource> categories;
   @override
 
   /// The name of this resource listed in different languages.
@@ -2370,7 +2370,7 @@ class _$_ItemPocket implements _ItemPocket {
 
 abstract class _ItemPocket implements ItemPocket {
   const factory _ItemPocket(int id, String name,
-      List<NamedApiResource> categories, List<Name> names) = _$_ItemPocket;
+      List<NamedAPIResource> categories, List<Name> names) = _$_ItemPocket;
 
   factory _ItemPocket.fromJson(Map<String, dynamic> json) =
       _$_ItemPocket.fromJson;
@@ -2390,7 +2390,7 @@ abstract class _ItemPocket implements ItemPocket {
   /// See also:
   ///
   /// [ItemCategory]
-  List<NamedApiResource> get categories;
+  List<NamedAPIResource> get categories;
   @override
 
   /// The name of this resource listed in different languages.

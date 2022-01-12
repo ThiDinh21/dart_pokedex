@@ -27,21 +27,21 @@ class Item with _$Item {
     /// See also:
     ///
     /// [ItemFlingEffect]
-    @JsonKey(name: 'fling_effect') NamedApiResource flingEffect,
+    @JsonKey(name: 'fling_effect') NamedAPIResource flingEffect,
 
     /// A list of attributes this item has.
     ///
     /// See also:
     ///
     /// [ItemAttribute]
-    List<NamedApiResource> attributes,
+    List<NamedAPIResource> attributes,
 
     /// The category of items this item falls into.
     ///
     /// See also:
     ///
     /// [ItemCategory]
-    NamedApiResource category,
+    NamedAPIResource category,
 
     /// The effect of this ability listed in different languages.
     @JsonKey(name: 'effect_entries') List<VerboseEffect> effectEntries,
@@ -67,7 +67,7 @@ class Item with _$Item {
     /// See also:
     ///
     /// [EvolutionChain]
-    @JsonKey(name: 'baby_trigger_for') ApiResource babyTriggerFor,
+    @JsonKey(name: 'baby_trigger_for') APIResource babyTriggerFor,
 
     /// A list of the machines related to this item.
     List<MachineVersionDetail> machines,
@@ -95,7 +95,7 @@ class ItemHolderPokemon with _$ItemHolderPokemon {
     /// See also:
     ///
     /// [Pokemon]
-    NamedApiResource pokemon,
+    NamedAPIResource pokemon,
 
     /// The details for the version that this item is held in by the Pokémon.
     @JsonKey(name: 'version_details')
@@ -117,7 +117,7 @@ class ItemHolderPokemonVersionDetail with _$ItemHolderPokemonVersionDetail {
     /// See also:
     ///
     /// [Version]
-    NamedApiResource version,
+    NamedAPIResource version,
   ) = _ItemHolderPokemonVersionDetail;
 
   factory ItemHolderPokemonVersionDetail.fromJson(Json json) =>
@@ -138,7 +138,7 @@ class ItemAttribute with _$ItemAttribute {
     /// See also:
     ///
     /// [Item]
-    List<NamedApiResource> items,
+    List<NamedAPIResource> items,
 
     /// The name of this item attribute listed in different languages.
     List<Name> names,
@@ -164,7 +164,7 @@ class ItemCategory with _$ItemCategory {
     /// See also:
     ///
     /// [Item]
-    List<NamedApiResource> items,
+    List<NamedAPIResource> items,
 
     /// The name of this item category listed in different languages.
     List<Name> names,
@@ -174,7 +174,7 @@ class ItemCategory with _$ItemCategory {
     /// See also:
     ///
     /// [ItemPocket]
-    NamedApiResource pocket,
+    NamedAPIResource pocket,
   ) = _ItemCategory;
 
   factory ItemCategory.fromJson(Json json) => _$ItemCategoryFromJson(json);
@@ -197,7 +197,7 @@ class ItemFlingEffect with _$ItemFlingEffect {
     /// See also:
     ///
     /// [Item]
-    List<NamedApiResource> items,
+    List<NamedAPIResource> items,
   ) = _ItemFlingEffect;
 
   factory ItemFlingEffect.fromJson(Json json) =>
@@ -218,7 +218,7 @@ class ItemPocket with _$ItemPocket {
     /// See also:
     ///
     /// [ItemCategory]
-    List<NamedApiResource> categories,
+    List<NamedAPIResource> categories,
 
     /// The name of this resource listed in different languages.
     List<Name> names,

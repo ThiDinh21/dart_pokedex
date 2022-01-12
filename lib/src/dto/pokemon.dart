@@ -31,7 +31,7 @@ class Ability with _$Ability {
     /// See also:
     ///
     /// [Generation]
-    NamedApiResource generation,
+    NamedAPIResource generation,
 
     /// The name of this resource listed in different languages.
     List<Name> names,
@@ -64,7 +64,7 @@ class AbilityEffectChange with _$AbilityEffectChange {
     /// See also:
     ///
     /// [VersionGroup]
-    @JsonKey(name: 'version_group') NamedApiResource versionGroup,
+    @JsonKey(name: 'version_group') NamedAPIResource versionGroup,
   ) = _AbilityEffectChange;
 
   factory AbilityEffectChange.fromJson(Json json) =>
@@ -82,14 +82,14 @@ class AbilityFlavorText with _$AbilityFlavorText {
     /// See also:
     ///
     /// [Language]
-    NamedApiResource language,
+    NamedAPIResource language,
 
     /// The version group that uses this flavor text.
     ///
     /// See also:
     ///
     /// [VersionGroup]
-    @JsonKey(name: 'version_group') NamedApiResource versionGroup,
+    @JsonKey(name: 'version_group') NamedAPIResource versionGroup,
   ) = _AbilityFlavorText;
 
   factory AbilityFlavorText.fromJson(Json json) =>
@@ -111,7 +111,7 @@ class AbilityPokemon with _$AbilityPokemon {
     /// See also:
     ///
     /// [Pokemon]
-    NamedApiResource pokemon,
+    NamedAPIResource pokemon,
   ) = _AbilityPokemon;
 
   factory AbilityPokemon.fromJson(Json json) => _$AbilityPokemonFromJson(json);
@@ -151,7 +151,7 @@ class EggGroup with _$EggGroup {
     /// See also:
     ///
     /// [PokemonSpecies]
-    @JsonKey(name: 'pokemon_species') List<NamedApiResource> pokemonSpecies,
+    @JsonKey(name: 'pokemon_species') List<NamedAPIResource> pokemonSpecies,
   ) = _EggGroup;
 
   factory EggGroup.fromJson(Json json) => _$EggGroupFromJson(json);
@@ -173,7 +173,7 @@ class Gender with _$Gender {
     /// A list of Pokémon species that required this gender in order for
     /// a Pokémon to evolve into them.
     @JsonKey(name: 'required_for_evolution')
-        List<NamedApiResource> requiredForEvolution,
+        List<NamedAPIResource> requiredForEvolution,
   ) = _Gender;
 
   factory Gender.fromJson(Json json) => _$GenderFromJson(json);
@@ -190,7 +190,7 @@ class PokemonSpeciesGender with _$PokemonSpeciesGender {
     /// See also:
     ///
     /// [PokemonSpecies]
-    @JsonKey(name: 'pokemon_species') NamedApiResource pokemonSpecies,
+    @JsonKey(name: 'pokemon_species') NamedAPIResource pokemonSpecies,
   ) = _PokemonSpeciesGender;
 
   factory PokemonSpeciesGender.fromJson(Json json) =>
@@ -221,7 +221,7 @@ class GrowthRate with _$GrowthRate {
     /// See also:
     ///
     /// [PokemonSpecies]
-    @JsonKey(name: 'pokemon_species') List<NamedApiResource> pokemonSpecies,
+    @JsonKey(name: 'pokemon_species') List<NamedAPIResource> pokemonSpecies,
   ) = _GrowthRate;
 
   factory GrowthRate.fromJson(Json json) => _$GrowthRateFromJson(json);
@@ -255,32 +255,32 @@ class Nature with _$Nature {
     /// See also:
     ///
     /// [Stat]
-    @JsonKey(name: 'decreased_stat') NamedApiResource decreasedStat,
+    @JsonKey(name: 'decreased_stat') NamedAPIResource decreasedStat,
 
     /// The stat increased by 10% in Pokémon with this nature.
     ///
     /// See also:
     ///
     /// [Stat]
-    @JsonKey(name: 'increased_stat') NamedApiResource increasedStat,
+    @JsonKey(name: 'increased_stat') NamedAPIResource increasedStat,
 
     /// The flavor hated by Pokémon with this nature.
     ///
     /// See also:
     ///
     /// [BerryFlavor]
-    @JsonKey(name: 'hates_flavor') NamedApiResource hatesFlavor,
+    @JsonKey(name: 'hates_flavor') NamedAPIResource hatesFlavor,
 
     /// The flavor liked by Pokémon with this nature.
     ///
     /// See also:
     ///
     /// [BerryFlavor]
-    @JsonKey(name: 'likes_flavor') NamedApiResource likesFlavor,
+    @JsonKey(name: 'likes_flavor') NamedAPIResource likesFlavor,
 
     /// A list of Pokéathlon stats this nature effects and how much it effects them.
     @JsonKey(name: 'pokeathlon_stat_changes')
-        List<NamedApiResource> pokeathlonStatChanges,
+        List<NamedAPIResource> pokeathlonStatChanges,
 
     /// A list of battle styles and how likely a Pokémon with this nature is
     /// to use them in the Battle Palace or Battle Tent.
@@ -305,7 +305,7 @@ class NatureStatChange with _$NatureStatChange {
     /// See also:
     ///
     /// [PokeathlonStat]
-    @JsonKey(name: 'pokeathlon_stat') NamedApiResource pokeathlonStat,
+    @JsonKey(name: 'pokeathlon_stat') NamedAPIResource pokeathlonStat,
   ) = _NatureStatChange;
 
   factory NatureStatChange.fromJson(Json json) =>
@@ -326,7 +326,7 @@ class MoveBattleStylePreference with _$MoveBattleStylePreference {
     /// See also:
     ///
     /// [MoveBattleStyle]
-    @JsonKey(name: 'move_battle_style') NamedApiResource moveBattleStyle,
+    @JsonKey(name: 'move_battle_style') NamedAPIResource moveBattleStyle,
   ) = _MoveBattleStylePreference;
 
   factory MoveBattleStylePreference.fromJson(Json json) =>
@@ -378,7 +378,7 @@ class NaturePokeathlonStatAffect with _$NaturePokeathlonStatAffect {
     /// See also:
     ///
     /// [Nature]
-    NamedApiResource nature,
+    NamedAPIResource nature,
   ) = _NaturePokeathlonStatAffect;
 
   factory NaturePokeathlonStatAffect.fromJson(Json json) =>
@@ -417,7 +417,7 @@ class Pokemon with _$Pokemon {
     /// See also:
     ///
     /// [PokemonForm]
-    List<NamedApiResource> forms,
+    List<NamedAPIResource> forms,
 
     /// A list of game indices relevent to Pokémon item by generation.
     @JsonKey(name: 'game_indices') List<VersionGameIndex> gameIndices,
@@ -446,7 +446,7 @@ class Pokemon with _$Pokemon {
     /// See also:
     ///
     /// [PokemonSpecies]
-    NamedApiResource species,
+    NamedAPIResource species,
 
     /// A list of base stat values for this Pokémon.
     List<PokemonStat> stats,
@@ -472,7 +472,7 @@ class PokemonAbility with _$PokemonAbility {
     /// See also:
     ///
     /// [Ability]
-    NamedApiResource ability,
+    NamedAPIResource ability,
   ) = _PokemonAbility;
 
   factory PokemonAbility.fromJson(Json json) => _$PokemonAbilityFromJson(json);
@@ -489,7 +489,7 @@ class PokemonType with _$PokemonType {
     /// See also:
     ///
     /// [Type]
-    NamedApiResource type,
+    NamedAPIResource type,
   ) = _PokemonType;
 
   factory PokemonType.fromJson(Json json) => _$PokemonTypeFromJson(json);
@@ -506,7 +506,7 @@ class PokemonFormType with _$PokemonFormType {
     /// See also:
     ///
     /// [Type]
-    NamedApiResource type,
+    NamedAPIResource type,
   ) = _PokemonFormType;
 
   factory PokemonFormType.fromJson(Json json) =>
@@ -521,7 +521,7 @@ class PokemonTypePast with _$PokemonTypePast {
     /// See also:
     ///
     /// [Generation]
-    NamedApiResource generation,
+    NamedAPIResource generation,
 
     /// The types the referenced pokémon had up to and including the listed generation.
     List<PokemonType> types,
@@ -539,7 +539,7 @@ class PokemonHeldItem with _$PokemonHeldItem {
     /// See also:
     ///
     /// [Item]
-    NamedApiResource item,
+    NamedAPIResource item,
 
     /// The details of the different versions in which the item is held.
     @JsonKey(name: 'version_details')
@@ -558,7 +558,7 @@ class PokemonHeldItemVersion with _$PokemonHeldItemVersion {
     /// See also:
     ///
     /// [Version]
-    NamedApiResource version,
+    NamedAPIResource version,
 
     /// How often the item is held.
     int rarity,
@@ -576,7 +576,7 @@ class PokemonMove with _$PokemonMove {
     /// See also:
     ///
     /// [Move]
-    NamedApiResource move,
+    NamedAPIResource move,
 
     /// The details of the version in which the Pokémon can learn the move.
     @JsonKey(name: 'version_group_details')
@@ -594,14 +594,14 @@ class PokemonMoveVersion with _$PokemonMoveVersion {
     /// See also:
     ///
     /// [MoveLearnMethod]
-    @JsonKey(name: 'move_learn_method') NamedApiResource moveLearnMethod,
+    @JsonKey(name: 'move_learn_method') NamedAPIResource moveLearnMethod,
 
     /// The version group in which the move is learned.
     ///
     /// See also:
     ///
     /// [VersionGroup]
-    @JsonKey(name: 'version_group') NamedApiResource versionGroup,
+    @JsonKey(name: 'version_group') NamedAPIResource versionGroup,
 
     /// The minimum level to learn the move.
     @JsonKey(name: 'level_learned_at') int levelLearnedAt,
@@ -619,7 +619,7 @@ class PokemonStat with _$PokemonStat {
     /// See also:
     ///
     /// [Stat]
-    NamedApiResource stat,
+    NamedAPIResource stat,
 
     /// The effort points (EV) the Pokémon has in the stat.
     int effort,
@@ -670,7 +670,7 @@ class PokemonLocationAreas with _$PokemonLocationAreas {
     /// See also:
     ///
     /// [LocationArea]
-    @JsonKey(name: 'location_area') NamedApiResource locationArea,
+    @JsonKey(name: 'location_area') NamedAPIResource locationArea,
 
     /// A list of versions and encounters with the referenced Pokémon that might happen.
     @JsonKey(name: 'version_details')
@@ -698,7 +698,7 @@ class PokemonColor with _$PokemonColor {
     /// See also:
     ///
     /// [PokemonSpecies]
-    @JsonKey(name: 'pokemon_species') List<NamedApiResource> pokemonSpecies,
+    @JsonKey(name: 'pokemon_species') List<NamedAPIResource> pokemonSpecies,
   ) = _PokemonColor;
 
   factory PokemonColor.fromJson(Json json) => _$PokemonColorFromJson(json);
@@ -738,14 +738,14 @@ class PokemonForm with _$PokemonForm {
     /// See also:
     ///
     /// [Pokemon]
-    NamedApiResource pokemon,
+    NamedAPIResource pokemon,
 
     /// A list of details showing types this Pokémon form has.
     ///
     /// See also:
     ///
     /// [PokemonFormType]
-    NamedApiResource types,
+    NamedAPIResource types,
 
     /// A set of sprites used to depict this Pokémon form in the game.
     PokemonFormSprites sprites,
@@ -755,7 +755,7 @@ class PokemonForm with _$PokemonForm {
     /// See also:
     ///
     /// [VersionGroup]
-    @JsonKey(name: 'version_group') NamedApiResource versionGroup,
+    @JsonKey(name: 'version_group') NamedAPIResource versionGroup,
 
     /// The form specific full name of this Pokémon form, or empty if the form
     /// does not have a specific name.
@@ -806,7 +806,7 @@ class PokemonHabitat with _$PokemonHabitat {
     /// See also:
     ///
     /// [PokemonSpecies]
-    @JsonKey(name: 'pokemon_species') List<NamedApiResource> pokemonSpecies,
+    @JsonKey(name: 'pokemon_species') List<NamedAPIResource> pokemonSpecies,
   ) = _PokemonHabitat;
 
   factory PokemonHabitat.fromJson(Json json) => _$PokemonHabitatFromJson(json);
@@ -832,7 +832,7 @@ class PokemonShape with _$PokemonShape {
     /// See also:
     ///
     /// [PokemonSpecies]
-    @JsonKey(name: 'pokemon_species') List<NamedApiResource> pokemonSpecies,
+    @JsonKey(name: 'pokemon_species') List<NamedAPIResource> pokemonSpecies,
   ) = _PokemonShape;
 
   factory PokemonShape.fromJson(Json json) => _$PokemonShapeFromJson(json);
@@ -849,7 +849,7 @@ class AwesomeName with _$AwesomeName {
     /// See also:
     ///
     /// [Language]
-    NamedApiResource language,
+    NamedAPIResource language,
   ) = _AwesomeName;
 
   factory AwesomeName.fromJson(Json json) => _$AwesomeNameFromJson(json);
@@ -902,7 +902,7 @@ class PokemonSpecies with _$PokemonSpecies {
     /// See also:
     ///
     /// [GrowthRate]
-    @JsonKey(name: 'growth_rate') NamedApiResource growthRate,
+    @JsonKey(name: 'growth_rate') NamedAPIResource growthRate,
 
     /// A list of Pokedexes and the indexes reserved within them for this Pokémon species.
     @JsonKey(name: 'pokedex_numbers')
@@ -913,21 +913,21 @@ class PokemonSpecies with _$PokemonSpecies {
     /// See also:
     ///
     /// [EggGroup]
-    @JsonKey(name: 'egg_groups') List<NamedApiResource> eggGroups,
+    @JsonKey(name: 'egg_groups') List<NamedAPIResource> eggGroups,
 
     /// The color of this Pokémon for Pokédex search.
     ///
     /// See also:
     ///
     /// [PokemonColor]
-    NamedApiResource color,
+    NamedAPIResource color,
 
     /// The shape of this Pokémon for Pokédex search.
     ///
     /// See also:
     ///
     /// [PokemonShape]
-    NamedApiResource shape,
+    NamedAPIResource shape,
 
     /// The Pokémon species that evolves into this Pokemon_species.
     ///
@@ -935,28 +935,28 @@ class PokemonSpecies with _$PokemonSpecies {
     ///
     /// [PokemonSpecies]
     @JsonKey(name: 'evolves_from_species')
-        List<NamedApiResource> evolvesFromSpecies,
+        List<NamedAPIResource> evolvesFromSpecies,
 
     /// The evolution chain this Pokémon species is a member of.
     ///
     /// See also:
     ///
     /// [EvolutionChain]
-    @JsonKey(name: 'evolution_chain') ApiResource evolutionChain,
+    @JsonKey(name: 'evolution_chain') APIResource evolutionChain,
 
     /// The habitat this Pokémon species can be encountered in.
     ///
     /// See also:
     ///
     /// [PokemonHabitat]
-    NamedApiResource habitat,
+    NamedAPIResource habitat,
 
     /// The generation this Pokémon species was introduced in.
     ///
     /// See also:
     ///
     /// [Generation]
-    NamedApiResource generation,
+    NamedAPIResource generation,
 
     /// The name of this resource listed in different languages.
     List<Name> names,
@@ -992,7 +992,7 @@ class Genus with _$Genus {
     /// See also:
     ///
     /// [Language]
-    NamedApiResource language,
+    NamedAPIResource language,
   ) = _Genus;
 
   factory Genus.fromJson(Json json) => _$GenusFromJson(json);
@@ -1009,7 +1009,7 @@ class PokemonSpeciesDexEntry with _$PokemonSpeciesDexEntry {
     /// See also:
     ///
     /// [PokedexData]
-    NamedApiResource pokedex,
+    NamedAPIResource pokedex,
   ) = _PokemonSpeciesDexEntry;
 
   factory PokemonSpeciesDexEntry.fromJson(Json json) =>
@@ -1030,7 +1030,7 @@ class PalParkEncounterArea with _$PalParkEncounterArea {
     /// See also:
     ///
     /// [PalParkArea]
-    NamedApiResource area,
+    NamedAPIResource area,
   ) = _PalParkEncounterArea;
 
   factory PalParkEncounterArea.fromJson(Json json) =>
@@ -1048,7 +1048,7 @@ class PokemonSpeciesVariety with _$PokemonSpeciesVariety {
     /// See also:
     ///
     /// [Pokemon]
-    NamedApiResource pokemon,
+    NamedAPIResource pokemon,
   ) = _PokemonSpeciesVariety;
 
   factory PokemonSpeciesVariety.fromJson(Json json) =>
@@ -1081,14 +1081,14 @@ class Stat with _$Stat {
     /// See also:
     ///
     /// [Characteristic]
-    List<ApiResource> characteristics,
+    List<APIResource> characteristics,
 
     /// The class of damage this stat is directly related to.
     ///
     /// See also:
     ///
     /// [MoveDamageClass]
-    @JsonKey(name: 'move_damage_class') NamedApiResource moveDamageClass,
+    @JsonKey(name: 'move_damage_class') NamedAPIResource moveDamageClass,
 
     /// The name of this resource listed in different languages.
     List<Name> names,
@@ -1122,7 +1122,7 @@ class MoveStatAffect with _$MoveStatAffect {
     /// See also:
     ///
     /// [Move]
-    NamedApiResource move,
+    NamedAPIResource move,
   ) = _MoveStatAffect;
 
   factory MoveStatAffect.fromJson(Json json) => _$MoveStatAffectFromJson(json);
@@ -1136,14 +1136,14 @@ class NatureStatAffectSets with _$NatureStatAffectSets {
     /// See also:
     ///
     /// [Nature]
-    List<NamedApiResource> increase,
+    List<NamedAPIResource> increase,
 
     /// A list of nature sand how they change the referenced stat.
     ///
     /// See also:
     ///
     /// [Nature]
-    List<NamedApiResource> decrease,
+    List<NamedAPIResource> decrease,
   ) = _NatureStatAffectSets;
 
   factory NatureStatAffectSets.fromJson(Json json) =>
@@ -1175,14 +1175,14 @@ class Type with _$Type {
     /// See also:
     ///
     /// [Generation]
-    NamedApiResource generation,
+    NamedAPIResource generation,
 
     /// The class of damage inflicted by this type.
     ///
     /// See also:
     ///
     /// [MoveDamageClass]
-    @JsonKey(name: 'move_damage_class') NamedApiResource moveDamageClass,
+    @JsonKey(name: 'move_damage_class') NamedAPIResource moveDamageClass,
 
     /// The name of this resource listed in different languages.
     List<Name> names,
@@ -1195,7 +1195,7 @@ class Type with _$Type {
     /// See also:
     ///
     /// [Move]
-    List<NamedApiResource> moves,
+    List<NamedAPIResource> moves,
   ) = _Type;
 
   factory Type.fromJson(Json json) => _$TypeFromJson(json);
@@ -1212,7 +1212,7 @@ class TypePokemon with _$TypePokemon {
     /// See also:
     ///
     /// [Pokemon]
-    NamedApiResource pokemon,
+    NamedAPIResource pokemon,
   ) = _TypePokemon;
 
   factory TypePokemon.fromJson(Json json) => _$TypePokemonFromJson(json);
@@ -1226,35 +1226,35 @@ class TypeRelations with _$TypeRelations {
     /// See also:
     ///
     /// [Type]
-    @JsonKey(name: 'no_damage_to') List<NamedApiResource> noDamageTo,
+    @JsonKey(name: 'no_damage_to') List<NamedAPIResource> noDamageTo,
 
     /// A list of types this type is not very effect against.
     ///
     /// See also:
     ///
     /// [Type]
-    @JsonKey(name: 'half_damage_to') List<NamedApiResource> halfDamageTo,
+    @JsonKey(name: 'half_damage_to') List<NamedAPIResource> halfDamageTo,
 
     /// A list of types this type is very effect against.
     ///
     /// See also:
     ///
     /// [Type]
-    @JsonKey(name: 'double_damage_to') List<NamedApiResource> doubleDamageTo,
+    @JsonKey(name: 'double_damage_to') List<NamedAPIResource> doubleDamageTo,
 
     /// A list of types that have no effect on this type.
     ///
     /// See also:
     ///
     /// [Type]
-    @JsonKey(name: 'no_damage_from') List<NamedApiResource> noDamageFrom,
+    @JsonKey(name: 'no_damage_from') List<NamedAPIResource> noDamageFrom,
 
     /// A list of types that are not very effective against this type.
     ///
     /// See also:
     ///
     /// [Type]
-    @JsonKey(name: 'half_damage_from') List<NamedApiResource> halfDamageFrom,
+    @JsonKey(name: 'half_damage_from') List<NamedAPIResource> halfDamageFrom,
 
     /// A list of types that are very effective against this type.
     ///
@@ -1262,7 +1262,7 @@ class TypeRelations with _$TypeRelations {
     ///
     /// [Type]
     @JsonKey(name: 'double_damage_from')
-        List<NamedApiResource> doubleDamageFrom,
+        List<NamedAPIResource> doubleDamageFrom,
   ) = _TypeRelations;
 
   factory TypeRelations.fromJson(Json json) => _$TypeRelationsFromJson(json);
@@ -1276,7 +1276,7 @@ class TypeRelationsPast with _$TypeRelationsPast {
     /// See also:
     ///
     /// [Generation]
-    NamedApiResource generation,
+    NamedAPIResource generation,
 
     /// The damage relations the referenced type had up to and including the listed generation
     @JsonKey(name: 'damage_relations') TypeRelations damageRelations,

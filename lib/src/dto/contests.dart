@@ -22,7 +22,7 @@ class ContestType with _$ContestType {
     /// See also:
     ///
     /// [BerryFlavor]
-    @JsonKey(name: 'berry_flavor') NamedApiResource berryFlavor,
+    @JsonKey(name: 'berry_flavor') NamedAPIResource berryFlavor,
 
     /// The name of this contest type listed in different languages.
     List<ContestName> names,
@@ -45,7 +45,7 @@ class ContestName with _$ContestName {
     /// See also:
     ///
     /// [Language]
-    NamedApiResource language,
+    NamedAPIResource language,
   ) = _ContestName;
 
   factory ContestName.fromJson(Json json) => _$ContestNameFromJson(json);
@@ -90,7 +90,7 @@ class SuperContestEffect with _$SuperContestEffect {
     /// See also:
     ///
     /// [Move]
-    List<NamedApiResource> moves,
+    List<NamedAPIResource> moves,
   ) = _SuperContestEffect;
 
   factory SuperContestEffect.fromJson(Json json) =>

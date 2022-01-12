@@ -20,7 +20,7 @@ const _baseUrl = 'https://pokeapi.co/api/v2/';
 class Endpoint<Resource>
     with ResourceEndpointMixin<Resource>
     implements BaseEndpoint<Resource> {
-  PokeApiClient client;
+  PokeAPIClient client;
 
   Endpoint(this.client);
 
@@ -32,16 +32,16 @@ class Endpoint<Resource>
   }
 
   @override
-  Future<ApiResourceList> getPage({
+  Future<APIResourceList> getPage({
     int limit = 20,
     int offset = 0,
   }) {
     return client
-        .get<ApiResourceList>('$_baseUrl$path?limit=$limit&?offset=$offset');
+        .get<APIResourceList>('$_baseUrl$path?limit=$limit&?offset=$offset');
   }
 
   @override
-  Future<ApiResourceList> getAll() {
+  Future<APIResourceList> getAll() {
     return getPage(limit: -1);
   }
 }
@@ -49,7 +49,7 @@ class Endpoint<Resource>
 class NamedEndpoint<T>
     with ResourceEndpointMixin<T>
     implements BaseNamedEndpoint<T> {
-  final PokeApiClient client;
+  final PokeAPIClient client;
 
   NamedEndpoint(this.client);
 
@@ -69,17 +69,17 @@ class NamedEndpoint<T>
   }
 
   @override
-  Future<NamedApiResourceList> getPage({
+  Future<NamedAPIResourceList> getPage({
     int limit = 20,
     int offset = 0,
   }) {
-    return client.get<NamedApiResourceList>(
+    return client.get<NamedAPIResourceList>(
       '$_baseUrl$path?limit=$limit&offset=$offset',
     );
   }
 
   @override
-  Future<NamedApiResourceList> getAll() {
+  Future<NamedAPIResourceList> getAll() {
     return getPage(limit: -1);
   }
 }
@@ -100,8 +100,8 @@ mixin ResourceEndpointMixin<T> {
   }
 }
 
-class PokeApiEndpoints extends BasePokeApiEndpoints {
-  PokeApiEndpoints(PokeApiClient client)
+class PokeAPIEndpoints extends BasePokeAPIEndpoints {
+  PokeAPIEndpoints(PokeAPIClient client)
       : super(
           berries: NamedEndpoint<Berry>(client),
           berryFirmness: NamedEndpoint<BerryFirmness>(client),

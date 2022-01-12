@@ -10,7 +10,7 @@ _$_ContestType _$$_ContestTypeFromJson(Map<String, dynamic> json) =>
     _$_ContestType(
       json['id'] as int,
       json['name'] as String,
-      NamedApiResource.fromJson(json['berry_flavor'] as Map<String, dynamic>),
+      NamedAPIResource.fromJson(json['berry_flavor'] as Map<String, dynamic>),
       (json['names'] as List<dynamic>)
           .map((e) => ContestName.fromJson(e as Map<String, dynamic>))
           .toList(),
@@ -28,7 +28,7 @@ _$_ContestName _$$_ContestNameFromJson(Map<String, dynamic> json) =>
     _$_ContestName(
       json['name'] as String,
       json['color'] as String,
-      NamedApiResource.fromJson(json['language'] as Map<String, dynamic>),
+      NamedAPIResource.fromJson(json['language'] as Map<String, dynamic>),
     );
 
 Map<String, dynamic> _$$_ContestNameToJson(_$_ContestName instance) =>
@@ -69,7 +69,7 @@ _$_SuperContestEffect _$$_SuperContestEffectFromJson(
           .map((e) => FlavorText.fromJson(e as Map<String, dynamic>))
           .toList(),
       (json['moves'] as List<dynamic>)
-          .map((e) => NamedApiResource.fromJson(e as Map<String, dynamic>))
+          .map((e) => NamedAPIResource.fromJson(e as Map<String, dynamic>))
           .toList(),
     );
 

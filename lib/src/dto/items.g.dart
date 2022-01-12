@@ -11,11 +11,11 @@ _$_Item _$$_ItemFromJson(Map<String, dynamic> json) => _$_Item(
       json['name'] as String,
       json['cost'] as int,
       json['fling_power'] as int,
-      NamedApiResource.fromJson(json['fling_effect'] as Map<String, dynamic>),
+      NamedAPIResource.fromJson(json['fling_effect'] as Map<String, dynamic>),
       (json['attributes'] as List<dynamic>)
-          .map((e) => NamedApiResource.fromJson(e as Map<String, dynamic>))
+          .map((e) => NamedAPIResource.fromJson(e as Map<String, dynamic>))
           .toList(),
-      NamedApiResource.fromJson(json['category'] as Map<String, dynamic>),
+      NamedAPIResource.fromJson(json['category'] as Map<String, dynamic>),
       (json['effect_entries'] as List<dynamic>)
           .map((e) => VerboseEffect.fromJson(e as Map<String, dynamic>))
           .toList(),
@@ -33,7 +33,7 @@ _$_Item _$$_ItemFromJson(Map<String, dynamic> json) => _$_Item(
       (json['held_by_pokemon'] as List<dynamic>)
           .map((e) => ItemHolderPokemon.fromJson(e as Map<String, dynamic>))
           .toList(),
-      ApiResource.fromJson(json['baby_trigger_for'] as Map<String, dynamic>),
+      APIResource.fromJson(json['baby_trigger_for'] as Map<String, dynamic>),
       (json['machines'] as List<dynamic>)
           .map((e) => MachineVersionDetail.fromJson(e as Map<String, dynamic>))
           .toList(),
@@ -69,7 +69,7 @@ Map<String, dynamic> _$$_ItemSpritesToJson(_$_ItemSprites instance) =>
 
 _$_ItemHolderPokemon _$$_ItemHolderPokemonFromJson(Map<String, dynamic> json) =>
     _$_ItemHolderPokemon(
-      NamedApiResource.fromJson(json['pokemon'] as Map<String, dynamic>),
+      NamedAPIResource.fromJson(json['pokemon'] as Map<String, dynamic>),
       (json['version_details'] as List<dynamic>)
           .map((e) => ItemHolderPokemonVersionDetail.fromJson(
               e as Map<String, dynamic>))
@@ -87,7 +87,7 @@ _$_ItemHolderPokemonVersionDetail _$$_ItemHolderPokemonVersionDetailFromJson(
         Map<String, dynamic> json) =>
     _$_ItemHolderPokemonVersionDetail(
       json['rarity'] as int,
-      NamedApiResource.fromJson(json['version'] as Map<String, dynamic>),
+      NamedAPIResource.fromJson(json['version'] as Map<String, dynamic>),
     );
 
 Map<String, dynamic> _$$_ItemHolderPokemonVersionDetailToJson(
@@ -102,7 +102,7 @@ _$_ItemAttribute _$$_ItemAttributeFromJson(Map<String, dynamic> json) =>
       json['id'] as int,
       json['name'] as String,
       (json['items'] as List<dynamic>)
-          .map((e) => NamedApiResource.fromJson(e as Map<String, dynamic>))
+          .map((e) => NamedAPIResource.fromJson(e as Map<String, dynamic>))
           .toList(),
       (json['names'] as List<dynamic>)
           .map((e) => Name.fromJson(e as Map<String, dynamic>))
@@ -126,12 +126,12 @@ _$_ItemCategory _$$_ItemCategoryFromJson(Map<String, dynamic> json) =>
       json['id'] as int,
       json['name'] as String,
       (json['items'] as List<dynamic>)
-          .map((e) => NamedApiResource.fromJson(e as Map<String, dynamic>))
+          .map((e) => NamedAPIResource.fromJson(e as Map<String, dynamic>))
           .toList(),
       (json['names'] as List<dynamic>)
           .map((e) => Name.fromJson(e as Map<String, dynamic>))
           .toList(),
-      NamedApiResource.fromJson(json['pocket'] as Map<String, dynamic>),
+      NamedAPIResource.fromJson(json['pocket'] as Map<String, dynamic>),
     );
 
 Map<String, dynamic> _$$_ItemCategoryToJson(_$_ItemCategory instance) =>
@@ -151,7 +151,7 @@ _$_ItemFlingEffect _$$_ItemFlingEffectFromJson(Map<String, dynamic> json) =>
           .map((e) => Effect.fromJson(e as Map<String, dynamic>))
           .toList(),
       (json['items'] as List<dynamic>)
-          .map((e) => NamedApiResource.fromJson(e as Map<String, dynamic>))
+          .map((e) => NamedAPIResource.fromJson(e as Map<String, dynamic>))
           .toList(),
     );
 
@@ -168,7 +168,7 @@ _$_ItemPocket _$$_ItemPocketFromJson(Map<String, dynamic> json) =>
       json['id'] as int,
       json['name'] as String,
       (json['categories'] as List<dynamic>)
-          .map((e) => NamedApiResource.fromJson(e as Map<String, dynamic>))
+          .map((e) => NamedAPIResource.fromJson(e as Map<String, dynamic>))
           .toList(),
       (json['names'] as List<dynamic>)
           .map((e) => Name.fromJson(e as Map<String, dynamic>))

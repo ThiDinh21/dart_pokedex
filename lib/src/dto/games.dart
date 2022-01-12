@@ -24,7 +24,7 @@ class Generation with _$Generation {
     /// See also:
     ///
     /// [Ability]
-    List<NamedApiResource> abilities,
+    List<NamedAPIResource> abilities,
 
     /// The name of this resource listed in different languages.
     List<Name> names,
@@ -34,35 +34,35 @@ class Generation with _$Generation {
     /// See also:
     ///
     /// [Region]
-    @JsonKey(name: 'main_region') NamedApiResource mainRegion,
+    @JsonKey(name: 'main_region') NamedAPIResource mainRegion,
 
     /// A list of moves that were introduced in this generation.
     ///
     /// See also:
     ///
     /// [Move]
-    List<NamedApiResource> moves,
+    List<NamedAPIResource> moves,
 
     /// A list of Pokémon species that were introduced in this generation.
     ///
     /// See also:
     ///
     /// [PokemonSpecies]
-    @JsonKey(name: 'pokemon_species') List<NamedApiResource> pokemonSpecies,
+    @JsonKey(name: 'pokemon_species') List<NamedAPIResource> pokemonSpecies,
 
     /// A list of types that were introduced in this generation.
     ///
     /// See also:
     ///
     /// [Type]
-    List<NamedApiResource> types,
+    List<NamedAPIResource> types,
 
     /// A list of version groups that were introduced in this generation.
     ///
     /// See also:
     ///
     /// [VersionGroup]
-    @JsonKey(name: 'version_groups') List<NamedApiResource> versionGroups,
+    @JsonKey(name: 'version_groups') List<NamedAPIResource> versionGroups,
   ) = _Generation;
 
   factory Generation.fromJson(Json json) => _$GenerationFromJson(json);
@@ -94,14 +94,14 @@ class PokedexData with _$PokedexData {
     /// See also:
     ///
     /// [Region]
-    NamedApiResource region,
+    NamedAPIResource region,
 
     /// A list of version groups this Pokédex is relevant to.
     ///
     /// See also:
     ///
     /// [VersionGroup]
-    @JsonKey(name: 'version_groups') List<NamedApiResource> versionGroups,
+    @JsonKey(name: 'version_groups') List<NamedAPIResource> versionGroups,
   ) = _PokedexData;
 
   factory PokedexData.fromJson(Json json) => _$PokedexDataFromJson(json);
@@ -118,7 +118,7 @@ class PokemonEntry with _$PokemonEntry {
     /// See also:
     ///
     /// [PokemonSpecies]
-    @JsonKey(name: 'pokemon_species') NamedApiResource pokemonSpecies,
+    @JsonKey(name: 'pokemon_species') NamedAPIResource pokemonSpecies,
   ) = _PokemonEntry;
 
   factory PokemonEntry.fromJson(Json json) => _$PokemonEntryFromJson(json);
@@ -141,7 +141,7 @@ class Version with _$Version {
     /// See also:
     ///
     /// [VersionGroup]
-    @JsonKey(name: 'version_group') NamedApiResource versionGroup,
+    @JsonKey(name: 'version_group') NamedAPIResource versionGroup,
   ) = _Version;
 
   factory Version.fromJson(Json json) => _$VersionFromJson(json);
@@ -165,7 +165,7 @@ class VersionGroup with _$VersionGroup {
     /// See also:
     ///
     /// [Generation]
-    NamedApiResource generation,
+    NamedAPIResource generation,
 
     /// A list of methods in which Pokémon can learn moves in this version group.
     ///
@@ -173,28 +173,28 @@ class VersionGroup with _$VersionGroup {
     ///
     /// [MoveLearnMethod]
     @JsonKey(name: 'move_learn_methods')
-        List<NamedApiResource> moveLearnMethods,
+        List<NamedAPIResource> moveLearnMethods,
 
     /// A list of Pokédexes introduces in this version group.
     ///
     /// See also:
     ///
     /// [PokedexData]
-    List<NamedApiResource> pokedexes,
+    List<NamedAPIResource> pokedexes,
 
     /// A list of regions that can be visited in this version group.
     ///
     /// See also:
     ///
     /// [Region]
-    List<NamedApiResource> regions,
+    List<NamedAPIResource> regions,
 
     /// The versions this version group owns.
     ///
     /// See also:
     ///
     /// [Version]
-    List<NamedApiResource> versions,
+    List<NamedAPIResource> versions,
   ) = _VersionGroup;
 
   factory VersionGroup.fromJson(Json json) => _$VersionGroupFromJson(json);
