@@ -12,15 +12,6 @@ void main() {
   });
 
   group('Berries', () {
-    // group('Endpoints', () {
-    //   group('Berry', () {
-    // 		// late List<>
-    //     group('getAll', () {
-    //       final berries = mockPokedex.berries.getAll();
-    //     });
-    //   });
-    // });
-
     group('Berry', () {
       const id = 34;
 
