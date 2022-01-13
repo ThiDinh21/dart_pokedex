@@ -23,9 +23,7 @@ class Endpoint<T> with ResourceEndpointMixin<T> implements BaseEndpoint<T> {
   Endpoint(this.client);
 
   @override
-  Future<T> get({
-    required int id,
-  }) {
+  Future<T> get(int id) {
     return client.get<T>('$baseUrl$path/$id');
   }
 
@@ -63,10 +61,10 @@ class NamedEndpoint<T>
   }) {
     assert(
       id != null || name != null,
-      "id and name can not be null at the same time",
+      "The fetch query requires either id or name of the resource.",
     );
     if (id == null && name == null) {
-      throw "id and name can not be null at the same time";
+      throw "The fetch query requires either id or name of the resource.";
     }
     return client.get<T>('$baseUrl$path/${id ?? name}');
   }

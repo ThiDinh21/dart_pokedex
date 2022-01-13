@@ -75,3 +75,25 @@ NamedAPIResource buildContestTypeResource(
     name: name,
   );
 }
+
+NamedAPIResource buildBerryFlavorResource(
+  int id,
+  String name,
+) {
+  return _buildNamedAPIResource(
+    id: id,
+    resource: 'berry-flavor',
+    name: name,
+  );
+}
+
+NamedAPIResource buildMoveResource(
+  int id,
+  String name,
+) {
+  return _buildNamedAPIResource(
+    id: id,
+    resource: 'move',
+    name: name,
+  );
+}

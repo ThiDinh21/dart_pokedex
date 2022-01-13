@@ -12,9 +12,7 @@ import 'package:poke_dart/src/dto/utility/common.dart';
 import 'package:poke_dart/src/dto/utility/languages.dart';
 
 abstract class BaseEndpoint<R> {
-  Future<R> get({
-    required int id,
-  });
+  Future<R> get(int id);
 
   Future<APIResourceList> getPage({
     int limit = 20,
