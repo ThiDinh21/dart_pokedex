@@ -22,6 +22,8 @@ abstract class BaseEndpoint<R> {
   });
 
   Future<APIResourceList> getAll();
+
+  Future<R> getByUrl(String url);
 }
 
 abstract class BaseNamedEndpoint<R> {
@@ -36,6 +38,8 @@ abstract class BaseNamedEndpoint<R> {
   });
 
   Future<NamedAPIResourceList> getAll();
+
+  Future<R> getByUrl(String url);
 }
 
 abstract class BasePokeAPIEndpoints {

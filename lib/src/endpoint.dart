@@ -17,18 +17,16 @@ import 'package:poke_dart/src/dto/utility/languages.dart';
 
 const baseUrl = 'https://pokeapi.co/api/v2/';
 
-class Endpoint<Resource>
-    with ResourceEndpointMixin<Resource>
-    implements BaseEndpoint<Resource> {
+class Endpoint<T> with ResourceEndpointMixin<T> implements BaseEndpoint<T> {
   PokeAPIClient client;
 
   Endpoint(this.client);
 
   @override
-  Future<Resource> get({
+  Future<T> get({
     required int id,
   }) {
-    return client.get<Resource>('$baseUrl$path/$id');
+    return client.get<T>('$baseUrl$path/$id');
   }
 
   @override
@@ -43,6 +41,11 @@ class Endpoint<Resource>
   @override
   Future<APIResourceList> getAll() {
     return getPage(limit: 20000);
+  }
+
+  @override
+  Future<T> getByUrl(String url) {
+    return client.get<T>(url);
   }
 }
 
@@ -81,6 +84,11 @@ class NamedEndpoint<T>
   @override
   Future<NamedAPIResourceList> getAll() {
     return getPage(limit: 20000);
+  }
+
+  @override
+  Future<T> getByUrl(String url) {
+    return client.get<T>(url);
   }
 }
 
