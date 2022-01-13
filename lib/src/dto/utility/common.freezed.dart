@@ -890,7 +890,7 @@ class _$FlavorTextTearOff {
   const _$FlavorTextTearOff();
 
   _FlavorText call(@JsonKey(name: 'flavor_text') String flavorText,
-      NamedAPIResource language, NamedAPIResource version) {
+      NamedAPIResource language, NamedAPIResource? version) {
     return _FlavorText(
       flavorText,
       language,
@@ -924,7 +924,7 @@ mixin _$FlavorText {
   /// See also:
   ///
   /// [Version]
-  NamedAPIResource get version => throw _privateConstructorUsedError;
+  NamedAPIResource? get version => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -940,10 +940,10 @@ abstract class $FlavorTextCopyWith<$Res> {
   $Res call(
       {@JsonKey(name: 'flavor_text') String flavorText,
       NamedAPIResource language,
-      NamedAPIResource version});
+      NamedAPIResource? version});
 
   $NamedAPIResourceCopyWith<$Res> get language;
-  $NamedAPIResourceCopyWith<$Res> get version;
+  $NamedAPIResourceCopyWith<$Res>? get version;
 }
 
 /// @nodoc
@@ -972,7 +972,7 @@ class _$FlavorTextCopyWithImpl<$Res> implements $FlavorTextCopyWith<$Res> {
       version: version == freezed
           ? _value.version
           : version // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedAPIResource?,
     ));
   }
 
@@ -984,8 +984,12 @@ class _$FlavorTextCopyWithImpl<$Res> implements $FlavorTextCopyWith<$Res> {
   }
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get version {
-    return $NamedAPIResourceCopyWith<$Res>(_value.version, (value) {
+  $NamedAPIResourceCopyWith<$Res>? get version {
+    if (_value.version == null) {
+      return null;
+    }
+
+    return $NamedAPIResourceCopyWith<$Res>(_value.version!, (value) {
       return _then(_value.copyWith(version: value));
     });
   }
@@ -1000,12 +1004,12 @@ abstract class _$FlavorTextCopyWith<$Res> implements $FlavorTextCopyWith<$Res> {
   $Res call(
       {@JsonKey(name: 'flavor_text') String flavorText,
       NamedAPIResource language,
-      NamedAPIResource version});
+      NamedAPIResource? version});
 
   @override
   $NamedAPIResourceCopyWith<$Res> get language;
   @override
-  $NamedAPIResourceCopyWith<$Res> get version;
+  $NamedAPIResourceCopyWith<$Res>? get version;
 }
 
 /// @nodoc
@@ -1036,7 +1040,7 @@ class __$FlavorTextCopyWithImpl<$Res> extends _$FlavorTextCopyWithImpl<$Res>
       version == freezed
           ? _value.version
           : version // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedAPIResource?,
     ));
   }
 }
@@ -1070,7 +1074,7 @@ class _$_FlavorText implements _FlavorText {
   /// See also:
   ///
   /// [Version]
-  final NamedAPIResource version;
+  final NamedAPIResource? version;
 
   @override
   String toString() {
@@ -1108,7 +1112,7 @@ class _$_FlavorText implements _FlavorText {
 
 abstract class _FlavorText implements FlavorText {
   const factory _FlavorText(@JsonKey(name: 'flavor_text') String flavorText,
-      NamedAPIResource language, NamedAPIResource version) = _$_FlavorText;
+      NamedAPIResource language, NamedAPIResource? version) = _$_FlavorText;
 
   factory _FlavorText.fromJson(Map<String, dynamic> json) =
       _$_FlavorText.fromJson;
@@ -1133,7 +1137,7 @@ abstract class _FlavorText implements FlavorText {
   /// See also:
   ///
   /// [Version]
-  NamedAPIResource get version;
+  NamedAPIResource? get version;
   @override
   @JsonKey(ignore: true)
   _$FlavorTextCopyWith<_FlavorText> get copyWith =>

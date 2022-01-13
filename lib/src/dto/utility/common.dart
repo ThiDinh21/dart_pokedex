@@ -100,7 +100,7 @@ class FlavorText with _$FlavorText {
     /// See also:
     ///
     /// [Version]
-    NamedAPIResource version,
+    NamedAPIResource? version,
   ) = _FlavorText;
 
   factory FlavorText.fromJson(Json json) => _$FlavorTextFromJson(json);

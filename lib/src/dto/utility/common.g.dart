@@ -61,7 +61,9 @@ _$_FlavorText _$$_FlavorTextFromJson(Map<String, dynamic> json) =>
     _$_FlavorText(
       json['flavor_text'] as String,
       NamedAPIResource.fromJson(json['language'] as Map<String, dynamic>),
-      NamedAPIResource.fromJson(json['version'] as Map<String, dynamic>),
+      json['version'] == null
+          ? null
+          : NamedAPIResource.fromJson(json['version'] as Map<String, dynamic>),
     );
 
 Map<String, dynamic> _$$_FlavorTextToJson(_$_FlavorText instance) =>
