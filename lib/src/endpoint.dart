@@ -15,7 +15,7 @@ import 'package:poke_dart/src/dto/pokemon.dart';
 import 'package:poke_dart/src/dto/utility/common.dart';
 import 'package:poke_dart/src/dto/utility/languages.dart';
 
-const _baseUrl = 'https://pokeapi.co/api/v2/';
+const baseUrl = 'https://pokeapi.co/api/v2/';
 
 class Endpoint<Resource>
     with ResourceEndpointMixin<Resource>
@@ -28,7 +28,7 @@ class Endpoint<Resource>
   Future<Resource> get({
     required int id,
   }) {
-    return client.get<Resource>('$_baseUrl$path/$id');
+    return client.get<Resource>('$baseUrl$path/$id');
   }
 
   @override
@@ -37,12 +37,12 @@ class Endpoint<Resource>
     int offset = 0,
   }) {
     return client
-        .get<APIResourceList>('$_baseUrl$path?limit=$limit&?offset=$offset');
+        .get<APIResourceList>('$baseUrl$path?limit=$limit&?offset=$offset');
   }
 
   @override
   Future<APIResourceList> getAll() {
-    return getPage(limit: -1);
+    return getPage(limit: 20000);
   }
 }
 
@@ -65,7 +65,7 @@ class NamedEndpoint<T>
     if (id == null && name == null) {
       throw "id and name can not be null at the same time";
     }
-    return client.get<T>('$_baseUrl$path/${id ?? name}');
+    return client.get<T>('$baseUrl$path/${id ?? name}');
   }
 
   @override
@@ -74,13 +74,13 @@ class NamedEndpoint<T>
     int offset = 0,
   }) {
     return client.get<NamedAPIResourceList>(
-      '$_baseUrl$path?limit=$limit&offset=$offset',
+      '$baseUrl$path?limit=$limit&offset=$offset',
     );
   }
 
   @override
   Future<NamedAPIResourceList> getAll() {
-    return getPage(limit: -1);
+    return getPage(limit: 20000);
   }
 }
 
