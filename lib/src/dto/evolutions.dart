@@ -23,7 +23,7 @@ class EvolutionChain with _$EvolutionChain {
     /// See also:
     ///
     /// [Item]
-    @JsonKey(name: 'baby_trigger_item') NamedAPIResource babyTriggerItem,
+    @JsonKey(name: 'baby_trigger_item') NamedAPIResource? babyTriggerItem,
 
     /// The base chain link object.
     /// Each link contains evolution details for a Pokémon in the chain.
@@ -66,7 +66,7 @@ class EvolutionDetail with _$EvolutionDetail {
     /// See also:
     ///
     /// [Item]
-    NamedAPIResource item,
+    NamedAPIResource? item,
 
     /// The type of event that triggers evolution into this Pokémon species.
     ///
@@ -77,7 +77,7 @@ class EvolutionDetail with _$EvolutionDetail {
 
     /// The id of the gender of the evolving Pokémon species must be
     /// in order to evolve into this Pokémon species.
-    int gender,
+    int? gender,
 
     /// The item the evolving Pokémon species must be holding
     /// during the evolution trigger event to evolve into this Pokémon species.
@@ -85,7 +85,7 @@ class EvolutionDetail with _$EvolutionDetail {
     /// See also:
     ///
     /// [Item]
-    @JsonKey(name: 'held_item') NamedAPIResource heldItem,
+    @JsonKey(name: 'held_item') NamedAPIResource? heldItem,
 
     /// The move that must be known by the evolving Pokémon species
     /// during the evolution trigger event in order to evolve into this Pokémon species.
@@ -93,7 +93,7 @@ class EvolutionDetail with _$EvolutionDetail {
     /// See also:
     ///
     /// [Move]
-    @JsonKey(name: 'known_move') NamedAPIResource knownMove,
+    @JsonKey(name: 'known_move') NamedAPIResource? knownMove,
 
     /// The evolving Pokémon species must know a move with this type
     /// during the evolution trigger event in order to evolve into this Pokémon species.
@@ -101,30 +101,30 @@ class EvolutionDetail with _$EvolutionDetail {
     /// See also:
     ///
     /// [Type]
-    @JsonKey(name: 'known_move_type') NamedAPIResource knownMoveType,
+    @JsonKey(name: 'known_move_type') NamedAPIResource? knownMoveType,
 
     /// The location the evolution must be triggered at.
     ///
     /// See also:
     ///
     /// [Location]
-    NamedAPIResource location,
+    NamedAPIResource? location,
 
     /// The minimum required level of the evolving Pokémon species to evolve
     /// into this Pokémon species.
-    @JsonKey(name: 'min_level') int minLevel,
+    @JsonKey(name: 'min_level') int? minLevel,
 
     /// The minimum required level of happiness the evolving Pokémon species
     /// to evolve into this Pokémon species.
-    @JsonKey(name: 'min_happiness') int minHappiness,
+    @JsonKey(name: 'min_happiness') int? minHappiness,
 
     /// The minimum required level of beauty the evolving Pokémon species
     /// to evolve into this Pokémon species.
-    @JsonKey(name: 'min_beauty') int minBeauty,
+    @JsonKey(name: 'min_beauty') int? minBeauty,
 
     /// The minimum required level of affection the evolving Pokémon species
     /// to evolve into this Pokémon species.
-    @JsonKey(name: 'min_affection') int minAffection,
+    @JsonKey(name: 'min_affection') int? minAffection,
 
     /// Whether or not it must be raining in the overworld
     /// to cause evolution this Pokémon species.
@@ -136,7 +136,7 @@ class EvolutionDetail with _$EvolutionDetail {
     /// See also:
     ///
     /// [PokemonSpecies]
-    @JsonKey(name: 'party_species') NamedAPIResource partySpecies,
+    @JsonKey(name: 'party_species') NamedAPIResource? partySpecies,
 
     /// The player must have a Pokémon of this type in their party
     /// during the evolution trigger event in order for the evolving Pokémon species
@@ -145,11 +145,11 @@ class EvolutionDetail with _$EvolutionDetail {
     /// See also:
     ///
     /// [Type]
-    @JsonKey(name: 'party_type') NamedAPIResource partyType,
+    @JsonKey(name: 'party_type') NamedAPIResource? partyType,
 
     /// The required relation between the Pokémon's Attack and Defense stats.
     /// 1 means Attack > Defense. 0 means Attack = Defense. -1 means Attack < Defense.
-    @JsonKey(name: 'relative_physical_stats') int relativePhysicalStats,
+    @JsonKey(name: 'relative_physical_stats') int? relativePhysicalStats,
 
     /// The required time of day. Day or night.
     @JsonKey(name: 'time_of_day') String timeOfDay,
@@ -159,7 +159,7 @@ class EvolutionDetail with _$EvolutionDetail {
     /// See also:
     ///
     /// [PokemonSpecies]
-    @JsonKey(name: 'trade_species') NamedAPIResource tradeSpecies,
+    @JsonKey(name: 'trade_species') NamedAPIResource? tradeSpecies,
 
     /// Whether or not the 3DS needs to be turned upside-down as this Pokémon levels up.
     @JsonKey(name: 'turn_upside_down') bool turnUpsideDown,

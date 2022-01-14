@@ -9,8 +9,10 @@ part of 'evolutions.dart';
 _$_EvolutionChain _$$_EvolutionChainFromJson(Map<String, dynamic> json) =>
     _$_EvolutionChain(
       json['id'] as int,
-      NamedAPIResource.fromJson(
-          json['baby_trigger_item'] as Map<String, dynamic>),
+      json['baby_trigger_item'] == null
+          ? null
+          : NamedAPIResource.fromJson(
+              json['baby_trigger_item'] as Map<String, dynamic>),
       ChainLink.fromJson(json['chain'] as Map<String, dynamic>),
     );
 
@@ -42,24 +44,45 @@ Map<String, dynamic> _$$_ChainLinkToJson(_$_ChainLink instance) =>
 
 _$_EvolutionDetail _$$_EvolutionDetailFromJson(Map<String, dynamic> json) =>
     _$_EvolutionDetail(
-      NamedAPIResource.fromJson(json['item'] as Map<String, dynamic>),
+      json['item'] == null
+          ? null
+          : NamedAPIResource.fromJson(json['item'] as Map<String, dynamic>),
       NamedAPIResource.fromJson(json['trigger'] as Map<String, dynamic>),
-      json['gender'] as int,
-      NamedAPIResource.fromJson(json['held_item'] as Map<String, dynamic>),
-      NamedAPIResource.fromJson(json['known_move'] as Map<String, dynamic>),
-      NamedAPIResource.fromJson(
-          json['known_move_type'] as Map<String, dynamic>),
-      NamedAPIResource.fromJson(json['location'] as Map<String, dynamic>),
-      json['min_level'] as int,
-      json['min_happiness'] as int,
-      json['min_beauty'] as int,
-      json['min_affection'] as int,
+      json['gender'] as int?,
+      json['held_item'] == null
+          ? null
+          : NamedAPIResource.fromJson(
+              json['held_item'] as Map<String, dynamic>),
+      json['known_move'] == null
+          ? null
+          : NamedAPIResource.fromJson(
+              json['known_move'] as Map<String, dynamic>),
+      json['known_move_type'] == null
+          ? null
+          : NamedAPIResource.fromJson(
+              json['known_move_type'] as Map<String, dynamic>),
+      json['location'] == null
+          ? null
+          : NamedAPIResource.fromJson(json['location'] as Map<String, dynamic>),
+      json['min_level'] as int?,
+      json['min_happiness'] as int?,
+      json['min_beauty'] as int?,
+      json['min_affection'] as int?,
       json['needs_overworld_rain'] as bool,
-      NamedAPIResource.fromJson(json['party_species'] as Map<String, dynamic>),
-      NamedAPIResource.fromJson(json['party_type'] as Map<String, dynamic>),
-      json['relative_physical_stats'] as int,
+      json['party_species'] == null
+          ? null
+          : NamedAPIResource.fromJson(
+              json['party_species'] as Map<String, dynamic>),
+      json['party_type'] == null
+          ? null
+          : NamedAPIResource.fromJson(
+              json['party_type'] as Map<String, dynamic>),
+      json['relative_physical_stats'] as int?,
       json['time_of_day'] as String,
-      NamedAPIResource.fromJson(json['trade_species'] as Map<String, dynamic>),
+      json['trade_species'] == null
+          ? null
+          : NamedAPIResource.fromJson(
+              json['trade_species'] as Map<String, dynamic>),
       json['turn_upside_down'] as bool,
     );
 
