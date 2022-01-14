@@ -42,4 +42,98 @@ void main() {
       expect(locations.length, 20);
     });
   });
+
+  group('LocationArea', () {
+    final List<LocationArea> areas = [];
+    late BaseNamedEndpoint<LocationArea> endpoint;
+
+    setUp(() {
+      areas.clear();
+      endpoint = dex.locationAreas;
+    });
+
+    test(
+      'getAll',
+      () async {
+        final resources = await endpoint.getAll();
+        for (final resource in resources.results) {
+          final item = await endpoint.getByUrl(resource.url);
+          areas.add(item);
+        }
+
+        expect(areas.length, 702);
+      },
+      timeout: const Timeout(Duration(seconds: 600)),
+    );
+
+    test('getPage', () async {
+      final resources = await endpoint.getPage();
+      for (final resource in resources.results) {
+        final item = await endpoint.getByUrl(resource.url);
+        areas.add(item);
+      }
+
+      expect(areas.length, 20);
+    });
+  });
+
+  group('PalParkArea', () {
+    final List<PalParkArea> parkAreas = [];
+    late BaseNamedEndpoint<PalParkArea> endpoint;
+
+    setUp(() {
+      parkAreas.clear();
+      endpoint = dex.palParkAreas;
+    });
+
+    test('getAll', () async {
+      final resources = await endpoint.getAll();
+      for (final resource in resources.results) {
+        final item = await endpoint.getByUrl(resource.url);
+        parkAreas.add(item);
+      }
+
+      expect(parkAreas.length, 5);
+    });
+
+    test('getPage', () async {
+      final resources = await endpoint.getPage();
+      for (final resource in resources.results) {
+        final item = await endpoint.getByUrl(resource.url);
+        parkAreas.add(item);
+      }
+
+      expect(parkAreas.length, 5);
+    });
+  });
+
+  group('Region', () {
+    final List<Region> regions = [];
+    late BaseNamedEndpoint<Region> endpoint;
+
+    setUp(() {
+      regions.clear();
+      endpoint = dex.regions;
+    });
+
+    test('getAll', () async {
+      final resources = await endpoint.getAll();
+      for (final resource in resources.results) {
+        final item = await endpoint.getByUrl(resource.url);
+        regions.add(item);
+      }
+
+      expect(regions.length, 8);
+    });
+
+    test('getPage', () async {
+      final resources = await endpoint.getPage();
+      for (final resource in resources.results) {
+        final item = await endpoint.getByUrl(resource.url);
+        regions.add(item);
+      }
+
+      expect(regions.length, 8);
+    });
+  });
 }
