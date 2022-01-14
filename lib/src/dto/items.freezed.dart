@@ -27,9 +27,9 @@ class _$ItemTearOff {
       String name,
       int cost,
       @JsonKey(name: 'fling_power')
-          int flingPower,
+          int? flingPower,
       @JsonKey(name: 'fling_effect')
-          NamedAPIResource flingEffect,
+          NamedAPIResource? flingEffect,
       List<NamedAPIResource> attributes,
       NamedAPIResource category,
       @JsonKey(name: 'effect_entries')
@@ -43,7 +43,7 @@ class _$ItemTearOff {
       @JsonKey(name: 'held_by_pokemon')
           List<ItemHolderPokemon> heldByPokemon,
       @JsonKey(name: 'baby_trigger_for')
-          APIResource babyTriggerFor,
+          APIResource? babyTriggerFor,
       List<MachineVersionDetail> machines) {
     return _Item(
       id,
@@ -85,7 +85,7 @@ mixin _$Item {
 
   /// The power of the move Fling when used with this item.
   @JsonKey(name: 'fling_power')
-  int get flingPower => throw _privateConstructorUsedError;
+  int? get flingPower => throw _privateConstructorUsedError;
 
   /// The effect of the move Fling when used with this item.
   ///
@@ -93,7 +93,7 @@ mixin _$Item {
   ///
   /// [ItemFlingEffect]
   @JsonKey(name: 'fling_effect')
-  NamedAPIResource get flingEffect => throw _privateConstructorUsedError;
+  NamedAPIResource? get flingEffect => throw _privateConstructorUsedError;
 
   /// A list of attributes this item has.
   ///
@@ -140,7 +140,7 @@ mixin _$Item {
   ///
   /// [EvolutionChain]
   @JsonKey(name: 'baby_trigger_for')
-  APIResource get babyTriggerFor => throw _privateConstructorUsedError;
+  APIResource? get babyTriggerFor => throw _privateConstructorUsedError;
 
   /// A list of the machines related to this item.
   List<MachineVersionDetail> get machines => throw _privateConstructorUsedError;
@@ -159,9 +159,9 @@ abstract class $ItemCopyWith<$Res> {
       String name,
       int cost,
       @JsonKey(name: 'fling_power')
-          int flingPower,
+          int? flingPower,
       @JsonKey(name: 'fling_effect')
-          NamedAPIResource flingEffect,
+          NamedAPIResource? flingEffect,
       List<NamedAPIResource> attributes,
       NamedAPIResource category,
       @JsonKey(name: 'effect_entries')
@@ -175,13 +175,13 @@ abstract class $ItemCopyWith<$Res> {
       @JsonKey(name: 'held_by_pokemon')
           List<ItemHolderPokemon> heldByPokemon,
       @JsonKey(name: 'baby_trigger_for')
-          APIResource babyTriggerFor,
+          APIResource? babyTriggerFor,
       List<MachineVersionDetail> machines});
 
-  $NamedAPIResourceCopyWith<$Res> get flingEffect;
+  $NamedAPIResourceCopyWith<$Res>? get flingEffect;
   $NamedAPIResourceCopyWith<$Res> get category;
   $ItemSpritesCopyWith<$Res> get sprites;
-  $APIResourceCopyWith<$Res> get babyTriggerFor;
+  $APIResourceCopyWith<$Res>? get babyTriggerFor;
 }
 
 /// @nodoc
@@ -226,11 +226,11 @@ class _$ItemCopyWithImpl<$Res> implements $ItemCopyWith<$Res> {
       flingPower: flingPower == freezed
           ? _value.flingPower
           : flingPower // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
       flingEffect: flingEffect == freezed
           ? _value.flingEffect
           : flingEffect // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedAPIResource?,
       attributes: attributes == freezed
           ? _value.attributes
           : attributes // ignore: cast_nullable_to_non_nullable
@@ -266,7 +266,7 @@ class _$ItemCopyWithImpl<$Res> implements $ItemCopyWith<$Res> {
       babyTriggerFor: babyTriggerFor == freezed
           ? _value.babyTriggerFor
           : babyTriggerFor // ignore: cast_nullable_to_non_nullable
-              as APIResource,
+              as APIResource?,
       machines: machines == freezed
           ? _value.machines
           : machines // ignore: cast_nullable_to_non_nullable
@@ -275,8 +275,12 @@ class _$ItemCopyWithImpl<$Res> implements $ItemCopyWith<$Res> {
   }
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get flingEffect {
-    return $NamedAPIResourceCopyWith<$Res>(_value.flingEffect, (value) {
+  $NamedAPIResourceCopyWith<$Res>? get flingEffect {
+    if (_value.flingEffect == null) {
+      return null;
+    }
+
+    return $NamedAPIResourceCopyWith<$Res>(_value.flingEffect!, (value) {
       return _then(_value.copyWith(flingEffect: value));
     });
   }
@@ -296,8 +300,12 @@ class _$ItemCopyWithImpl<$Res> implements $ItemCopyWith<$Res> {
   }
 
   @override
-  $APIResourceCopyWith<$Res> get babyTriggerFor {
-    return $APIResourceCopyWith<$Res>(_value.babyTriggerFor, (value) {
+  $APIResourceCopyWith<$Res>? get babyTriggerFor {
+    if (_value.babyTriggerFor == null) {
+      return null;
+    }
+
+    return $APIResourceCopyWith<$Res>(_value.babyTriggerFor!, (value) {
       return _then(_value.copyWith(babyTriggerFor: value));
     });
   }
@@ -313,9 +321,9 @@ abstract class _$ItemCopyWith<$Res> implements $ItemCopyWith<$Res> {
       String name,
       int cost,
       @JsonKey(name: 'fling_power')
-          int flingPower,
+          int? flingPower,
       @JsonKey(name: 'fling_effect')
-          NamedAPIResource flingEffect,
+          NamedAPIResource? flingEffect,
       List<NamedAPIResource> attributes,
       NamedAPIResource category,
       @JsonKey(name: 'effect_entries')
@@ -329,17 +337,17 @@ abstract class _$ItemCopyWith<$Res> implements $ItemCopyWith<$Res> {
       @JsonKey(name: 'held_by_pokemon')
           List<ItemHolderPokemon> heldByPokemon,
       @JsonKey(name: 'baby_trigger_for')
-          APIResource babyTriggerFor,
+          APIResource? babyTriggerFor,
       List<MachineVersionDetail> machines});
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get flingEffect;
+  $NamedAPIResourceCopyWith<$Res>? get flingEffect;
   @override
   $NamedAPIResourceCopyWith<$Res> get category;
   @override
   $ItemSpritesCopyWith<$Res> get sprites;
   @override
-  $APIResourceCopyWith<$Res> get babyTriggerFor;
+  $APIResourceCopyWith<$Res>? get babyTriggerFor;
 }
 
 /// @nodoc
@@ -385,11 +393,11 @@ class __$ItemCopyWithImpl<$Res> extends _$ItemCopyWithImpl<$Res>
       flingPower == freezed
           ? _value.flingPower
           : flingPower // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
       flingEffect == freezed
           ? _value.flingEffect
           : flingEffect // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedAPIResource?,
       attributes == freezed
           ? _value.attributes
           : attributes // ignore: cast_nullable_to_non_nullable
@@ -425,7 +433,7 @@ class __$ItemCopyWithImpl<$Res> extends _$ItemCopyWithImpl<$Res>
       babyTriggerFor == freezed
           ? _value.babyTriggerFor
           : babyTriggerFor // ignore: cast_nullable_to_non_nullable
-              as APIResource,
+              as APIResource?,
       machines == freezed
           ? _value.machines
           : machines // ignore: cast_nullable_to_non_nullable
@@ -472,7 +480,7 @@ class _$_Item implements _Item {
 
   /// The power of the move Fling when used with this item.
   @JsonKey(name: 'fling_power')
-  final int flingPower;
+  final int? flingPower;
   @override
 
   /// The effect of the move Fling when used with this item.
@@ -481,7 +489,7 @@ class _$_Item implements _Item {
   ///
   /// [ItemFlingEffect]
   @JsonKey(name: 'fling_effect')
-  final NamedAPIResource flingEffect;
+  final NamedAPIResource? flingEffect;
   @override
 
   /// A list of attributes this item has.
@@ -534,7 +542,7 @@ class _$_Item implements _Item {
   ///
   /// [EvolutionChain]
   @JsonKey(name: 'baby_trigger_for')
-  final APIResource babyTriggerFor;
+  final APIResource? babyTriggerFor;
   @override
 
   /// A list of the machines related to this item.
@@ -611,9 +619,9 @@ abstract class _Item implements Item {
       String name,
       int cost,
       @JsonKey(name: 'fling_power')
-          int flingPower,
+          int? flingPower,
       @JsonKey(name: 'fling_effect')
-          NamedAPIResource flingEffect,
+          NamedAPIResource? flingEffect,
       List<NamedAPIResource> attributes,
       NamedAPIResource category,
       @JsonKey(name: 'effect_entries')
@@ -627,7 +635,7 @@ abstract class _Item implements Item {
       @JsonKey(name: 'held_by_pokemon')
           List<ItemHolderPokemon> heldByPokemon,
       @JsonKey(name: 'baby_trigger_for')
-          APIResource babyTriggerFor,
+          APIResource? babyTriggerFor,
       List<MachineVersionDetail> machines) = _$_Item;
 
   factory _Item.fromJson(Map<String, dynamic> json) = _$_Item.fromJson;
@@ -648,7 +656,7 @@ abstract class _Item implements Item {
 
   /// The power of the move Fling when used with this item.
   @JsonKey(name: 'fling_power')
-  int get flingPower;
+  int? get flingPower;
   @override
 
   /// The effect of the move Fling when used with this item.
@@ -657,7 +665,7 @@ abstract class _Item implements Item {
   ///
   /// [ItemFlingEffect]
   @JsonKey(name: 'fling_effect')
-  NamedAPIResource get flingEffect;
+  NamedAPIResource? get flingEffect;
   @override
 
   /// A list of attributes this item has.
@@ -710,7 +718,7 @@ abstract class _Item implements Item {
   ///
   /// [EvolutionChain]
   @JsonKey(name: 'baby_trigger_for')
-  APIResource get babyTriggerFor;
+  APIResource? get babyTriggerFor;
   @override
 
   /// A list of the machines related to this item.
@@ -728,7 +736,7 @@ ItemSprites _$ItemSpritesFromJson(Map<String, dynamic> json) {
 class _$ItemSpritesTearOff {
   const _$ItemSpritesTearOff();
 
-  _ItemSprites call(@JsonKey(name: 'default') String value) {
+  _ItemSprites call(@JsonKey(name: 'default') String? value) {
     return _ItemSprites(
       value,
     );
@@ -747,7 +755,7 @@ mixin _$ItemSprites {
   /// The default depiction of this item.
 // Since default is a Dart keyword we have to use this instead
   @JsonKey(name: 'default')
-  String get value => throw _privateConstructorUsedError;
+  String? get value => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -760,7 +768,7 @@ abstract class $ItemSpritesCopyWith<$Res> {
   factory $ItemSpritesCopyWith(
           ItemSprites value, $Res Function(ItemSprites) then) =
       _$ItemSpritesCopyWithImpl<$Res>;
-  $Res call({@JsonKey(name: 'default') String value});
+  $Res call({@JsonKey(name: 'default') String? value});
 }
 
 /// @nodoc
@@ -779,7 +787,7 @@ class _$ItemSpritesCopyWithImpl<$Res> implements $ItemSpritesCopyWith<$Res> {
       value: value == freezed
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
     ));
   }
 }
@@ -791,7 +799,7 @@ abstract class _$ItemSpritesCopyWith<$Res>
           _ItemSprites value, $Res Function(_ItemSprites) then) =
       __$ItemSpritesCopyWithImpl<$Res>;
   @override
-  $Res call({@JsonKey(name: 'default') String value});
+  $Res call({@JsonKey(name: 'default') String? value});
 }
 
 /// @nodoc
@@ -812,7 +820,7 @@ class __$ItemSpritesCopyWithImpl<$Res> extends _$ItemSpritesCopyWithImpl<$Res>
       value == freezed
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
     ));
   }
 }
@@ -830,7 +838,7 @@ class _$_ItemSprites implements _ItemSprites {
   /// The default depiction of this item.
 // Since default is a Dart keyword we have to use this instead
   @JsonKey(name: 'default')
-  final String value;
+  final String? value;
 
   @override
   String toString() {
@@ -861,7 +869,7 @@ class _$_ItemSprites implements _ItemSprites {
 }
 
 abstract class _ItemSprites implements ItemSprites {
-  const factory _ItemSprites(@JsonKey(name: 'default') String value) =
+  const factory _ItemSprites(@JsonKey(name: 'default') String? value) =
       _$_ItemSprites;
 
   factory _ItemSprites.fromJson(Map<String, dynamic> json) =
@@ -872,7 +880,7 @@ abstract class _ItemSprites implements ItemSprites {
   /// The default depiction of this item.
 // Since default is a Dart keyword we have to use this instead
   @JsonKey(name: 'default')
-  String get value;
+  String? get value;
   @override
   @JsonKey(ignore: true)
   _$ItemSpritesCopyWith<_ItemSprites> get copyWith =>

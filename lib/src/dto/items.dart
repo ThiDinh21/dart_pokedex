@@ -20,14 +20,14 @@ class Item with _$Item {
     int cost,
 
     /// The power of the move Fling when used with this item.
-    @JsonKey(name: 'fling_power') int flingPower,
+    @JsonKey(name: 'fling_power') int? flingPower,
 
     /// The effect of the move Fling when used with this item.
     ///
     /// See also:
     ///
     /// [ItemFlingEffect]
-    @JsonKey(name: 'fling_effect') NamedAPIResource flingEffect,
+    @JsonKey(name: 'fling_effect') NamedAPIResource? flingEffect,
 
     /// A list of attributes this item has.
     ///
@@ -67,7 +67,7 @@ class Item with _$Item {
     /// See also:
     ///
     /// [EvolutionChain]
-    @JsonKey(name: 'baby_trigger_for') APIResource babyTriggerFor,
+    @JsonKey(name: 'baby_trigger_for') APIResource? babyTriggerFor,
 
     /// A list of the machines related to this item.
     List<MachineVersionDetail> machines,
@@ -81,7 +81,7 @@ class ItemSprites with _$ItemSprites {
   const factory ItemSprites(
     /// The default depiction of this item.
     // Since default is a Dart keyword we have to use this instead
-    @JsonKey(name: 'default') String value,
+    @JsonKey(name: 'default') String? value,
   ) = _ItemSprites;
 
   factory ItemSprites.fromJson(Json json) => _$ItemSpritesFromJson(json);

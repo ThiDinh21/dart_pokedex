@@ -10,8 +10,11 @@ _$_Item _$$_ItemFromJson(Map<String, dynamic> json) => _$_Item(
       json['id'] as int,
       json['name'] as String,
       json['cost'] as int,
-      json['fling_power'] as int,
-      NamedAPIResource.fromJson(json['fling_effect'] as Map<String, dynamic>),
+      json['fling_power'] as int?,
+      json['fling_effect'] == null
+          ? null
+          : NamedAPIResource.fromJson(
+              json['fling_effect'] as Map<String, dynamic>),
       (json['attributes'] as List<dynamic>)
           .map((e) => NamedAPIResource.fromJson(e as Map<String, dynamic>))
           .toList(),
@@ -33,7 +36,10 @@ _$_Item _$$_ItemFromJson(Map<String, dynamic> json) => _$_Item(
       (json['held_by_pokemon'] as List<dynamic>)
           .map((e) => ItemHolderPokemon.fromJson(e as Map<String, dynamic>))
           .toList(),
-      APIResource.fromJson(json['baby_trigger_for'] as Map<String, dynamic>),
+      json['baby_trigger_for'] == null
+          ? null
+          : APIResource.fromJson(
+              json['baby_trigger_for'] as Map<String, dynamic>),
       (json['machines'] as List<dynamic>)
           .map((e) => MachineVersionDetail.fromJson(e as Map<String, dynamic>))
           .toList(),
@@ -59,7 +65,7 @@ Map<String, dynamic> _$$_ItemToJson(_$_Item instance) => <String, dynamic>{
 
 _$_ItemSprites _$$_ItemSpritesFromJson(Map<String, dynamic> json) =>
     _$_ItemSprites(
-      json['default'] as String,
+      json['default'] as String?,
     );
 
 Map<String, dynamic> _$$_ItemSpritesToJson(_$_ItemSprites instance) =>
