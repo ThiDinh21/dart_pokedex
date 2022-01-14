@@ -6,6 +6,7 @@ final languageEn = _buildNamedAPIResource(
   resource: 'language',
 );
 
+// ignore: unused_element
 APIResource _buildAPIResource({
   required int id,
   required String resource,

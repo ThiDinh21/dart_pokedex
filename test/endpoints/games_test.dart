@@ -68,4 +68,64 @@ void main() {
       expect(dexes.length, 20);
     });
   });
+
+  group('Version', () {
+    final List<Version> versions = [];
+    late BaseNamedEndpoint<Version> endpoint;
+
+    setUp(() {
+      versions.clear();
+      endpoint = dex.version;
+    });
+
+    test('getAll', () async {
+      final resources = await endpoint.getAll();
+      for (final resource in resources.results) {
+        final item = await endpoint.getByUrl(resource.url);
+        versions.add(item);
+      }
+
+      expect(versions.length, 34);
+    });
+
+    test('getPage', () async {
+      final resources = await endpoint.getPage();
+      for (final resource in resources.results) {
+        final item = await endpoint.getByUrl(resource.url);
+        versions.add(item);
+      }
+
+      expect(versions.length, 20);
+    });
+  });
+
+  group('VersionGroup', () {
+    final List<VersionGroup> versionGrps = [];
+    late BaseNamedEndpoint<VersionGroup> endpoint;
+
+    setUp(() {
+      versionGrps.clear();
+      endpoint = dex.versionGroups;
+    });
+
+    test('getAll', () async {
+      final resources = await endpoint.getAll();
+      for (final resource in resources.results) {
+        final item = await endpoint.getByUrl(resource.url);
+        versionGrps.add(item);
+      }
+
+      expect(versionGrps.length, 20);
+    });
+
+    test('getPage', () async {
+      final resources = await endpoint.getPage();
+      for (final resource in resources.results) {
+        final item = await endpoint.getByUrl(resource.url);
+        versionGrps.add(item);
+      }
+
+      expect(versionGrps.length, 20);
+    });
+  });
 }
