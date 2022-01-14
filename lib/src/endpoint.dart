@@ -90,22 +90,6 @@ class NamedEndpoint<T>
   }
 }
 
-mixin ResourceEndpointMixin<T> {
-  String? _resource;
-  String get path => _resource ?? _createResource();
-
-  String _createResource() {
-    _resource = T
-        .toString()
-        .split('<')[0] // drop generic
-        .split(RegExp('(?=[A-Z])'))
-        .join('-')
-        .toLowerCase();
-
-    return _resource!;
-  }
-}
-
 class PokeAPIEndpoints extends BasePokeAPIEndpoints {
   PokeAPIEndpoints(PokeAPIClient client)
       : super(

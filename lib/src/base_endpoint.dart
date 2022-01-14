@@ -11,8 +11,8 @@ import 'package:poke_dart/src/dto/pokemon.dart';
 import 'package:poke_dart/src/dto/utility/common.dart';
 import 'package:poke_dart/src/dto/utility/languages.dart';
 
-abstract class BaseEndpoint<R> {
-  Future<R> get(int id);
+abstract class BaseEndpoint<T> with ResourceEndpointMixin<T> {
+  Future<T> get(int id);
 
   Future<APIResourceList> getPage({
     int limit = 20,
@@ -21,11 +21,11 @@ abstract class BaseEndpoint<R> {
 
   Future<APIResourceList> getAll();
 
-  Future<R> getByUrl(String url);
+  Future<T> getByUrl(String url);
 }
 
-abstract class BaseNamedEndpoint<R> {
-  Future<R> get({
+abstract class BaseNamedEndpoint<T> with ResourceEndpointMixin<T> {
+  Future<T> get({
     int? id,
     String? name,
   });
@@ -37,7 +37,25 @@ abstract class BaseNamedEndpoint<R> {
 
   Future<NamedAPIResourceList> getAll();
 
-  Future<R> getByUrl(String url);
+  Future<T> getByUrl(String url);
+}
+
+mixin ResourceEndpointMixin<T> {
+  String? _resource;
+  String get path => _resource ?? _createResource();
+
+  String _createResource() {
+    _resource = T == PokedexData
+        ? 'pokedex'
+        : T
+            .toString()
+            .split('<')[0] // drop generic
+            .split(RegExp('(?=[A-Z])'))
+            .join('-')
+            .toLowerCase();
+
+    return _resource!;
+  }
 }
 
 abstract class BasePokeAPIEndpoints {

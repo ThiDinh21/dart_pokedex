@@ -2,7 +2,6 @@ import 'dart:core' as core show Type;
 import 'dart:core';
 
 import 'package:poke_dart/src/base_converter_factory.dart';
-import 'package:poke_dart/src/client.dart';
 import 'package:poke_dart/src/dto/berries.dart';
 import 'package:poke_dart/src/dto/contests.dart';
 import 'package:poke_dart/src/dto/encounters.dart';
@@ -74,7 +73,7 @@ class ConverterFactory implements BaseConverterFactory {
       fromJson: (json) => Generation.fromJson(json),
       toJson: (data) => data.toJson(),
     ),
-    Pokedex: Converter<PokedexData>(
+    PokedexData: Converter<PokedexData>(
       fromJson: (json) => PokedexData.fromJson(json),
       toJson: (data) => data.toJson(),
     ),
