@@ -22,7 +22,7 @@ class Location with _$Location {
     /// See also:
     ///
     /// [Region]
-    NamedAPIResource region,
+    NamedAPIResource? region,
 
     /// The name of this resource listed in different languages.
     List<Name> names,

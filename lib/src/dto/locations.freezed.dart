@@ -25,7 +25,7 @@ class _$LocationTearOff {
   _Location call(
       int id,
       String name,
-      NamedAPIResource region,
+      NamedAPIResource? region,
       List<Name> names,
       @JsonKey(name: 'game_indices') List<GenerationGameIndex> gameIndices,
       List<NamedAPIResource> areas) {
@@ -60,7 +60,7 @@ mixin _$Location {
   /// See also:
   ///
   /// [Region]
-  NamedAPIResource get region => throw _privateConstructorUsedError;
+  NamedAPIResource? get region => throw _privateConstructorUsedError;
 
   /// The name of this resource listed in different languages.
   List<Name> get names => throw _privateConstructorUsedError;
@@ -90,12 +90,12 @@ abstract class $LocationCopyWith<$Res> {
   $Res call(
       {int id,
       String name,
-      NamedAPIResource region,
+      NamedAPIResource? region,
       List<Name> names,
       @JsonKey(name: 'game_indices') List<GenerationGameIndex> gameIndices,
       List<NamedAPIResource> areas});
 
-  $NamedAPIResourceCopyWith<$Res> get region;
+  $NamedAPIResourceCopyWith<$Res>? get region;
 }
 
 /// @nodoc
@@ -127,7 +127,7 @@ class _$LocationCopyWithImpl<$Res> implements $LocationCopyWith<$Res> {
       region: region == freezed
           ? _value.region
           : region // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedAPIResource?,
       names: names == freezed
           ? _value.names
           : names // ignore: cast_nullable_to_non_nullable
@@ -144,8 +144,12 @@ class _$LocationCopyWithImpl<$Res> implements $LocationCopyWith<$Res> {
   }
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get region {
-    return $NamedAPIResourceCopyWith<$Res>(_value.region, (value) {
+  $NamedAPIResourceCopyWith<$Res>? get region {
+    if (_value.region == null) {
+      return null;
+    }
+
+    return $NamedAPIResourceCopyWith<$Res>(_value.region!, (value) {
       return _then(_value.copyWith(region: value));
     });
   }
@@ -159,13 +163,13 @@ abstract class _$LocationCopyWith<$Res> implements $LocationCopyWith<$Res> {
   $Res call(
       {int id,
       String name,
-      NamedAPIResource region,
+      NamedAPIResource? region,
       List<Name> names,
       @JsonKey(name: 'game_indices') List<GenerationGameIndex> gameIndices,
       List<NamedAPIResource> areas});
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get region;
+  $NamedAPIResourceCopyWith<$Res>? get region;
 }
 
 /// @nodoc
@@ -198,7 +202,7 @@ class __$LocationCopyWithImpl<$Res> extends _$LocationCopyWithImpl<$Res>
       region == freezed
           ? _value.region
           : region // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedAPIResource?,
       names == freezed
           ? _value.names
           : names // ignore: cast_nullable_to_non_nullable
@@ -239,7 +243,7 @@ class _$_Location implements _Location {
   /// See also:
   ///
   /// [Region]
-  final NamedAPIResource region;
+  final NamedAPIResource? region;
   @override
 
   /// The name of this resource listed in different languages.
@@ -302,7 +306,7 @@ abstract class _Location implements Location {
   const factory _Location(
       int id,
       String name,
-      NamedAPIResource region,
+      NamedAPIResource? region,
       List<Name> names,
       @JsonKey(name: 'game_indices') List<GenerationGameIndex> gameIndices,
       List<NamedAPIResource> areas) = _$_Location;
@@ -324,7 +328,7 @@ abstract class _Location implements Location {
   /// See also:
   ///
   /// [Region]
-  NamedAPIResource get region;
+  NamedAPIResource? get region;
   @override
 
   /// The name of this resource listed in different languages.

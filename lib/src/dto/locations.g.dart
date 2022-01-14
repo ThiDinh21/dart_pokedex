@@ -9,7 +9,9 @@ part of 'locations.dart';
 _$_Location _$$_LocationFromJson(Map<String, dynamic> json) => _$_Location(
       json['id'] as int,
       json['name'] as String,
-      NamedAPIResource.fromJson(json['region'] as Map<String, dynamic>),
+      json['region'] == null
+          ? null
+          : NamedAPIResource.fromJson(json['region'] as Map<String, dynamic>),
       (json['names'] as List<dynamic>)
           .map((e) => Name.fromJson(e as Map<String, dynamic>))
           .toList(),
