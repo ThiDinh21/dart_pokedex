@@ -1,10 +1,15 @@
 import 'package:poke_dart/poke_dart.dart';
+import 'package:test/test.dart';
 
 final languageEn = _buildNamedAPIResource(
   id: 9,
   name: 'en',
   resource: 'language',
 );
+
+Timeout timeout(int seconds) {
+  return Timeout(Duration(seconds: seconds));
+}
 
 // ignore: unused_element
 APIResource _buildAPIResource({
