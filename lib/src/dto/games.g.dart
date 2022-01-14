@@ -58,7 +58,9 @@ _$_PokedexData _$$_PokedexDataFromJson(Map<String, dynamic> json) =>
       (json['pokemon_entries'] as List<dynamic>)
           .map((e) => PokemonEntry.fromJson(e as Map<String, dynamic>))
           .toList(),
-      NamedAPIResource.fromJson(json['region'] as Map<String, dynamic>),
+      json['region'] == null
+          ? null
+          : NamedAPIResource.fromJson(json['region'] as Map<String, dynamic>),
       (json['version_groups'] as List<dynamic>)
           .map((e) => NamedAPIResource.fromJson(e as Map<String, dynamic>))
           .toList(),

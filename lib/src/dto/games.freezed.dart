@@ -519,7 +519,7 @@ class _$PokedexDataTearOff {
       List<Description> descriptions,
       List<Name> names,
       @JsonKey(name: 'pokemon_entries') List<PokemonEntry> pokemonEntries,
-      NamedAPIResource region,
+      NamedAPIResource? region,
       @JsonKey(name: 'version_groups') List<NamedAPIResource> versionGroups) {
     return _PokedexData(
       id,
@@ -568,7 +568,7 @@ mixin _$PokedexData {
   /// See also:
   ///
   /// [Region]
-  NamedAPIResource get region => throw _privateConstructorUsedError;
+  NamedAPIResource? get region => throw _privateConstructorUsedError;
 
   /// A list of version groups this Pokédex is relevant to.
   ///
@@ -597,10 +597,10 @@ abstract class $PokedexDataCopyWith<$Res> {
       List<Description> descriptions,
       List<Name> names,
       @JsonKey(name: 'pokemon_entries') List<PokemonEntry> pokemonEntries,
-      NamedAPIResource region,
+      NamedAPIResource? region,
       @JsonKey(name: 'version_groups') List<NamedAPIResource> versionGroups});
 
-  $NamedAPIResourceCopyWith<$Res> get region;
+  $NamedAPIResourceCopyWith<$Res>? get region;
 }
 
 /// @nodoc
@@ -650,7 +650,7 @@ class _$PokedexDataCopyWithImpl<$Res> implements $PokedexDataCopyWith<$Res> {
       region: region == freezed
           ? _value.region
           : region // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedAPIResource?,
       versionGroups: versionGroups == freezed
           ? _value.versionGroups
           : versionGroups // ignore: cast_nullable_to_non_nullable
@@ -659,8 +659,12 @@ class _$PokedexDataCopyWithImpl<$Res> implements $PokedexDataCopyWith<$Res> {
   }
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get region {
-    return $NamedAPIResourceCopyWith<$Res>(_value.region, (value) {
+  $NamedAPIResourceCopyWith<$Res>? get region {
+    if (_value.region == null) {
+      return null;
+    }
+
+    return $NamedAPIResourceCopyWith<$Res>(_value.region!, (value) {
       return _then(_value.copyWith(region: value));
     });
   }
@@ -680,11 +684,11 @@ abstract class _$PokedexDataCopyWith<$Res>
       List<Description> descriptions,
       List<Name> names,
       @JsonKey(name: 'pokemon_entries') List<PokemonEntry> pokemonEntries,
-      NamedAPIResource region,
+      NamedAPIResource? region,
       @JsonKey(name: 'version_groups') List<NamedAPIResource> versionGroups});
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get region;
+  $NamedAPIResourceCopyWith<$Res>? get region;
 }
 
 /// @nodoc
@@ -736,7 +740,7 @@ class __$PokedexDataCopyWithImpl<$Res> extends _$PokedexDataCopyWithImpl<$Res>
       region == freezed
           ? _value.region
           : region // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedAPIResource?,
       versionGroups == freezed
           ? _value.versionGroups
           : versionGroups // ignore: cast_nullable_to_non_nullable
@@ -794,7 +798,7 @@ class _$_PokedexData implements _PokedexData {
   /// See also:
   ///
   /// [Region]
-  final NamedAPIResource region;
+  final NamedAPIResource? region;
   @override
 
   /// A list of version groups this Pokédex is relevant to.
@@ -862,7 +866,7 @@ abstract class _PokedexData implements PokedexData {
       List<Name> names,
       @JsonKey(name: 'pokemon_entries')
           List<PokemonEntry> pokemonEntries,
-      NamedAPIResource region,
+      NamedAPIResource? region,
       @JsonKey(name: 'version_groups')
           List<NamedAPIResource> versionGroups) = _$_PokedexData;
 
@@ -902,7 +906,7 @@ abstract class _PokedexData implements PokedexData {
   /// See also:
   ///
   /// [Region]
-  NamedAPIResource get region;
+  NamedAPIResource? get region;
   @override
 
   /// A list of version groups this Pokédex is relevant to.

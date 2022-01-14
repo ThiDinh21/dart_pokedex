@@ -94,7 +94,7 @@ class PokedexData with _$PokedexData {
     /// See also:
     ///
     /// [Region]
-    NamedAPIResource region,
+    NamedAPIResource? region,
 
     /// A list of version groups this Pokédex is relevant to.
     ///
