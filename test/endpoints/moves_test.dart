@@ -74,4 +74,34 @@ void main() {
       expect(ailments.length, 20);
     });
   });
+
+  group('MoveBattleStyle', () {
+    final List<MoveBattleStyle> battleStyles = [];
+    late BaseNamedEndpoint<MoveBattleStyle> endpoint;
+
+    setUp(() {
+      battleStyles.clear();
+      endpoint = dex.moveBattleStyles;
+    });
+
+    test('getAll', () async {
+      final resources = await endpoint.getAll();
+      for (final resource in resources.results) {
+        final item = await endpoint.getByUrl(resource.url);
+        battleStyles.add(item);
+      }
+
+      expect(battleStyles.length, 3);
+    });
+
+    test('getPage', () async {
+      final resources = await endpoint.getPage();
+      for (final resource in resources.results) {
+        final item = await endpoint.getByUrl(resource.url);
+        battleStyles.add(item);
+      }
+
+      expect(battleStyles.length, 3);
+    });
+  });
 }
