@@ -44,4 +44,34 @@ void main() {
       expect(moves.length, 20);
     });
   });
+
+  group('MoveAilment', () {
+    final List<MoveAilment> ailments = [];
+    late BaseNamedEndpoint<MoveAilment> endpoint;
+
+    setUp(() {
+      ailments.clear();
+      endpoint = dex.moveAilments;
+    });
+
+    test('getAll', () async {
+      final resources = await endpoint.getAll();
+      for (final resource in resources.results) {
+        final item = await endpoint.getByUrl(resource.url);
+        ailments.add(item);
+      }
+
+      expect(ailments.length, 22);
+    });
+
+    test('getPage', () async {
+      final resources = await endpoint.getPage();
+      for (final resource in resources.results) {
+        final item = await endpoint.getByUrl(resource.url);
+        ailments.add(item);
+      }
+
+      expect(ailments.length, 20);
+    });
+  });
 }
