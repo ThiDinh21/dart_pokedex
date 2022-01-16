@@ -9,14 +9,23 @@ part of 'moves.dart';
 _$_Move _$$_MoveFromJson(Map<String, dynamic> json) => _$_Move(
       json['id'] as int,
       json['name'] as String,
-      json['accuracy'] as int,
-      json['effect_chance'] as int,
-      json['pp'] as int,
+      json['accuracy'] as int?,
+      json['effect_chance'] as int?,
+      json['pp'] as int?,
       json['priority'] as int,
-      json['power'] as int,
-      ContestComboSets.fromJson(json['contest_combos'] as Map<String, dynamic>),
-      NamedAPIResource.fromJson(json['contest_type'] as Map<String, dynamic>),
-      APIResource.fromJson(json['contest_effect'] as Map<String, dynamic>),
+      json['power'] as int?,
+      json['contest_combos'] == null
+          ? null
+          : ContestComboSets.fromJson(
+              json['contest_combos'] as Map<String, dynamic>),
+      json['contest_type'] == null
+          ? null
+          : NamedAPIResource.fromJson(
+              json['contest_type'] as Map<String, dynamic>),
+      json['contest_effect'] == null
+          ? null
+          : APIResource.fromJson(
+              json['contest_effect'] as Map<String, dynamic>),
       NamedAPIResource.fromJson(json['damage_class'] as Map<String, dynamic>),
       (json['effect_entries'] as List<dynamic>)
           .map((e) => VerboseEffect.fromJson(e as Map<String, dynamic>))
@@ -24,8 +33,9 @@ _$_Move _$$_MoveFromJson(Map<String, dynamic> json) => _$_Move(
       (json['effect_changes'] as List<dynamic>)
           .map((e) => AbilityEffectChange.fromJson(e as Map<String, dynamic>))
           .toList(),
-      NamedAPIResource.fromJson(
-          json['learned_by_pokemon'] as Map<String, dynamic>),
+      (json['learned_by_pokemon'] as List<dynamic>)
+          .map((e) => NamedAPIResource.fromJson(e as Map<String, dynamic>))
+          .toList(),
       (json['flavor_text_entries'] as List<dynamic>)
           .map((e) => MoveFlavorText.fromJson(e as Map<String, dynamic>))
           .toList(),
@@ -33,16 +43,22 @@ _$_Move _$$_MoveFromJson(Map<String, dynamic> json) => _$_Move(
       (json['machines'] as List<dynamic>)
           .map((e) => MachineVersionDetail.fromJson(e as Map<String, dynamic>))
           .toList(),
-      MoveMetaData.fromJson(json['meta'] as Map<String, dynamic>),
+      json['meta'] == null
+          ? null
+          : MoveMetaData.fromJson(json['meta'] as Map<String, dynamic>),
       (json['names'] as List<dynamic>)
           .map((e) => Name.fromJson(e as Map<String, dynamic>))
           .toList(),
-      PastMoveStatValues.fromJson(json['past_values'] as Map<String, dynamic>),
+      (json['past_values'] as List<dynamic>)
+          .map((e) => PastMoveStatValues.fromJson(e as Map<String, dynamic>))
+          .toList(),
       (json['stat_changes'] as List<dynamic>)
           .map((e) => MoveStatChange.fromJson(e as Map<String, dynamic>))
           .toList(),
-      APIResource.fromJson(
-          json['super_contest_effect'] as Map<String, dynamic>),
+      json['super_contest_effect'] == null
+          ? null
+          : APIResource.fromJson(
+              json['super_contest_effect'] as Map<String, dynamic>),
       NamedAPIResource.fromJson(json['target'] as Map<String, dynamic>),
       NamedAPIResource.fromJson(json['type'] as Map<String, dynamic>),
     );
@@ -89,11 +105,11 @@ Map<String, dynamic> _$$_ContestComboSetsToJson(_$_ContestComboSets instance) =>
 _$_ContestComboDetail _$$_ContestComboDetailFromJson(
         Map<String, dynamic> json) =>
     _$_ContestComboDetail(
-      (json['use_before'] as List<dynamic>)
-          .map((e) => NamedAPIResource.fromJson(e as Map<String, dynamic>))
+      (json['use_before'] as List<dynamic>?)
+          ?.map((e) => NamedAPIResource.fromJson(e as Map<String, dynamic>))
           .toList(),
-      (json['use_after'] as List<dynamic>)
-          .map((e) => NamedAPIResource.fromJson(e as Map<String, dynamic>))
+      (json['use_after'] as List<dynamic>?)
+          ?.map((e) => NamedAPIResource.fromJson(e as Map<String, dynamic>))
           .toList(),
     );
 
@@ -122,10 +138,10 @@ _$_MoveMetaData _$$_MoveMetaDataFromJson(Map<String, dynamic> json) =>
     _$_MoveMetaData(
       NamedAPIResource.fromJson(json['ailment'] as Map<String, dynamic>),
       NamedAPIResource.fromJson(json['category'] as Map<String, dynamic>),
-      json['min_hits'] as int,
-      json['max_hits'] as int,
-      json['min_turns'] as int,
-      json['max_turns'] as int,
+      json['min_hits'] as int?,
+      json['max_hits'] as int?,
+      json['min_turns'] as int?,
+      json['max_turns'] as int?,
       json['drain'] as int,
       json['healing'] as int,
       json['crit_rate'] as int,
@@ -165,14 +181,16 @@ Map<String, dynamic> _$$_MoveStatChangeToJson(_$_MoveStatChange instance) =>
 _$_PastMoveStatValues _$$_PastMoveStatValuesFromJson(
         Map<String, dynamic> json) =>
     _$_PastMoveStatValues(
-      json['accuracy'] as int,
-      json['effect_chance'] as int,
-      json['power'] as int,
-      json['pp'] as int,
+      json['accuracy'] as int?,
+      json['effect_chance'] as int?,
+      json['power'] as int?,
+      json['pp'] as int?,
       (json['effect_entries'] as List<dynamic>)
           .map((e) => VerboseEffect.fromJson(e as Map<String, dynamic>))
           .toList(),
-      NamedAPIResource.fromJson(json['type'] as Map<String, dynamic>),
+      json['type'] == null
+          ? null
+          : NamedAPIResource.fromJson(json['type'] as Map<String, dynamic>),
       NamedAPIResource.fromJson(json['version_group'] as Map<String, dynamic>),
     );
 

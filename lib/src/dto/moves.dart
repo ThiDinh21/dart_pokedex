@@ -19,37 +19,37 @@ class Move with _$Move {
     String name,
 
     /// The percent value of how likely this move is to be successful.
-    int accuracy,
+    int? accuracy,
 
     /// The percent value of how likely it is this moves effect will happen.
-    @JsonKey(name: 'effect_chance') int effectChance,
+    @JsonKey(name: 'effect_chance') int? effectChance,
 
     /// Power points. The number of times this move can be used.
-    int pp,
+    int? pp,
 
     /// A value between -8 and 8. Sets the order in which moves are executed during battle.
     /// See [Bulbapedia](https://bulbapedia.bulbagarden.net/wiki/Priority) for greater detail.
     int priority,
 
     /// The base power of this move with a value of 0 if it does not have a base power.
-    int power,
+    int? power,
 
     /// A detail of normal and super contest combos that require this move.
-    @JsonKey(name: 'contest_combos') ContestComboSets contestCombos,
+    @JsonKey(name: 'contest_combos') ContestComboSets? contestCombos,
 
     /// The type of appeal this move gives a Pokémon when used in a contest.
     ///
     /// See also:
     ///
     /// [ContestType]
-    @JsonKey(name: 'contest_type') NamedAPIResource contestType,
+    @JsonKey(name: 'contest_type') NamedAPIResource? contestType,
 
     /// The effect the move has when used in a contest.
     ///
     /// See also:
     ///
     /// [ContestEffect].
-    @JsonKey(name: 'contest_effect') APIResource contestEffect,
+    @JsonKey(name: 'contest_effect') APIResource? contestEffect,
 
     /// The type of damage the move inflicts on the target, e.g. physical.
     ///
@@ -69,7 +69,8 @@ class Move with _$Move {
     /// See also:
     ///
     /// [Pokemon]
-    @JsonKey(name: 'learned_by_pokemon') NamedAPIResource learnedByPokemon,
+    @JsonKey(name: 'learned_by_pokemon')
+        List<NamedAPIResource> learnedByPokemon,
 
     /// The flavor text of this move listed in different languages.
     @JsonKey(name: 'flavor_text_entries')
@@ -86,13 +87,13 @@ class Move with _$Move {
     List<MachineVersionDetail> machines,
 
     /// Metadata about this move
-    MoveMetaData meta,
+    MoveMetaData? meta,
 
     /// The name of this resource listed in different languages.
     List<Name> names,
 
     /// A list of move resource value changes across version groups of the game.
-    @JsonKey(name: 'past_values') PastMoveStatValues pastValues,
+    @JsonKey(name: 'past_values') List<PastMoveStatValues> pastValues,
 
     /// A list of stats this moves effects and how much it effects them
     @JsonKey(name: 'stat_changes') List<MoveStatChange> statChanges,
@@ -102,7 +103,7 @@ class Move with _$Move {
     /// See also:
     ///
     /// [SuperContestEffect]
-    @JsonKey(name: 'super_contest_effect') APIResource superContestEffect,
+    @JsonKey(name: 'super_contest_effect') APIResource? superContestEffect,
 
     /// The type of target that will receive the effects of the attack.
     ///
@@ -142,10 +143,10 @@ class ContestComboSets with _$ContestComboSets {
 class ContestComboDetail with _$ContestComboDetail {
   const factory ContestComboDetail(
     /// A list of moves to use before this move.
-    @JsonKey(name: 'use_before') List<NamedAPIResource> useBefore,
+    @JsonKey(name: 'use_before') List<NamedAPIResource>? useBefore,
 
     /// A list of moves to use after this move.
-    @JsonKey(name: 'use_after') List<NamedAPIResource> useAfter,
+    @JsonKey(name: 'use_after') List<NamedAPIResource>? useAfter,
   ) = _ContestComboDetail;
 
   factory ContestComboDetail.fromJson(Json json) =>
@@ -194,18 +195,18 @@ class MoveMetaData with _$MoveMetaData {
     NamedAPIResource category,
 
     /// The minimum number of times this move hits. Null if it always only hits once.
-    @JsonKey(name: 'min_hits') int minHits,
+    @JsonKey(name: 'min_hits') int? minHits,
 
     /// The maximum number of times this move hits. Null if it always only hits once.
-    @JsonKey(name: 'max_hits') int maxHits,
+    @JsonKey(name: 'max_hits') int? maxHits,
 
     /// The minimum number of turns this move continues to take effect.
     /// Null if it always only lasts one turn.
-    @JsonKey(name: 'min_turns') int minTurns,
+    @JsonKey(name: 'min_turns') int? minTurns,
 
     /// The maximum number of turns this move continues to take effect.
     /// Null if it always only lasts one turn.
-    @JsonKey(name: 'max_turns') int maxTurns,
+    @JsonKey(name: 'max_turns') int? maxTurns,
 
     /// HP drain (if positive) or Recoil damage (if negative), in percent of damage done.
     int drain,
@@ -250,16 +251,16 @@ class MoveStatChange with _$MoveStatChange {
 class PastMoveStatValues with _$PastMoveStatValues {
   const factory PastMoveStatValues(
     /// The percent value of how likely this move is to be successful.
-    int accuracy,
+    int? accuracy,
 
     /// The percent value of how likely it is this moves effect will take effect.
-    @JsonKey(name: 'effect_chance') int effectChance,
+    @JsonKey(name: 'effect_chance') int? effectChance,
 
     /// The base power of this move with a value of 0 if it does not have a base power.
-    int power,
+    int? power,
 
     /// Power points. The number of times this move can be used.
-    int pp,
+    int? pp,
 
     /// The effect of this move listed in different languages.
     @JsonKey(name: 'effect_entries') List<VerboseEffect> effectEntries,
@@ -269,7 +270,7 @@ class PastMoveStatValues with _$PastMoveStatValues {
     /// See also:
     ///
     /// [Type]
-    NamedAPIResource type,
+    NamedAPIResource? type,
 
     /// The version group in which these move stat values were in effect.
     ///
