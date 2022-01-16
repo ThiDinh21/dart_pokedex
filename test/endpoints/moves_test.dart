@@ -164,4 +164,64 @@ void main() {
       expect(damageClasses.length, 3);
     });
   });
+
+  group('MoveLearnMethod', () {
+    final List<MoveLearnMethod> learnMethods = [];
+    late BaseNamedEndpoint<MoveLearnMethod> endpoint;
+
+    setUp(() {
+      learnMethods.clear();
+      endpoint = dex.moveLearnMethods;
+    });
+
+    test('getAll', () async {
+      final resources = await endpoint.getAll();
+      for (final resource in resources.results) {
+        final item = await endpoint.getByUrl(resource.url);
+        learnMethods.add(item);
+      }
+
+      expect(learnMethods.length, 11);
+    });
+
+    test('getPage', () async {
+      final resources = await endpoint.getPage();
+      for (final resource in resources.results) {
+        final item = await endpoint.getByUrl(resource.url);
+        learnMethods.add(item);
+      }
+
+      expect(learnMethods.length, 11);
+    });
+  });
+
+  group('MoveTarget', () {
+    final List<MoveTarget> moveTargets = [];
+    late BaseNamedEndpoint<MoveTarget> endpoint;
+
+    setUp(() {
+      moveTargets.clear();
+      endpoint = dex.moveTargets;
+    });
+
+    test('getAll', () async {
+      final resources = await endpoint.getAll();
+      for (final resource in resources.results) {
+        final item = await endpoint.getByUrl(resource.url);
+        moveTargets.add(item);
+      }
+
+      expect(moveTargets.length, 15);
+    });
+
+    test('getPage', () async {
+      final resources = await endpoint.getPage();
+      for (final resource in resources.results) {
+        final item = await endpoint.getByUrl(resource.url);
+        moveTargets.add(item);
+      }
+
+      expect(moveTargets.length, 15);
+    });
+  });
 }
