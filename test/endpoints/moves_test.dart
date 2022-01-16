@@ -104,4 +104,64 @@ void main() {
       expect(battleStyles.length, 3);
     });
   });
+
+  group('MoveCategory', () {
+    final List<MoveCategory> categories = [];
+    late BaseNamedEndpoint<MoveCategory> endpoint;
+
+    setUp(() {
+      categories.clear();
+      endpoint = dex.moveCategories;
+    });
+
+    test('getAll', () async {
+      final resources = await endpoint.getAll();
+      for (final resource in resources.results) {
+        final item = await endpoint.getByUrl(resource.url);
+        categories.add(item);
+      }
+
+      expect(categories.length, 14);
+    });
+
+    test('getPage', () async {
+      final resources = await endpoint.getPage();
+      for (final resource in resources.results) {
+        final item = await endpoint.getByUrl(resource.url);
+        categories.add(item);
+      }
+
+      expect(categories.length, 14);
+    });
+  });
+
+  group('MoveDamageClass', () {
+    final List<MoveDamageClass> damageClasses = [];
+    late BaseNamedEndpoint<MoveDamageClass> endpoint;
+
+    setUp(() {
+      damageClasses.clear();
+      endpoint = dex.moveDamageClasses;
+    });
+
+    test('getAll', () async {
+      final resources = await endpoint.getAll();
+      for (final resource in resources.results) {
+        final item = await endpoint.getByUrl(resource.url);
+        damageClasses.add(item);
+      }
+
+      expect(damageClasses.length, 3);
+    });
+
+    test('getPage', () async {
+      final resources = await endpoint.getPage();
+      for (final resource in resources.results) {
+        final item = await endpoint.getByUrl(resource.url);
+        damageClasses.add(item);
+      }
+
+      expect(damageClasses.length, 3);
+    });
+  });
 }
