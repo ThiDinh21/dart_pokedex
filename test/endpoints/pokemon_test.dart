@@ -194,4 +194,34 @@ void main() {
       expect(natures.length, 20);
     });
   });
+
+  group('PokeathlonStat', () {
+    final List<PokeathlonStat> stats = [];
+    late BaseNamedEndpoint<PokeathlonStat> endpoint;
+
+    setUp(() {
+      stats.clear();
+      endpoint = dex.pokeathlonStats;
+    });
+
+    test('getAll', () async {
+      final resources = await endpoint.getAll();
+      for (final resource in resources.results) {
+        final item = await endpoint.getByUrl(resource.url);
+        stats.add(item);
+      }
+
+      expect(stats.length, 5);
+    });
+
+    test('getPage', () async {
+      final resources = await endpoint.getPage();
+      for (final resource in resources.results) {
+        final item = await endpoint.getByUrl(resource.url);
+        stats.add(item);
+      }
+
+      expect(stats.length, 5);
+    });
+  });
 }
