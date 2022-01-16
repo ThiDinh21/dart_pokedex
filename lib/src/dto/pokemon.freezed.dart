@@ -2665,15 +2665,15 @@ class _$NatureTearOff {
       int id,
       String name,
       @JsonKey(name: 'decreased_stat')
-          NamedAPIResource decreasedStat,
+          NamedAPIResource? decreasedStat,
       @JsonKey(name: 'increased_stat')
-          NamedAPIResource increasedStat,
+          NamedAPIResource? increasedStat,
       @JsonKey(name: 'hates_flavor')
-          NamedAPIResource hatesFlavor,
+          NamedAPIResource? hatesFlavor,
       @JsonKey(name: 'likes_flavor')
-          NamedAPIResource likesFlavor,
+          NamedAPIResource? likesFlavor,
       @JsonKey(name: 'pokeathlon_stat_changes')
-          List<NamedAPIResource> pokeathlonStatChanges,
+          List<NatureStatChange> pokeathlonStatChanges,
       @JsonKey(name: 'move_battle_style_preferences')
           List<MoveBattleStylePreference> moveBattleStylePreferences,
       List<Name> names) {
@@ -2712,7 +2712,7 @@ mixin _$Nature {
   ///
   /// [Stat]
   @JsonKey(name: 'decreased_stat')
-  NamedAPIResource get decreasedStat => throw _privateConstructorUsedError;
+  NamedAPIResource? get decreasedStat => throw _privateConstructorUsedError;
 
   /// The stat increased by 10% in Pokémon with this nature.
   ///
@@ -2720,7 +2720,7 @@ mixin _$Nature {
   ///
   /// [Stat]
   @JsonKey(name: 'increased_stat')
-  NamedAPIResource get increasedStat => throw _privateConstructorUsedError;
+  NamedAPIResource? get increasedStat => throw _privateConstructorUsedError;
 
   /// The flavor hated by Pokémon with this nature.
   ///
@@ -2728,7 +2728,7 @@ mixin _$Nature {
   ///
   /// [BerryFlavor]
   @JsonKey(name: 'hates_flavor')
-  NamedAPIResource get hatesFlavor => throw _privateConstructorUsedError;
+  NamedAPIResource? get hatesFlavor => throw _privateConstructorUsedError;
 
   /// The flavor liked by Pokémon with this nature.
   ///
@@ -2736,11 +2736,11 @@ mixin _$Nature {
   ///
   /// [BerryFlavor]
   @JsonKey(name: 'likes_flavor')
-  NamedAPIResource get likesFlavor => throw _privateConstructorUsedError;
+  NamedAPIResource? get likesFlavor => throw _privateConstructorUsedError;
 
   /// A list of Pokéathlon stats this nature effects and how much it effects them.
   @JsonKey(name: 'pokeathlon_stat_changes')
-  List<NamedAPIResource> get pokeathlonStatChanges =>
+  List<NatureStatChange> get pokeathlonStatChanges =>
       throw _privateConstructorUsedError;
 
   /// A list of battle styles and how likely a Pokémon with this nature is
@@ -2765,23 +2765,23 @@ abstract class $NatureCopyWith<$Res> {
       {int id,
       String name,
       @JsonKey(name: 'decreased_stat')
-          NamedAPIResource decreasedStat,
+          NamedAPIResource? decreasedStat,
       @JsonKey(name: 'increased_stat')
-          NamedAPIResource increasedStat,
+          NamedAPIResource? increasedStat,
       @JsonKey(name: 'hates_flavor')
-          NamedAPIResource hatesFlavor,
+          NamedAPIResource? hatesFlavor,
       @JsonKey(name: 'likes_flavor')
-          NamedAPIResource likesFlavor,
+          NamedAPIResource? likesFlavor,
       @JsonKey(name: 'pokeathlon_stat_changes')
-          List<NamedAPIResource> pokeathlonStatChanges,
+          List<NatureStatChange> pokeathlonStatChanges,
       @JsonKey(name: 'move_battle_style_preferences')
           List<MoveBattleStylePreference> moveBattleStylePreferences,
       List<Name> names});
 
-  $NamedAPIResourceCopyWith<$Res> get decreasedStat;
-  $NamedAPIResourceCopyWith<$Res> get increasedStat;
-  $NamedAPIResourceCopyWith<$Res> get hatesFlavor;
-  $NamedAPIResourceCopyWith<$Res> get likesFlavor;
+  $NamedAPIResourceCopyWith<$Res>? get decreasedStat;
+  $NamedAPIResourceCopyWith<$Res>? get increasedStat;
+  $NamedAPIResourceCopyWith<$Res>? get hatesFlavor;
+  $NamedAPIResourceCopyWith<$Res>? get likesFlavor;
 }
 
 /// @nodoc
@@ -2816,23 +2816,23 @@ class _$NatureCopyWithImpl<$Res> implements $NatureCopyWith<$Res> {
       decreasedStat: decreasedStat == freezed
           ? _value.decreasedStat
           : decreasedStat // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedAPIResource?,
       increasedStat: increasedStat == freezed
           ? _value.increasedStat
           : increasedStat // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedAPIResource?,
       hatesFlavor: hatesFlavor == freezed
           ? _value.hatesFlavor
           : hatesFlavor // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedAPIResource?,
       likesFlavor: likesFlavor == freezed
           ? _value.likesFlavor
           : likesFlavor // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedAPIResource?,
       pokeathlonStatChanges: pokeathlonStatChanges == freezed
           ? _value.pokeathlonStatChanges
           : pokeathlonStatChanges // ignore: cast_nullable_to_non_nullable
-              as List<NamedAPIResource>,
+              as List<NatureStatChange>,
       moveBattleStylePreferences: moveBattleStylePreferences == freezed
           ? _value.moveBattleStylePreferences
           : moveBattleStylePreferences // ignore: cast_nullable_to_non_nullable
@@ -2845,29 +2845,45 @@ class _$NatureCopyWithImpl<$Res> implements $NatureCopyWith<$Res> {
   }
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get decreasedStat {
-    return $NamedAPIResourceCopyWith<$Res>(_value.decreasedStat, (value) {
+  $NamedAPIResourceCopyWith<$Res>? get decreasedStat {
+    if (_value.decreasedStat == null) {
+      return null;
+    }
+
+    return $NamedAPIResourceCopyWith<$Res>(_value.decreasedStat!, (value) {
       return _then(_value.copyWith(decreasedStat: value));
     });
   }
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get increasedStat {
-    return $NamedAPIResourceCopyWith<$Res>(_value.increasedStat, (value) {
+  $NamedAPIResourceCopyWith<$Res>? get increasedStat {
+    if (_value.increasedStat == null) {
+      return null;
+    }
+
+    return $NamedAPIResourceCopyWith<$Res>(_value.increasedStat!, (value) {
       return _then(_value.copyWith(increasedStat: value));
     });
   }
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get hatesFlavor {
-    return $NamedAPIResourceCopyWith<$Res>(_value.hatesFlavor, (value) {
+  $NamedAPIResourceCopyWith<$Res>? get hatesFlavor {
+    if (_value.hatesFlavor == null) {
+      return null;
+    }
+
+    return $NamedAPIResourceCopyWith<$Res>(_value.hatesFlavor!, (value) {
       return _then(_value.copyWith(hatesFlavor: value));
     });
   }
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get likesFlavor {
-    return $NamedAPIResourceCopyWith<$Res>(_value.likesFlavor, (value) {
+  $NamedAPIResourceCopyWith<$Res>? get likesFlavor {
+    if (_value.likesFlavor == null) {
+      return null;
+    }
+
+    return $NamedAPIResourceCopyWith<$Res>(_value.likesFlavor!, (value) {
       return _then(_value.copyWith(likesFlavor: value));
     });
   }
@@ -2882,27 +2898,27 @@ abstract class _$NatureCopyWith<$Res> implements $NatureCopyWith<$Res> {
       {int id,
       String name,
       @JsonKey(name: 'decreased_stat')
-          NamedAPIResource decreasedStat,
+          NamedAPIResource? decreasedStat,
       @JsonKey(name: 'increased_stat')
-          NamedAPIResource increasedStat,
+          NamedAPIResource? increasedStat,
       @JsonKey(name: 'hates_flavor')
-          NamedAPIResource hatesFlavor,
+          NamedAPIResource? hatesFlavor,
       @JsonKey(name: 'likes_flavor')
-          NamedAPIResource likesFlavor,
+          NamedAPIResource? likesFlavor,
       @JsonKey(name: 'pokeathlon_stat_changes')
-          List<NamedAPIResource> pokeathlonStatChanges,
+          List<NatureStatChange> pokeathlonStatChanges,
       @JsonKey(name: 'move_battle_style_preferences')
           List<MoveBattleStylePreference> moveBattleStylePreferences,
       List<Name> names});
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get decreasedStat;
+  $NamedAPIResourceCopyWith<$Res>? get decreasedStat;
   @override
-  $NamedAPIResourceCopyWith<$Res> get increasedStat;
+  $NamedAPIResourceCopyWith<$Res>? get increasedStat;
   @override
-  $NamedAPIResourceCopyWith<$Res> get hatesFlavor;
+  $NamedAPIResourceCopyWith<$Res>? get hatesFlavor;
   @override
-  $NamedAPIResourceCopyWith<$Res> get likesFlavor;
+  $NamedAPIResourceCopyWith<$Res>? get likesFlavor;
 }
 
 /// @nodoc
@@ -2938,23 +2954,23 @@ class __$NatureCopyWithImpl<$Res> extends _$NatureCopyWithImpl<$Res>
       decreasedStat == freezed
           ? _value.decreasedStat
           : decreasedStat // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedAPIResource?,
       increasedStat == freezed
           ? _value.increasedStat
           : increasedStat // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedAPIResource?,
       hatesFlavor == freezed
           ? _value.hatesFlavor
           : hatesFlavor // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedAPIResource?,
       likesFlavor == freezed
           ? _value.likesFlavor
           : likesFlavor // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedAPIResource?,
       pokeathlonStatChanges == freezed
           ? _value.pokeathlonStatChanges
           : pokeathlonStatChanges // ignore: cast_nullable_to_non_nullable
-              as List<NamedAPIResource>,
+              as List<NatureStatChange>,
       moveBattleStylePreferences == freezed
           ? _value.moveBattleStylePreferences
           : moveBattleStylePreferences // ignore: cast_nullable_to_non_nullable
@@ -3006,7 +3022,7 @@ class _$_Nature implements _Nature {
   ///
   /// [Stat]
   @JsonKey(name: 'decreased_stat')
-  final NamedAPIResource decreasedStat;
+  final NamedAPIResource? decreasedStat;
   @override
 
   /// The stat increased by 10% in Pokémon with this nature.
@@ -3015,7 +3031,7 @@ class _$_Nature implements _Nature {
   ///
   /// [Stat]
   @JsonKey(name: 'increased_stat')
-  final NamedAPIResource increasedStat;
+  final NamedAPIResource? increasedStat;
   @override
 
   /// The flavor hated by Pokémon with this nature.
@@ -3024,7 +3040,7 @@ class _$_Nature implements _Nature {
   ///
   /// [BerryFlavor]
   @JsonKey(name: 'hates_flavor')
-  final NamedAPIResource hatesFlavor;
+  final NamedAPIResource? hatesFlavor;
   @override
 
   /// The flavor liked by Pokémon with this nature.
@@ -3033,12 +3049,12 @@ class _$_Nature implements _Nature {
   ///
   /// [BerryFlavor]
   @JsonKey(name: 'likes_flavor')
-  final NamedAPIResource likesFlavor;
+  final NamedAPIResource? likesFlavor;
   @override
 
   /// A list of Pokéathlon stats this nature effects and how much it effects them.
   @JsonKey(name: 'pokeathlon_stat_changes')
-  final List<NamedAPIResource> pokeathlonStatChanges;
+  final List<NatureStatChange> pokeathlonStatChanges;
   @override
 
   /// A list of battle styles and how likely a Pokémon with this nature is
@@ -3106,15 +3122,15 @@ abstract class _Nature implements Nature {
       int id,
       String name,
       @JsonKey(name: 'decreased_stat')
-          NamedAPIResource decreasedStat,
+          NamedAPIResource? decreasedStat,
       @JsonKey(name: 'increased_stat')
-          NamedAPIResource increasedStat,
+          NamedAPIResource? increasedStat,
       @JsonKey(name: 'hates_flavor')
-          NamedAPIResource hatesFlavor,
+          NamedAPIResource? hatesFlavor,
       @JsonKey(name: 'likes_flavor')
-          NamedAPIResource likesFlavor,
+          NamedAPIResource? likesFlavor,
       @JsonKey(name: 'pokeathlon_stat_changes')
-          List<NamedAPIResource> pokeathlonStatChanges,
+          List<NatureStatChange> pokeathlonStatChanges,
       @JsonKey(name: 'move_battle_style_preferences')
           List<MoveBattleStylePreference> moveBattleStylePreferences,
       List<Name> names) = _$_Nature;
@@ -3137,7 +3153,7 @@ abstract class _Nature implements Nature {
   ///
   /// [Stat]
   @JsonKey(name: 'decreased_stat')
-  NamedAPIResource get decreasedStat;
+  NamedAPIResource? get decreasedStat;
   @override
 
   /// The stat increased by 10% in Pokémon with this nature.
@@ -3146,7 +3162,7 @@ abstract class _Nature implements Nature {
   ///
   /// [Stat]
   @JsonKey(name: 'increased_stat')
-  NamedAPIResource get increasedStat;
+  NamedAPIResource? get increasedStat;
   @override
 
   /// The flavor hated by Pokémon with this nature.
@@ -3155,7 +3171,7 @@ abstract class _Nature implements Nature {
   ///
   /// [BerryFlavor]
   @JsonKey(name: 'hates_flavor')
-  NamedAPIResource get hatesFlavor;
+  NamedAPIResource? get hatesFlavor;
   @override
 
   /// The flavor liked by Pokémon with this nature.
@@ -3164,12 +3180,12 @@ abstract class _Nature implements Nature {
   ///
   /// [BerryFlavor]
   @JsonKey(name: 'likes_flavor')
-  NamedAPIResource get likesFlavor;
+  NamedAPIResource? get likesFlavor;
   @override
 
   /// A list of Pokéathlon stats this nature effects and how much it effects them.
   @JsonKey(name: 'pokeathlon_stat_changes')
-  List<NamedAPIResource> get pokeathlonStatChanges;
+  List<NatureStatChange> get pokeathlonStatChanges;
   @override
 
   /// A list of battle styles and how likely a Pokémon with this nature is

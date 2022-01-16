@@ -255,32 +255,32 @@ class Nature with _$Nature {
     /// See also:
     ///
     /// [Stat]
-    @JsonKey(name: 'decreased_stat') NamedAPIResource decreasedStat,
+    @JsonKey(name: 'decreased_stat') NamedAPIResource? decreasedStat,
 
     /// The stat increased by 10% in Pokémon with this nature.
     ///
     /// See also:
     ///
     /// [Stat]
-    @JsonKey(name: 'increased_stat') NamedAPIResource increasedStat,
+    @JsonKey(name: 'increased_stat') NamedAPIResource? increasedStat,
 
     /// The flavor hated by Pokémon with this nature.
     ///
     /// See also:
     ///
     /// [BerryFlavor]
-    @JsonKey(name: 'hates_flavor') NamedAPIResource hatesFlavor,
+    @JsonKey(name: 'hates_flavor') NamedAPIResource? hatesFlavor,
 
     /// The flavor liked by Pokémon with this nature.
     ///
     /// See also:
     ///
     /// [BerryFlavor]
-    @JsonKey(name: 'likes_flavor') NamedAPIResource likesFlavor,
+    @JsonKey(name: 'likes_flavor') NamedAPIResource? likesFlavor,
 
     /// A list of Pokéathlon stats this nature effects and how much it effects them.
     @JsonKey(name: 'pokeathlon_stat_changes')
-        List<NamedAPIResource> pokeathlonStatChanges,
+        List<NatureStatChange> pokeathlonStatChanges,
 
     /// A list of battle styles and how likely a Pokémon with this nature is
     /// to use them in the Battle Palace or Battle Tent.

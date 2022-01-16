@@ -164,4 +164,34 @@ void main() {
       expect(growthRates.length, 6);
     });
   });
+
+  group('Nature', () {
+    final List<Nature> natures = [];
+    late BaseNamedEndpoint<Nature> endpoint;
+
+    setUp(() {
+      natures.clear();
+      endpoint = dex.natures;
+    });
+
+    test('getAll', () async {
+      final resources = await endpoint.getAll();
+      for (final resource in resources.results) {
+        final item = await endpoint.getByUrl(resource.url);
+        natures.add(item);
+      }
+
+      expect(natures.length, 25);
+    });
+
+    test('getPage', () async {
+      final resources = await endpoint.getPage();
+      for (final resource in resources.results) {
+        final item = await endpoint.getByUrl(resource.url);
+        natures.add(item);
+      }
+
+      expect(natures.length, 20);
+    });
+  });
 }

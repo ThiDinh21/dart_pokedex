@@ -196,12 +196,24 @@ Map<String, dynamic> _$$_GrowthRateExperienceLevelToJson(
 _$_Nature _$$_NatureFromJson(Map<String, dynamic> json) => _$_Nature(
       json['id'] as int,
       json['name'] as String,
-      NamedAPIResource.fromJson(json['decreased_stat'] as Map<String, dynamic>),
-      NamedAPIResource.fromJson(json['increased_stat'] as Map<String, dynamic>),
-      NamedAPIResource.fromJson(json['hates_flavor'] as Map<String, dynamic>),
-      NamedAPIResource.fromJson(json['likes_flavor'] as Map<String, dynamic>),
+      json['decreased_stat'] == null
+          ? null
+          : NamedAPIResource.fromJson(
+              json['decreased_stat'] as Map<String, dynamic>),
+      json['increased_stat'] == null
+          ? null
+          : NamedAPIResource.fromJson(
+              json['increased_stat'] as Map<String, dynamic>),
+      json['hates_flavor'] == null
+          ? null
+          : NamedAPIResource.fromJson(
+              json['hates_flavor'] as Map<String, dynamic>),
+      json['likes_flavor'] == null
+          ? null
+          : NamedAPIResource.fromJson(
+              json['likes_flavor'] as Map<String, dynamic>),
       (json['pokeathlon_stat_changes'] as List<dynamic>)
-          .map((e) => NamedAPIResource.fromJson(e as Map<String, dynamic>))
+          .map((e) => NatureStatChange.fromJson(e as Map<String, dynamic>))
           .toList(),
       (json['move_battle_style_preferences'] as List<dynamic>)
           .map((e) =>
