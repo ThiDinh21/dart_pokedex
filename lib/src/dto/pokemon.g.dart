@@ -705,11 +705,14 @@ _$_PokemonSpecies _$$_PokemonSpeciesFromJson(Map<String, dynamic> json) =>
           .toList(),
       NamedAPIResource.fromJson(json['color'] as Map<String, dynamic>),
       NamedAPIResource.fromJson(json['shape'] as Map<String, dynamic>),
-      (json['evolves_from_species'] as List<dynamic>)
-          .map((e) => NamedAPIResource.fromJson(e as Map<String, dynamic>))
-          .toList(),
+      json['evolves_from_species'] == null
+          ? null
+          : NamedAPIResource.fromJson(
+              json['evolves_from_species'] as Map<String, dynamic>),
       APIResource.fromJson(json['evolution_chain'] as Map<String, dynamic>),
-      NamedAPIResource.fromJson(json['habitat'] as Map<String, dynamic>),
+      json['habitat'] == null
+          ? null
+          : NamedAPIResource.fromJson(json['habitat'] as Map<String, dynamic>),
       NamedAPIResource.fromJson(json['generation'] as Map<String, dynamic>),
       (json['names'] as List<dynamic>)
           .map((e) => Name.fromJson(e as Map<String, dynamic>))

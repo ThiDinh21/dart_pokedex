@@ -322,4 +322,98 @@ void main() {
       expect(shapes.length, 20);
     });
   });
+
+  group('PokemonHabitat', () {
+    final List<PokemonHabitat> habitats = [];
+    late BaseNamedEndpoint<PokemonHabitat> endpoint;
+
+    setUp(() {
+      habitats.clear();
+      endpoint = dex.pokemonHabitats;
+    });
+
+    test('getAll', () async {
+      final resources = await endpoint.getAll();
+      for (final resource in resources.results) {
+        final item = await endpoint.getByUrl(resource.url);
+        habitats.add(item);
+      }
+
+      expect(habitats.length, 9);
+    });
+
+    test('getPage', () async {
+      final resources = await endpoint.getPage();
+      for (final resource in resources.results) {
+        final item = await endpoint.getByUrl(resource.url);
+        habitats.add(item);
+      }
+
+      expect(habitats.length, 9);
+    });
+  });
+
+  group('PokemonShape', () {
+    final List<PokemonShape> shapes = [];
+    late BaseNamedEndpoint<PokemonShape> endpoint;
+
+    setUp(() {
+      shapes.clear();
+      endpoint = dex.pokemonShapes;
+    });
+
+    test('getAll', () async {
+      final resources = await endpoint.getAll();
+      for (final resource in resources.results) {
+        final item = await endpoint.getByUrl(resource.url);
+        shapes.add(item);
+      }
+
+      expect(shapes.length, 14);
+    });
+
+    test('getPage', () async {
+      final resources = await endpoint.getPage();
+      for (final resource in resources.results) {
+        final item = await endpoint.getByUrl(resource.url);
+        shapes.add(item);
+      }
+
+      expect(shapes.length, 14);
+    });
+  });
+
+  group('PokemonSpecies', () {
+    final List<PokemonSpecies> species = [];
+    late BaseNamedEndpoint<PokemonSpecies> endpoint;
+
+    setUp(() {
+      species.clear();
+      endpoint = dex.pokemonSpecies;
+    });
+
+    test(
+      'getAll',
+      () async {
+        final resources = await endpoint.getAll();
+        for (final resource in resources.results) {
+          final item = await endpoint.getByUrl(resource.url);
+          species.add(item);
+        }
+
+        expect(species.length, 898);
+      },
+      timeout: timeout(600),
+    );
+
+    test('getPage', () async {
+      final resources = await endpoint.getPage();
+      for (final resource in resources.results) {
+        final item = await endpoint.getByUrl(resource.url);
+        species.add(item);
+      }
+
+      expect(species.length, 20);
+    });
+  });
 }

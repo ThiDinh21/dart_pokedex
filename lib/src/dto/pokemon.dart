@@ -937,8 +937,7 @@ class PokemonSpecies with _$PokemonSpecies {
     /// See also:
     ///
     /// [PokemonSpecies]
-    @JsonKey(name: 'evolves_from_species')
-        List<NamedAPIResource> evolvesFromSpecies,
+    @JsonKey(name: 'evolves_from_species') NamedAPIResource? evolvesFromSpecies,
 
     /// The evolution chain this Pokémon species is a member of.
     ///
@@ -952,7 +951,7 @@ class PokemonSpecies with _$PokemonSpecies {
     /// See also:
     ///
     /// [PokemonHabitat]
-    NamedAPIResource habitat,
+    NamedAPIResource? habitat,
 
     /// The generation this Pokémon species was introduced in.
     ///

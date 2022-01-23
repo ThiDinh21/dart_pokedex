@@ -9688,10 +9688,10 @@ class _$PokemonSpeciesTearOff {
       NamedAPIResource color,
       NamedAPIResource shape,
       @JsonKey(name: 'evolves_from_species')
-          List<NamedAPIResource> evolvesFromSpecies,
+          NamedAPIResource? evolvesFromSpecies,
       @JsonKey(name: 'evolution_chain')
           APIResource evolutionChain,
-      NamedAPIResource habitat,
+      NamedAPIResource? habitat,
       NamedAPIResource generation,
       List<Name> names,
       @JsonKey(name: 'pal_park_encounters')
@@ -9832,7 +9832,7 @@ mixin _$PokemonSpecies {
   ///
   /// [PokemonSpecies]
   @JsonKey(name: 'evolves_from_species')
-  List<NamedAPIResource> get evolvesFromSpecies =>
+  NamedAPIResource? get evolvesFromSpecies =>
       throw _privateConstructorUsedError;
 
   /// The evolution chain this Pokémon species is a member of.
@@ -9848,7 +9848,7 @@ mixin _$PokemonSpecies {
   /// See also:
   ///
   /// [PokemonHabitat]
-  NamedAPIResource get habitat => throw _privateConstructorUsedError;
+  NamedAPIResource? get habitat => throw _privateConstructorUsedError;
 
   /// The generation this Pokémon species was introduced in.
   ///
@@ -9922,10 +9922,10 @@ abstract class $PokemonSpeciesCopyWith<$Res> {
       NamedAPIResource color,
       NamedAPIResource shape,
       @JsonKey(name: 'evolves_from_species')
-          List<NamedAPIResource> evolvesFromSpecies,
+          NamedAPIResource? evolvesFromSpecies,
       @JsonKey(name: 'evolution_chain')
           APIResource evolutionChain,
-      NamedAPIResource habitat,
+      NamedAPIResource? habitat,
       NamedAPIResource generation,
       List<Name> names,
       @JsonKey(name: 'pal_park_encounters')
@@ -9940,8 +9940,9 @@ abstract class $PokemonSpeciesCopyWith<$Res> {
   $NamedAPIResourceCopyWith<$Res> get growthRate;
   $NamedAPIResourceCopyWith<$Res> get color;
   $NamedAPIResourceCopyWith<$Res> get shape;
+  $NamedAPIResourceCopyWith<$Res>? get evolvesFromSpecies;
   $APIResourceCopyWith<$Res> get evolutionChain;
-  $NamedAPIResourceCopyWith<$Res> get habitat;
+  $NamedAPIResourceCopyWith<$Res>? get habitat;
   $NamedAPIResourceCopyWith<$Res> get generation;
 }
 
@@ -10056,7 +10057,7 @@ class _$PokemonSpeciesCopyWithImpl<$Res>
       evolvesFromSpecies: evolvesFromSpecies == freezed
           ? _value.evolvesFromSpecies
           : evolvesFromSpecies // ignore: cast_nullable_to_non_nullable
-              as List<NamedAPIResource>,
+              as NamedAPIResource?,
       evolutionChain: evolutionChain == freezed
           ? _value.evolutionChain
           : evolutionChain // ignore: cast_nullable_to_non_nullable
@@ -10064,7 +10065,7 @@ class _$PokemonSpeciesCopyWithImpl<$Res>
       habitat: habitat == freezed
           ? _value.habitat
           : habitat // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedAPIResource?,
       generation: generation == freezed
           ? _value.generation
           : generation // ignore: cast_nullable_to_non_nullable
@@ -10118,6 +10119,17 @@ class _$PokemonSpeciesCopyWithImpl<$Res>
   }
 
   @override
+  $NamedAPIResourceCopyWith<$Res>? get evolvesFromSpecies {
+    if (_value.evolvesFromSpecies == null) {
+      return null;
+    }
+
+    return $NamedAPIResourceCopyWith<$Res>(_value.evolvesFromSpecies!, (value) {
+      return _then(_value.copyWith(evolvesFromSpecies: value));
+    });
+  }
+
+  @override
   $APIResourceCopyWith<$Res> get evolutionChain {
     return $APIResourceCopyWith<$Res>(_value.evolutionChain, (value) {
       return _then(_value.copyWith(evolutionChain: value));
@@ -10125,8 +10137,12 @@ class _$PokemonSpeciesCopyWithImpl<$Res>
   }
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get habitat {
-    return $NamedAPIResourceCopyWith<$Res>(_value.habitat, (value) {
+  $NamedAPIResourceCopyWith<$Res>? get habitat {
+    if (_value.habitat == null) {
+      return null;
+    }
+
+    return $NamedAPIResourceCopyWith<$Res>(_value.habitat!, (value) {
       return _then(_value.copyWith(habitat: value));
     });
   }
@@ -10177,10 +10193,10 @@ abstract class _$PokemonSpeciesCopyWith<$Res>
       NamedAPIResource color,
       NamedAPIResource shape,
       @JsonKey(name: 'evolves_from_species')
-          List<NamedAPIResource> evolvesFromSpecies,
+          NamedAPIResource? evolvesFromSpecies,
       @JsonKey(name: 'evolution_chain')
           APIResource evolutionChain,
-      NamedAPIResource habitat,
+      NamedAPIResource? habitat,
       NamedAPIResource generation,
       List<Name> names,
       @JsonKey(name: 'pal_park_encounters')
@@ -10199,9 +10215,11 @@ abstract class _$PokemonSpeciesCopyWith<$Res>
   @override
   $NamedAPIResourceCopyWith<$Res> get shape;
   @override
+  $NamedAPIResourceCopyWith<$Res>? get evolvesFromSpecies;
+  @override
   $APIResourceCopyWith<$Res> get evolutionChain;
   @override
-  $NamedAPIResourceCopyWith<$Res> get habitat;
+  $NamedAPIResourceCopyWith<$Res>? get habitat;
   @override
   $NamedAPIResourceCopyWith<$Res> get generation;
 }
@@ -10319,7 +10337,7 @@ class __$PokemonSpeciesCopyWithImpl<$Res>
       evolvesFromSpecies == freezed
           ? _value.evolvesFromSpecies
           : evolvesFromSpecies // ignore: cast_nullable_to_non_nullable
-              as List<NamedAPIResource>,
+              as NamedAPIResource?,
       evolutionChain == freezed
           ? _value.evolutionChain
           : evolutionChain // ignore: cast_nullable_to_non_nullable
@@ -10327,7 +10345,7 @@ class __$PokemonSpeciesCopyWithImpl<$Res>
       habitat == freezed
           ? _value.habitat
           : habitat // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedAPIResource?,
       generation == freezed
           ? _value.generation
           : generation // ignore: cast_nullable_to_non_nullable
@@ -10502,7 +10520,7 @@ class _$_PokemonSpecies implements _PokemonSpecies {
   ///
   /// [PokemonSpecies]
   @JsonKey(name: 'evolves_from_species')
-  final List<NamedAPIResource> evolvesFromSpecies;
+  final NamedAPIResource? evolvesFromSpecies;
   @override
 
   /// The evolution chain this Pokémon species is a member of.
@@ -10519,7 +10537,7 @@ class _$_PokemonSpecies implements _PokemonSpecies {
   /// See also:
   ///
   /// [PokemonHabitat]
-  final NamedAPIResource habitat;
+  final NamedAPIResource? habitat;
   @override
 
   /// The generation this Pokémon species was introduced in.
@@ -10686,10 +10704,10 @@ abstract class _PokemonSpecies implements PokemonSpecies {
       NamedAPIResource color,
       NamedAPIResource shape,
       @JsonKey(name: 'evolves_from_species')
-          List<NamedAPIResource> evolvesFromSpecies,
+          NamedAPIResource? evolvesFromSpecies,
       @JsonKey(name: 'evolution_chain')
           APIResource evolutionChain,
-      NamedAPIResource habitat,
+      NamedAPIResource? habitat,
       NamedAPIResource generation,
       List<Name> names,
       @JsonKey(name: 'pal_park_encounters')
@@ -10811,7 +10829,7 @@ abstract class _PokemonSpecies implements PokemonSpecies {
   ///
   /// [PokemonSpecies]
   @JsonKey(name: 'evolves_from_species')
-  List<NamedAPIResource> get evolvesFromSpecies;
+  NamedAPIResource? get evolvesFromSpecies;
   @override
 
   /// The evolution chain this Pokémon species is a member of.
@@ -10828,7 +10846,7 @@ abstract class _PokemonSpecies implements PokemonSpecies {
   /// See also:
   ///
   /// [PokemonHabitat]
-  NamedAPIResource get habitat;
+  NamedAPIResource? get habitat;
   @override
 
   /// The generation this Pokémon species was introduced in.
