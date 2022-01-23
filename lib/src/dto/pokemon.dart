@@ -635,10 +635,10 @@ class PokemonStat with _$PokemonStat {
 class PokemonSprites with _$PokemonSprites {
   const factory PokemonSprites(
     /// The default depiction of this Pokémon from the front in battle.
-    @JsonKey(name: 'front_default') String frontDefault,
+    @JsonKey(name: 'front_default') String? frontDefault,
 
     /// The shiny depiction of this Pokémon from the front in battle.
-    @JsonKey(name: 'front_shiny') String frontShiny,
+    @JsonKey(name: 'front_shiny') String? frontShiny,
 
     /// The female depiction of this Pokémon from the front in battle.
     @JsonKey(name: 'front_female') String? frontFemale,
@@ -657,6 +657,9 @@ class PokemonSprites with _$PokemonSprites {
 
     /// The shiny female depiction of this Pokémon from the back in battle.
     @JsonKey(name: 'back_shiny_female') String? backShinyFemale,
+
+    // TODO: doc is missing others and versions fields,
+    // TODO: add them after the doc is updated
   ) = _PokemonSprites;
 
   factory PokemonSprites.fromJson(Json json) => _$PokemonSpritesFromJson(json);

@@ -506,8 +506,8 @@ Map<String, dynamic> _$$_PokemonStatToJson(_$_PokemonStat instance) =>
 
 _$_PokemonSprites _$$_PokemonSpritesFromJson(Map<String, dynamic> json) =>
     _$_PokemonSprites(
-      json['front_default'] as String,
-      json['front_shiny'] as String,
+      json['front_default'] as String?,
+      json['front_shiny'] as String?,
       json['front_female'] as String?,
       json['front_shiny_female'] as String?,
       json['back_default'] as String?,

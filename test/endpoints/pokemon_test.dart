@@ -224,4 +224,38 @@ void main() {
       expect(stats.length, 5);
     });
   });
+
+  group('Pokemon', () {
+    final List<Pokemon> pokemon = [];
+    late BaseNamedEndpoint<Pokemon> endpoint;
+
+    setUp(() {
+      pokemon.clear();
+      endpoint = dex.pokemon;
+    });
+
+    test(
+      'getAll',
+      () async {
+        final resources = await endpoint.getAll();
+        for (final resource in resources.results) {
+          final item = await endpoint.getByUrl(resource.url);
+          pokemon.add(item);
+        }
+
+        expect(pokemon.length, 1118);
+      },
+      timeout: timeout(600),
+    );
+
+    test('getPage', () async {
+      final resources = await endpoint.getPage();
+      for (final resource in resources.results) {
+        final item = await endpoint.getByUrl(resource.url);
+        pokemon.add(item);
+      }
+
+      expect(pokemon.length, 20);
+    });
+  });
 }

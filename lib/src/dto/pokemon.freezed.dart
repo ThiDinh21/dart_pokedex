@@ -7106,8 +7106,8 @@ class _$PokemonSpritesTearOff {
   const _$PokemonSpritesTearOff();
 
   _PokemonSprites call(
-      @JsonKey(name: 'front_default') String frontDefault,
-      @JsonKey(name: 'front_shiny') String frontShiny,
+      @JsonKey(name: 'front_default') String? frontDefault,
+      @JsonKey(name: 'front_shiny') String? frontShiny,
       @JsonKey(name: 'front_female') String? frontFemale,
       @JsonKey(name: 'front_shiny_female') String? frontShinyFemale,
       @JsonKey(name: 'back_default') String? backDefault,
@@ -7138,11 +7138,11 @@ const $PokemonSprites = _$PokemonSpritesTearOff();
 mixin _$PokemonSprites {
   /// The default depiction of this Pokémon from the front in battle.
   @JsonKey(name: 'front_default')
-  String get frontDefault => throw _privateConstructorUsedError;
+  String? get frontDefault => throw _privateConstructorUsedError;
 
   /// The shiny depiction of this Pokémon from the front in battle.
   @JsonKey(name: 'front_shiny')
-  String get frontShiny => throw _privateConstructorUsedError;
+  String? get frontShiny => throw _privateConstructorUsedError;
 
   /// The female depiction of this Pokémon from the front in battle.
   @JsonKey(name: 'front_female')
@@ -7180,8 +7180,8 @@ abstract class $PokemonSpritesCopyWith<$Res> {
           PokemonSprites value, $Res Function(PokemonSprites) then) =
       _$PokemonSpritesCopyWithImpl<$Res>;
   $Res call(
-      {@JsonKey(name: 'front_default') String frontDefault,
-      @JsonKey(name: 'front_shiny') String frontShiny,
+      {@JsonKey(name: 'front_default') String? frontDefault,
+      @JsonKey(name: 'front_shiny') String? frontShiny,
       @JsonKey(name: 'front_female') String? frontFemale,
       @JsonKey(name: 'front_shiny_female') String? frontShinyFemale,
       @JsonKey(name: 'back_default') String? backDefault,
@@ -7214,11 +7214,11 @@ class _$PokemonSpritesCopyWithImpl<$Res>
       frontDefault: frontDefault == freezed
           ? _value.frontDefault
           : frontDefault // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       frontShiny: frontShiny == freezed
           ? _value.frontShiny
           : frontShiny // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       frontFemale: frontFemale == freezed
           ? _value.frontFemale
           : frontFemale // ignore: cast_nullable_to_non_nullable
@@ -7255,8 +7255,8 @@ abstract class _$PokemonSpritesCopyWith<$Res>
       __$PokemonSpritesCopyWithImpl<$Res>;
   @override
   $Res call(
-      {@JsonKey(name: 'front_default') String frontDefault,
-      @JsonKey(name: 'front_shiny') String frontShiny,
+      {@JsonKey(name: 'front_default') String? frontDefault,
+      @JsonKey(name: 'front_shiny') String? frontShiny,
       @JsonKey(name: 'front_female') String? frontFemale,
       @JsonKey(name: 'front_shiny_female') String? frontShinyFemale,
       @JsonKey(name: 'back_default') String? backDefault,
@@ -7291,11 +7291,11 @@ class __$PokemonSpritesCopyWithImpl<$Res>
       frontDefault == freezed
           ? _value.frontDefault
           : frontDefault // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       frontShiny == freezed
           ? _value.frontShiny
           : frontShiny // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       frontFemale == freezed
           ? _value.frontFemale
           : frontFemale // ignore: cast_nullable_to_non_nullable
@@ -7344,12 +7344,12 @@ class _$_PokemonSprites implements _PokemonSprites {
 
   /// The default depiction of this Pokémon from the front in battle.
   @JsonKey(name: 'front_default')
-  final String frontDefault;
+  final String? frontDefault;
   @override
 
   /// The shiny depiction of this Pokémon from the front in battle.
   @JsonKey(name: 'front_shiny')
-  final String frontShiny;
+  final String? frontShiny;
   @override
 
   /// The female depiction of this Pokémon from the front in battle.
@@ -7433,8 +7433,8 @@ class _$_PokemonSprites implements _PokemonSprites {
 
 abstract class _PokemonSprites implements PokemonSprites {
   const factory _PokemonSprites(
-          @JsonKey(name: 'front_default') String frontDefault,
-          @JsonKey(name: 'front_shiny') String frontShiny,
+          @JsonKey(name: 'front_default') String? frontDefault,
+          @JsonKey(name: 'front_shiny') String? frontShiny,
           @JsonKey(name: 'front_female') String? frontFemale,
           @JsonKey(name: 'front_shiny_female') String? frontShinyFemale,
           @JsonKey(name: 'back_default') String? backDefault,
@@ -7450,12 +7450,12 @@ abstract class _PokemonSprites implements PokemonSprites {
 
   /// The default depiction of this Pokémon from the front in battle.
   @JsonKey(name: 'front_default')
-  String get frontDefault;
+  String? get frontDefault;
   @override
 
   /// The shiny depiction of this Pokémon from the front in battle.
   @JsonKey(name: 'front_shiny')
-  String get frontShiny;
+  String? get frontShiny;
   @override
 
   /// The female depiction of this Pokémon from the front in battle.
