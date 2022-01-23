@@ -831,8 +831,10 @@ _$_Stat _$$_StatFromJson(Map<String, dynamic> json) => _$_Stat(
       (json['characteristics'] as List<dynamic>)
           .map((e) => APIResource.fromJson(e as Map<String, dynamic>))
           .toList(),
-      NamedAPIResource.fromJson(
-          json['move_damage_class'] as Map<String, dynamic>),
+      json['move_damage_class'] == null
+          ? null
+          : NamedAPIResource.fromJson(
+              json['move_damage_class'] as Map<String, dynamic>),
       (json['names'] as List<dynamic>)
           .map((e) => Name.fromJson(e as Map<String, dynamic>))
           .toList(),
@@ -909,8 +911,10 @@ _$_Type _$$_TypeFromJson(Map<String, dynamic> json) => _$_Type(
           .map((e) => GenerationGameIndex.fromJson(e as Map<String, dynamic>))
           .toList(),
       NamedAPIResource.fromJson(json['generation'] as Map<String, dynamic>),
-      NamedAPIResource.fromJson(
-          json['move_damage_class'] as Map<String, dynamic>),
+      json['move_damage_class'] == null
+          ? null
+          : NamedAPIResource.fromJson(
+              json['move_damage_class'] as Map<String, dynamic>),
       (json['names'] as List<dynamic>)
           .map((e) => Name.fromJson(e as Map<String, dynamic>))
           .toList(),

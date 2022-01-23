@@ -1090,7 +1090,7 @@ class Stat with _$Stat {
     /// See also:
     ///
     /// [MoveDamageClass]
-    @JsonKey(name: 'move_damage_class') NamedAPIResource moveDamageClass,
+    @JsonKey(name: 'move_damage_class') NamedAPIResource? moveDamageClass,
 
     /// The name of this resource listed in different languages.
     List<Name> names,
@@ -1184,7 +1184,7 @@ class Type with _$Type {
     /// See also:
     ///
     /// [MoveDamageClass]
-    @JsonKey(name: 'move_damage_class') NamedAPIResource moveDamageClass,
+    @JsonKey(name: 'move_damage_class') NamedAPIResource? moveDamageClass,
 
     /// The name of this resource listed in different languages.
     List<Name> names,

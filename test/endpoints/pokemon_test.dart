@@ -416,4 +416,64 @@ void main() {
       expect(species.length, 20);
     });
   });
+
+  group('Stat', () {
+    final List<Stat> stats = [];
+    late BaseNamedEndpoint<Stat> endpoint;
+
+    setUp(() {
+      stats.clear();
+      endpoint = dex.stats;
+    });
+
+    test('getAll', () async {
+      final resources = await endpoint.getAll();
+      for (final resource in resources.results) {
+        final item = await endpoint.getByUrl(resource.url);
+        stats.add(item);
+      }
+
+      expect(stats.length, 8);
+    });
+
+    test('getPage', () async {
+      final resources = await endpoint.getPage();
+      for (final resource in resources.results) {
+        final item = await endpoint.getByUrl(resource.url);
+        stats.add(item);
+      }
+
+      expect(stats.length, 8);
+    });
+  });
+
+  group('Type', () {
+    final List<Type> types = [];
+    late BaseNamedEndpoint<Type> endpoint;
+
+    setUp(() {
+      types.clear();
+      endpoint = dex.types;
+    });
+
+    test('getAll', () async {
+      final resources = await endpoint.getAll();
+      for (final resource in resources.results) {
+        final item = await endpoint.getByUrl(resource.url);
+        types.add(item);
+      }
+
+      expect(types.length, 20);
+    });
+
+    test('getPage', () async {
+      final resources = await endpoint.getPage();
+      for (final resource in resources.results) {
+        final item = await endpoint.getByUrl(resource.url);
+        types.add(item);
+      }
+
+      expect(types.length, 20);
+    });
+  });
 }

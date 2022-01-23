@@ -11771,7 +11771,7 @@ class _$StatTearOff {
       @JsonKey(name: 'affecting_moves') MoveStatAffectSets affectingMoves,
       @JsonKey(name: 'affecting_natures') NatureStatAffectSets affectingNatures,
       List<APIResource> characteristics,
-      @JsonKey(name: 'move_damage_class') NamedAPIResource moveDamageClass,
+      @JsonKey(name: 'move_damage_class') NamedAPIResource? moveDamageClass,
       List<Name> names) {
     return _Stat(
       id,
@@ -11832,7 +11832,7 @@ mixin _$Stat {
   ///
   /// [MoveDamageClass]
   @JsonKey(name: 'move_damage_class')
-  NamedAPIResource get moveDamageClass => throw _privateConstructorUsedError;
+  NamedAPIResource? get moveDamageClass => throw _privateConstructorUsedError;
 
   /// The name of this resource listed in different languages.
   List<Name> get names => throw _privateConstructorUsedError;
@@ -11854,12 +11854,12 @@ abstract class $StatCopyWith<$Res> {
       @JsonKey(name: 'affecting_moves') MoveStatAffectSets affectingMoves,
       @JsonKey(name: 'affecting_natures') NatureStatAffectSets affectingNatures,
       List<APIResource> characteristics,
-      @JsonKey(name: 'move_damage_class') NamedAPIResource moveDamageClass,
+      @JsonKey(name: 'move_damage_class') NamedAPIResource? moveDamageClass,
       List<Name> names});
 
   $MoveStatAffectSetsCopyWith<$Res> get affectingMoves;
   $NatureStatAffectSetsCopyWith<$Res> get affectingNatures;
-  $NamedAPIResourceCopyWith<$Res> get moveDamageClass;
+  $NamedAPIResourceCopyWith<$Res>? get moveDamageClass;
 }
 
 /// @nodoc
@@ -11914,7 +11914,7 @@ class _$StatCopyWithImpl<$Res> implements $StatCopyWith<$Res> {
       moveDamageClass: moveDamageClass == freezed
           ? _value.moveDamageClass
           : moveDamageClass // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedAPIResource?,
       names: names == freezed
           ? _value.names
           : names // ignore: cast_nullable_to_non_nullable
@@ -11938,8 +11938,12 @@ class _$StatCopyWithImpl<$Res> implements $StatCopyWith<$Res> {
   }
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get moveDamageClass {
-    return $NamedAPIResourceCopyWith<$Res>(_value.moveDamageClass, (value) {
+  $NamedAPIResourceCopyWith<$Res>? get moveDamageClass {
+    if (_value.moveDamageClass == null) {
+      return null;
+    }
+
+    return $NamedAPIResourceCopyWith<$Res>(_value.moveDamageClass!, (value) {
       return _then(_value.copyWith(moveDamageClass: value));
     });
   }
@@ -11958,7 +11962,7 @@ abstract class _$StatCopyWith<$Res> implements $StatCopyWith<$Res> {
       @JsonKey(name: 'affecting_moves') MoveStatAffectSets affectingMoves,
       @JsonKey(name: 'affecting_natures') NatureStatAffectSets affectingNatures,
       List<APIResource> characteristics,
-      @JsonKey(name: 'move_damage_class') NamedAPIResource moveDamageClass,
+      @JsonKey(name: 'move_damage_class') NamedAPIResource? moveDamageClass,
       List<Name> names});
 
   @override
@@ -11966,7 +11970,7 @@ abstract class _$StatCopyWith<$Res> implements $StatCopyWith<$Res> {
   @override
   $NatureStatAffectSetsCopyWith<$Res> get affectingNatures;
   @override
-  $NamedAPIResourceCopyWith<$Res> get moveDamageClass;
+  $NamedAPIResourceCopyWith<$Res>? get moveDamageClass;
 }
 
 /// @nodoc
@@ -12022,7 +12026,7 @@ class __$StatCopyWithImpl<$Res> extends _$StatCopyWithImpl<$Res>
       moveDamageClass == freezed
           ? _value.moveDamageClass
           : moveDamageClass // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedAPIResource?,
       names == freezed
           ? _value.names
           : names // ignore: cast_nullable_to_non_nullable
@@ -12091,7 +12095,7 @@ class _$_Stat implements _Stat {
   ///
   /// [MoveDamageClass]
   @JsonKey(name: 'move_damage_class')
-  final NamedAPIResource moveDamageClass;
+  final NamedAPIResource? moveDamageClass;
   @override
 
   /// The name of this resource listed in different languages.
@@ -12156,7 +12160,7 @@ abstract class _Stat implements Stat {
       @JsonKey(name: 'affecting_moves') MoveStatAffectSets affectingMoves,
       @JsonKey(name: 'affecting_natures') NatureStatAffectSets affectingNatures,
       List<APIResource> characteristics,
-      @JsonKey(name: 'move_damage_class') NamedAPIResource moveDamageClass,
+      @JsonKey(name: 'move_damage_class') NamedAPIResource? moveDamageClass,
       List<Name> names) = _$_Stat;
 
   factory _Stat.fromJson(Map<String, dynamic> json) = _$_Stat.fromJson;
@@ -12205,7 +12209,7 @@ abstract class _Stat implements Stat {
   ///
   /// [MoveDamageClass]
   @JsonKey(name: 'move_damage_class')
-  NamedAPIResource get moveDamageClass;
+  NamedAPIResource? get moveDamageClass;
   @override
 
   /// The name of this resource listed in different languages.
@@ -12827,7 +12831,7 @@ class _$TypeTearOff {
           List<GenerationGameIndex> gameIndices,
       NamedAPIResource generation,
       @JsonKey(name: 'move_damage_class')
-          NamedAPIResource moveDamageClass,
+          NamedAPIResource? moveDamageClass,
       List<Name> names,
       List<TypePokemon> pokemon,
       List<NamedAPIResource> moves) {
@@ -12889,7 +12893,7 @@ mixin _$Type {
   ///
   /// [MoveDamageClass]
   @JsonKey(name: 'move_damage_class')
-  NamedAPIResource get moveDamageClass => throw _privateConstructorUsedError;
+  NamedAPIResource? get moveDamageClass => throw _privateConstructorUsedError;
 
   /// The name of this resource listed in different languages.
   List<Name> get names => throw _privateConstructorUsedError;
@@ -12924,14 +12928,14 @@ abstract class $TypeCopyWith<$Res> {
           List<GenerationGameIndex> gameIndices,
       NamedAPIResource generation,
       @JsonKey(name: 'move_damage_class')
-          NamedAPIResource moveDamageClass,
+          NamedAPIResource? moveDamageClass,
       List<Name> names,
       List<TypePokemon> pokemon,
       List<NamedAPIResource> moves});
 
   $TypeRelationsCopyWith<$Res> get damageRelations;
   $NamedAPIResourceCopyWith<$Res> get generation;
-  $NamedAPIResourceCopyWith<$Res> get moveDamageClass;
+  $NamedAPIResourceCopyWith<$Res>? get moveDamageClass;
 }
 
 /// @nodoc
@@ -12983,7 +12987,7 @@ class _$TypeCopyWithImpl<$Res> implements $TypeCopyWith<$Res> {
       moveDamageClass: moveDamageClass == freezed
           ? _value.moveDamageClass
           : moveDamageClass // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedAPIResource?,
       names: names == freezed
           ? _value.names
           : names // ignore: cast_nullable_to_non_nullable
@@ -13014,8 +13018,12 @@ class _$TypeCopyWithImpl<$Res> implements $TypeCopyWith<$Res> {
   }
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get moveDamageClass {
-    return $NamedAPIResourceCopyWith<$Res>(_value.moveDamageClass, (value) {
+  $NamedAPIResourceCopyWith<$Res>? get moveDamageClass {
+    if (_value.moveDamageClass == null) {
+      return null;
+    }
+
+    return $NamedAPIResourceCopyWith<$Res>(_value.moveDamageClass!, (value) {
       return _then(_value.copyWith(moveDamageClass: value));
     });
   }
@@ -13037,7 +13045,7 @@ abstract class _$TypeCopyWith<$Res> implements $TypeCopyWith<$Res> {
           List<GenerationGameIndex> gameIndices,
       NamedAPIResource generation,
       @JsonKey(name: 'move_damage_class')
-          NamedAPIResource moveDamageClass,
+          NamedAPIResource? moveDamageClass,
       List<Name> names,
       List<TypePokemon> pokemon,
       List<NamedAPIResource> moves});
@@ -13047,7 +13055,7 @@ abstract class _$TypeCopyWith<$Res> implements $TypeCopyWith<$Res> {
   @override
   $NamedAPIResourceCopyWith<$Res> get generation;
   @override
-  $NamedAPIResourceCopyWith<$Res> get moveDamageClass;
+  $NamedAPIResourceCopyWith<$Res>? get moveDamageClass;
 }
 
 /// @nodoc
@@ -13100,7 +13108,7 @@ class __$TypeCopyWithImpl<$Res> extends _$TypeCopyWithImpl<$Res>
       moveDamageClass == freezed
           ? _value.moveDamageClass
           : moveDamageClass // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedAPIResource?,
       names == freezed
           ? _value.names
           : names // ignore: cast_nullable_to_non_nullable
@@ -13174,7 +13182,7 @@ class _$_Type implements _Type {
   ///
   /// [MoveDamageClass]
   @JsonKey(name: 'move_damage_class')
-  final NamedAPIResource moveDamageClass;
+  final NamedAPIResource? moveDamageClass;
   @override
 
   /// The name of this resource listed in different languages.
@@ -13256,7 +13264,7 @@ abstract class _Type implements Type {
           List<GenerationGameIndex> gameIndices,
       NamedAPIResource generation,
       @JsonKey(name: 'move_damage_class')
-          NamedAPIResource moveDamageClass,
+          NamedAPIResource? moveDamageClass,
       List<Name> names,
       List<TypePokemon> pokemon,
       List<NamedAPIResource> moves) = _$_Type;
@@ -13303,7 +13311,7 @@ abstract class _Type implements Type {
   ///
   /// [MoveDamageClass]
   @JsonKey(name: 'move_damage_class')
-  NamedAPIResource get moveDamageClass;
+  NamedAPIResource? get moveDamageClass;
   @override
 
   /// The name of this resource listed in different languages.
