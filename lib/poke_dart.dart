@@ -1,6 +1,7 @@
-/// Support for doing something awesome.
+/// A Dart wrapper for [PokeAPI](https://pokeapi.co/docs/v2)(their [github](https://github.com/PokeAPI/pokeapi) link)
 ///
-/// More dartdocs go here.
+/// All the Pokémon data you'll ever need in one place, easily accessible
+/// through a modern RESTful API.
 library poke_dart;
 
 export 'package:poke_dart/src/client.dart';
