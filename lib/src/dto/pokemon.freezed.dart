@@ -7999,7 +7999,7 @@ class _$PokemonFormTearOff {
       @JsonKey(name: 'is_mega') bool isMega,
       @JsonKey(name: 'form_name') String formName,
       NamedAPIResource pokemon,
-      NamedAPIResource types,
+      List<PokemonFormType> types,
       PokemonFormSprites sprites,
       @JsonKey(name: 'version_group') NamedAPIResource versionGroup,
       List<Name> names,
@@ -8075,7 +8075,7 @@ mixin _$PokemonForm {
   /// See also:
   ///
   /// [PokemonFormType]
-  NamedAPIResource get types => throw _privateConstructorUsedError;
+  List<PokemonFormType> get types => throw _privateConstructorUsedError;
 
   /// A set of sprites used to depict this Pokémon form in the game.
   PokemonFormSprites get sprites => throw _privateConstructorUsedError;
@@ -8118,14 +8118,13 @@ abstract class $PokemonFormCopyWith<$Res> {
       @JsonKey(name: 'is_mega') bool isMega,
       @JsonKey(name: 'form_name') String formName,
       NamedAPIResource pokemon,
-      NamedAPIResource types,
+      List<PokemonFormType> types,
       PokemonFormSprites sprites,
       @JsonKey(name: 'version_group') NamedAPIResource versionGroup,
       List<Name> names,
       @JsonKey(name: 'form_names') List<Name> formNames});
 
   $NamedAPIResourceCopyWith<$Res> get pokemon;
-  $NamedAPIResourceCopyWith<$Res> get types;
   $PokemonFormSpritesCopyWith<$Res> get sprites;
   $NamedAPIResourceCopyWith<$Res> get versionGroup;
 }
@@ -8195,7 +8194,7 @@ class _$PokemonFormCopyWithImpl<$Res> implements $PokemonFormCopyWith<$Res> {
       types: types == freezed
           ? _value.types
           : types // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as List<PokemonFormType>,
       sprites: sprites == freezed
           ? _value.sprites
           : sprites // ignore: cast_nullable_to_non_nullable
@@ -8219,13 +8218,6 @@ class _$PokemonFormCopyWithImpl<$Res> implements $PokemonFormCopyWith<$Res> {
   $NamedAPIResourceCopyWith<$Res> get pokemon {
     return $NamedAPIResourceCopyWith<$Res>(_value.pokemon, (value) {
       return _then(_value.copyWith(pokemon: value));
-    });
-  }
-
-  @override
-  $NamedAPIResourceCopyWith<$Res> get types {
-    return $NamedAPIResourceCopyWith<$Res>(_value.types, (value) {
-      return _then(_value.copyWith(types: value));
     });
   }
 
@@ -8261,7 +8253,7 @@ abstract class _$PokemonFormCopyWith<$Res>
       @JsonKey(name: 'is_mega') bool isMega,
       @JsonKey(name: 'form_name') String formName,
       NamedAPIResource pokemon,
-      NamedAPIResource types,
+      List<PokemonFormType> types,
       PokemonFormSprites sprites,
       @JsonKey(name: 'version_group') NamedAPIResource versionGroup,
       List<Name> names,
@@ -8269,8 +8261,6 @@ abstract class _$PokemonFormCopyWith<$Res>
 
   @override
   $NamedAPIResourceCopyWith<$Res> get pokemon;
-  @override
-  $NamedAPIResourceCopyWith<$Res> get types;
   @override
   $PokemonFormSpritesCopyWith<$Res> get sprites;
   @override
@@ -8344,7 +8334,7 @@ class __$PokemonFormCopyWithImpl<$Res> extends _$PokemonFormCopyWithImpl<$Res>
       types == freezed
           ? _value.types
           : types // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as List<PokemonFormType>,
       sprites == freezed
           ? _value.sprites
           : sprites // ignore: cast_nullable_to_non_nullable
@@ -8441,7 +8431,7 @@ class _$_PokemonForm implements _PokemonForm {
   /// See also:
   ///
   /// [PokemonFormType]
-  final NamedAPIResource types;
+  final List<PokemonFormType> types;
   @override
 
   /// A set of sprites used to depict this Pokémon form in the game.
@@ -8535,7 +8525,7 @@ abstract class _PokemonForm implements PokemonForm {
       @JsonKey(name: 'is_mega') bool isMega,
       @JsonKey(name: 'form_name') String formName,
       NamedAPIResource pokemon,
-      NamedAPIResource types,
+      List<PokemonFormType> types,
       PokemonFormSprites sprites,
       @JsonKey(name: 'version_group') NamedAPIResource versionGroup,
       List<Name> names,
@@ -8598,7 +8588,7 @@ abstract class _PokemonForm implements PokemonForm {
   /// See also:
   ///
   /// [PokemonFormType]
-  NamedAPIResource get types;
+  List<PokemonFormType> get types;
   @override
 
   /// A set of sprites used to depict this Pokémon form in the game.
@@ -8638,10 +8628,10 @@ class _$PokemonFormSpritesTearOff {
   const _$PokemonFormSpritesTearOff();
 
   _PokemonFormSprites call(
-      @JsonKey(name: 'front_default') String frontDefault,
-      @JsonKey(name: 'front_shiny') String frontShiny,
-      @JsonKey(name: 'back_default') String backDefault,
-      @JsonKey(name: 'back_shiny') String backShiny) {
+      @JsonKey(name: 'front_default') String? frontDefault,
+      @JsonKey(name: 'front_shiny') String? frontShiny,
+      @JsonKey(name: 'back_default') String? backDefault,
+      @JsonKey(name: 'back_shiny') String? backShiny) {
     return _PokemonFormSprites(
       frontDefault,
       frontShiny,
@@ -8662,19 +8652,19 @@ const $PokemonFormSprites = _$PokemonFormSpritesTearOff();
 mixin _$PokemonFormSprites {
   /// The default depiction of this Pokémon form from the front in battle.
   @JsonKey(name: 'front_default')
-  String get frontDefault => throw _privateConstructorUsedError;
+  String? get frontDefault => throw _privateConstructorUsedError;
 
   /// The shiny depiction of this Pokémon form from the front in battle.
   @JsonKey(name: 'front_shiny')
-  String get frontShiny => throw _privateConstructorUsedError;
+  String? get frontShiny => throw _privateConstructorUsedError;
 
   /// The default depiction of this Pokémon form from the back in battle.
   @JsonKey(name: 'back_default')
-  String get backDefault => throw _privateConstructorUsedError;
+  String? get backDefault => throw _privateConstructorUsedError;
 
   /// The shiny depiction of this Pokémon form from the back in battle.
   @JsonKey(name: 'back_shiny')
-  String get backShiny => throw _privateConstructorUsedError;
+  String? get backShiny => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -8688,10 +8678,10 @@ abstract class $PokemonFormSpritesCopyWith<$Res> {
           PokemonFormSprites value, $Res Function(PokemonFormSprites) then) =
       _$PokemonFormSpritesCopyWithImpl<$Res>;
   $Res call(
-      {@JsonKey(name: 'front_default') String frontDefault,
-      @JsonKey(name: 'front_shiny') String frontShiny,
-      @JsonKey(name: 'back_default') String backDefault,
-      @JsonKey(name: 'back_shiny') String backShiny});
+      {@JsonKey(name: 'front_default') String? frontDefault,
+      @JsonKey(name: 'front_shiny') String? frontShiny,
+      @JsonKey(name: 'back_default') String? backDefault,
+      @JsonKey(name: 'back_shiny') String? backShiny});
 }
 
 /// @nodoc
@@ -8714,19 +8704,19 @@ class _$PokemonFormSpritesCopyWithImpl<$Res>
       frontDefault: frontDefault == freezed
           ? _value.frontDefault
           : frontDefault // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       frontShiny: frontShiny == freezed
           ? _value.frontShiny
           : frontShiny // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       backDefault: backDefault == freezed
           ? _value.backDefault
           : backDefault // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       backShiny: backShiny == freezed
           ? _value.backShiny
           : backShiny // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
     ));
   }
 }
@@ -8739,10 +8729,10 @@ abstract class _$PokemonFormSpritesCopyWith<$Res>
       __$PokemonFormSpritesCopyWithImpl<$Res>;
   @override
   $Res call(
-      {@JsonKey(name: 'front_default') String frontDefault,
-      @JsonKey(name: 'front_shiny') String frontShiny,
-      @JsonKey(name: 'back_default') String backDefault,
-      @JsonKey(name: 'back_shiny') String backShiny});
+      {@JsonKey(name: 'front_default') String? frontDefault,
+      @JsonKey(name: 'front_shiny') String? frontShiny,
+      @JsonKey(name: 'back_default') String? backDefault,
+      @JsonKey(name: 'back_shiny') String? backShiny});
 }
 
 /// @nodoc
@@ -8767,19 +8757,19 @@ class __$PokemonFormSpritesCopyWithImpl<$Res>
       frontDefault == freezed
           ? _value.frontDefault
           : frontDefault // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       frontShiny == freezed
           ? _value.frontShiny
           : frontShiny // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       backDefault == freezed
           ? _value.backDefault
           : backDefault // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       backShiny == freezed
           ? _value.backShiny
           : backShiny // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
     ));
   }
 }
@@ -8800,22 +8790,22 @@ class _$_PokemonFormSprites implements _PokemonFormSprites {
 
   /// The default depiction of this Pokémon form from the front in battle.
   @JsonKey(name: 'front_default')
-  final String frontDefault;
+  final String? frontDefault;
   @override
 
   /// The shiny depiction of this Pokémon form from the front in battle.
   @JsonKey(name: 'front_shiny')
-  final String frontShiny;
+  final String? frontShiny;
   @override
 
   /// The default depiction of this Pokémon form from the back in battle.
   @JsonKey(name: 'back_default')
-  final String backDefault;
+  final String? backDefault;
   @override
 
   /// The shiny depiction of this Pokémon form from the back in battle.
   @JsonKey(name: 'back_shiny')
-  final String backShiny;
+  final String? backShiny;
 
   @override
   String toString() {
@@ -8857,10 +8847,10 @@ class _$_PokemonFormSprites implements _PokemonFormSprites {
 
 abstract class _PokemonFormSprites implements PokemonFormSprites {
   const factory _PokemonFormSprites(
-      @JsonKey(name: 'front_default') String frontDefault,
-      @JsonKey(name: 'front_shiny') String frontShiny,
-      @JsonKey(name: 'back_default') String backDefault,
-      @JsonKey(name: 'back_shiny') String backShiny) = _$_PokemonFormSprites;
+      @JsonKey(name: 'front_default') String? frontDefault,
+      @JsonKey(name: 'front_shiny') String? frontShiny,
+      @JsonKey(name: 'back_default') String? backDefault,
+      @JsonKey(name: 'back_shiny') String? backShiny) = _$_PokemonFormSprites;
 
   factory _PokemonFormSprites.fromJson(Map<String, dynamic> json) =
       _$_PokemonFormSprites.fromJson;
@@ -8869,22 +8859,22 @@ abstract class _PokemonFormSprites implements PokemonFormSprites {
 
   /// The default depiction of this Pokémon form from the front in battle.
   @JsonKey(name: 'front_default')
-  String get frontDefault;
+  String? get frontDefault;
   @override
 
   /// The shiny depiction of this Pokémon form from the front in battle.
   @JsonKey(name: 'front_shiny')
-  String get frontShiny;
+  String? get frontShiny;
   @override
 
   /// The default depiction of this Pokémon form from the back in battle.
   @JsonKey(name: 'back_default')
-  String get backDefault;
+  String? get backDefault;
   @override
 
   /// The shiny depiction of this Pokémon form from the back in battle.
   @JsonKey(name: 'back_shiny')
-  String get backShiny;
+  String? get backShiny;
   @override
   @JsonKey(ignore: true)
   _$PokemonFormSpritesCopyWith<_PokemonFormSprites> get copyWith =>

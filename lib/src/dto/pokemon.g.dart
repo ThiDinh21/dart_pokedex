@@ -576,7 +576,9 @@ _$_PokemonForm _$$_PokemonFormFromJson(Map<String, dynamic> json) =>
       json['is_mega'] as bool,
       json['form_name'] as String,
       NamedAPIResource.fromJson(json['pokemon'] as Map<String, dynamic>),
-      NamedAPIResource.fromJson(json['types'] as Map<String, dynamic>),
+      (json['types'] as List<dynamic>)
+          .map((e) => PokemonFormType.fromJson(e as Map<String, dynamic>))
+          .toList(),
       PokemonFormSprites.fromJson(json['sprites'] as Map<String, dynamic>),
       NamedAPIResource.fromJson(json['version_group'] as Map<String, dynamic>),
       (json['names'] as List<dynamic>)
@@ -608,10 +610,10 @@ Map<String, dynamic> _$$_PokemonFormToJson(_$_PokemonForm instance) =>
 _$_PokemonFormSprites _$$_PokemonFormSpritesFromJson(
         Map<String, dynamic> json) =>
     _$_PokemonFormSprites(
-      json['front_default'] as String,
-      json['front_shiny'] as String,
-      json['back_default'] as String,
-      json['back_shiny'] as String,
+      json['front_default'] as String?,
+      json['front_shiny'] as String?,
+      json['back_default'] as String?,
+      json['back_shiny'] as String?,
     );
 
 Map<String, dynamic> _$$_PokemonFormSpritesToJson(

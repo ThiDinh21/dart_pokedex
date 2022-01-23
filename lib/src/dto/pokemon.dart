@@ -748,7 +748,7 @@ class PokemonForm with _$PokemonForm {
     /// See also:
     ///
     /// [PokemonFormType]
-    NamedAPIResource types,
+    List<PokemonFormType> types,
 
     /// A set of sprites used to depict this Pokémon form in the game.
     PokemonFormSprites sprites,
@@ -776,16 +776,16 @@ class PokemonForm with _$PokemonForm {
 class PokemonFormSprites with _$PokemonFormSprites {
   const factory PokemonFormSprites(
     /// The default depiction of this Pokémon form from the front in battle.
-    @JsonKey(name: 'front_default') String frontDefault,
+    @JsonKey(name: 'front_default') String? frontDefault,
 
     /// The shiny depiction of this Pokémon form from the front in battle.
-    @JsonKey(name: 'front_shiny') String frontShiny,
+    @JsonKey(name: 'front_shiny') String? frontShiny,
 
     /// The default depiction of this Pokémon form from the back in battle.
-    @JsonKey(name: 'back_default') String backDefault,
+    @JsonKey(name: 'back_default') String? backDefault,
 
     /// The shiny depiction of this Pokémon form from the back in battle.
-    @JsonKey(name: 'back_shiny') String backShiny,
+    @JsonKey(name: 'back_shiny') String? backShiny,
   ) = _PokemonFormSprites;
 
   factory PokemonFormSprites.fromJson(Json json) =>

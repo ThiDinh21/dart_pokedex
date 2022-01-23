@@ -258,4 +258,68 @@ void main() {
       expect(pokemon.length, 20);
     });
   });
+
+  group('PokemonColor', () {
+    final List<PokemonColor> colors = [];
+    late BaseNamedEndpoint<PokemonColor> endpoint;
+
+    setUp(() {
+      colors.clear();
+      endpoint = dex.pokemonColors;
+    });
+
+    test('getAll', () async {
+      final resources = await endpoint.getAll();
+      for (final resource in resources.results) {
+        final item = await endpoint.getByUrl(resource.url);
+        colors.add(item);
+      }
+
+      expect(colors.length, 10);
+    });
+
+    test('getPage', () async {
+      final resources = await endpoint.getPage();
+      for (final resource in resources.results) {
+        final item = await endpoint.getByUrl(resource.url);
+        colors.add(item);
+      }
+
+      expect(colors.length, 10);
+    });
+  });
+
+  group('PokemonForm', () {
+    final List<PokemonForm> shapes = [];
+    late BaseNamedEndpoint<PokemonForm> endpoint;
+
+    setUp(() {
+      shapes.clear();
+      endpoint = dex.pokemonForms;
+    });
+
+    test(
+      'getAll',
+      () async {
+        final resources = await endpoint.getAll();
+        for (final resource in resources.results) {
+          final item = await endpoint.getByUrl(resource.url);
+          shapes.add(item);
+        }
+
+        expect(shapes.length, 1283);
+      },
+      timeout: timeout(1200),
+    );
+
+    test('getPage', () async {
+      final resources = await endpoint.getPage();
+      for (final resource in resources.results) {
+        final item = await endpoint.getByUrl(resource.url);
+        shapes.add(item);
+      }
+
+      expect(shapes.length, 20);
+    });
+  });
 }
