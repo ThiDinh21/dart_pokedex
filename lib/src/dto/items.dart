@@ -1,8 +1,8 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:poke_dart/src/aliases.dart';
-import 'package:poke_dart/src/dto/evolutions.dart';
-import 'package:poke_dart/src/dto/games.dart';
-import 'package:poke_dart/src/dto/utility/common.dart';
+import 'package:pokedex/src/aliases.dart';
+import 'package:pokedex/src/dto/evolutions.dart';
+import 'package:pokedex/src/dto/games.dart';
+import 'package:pokedex/src/dto/utility/common.dart';
 
 part 'items.freezed.dart';
 part 'items.g.dart';

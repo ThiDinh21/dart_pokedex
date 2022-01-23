@@ -1,7 +1,7 @@
-import 'package:poke_dart/poke_dart.dart';
+import 'package:pokedex/pokedex.dart';
 import 'package:test/test.dart';
 
-final languageEn = _buildNamedAPIResource(
+final NamedAPIResource languageEn = _buildNamedAPIResource(
   id: 9,
   name: 'en',
   resource: 'language',

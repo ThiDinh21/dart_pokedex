@@ -1,15 +1,15 @@
 // ignore_for_file: avoid_positional_boolean_parameters
 
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:poke_dart/src/aliases.dart';
-import 'package:poke_dart/src/dto/berries.dart';
-import 'package:poke_dart/src/dto/evolutions.dart';
-import 'package:poke_dart/src/dto/games.dart';
-import 'package:poke_dart/src/dto/items.dart';
-import 'package:poke_dart/src/dto/locations.dart';
-import 'package:poke_dart/src/dto/moves.dart';
-import 'package:poke_dart/src/dto/utility/common.dart';
-import 'package:poke_dart/src/dto/utility/languages.dart';
+import 'package:pokedex/src/aliases.dart';
+import 'package:pokedex/src/dto/berries.dart';
+import 'package:pokedex/src/dto/evolutions.dart';
+import 'package:pokedex/src/dto/games.dart';
+import 'package:pokedex/src/dto/items.dart';
+import 'package:pokedex/src/dto/locations.dart';
+import 'package:pokedex/src/dto/moves.dart';
+import 'package:pokedex/src/dto/utility/common.dart';
+import 'package:pokedex/src/dto/utility/languages.dart';
 
 part 'pokemon.freezed.dart';
 part 'pokemon.g.dart';
@@ -744,10 +744,6 @@ class PokemonForm with _$PokemonForm {
     NamedAPIResource pokemon,
 
     /// A list of details showing types this Pokémon form has.
-    ///
-    /// See also:
-    ///
-    /// [PokemonFormType]
     List<PokemonFormType> types,
 
     /// A set of sprites used to depict this Pokémon form in the game.

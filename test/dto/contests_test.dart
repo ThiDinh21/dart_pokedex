@@ -1,4 +1,4 @@
-import 'package:poke_dart/poke_dart.dart';
+import 'package:pokedex/pokedex.dart';
 import 'package:test/test.dart';
 
 import '../util.dart';

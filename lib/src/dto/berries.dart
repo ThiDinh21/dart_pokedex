@@ -1,9 +1,9 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:poke_dart/src/aliases.dart';
-import 'package:poke_dart/src/dto/contests.dart';
-import 'package:poke_dart/src/dto/items.dart';
-import 'package:poke_dart/src/dto/pokemon.dart';
-import 'package:poke_dart/src/dto/utility/common.dart';
+import 'package:pokedex/src/aliases.dart';
+import 'package:pokedex/src/dto/contests.dart';
+import 'package:pokedex/src/dto/items.dart';
+import 'package:pokedex/src/dto/pokemon.dart';
+import 'package:pokedex/src/dto/utility/common.dart';
 
 part 'berries.freezed.dart';
 part 'berries.g.dart';

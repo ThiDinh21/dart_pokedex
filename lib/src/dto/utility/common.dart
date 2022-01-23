@@ -1,9 +1,9 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:poke_dart/src/aliases.dart';
-import 'package:poke_dart/src/dto/encounters.dart';
-import 'package:poke_dart/src/dto/games.dart';
-import 'package:poke_dart/src/dto/machines.dart';
-import 'package:poke_dart/src/dto/utility/languages.dart';
+import 'package:pokedex/src/aliases.dart';
+import 'package:pokedex/src/dto/encounters.dart';
+import 'package:pokedex/src/dto/games.dart';
+import 'package:pokedex/src/dto/machines.dart';
+import 'package:pokedex/src/dto/utility/languages.dart';
 
 part 'common.freezed.dart';
 part 'common.g.dart';

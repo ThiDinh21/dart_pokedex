@@ -1,4 +1,4 @@
-import 'package:poke_dart/src/aliases.dart';
+import 'package:pokedex/src/aliases.dart';
 
 typedef FromJson<T> = T Function(Json json);
 typedef ToJson<T> = Json Function(T data);

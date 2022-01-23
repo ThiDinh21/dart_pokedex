@@ -1,10 +1,10 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:poke_dart/src/aliases.dart';
-import 'package:poke_dart/src/dto/contests.dart';
-import 'package:poke_dart/src/dto/games.dart';
-import 'package:poke_dart/src/dto/pokemon.dart';
-import 'package:poke_dart/src/dto/utility/common.dart';
-import 'package:poke_dart/src/dto/utility/languages.dart';
+import 'package:pokedex/src/aliases.dart';
+import 'package:pokedex/src/dto/contests.dart';
+import 'package:pokedex/src/dto/games.dart';
+import 'package:pokedex/src/dto/pokemon.dart';
+import 'package:pokedex/src/dto/utility/common.dart';
+import 'package:pokedex/src/dto/utility/languages.dart';
 
 part 'moves.freezed.dart';
 part 'moves.g.dart';

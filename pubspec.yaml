@@ -1,4 +1,4 @@
-name: poke_dart
+name: pokedex
 description: A Dart wrapper for Pokemon API that provides everything Pokemon-related.
 version: 0.1.0
 

@@ -1,19 +1,19 @@
 import 'dart:core';
 
-import 'package:poke_dart/src/base_endpoint.dart';
-import 'package:poke_dart/src/client.dart';
-import 'package:poke_dart/src/dto/berries.dart';
-import 'package:poke_dart/src/dto/contests.dart';
-import 'package:poke_dart/src/dto/encounters.dart';
-import 'package:poke_dart/src/dto/evolutions.dart';
-import 'package:poke_dart/src/dto/games.dart';
-import 'package:poke_dart/src/dto/items.dart';
-import 'package:poke_dart/src/dto/locations.dart';
-import 'package:poke_dart/src/dto/machines.dart';
-import 'package:poke_dart/src/dto/moves.dart';
-import 'package:poke_dart/src/dto/pokemon.dart';
-import 'package:poke_dart/src/dto/utility/common.dart';
-import 'package:poke_dart/src/dto/utility/languages.dart';
+import 'package:pokedex/src/base_endpoint.dart';
+import 'package:pokedex/src/client.dart';
+import 'package:pokedex/src/dto/berries.dart';
+import 'package:pokedex/src/dto/contests.dart';
+import 'package:pokedex/src/dto/encounters.dart';
+import 'package:pokedex/src/dto/evolutions.dart';
+import 'package:pokedex/src/dto/games.dart';
+import 'package:pokedex/src/dto/items.dart';
+import 'package:pokedex/src/dto/locations.dart';
+import 'package:pokedex/src/dto/machines.dart';
+import 'package:pokedex/src/dto/moves.dart';
+import 'package:pokedex/src/dto/pokemon.dart';
+import 'package:pokedex/src/dto/utility/common.dart';
+import 'package:pokedex/src/dto/utility/languages.dart';
 
 const baseUrl = 'https://pokeapi.co/api/v2/';
 

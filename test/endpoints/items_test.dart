@@ -1,5 +1,5 @@
-import 'package:poke_dart/poke_dart.dart';
-import 'package:poke_dart/src/base_endpoint.dart';
+import 'package:pokedex/pokedex.dart';
+import 'package:pokedex/src/base_endpoint.dart';
 import 'package:test/test.dart';
 
 void main() {

@@ -1,12 +1,12 @@
 // ignore_for_file: avoid_positional_boolean_parameters
 
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:poke_dart/src/aliases.dart';
-import 'package:poke_dart/src/dto/items.dart';
-import 'package:poke_dart/src/dto/locations.dart';
-import 'package:poke_dart/src/dto/moves.dart';
-import 'package:poke_dart/src/dto/pokemon.dart';
-import 'package:poke_dart/src/dto/utility/common.dart';
+import 'package:pokedex/src/aliases.dart';
+import 'package:pokedex/src/dto/items.dart';
+import 'package:pokedex/src/dto/locations.dart';
+import 'package:pokedex/src/dto/moves.dart';
+import 'package:pokedex/src/dto/pokemon.dart';
+import 'package:pokedex/src/dto/utility/common.dart';
 
 part 'evolutions.freezed.dart';
 part 'evolutions.g.dart';
