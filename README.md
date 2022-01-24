@@ -23,11 +23,12 @@ pokedex is heavily inspired by [chulwoo-park](https://github.com/chulwoo-park)'s
     -   [Evolution](#evolution)
     -   [Games](#games)
     -   [Items](#items)
+    -   [Locations](#locations)
     -   [Machines](#machines)
     -   [Moves](#moves)
-    -   [Locations](#locations)
     -   [Pokemon](#pokemon)
     -   [Utility](#utility)
+    -   [Root Endpoints](#root-endpoints)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -59,7 +60,7 @@ final dex = Pokedex();
 
 ### Simple requests
 
-> ❕ **Some pokemon has multiple forms**: If you want to get the data for a pokemon species, it is recommended to use pokemonSpecies endpoint instead of pokemon as shown below.
+> ❕ **Some pokemon has multiple forms**: If you want to get the data for a specific pokemon species, it is recommended to use pokemonSpecies endpoint instead of pokemon endpoints, as shown below.
 
 > See also issue [#635](https://github.com/PokeAPI/pokeapi/issues/635)
 
@@ -512,7 +513,7 @@ Pokedex().pokemon.getPage(offset: 34, limit 10).then((response) {
 
 This is what you will get:
 
-![getPage](http://url/to/img.png)
+![getPage](https://github.com/galatea21/poke_dart/blob/master/assets/images/getPage.png?raw=true)
 
 Or you can get all items with `getAll`.
 This call will get all items within the pokemon endpoint.
@@ -525,7 +526,7 @@ Pokedex().pokemon.getAll().then((response) {
 
 This is what you will get:
 
-![getAll](http://url/to/img.png)
+![getAll](https://github.com/galatea21/poke_dart/blob/master/assets/images/getAll.png?raw=true)
 
 Each endpoint also provides a `getByUrl` method to fetch a specific item with a provided url.
 
@@ -539,4 +540,4 @@ Pokedex().pokemon.getByUrl('https://pokeapi.co/api/v2/pokemon/274/').then((respo
 
 This is what you will get:
 
-![getByUrl](http://url/to/img.png)
+![getByUrl](https://github.com/galatea21/poke_dart/blob/master/assets/images/getByUrl.png?raw=true)
