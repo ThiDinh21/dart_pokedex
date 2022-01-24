@@ -75,7 +75,7 @@ void main() {
 
     setUp(() {
       versions.clear();
-      endpoint = dex.version;
+      endpoint = dex.versions;
     });
 
     test('getAll', () async {

@@ -15,7 +15,7 @@ void main() {
 
     setUp(() {
       items.clear();
-      endpoint = dex.item;
+      endpoint = dex.items;
     });
 
     test(

@@ -72,9 +72,9 @@ abstract class BasePokeAPIEndpoints {
   final BaseNamedEndpoint<EvolutionTrigger> evolutionTriggers;
   final BaseNamedEndpoint<Generation> generations;
   final BaseNamedEndpoint<PokedexData> pokedexes;
-  final BaseNamedEndpoint<Version> version;
+  final BaseNamedEndpoint<Version> versions;
   final BaseNamedEndpoint<VersionGroup> versionGroups;
-  final BaseNamedEndpoint<Item> item;
+  final BaseNamedEndpoint<Item> items;
   final BaseNamedEndpoint<ItemAttribute> itemAttributes;
   final BaseNamedEndpoint<ItemCategory> itemCategories;
   final BaseNamedEndpoint<ItemFlingEffect> itemFlingEffects;
@@ -122,9 +122,9 @@ abstract class BasePokeAPIEndpoints {
     required this.evolutionTriggers,
     required this.generations,
     required this.pokedexes,
-    required this.version,
+    required this.versions,
     required this.versionGroups,
-    required this.item,
+    required this.items,
     required this.itemAttributes,
     required this.itemCategories,
     required this.itemFlingEffects,

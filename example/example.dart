@@ -33,6 +33,6 @@ Future<void> main() async {
 
   // get by url
   final item =
-      await pokedex.item.getByUrl('https://pokeapi.co/api/v2/item/100');
+      await pokedex.items.getByUrl('https://pokeapi.co/api/v2/item/100');
   print(item);
 }

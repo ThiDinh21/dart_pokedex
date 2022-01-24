@@ -13,21 +13,21 @@ pokedex is heavily inspired by [chulwoo-park](https://github.com/chulwoo-park)'s
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-- [Installation](#installation)
-- [Usage](#usage)
-    - [Simple requests](#simple-requests)
-- [Endpoints](#endpoints)
-    - [Berries](#berries)
-    - [Contests](#contests)
-    - [Encounters](#encounters)
-    - [Evolution](#evolution)
-    - [Games](#games)
-    - [Items](#items)
-    - [Machines](#machines)
-    - [Moves](#moves)
-    - [Locations](#locations)
-    - [Pokemon](#pokemon)
-    - [Utility](#utility)
+-   [Installation](#installation)
+-   [Usage](#usage)
+    -   [Simple requests](#simple-requests)
+-   [Endpoints](#endpoints)
+    -   [Berries](#berries)
+    -   [Contests](#contests)
+    -   [Encounters](#encounters)
+    -   [Evolution](#evolution)
+    -   [Games](#games)
+    -   [Items](#items)
+    -   [Machines](#machines)
+    -   [Moves](#moves)
+    -   [Locations](#locations)
+    -   [Pokemon](#pokemon)
+    -   [Utility](#utility)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -93,15 +93,15 @@ Refer to the [pokeapi v2 docs](https://pokeapi.co/docs/v2/) to find out more abo
 Use **berries** to return data about a specific berry.
 
 ```dart
-PokeApi().berries.get(name: 'cheri').then((response) {
+Pokedex().berries.get(name: 'cheri').then((response) {
   print(response);
 });
 ```
 
-Use **berryFirmness** to return data about the firmness of a specific berry.
+Use **berryFirmnesses** to return data about the firmness of a specific berry.
 
 ```dart
-PokeApi().berryFirmness.get(name: 'very-soft').then((response) {
+Pokedex().berryFirmnesses.get(name: 'very-soft').then((response) {
   print(response);
 });
 ```
@@ -109,7 +109,7 @@ PokeApi().berryFirmness.get(name: 'very-soft').then((response) {
 Use **berryFlavors** to return data about the flavor of a specific berry.
 
 ```dart
-PokeApi().berryFlavors.get(name: 'spicy').then((response) {
+Pokedex().berryFlavors.get(name: 'spicy').then((response) {
   print(response);
 })
 ```
@@ -119,7 +119,7 @@ PokeApi().berryFlavors.get(name: 'spicy').then((response) {
 Use **contestTypes** to return data about the effects of moves when used in contests.
 
 ```dart
-PokeApi().contestTypes.get(name: 'cool').then((response) {
+Pokedex().contestTypes.get(name: 'cool').then((response) {
   print(response);
 })
 ```
@@ -127,7 +127,7 @@ PokeApi().contestTypes.get(name: 'cool').then((response) {
 Use **contestEffects** to return data about the effects of moves when used in contests.
 
 ```dart
-PokeApi().contestEffects.get(id: 1).then((response) {
+Pokedex().contestEffects.get(id: 1).then((response) {
   print(response);
 })
 ```
@@ -135,7 +135,7 @@ PokeApi().contestEffects.get(id: 1).then((response) {
 Use **superContestEffects** to return data about the effects of moves when used in super contests.
 
 ```dart
-PokeApi().superContestEffects.get(id: 1).then((response) {
+Pokedex().superContestEffects.get(id: 1).then((response) {
   print(response);
 })
 ```
@@ -145,7 +145,7 @@ PokeApi().superContestEffects.get(id: 1).then((response) {
 Use **encounterMethods** to return data about the conditions in which a trainer may encounter a pokemon in the wild.
 
 ```dart
-PokeApi().encounterMethods.get(name: 'walk').then((response) {
+Pokedex().encounterMethods.get(name: 'walk').then((response) {
   print(response);
 })
 ```
@@ -153,7 +153,7 @@ PokeApi().encounterMethods.get(name: 'walk').then((response) {
 Use **encounterConditions** to return data that affects which pokemon might appear in the wild.
 
 ```dart
-PokeApi().encounterConditions.get(name: 'swarm').then((response) {
+Pokedex().encounterConditions.get(name: 'swarm').then((response) {
   print(response);
 })
 ```
@@ -161,7 +161,7 @@ PokeApi().encounterConditions.get(name: 'swarm').then((response) {
 Use **encounterConditionValues** to return data the various states that an encounter condition can have.
 
 ```dart
-PokeApi().encounterConditionValues.get(name: 'swarm-yes').then((response) {
+Pokedex().encounterConditionValues.get(name: 'swarm-yes').then((response) {
   print(response);
 })
 ```
@@ -171,7 +171,7 @@ PokeApi().encounterConditionValues.get(name: 'swarm-yes').then((response) {
 Use **evolutionChains** to return data evolution chains.
 
 ```dart
-PokeApi().evolutionChains.get(id: 1).then((response) {
+Pokedex().evolutionChains.get(id: 1).then((response) {
   print(response);
 })
 ```
@@ -179,7 +179,7 @@ PokeApi().evolutionChains.get(id: 1).then((response) {
 Use **evolutionTriggers** to return data about triggers which cause pokemon to evolve.
 
 ```dart
-PokeApi().evolutionTriggers.get(name: 'level-up').then((response) {
+Pokedex().evolutionTriggers.get(name: 'level-up').then((response) {
   print(response);
 })
 ```
@@ -189,7 +189,7 @@ PokeApi().evolutionTriggers.get(name: 'level-up').then((response) {
 Use **generations** to return data about the different generations of pokemon games.
 
 ```dart
-PokeApi().generations.get(name: 'generation-i').then((response) {
+Pokedex().generations.get(name: 'generation-i').then((response) {
   print(response);
 })
 ```
@@ -197,15 +197,15 @@ PokeApi().generations.get(name: 'generation-i').then((response) {
 Use **pokedexes** to return data about specific types of pokedexes.
 
 ```dart
-PokeApi().pokedexes.get(name: 'kanto').then((response) {
+Pokedex().pokedexes.get(name: 'kanto').then((response) {
   print(response);
 })
 ```
 
-Use **version** to return data about specific versions of pokemon games.
+Use **versions** to return data about specific versions of pokemon games.
 
 ```dart
-PokeApi().version.get(name: 'red').then((response) {
+Pokedex().versions.get(name: 'red').then((response) {
   print(response);
 })
 ```
@@ -213,17 +213,17 @@ PokeApi().version.get(name: 'red').then((response) {
 Use **versionGroups** to return data about specific version groups of pokemon games.
 
 ```dart
-PokeApi().versionGroups.get(name: 'red'blue").then((response) {
+Pokedex().versionGroups.get(name: 'red-blue').then((response) {
   print(response);
 })
 ```
 
 ### Items
 
-Use **item** to return data about specific items.
+Use **items** to return data about specific items.
 
 ```dart
-PokeApi().item.get(name: 'master-ball').then((response) {
+Pokedex().items.get(name: 'master-ball').then((response) {
   print(response);
 })
 ```
@@ -231,7 +231,7 @@ PokeApi().item.get(name: 'master-ball').then((response) {
 Use **itemAttributes** to return data about specific item attribute.
 
 ```dart
-PokeApi().itemAttributes.get(name: 'countable').then((response) {
+Pokedex().itemAttributes.get(name: 'countable').then((response) {
   print(response);
 })
 ```
@@ -239,7 +239,7 @@ PokeApi().itemAttributes.get(name: 'countable').then((response) {
 Use **itemCategories** to return data about specific item category.
 
 ```dart
-PokeApi().itemCategories.get(name: 'stat-boosts').then((response) {
+Pokedex().itemCategories.get(name: 'stat-boosts').then((response) {
   print(response);
 })
 ```
@@ -247,7 +247,7 @@ PokeApi().itemCategories.get(name: 'stat-boosts').then((response) {
 Use **itemFlingEffects** to return data about specific item fling effect.
 
 ```dart
-PokeApi().itemFlingEffects.get(name: 'badly-poison').then((response) {
+Pokedex().itemFlingEffects.get(name: 'badly-poison').then((response) {
   print(response);
 })
 ```
@@ -255,75 +255,7 @@ PokeApi().itemFlingEffects.get(name: 'badly-poison').then((response) {
 Use **itemPockets** to return data about specific pockets in a players bag.
 
 ```dart
-PokeApi().itemPockets.get(name: 'misc').then((response) {
-  print(response);
-})
-```
-
-### Machines
-
-Use **machines** to return data about specific machine.
-
-```dart
-PokeApi().machines.get(id: 2).then((response) {
-  print(response);
-})
-```
-
-### Moves
-
-Use **moves** to return data about specific pokemon move.
-
-```dart
-PokeApi().moves.get(name: 'pound').then((response) {
-  print(response);
-})
-```
-
-Use **moveAilments** to return data about specific pokemon move ailment.
-
-```dart
-PokeApi().moveAilments.get(name: 'paralysis').then((response) {
-  print(response);
-})
-```
-
-Use **moveBattleStyles** to return data about specific pokemon move battle style.
-
-```dart
-PokeApi().moveBattleStyles.get(name: 'attack').then((response) {
-  print(response);
-})
-```
-
-Use **moveCategories** to return data about specific pokemon move category.
-
-```dart
-PokeApi().moveCategories.get(name: 'ailment').then((response) {
-  print(response);
-})
-```
-
-Use **moveDamageClasses** to return data about specific pokemon damage class.
-
-```dart
-PokeApi().moveDamageClasses.get(name: 'status').then((response) {
-  print(response);
-})
-```
-
-Use **moveLearnMethods** to return data about specific pokemon learn method.
-
-```dart
-PokeApi().moveLearnMethods.get(name: 'level-up').then((response) {
-  print(response);
-})
-```
-
-Use **moveTargets** to return data about specific pokemon move target.
-
-```dart
-PokeApi().moveTargets.get(name: 'specific-move').then((response) {
+Pokedex().itemPockets.get(name: 'misc').then((response) {
   print(response);
 })
 ```
@@ -333,7 +265,7 @@ PokeApi().moveTargets.get(name: 'specific-move').then((response) {
 Use **locations** to return data about specific pokemon location.
 
 ```dart
-PokeApi().locations.get(name: 'sinnoh').then((response) {
+Pokedex().locations.get(name: 'sinnoh').then((response) {
   print(response);
 })
 ```
@@ -341,7 +273,7 @@ PokeApi().locations.get(name: 'sinnoh').then((response) {
 Use **locationAreas** to return data about specific pokemon location area.
 
 ```dart
-PokeApi().locationAreas.get(name: 'canalave-city-area').then((response) {
+Pokedex().locationAreas.get(name: 'canalave-city-area').then((response) {
   print(response);
 })
 ```
@@ -349,7 +281,7 @@ PokeApi().locationAreas.get(name: 'canalave-city-area').then((response) {
 Use **palParkAreas** to return data about specific pokemon pal park area.
 
 ```dart
-PokeApi().palParkAreas.get(name: 'forest').then((response) {
+Pokedex().palParkAreas.get(name: 'forest').then((response) {
   print(response);
 })
 ```
@@ -357,17 +289,85 @@ PokeApi().palParkAreas.get(name: 'forest').then((response) {
 Use **regions** to return data about specific pokemon region.
 
 ```dart
-PokeApi().regions.get(name: 'kanto').then((response) {
+Pokedex().regions.get(name: 'kanto').then((response) {
+  print(response);
+})
+```
+
+### Machines
+
+Use **machines** to return data about specific machine.
+
+```dart
+Pokedex().machines.get(id: 2).then((response) {
+  print(response);
+})
+```
+
+### Moves
+
+Use **moves** to return data about specific pokemon move.
+
+```dart
+Pokedex().moves.get(name: 'pound').then((response) {
+  print(response);
+})
+```
+
+Use **moveAilments** to return data about specific pokemon move ailment.
+
+```dart
+Pokedex().moveAilments.get(name: 'paralysis').then((response) {
+  print(response);
+})
+```
+
+Use **moveBattleStyles** to return data about specific pokemon move battle style.
+
+```dart
+Pokedex().moveBattleStyles.get(name: 'attack').then((response) {
+  print(response);
+})
+```
+
+Use **moveCategories** to return data about specific pokemon move category.
+
+```dart
+Pokedex().moveCategories.get(name: 'ailment').then((response) {
+  print(response);
+})
+```
+
+Use **moveDamageClasses** to return data about specific pokemon damage class.
+
+```dart
+Pokedex().moveDamageClasses.get(name: 'status').then((response) {
+  print(response);
+})
+```
+
+Use **moveLearnMethods** to return data about specific pokemon learn method.
+
+```dart
+Pokedex().moveLearnMethods.get(name: 'level-up').then((response) {
+  print(response);
+})
+```
+
+Use **moveTargets** to return data about specific pokemon move target.
+
+```dart
+Pokedex().moveTargets.get(name: 'specific-move').then((response) {
   print(response);
 })
 ```
 
 ### Pokemon
 
-Use **itemAttributes** to return data about specific pokemon ability.
+Use **abilities** to return data about specific pokemon ability.
 
 ```dart
-PokeApi().itemAttributes.get(name: 'stench').then((response) {
+Pokedex().abilities.get(name: 'stench').then((response) {
   print(response);
 })
 ```
@@ -375,7 +375,7 @@ PokeApi().itemAttributes.get(name: 'stench').then((response) {
 Use **characteristics** to return data about specific pokemon characteristic.
 
 ```dart
-PokeApi().characteristics.get(id: 1).then((response) {
+Pokedex().characteristics.get(id: 1).then((response) {
   print(response);
 })
 ```
@@ -383,7 +383,7 @@ PokeApi().characteristics.get(id: 1).then((response) {
 Use **eggGroups** to return data about specific pokemon egg group.
 
 ```dart
-PokeApi().eggGroups.get(name: 'monster').then((response) {
+Pokedex().eggGroups.get(name: 'monster').then((response) {
   print(response);
 })
 ```
@@ -391,7 +391,7 @@ PokeApi().eggGroups.get(name: 'monster').then((response) {
 Use **genders** to return data about specific pokemon gender.
 
 ```dart
-PokeApi().genders.get(name: 'female').then((response) {
+Pokedex().genders.get(name: 'female').then((response) {
   print(response);
 })
 ```
@@ -399,7 +399,7 @@ PokeApi().genders.get(name: 'female').then((response) {
 Use **growthRates** to return data about specific pokemon growth rate.
 
 ```dart
-PokeApi().growthRates(name: 'slow').then((response) {
+Pokedex().growthRates(name: 'slow').then((response) {
   print(response);
 })
 ```
@@ -407,7 +407,7 @@ PokeApi().growthRates(name: 'slow').then((response) {
 Use **natures** to return data about specific pokemon nature.
 
 ```dart
-PokeApi().natures.get(name: 'bold').then((response) {
+Pokedex().natures.get(name: 'bold').then((response) {
   print(response);
 })
 ```
@@ -415,7 +415,7 @@ PokeApi().natures.get(name: 'bold').then((response) {
 Use **pokeathlonStats** to return data about specific pokeathon stat.
 
 ```dart
-PokeApi().pokeathlonStats.get(name: 'speed').then((response) {
+Pokedex().pokeathlonStats.get(name: 'speed').then((response) {
   print(response);
 })
 ```
@@ -423,7 +423,7 @@ PokeApi().pokeathlonStats.get(name: 'speed').then((response) {
 Use **pokemon** to return data about specific pokemon.
 
 ```dart
-PokeApi().pokemon.get(name: 'butterfree').then((response) {
+Pokedex().pokemon.get(name: 'clefairy').then((response) {
   print(response);
 })
 ```
@@ -431,7 +431,7 @@ PokeApi().pokemon.get(name: 'butterfree').then((response) {
 Use **pokemonColors** to return data about specific pokemon color.
 
 ```dart
-PokeApi().pokemonColors.get(name: 'black').then((response) {
+Pokedex().pokemonColors.get(name: 'black').then((response) {
   print(response);
 })
 ```
@@ -439,7 +439,7 @@ PokeApi().pokemonColors.get(name: 'black').then((response) {
 Use **pokemonForms** to return data about specific pokemon form.
 
 ```dart
-PokeApi().pokemonForms.get(name: 'wormadam-plant').then((response) {
+Pokedex().pokemonForms.get(name: 'arceus-bug').then((response) {
   print(response);
 })
 ```
@@ -447,7 +447,7 @@ PokeApi().pokemonForms.get(name: 'wormadam-plant').then((response) {
 Use **pokemonHabitats** to return data about specific pokemon habitat.
 
 ```dart
-PokeApi().pokemonHabitats.get(name: 'grottes').then((response) {
+Pokedex().pokemonHabitats.get(name: 'cave').then((response) {
   print(response);
 })
 ```
@@ -455,7 +455,7 @@ PokeApi().pokemonHabitats.get(name: 'grottes').then((response) {
 Use **pokemonShapes** to return data about specific pokemon shape.
 
 ```dart
-PokeApi().pokemonShapes.get(name: 'ball').then((response) {
+Pokedex().pokemonShapes.get(name: 'ball').then((response) {
   print(response);
 })
 ```
@@ -463,7 +463,7 @@ PokeApi().pokemonShapes.get(name: 'ball').then((response) {
 Use **pokemonSpecies** to return data about specific pokemon species.
 
 ```dart
-PokeApi().pokemonSpecies.get(name: 'wormadam').then((response) {
+Pokedex().pokemonSpecies.get(name: 'wormadam').then((response) {
   print(response);
 })
 ```
@@ -471,7 +471,7 @@ PokeApi().pokemonSpecies.get(name: 'wormadam').then((response) {
 Use **stats** to return data about specific pokemon stat.
 
 ```dart
-PokeApi().stats.get(name: 'attack').then((response) {
+Pokedex().stats.get(name: 'attack').then((response) {
   print(response);
 })
 ```
@@ -479,7 +479,7 @@ PokeApi().stats.get(name: 'attack').then((response) {
 Use **types** to return data about specific pokemon type.
 
 ```dart
-PokeApi().types.get(name: 'ground').then((response) {
+Pokedex().types.get(name: 'ground').then((response) {
   print(response);
 })
 ```
@@ -489,7 +489,7 @@ PokeApi().types.get(name: 'ground').then((response) {
 Use **languages** to return data about specific pokemon language.
 
 ```dart
-PokeApi().languages(name: 'ko').then((response) {
+Pokedex().languages.get(name: 'ja').then((response) {
   print(response);
 })
 ```
