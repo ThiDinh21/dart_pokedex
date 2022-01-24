@@ -8071,10 +8071,6 @@ mixin _$PokemonForm {
   NamedAPIResource get pokemon => throw _privateConstructorUsedError;
 
   /// A list of details showing types this Pokémon form has.
-  ///
-  /// See also:
-  ///
-  /// [PokemonFormType]
   List<PokemonFormType> get types => throw _privateConstructorUsedError;
 
   /// A set of sprites used to depict this Pokémon form in the game.
@@ -8427,10 +8423,6 @@ class _$_PokemonForm implements _PokemonForm {
   @override
 
   /// A list of details showing types this Pokémon form has.
-  ///
-  /// See also:
-  ///
-  /// [PokemonFormType]
   final List<PokemonFormType> types;
   @override
 
@@ -8584,10 +8576,6 @@ abstract class _PokemonForm implements PokemonForm {
   @override
 
   /// A list of details showing types this Pokémon form has.
-  ///
-  /// See also:
-  ///
-  /// [PokemonFormType]
   List<PokemonFormType> get types;
   @override
 
