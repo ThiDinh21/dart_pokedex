@@ -1,7 +1,7 @@
-/// A Dart wrapper for [PokeAPI](https://pokeapi.co/docs/v2)(their [github](https://github.com/PokeAPI/pokeapi) link)
+/// A Dart wrapper for PokeAPI that provides everything Pokemon-related.
 ///
-/// All the Pokémon data you'll ever need in one place, easily accessible
-/// through a modern RESTful API.
+/// Check their [documentation](https://pokeapi.co/docs/v2) and [github repository](https://github.com/PokeAPI/pokeapi)
+/// out also.
 library pokedex;
 
 export 'package:pokedex/src/client.dart';

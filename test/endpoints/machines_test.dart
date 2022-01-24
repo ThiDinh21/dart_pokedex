@@ -29,7 +29,7 @@ void main() {
           machines.add(item);
         }
 
-        expect(machines.length, 1442);
+        expect(machines.length, 1688);
       },
       timeout: timeout(1500),
     );
