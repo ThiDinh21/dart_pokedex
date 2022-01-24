@@ -493,3 +493,50 @@ Pokedex().languages.get(name: 'ja').then((response) {
   print(response);
 })
 ```
+
+## Root Endpoints
+
+Each endpoint provides a `getPage` method to get paged items contained by that endpoint.
+It can configure offset and limit.
+
+-   `offset` is where to start. The first item that you will get. Default `0`
+-   `limit` is how many items you want to list. Default `20`
+
+This call will get the list of Pokémon between ID 35 and ID 44
+
+```dart
+Pokedex().pokemon.getPage(offset: 34, limit 10).then((response) {
+  print(response);
+})
+```
+
+This is what you will get:
+
+![getPage](http://url/to/img.png)
+
+Or you can get all items with `getAll`.
+This call will get all items within the pokemon endpoint.
+
+```dart
+Pokedex().pokemon.getAll().then((response) {
+  print(response);
+})
+```
+
+This is what you will get:
+
+![getAll](http://url/to/img.png)
+
+Each endpoint also provides a `getByUrl` method to fetch a specific item with a provided url.
+
+This call will get the Pokémon with id 274.
+
+```dart
+Pokedex().pokemon.getByUrl('https://pokeapi.co/api/v2/pokemon/274/').then((response) {
+  print(response);
+})
+```
+
+This is what you will get:
+
+![getByUrl](http://url/to/img.png)
