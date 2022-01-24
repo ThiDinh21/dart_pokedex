@@ -2,7 +2,7 @@
 
 [![Pub](https://img.shields.io/pub/v/pokedex?include_prereleases)](https://pub.dartlang.org/packages/pokedex)
 [![style: lint](https://img.shields.io/badge/style-lint-4BC0F5.svg)](https://pub.dev/packages/lint)
-[![License](https://img.shields.io/badge/License-BSD_2--Clause-orange.svg)](https://opensource.org/licenses/BSD-2-Clause)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 A Dart wrapper for [PokeAPI](https://pokeapi.co/).
 
