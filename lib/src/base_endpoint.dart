@@ -60,7 +60,7 @@ mixin ResourceEndpointMixin<T> {
 
 abstract class BasePokeAPIEndpoints {
   final BaseNamedEndpoint<Berry> berries;
-  final BaseNamedEndpoint<BerryFirmness> berryFirmness;
+  final BaseNamedEndpoint<BerryFirmness> berryFirmnesses;
   final BaseNamedEndpoint<BerryFlavor> berryFlavors;
   final BaseNamedEndpoint<ContestType> contestTypes;
   final BaseEndpoint<ContestEffect> contestEffects;
@@ -110,7 +110,7 @@ abstract class BasePokeAPIEndpoints {
 
   const BasePokeAPIEndpoints({
     required this.berries,
-    required this.berryFirmness,
+    required this.berryFirmnesses,
     required this.berryFlavors,
     required this.contestTypes,
     required this.contestEffects,

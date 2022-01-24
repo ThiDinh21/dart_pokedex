@@ -43,7 +43,7 @@ void main() {
       late BerryFirmness berryFirmness;
 
       setUp(() async {
-        berryFirmness = await mockPokedex.berryFirmness.get(id: id);
+        berryFirmness = await mockPokedex.berryFirmnesses.get(id: id);
       });
 
       test('get', () {

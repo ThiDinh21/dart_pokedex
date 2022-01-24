@@ -94,7 +94,7 @@ class PokeAPIEndpoints extends BasePokeAPIEndpoints {
   PokeAPIEndpoints(PokeAPIClient client)
       : super(
           berries: NamedEndpoint<Berry>(client),
-          berryFirmness: NamedEndpoint<BerryFirmness>(client),
+          berryFirmnesses: NamedEndpoint<BerryFirmness>(client),
           berryFlavors: NamedEndpoint<BerryFlavor>(client),
           contestTypes: NamedEndpoint<ContestType>(client),
           contestEffects: Endpoint<ContestEffect>(client),
