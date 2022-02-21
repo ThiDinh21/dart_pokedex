@@ -66,27 +66,27 @@ final dex = Pokedex();
 
 ```dart
 import 'package:pokeapi_dart/pokeapi_dart.dart';
-void main() async {
+
+Future<void> main() async {
   final pokedex = Pokedex();
 
-  // Get Aegislash species information.
-  pokedex.pokemonSpecies.get(name: 'aegislash').then((aegislashSpecies) {
-    print(aegislashSpecies);
-  });
+  // get Aegislash species information with async function
+  final aegislashSpecies = pokedex.pokemonSpecies.get(name: 'aegislash');
+  print(aegislashSpecies);
 
-  // with async function
+  // get pokemon by name
   final aegislashBlade = await pokedex.pokemon.get(name: 'aegislash-blade');
-  print(aegislashBlade);
+  final aegislashShield = await pokedex.pokemon.get(id: 'aegislash-shield');
 
   // get pokemon by id
-  final aegislashShield = await pokedex.pokemon.get(id: 681);
-  print(aegislashShield);
+  aegislashBlade = await pokedex.pokemon.get(id: 10026);
+  aegislashShield = await pokedex.pokemon.get(id: 681);
 }
 ```
 
 # Endpoints
 
-The get method can use `id` or `id or name` as a parameter according to each endpoint type.
+The get method can use `id` or `name` as a parameter according to each endpoint type.
 Refer to the [pokeapi v2 docs](https://pokeapi.co/docs/v2/) to find out more about how the data is structured.
 
 ### Berries

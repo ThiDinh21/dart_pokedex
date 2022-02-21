@@ -1,6 +1,6 @@
 name: pokedex
 description: A Dart wrapper for PokeAPI that provides everything Pokémon-related.
-version: 0.1.1
+version: 0.2.0
 repository: https://github.com/galatea21/dart_pokedex
 
 environment:
