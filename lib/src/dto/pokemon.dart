@@ -658,8 +658,7 @@ class PokemonSprites with _$PokemonSprites {
     /// The shiny female depiction of this Pokémon from the back in battle.
     @JsonKey(name: 'back_shiny_female') String? backShinyFemale,
 
-    // TODO: doc is missing others and versions fields,
-    // TODO: add them after the doc is updated
+    // TODO: doc is missing others and versions fields, add them after the doc is updated
   ) = _PokemonSprites;
 
   factory PokemonSprites.fromJson(Json json) => _$PokemonSpritesFromJson(json);
