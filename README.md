@@ -6,7 +6,7 @@
 
 A Dart wrapper for [PokeAPI](https://pokeapi.co/).
 
-pokedex is heavily inspired by [chulwoo-park](https://github.com/chulwoo-park)'s [pokeapi_dart](pub.dev/packages/pokeapi_dart).
+pokedex is heavily inspired by [chulwoo-park](https://github.com/chulwoo-park)'s [pokeapi_dart](https://pub.dev/packages/pokeapi_dart).
 
 **Table of Contents**
 
