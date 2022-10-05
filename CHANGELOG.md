@@ -6,7 +6,7 @@
 
 -   Update dependencies.
 
-## 0.2
+## 0.2.0
 
 -   Update dependencies.
 -   Update Region, Pokemon and PokemonSpecies classes to fit API Hisui changes
