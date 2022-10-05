@@ -27,7 +27,7 @@ void main() {
           locations.add(item);
         }
 
-        expect(locations.length, 796);
+        expect(locations.length, 797);
       },
       timeout: const Timeout(Duration(seconds: 600)),
     );
@@ -61,7 +61,7 @@ void main() {
           areas.add(item);
         }
 
-        expect(areas.length, 702);
+        expect(areas.length, 732);
       },
       timeout: const Timeout(Duration(seconds: 600)),
     );
