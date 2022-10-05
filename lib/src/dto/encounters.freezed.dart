@@ -12,32 +12,11 @@ part of 'encounters.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 EncounterMethod _$EncounterMethodFromJson(Map<String, dynamic> json) {
   return _EncounterMethod.fromJson(json);
 }
-
-/// @nodoc
-class _$EncounterMethodTearOff {
-  const _$EncounterMethodTearOff();
-
-  _EncounterMethod call(int id, String name, int order, List<Name> names) {
-    return _EncounterMethod(
-      id,
-      name,
-      order,
-      names,
-    );
-  }
-
-  EncounterMethod fromJson(Map<String, Object?> json) {
-    return EncounterMethod.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $EncounterMethod = _$EncounterMethodTearOff();
 
 /// @nodoc
 mixin _$EncounterMethod {
@@ -105,25 +84,25 @@ class _$EncounterMethodCopyWithImpl<$Res>
 }
 
 /// @nodoc
-abstract class _$EncounterMethodCopyWith<$Res>
+abstract class _$$_EncounterMethodCopyWith<$Res>
     implements $EncounterMethodCopyWith<$Res> {
-  factory _$EncounterMethodCopyWith(
-          _EncounterMethod value, $Res Function(_EncounterMethod) then) =
-      __$EncounterMethodCopyWithImpl<$Res>;
+  factory _$$_EncounterMethodCopyWith(
+          _$_EncounterMethod value, $Res Function(_$_EncounterMethod) then) =
+      __$$_EncounterMethodCopyWithImpl<$Res>;
   @override
   $Res call({int id, String name, int order, List<Name> names});
 }
 
 /// @nodoc
-class __$EncounterMethodCopyWithImpl<$Res>
+class __$$_EncounterMethodCopyWithImpl<$Res>
     extends _$EncounterMethodCopyWithImpl<$Res>
-    implements _$EncounterMethodCopyWith<$Res> {
-  __$EncounterMethodCopyWithImpl(
-      _EncounterMethod _value, $Res Function(_EncounterMethod) _then)
-      : super(_value, (v) => _then(v as _EncounterMethod));
+    implements _$$_EncounterMethodCopyWith<$Res> {
+  __$$_EncounterMethodCopyWithImpl(
+      _$_EncounterMethod _value, $Res Function(_$_EncounterMethod) _then)
+      : super(_value, (v) => _then(v as _$_EncounterMethod));
 
   @override
-  _EncounterMethod get _value => super._value as _EncounterMethod;
+  _$_EncounterMethod get _value => super._value as _$_EncounterMethod;
 
   @override
   $Res call({
@@ -132,7 +111,7 @@ class __$EncounterMethodCopyWithImpl<$Res>
     Object? order = freezed,
     Object? names = freezed,
   }) {
-    return _then(_EncounterMethod(
+    return _then(_$_EncounterMethod(
       id == freezed
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
@@ -146,7 +125,7 @@ class __$EncounterMethodCopyWithImpl<$Res>
           : order // ignore: cast_nullable_to_non_nullable
               as int,
       names == freezed
-          ? _value.names
+          ? _value._names
           : names // ignore: cast_nullable_to_non_nullable
               as List<Name>,
     ));
@@ -156,27 +135,34 @@ class __$EncounterMethodCopyWithImpl<$Res>
 /// @nodoc
 @JsonSerializable()
 class _$_EncounterMethod implements _EncounterMethod {
-  const _$_EncounterMethod(this.id, this.name, this.order, this.names);
+  const _$_EncounterMethod(
+      this.id, this.name, this.order, final List<Name> names)
+      : _names = names;
 
   factory _$_EncounterMethod.fromJson(Map<String, dynamic> json) =>
       _$$_EncounterMethodFromJson(json);
 
-  @override
-
   /// The identifier for this resource.
-  final int id;
   @override
+  final int id;
 
   /// The name for this resource.
-  final String name;
   @override
+  final String name;
 
   /// A good value for sorting.
-  final int order;
   @override
+  final int order;
 
   /// The name of this resource listed in different languages.
-  final List<Name> names;
+  final List<Name> _names;
+
+  /// The name of this resource listed in different languages.
+  @override
+  List<Name> get names {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_names);
+  }
 
   @override
   String toString() {
@@ -187,35 +173,38 @@ class _$_EncounterMethod implements _EncounterMethod {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _EncounterMethod &&
+            other is _$_EncounterMethod &&
             const DeepCollectionEquality().equals(other.id, id) &&
             const DeepCollectionEquality().equals(other.name, name) &&
             const DeepCollectionEquality().equals(other.order, order) &&
-            const DeepCollectionEquality().equals(other.names, names));
+            const DeepCollectionEquality().equals(other._names, _names));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
       const DeepCollectionEquality().hash(id),
       const DeepCollectionEquality().hash(name),
       const DeepCollectionEquality().hash(order),
-      const DeepCollectionEquality().hash(names));
+      const DeepCollectionEquality().hash(_names));
 
   @JsonKey(ignore: true)
   @override
-  _$EncounterMethodCopyWith<_EncounterMethod> get copyWith =>
-      __$EncounterMethodCopyWithImpl<_EncounterMethod>(this, _$identity);
+  _$$_EncounterMethodCopyWith<_$_EncounterMethod> get copyWith =>
+      __$$_EncounterMethodCopyWithImpl<_$_EncounterMethod>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_EncounterMethodToJson(this);
+    return _$$_EncounterMethodToJson(
+      this,
+    );
   }
 }
 
 abstract class _EncounterMethod implements EncounterMethod {
-  const factory _EncounterMethod(
-      int id, String name, int order, List<Name> names) = _$_EncounterMethod;
+  const factory _EncounterMethod(final int id, final String name,
+      final int order, final List<Name> names) = _$_EncounterMethod;
 
   factory _EncounterMethod.fromJson(Map<String, dynamic> json) =
       _$_EncounterMethod.fromJson;
@@ -238,35 +227,13 @@ abstract class _EncounterMethod implements EncounterMethod {
   List<Name> get names;
   @override
   @JsonKey(ignore: true)
-  _$EncounterMethodCopyWith<_EncounterMethod> get copyWith =>
+  _$$_EncounterMethodCopyWith<_$_EncounterMethod> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 EncounterCondition _$EncounterConditionFromJson(Map<String, dynamic> json) {
   return _EncounterCondition.fromJson(json);
 }
-
-/// @nodoc
-class _$EncounterConditionTearOff {
-  const _$EncounterConditionTearOff();
-
-  _EncounterCondition call(
-      int id, String name, List<Name> names, List<NamedAPIResource> values) {
-    return _EncounterCondition(
-      id,
-      name,
-      names,
-      values,
-    );
-  }
-
-  EncounterCondition fromJson(Map<String, Object?> json) {
-    return EncounterCondition.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $EncounterCondition = _$EncounterConditionTearOff();
 
 /// @nodoc
 mixin _$EncounterCondition {
@@ -339,26 +306,26 @@ class _$EncounterConditionCopyWithImpl<$Res>
 }
 
 /// @nodoc
-abstract class _$EncounterConditionCopyWith<$Res>
+abstract class _$$_EncounterConditionCopyWith<$Res>
     implements $EncounterConditionCopyWith<$Res> {
-  factory _$EncounterConditionCopyWith(
-          _EncounterCondition value, $Res Function(_EncounterCondition) then) =
-      __$EncounterConditionCopyWithImpl<$Res>;
+  factory _$$_EncounterConditionCopyWith(_$_EncounterCondition value,
+          $Res Function(_$_EncounterCondition) then) =
+      __$$_EncounterConditionCopyWithImpl<$Res>;
   @override
   $Res call(
       {int id, String name, List<Name> names, List<NamedAPIResource> values});
 }
 
 /// @nodoc
-class __$EncounterConditionCopyWithImpl<$Res>
+class __$$_EncounterConditionCopyWithImpl<$Res>
     extends _$EncounterConditionCopyWithImpl<$Res>
-    implements _$EncounterConditionCopyWith<$Res> {
-  __$EncounterConditionCopyWithImpl(
-      _EncounterCondition _value, $Res Function(_EncounterCondition) _then)
-      : super(_value, (v) => _then(v as _EncounterCondition));
+    implements _$$_EncounterConditionCopyWith<$Res> {
+  __$$_EncounterConditionCopyWithImpl(
+      _$_EncounterCondition _value, $Res Function(_$_EncounterCondition) _then)
+      : super(_value, (v) => _then(v as _$_EncounterCondition));
 
   @override
-  _EncounterCondition get _value => super._value as _EncounterCondition;
+  _$_EncounterCondition get _value => super._value as _$_EncounterCondition;
 
   @override
   $Res call({
@@ -367,7 +334,7 @@ class __$EncounterConditionCopyWithImpl<$Res>
     Object? names = freezed,
     Object? values = freezed,
   }) {
-    return _then(_EncounterCondition(
+    return _then(_$_EncounterCondition(
       id == freezed
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
@@ -377,11 +344,11 @@ class __$EncounterConditionCopyWithImpl<$Res>
           : name // ignore: cast_nullable_to_non_nullable
               as String,
       names == freezed
-          ? _value.names
+          ? _value._names
           : names // ignore: cast_nullable_to_non_nullable
               as List<Name>,
       values == freezed
-          ? _value.values
+          ? _value._values
           : values // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
     ));
@@ -391,31 +358,49 @@ class __$EncounterConditionCopyWithImpl<$Res>
 /// @nodoc
 @JsonSerializable()
 class _$_EncounterCondition implements _EncounterCondition {
-  const _$_EncounterCondition(this.id, this.name, this.names, this.values);
+  const _$_EncounterCondition(this.id, this.name, final List<Name> names,
+      final List<NamedAPIResource> values)
+      : _names = names,
+        _values = values;
 
   factory _$_EncounterCondition.fromJson(Map<String, dynamic> json) =>
       _$$_EncounterConditionFromJson(json);
 
-  @override
-
   /// The identifier for this resource.
-  final int id;
   @override
+  final int id;
 
   /// The name for this resource.
-  final String name;
   @override
+  final String name;
 
   /// The name of this resource listed in different languages.
-  final List<Name> names;
+  final List<Name> _names;
+
+  /// The name of this resource listed in different languages.
   @override
+  List<Name> get names {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_names);
+  }
 
   /// A list of possible values for this encounter condition.
   ///
   /// See also:
   ///
   /// [EncounterConditionValue]
-  final List<NamedAPIResource> values;
+  final List<NamedAPIResource> _values;
+
+  /// A list of possible values for this encounter condition.
+  ///
+  /// See also:
+  ///
+  /// [EncounterConditionValue]
+  @override
+  List<NamedAPIResource> get values {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_values);
+  }
 
   @override
   String toString() {
@@ -426,35 +411,42 @@ class _$_EncounterCondition implements _EncounterCondition {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _EncounterCondition &&
+            other is _$_EncounterCondition &&
             const DeepCollectionEquality().equals(other.id, id) &&
             const DeepCollectionEquality().equals(other.name, name) &&
-            const DeepCollectionEquality().equals(other.names, names) &&
-            const DeepCollectionEquality().equals(other.values, values));
+            const DeepCollectionEquality().equals(other._names, _names) &&
+            const DeepCollectionEquality().equals(other._values, _values));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
       const DeepCollectionEquality().hash(id),
       const DeepCollectionEquality().hash(name),
-      const DeepCollectionEquality().hash(names),
-      const DeepCollectionEquality().hash(values));
+      const DeepCollectionEquality().hash(_names),
+      const DeepCollectionEquality().hash(_values));
 
   @JsonKey(ignore: true)
   @override
-  _$EncounterConditionCopyWith<_EncounterCondition> get copyWith =>
-      __$EncounterConditionCopyWithImpl<_EncounterCondition>(this, _$identity);
+  _$$_EncounterConditionCopyWith<_$_EncounterCondition> get copyWith =>
+      __$$_EncounterConditionCopyWithImpl<_$_EncounterCondition>(
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_EncounterConditionToJson(this);
+    return _$$_EncounterConditionToJson(
+      this,
+    );
   }
 }
 
 abstract class _EncounterCondition implements EncounterCondition {
-  const factory _EncounterCondition(int id, String name, List<Name> names,
-      List<NamedAPIResource> values) = _$_EncounterCondition;
+  const factory _EncounterCondition(
+      final int id,
+      final String name,
+      final List<Name> names,
+      final List<NamedAPIResource> values) = _$_EncounterCondition;
 
   factory _EncounterCondition.fromJson(Map<String, dynamic> json) =
       _$_EncounterCondition.fromJson;
@@ -481,7 +473,7 @@ abstract class _EncounterCondition implements EncounterCondition {
   List<NamedAPIResource> get values;
   @override
   @JsonKey(ignore: true)
-  _$EncounterConditionCopyWith<_EncounterCondition> get copyWith =>
+  _$$_EncounterConditionCopyWith<_$_EncounterCondition> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
@@ -489,28 +481,6 @@ EncounterConditionValue _$EncounterConditionValueFromJson(
     Map<String, dynamic> json) {
   return _EncounterConditionValue.fromJson(json);
 }
-
-/// @nodoc
-class _$EncounterConditionValueTearOff {
-  const _$EncounterConditionValueTearOff();
-
-  _EncounterConditionValue call(
-      int id, String name, NamedAPIResource condition, List<Name> names) {
-    return _EncounterConditionValue(
-      id,
-      name,
-      condition,
-      names,
-    );
-  }
-
-  EncounterConditionValue fromJson(Map<String, Object?> json) {
-    return EncounterConditionValue.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $EncounterConditionValue = _$EncounterConditionValueTearOff();
 
 /// @nodoc
 mixin _$EncounterConditionValue {
@@ -592,11 +562,11 @@ class _$EncounterConditionValueCopyWithImpl<$Res>
 }
 
 /// @nodoc
-abstract class _$EncounterConditionValueCopyWith<$Res>
+abstract class _$$_EncounterConditionValueCopyWith<$Res>
     implements $EncounterConditionValueCopyWith<$Res> {
-  factory _$EncounterConditionValueCopyWith(_EncounterConditionValue value,
-          $Res Function(_EncounterConditionValue) then) =
-      __$EncounterConditionValueCopyWithImpl<$Res>;
+  factory _$$_EncounterConditionValueCopyWith(_$_EncounterConditionValue value,
+          $Res Function(_$_EncounterConditionValue) then) =
+      __$$_EncounterConditionValueCopyWithImpl<$Res>;
   @override
   $Res call(
       {int id, String name, NamedAPIResource condition, List<Name> names});
@@ -606,16 +576,16 @@ abstract class _$EncounterConditionValueCopyWith<$Res>
 }
 
 /// @nodoc
-class __$EncounterConditionValueCopyWithImpl<$Res>
+class __$$_EncounterConditionValueCopyWithImpl<$Res>
     extends _$EncounterConditionValueCopyWithImpl<$Res>
-    implements _$EncounterConditionValueCopyWith<$Res> {
-  __$EncounterConditionValueCopyWithImpl(_EncounterConditionValue _value,
-      $Res Function(_EncounterConditionValue) _then)
-      : super(_value, (v) => _then(v as _EncounterConditionValue));
+    implements _$$_EncounterConditionValueCopyWith<$Res> {
+  __$$_EncounterConditionValueCopyWithImpl(_$_EncounterConditionValue _value,
+      $Res Function(_$_EncounterConditionValue) _then)
+      : super(_value, (v) => _then(v as _$_EncounterConditionValue));
 
   @override
-  _EncounterConditionValue get _value =>
-      super._value as _EncounterConditionValue;
+  _$_EncounterConditionValue get _value =>
+      super._value as _$_EncounterConditionValue;
 
   @override
   $Res call({
@@ -624,7 +594,7 @@ class __$EncounterConditionValueCopyWithImpl<$Res>
     Object? condition = freezed,
     Object? names = freezed,
   }) {
-    return _then(_EncounterConditionValue(
+    return _then(_$_EncounterConditionValue(
       id == freezed
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
@@ -638,7 +608,7 @@ class __$EncounterConditionValueCopyWithImpl<$Res>
           : condition // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
       names == freezed
-          ? _value.names
+          ? _value._names
           : names // ignore: cast_nullable_to_non_nullable
               as List<Name>,
     ));
@@ -649,31 +619,37 @@ class __$EncounterConditionValueCopyWithImpl<$Res>
 @JsonSerializable()
 class _$_EncounterConditionValue implements _EncounterConditionValue {
   const _$_EncounterConditionValue(
-      this.id, this.name, this.condition, this.names);
+      this.id, this.name, this.condition, final List<Name> names)
+      : _names = names;
 
   factory _$_EncounterConditionValue.fromJson(Map<String, dynamic> json) =>
       _$$_EncounterConditionValueFromJson(json);
 
-  @override
-
   /// The identifier for this resource.
-  final int id;
   @override
+  final int id;
 
   /// The name for this resource.
-  final String name;
   @override
+  final String name;
 
   /// The condition this encounter condition value pertains to.
   ///
   /// See also:
   ///
   /// [EncounterCondition]
-  final NamedAPIResource condition;
   @override
+  final NamedAPIResource condition;
 
   /// The name of this resource listed in different languages.
-  final List<Name> names;
+  final List<Name> _names;
+
+  /// The name of this resource listed in different languages.
+  @override
+  List<Name> get names {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_names);
+  }
 
   @override
   String toString() {
@@ -684,37 +660,43 @@ class _$_EncounterConditionValue implements _EncounterConditionValue {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _EncounterConditionValue &&
+            other is _$_EncounterConditionValue &&
             const DeepCollectionEquality().equals(other.id, id) &&
             const DeepCollectionEquality().equals(other.name, name) &&
             const DeepCollectionEquality().equals(other.condition, condition) &&
-            const DeepCollectionEquality().equals(other.names, names));
+            const DeepCollectionEquality().equals(other._names, _names));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
       const DeepCollectionEquality().hash(id),
       const DeepCollectionEquality().hash(name),
       const DeepCollectionEquality().hash(condition),
-      const DeepCollectionEquality().hash(names));
+      const DeepCollectionEquality().hash(_names));
 
   @JsonKey(ignore: true)
   @override
-  _$EncounterConditionValueCopyWith<_EncounterConditionValue> get copyWith =>
-      __$EncounterConditionValueCopyWithImpl<_EncounterConditionValue>(
-          this, _$identity);
+  _$$_EncounterConditionValueCopyWith<_$_EncounterConditionValue>
+      get copyWith =>
+          __$$_EncounterConditionValueCopyWithImpl<_$_EncounterConditionValue>(
+              this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_EncounterConditionValueToJson(this);
+    return _$$_EncounterConditionValueToJson(
+      this,
+    );
   }
 }
 
 abstract class _EncounterConditionValue implements EncounterConditionValue {
   const factory _EncounterConditionValue(
-          int id, String name, NamedAPIResource condition, List<Name> names) =
-      _$_EncounterConditionValue;
+      final int id,
+      final String name,
+      final NamedAPIResource condition,
+      final List<Name> names) = _$_EncounterConditionValue;
 
   factory _EncounterConditionValue.fromJson(Map<String, dynamic> json) =
       _$_EncounterConditionValue.fromJson;
@@ -741,6 +723,6 @@ abstract class _EncounterConditionValue implements EncounterConditionValue {
   List<Name> get names;
   @override
   @JsonKey(ignore: true)
-  _$EncounterConditionValueCopyWith<_EncounterConditionValue> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$_EncounterConditionValueCopyWith<_$_EncounterConditionValue>
+      get copyWith => throw _privateConstructorUsedError;
 }

@@ -12,88 +12,11 @@ part of 'moves.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 Move _$MoveFromJson(Map<String, dynamic> json) {
   return _Move.fromJson(json);
 }
-
-/// @nodoc
-class _$MoveTearOff {
-  const _$MoveTearOff();
-
-  _Move call(
-      int id,
-      String name,
-      int? accuracy,
-      @JsonKey(name: 'effect_chance')
-          int? effectChance,
-      int? pp,
-      int priority,
-      int? power,
-      @JsonKey(name: 'contest_combos')
-          ContestComboSets? contestCombos,
-      @JsonKey(name: 'contest_type')
-          NamedAPIResource? contestType,
-      @JsonKey(name: 'contest_effect')
-          APIResource? contestEffect,
-      @JsonKey(name: 'damage_class')
-          NamedAPIResource damageClass,
-      @JsonKey(name: 'effect_entries')
-          List<VerboseEffect> effectEntries,
-      @JsonKey(name: 'effect_changes')
-          List<AbilityEffectChange> effectChanges,
-      @JsonKey(name: 'learned_by_pokemon')
-          List<NamedAPIResource> learnedByPokemon,
-      @JsonKey(name: 'flavor_text_entries')
-          List<MoveFlavorText> flavorTextEntries,
-      NamedAPIResource generation,
-      List<MachineVersionDetail> machines,
-      MoveMetaData? meta,
-      List<Name> names,
-      @JsonKey(name: 'past_values')
-          List<PastMoveStatValues> pastValues,
-      @JsonKey(name: 'stat_changes')
-          List<MoveStatChange> statChanges,
-      @JsonKey(name: 'super_contest_effect')
-          APIResource? superContestEffect,
-      NamedAPIResource target,
-      NamedAPIResource type) {
-    return _Move(
-      id,
-      name,
-      accuracy,
-      effectChance,
-      pp,
-      priority,
-      power,
-      contestCombos,
-      contestType,
-      contestEffect,
-      damageClass,
-      effectEntries,
-      effectChanges,
-      learnedByPokemon,
-      flavorTextEntries,
-      generation,
-      machines,
-      meta,
-      names,
-      pastValues,
-      statChanges,
-      superContestEffect,
-      target,
-      type,
-    );
-  }
-
-  Move fromJson(Map<String, Object?> json) {
-    return Move.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $Move = _$MoveTearOff();
 
 /// @nodoc
 mixin _$Move {
@@ -495,9 +418,9 @@ class _$MoveCopyWithImpl<$Res> implements $MoveCopyWith<$Res> {
 }
 
 /// @nodoc
-abstract class _$MoveCopyWith<$Res> implements $MoveCopyWith<$Res> {
-  factory _$MoveCopyWith(_Move value, $Res Function(_Move) then) =
-      __$MoveCopyWithImpl<$Res>;
+abstract class _$$_MoveCopyWith<$Res> implements $MoveCopyWith<$Res> {
+  factory _$$_MoveCopyWith(_$_Move value, $Res Function(_$_Move) then) =
+      __$$_MoveCopyWithImpl<$Res>;
   @override
   $Res call(
       {int id,
@@ -558,13 +481,13 @@ abstract class _$MoveCopyWith<$Res> implements $MoveCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$MoveCopyWithImpl<$Res> extends _$MoveCopyWithImpl<$Res>
-    implements _$MoveCopyWith<$Res> {
-  __$MoveCopyWithImpl(_Move _value, $Res Function(_Move) _then)
-      : super(_value, (v) => _then(v as _Move));
+class __$$_MoveCopyWithImpl<$Res> extends _$MoveCopyWithImpl<$Res>
+    implements _$$_MoveCopyWith<$Res> {
+  __$$_MoveCopyWithImpl(_$_Move _value, $Res Function(_$_Move) _then)
+      : super(_value, (v) => _then(v as _$_Move));
 
   @override
-  _Move get _value => super._value as _Move;
+  _$_Move get _value => super._value as _$_Move;
 
   @override
   $Res call({
@@ -593,7 +516,7 @@ class __$MoveCopyWithImpl<$Res> extends _$MoveCopyWithImpl<$Res>
     Object? target = freezed,
     Object? type = freezed,
   }) {
-    return _then(_Move(
+    return _then(_$_Move(
       id == freezed
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
@@ -639,19 +562,19 @@ class __$MoveCopyWithImpl<$Res> extends _$MoveCopyWithImpl<$Res>
           : damageClass // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
       effectEntries == freezed
-          ? _value.effectEntries
+          ? _value._effectEntries
           : effectEntries // ignore: cast_nullable_to_non_nullable
               as List<VerboseEffect>,
       effectChanges == freezed
-          ? _value.effectChanges
+          ? _value._effectChanges
           : effectChanges // ignore: cast_nullable_to_non_nullable
               as List<AbilityEffectChange>,
       learnedByPokemon == freezed
-          ? _value.learnedByPokemon
+          ? _value._learnedByPokemon
           : learnedByPokemon // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
       flavorTextEntries == freezed
-          ? _value.flavorTextEntries
+          ? _value._flavorTextEntries
           : flavorTextEntries // ignore: cast_nullable_to_non_nullable
               as List<MoveFlavorText>,
       generation == freezed
@@ -659,7 +582,7 @@ class __$MoveCopyWithImpl<$Res> extends _$MoveCopyWithImpl<$Res>
           : generation // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
       machines == freezed
-          ? _value.machines
+          ? _value._machines
           : machines // ignore: cast_nullable_to_non_nullable
               as List<MachineVersionDetail>,
       meta == freezed
@@ -667,15 +590,15 @@ class __$MoveCopyWithImpl<$Res> extends _$MoveCopyWithImpl<$Res>
           : meta // ignore: cast_nullable_to_non_nullable
               as MoveMetaData?,
       names == freezed
-          ? _value.names
+          ? _value._names
           : names // ignore: cast_nullable_to_non_nullable
               as List<Name>,
       pastValues == freezed
-          ? _value.pastValues
+          ? _value._pastValues
           : pastValues // ignore: cast_nullable_to_non_nullable
               as List<PastMoveStatValues>,
       statChanges == freezed
-          ? _value.statChanges
+          ? _value._statChanges
           : statChanges // ignore: cast_nullable_to_non_nullable
               as List<MoveStatChange>,
       superContestEffect == freezed
@@ -701,170 +624,241 @@ class _$_Move implements _Move {
       this.id,
       this.name,
       this.accuracy,
-      @JsonKey(name: 'effect_chance') this.effectChance,
+      @JsonKey(name: 'effect_chance')
+          this.effectChance,
       this.pp,
       this.priority,
       this.power,
-      @JsonKey(name: 'contest_combos') this.contestCombos,
-      @JsonKey(name: 'contest_type') this.contestType,
-      @JsonKey(name: 'contest_effect') this.contestEffect,
-      @JsonKey(name: 'damage_class') this.damageClass,
-      @JsonKey(name: 'effect_entries') this.effectEntries,
-      @JsonKey(name: 'effect_changes') this.effectChanges,
-      @JsonKey(name: 'learned_by_pokemon') this.learnedByPokemon,
-      @JsonKey(name: 'flavor_text_entries') this.flavorTextEntries,
+      @JsonKey(name: 'contest_combos')
+          this.contestCombos,
+      @JsonKey(name: 'contest_type')
+          this.contestType,
+      @JsonKey(name: 'contest_effect')
+          this.contestEffect,
+      @JsonKey(name: 'damage_class')
+          this.damageClass,
+      @JsonKey(name: 'effect_entries')
+          final List<VerboseEffect> effectEntries,
+      @JsonKey(name: 'effect_changes')
+          final List<AbilityEffectChange> effectChanges,
+      @JsonKey(name: 'learned_by_pokemon')
+          final List<NamedAPIResource> learnedByPokemon,
+      @JsonKey(name: 'flavor_text_entries')
+          final List<MoveFlavorText> flavorTextEntries,
       this.generation,
-      this.machines,
+      final List<MachineVersionDetail> machines,
       this.meta,
-      this.names,
-      @JsonKey(name: 'past_values') this.pastValues,
-      @JsonKey(name: 'stat_changes') this.statChanges,
-      @JsonKey(name: 'super_contest_effect') this.superContestEffect,
+      final List<Name> names,
+      @JsonKey(name: 'past_values')
+          final List<PastMoveStatValues> pastValues,
+      @JsonKey(name: 'stat_changes')
+          final List<MoveStatChange> statChanges,
+      @JsonKey(name: 'super_contest_effect')
+          this.superContestEffect,
       this.target,
-      this.type);
+      this.type)
+      : _effectEntries = effectEntries,
+        _effectChanges = effectChanges,
+        _learnedByPokemon = learnedByPokemon,
+        _flavorTextEntries = flavorTextEntries,
+        _machines = machines,
+        _names = names,
+        _pastValues = pastValues,
+        _statChanges = statChanges;
 
   factory _$_Move.fromJson(Map<String, dynamic> json) => _$$_MoveFromJson(json);
 
-  @override
-
   /// The identifier for this resource.
-  final int id;
   @override
+  final int id;
 
   /// The name for this resource.
-  final String name;
   @override
+  final String name;
 
   /// The percent value of how likely this move is to be successful.
-  final int? accuracy;
   @override
+  final int? accuracy;
 
   /// The percent value of how likely it is this moves effect will happen.
+  @override
   @JsonKey(name: 'effect_chance')
   final int? effectChance;
-  @override
 
   /// Power points. The number of times this move can be used.
-  final int? pp;
   @override
+  final int? pp;
 
   /// A value between -8 and 8. Sets the order in which moves are executed during battle.
   /// See [Bulbapedia](https://bulbapedia.bulbagarden.net/wiki/Priority) for greater detail.
-  final int priority;
   @override
+  final int priority;
 
   /// The base power of this move with a value of 0 if it does not have a base power.
-  final int? power;
   @override
+  final int? power;
 
   /// A detail of normal and super contest combos that require this move.
+  @override
   @JsonKey(name: 'contest_combos')
   final ContestComboSets? contestCombos;
-  @override
 
   /// The type of appeal this move gives a Pokémon when used in a contest.
   ///
   /// See also:
   ///
   /// [ContestType]
+  @override
   @JsonKey(name: 'contest_type')
   final NamedAPIResource? contestType;
-  @override
 
   /// The effect the move has when used in a contest.
   ///
   /// See also:
   ///
   /// [ContestEffect].
+  @override
   @JsonKey(name: 'contest_effect')
   final APIResource? contestEffect;
-  @override
 
   /// The type of damage the move inflicts on the target, e.g. physical.
   ///
   /// See also:
   ///
   /// [MoveDamageClass]
+  @override
   @JsonKey(name: 'damage_class')
   final NamedAPIResource damageClass;
-  @override
 
   /// The effect of this move listed in different languages.
-  @JsonKey(name: 'effect_entries')
-  final List<VerboseEffect> effectEntries;
+  final List<VerboseEffect> _effectEntries;
+
+  /// The effect of this move listed in different languages.
   @override
+  @JsonKey(name: 'effect_entries')
+  List<VerboseEffect> get effectEntries {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_effectEntries);
+  }
 
   /// The list of previous effects this move has had across version groups of the games.
-  @JsonKey(name: 'effect_changes')
-  final List<AbilityEffectChange> effectChanges;
+  final List<AbilityEffectChange> _effectChanges;
+
+  /// The list of previous effects this move has had across version groups of the games.
   @override
+  @JsonKey(name: 'effect_changes')
+  List<AbilityEffectChange> get effectChanges {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_effectChanges);
+  }
 
   /// List of Pokemon that can learn the move.
   ///
   /// See also:
   ///
   /// [Pokemon]
-  @JsonKey(name: 'learned_by_pokemon')
-  final List<NamedAPIResource> learnedByPokemon;
+  final List<NamedAPIResource> _learnedByPokemon;
+
+  /// List of Pokemon that can learn the move.
+  ///
+  /// See also:
+  ///
+  /// [Pokemon]
   @override
+  @JsonKey(name: 'learned_by_pokemon')
+  List<NamedAPIResource> get learnedByPokemon {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_learnedByPokemon);
+  }
 
   /// The flavor text of this move listed in different languages.
-  @JsonKey(name: 'flavor_text_entries')
-  final List<MoveFlavorText> flavorTextEntries;
+  final List<MoveFlavorText> _flavorTextEntries;
+
+  /// The flavor text of this move listed in different languages.
   @override
+  @JsonKey(name: 'flavor_text_entries')
+  List<MoveFlavorText> get flavorTextEntries {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_flavorTextEntries);
+  }
 
   /// The generation in which this move was introduced.
   ///
   /// See also:
   ///
   /// [Generation]
-  final NamedAPIResource generation;
   @override
+  final NamedAPIResource generation;
 
   /// A list of the machines that teach this move.
-  final List<MachineVersionDetail> machines;
+  final List<MachineVersionDetail> _machines;
+
+  /// A list of the machines that teach this move.
   @override
+  List<MachineVersionDetail> get machines {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_machines);
+  }
 
   /// Metadata about this move
-  final MoveMetaData? meta;
   @override
+  final MoveMetaData? meta;
 
   /// The name of this resource listed in different languages.
-  final List<Name> names;
+  final List<Name> _names;
+
+  /// The name of this resource listed in different languages.
   @override
+  List<Name> get names {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_names);
+  }
 
   /// A list of move resource value changes across version groups of the game.
-  @JsonKey(name: 'past_values')
-  final List<PastMoveStatValues> pastValues;
+  final List<PastMoveStatValues> _pastValues;
+
+  /// A list of move resource value changes across version groups of the game.
   @override
+  @JsonKey(name: 'past_values')
+  List<PastMoveStatValues> get pastValues {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_pastValues);
+  }
 
   /// A list of stats this moves effects and how much it effects them
-  @JsonKey(name: 'stat_changes')
-  final List<MoveStatChange> statChanges;
+  final List<MoveStatChange> _statChanges;
+
+  /// A list of stats this moves effects and how much it effects them
   @override
+  @JsonKey(name: 'stat_changes')
+  List<MoveStatChange> get statChanges {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_statChanges);
+  }
 
   /// The effect the move has when used in a super contest.
   ///
   /// See also:
   ///
   /// [SuperContestEffect]
+  @override
   @JsonKey(name: 'super_contest_effect')
   final APIResource? superContestEffect;
-  @override
 
   /// The type of target that will receive the effects of the attack.
   ///
   /// See also:
   ///
   /// [MoveTarget]
-  final NamedAPIResource target;
   @override
+  final NamedAPIResource target;
 
   /// The elemental type of this move.
   ///
   /// See also:
   ///
   /// [Type]
+  @override
   final NamedAPIResource type;
 
   @override
@@ -876,7 +870,7 @@ class _$_Move implements _Move {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Move &&
+            other is _$_Move &&
             const DeepCollectionEquality().equals(other.id, id) &&
             const DeepCollectionEquality().equals(other.name, name) &&
             const DeepCollectionEquality().equals(other.accuracy, accuracy) &&
@@ -894,28 +888,29 @@ class _$_Move implements _Move {
             const DeepCollectionEquality()
                 .equals(other.damageClass, damageClass) &&
             const DeepCollectionEquality()
-                .equals(other.effectEntries, effectEntries) &&
+                .equals(other._effectEntries, _effectEntries) &&
             const DeepCollectionEquality()
-                .equals(other.effectChanges, effectChanges) &&
+                .equals(other._effectChanges, _effectChanges) &&
             const DeepCollectionEquality()
-                .equals(other.learnedByPokemon, learnedByPokemon) &&
+                .equals(other._learnedByPokemon, _learnedByPokemon) &&
             const DeepCollectionEquality()
-                .equals(other.flavorTextEntries, flavorTextEntries) &&
+                .equals(other._flavorTextEntries, _flavorTextEntries) &&
             const DeepCollectionEquality()
                 .equals(other.generation, generation) &&
-            const DeepCollectionEquality().equals(other.machines, machines) &&
+            const DeepCollectionEquality().equals(other._machines, _machines) &&
             const DeepCollectionEquality().equals(other.meta, meta) &&
-            const DeepCollectionEquality().equals(other.names, names) &&
+            const DeepCollectionEquality().equals(other._names, _names) &&
             const DeepCollectionEquality()
-                .equals(other.pastValues, pastValues) &&
+                .equals(other._pastValues, _pastValues) &&
             const DeepCollectionEquality()
-                .equals(other.statChanges, statChanges) &&
+                .equals(other._statChanges, _statChanges) &&
             const DeepCollectionEquality()
                 .equals(other.superContestEffect, superContestEffect) &&
             const DeepCollectionEquality().equals(other.target, target) &&
             const DeepCollectionEquality().equals(other.type, type));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
@@ -930,16 +925,16 @@ class _$_Move implements _Move {
         const DeepCollectionEquality().hash(contestType),
         const DeepCollectionEquality().hash(contestEffect),
         const DeepCollectionEquality().hash(damageClass),
-        const DeepCollectionEquality().hash(effectEntries),
-        const DeepCollectionEquality().hash(effectChanges),
-        const DeepCollectionEquality().hash(learnedByPokemon),
-        const DeepCollectionEquality().hash(flavorTextEntries),
+        const DeepCollectionEquality().hash(_effectEntries),
+        const DeepCollectionEquality().hash(_effectChanges),
+        const DeepCollectionEquality().hash(_learnedByPokemon),
+        const DeepCollectionEquality().hash(_flavorTextEntries),
         const DeepCollectionEquality().hash(generation),
-        const DeepCollectionEquality().hash(machines),
+        const DeepCollectionEquality().hash(_machines),
         const DeepCollectionEquality().hash(meta),
-        const DeepCollectionEquality().hash(names),
-        const DeepCollectionEquality().hash(pastValues),
-        const DeepCollectionEquality().hash(statChanges),
+        const DeepCollectionEquality().hash(_names),
+        const DeepCollectionEquality().hash(_pastValues),
+        const DeepCollectionEquality().hash(_statChanges),
         const DeepCollectionEquality().hash(superContestEffect),
         const DeepCollectionEquality().hash(target),
         const DeepCollectionEquality().hash(type)
@@ -947,53 +942,55 @@ class _$_Move implements _Move {
 
   @JsonKey(ignore: true)
   @override
-  _$MoveCopyWith<_Move> get copyWith =>
-      __$MoveCopyWithImpl<_Move>(this, _$identity);
+  _$$_MoveCopyWith<_$_Move> get copyWith =>
+      __$$_MoveCopyWithImpl<_$_Move>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_MoveToJson(this);
+    return _$$_MoveToJson(
+      this,
+    );
   }
 }
 
 abstract class _Move implements Move {
   const factory _Move(
-      int id,
-      String name,
-      int? accuracy,
+      final int id,
+      final String name,
+      final int? accuracy,
       @JsonKey(name: 'effect_chance')
-          int? effectChance,
-      int? pp,
-      int priority,
-      int? power,
+          final int? effectChance,
+      final int? pp,
+      final int priority,
+      final int? power,
       @JsonKey(name: 'contest_combos')
-          ContestComboSets? contestCombos,
+          final ContestComboSets? contestCombos,
       @JsonKey(name: 'contest_type')
-          NamedAPIResource? contestType,
+          final NamedAPIResource? contestType,
       @JsonKey(name: 'contest_effect')
-          APIResource? contestEffect,
+          final APIResource? contestEffect,
       @JsonKey(name: 'damage_class')
-          NamedAPIResource damageClass,
+          final NamedAPIResource damageClass,
       @JsonKey(name: 'effect_entries')
-          List<VerboseEffect> effectEntries,
+          final List<VerboseEffect> effectEntries,
       @JsonKey(name: 'effect_changes')
-          List<AbilityEffectChange> effectChanges,
+          final List<AbilityEffectChange> effectChanges,
       @JsonKey(name: 'learned_by_pokemon')
-          List<NamedAPIResource> learnedByPokemon,
+          final List<NamedAPIResource> learnedByPokemon,
       @JsonKey(name: 'flavor_text_entries')
-          List<MoveFlavorText> flavorTextEntries,
-      NamedAPIResource generation,
-      List<MachineVersionDetail> machines,
-      MoveMetaData? meta,
-      List<Name> names,
+          final List<MoveFlavorText> flavorTextEntries,
+      final NamedAPIResource generation,
+      final List<MachineVersionDetail> machines,
+      final MoveMetaData? meta,
+      final List<Name> names,
       @JsonKey(name: 'past_values')
-          List<PastMoveStatValues> pastValues,
+          final List<PastMoveStatValues> pastValues,
       @JsonKey(name: 'stat_changes')
-          List<MoveStatChange> statChanges,
+          final List<MoveStatChange> statChanges,
       @JsonKey(name: 'super_contest_effect')
-          APIResource? superContestEffect,
-      NamedAPIResource target,
-      NamedAPIResource type) = _$_Move;
+          final APIResource? superContestEffect,
+      final NamedAPIResource target,
+      final NamedAPIResource type) = _$_Move;
 
   factory _Move.fromJson(Map<String, dynamic> json) = _$_Move.fromJson;
 
@@ -1140,32 +1137,12 @@ abstract class _Move implements Move {
   NamedAPIResource get type;
   @override
   @JsonKey(ignore: true)
-  _$MoveCopyWith<_Move> get copyWith => throw _privateConstructorUsedError;
+  _$$_MoveCopyWith<_$_Move> get copyWith => throw _privateConstructorUsedError;
 }
 
 ContestComboSets _$ContestComboSetsFromJson(Map<String, dynamic> json) {
   return _ContestComboSets.fromJson(json);
 }
-
-/// @nodoc
-class _$ContestComboSetsTearOff {
-  const _$ContestComboSetsTearOff();
-
-  _ContestComboSets call(ContestComboDetail normal,
-      @JsonKey(name: 'super') ContestComboDetail superMove) {
-    return _ContestComboSets(
-      normal,
-      superMove,
-    );
-  }
-
-  ContestComboSets fromJson(Map<String, Object?> json) {
-    return ContestComboSets.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $ContestComboSets = _$ContestComboSetsTearOff();
 
 /// @nodoc
 mixin _$ContestComboSets {
@@ -1239,11 +1216,11 @@ class _$ContestComboSetsCopyWithImpl<$Res>
 }
 
 /// @nodoc
-abstract class _$ContestComboSetsCopyWith<$Res>
+abstract class _$$_ContestComboSetsCopyWith<$Res>
     implements $ContestComboSetsCopyWith<$Res> {
-  factory _$ContestComboSetsCopyWith(
-          _ContestComboSets value, $Res Function(_ContestComboSets) then) =
-      __$ContestComboSetsCopyWithImpl<$Res>;
+  factory _$$_ContestComboSetsCopyWith(
+          _$_ContestComboSets value, $Res Function(_$_ContestComboSets) then) =
+      __$$_ContestComboSetsCopyWithImpl<$Res>;
   @override
   $Res call(
       {ContestComboDetail normal,
@@ -1256,22 +1233,22 @@ abstract class _$ContestComboSetsCopyWith<$Res>
 }
 
 /// @nodoc
-class __$ContestComboSetsCopyWithImpl<$Res>
+class __$$_ContestComboSetsCopyWithImpl<$Res>
     extends _$ContestComboSetsCopyWithImpl<$Res>
-    implements _$ContestComboSetsCopyWith<$Res> {
-  __$ContestComboSetsCopyWithImpl(
-      _ContestComboSets _value, $Res Function(_ContestComboSets) _then)
-      : super(_value, (v) => _then(v as _ContestComboSets));
+    implements _$$_ContestComboSetsCopyWith<$Res> {
+  __$$_ContestComboSetsCopyWithImpl(
+      _$_ContestComboSets _value, $Res Function(_$_ContestComboSets) _then)
+      : super(_value, (v) => _then(v as _$_ContestComboSets));
 
   @override
-  _ContestComboSets get _value => super._value as _ContestComboSets;
+  _$_ContestComboSets get _value => super._value as _$_ContestComboSets;
 
   @override
   $Res call({
     Object? normal = freezed,
     Object? superMove = freezed,
   }) {
-    return _then(_ContestComboSets(
+    return _then(_$_ContestComboSets(
       normal == freezed
           ? _value.normal
           : normal // ignore: cast_nullable_to_non_nullable
@@ -1293,15 +1270,14 @@ class _$_ContestComboSets implements _ContestComboSets {
   factory _$_ContestComboSets.fromJson(Map<String, dynamic> json) =>
       _$$_ContestComboSetsFromJson(json);
 
-  @override
-
   /// A detail of moves this move can be used before or after,
   /// granting additional appeal points in contests.
-  final ContestComboDetail normal;
   @override
+  final ContestComboDetail normal;
 
   /// A detail of moves this move can be used before or after,
   /// granting additional appeal points in super contests.
+  @override
   @JsonKey(name: 'super')
   final ContestComboDetail superMove;
 
@@ -1314,11 +1290,12 @@ class _$_ContestComboSets implements _ContestComboSets {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _ContestComboSets &&
+            other is _$_ContestComboSets &&
             const DeepCollectionEquality().equals(other.normal, normal) &&
             const DeepCollectionEquality().equals(other.superMove, superMove));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -1327,18 +1304,20 @@ class _$_ContestComboSets implements _ContestComboSets {
 
   @JsonKey(ignore: true)
   @override
-  _$ContestComboSetsCopyWith<_ContestComboSets> get copyWith =>
-      __$ContestComboSetsCopyWithImpl<_ContestComboSets>(this, _$identity);
+  _$$_ContestComboSetsCopyWith<_$_ContestComboSets> get copyWith =>
+      __$$_ContestComboSetsCopyWithImpl<_$_ContestComboSets>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_ContestComboSetsToJson(this);
+    return _$$_ContestComboSetsToJson(
+      this,
+    );
   }
 }
 
 abstract class _ContestComboSets implements ContestComboSets {
-  const factory _ContestComboSets(ContestComboDetail normal,
-          @JsonKey(name: 'super') ContestComboDetail superMove) =
+  const factory _ContestComboSets(final ContestComboDetail normal,
+          @JsonKey(name: 'super') final ContestComboDetail superMove) =
       _$_ContestComboSets;
 
   factory _ContestComboSets.fromJson(Map<String, dynamic> json) =
@@ -1357,34 +1336,13 @@ abstract class _ContestComboSets implements ContestComboSets {
   ContestComboDetail get superMove;
   @override
   @JsonKey(ignore: true)
-  _$ContestComboSetsCopyWith<_ContestComboSets> get copyWith =>
+  _$$_ContestComboSetsCopyWith<_$_ContestComboSets> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 ContestComboDetail _$ContestComboDetailFromJson(Map<String, dynamic> json) {
   return _ContestComboDetail.fromJson(json);
 }
-
-/// @nodoc
-class _$ContestComboDetailTearOff {
-  const _$ContestComboDetailTearOff();
-
-  _ContestComboDetail call(
-      @JsonKey(name: 'use_before') List<NamedAPIResource>? useBefore,
-      @JsonKey(name: 'use_after') List<NamedAPIResource>? useAfter) {
-    return _ContestComboDetail(
-      useBefore,
-      useAfter,
-    );
-  }
-
-  ContestComboDetail fromJson(Map<String, Object?> json) {
-    return ContestComboDetail.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $ContestComboDetail = _$ContestComboDetailTearOff();
 
 /// @nodoc
 mixin _$ContestComboDetail {
@@ -1440,11 +1398,11 @@ class _$ContestComboDetailCopyWithImpl<$Res>
 }
 
 /// @nodoc
-abstract class _$ContestComboDetailCopyWith<$Res>
+abstract class _$$_ContestComboDetailCopyWith<$Res>
     implements $ContestComboDetailCopyWith<$Res> {
-  factory _$ContestComboDetailCopyWith(
-          _ContestComboDetail value, $Res Function(_ContestComboDetail) then) =
-      __$ContestComboDetailCopyWithImpl<$Res>;
+  factory _$$_ContestComboDetailCopyWith(_$_ContestComboDetail value,
+          $Res Function(_$_ContestComboDetail) then) =
+      __$$_ContestComboDetailCopyWithImpl<$Res>;
   @override
   $Res call(
       {@JsonKey(name: 'use_before') List<NamedAPIResource>? useBefore,
@@ -1452,28 +1410,28 @@ abstract class _$ContestComboDetailCopyWith<$Res>
 }
 
 /// @nodoc
-class __$ContestComboDetailCopyWithImpl<$Res>
+class __$$_ContestComboDetailCopyWithImpl<$Res>
     extends _$ContestComboDetailCopyWithImpl<$Res>
-    implements _$ContestComboDetailCopyWith<$Res> {
-  __$ContestComboDetailCopyWithImpl(
-      _ContestComboDetail _value, $Res Function(_ContestComboDetail) _then)
-      : super(_value, (v) => _then(v as _ContestComboDetail));
+    implements _$$_ContestComboDetailCopyWith<$Res> {
+  __$$_ContestComboDetailCopyWithImpl(
+      _$_ContestComboDetail _value, $Res Function(_$_ContestComboDetail) _then)
+      : super(_value, (v) => _then(v as _$_ContestComboDetail));
 
   @override
-  _ContestComboDetail get _value => super._value as _ContestComboDetail;
+  _$_ContestComboDetail get _value => super._value as _$_ContestComboDetail;
 
   @override
   $Res call({
     Object? useBefore = freezed,
     Object? useAfter = freezed,
   }) {
-    return _then(_ContestComboDetail(
+    return _then(_$_ContestComboDetail(
       useBefore == freezed
-          ? _value.useBefore
+          ? _value._useBefore
           : useBefore // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>?,
       useAfter == freezed
-          ? _value.useAfter
+          ? _value._useAfter
           : useAfter // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>?,
     ));
@@ -1483,22 +1441,40 @@ class __$ContestComboDetailCopyWithImpl<$Res>
 /// @nodoc
 @JsonSerializable()
 class _$_ContestComboDetail implements _ContestComboDetail {
-  const _$_ContestComboDetail(@JsonKey(name: 'use_before') this.useBefore,
-      @JsonKey(name: 'use_after') this.useAfter);
+  const _$_ContestComboDetail(
+      @JsonKey(name: 'use_before') final List<NamedAPIResource>? useBefore,
+      @JsonKey(name: 'use_after') final List<NamedAPIResource>? useAfter)
+      : _useBefore = useBefore,
+        _useAfter = useAfter;
 
   factory _$_ContestComboDetail.fromJson(Map<String, dynamic> json) =>
       _$$_ContestComboDetailFromJson(json);
 
-  @override
+  /// A list of moves to use before this move.
+  final List<NamedAPIResource>? _useBefore;
 
   /// A list of moves to use before this move.
-  @JsonKey(name: 'use_before')
-  final List<NamedAPIResource>? useBefore;
   @override
+  @JsonKey(name: 'use_before')
+  List<NamedAPIResource>? get useBefore {
+    final value = _useBefore;
+    if (value == null) return null;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
 
   /// A list of moves to use after this move.
+  final List<NamedAPIResource>? _useAfter;
+
+  /// A list of moves to use after this move.
+  @override
   @JsonKey(name: 'use_after')
-  final List<NamedAPIResource>? useAfter;
+  List<NamedAPIResource>? get useAfter {
+    final value = _useAfter;
+    if (value == null) return null;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(value);
+  }
 
   @override
   String toString() {
@@ -1509,32 +1485,37 @@ class _$_ContestComboDetail implements _ContestComboDetail {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _ContestComboDetail &&
-            const DeepCollectionEquality().equals(other.useBefore, useBefore) &&
-            const DeepCollectionEquality().equals(other.useAfter, useAfter));
+            other is _$_ContestComboDetail &&
+            const DeepCollectionEquality()
+                .equals(other._useBefore, _useBefore) &&
+            const DeepCollectionEquality().equals(other._useAfter, _useAfter));
   }
-
-  @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(useBefore),
-      const DeepCollectionEquality().hash(useAfter));
 
   @JsonKey(ignore: true)
   @override
-  _$ContestComboDetailCopyWith<_ContestComboDetail> get copyWith =>
-      __$ContestComboDetailCopyWithImpl<_ContestComboDetail>(this, _$identity);
+  int get hashCode => Object.hash(
+      runtimeType,
+      const DeepCollectionEquality().hash(_useBefore),
+      const DeepCollectionEquality().hash(_useAfter));
+
+  @JsonKey(ignore: true)
+  @override
+  _$$_ContestComboDetailCopyWith<_$_ContestComboDetail> get copyWith =>
+      __$$_ContestComboDetailCopyWithImpl<_$_ContestComboDetail>(
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_ContestComboDetailToJson(this);
+    return _$$_ContestComboDetailToJson(
+      this,
+    );
   }
 }
 
 abstract class _ContestComboDetail implements ContestComboDetail {
   const factory _ContestComboDetail(
-          @JsonKey(name: 'use_before') List<NamedAPIResource>? useBefore,
-          @JsonKey(name: 'use_after') List<NamedAPIResource>? useAfter) =
+          @JsonKey(name: 'use_before') final List<NamedAPIResource>? useBefore,
+          @JsonKey(name: 'use_after') final List<NamedAPIResource>? useAfter) =
       _$_ContestComboDetail;
 
   factory _ContestComboDetail.fromJson(Map<String, dynamic> json) =
@@ -1552,36 +1533,13 @@ abstract class _ContestComboDetail implements ContestComboDetail {
   List<NamedAPIResource>? get useAfter;
   @override
   @JsonKey(ignore: true)
-  _$ContestComboDetailCopyWith<_ContestComboDetail> get copyWith =>
+  _$$_ContestComboDetailCopyWith<_$_ContestComboDetail> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 MoveFlavorText _$MoveFlavorTextFromJson(Map<String, dynamic> json) {
   return _MoveFlavorText.fromJson(json);
 }
-
-/// @nodoc
-class _$MoveFlavorTextTearOff {
-  const _$MoveFlavorTextTearOff();
-
-  _MoveFlavorText call(
-      @JsonKey(name: 'flavor_text') String flavorText,
-      NamedAPIResource language,
-      @JsonKey(name: 'version_group') NamedAPIResource versionGroup) {
-    return _MoveFlavorText(
-      flavorText,
-      language,
-      versionGroup,
-    );
-  }
-
-  MoveFlavorText fromJson(Map<String, Object?> json) {
-    return MoveFlavorText.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $MoveFlavorText = _$MoveFlavorTextTearOff();
 
 /// @nodoc
 mixin _$MoveFlavorText {
@@ -1671,11 +1629,11 @@ class _$MoveFlavorTextCopyWithImpl<$Res>
 }
 
 /// @nodoc
-abstract class _$MoveFlavorTextCopyWith<$Res>
+abstract class _$$_MoveFlavorTextCopyWith<$Res>
     implements $MoveFlavorTextCopyWith<$Res> {
-  factory _$MoveFlavorTextCopyWith(
-          _MoveFlavorText value, $Res Function(_MoveFlavorText) then) =
-      __$MoveFlavorTextCopyWithImpl<$Res>;
+  factory _$$_MoveFlavorTextCopyWith(
+          _$_MoveFlavorText value, $Res Function(_$_MoveFlavorText) then) =
+      __$$_MoveFlavorTextCopyWithImpl<$Res>;
   @override
   $Res call(
       {@JsonKey(name: 'flavor_text') String flavorText,
@@ -1689,15 +1647,15 @@ abstract class _$MoveFlavorTextCopyWith<$Res>
 }
 
 /// @nodoc
-class __$MoveFlavorTextCopyWithImpl<$Res>
+class __$$_MoveFlavorTextCopyWithImpl<$Res>
     extends _$MoveFlavorTextCopyWithImpl<$Res>
-    implements _$MoveFlavorTextCopyWith<$Res> {
-  __$MoveFlavorTextCopyWithImpl(
-      _MoveFlavorText _value, $Res Function(_MoveFlavorText) _then)
-      : super(_value, (v) => _then(v as _MoveFlavorText));
+    implements _$$_MoveFlavorTextCopyWith<$Res> {
+  __$$_MoveFlavorTextCopyWithImpl(
+      _$_MoveFlavorText _value, $Res Function(_$_MoveFlavorText) _then)
+      : super(_value, (v) => _then(v as _$_MoveFlavorText));
 
   @override
-  _MoveFlavorText get _value => super._value as _MoveFlavorText;
+  _$_MoveFlavorText get _value => super._value as _$_MoveFlavorText;
 
   @override
   $Res call({
@@ -1705,7 +1663,7 @@ class __$MoveFlavorTextCopyWithImpl<$Res>
     Object? language = freezed,
     Object? versionGroup = freezed,
   }) {
-    return _then(_MoveFlavorText(
+    return _then(_$_MoveFlavorText(
       flavorText == freezed
           ? _value.flavorText
           : flavorText // ignore: cast_nullable_to_non_nullable
@@ -1731,26 +1689,25 @@ class _$_MoveFlavorText implements _MoveFlavorText {
   factory _$_MoveFlavorText.fromJson(Map<String, dynamic> json) =>
       _$$_MoveFlavorTextFromJson(json);
 
-  @override
-
   /// The localized flavor text for an api resource in a specific language.
+  @override
   @JsonKey(name: 'flavor_text')
   final String flavorText;
-  @override
 
   /// The language this name is in.
   ///
   /// See also:
   ///
   /// [Language]
-  final NamedAPIResource language;
   @override
+  final NamedAPIResource language;
 
   /// The version group that uses this flavor text.
   ///
   /// See also:
   ///
   /// [VersionGroup]
+  @override
   @JsonKey(name: 'version_group')
   final NamedAPIResource versionGroup;
 
@@ -1763,7 +1720,7 @@ class _$_MoveFlavorText implements _MoveFlavorText {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _MoveFlavorText &&
+            other is _$_MoveFlavorText &&
             const DeepCollectionEquality()
                 .equals(other.flavorText, flavorText) &&
             const DeepCollectionEquality().equals(other.language, language) &&
@@ -1771,6 +1728,7 @@ class _$_MoveFlavorText implements _MoveFlavorText {
                 .equals(other.versionGroup, versionGroup));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -1780,20 +1738,22 @@ class _$_MoveFlavorText implements _MoveFlavorText {
 
   @JsonKey(ignore: true)
   @override
-  _$MoveFlavorTextCopyWith<_MoveFlavorText> get copyWith =>
-      __$MoveFlavorTextCopyWithImpl<_MoveFlavorText>(this, _$identity);
+  _$$_MoveFlavorTextCopyWith<_$_MoveFlavorText> get copyWith =>
+      __$$_MoveFlavorTextCopyWithImpl<_$_MoveFlavorText>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_MoveFlavorTextToJson(this);
+    return _$$_MoveFlavorTextToJson(
+      this,
+    );
   }
 }
 
 abstract class _MoveFlavorText implements MoveFlavorText {
   const factory _MoveFlavorText(
-          @JsonKey(name: 'flavor_text') String flavorText,
-          NamedAPIResource language,
-          @JsonKey(name: 'version_group') NamedAPIResource versionGroup) =
+          @JsonKey(name: 'flavor_text') final String flavorText,
+          final NamedAPIResource language,
+          @JsonKey(name: 'version_group') final NamedAPIResource versionGroup) =
       _$_MoveFlavorText;
 
   factory _MoveFlavorText.fromJson(Map<String, dynamic> json) =
@@ -1823,54 +1783,13 @@ abstract class _MoveFlavorText implements MoveFlavorText {
   NamedAPIResource get versionGroup;
   @override
   @JsonKey(ignore: true)
-  _$MoveFlavorTextCopyWith<_MoveFlavorText> get copyWith =>
+  _$$_MoveFlavorTextCopyWith<_$_MoveFlavorText> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 MoveMetaData _$MoveMetaDataFromJson(Map<String, dynamic> json) {
   return _MoveMetaData.fromJson(json);
 }
-
-/// @nodoc
-class _$MoveMetaDataTearOff {
-  const _$MoveMetaDataTearOff();
-
-  _MoveMetaData call(
-      NamedAPIResource ailment,
-      NamedAPIResource category,
-      @JsonKey(name: 'min_hits') int? minHits,
-      @JsonKey(name: 'max_hits') int? maxHits,
-      @JsonKey(name: 'min_turns') int? minTurns,
-      @JsonKey(name: 'max_turns') int? maxTurns,
-      int drain,
-      int healing,
-      @JsonKey(name: 'crit_rate') int critRate,
-      @JsonKey(name: 'ailment_chance') int ailmentChance,
-      @JsonKey(name: 'flinch_chance') int flinchChance,
-      @JsonKey(name: 'stat_chance') int statChance) {
-    return _MoveMetaData(
-      ailment,
-      category,
-      minHits,
-      maxHits,
-      minTurns,
-      maxTurns,
-      drain,
-      healing,
-      critRate,
-      ailmentChance,
-      flinchChance,
-      statChance,
-    );
-  }
-
-  MoveMetaData fromJson(Map<String, Object?> json) {
-    return MoveMetaData.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $MoveMetaData = _$MoveMetaDataTearOff();
 
 /// @nodoc
 mixin _$MoveMetaData {
@@ -2048,11 +1967,11 @@ class _$MoveMetaDataCopyWithImpl<$Res> implements $MoveMetaDataCopyWith<$Res> {
 }
 
 /// @nodoc
-abstract class _$MoveMetaDataCopyWith<$Res>
+abstract class _$$_MoveMetaDataCopyWith<$Res>
     implements $MoveMetaDataCopyWith<$Res> {
-  factory _$MoveMetaDataCopyWith(
-          _MoveMetaData value, $Res Function(_MoveMetaData) then) =
-      __$MoveMetaDataCopyWithImpl<$Res>;
+  factory _$$_MoveMetaDataCopyWith(
+          _$_MoveMetaData value, $Res Function(_$_MoveMetaData) then) =
+      __$$_MoveMetaDataCopyWithImpl<$Res>;
   @override
   $Res call(
       {NamedAPIResource ailment,
@@ -2075,14 +1994,15 @@ abstract class _$MoveMetaDataCopyWith<$Res>
 }
 
 /// @nodoc
-class __$MoveMetaDataCopyWithImpl<$Res> extends _$MoveMetaDataCopyWithImpl<$Res>
-    implements _$MoveMetaDataCopyWith<$Res> {
-  __$MoveMetaDataCopyWithImpl(
-      _MoveMetaData _value, $Res Function(_MoveMetaData) _then)
-      : super(_value, (v) => _then(v as _MoveMetaData));
+class __$$_MoveMetaDataCopyWithImpl<$Res>
+    extends _$MoveMetaDataCopyWithImpl<$Res>
+    implements _$$_MoveMetaDataCopyWith<$Res> {
+  __$$_MoveMetaDataCopyWithImpl(
+      _$_MoveMetaData _value, $Res Function(_$_MoveMetaData) _then)
+      : super(_value, (v) => _then(v as _$_MoveMetaData));
 
   @override
-  _MoveMetaData get _value => super._value as _MoveMetaData;
+  _$_MoveMetaData get _value => super._value as _$_MoveMetaData;
 
   @override
   $Res call({
@@ -2099,7 +2019,7 @@ class __$MoveMetaDataCopyWithImpl<$Res> extends _$MoveMetaDataCopyWithImpl<$Res>
     Object? flinchChance = freezed,
     Object? statChance = freezed,
   }) {
-    return _then(_MoveMetaData(
+    return _then(_$_MoveMetaData(
       ailment == freezed
           ? _value.ailment
           : ailment // ignore: cast_nullable_to_non_nullable
@@ -2172,70 +2092,69 @@ class _$_MoveMetaData implements _MoveMetaData {
   factory _$_MoveMetaData.fromJson(Map<String, dynamic> json) =>
       _$$_MoveMetaDataFromJson(json);
 
-  @override
-
   /// The status ailment this move inflicts on its target.
   ///
   /// See also:
   ///
   /// [MoveAilment]
-  final NamedAPIResource ailment;
   @override
+  final NamedAPIResource ailment;
 
   /// The category of move this move falls under, e.g. damage or ailment.
   ///
   /// See also:
   ///
   /// [MoveCategory]
-  final NamedAPIResource category;
   @override
+  final NamedAPIResource category;
 
   /// The minimum number of times this move hits. Null if it always only hits once.
+  @override
   @JsonKey(name: 'min_hits')
   final int? minHits;
-  @override
 
   /// The maximum number of times this move hits. Null if it always only hits once.
+  @override
   @JsonKey(name: 'max_hits')
   final int? maxHits;
-  @override
 
   /// The minimum number of turns this move continues to take effect.
   /// Null if it always only lasts one turn.
+  @override
   @JsonKey(name: 'min_turns')
   final int? minTurns;
-  @override
 
   /// The maximum number of turns this move continues to take effect.
   /// Null if it always only lasts one turn.
+  @override
   @JsonKey(name: 'max_turns')
   final int? maxTurns;
-  @override
 
   /// HP drain (if positive) or Recoil damage (if negative), in percent of damage done.
-  final int drain;
   @override
+  final int drain;
 
   /// The amount of hp gained by the attacking Pokemon, in percent of it's maximum HP.
-  final int healing;
   @override
+  final int healing;
 
   /// Critical hit rate bonus.
+  @override
   @JsonKey(name: 'crit_rate')
   final int critRate;
-  @override
 
   /// The likelihood this attack will cause an ailment.
+  @override
   @JsonKey(name: 'ailment_chance')
   final int ailmentChance;
-  @override
 
   /// The likelihood this attack will cause the target Pokémon to flinch.
+  @override
   @JsonKey(name: 'flinch_chance')
   final int flinchChance;
-  @override
 
   /// The likelihood this attack will cause a stat change in the target Pokémon.
+  @override
   @JsonKey(name: 'stat_chance')
   final int statChance;
 
@@ -2248,7 +2167,7 @@ class _$_MoveMetaData implements _MoveMetaData {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _MoveMetaData &&
+            other is _$_MoveMetaData &&
             const DeepCollectionEquality().equals(other.ailment, ailment) &&
             const DeepCollectionEquality().equals(other.category, category) &&
             const DeepCollectionEquality().equals(other.minHits, minHits) &&
@@ -2266,6 +2185,7 @@ class _$_MoveMetaData implements _MoveMetaData {
                 .equals(other.statChance, statChance));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -2284,29 +2204,31 @@ class _$_MoveMetaData implements _MoveMetaData {
 
   @JsonKey(ignore: true)
   @override
-  _$MoveMetaDataCopyWith<_MoveMetaData> get copyWith =>
-      __$MoveMetaDataCopyWithImpl<_MoveMetaData>(this, _$identity);
+  _$$_MoveMetaDataCopyWith<_$_MoveMetaData> get copyWith =>
+      __$$_MoveMetaDataCopyWithImpl<_$_MoveMetaData>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_MoveMetaDataToJson(this);
+    return _$$_MoveMetaDataToJson(
+      this,
+    );
   }
 }
 
 abstract class _MoveMetaData implements MoveMetaData {
   const factory _MoveMetaData(
-      NamedAPIResource ailment,
-      NamedAPIResource category,
-      @JsonKey(name: 'min_hits') int? minHits,
-      @JsonKey(name: 'max_hits') int? maxHits,
-      @JsonKey(name: 'min_turns') int? minTurns,
-      @JsonKey(name: 'max_turns') int? maxTurns,
-      int drain,
-      int healing,
-      @JsonKey(name: 'crit_rate') int critRate,
-      @JsonKey(name: 'ailment_chance') int ailmentChance,
-      @JsonKey(name: 'flinch_chance') int flinchChance,
-      @JsonKey(name: 'stat_chance') int statChance) = _$_MoveMetaData;
+      final NamedAPIResource ailment,
+      final NamedAPIResource category,
+      @JsonKey(name: 'min_hits') final int? minHits,
+      @JsonKey(name: 'max_hits') final int? maxHits,
+      @JsonKey(name: 'min_turns') final int? minTurns,
+      @JsonKey(name: 'max_turns') final int? maxTurns,
+      final int drain,
+      final int healing,
+      @JsonKey(name: 'crit_rate') final int critRate,
+      @JsonKey(name: 'ailment_chance') final int ailmentChance,
+      @JsonKey(name: 'flinch_chance') final int flinchChance,
+      @JsonKey(name: 'stat_chance') final int statChance) = _$_MoveMetaData;
 
   factory _MoveMetaData.fromJson(Map<String, dynamic> json) =
       _$_MoveMetaData.fromJson;
@@ -2379,32 +2301,13 @@ abstract class _MoveMetaData implements MoveMetaData {
   int get statChance;
   @override
   @JsonKey(ignore: true)
-  _$MoveMetaDataCopyWith<_MoveMetaData> get copyWith =>
+  _$$_MoveMetaDataCopyWith<_$_MoveMetaData> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 MoveStatChange _$MoveStatChangeFromJson(Map<String, dynamic> json) {
   return _MoveStatChange.fromJson(json);
 }
-
-/// @nodoc
-class _$MoveStatChangeTearOff {
-  const _$MoveStatChangeTearOff();
-
-  _MoveStatChange call(int change, NamedAPIResource stat) {
-    return _MoveStatChange(
-      change,
-      stat,
-    );
-  }
-
-  MoveStatChange fromJson(Map<String, Object?> json) {
-    return MoveStatChange.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $MoveStatChange = _$MoveStatChangeTearOff();
 
 /// @nodoc
 mixin _$MoveStatChange {
@@ -2469,11 +2372,11 @@ class _$MoveStatChangeCopyWithImpl<$Res>
 }
 
 /// @nodoc
-abstract class _$MoveStatChangeCopyWith<$Res>
+abstract class _$$_MoveStatChangeCopyWith<$Res>
     implements $MoveStatChangeCopyWith<$Res> {
-  factory _$MoveStatChangeCopyWith(
-          _MoveStatChange value, $Res Function(_MoveStatChange) then) =
-      __$MoveStatChangeCopyWithImpl<$Res>;
+  factory _$$_MoveStatChangeCopyWith(
+          _$_MoveStatChange value, $Res Function(_$_MoveStatChange) then) =
+      __$$_MoveStatChangeCopyWithImpl<$Res>;
   @override
   $Res call({int change, NamedAPIResource stat});
 
@@ -2482,22 +2385,22 @@ abstract class _$MoveStatChangeCopyWith<$Res>
 }
 
 /// @nodoc
-class __$MoveStatChangeCopyWithImpl<$Res>
+class __$$_MoveStatChangeCopyWithImpl<$Res>
     extends _$MoveStatChangeCopyWithImpl<$Res>
-    implements _$MoveStatChangeCopyWith<$Res> {
-  __$MoveStatChangeCopyWithImpl(
-      _MoveStatChange _value, $Res Function(_MoveStatChange) _then)
-      : super(_value, (v) => _then(v as _MoveStatChange));
+    implements _$$_MoveStatChangeCopyWith<$Res> {
+  __$$_MoveStatChangeCopyWithImpl(
+      _$_MoveStatChange _value, $Res Function(_$_MoveStatChange) _then)
+      : super(_value, (v) => _then(v as _$_MoveStatChange));
 
   @override
-  _MoveStatChange get _value => super._value as _MoveStatChange;
+  _$_MoveStatChange get _value => super._value as _$_MoveStatChange;
 
   @override
   $Res call({
     Object? change = freezed,
     Object? stat = freezed,
   }) {
-    return _then(_MoveStatChange(
+    return _then(_$_MoveStatChange(
       change == freezed
           ? _value.change
           : change // ignore: cast_nullable_to_non_nullable
@@ -2518,17 +2421,16 @@ class _$_MoveStatChange implements _MoveStatChange {
   factory _$_MoveStatChange.fromJson(Map<String, dynamic> json) =>
       _$$_MoveStatChangeFromJson(json);
 
-  @override
-
   /// The amount of change.
-  final int change;
   @override
+  final int change;
 
   /// The stat being affected.
   ///
   /// See also:
   ///
   /// [Stat]
+  @override
   final NamedAPIResource stat;
 
   @override
@@ -2540,11 +2442,12 @@ class _$_MoveStatChange implements _MoveStatChange {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _MoveStatChange &&
+            other is _$_MoveStatChange &&
             const DeepCollectionEquality().equals(other.change, change) &&
             const DeepCollectionEquality().equals(other.stat, stat));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -2553,17 +2456,19 @@ class _$_MoveStatChange implements _MoveStatChange {
 
   @JsonKey(ignore: true)
   @override
-  _$MoveStatChangeCopyWith<_MoveStatChange> get copyWith =>
-      __$MoveStatChangeCopyWithImpl<_MoveStatChange>(this, _$identity);
+  _$$_MoveStatChangeCopyWith<_$_MoveStatChange> get copyWith =>
+      __$$_MoveStatChangeCopyWithImpl<_$_MoveStatChange>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_MoveStatChangeToJson(this);
+    return _$$_MoveStatChangeToJson(
+      this,
+    );
   }
 }
 
 abstract class _MoveStatChange implements MoveStatChange {
-  const factory _MoveStatChange(int change, NamedAPIResource stat) =
+  const factory _MoveStatChange(final int change, final NamedAPIResource stat) =
       _$_MoveStatChange;
 
   factory _MoveStatChange.fromJson(Map<String, dynamic> json) =
@@ -2583,44 +2488,13 @@ abstract class _MoveStatChange implements MoveStatChange {
   NamedAPIResource get stat;
   @override
   @JsonKey(ignore: true)
-  _$MoveStatChangeCopyWith<_MoveStatChange> get copyWith =>
+  _$$_MoveStatChangeCopyWith<_$_MoveStatChange> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 PastMoveStatValues _$PastMoveStatValuesFromJson(Map<String, dynamic> json) {
   return _PastMoveStatValues.fromJson(json);
 }
-
-/// @nodoc
-class _$PastMoveStatValuesTearOff {
-  const _$PastMoveStatValuesTearOff();
-
-  _PastMoveStatValues call(
-      int? accuracy,
-      @JsonKey(name: 'effect_chance') int? effectChance,
-      int? power,
-      int? pp,
-      @JsonKey(name: 'effect_entries') List<VerboseEffect> effectEntries,
-      NamedAPIResource? type,
-      @JsonKey(name: 'version_group') NamedAPIResource versionGroup) {
-    return _PastMoveStatValues(
-      accuracy,
-      effectChance,
-      power,
-      pp,
-      effectEntries,
-      type,
-      versionGroup,
-    );
-  }
-
-  PastMoveStatValues fromJson(Map<String, Object?> json) {
-    return PastMoveStatValues.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $PastMoveStatValues = _$PastMoveStatValuesTearOff();
 
 /// @nodoc
 mixin _$PastMoveStatValues {
@@ -2751,11 +2625,11 @@ class _$PastMoveStatValuesCopyWithImpl<$Res>
 }
 
 /// @nodoc
-abstract class _$PastMoveStatValuesCopyWith<$Res>
+abstract class _$$_PastMoveStatValuesCopyWith<$Res>
     implements $PastMoveStatValuesCopyWith<$Res> {
-  factory _$PastMoveStatValuesCopyWith(
-          _PastMoveStatValues value, $Res Function(_PastMoveStatValues) then) =
-      __$PastMoveStatValuesCopyWithImpl<$Res>;
+  factory _$$_PastMoveStatValuesCopyWith(_$_PastMoveStatValues value,
+          $Res Function(_$_PastMoveStatValues) then) =
+      __$$_PastMoveStatValuesCopyWithImpl<$Res>;
   @override
   $Res call(
       {int? accuracy,
@@ -2773,15 +2647,15 @@ abstract class _$PastMoveStatValuesCopyWith<$Res>
 }
 
 /// @nodoc
-class __$PastMoveStatValuesCopyWithImpl<$Res>
+class __$$_PastMoveStatValuesCopyWithImpl<$Res>
     extends _$PastMoveStatValuesCopyWithImpl<$Res>
-    implements _$PastMoveStatValuesCopyWith<$Res> {
-  __$PastMoveStatValuesCopyWithImpl(
-      _PastMoveStatValues _value, $Res Function(_PastMoveStatValues) _then)
-      : super(_value, (v) => _then(v as _PastMoveStatValues));
+    implements _$$_PastMoveStatValuesCopyWith<$Res> {
+  __$$_PastMoveStatValuesCopyWithImpl(
+      _$_PastMoveStatValues _value, $Res Function(_$_PastMoveStatValues) _then)
+      : super(_value, (v) => _then(v as _$_PastMoveStatValues));
 
   @override
-  _PastMoveStatValues get _value => super._value as _PastMoveStatValues;
+  _$_PastMoveStatValues get _value => super._value as _$_PastMoveStatValues;
 
   @override
   $Res call({
@@ -2793,7 +2667,7 @@ class __$PastMoveStatValuesCopyWithImpl<$Res>
     Object? type = freezed,
     Object? versionGroup = freezed,
   }) {
-    return _then(_PastMoveStatValues(
+    return _then(_$_PastMoveStatValues(
       accuracy == freezed
           ? _value.accuracy
           : accuracy // ignore: cast_nullable_to_non_nullable
@@ -2811,7 +2685,7 @@ class __$PastMoveStatValuesCopyWithImpl<$Res>
           : pp // ignore: cast_nullable_to_non_nullable
               as int?,
       effectEntries == freezed
-          ? _value.effectEntries
+          ? _value._effectEntries
           : effectEntries // ignore: cast_nullable_to_non_nullable
               as List<VerboseEffect>,
       type == freezed
@@ -2834,50 +2708,56 @@ class _$_PastMoveStatValues implements _PastMoveStatValues {
       @JsonKey(name: 'effect_chance') this.effectChance,
       this.power,
       this.pp,
-      @JsonKey(name: 'effect_entries') this.effectEntries,
+      @JsonKey(name: 'effect_entries') final List<VerboseEffect> effectEntries,
       this.type,
-      @JsonKey(name: 'version_group') this.versionGroup);
+      @JsonKey(name: 'version_group') this.versionGroup)
+      : _effectEntries = effectEntries;
 
   factory _$_PastMoveStatValues.fromJson(Map<String, dynamic> json) =>
       _$$_PastMoveStatValuesFromJson(json);
 
-  @override
-
   /// The percent value of how likely this move is to be successful.
-  final int? accuracy;
   @override
+  final int? accuracy;
 
   /// The percent value of how likely it is this moves effect will take effect.
+  @override
   @JsonKey(name: 'effect_chance')
   final int? effectChance;
-  @override
 
   /// The base power of this move with a value of 0 if it does not have a base power.
-  final int? power;
   @override
+  final int? power;
 
   /// Power points. The number of times this move can be used.
-  final int? pp;
   @override
+  final int? pp;
 
   /// The effect of this move listed in different languages.
-  @JsonKey(name: 'effect_entries')
-  final List<VerboseEffect> effectEntries;
+  final List<VerboseEffect> _effectEntries;
+
+  /// The effect of this move listed in different languages.
   @override
+  @JsonKey(name: 'effect_entries')
+  List<VerboseEffect> get effectEntries {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_effectEntries);
+  }
 
   /// The elemental type of this move.
   ///
   /// See also:
   ///
   /// [Type]
-  final NamedAPIResource? type;
   @override
+  final NamedAPIResource? type;
 
   /// The version group in which these move stat values were in effect.
   ///
   /// See also:
   ///
   /// [VersionGroup]
+  @override
   @JsonKey(name: 'version_group')
   final NamedAPIResource versionGroup;
 
@@ -2890,19 +2770,20 @@ class _$_PastMoveStatValues implements _PastMoveStatValues {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _PastMoveStatValues &&
+            other is _$_PastMoveStatValues &&
             const DeepCollectionEquality().equals(other.accuracy, accuracy) &&
             const DeepCollectionEquality()
                 .equals(other.effectChance, effectChance) &&
             const DeepCollectionEquality().equals(other.power, power) &&
             const DeepCollectionEquality().equals(other.pp, pp) &&
             const DeepCollectionEquality()
-                .equals(other.effectEntries, effectEntries) &&
+                .equals(other._effectEntries, _effectEntries) &&
             const DeepCollectionEquality().equals(other.type, type) &&
             const DeepCollectionEquality()
                 .equals(other.versionGroup, versionGroup));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -2910,31 +2791,36 @@ class _$_PastMoveStatValues implements _PastMoveStatValues {
       const DeepCollectionEquality().hash(effectChance),
       const DeepCollectionEquality().hash(power),
       const DeepCollectionEquality().hash(pp),
-      const DeepCollectionEquality().hash(effectEntries),
+      const DeepCollectionEquality().hash(_effectEntries),
       const DeepCollectionEquality().hash(type),
       const DeepCollectionEquality().hash(versionGroup));
 
   @JsonKey(ignore: true)
   @override
-  _$PastMoveStatValuesCopyWith<_PastMoveStatValues> get copyWith =>
-      __$PastMoveStatValuesCopyWithImpl<_PastMoveStatValues>(this, _$identity);
+  _$$_PastMoveStatValuesCopyWith<_$_PastMoveStatValues> get copyWith =>
+      __$$_PastMoveStatValuesCopyWithImpl<_$_PastMoveStatValues>(
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PastMoveStatValuesToJson(this);
+    return _$$_PastMoveStatValuesToJson(
+      this,
+    );
   }
 }
 
 abstract class _PastMoveStatValues implements PastMoveStatValues {
   const factory _PastMoveStatValues(
-          int? accuracy,
-          @JsonKey(name: 'effect_chance') int? effectChance,
-          int? power,
-          int? pp,
-          @JsonKey(name: 'effect_entries') List<VerboseEffect> effectEntries,
-          NamedAPIResource? type,
-          @JsonKey(name: 'version_group') NamedAPIResource versionGroup) =
-      _$_PastMoveStatValues;
+      final int? accuracy,
+      @JsonKey(name: 'effect_chance')
+          final int? effectChance,
+      final int? power,
+      final int? pp,
+      @JsonKey(name: 'effect_entries')
+          final List<VerboseEffect> effectEntries,
+      final NamedAPIResource? type,
+      @JsonKey(name: 'version_group')
+          final NamedAPIResource versionGroup) = _$_PastMoveStatValues;
 
   factory _PastMoveStatValues.fromJson(Map<String, dynamic> json) =
       _$_PastMoveStatValues.fromJson;
@@ -2980,35 +2866,13 @@ abstract class _PastMoveStatValues implements PastMoveStatValues {
   NamedAPIResource get versionGroup;
   @override
   @JsonKey(ignore: true)
-  _$PastMoveStatValuesCopyWith<_PastMoveStatValues> get copyWith =>
+  _$$_PastMoveStatValuesCopyWith<_$_PastMoveStatValues> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 MoveAilment _$MoveAilmentFromJson(Map<String, dynamic> json) {
   return _MoveAilment.fromJson(json);
 }
-
-/// @nodoc
-class _$MoveAilmentTearOff {
-  const _$MoveAilmentTearOff();
-
-  _MoveAilment call(
-      int id, String name, List<NamedAPIResource> moves, List<Name> names) {
-    return _MoveAilment(
-      id,
-      name,
-      moves,
-      names,
-    );
-  }
-
-  MoveAilment fromJson(Map<String, Object?> json) {
-    return MoveAilment.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $MoveAilment = _$MoveAilmentTearOff();
 
 /// @nodoc
 mixin _$MoveAilment {
@@ -3080,25 +2944,25 @@ class _$MoveAilmentCopyWithImpl<$Res> implements $MoveAilmentCopyWith<$Res> {
 }
 
 /// @nodoc
-abstract class _$MoveAilmentCopyWith<$Res>
+abstract class _$$_MoveAilmentCopyWith<$Res>
     implements $MoveAilmentCopyWith<$Res> {
-  factory _$MoveAilmentCopyWith(
-          _MoveAilment value, $Res Function(_MoveAilment) then) =
-      __$MoveAilmentCopyWithImpl<$Res>;
+  factory _$$_MoveAilmentCopyWith(
+          _$_MoveAilment value, $Res Function(_$_MoveAilment) then) =
+      __$$_MoveAilmentCopyWithImpl<$Res>;
   @override
   $Res call(
       {int id, String name, List<NamedAPIResource> moves, List<Name> names});
 }
 
 /// @nodoc
-class __$MoveAilmentCopyWithImpl<$Res> extends _$MoveAilmentCopyWithImpl<$Res>
-    implements _$MoveAilmentCopyWith<$Res> {
-  __$MoveAilmentCopyWithImpl(
-      _MoveAilment _value, $Res Function(_MoveAilment) _then)
-      : super(_value, (v) => _then(v as _MoveAilment));
+class __$$_MoveAilmentCopyWithImpl<$Res> extends _$MoveAilmentCopyWithImpl<$Res>
+    implements _$$_MoveAilmentCopyWith<$Res> {
+  __$$_MoveAilmentCopyWithImpl(
+      _$_MoveAilment _value, $Res Function(_$_MoveAilment) _then)
+      : super(_value, (v) => _then(v as _$_MoveAilment));
 
   @override
-  _MoveAilment get _value => super._value as _MoveAilment;
+  _$_MoveAilment get _value => super._value as _$_MoveAilment;
 
   @override
   $Res call({
@@ -3107,7 +2971,7 @@ class __$MoveAilmentCopyWithImpl<$Res> extends _$MoveAilmentCopyWithImpl<$Res>
     Object? moves = freezed,
     Object? names = freezed,
   }) {
-    return _then(_MoveAilment(
+    return _then(_$_MoveAilment(
       id == freezed
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
@@ -3117,11 +2981,11 @@ class __$MoveAilmentCopyWithImpl<$Res> extends _$MoveAilmentCopyWithImpl<$Res>
           : name // ignore: cast_nullable_to_non_nullable
               as String,
       moves == freezed
-          ? _value.moves
+          ? _value._moves
           : moves // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
       names == freezed
-          ? _value.names
+          ? _value._names
           : names // ignore: cast_nullable_to_non_nullable
               as List<Name>,
     ));
@@ -3131,31 +2995,49 @@ class __$MoveAilmentCopyWithImpl<$Res> extends _$MoveAilmentCopyWithImpl<$Res>
 /// @nodoc
 @JsonSerializable()
 class _$_MoveAilment implements _MoveAilment {
-  const _$_MoveAilment(this.id, this.name, this.moves, this.names);
+  const _$_MoveAilment(this.id, this.name, final List<NamedAPIResource> moves,
+      final List<Name> names)
+      : _moves = moves,
+        _names = names;
 
   factory _$_MoveAilment.fromJson(Map<String, dynamic> json) =>
       _$$_MoveAilmentFromJson(json);
 
-  @override
-
   /// The identifier for this resource.
-  final int id;
   @override
+  final int id;
 
   /// The name for this resource.
-  final String name;
   @override
+  final String name;
 
   /// A list of moves that cause this ailment.
   ///
   /// See also:
   ///
   /// [Move]
-  final List<NamedAPIResource> moves;
+  final List<NamedAPIResource> _moves;
+
+  /// A list of moves that cause this ailment.
+  ///
+  /// See also:
+  ///
+  /// [Move]
   @override
+  List<NamedAPIResource> get moves {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_moves);
+  }
 
   /// The name of this resource listed in different languages.
-  final List<Name> names;
+  final List<Name> _names;
+
+  /// The name of this resource listed in different languages.
+  @override
+  List<Name> get names {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_names);
+  }
 
   @override
   String toString() {
@@ -3166,36 +3048,41 @@ class _$_MoveAilment implements _MoveAilment {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _MoveAilment &&
+            other is _$_MoveAilment &&
             const DeepCollectionEquality().equals(other.id, id) &&
             const DeepCollectionEquality().equals(other.name, name) &&
-            const DeepCollectionEquality().equals(other.moves, moves) &&
-            const DeepCollectionEquality().equals(other.names, names));
+            const DeepCollectionEquality().equals(other._moves, _moves) &&
+            const DeepCollectionEquality().equals(other._names, _names));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
       const DeepCollectionEquality().hash(id),
       const DeepCollectionEquality().hash(name),
-      const DeepCollectionEquality().hash(moves),
-      const DeepCollectionEquality().hash(names));
+      const DeepCollectionEquality().hash(_moves),
+      const DeepCollectionEquality().hash(_names));
 
   @JsonKey(ignore: true)
   @override
-  _$MoveAilmentCopyWith<_MoveAilment> get copyWith =>
-      __$MoveAilmentCopyWithImpl<_MoveAilment>(this, _$identity);
+  _$$_MoveAilmentCopyWith<_$_MoveAilment> get copyWith =>
+      __$$_MoveAilmentCopyWithImpl<_$_MoveAilment>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_MoveAilmentToJson(this);
+    return _$$_MoveAilmentToJson(
+      this,
+    );
   }
 }
 
 abstract class _MoveAilment implements MoveAilment {
   const factory _MoveAilment(
-          int id, String name, List<NamedAPIResource> moves, List<Name> names) =
-      _$_MoveAilment;
+      final int id,
+      final String name,
+      final List<NamedAPIResource> moves,
+      final List<Name> names) = _$_MoveAilment;
 
   factory _MoveAilment.fromJson(Map<String, dynamic> json) =
       _$_MoveAilment.fromJson;
@@ -3222,33 +3109,13 @@ abstract class _MoveAilment implements MoveAilment {
   List<Name> get names;
   @override
   @JsonKey(ignore: true)
-  _$MoveAilmentCopyWith<_MoveAilment> get copyWith =>
+  _$$_MoveAilmentCopyWith<_$_MoveAilment> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 MoveBattleStyle _$MoveBattleStyleFromJson(Map<String, dynamic> json) {
   return _MoveBattleStyle.fromJson(json);
 }
-
-/// @nodoc
-class _$MoveBattleStyleTearOff {
-  const _$MoveBattleStyleTearOff();
-
-  _MoveBattleStyle call(int id, String name, List<Name> names) {
-    return _MoveBattleStyle(
-      id,
-      name,
-      names,
-    );
-  }
-
-  MoveBattleStyle fromJson(Map<String, Object?> json) {
-    return MoveBattleStyle.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $MoveBattleStyle = _$MoveBattleStyleTearOff();
 
 /// @nodoc
 mixin _$MoveBattleStyle {
@@ -3308,25 +3175,25 @@ class _$MoveBattleStyleCopyWithImpl<$Res>
 }
 
 /// @nodoc
-abstract class _$MoveBattleStyleCopyWith<$Res>
+abstract class _$$_MoveBattleStyleCopyWith<$Res>
     implements $MoveBattleStyleCopyWith<$Res> {
-  factory _$MoveBattleStyleCopyWith(
-          _MoveBattleStyle value, $Res Function(_MoveBattleStyle) then) =
-      __$MoveBattleStyleCopyWithImpl<$Res>;
+  factory _$$_MoveBattleStyleCopyWith(
+          _$_MoveBattleStyle value, $Res Function(_$_MoveBattleStyle) then) =
+      __$$_MoveBattleStyleCopyWithImpl<$Res>;
   @override
   $Res call({int id, String name, List<Name> names});
 }
 
 /// @nodoc
-class __$MoveBattleStyleCopyWithImpl<$Res>
+class __$$_MoveBattleStyleCopyWithImpl<$Res>
     extends _$MoveBattleStyleCopyWithImpl<$Res>
-    implements _$MoveBattleStyleCopyWith<$Res> {
-  __$MoveBattleStyleCopyWithImpl(
-      _MoveBattleStyle _value, $Res Function(_MoveBattleStyle) _then)
-      : super(_value, (v) => _then(v as _MoveBattleStyle));
+    implements _$$_MoveBattleStyleCopyWith<$Res> {
+  __$$_MoveBattleStyleCopyWithImpl(
+      _$_MoveBattleStyle _value, $Res Function(_$_MoveBattleStyle) _then)
+      : super(_value, (v) => _then(v as _$_MoveBattleStyle));
 
   @override
-  _MoveBattleStyle get _value => super._value as _MoveBattleStyle;
+  _$_MoveBattleStyle get _value => super._value as _$_MoveBattleStyle;
 
   @override
   $Res call({
@@ -3334,7 +3201,7 @@ class __$MoveBattleStyleCopyWithImpl<$Res>
     Object? name = freezed,
     Object? names = freezed,
   }) {
-    return _then(_MoveBattleStyle(
+    return _then(_$_MoveBattleStyle(
       id == freezed
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
@@ -3344,7 +3211,7 @@ class __$MoveBattleStyleCopyWithImpl<$Res>
           : name // ignore: cast_nullable_to_non_nullable
               as String,
       names == freezed
-          ? _value.names
+          ? _value._names
           : names // ignore: cast_nullable_to_non_nullable
               as List<Name>,
     ));
@@ -3354,23 +3221,29 @@ class __$MoveBattleStyleCopyWithImpl<$Res>
 /// @nodoc
 @JsonSerializable()
 class _$_MoveBattleStyle implements _MoveBattleStyle {
-  const _$_MoveBattleStyle(this.id, this.name, this.names);
+  const _$_MoveBattleStyle(this.id, this.name, final List<Name> names)
+      : _names = names;
 
   factory _$_MoveBattleStyle.fromJson(Map<String, dynamic> json) =>
       _$$_MoveBattleStyleFromJson(json);
 
-  @override
-
   /// The identifier for this resource.
-  final int id;
   @override
+  final int id;
 
   /// The name for this resource.
-  final String name;
   @override
+  final String name;
 
   /// The name of this resource listed in different languages.
-  final List<Name> names;
+  final List<Name> _names;
+
+  /// The name of this resource listed in different languages.
+  @override
+  List<Name> get names {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_names);
+  }
 
   @override
   String toString() {
@@ -3381,32 +3254,36 @@ class _$_MoveBattleStyle implements _MoveBattleStyle {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _MoveBattleStyle &&
+            other is _$_MoveBattleStyle &&
             const DeepCollectionEquality().equals(other.id, id) &&
             const DeepCollectionEquality().equals(other.name, name) &&
-            const DeepCollectionEquality().equals(other.names, names));
+            const DeepCollectionEquality().equals(other._names, _names));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
       const DeepCollectionEquality().hash(id),
       const DeepCollectionEquality().hash(name),
-      const DeepCollectionEquality().hash(names));
+      const DeepCollectionEquality().hash(_names));
 
   @JsonKey(ignore: true)
   @override
-  _$MoveBattleStyleCopyWith<_MoveBattleStyle> get copyWith =>
-      __$MoveBattleStyleCopyWithImpl<_MoveBattleStyle>(this, _$identity);
+  _$$_MoveBattleStyleCopyWith<_$_MoveBattleStyle> get copyWith =>
+      __$$_MoveBattleStyleCopyWithImpl<_$_MoveBattleStyle>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_MoveBattleStyleToJson(this);
+    return _$$_MoveBattleStyleToJson(
+      this,
+    );
   }
 }
 
 abstract class _MoveBattleStyle implements MoveBattleStyle {
-  const factory _MoveBattleStyle(int id, String name, List<Name> names) =
+  const factory _MoveBattleStyle(
+          final int id, final String name, final List<Name> names) =
       _$_MoveBattleStyle;
 
   factory _MoveBattleStyle.fromJson(Map<String, dynamic> json) =
@@ -3426,35 +3303,13 @@ abstract class _MoveBattleStyle implements MoveBattleStyle {
   List<Name> get names;
   @override
   @JsonKey(ignore: true)
-  _$MoveBattleStyleCopyWith<_MoveBattleStyle> get copyWith =>
+  _$$_MoveBattleStyleCopyWith<_$_MoveBattleStyle> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 MoveCategory _$MoveCategoryFromJson(Map<String, dynamic> json) {
   return _MoveCategory.fromJson(json);
 }
-
-/// @nodoc
-class _$MoveCategoryTearOff {
-  const _$MoveCategoryTearOff();
-
-  _MoveCategory call(int id, String name, List<NamedAPIResource> moves,
-      List<Description> descriptions) {
-    return _MoveCategory(
-      id,
-      name,
-      moves,
-      descriptions,
-    );
-  }
-
-  MoveCategory fromJson(Map<String, Object?> json) {
-    return MoveCategory.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $MoveCategory = _$MoveCategoryTearOff();
 
 /// @nodoc
 mixin _$MoveCategory {
@@ -3529,11 +3384,11 @@ class _$MoveCategoryCopyWithImpl<$Res> implements $MoveCategoryCopyWith<$Res> {
 }
 
 /// @nodoc
-abstract class _$MoveCategoryCopyWith<$Res>
+abstract class _$$_MoveCategoryCopyWith<$Res>
     implements $MoveCategoryCopyWith<$Res> {
-  factory _$MoveCategoryCopyWith(
-          _MoveCategory value, $Res Function(_MoveCategory) then) =
-      __$MoveCategoryCopyWithImpl<$Res>;
+  factory _$$_MoveCategoryCopyWith(
+          _$_MoveCategory value, $Res Function(_$_MoveCategory) then) =
+      __$$_MoveCategoryCopyWithImpl<$Res>;
   @override
   $Res call(
       {int id,
@@ -3543,14 +3398,15 @@ abstract class _$MoveCategoryCopyWith<$Res>
 }
 
 /// @nodoc
-class __$MoveCategoryCopyWithImpl<$Res> extends _$MoveCategoryCopyWithImpl<$Res>
-    implements _$MoveCategoryCopyWith<$Res> {
-  __$MoveCategoryCopyWithImpl(
-      _MoveCategory _value, $Res Function(_MoveCategory) _then)
-      : super(_value, (v) => _then(v as _MoveCategory));
+class __$$_MoveCategoryCopyWithImpl<$Res>
+    extends _$MoveCategoryCopyWithImpl<$Res>
+    implements _$$_MoveCategoryCopyWith<$Res> {
+  __$$_MoveCategoryCopyWithImpl(
+      _$_MoveCategory _value, $Res Function(_$_MoveCategory) _then)
+      : super(_value, (v) => _then(v as _$_MoveCategory));
 
   @override
-  _MoveCategory get _value => super._value as _MoveCategory;
+  _$_MoveCategory get _value => super._value as _$_MoveCategory;
 
   @override
   $Res call({
@@ -3559,7 +3415,7 @@ class __$MoveCategoryCopyWithImpl<$Res> extends _$MoveCategoryCopyWithImpl<$Res>
     Object? moves = freezed,
     Object? descriptions = freezed,
   }) {
-    return _then(_MoveCategory(
+    return _then(_$_MoveCategory(
       id == freezed
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
@@ -3569,11 +3425,11 @@ class __$MoveCategoryCopyWithImpl<$Res> extends _$MoveCategoryCopyWithImpl<$Res>
           : name // ignore: cast_nullable_to_non_nullable
               as String,
       moves == freezed
-          ? _value.moves
+          ? _value._moves
           : moves // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
       descriptions == freezed
-          ? _value.descriptions
+          ? _value._descriptions
           : descriptions // ignore: cast_nullable_to_non_nullable
               as List<Description>,
     ));
@@ -3583,31 +3439,49 @@ class __$MoveCategoryCopyWithImpl<$Res> extends _$MoveCategoryCopyWithImpl<$Res>
 /// @nodoc
 @JsonSerializable()
 class _$_MoveCategory implements _MoveCategory {
-  const _$_MoveCategory(this.id, this.name, this.moves, this.descriptions);
+  const _$_MoveCategory(this.id, this.name, final List<NamedAPIResource> moves,
+      final List<Description> descriptions)
+      : _moves = moves,
+        _descriptions = descriptions;
 
   factory _$_MoveCategory.fromJson(Map<String, dynamic> json) =>
       _$$_MoveCategoryFromJson(json);
 
-  @override
-
   /// The identifier for this resource.
-  final int id;
   @override
+  final int id;
 
   /// The name for this resource.
-  final String name;
   @override
+  final String name;
 
   /// A list of moves that fall into this category.
   ///
   /// See also:
   ///
   /// [Move]
-  final List<NamedAPIResource> moves;
+  final List<NamedAPIResource> _moves;
+
+  /// A list of moves that fall into this category.
+  ///
+  /// See also:
+  ///
+  /// [Move]
   @override
+  List<NamedAPIResource> get moves {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_moves);
+  }
 
   /// The description of this resource listed in different languages.
-  final List<Description> descriptions;
+  final List<Description> _descriptions;
+
+  /// The description of this resource listed in different languages.
+  @override
+  List<Description> get descriptions {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_descriptions);
+  }
 
   @override
   String toString() {
@@ -3618,36 +3492,42 @@ class _$_MoveCategory implements _MoveCategory {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _MoveCategory &&
+            other is _$_MoveCategory &&
             const DeepCollectionEquality().equals(other.id, id) &&
             const DeepCollectionEquality().equals(other.name, name) &&
-            const DeepCollectionEquality().equals(other.moves, moves) &&
+            const DeepCollectionEquality().equals(other._moves, _moves) &&
             const DeepCollectionEquality()
-                .equals(other.descriptions, descriptions));
+                .equals(other._descriptions, _descriptions));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
       const DeepCollectionEquality().hash(id),
       const DeepCollectionEquality().hash(name),
-      const DeepCollectionEquality().hash(moves),
-      const DeepCollectionEquality().hash(descriptions));
+      const DeepCollectionEquality().hash(_moves),
+      const DeepCollectionEquality().hash(_descriptions));
 
   @JsonKey(ignore: true)
   @override
-  _$MoveCategoryCopyWith<_MoveCategory> get copyWith =>
-      __$MoveCategoryCopyWithImpl<_MoveCategory>(this, _$identity);
+  _$$_MoveCategoryCopyWith<_$_MoveCategory> get copyWith =>
+      __$$_MoveCategoryCopyWithImpl<_$_MoveCategory>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_MoveCategoryToJson(this);
+    return _$$_MoveCategoryToJson(
+      this,
+    );
   }
 }
 
 abstract class _MoveCategory implements MoveCategory {
-  const factory _MoveCategory(int id, String name, List<NamedAPIResource> moves,
-      List<Description> descriptions) = _$_MoveCategory;
+  const factory _MoveCategory(
+      final int id,
+      final String name,
+      final List<NamedAPIResource> moves,
+      final List<Description> descriptions) = _$_MoveCategory;
 
   factory _MoveCategory.fromJson(Map<String, dynamic> json) =
       _$_MoveCategory.fromJson;
@@ -3674,36 +3554,13 @@ abstract class _MoveCategory implements MoveCategory {
   List<Description> get descriptions;
   @override
   @JsonKey(ignore: true)
-  _$MoveCategoryCopyWith<_MoveCategory> get copyWith =>
+  _$$_MoveCategoryCopyWith<_$_MoveCategory> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 MoveDamageClass _$MoveDamageClassFromJson(Map<String, dynamic> json) {
   return _MoveDamageClass.fromJson(json);
 }
-
-/// @nodoc
-class _$MoveDamageClassTearOff {
-  const _$MoveDamageClassTearOff();
-
-  _MoveDamageClass call(int id, String name, List<Description> descriptions,
-      List<NamedAPIResource> moves, List<Name> names) {
-    return _MoveDamageClass(
-      id,
-      name,
-      descriptions,
-      moves,
-      names,
-    );
-  }
-
-  MoveDamageClass fromJson(Map<String, Object?> json) {
-    return MoveDamageClass.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $MoveDamageClass = _$MoveDamageClassTearOff();
 
 /// @nodoc
 mixin _$MoveDamageClass {
@@ -3788,11 +3645,11 @@ class _$MoveDamageClassCopyWithImpl<$Res>
 }
 
 /// @nodoc
-abstract class _$MoveDamageClassCopyWith<$Res>
+abstract class _$$_MoveDamageClassCopyWith<$Res>
     implements $MoveDamageClassCopyWith<$Res> {
-  factory _$MoveDamageClassCopyWith(
-          _MoveDamageClass value, $Res Function(_MoveDamageClass) then) =
-      __$MoveDamageClassCopyWithImpl<$Res>;
+  factory _$$_MoveDamageClassCopyWith(
+          _$_MoveDamageClass value, $Res Function(_$_MoveDamageClass) then) =
+      __$$_MoveDamageClassCopyWithImpl<$Res>;
   @override
   $Res call(
       {int id,
@@ -3803,15 +3660,15 @@ abstract class _$MoveDamageClassCopyWith<$Res>
 }
 
 /// @nodoc
-class __$MoveDamageClassCopyWithImpl<$Res>
+class __$$_MoveDamageClassCopyWithImpl<$Res>
     extends _$MoveDamageClassCopyWithImpl<$Res>
-    implements _$MoveDamageClassCopyWith<$Res> {
-  __$MoveDamageClassCopyWithImpl(
-      _MoveDamageClass _value, $Res Function(_MoveDamageClass) _then)
-      : super(_value, (v) => _then(v as _MoveDamageClass));
+    implements _$$_MoveDamageClassCopyWith<$Res> {
+  __$$_MoveDamageClassCopyWithImpl(
+      _$_MoveDamageClass _value, $Res Function(_$_MoveDamageClass) _then)
+      : super(_value, (v) => _then(v as _$_MoveDamageClass));
 
   @override
-  _MoveDamageClass get _value => super._value as _MoveDamageClass;
+  _$_MoveDamageClass get _value => super._value as _$_MoveDamageClass;
 
   @override
   $Res call({
@@ -3821,7 +3678,7 @@ class __$MoveDamageClassCopyWithImpl<$Res>
     Object? moves = freezed,
     Object? names = freezed,
   }) {
-    return _then(_MoveDamageClass(
+    return _then(_$_MoveDamageClass(
       id == freezed
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
@@ -3831,15 +3688,15 @@ class __$MoveDamageClassCopyWithImpl<$Res>
           : name // ignore: cast_nullable_to_non_nullable
               as String,
       descriptions == freezed
-          ? _value.descriptions
+          ? _value._descriptions
           : descriptions // ignore: cast_nullable_to_non_nullable
               as List<Description>,
       moves == freezed
-          ? _value.moves
+          ? _value._moves
           : moves // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
       names == freezed
-          ? _value.names
+          ? _value._names
           : names // ignore: cast_nullable_to_non_nullable
               as List<Name>,
     ));
@@ -3850,35 +3707,63 @@ class __$MoveDamageClassCopyWithImpl<$Res>
 @JsonSerializable()
 class _$_MoveDamageClass implements _MoveDamageClass {
   const _$_MoveDamageClass(
-      this.id, this.name, this.descriptions, this.moves, this.names);
+      this.id,
+      this.name,
+      final List<Description> descriptions,
+      final List<NamedAPIResource> moves,
+      final List<Name> names)
+      : _descriptions = descriptions,
+        _moves = moves,
+        _names = names;
 
   factory _$_MoveDamageClass.fromJson(Map<String, dynamic> json) =>
       _$$_MoveDamageClassFromJson(json);
 
-  @override
-
   /// The identifier for this resource.
-  final int id;
   @override
+  final int id;
 
   /// The name for this resource.
-  final String name;
   @override
+  final String name;
 
   /// The description of this resource listed in different languages.
-  final List<Description> descriptions;
+  final List<Description> _descriptions;
+
+  /// The description of this resource listed in different languages.
   @override
+  List<Description> get descriptions {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_descriptions);
+  }
 
   /// A list of moves that fall into this damage class.
   ///
   /// See also:
   ///
   /// [Move]
-  final List<NamedAPIResource> moves;
+  final List<NamedAPIResource> _moves;
+
+  /// A list of moves that fall into this damage class.
+  ///
+  /// See also:
+  ///
+  /// [Move]
   @override
+  List<NamedAPIResource> get moves {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_moves);
+  }
 
   /// The name of this resource listed in different languages.
-  final List<Name> names;
+  final List<Name> _names;
+
+  /// The name of this resource listed in different languages.
+  @override
+  List<Name> get names {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_names);
+  }
 
   @override
   String toString() {
@@ -3889,42 +3774,45 @@ class _$_MoveDamageClass implements _MoveDamageClass {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _MoveDamageClass &&
+            other is _$_MoveDamageClass &&
             const DeepCollectionEquality().equals(other.id, id) &&
             const DeepCollectionEquality().equals(other.name, name) &&
             const DeepCollectionEquality()
-                .equals(other.descriptions, descriptions) &&
-            const DeepCollectionEquality().equals(other.moves, moves) &&
-            const DeepCollectionEquality().equals(other.names, names));
+                .equals(other._descriptions, _descriptions) &&
+            const DeepCollectionEquality().equals(other._moves, _moves) &&
+            const DeepCollectionEquality().equals(other._names, _names));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
       const DeepCollectionEquality().hash(id),
       const DeepCollectionEquality().hash(name),
-      const DeepCollectionEquality().hash(descriptions),
-      const DeepCollectionEquality().hash(moves),
-      const DeepCollectionEquality().hash(names));
+      const DeepCollectionEquality().hash(_descriptions),
+      const DeepCollectionEquality().hash(_moves),
+      const DeepCollectionEquality().hash(_names));
 
   @JsonKey(ignore: true)
   @override
-  _$MoveDamageClassCopyWith<_MoveDamageClass> get copyWith =>
-      __$MoveDamageClassCopyWithImpl<_MoveDamageClass>(this, _$identity);
+  _$$_MoveDamageClassCopyWith<_$_MoveDamageClass> get copyWith =>
+      __$$_MoveDamageClassCopyWithImpl<_$_MoveDamageClass>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_MoveDamageClassToJson(this);
+    return _$$_MoveDamageClassToJson(
+      this,
+    );
   }
 }
 
 abstract class _MoveDamageClass implements MoveDamageClass {
   const factory _MoveDamageClass(
-      int id,
-      String name,
-      List<Description> descriptions,
-      List<NamedAPIResource> moves,
-      List<Name> names) = _$_MoveDamageClass;
+      final int id,
+      final String name,
+      final List<Description> descriptions,
+      final List<NamedAPIResource> moves,
+      final List<Name> names) = _$_MoveDamageClass;
 
   factory _MoveDamageClass.fromJson(Map<String, dynamic> json) =
       _$_MoveDamageClass.fromJson;
@@ -3955,40 +3843,13 @@ abstract class _MoveDamageClass implements MoveDamageClass {
   List<Name> get names;
   @override
   @JsonKey(ignore: true)
-  _$MoveDamageClassCopyWith<_MoveDamageClass> get copyWith =>
+  _$$_MoveDamageClassCopyWith<_$_MoveDamageClass> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 MoveLearnMethod _$MoveLearnMethodFromJson(Map<String, dynamic> json) {
   return _MoveLearnMethod.fromJson(json);
 }
-
-/// @nodoc
-class _$MoveLearnMethodTearOff {
-  const _$MoveLearnMethodTearOff();
-
-  _MoveLearnMethod call(
-      int id,
-      String name,
-      List<Description> descriptions,
-      List<Name> names,
-      @JsonKey(name: 'version_groups') List<NamedAPIResource> versionGroups) {
-    return _MoveLearnMethod(
-      id,
-      name,
-      descriptions,
-      names,
-      versionGroups,
-    );
-  }
-
-  MoveLearnMethod fromJson(Map<String, Object?> json) {
-    return MoveLearnMethod.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $MoveLearnMethod = _$MoveLearnMethodTearOff();
 
 /// @nodoc
 mixin _$MoveLearnMethod {
@@ -4075,11 +3936,11 @@ class _$MoveLearnMethodCopyWithImpl<$Res>
 }
 
 /// @nodoc
-abstract class _$MoveLearnMethodCopyWith<$Res>
+abstract class _$$_MoveLearnMethodCopyWith<$Res>
     implements $MoveLearnMethodCopyWith<$Res> {
-  factory _$MoveLearnMethodCopyWith(
-          _MoveLearnMethod value, $Res Function(_MoveLearnMethod) then) =
-      __$MoveLearnMethodCopyWithImpl<$Res>;
+  factory _$$_MoveLearnMethodCopyWith(
+          _$_MoveLearnMethod value, $Res Function(_$_MoveLearnMethod) then) =
+      __$$_MoveLearnMethodCopyWithImpl<$Res>;
   @override
   $Res call(
       {int id,
@@ -4090,15 +3951,15 @@ abstract class _$MoveLearnMethodCopyWith<$Res>
 }
 
 /// @nodoc
-class __$MoveLearnMethodCopyWithImpl<$Res>
+class __$$_MoveLearnMethodCopyWithImpl<$Res>
     extends _$MoveLearnMethodCopyWithImpl<$Res>
-    implements _$MoveLearnMethodCopyWith<$Res> {
-  __$MoveLearnMethodCopyWithImpl(
-      _MoveLearnMethod _value, $Res Function(_MoveLearnMethod) _then)
-      : super(_value, (v) => _then(v as _MoveLearnMethod));
+    implements _$$_MoveLearnMethodCopyWith<$Res> {
+  __$$_MoveLearnMethodCopyWithImpl(
+      _$_MoveLearnMethod _value, $Res Function(_$_MoveLearnMethod) _then)
+      : super(_value, (v) => _then(v as _$_MoveLearnMethod));
 
   @override
-  _MoveLearnMethod get _value => super._value as _MoveLearnMethod;
+  _$_MoveLearnMethod get _value => super._value as _$_MoveLearnMethod;
 
   @override
   $Res call({
@@ -4108,7 +3969,7 @@ class __$MoveLearnMethodCopyWithImpl<$Res>
     Object? names = freezed,
     Object? versionGroups = freezed,
   }) {
-    return _then(_MoveLearnMethod(
+    return _then(_$_MoveLearnMethod(
       id == freezed
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
@@ -4118,15 +3979,15 @@ class __$MoveLearnMethodCopyWithImpl<$Res>
           : name // ignore: cast_nullable_to_non_nullable
               as String,
       descriptions == freezed
-          ? _value.descriptions
+          ? _value._descriptions
           : descriptions // ignore: cast_nullable_to_non_nullable
               as List<Description>,
       names == freezed
-          ? _value.names
+          ? _value._names
           : names // ignore: cast_nullable_to_non_nullable
               as List<Name>,
       versionGroups == freezed
-          ? _value.versionGroups
+          ? _value._versionGroups
           : versionGroups // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
     ));
@@ -4136,37 +3997,66 @@ class __$MoveLearnMethodCopyWithImpl<$Res>
 /// @nodoc
 @JsonSerializable()
 class _$_MoveLearnMethod implements _MoveLearnMethod {
-  const _$_MoveLearnMethod(this.id, this.name, this.descriptions, this.names,
-      @JsonKey(name: 'version_groups') this.versionGroups);
+  const _$_MoveLearnMethod(
+      this.id,
+      this.name,
+      final List<Description> descriptions,
+      final List<Name> names,
+      @JsonKey(name: 'version_groups')
+          final List<NamedAPIResource> versionGroups)
+      : _descriptions = descriptions,
+        _names = names,
+        _versionGroups = versionGroups;
 
   factory _$_MoveLearnMethod.fromJson(Map<String, dynamic> json) =>
       _$$_MoveLearnMethodFromJson(json);
 
-  @override
-
   /// The identifier for this resource.
-  final int id;
   @override
+  final int id;
 
   /// The name for this resource.
-  final String name;
   @override
+  final String name;
 
   /// The description of this resource listed in different languages.
-  final List<Description> descriptions;
+  final List<Description> _descriptions;
+
+  /// The description of this resource listed in different languages.
   @override
+  List<Description> get descriptions {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_descriptions);
+  }
 
   /// The name of this resource listed in different languages.
-  final List<Name> names;
+  final List<Name> _names;
+
+  /// The name of this resource listed in different languages.
   @override
+  List<Name> get names {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_names);
+  }
 
   /// A list of version groups where moves can be learned through this method.
   ///
   /// See also:
   ///
   /// [VersionGroup]
+  final List<NamedAPIResource> _versionGroups;
+
+  /// A list of version groups where moves can be learned through this method.
+  ///
+  /// See also:
+  ///
+  /// [VersionGroup]
+  @override
   @JsonKey(name: 'version_groups')
-  final List<NamedAPIResource> versionGroups;
+  List<NamedAPIResource> get versionGroups {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_versionGroups);
+  }
 
   @override
   String toString() {
@@ -4177,44 +4067,47 @@ class _$_MoveLearnMethod implements _MoveLearnMethod {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _MoveLearnMethod &&
+            other is _$_MoveLearnMethod &&
             const DeepCollectionEquality().equals(other.id, id) &&
             const DeepCollectionEquality().equals(other.name, name) &&
             const DeepCollectionEquality()
-                .equals(other.descriptions, descriptions) &&
-            const DeepCollectionEquality().equals(other.names, names) &&
+                .equals(other._descriptions, _descriptions) &&
+            const DeepCollectionEquality().equals(other._names, _names) &&
             const DeepCollectionEquality()
-                .equals(other.versionGroups, versionGroups));
+                .equals(other._versionGroups, _versionGroups));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
       const DeepCollectionEquality().hash(id),
       const DeepCollectionEquality().hash(name),
-      const DeepCollectionEquality().hash(descriptions),
-      const DeepCollectionEquality().hash(names),
-      const DeepCollectionEquality().hash(versionGroups));
+      const DeepCollectionEquality().hash(_descriptions),
+      const DeepCollectionEquality().hash(_names),
+      const DeepCollectionEquality().hash(_versionGroups));
 
   @JsonKey(ignore: true)
   @override
-  _$MoveLearnMethodCopyWith<_MoveLearnMethod> get copyWith =>
-      __$MoveLearnMethodCopyWithImpl<_MoveLearnMethod>(this, _$identity);
+  _$$_MoveLearnMethodCopyWith<_$_MoveLearnMethod> get copyWith =>
+      __$$_MoveLearnMethodCopyWithImpl<_$_MoveLearnMethod>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_MoveLearnMethodToJson(this);
+    return _$$_MoveLearnMethodToJson(
+      this,
+    );
   }
 }
 
 abstract class _MoveLearnMethod implements MoveLearnMethod {
   const factory _MoveLearnMethod(
-      int id,
-      String name,
-      List<Description> descriptions,
-      List<Name> names,
+      final int id,
+      final String name,
+      final List<Description> descriptions,
+      final List<Name> names,
       @JsonKey(name: 'version_groups')
-          List<NamedAPIResource> versionGroups) = _$_MoveLearnMethod;
+          final List<NamedAPIResource> versionGroups) = _$_MoveLearnMethod;
 
   factory _MoveLearnMethod.fromJson(Map<String, dynamic> json) =
       _$_MoveLearnMethod.fromJson;
@@ -4246,36 +4139,13 @@ abstract class _MoveLearnMethod implements MoveLearnMethod {
   List<NamedAPIResource> get versionGroups;
   @override
   @JsonKey(ignore: true)
-  _$MoveLearnMethodCopyWith<_MoveLearnMethod> get copyWith =>
+  _$$_MoveLearnMethodCopyWith<_$_MoveLearnMethod> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 MoveTarget _$MoveTargetFromJson(Map<String, dynamic> json) {
   return _MoveTarget.fromJson(json);
 }
-
-/// @nodoc
-class _$MoveTargetTearOff {
-  const _$MoveTargetTearOff();
-
-  _MoveTarget call(int id, String name, List<Description> descriptions,
-      List<NamedAPIResource> moves, List<Name> names) {
-    return _MoveTarget(
-      id,
-      name,
-      descriptions,
-      moves,
-      names,
-    );
-  }
-
-  MoveTarget fromJson(Map<String, Object?> json) {
-    return MoveTarget.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $MoveTarget = _$MoveTargetTearOff();
 
 /// @nodoc
 mixin _$MoveTarget {
@@ -4359,10 +4229,11 @@ class _$MoveTargetCopyWithImpl<$Res> implements $MoveTargetCopyWith<$Res> {
 }
 
 /// @nodoc
-abstract class _$MoveTargetCopyWith<$Res> implements $MoveTargetCopyWith<$Res> {
-  factory _$MoveTargetCopyWith(
-          _MoveTarget value, $Res Function(_MoveTarget) then) =
-      __$MoveTargetCopyWithImpl<$Res>;
+abstract class _$$_MoveTargetCopyWith<$Res>
+    implements $MoveTargetCopyWith<$Res> {
+  factory _$$_MoveTargetCopyWith(
+          _$_MoveTarget value, $Res Function(_$_MoveTarget) then) =
+      __$$_MoveTargetCopyWithImpl<$Res>;
   @override
   $Res call(
       {int id,
@@ -4373,14 +4244,14 @@ abstract class _$MoveTargetCopyWith<$Res> implements $MoveTargetCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$MoveTargetCopyWithImpl<$Res> extends _$MoveTargetCopyWithImpl<$Res>
-    implements _$MoveTargetCopyWith<$Res> {
-  __$MoveTargetCopyWithImpl(
-      _MoveTarget _value, $Res Function(_MoveTarget) _then)
-      : super(_value, (v) => _then(v as _MoveTarget));
+class __$$_MoveTargetCopyWithImpl<$Res> extends _$MoveTargetCopyWithImpl<$Res>
+    implements _$$_MoveTargetCopyWith<$Res> {
+  __$$_MoveTargetCopyWithImpl(
+      _$_MoveTarget _value, $Res Function(_$_MoveTarget) _then)
+      : super(_value, (v) => _then(v as _$_MoveTarget));
 
   @override
-  _MoveTarget get _value => super._value as _MoveTarget;
+  _$_MoveTarget get _value => super._value as _$_MoveTarget;
 
   @override
   $Res call({
@@ -4390,7 +4261,7 @@ class __$MoveTargetCopyWithImpl<$Res> extends _$MoveTargetCopyWithImpl<$Res>
     Object? moves = freezed,
     Object? names = freezed,
   }) {
-    return _then(_MoveTarget(
+    return _then(_$_MoveTarget(
       id == freezed
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
@@ -4400,15 +4271,15 @@ class __$MoveTargetCopyWithImpl<$Res> extends _$MoveTargetCopyWithImpl<$Res>
           : name // ignore: cast_nullable_to_non_nullable
               as String,
       descriptions == freezed
-          ? _value.descriptions
+          ? _value._descriptions
           : descriptions // ignore: cast_nullable_to_non_nullable
               as List<Description>,
       moves == freezed
-          ? _value.moves
+          ? _value._moves
           : moves // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
       names == freezed
-          ? _value.names
+          ? _value._names
           : names // ignore: cast_nullable_to_non_nullable
               as List<Name>,
     ));
@@ -4418,36 +4289,60 @@ class __$MoveTargetCopyWithImpl<$Res> extends _$MoveTargetCopyWithImpl<$Res>
 /// @nodoc
 @JsonSerializable()
 class _$_MoveTarget implements _MoveTarget {
-  const _$_MoveTarget(
-      this.id, this.name, this.descriptions, this.moves, this.names);
+  const _$_MoveTarget(this.id, this.name, final List<Description> descriptions,
+      final List<NamedAPIResource> moves, final List<Name> names)
+      : _descriptions = descriptions,
+        _moves = moves,
+        _names = names;
 
   factory _$_MoveTarget.fromJson(Map<String, dynamic> json) =>
       _$$_MoveTargetFromJson(json);
 
-  @override
-
   /// The identifier for this resource.
-  final int id;
   @override
+  final int id;
 
   /// The name for this resource.
-  final String name;
   @override
+  final String name;
 
   /// The description of this resource listed in different languages.
-  final List<Description> descriptions;
+  final List<Description> _descriptions;
+
+  /// The description of this resource listed in different languages.
   @override
+  List<Description> get descriptions {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_descriptions);
+  }
 
   /// A list of moves that that are directed at this target.
   ///
   /// See also:
   ///
   /// [Move]
-  final List<NamedAPIResource> moves;
+  final List<NamedAPIResource> _moves;
+
+  /// A list of moves that that are directed at this target.
+  ///
+  /// See also:
+  ///
+  /// [Move]
   @override
+  List<NamedAPIResource> get moves {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_moves);
+  }
 
   /// The name of this resource listed in different languages.
-  final List<Name> names;
+  final List<Name> _names;
+
+  /// The name of this resource listed in different languages.
+  @override
+  List<Name> get names {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_names);
+  }
 
   @override
   String toString() {
@@ -4458,38 +4353,45 @@ class _$_MoveTarget implements _MoveTarget {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _MoveTarget &&
+            other is _$_MoveTarget &&
             const DeepCollectionEquality().equals(other.id, id) &&
             const DeepCollectionEquality().equals(other.name, name) &&
             const DeepCollectionEquality()
-                .equals(other.descriptions, descriptions) &&
-            const DeepCollectionEquality().equals(other.moves, moves) &&
-            const DeepCollectionEquality().equals(other.names, names));
+                .equals(other._descriptions, _descriptions) &&
+            const DeepCollectionEquality().equals(other._moves, _moves) &&
+            const DeepCollectionEquality().equals(other._names, _names));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
       const DeepCollectionEquality().hash(id),
       const DeepCollectionEquality().hash(name),
-      const DeepCollectionEquality().hash(descriptions),
-      const DeepCollectionEquality().hash(moves),
-      const DeepCollectionEquality().hash(names));
+      const DeepCollectionEquality().hash(_descriptions),
+      const DeepCollectionEquality().hash(_moves),
+      const DeepCollectionEquality().hash(_names));
 
   @JsonKey(ignore: true)
   @override
-  _$MoveTargetCopyWith<_MoveTarget> get copyWith =>
-      __$MoveTargetCopyWithImpl<_MoveTarget>(this, _$identity);
+  _$$_MoveTargetCopyWith<_$_MoveTarget> get copyWith =>
+      __$$_MoveTargetCopyWithImpl<_$_MoveTarget>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_MoveTargetToJson(this);
+    return _$$_MoveTargetToJson(
+      this,
+    );
   }
 }
 
 abstract class _MoveTarget implements MoveTarget {
-  const factory _MoveTarget(int id, String name, List<Description> descriptions,
-      List<NamedAPIResource> moves, List<Name> names) = _$_MoveTarget;
+  const factory _MoveTarget(
+      final int id,
+      final String name,
+      final List<Description> descriptions,
+      final List<NamedAPIResource> moves,
+      final List<Name> names) = _$_MoveTarget;
 
   factory _MoveTarget.fromJson(Map<String, dynamic> json) =
       _$_MoveTarget.fromJson;
@@ -4520,6 +4422,6 @@ abstract class _MoveTarget implements MoveTarget {
   List<Name> get names;
   @override
   @JsonKey(ignore: true)
-  _$MoveTargetCopyWith<_MoveTarget> get copyWith =>
+  _$$_MoveTargetCopyWith<_$_MoveTarget> get copyWith =>
       throw _privateConstructorUsedError;
 }

@@ -12,46 +12,11 @@ part of 'games.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 Generation _$GenerationFromJson(Map<String, dynamic> json) {
   return _Generation.fromJson(json);
 }
-
-/// @nodoc
-class _$GenerationTearOff {
-  const _$GenerationTearOff();
-
-  _Generation call(
-      int id,
-      String name,
-      List<NamedAPIResource> abilities,
-      List<Name> names,
-      @JsonKey(name: 'main_region') NamedAPIResource mainRegion,
-      List<NamedAPIResource> moves,
-      @JsonKey(name: 'pokemon_species') List<NamedAPIResource> pokemonSpecies,
-      List<NamedAPIResource> types,
-      @JsonKey(name: 'version_groups') List<NamedAPIResource> versionGroups) {
-    return _Generation(
-      id,
-      name,
-      abilities,
-      names,
-      mainRegion,
-      moves,
-      pokemonSpecies,
-      types,
-      versionGroups,
-    );
-  }
-
-  Generation fromJson(Map<String, Object?> json) {
-    return Generation.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $Generation = _$GenerationTearOff();
 
 /// @nodoc
 mixin _$Generation {
@@ -205,10 +170,11 @@ class _$GenerationCopyWithImpl<$Res> implements $GenerationCopyWith<$Res> {
 }
 
 /// @nodoc
-abstract class _$GenerationCopyWith<$Res> implements $GenerationCopyWith<$Res> {
-  factory _$GenerationCopyWith(
-          _Generation value, $Res Function(_Generation) then) =
-      __$GenerationCopyWithImpl<$Res>;
+abstract class _$$_GenerationCopyWith<$Res>
+    implements $GenerationCopyWith<$Res> {
+  factory _$$_GenerationCopyWith(
+          _$_Generation value, $Res Function(_$_Generation) then) =
+      __$$_GenerationCopyWithImpl<$Res>;
   @override
   $Res call(
       {int id,
@@ -226,14 +192,14 @@ abstract class _$GenerationCopyWith<$Res> implements $GenerationCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$GenerationCopyWithImpl<$Res> extends _$GenerationCopyWithImpl<$Res>
-    implements _$GenerationCopyWith<$Res> {
-  __$GenerationCopyWithImpl(
-      _Generation _value, $Res Function(_Generation) _then)
-      : super(_value, (v) => _then(v as _Generation));
+class __$$_GenerationCopyWithImpl<$Res> extends _$GenerationCopyWithImpl<$Res>
+    implements _$$_GenerationCopyWith<$Res> {
+  __$$_GenerationCopyWithImpl(
+      _$_Generation _value, $Res Function(_$_Generation) _then)
+      : super(_value, (v) => _then(v as _$_Generation));
 
   @override
-  _Generation get _value => super._value as _Generation;
+  _$_Generation get _value => super._value as _$_Generation;
 
   @override
   $Res call({
@@ -247,7 +213,7 @@ class __$GenerationCopyWithImpl<$Res> extends _$GenerationCopyWithImpl<$Res>
     Object? types = freezed,
     Object? versionGroups = freezed,
   }) {
-    return _then(_Generation(
+    return _then(_$_Generation(
       id == freezed
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
@@ -257,11 +223,11 @@ class __$GenerationCopyWithImpl<$Res> extends _$GenerationCopyWithImpl<$Res>
           : name // ignore: cast_nullable_to_non_nullable
               as String,
       abilities == freezed
-          ? _value.abilities
+          ? _value._abilities
           : abilities // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
       names == freezed
-          ? _value.names
+          ? _value._names
           : names // ignore: cast_nullable_to_non_nullable
               as List<Name>,
       mainRegion == freezed
@@ -269,19 +235,19 @@ class __$GenerationCopyWithImpl<$Res> extends _$GenerationCopyWithImpl<$Res>
           : mainRegion // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
       moves == freezed
-          ? _value.moves
+          ? _value._moves
           : moves // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
       pokemonSpecies == freezed
-          ? _value.pokemonSpecies
+          ? _value._pokemonSpecies
           : pokemonSpecies // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
       types == freezed
-          ? _value.types
+          ? _value._types
           : types // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
       versionGroups == freezed
-          ? _value.versionGroups
+          ? _value._versionGroups
           : versionGroups // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
     ));
@@ -294,80 +260,144 @@ class _$_Generation implements _Generation {
   const _$_Generation(
       this.id,
       this.name,
-      this.abilities,
-      this.names,
-      @JsonKey(name: 'main_region') this.mainRegion,
-      this.moves,
-      @JsonKey(name: 'pokemon_species') this.pokemonSpecies,
-      this.types,
-      @JsonKey(name: 'version_groups') this.versionGroups);
+      final List<NamedAPIResource> abilities,
+      final List<Name> names,
+      @JsonKey(name: 'main_region')
+          this.mainRegion,
+      final List<NamedAPIResource> moves,
+      @JsonKey(name: 'pokemon_species')
+          final List<NamedAPIResource> pokemonSpecies,
+      final List<NamedAPIResource> types,
+      @JsonKey(name: 'version_groups')
+          final List<NamedAPIResource> versionGroups)
+      : _abilities = abilities,
+        _names = names,
+        _moves = moves,
+        _pokemonSpecies = pokemonSpecies,
+        _types = types,
+        _versionGroups = versionGroups;
 
   factory _$_Generation.fromJson(Map<String, dynamic> json) =>
       _$$_GenerationFromJson(json);
 
-  @override
-
   /// The identifier for this resource.
-  final int id;
   @override
+  final int id;
 
   /// The name for this resource.
-  final String name;
   @override
+  final String name;
 
   /// A list of abilities that were introduced in this generation.
   ///
   /// See also:
   ///
   /// [Ability]
-  final List<NamedAPIResource> abilities;
+  final List<NamedAPIResource> _abilities;
+
+  /// A list of abilities that were introduced in this generation.
+  ///
+  /// See also:
+  ///
+  /// [Ability]
   @override
+  List<NamedAPIResource> get abilities {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_abilities);
+  }
 
   /// The name of this resource listed in different languages.
-  final List<Name> names;
+  final List<Name> _names;
+
+  /// The name of this resource listed in different languages.
   @override
+  List<Name> get names {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_names);
+  }
 
   /// The main region travelled in this generation.
   ///
   /// See also:
   ///
   /// [Region]
+  @override
   @JsonKey(name: 'main_region')
   final NamedAPIResource mainRegion;
-  @override
 
   /// A list of moves that were introduced in this generation.
   ///
   /// See also:
   ///
   /// [Move]
-  final List<NamedAPIResource> moves;
+  final List<NamedAPIResource> _moves;
+
+  /// A list of moves that were introduced in this generation.
+  ///
+  /// See also:
+  ///
+  /// [Move]
   @override
+  List<NamedAPIResource> get moves {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_moves);
+  }
 
   /// A list of Pokémon species that were introduced in this generation.
   ///
   /// See also:
   ///
   /// [PokemonSpecies]
-  @JsonKey(name: 'pokemon_species')
-  final List<NamedAPIResource> pokemonSpecies;
+  final List<NamedAPIResource> _pokemonSpecies;
+
+  /// A list of Pokémon species that were introduced in this generation.
+  ///
+  /// See also:
+  ///
+  /// [PokemonSpecies]
   @override
+  @JsonKey(name: 'pokemon_species')
+  List<NamedAPIResource> get pokemonSpecies {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_pokemonSpecies);
+  }
 
   /// A list of types that were introduced in this generation.
   ///
   /// See also:
   ///
   /// [Type]
-  final List<NamedAPIResource> types;
+  final List<NamedAPIResource> _types;
+
+  /// A list of types that were introduced in this generation.
+  ///
+  /// See also:
+  ///
+  /// [Type]
   @override
+  List<NamedAPIResource> get types {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_types);
+  }
 
   /// A list of version groups that were introduced in this generation.
   ///
   /// See also:
   ///
   /// [VersionGroup]
+  final List<NamedAPIResource> _versionGroups;
+
+  /// A list of version groups that were introduced in this generation.
+  ///
+  /// See also:
+  ///
+  /// [VersionGroup]
+  @override
   @JsonKey(name: 'version_groups')
-  final List<NamedAPIResource> versionGroups;
+  List<NamedAPIResource> get versionGroups {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_versionGroups);
+  }
 
   @override
   String toString() {
@@ -378,59 +408,63 @@ class _$_Generation implements _Generation {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Generation &&
+            other is _$_Generation &&
             const DeepCollectionEquality().equals(other.id, id) &&
             const DeepCollectionEquality().equals(other.name, name) &&
-            const DeepCollectionEquality().equals(other.abilities, abilities) &&
-            const DeepCollectionEquality().equals(other.names, names) &&
+            const DeepCollectionEquality()
+                .equals(other._abilities, _abilities) &&
+            const DeepCollectionEquality().equals(other._names, _names) &&
             const DeepCollectionEquality()
                 .equals(other.mainRegion, mainRegion) &&
-            const DeepCollectionEquality().equals(other.moves, moves) &&
+            const DeepCollectionEquality().equals(other._moves, _moves) &&
             const DeepCollectionEquality()
-                .equals(other.pokemonSpecies, pokemonSpecies) &&
-            const DeepCollectionEquality().equals(other.types, types) &&
+                .equals(other._pokemonSpecies, _pokemonSpecies) &&
+            const DeepCollectionEquality().equals(other._types, _types) &&
             const DeepCollectionEquality()
-                .equals(other.versionGroups, versionGroups));
+                .equals(other._versionGroups, _versionGroups));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
       const DeepCollectionEquality().hash(id),
       const DeepCollectionEquality().hash(name),
-      const DeepCollectionEquality().hash(abilities),
-      const DeepCollectionEquality().hash(names),
+      const DeepCollectionEquality().hash(_abilities),
+      const DeepCollectionEquality().hash(_names),
       const DeepCollectionEquality().hash(mainRegion),
-      const DeepCollectionEquality().hash(moves),
-      const DeepCollectionEquality().hash(pokemonSpecies),
-      const DeepCollectionEquality().hash(types),
-      const DeepCollectionEquality().hash(versionGroups));
+      const DeepCollectionEquality().hash(_moves),
+      const DeepCollectionEquality().hash(_pokemonSpecies),
+      const DeepCollectionEquality().hash(_types),
+      const DeepCollectionEquality().hash(_versionGroups));
 
   @JsonKey(ignore: true)
   @override
-  _$GenerationCopyWith<_Generation> get copyWith =>
-      __$GenerationCopyWithImpl<_Generation>(this, _$identity);
+  _$$_GenerationCopyWith<_$_Generation> get copyWith =>
+      __$$_GenerationCopyWithImpl<_$_Generation>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_GenerationToJson(this);
+    return _$$_GenerationToJson(
+      this,
+    );
   }
 }
 
 abstract class _Generation implements Generation {
   const factory _Generation(
-      int id,
-      String name,
-      List<NamedAPIResource> abilities,
-      List<Name> names,
+      final int id,
+      final String name,
+      final List<NamedAPIResource> abilities,
+      final List<Name> names,
       @JsonKey(name: 'main_region')
-          NamedAPIResource mainRegion,
-      List<NamedAPIResource> moves,
+          final NamedAPIResource mainRegion,
+      final List<NamedAPIResource> moves,
       @JsonKey(name: 'pokemon_species')
-          List<NamedAPIResource> pokemonSpecies,
-      List<NamedAPIResource> types,
+          final List<NamedAPIResource> pokemonSpecies,
+      final List<NamedAPIResource> types,
       @JsonKey(name: 'version_groups')
-          List<NamedAPIResource> versionGroups) = _$_Generation;
+          final List<NamedAPIResource> versionGroups) = _$_Generation;
 
   factory _Generation.fromJson(Map<String, dynamic> json) =
       _$_Generation.fromJson;
@@ -500,46 +534,13 @@ abstract class _Generation implements Generation {
   List<NamedAPIResource> get versionGroups;
   @override
   @JsonKey(ignore: true)
-  _$GenerationCopyWith<_Generation> get copyWith =>
+  _$$_GenerationCopyWith<_$_Generation> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 PokedexData _$PokedexDataFromJson(Map<String, dynamic> json) {
   return _PokedexData.fromJson(json);
 }
-
-/// @nodoc
-class _$PokedexDataTearOff {
-  const _$PokedexDataTearOff();
-
-  _PokedexData call(
-      int id,
-      String name,
-      @JsonKey(name: 'is_main_series') bool isMainSeries,
-      List<Description> descriptions,
-      List<Name> names,
-      @JsonKey(name: 'pokemon_entries') List<PokemonEntry> pokemonEntries,
-      NamedAPIResource? region,
-      @JsonKey(name: 'version_groups') List<NamedAPIResource> versionGroups) {
-    return _PokedexData(
-      id,
-      name,
-      isMainSeries,
-      descriptions,
-      names,
-      pokemonEntries,
-      region,
-      versionGroups,
-    );
-  }
-
-  PokedexData fromJson(Map<String, Object?> json) {
-    return PokedexData.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $PokedexData = _$PokedexDataTearOff();
 
 /// @nodoc
 mixin _$PokedexData {
@@ -671,11 +672,11 @@ class _$PokedexDataCopyWithImpl<$Res> implements $PokedexDataCopyWith<$Res> {
 }
 
 /// @nodoc
-abstract class _$PokedexDataCopyWith<$Res>
+abstract class _$$_PokedexDataCopyWith<$Res>
     implements $PokedexDataCopyWith<$Res> {
-  factory _$PokedexDataCopyWith(
-          _PokedexData value, $Res Function(_PokedexData) then) =
-      __$PokedexDataCopyWithImpl<$Res>;
+  factory _$$_PokedexDataCopyWith(
+          _$_PokedexData value, $Res Function(_$_PokedexData) then) =
+      __$$_PokedexDataCopyWithImpl<$Res>;
   @override
   $Res call(
       {int id,
@@ -692,14 +693,14 @@ abstract class _$PokedexDataCopyWith<$Res>
 }
 
 /// @nodoc
-class __$PokedexDataCopyWithImpl<$Res> extends _$PokedexDataCopyWithImpl<$Res>
-    implements _$PokedexDataCopyWith<$Res> {
-  __$PokedexDataCopyWithImpl(
-      _PokedexData _value, $Res Function(_PokedexData) _then)
-      : super(_value, (v) => _then(v as _PokedexData));
+class __$$_PokedexDataCopyWithImpl<$Res> extends _$PokedexDataCopyWithImpl<$Res>
+    implements _$$_PokedexDataCopyWith<$Res> {
+  __$$_PokedexDataCopyWithImpl(
+      _$_PokedexData _value, $Res Function(_$_PokedexData) _then)
+      : super(_value, (v) => _then(v as _$_PokedexData));
 
   @override
-  _PokedexData get _value => super._value as _PokedexData;
+  _$_PokedexData get _value => super._value as _$_PokedexData;
 
   @override
   $Res call({
@@ -712,7 +713,7 @@ class __$PokedexDataCopyWithImpl<$Res> extends _$PokedexDataCopyWithImpl<$Res>
     Object? region = freezed,
     Object? versionGroups = freezed,
   }) {
-    return _then(_PokedexData(
+    return _then(_$_PokedexData(
       id == freezed
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
@@ -726,15 +727,15 @@ class __$PokedexDataCopyWithImpl<$Res> extends _$PokedexDataCopyWithImpl<$Res>
           : isMainSeries // ignore: cast_nullable_to_non_nullable
               as bool,
       descriptions == freezed
-          ? _value.descriptions
+          ? _value._descriptions
           : descriptions // ignore: cast_nullable_to_non_nullable
               as List<Description>,
       names == freezed
-          ? _value.names
+          ? _value._names
           : names // ignore: cast_nullable_to_non_nullable
               as List<Name>,
       pokemonEntries == freezed
-          ? _value.pokemonEntries
+          ? _value._pokemonEntries
           : pokemonEntries // ignore: cast_nullable_to_non_nullable
               as List<PokemonEntry>,
       region == freezed
@@ -742,7 +743,7 @@ class __$PokedexDataCopyWithImpl<$Res> extends _$PokedexDataCopyWithImpl<$Res>
           : region // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource?,
       versionGroups == freezed
-          ? _value.versionGroups
+          ? _value._versionGroups
           : versionGroups // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
     ));
@@ -755,59 +756,93 @@ class _$_PokedexData implements _PokedexData {
   const _$_PokedexData(
       this.id,
       this.name,
-      @JsonKey(name: 'is_main_series') this.isMainSeries,
-      this.descriptions,
-      this.names,
-      @JsonKey(name: 'pokemon_entries') this.pokemonEntries,
+      @JsonKey(name: 'is_main_series')
+          this.isMainSeries,
+      final List<Description> descriptions,
+      final List<Name> names,
+      @JsonKey(name: 'pokemon_entries')
+          final List<PokemonEntry> pokemonEntries,
       this.region,
-      @JsonKey(name: 'version_groups') this.versionGroups);
+      @JsonKey(name: 'version_groups')
+          final List<NamedAPIResource> versionGroups)
+      : _descriptions = descriptions,
+        _names = names,
+        _pokemonEntries = pokemonEntries,
+        _versionGroups = versionGroups;
 
   factory _$_PokedexData.fromJson(Map<String, dynamic> json) =>
       _$$_PokedexDataFromJson(json);
 
-  @override
-
   /// The identifier for this resource.
-  final int id;
   @override
+  final int id;
 
   /// The name for this resource.
-  final String name;
   @override
+  final String name;
 
   /// Whether or not this Pokédex originated in the main series of the video games.
+  @override
   @JsonKey(name: 'is_main_series')
   final bool isMainSeries;
-  @override
 
   /// The description of this resource listed in different languages.
-  final List<Description> descriptions;
+  final List<Description> _descriptions;
+
+  /// The description of this resource listed in different languages.
   @override
+  List<Description> get descriptions {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_descriptions);
+  }
 
   /// The name of this resource listed in different languages.
-  final List<Name> names;
+  final List<Name> _names;
+
+  /// The name of this resource listed in different languages.
   @override
+  List<Name> get names {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_names);
+  }
 
   /// A list of Pokémon catalogued in this Pokédex and their indexes.
-  @JsonKey(name: 'pokemon_entries')
-  final List<PokemonEntry> pokemonEntries;
+  final List<PokemonEntry> _pokemonEntries;
+
+  /// A list of Pokémon catalogued in this Pokédex and their indexes.
   @override
+  @JsonKey(name: 'pokemon_entries')
+  List<PokemonEntry> get pokemonEntries {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_pokemonEntries);
+  }
 
   /// The region this Pokédex catalogues Pokémon for.
   ///
   /// See also:
   ///
   /// [Region]
-  final NamedAPIResource? region;
   @override
+  final NamedAPIResource? region;
 
   /// A list of version groups this Pokédex is relevant to.
   ///
   /// See also:
   ///
   /// [VersionGroup]
+  final List<NamedAPIResource> _versionGroups;
+
+  /// A list of version groups this Pokédex is relevant to.
+  ///
+  /// See also:
+  ///
+  /// [VersionGroup]
+  @override
   @JsonKey(name: 'version_groups')
-  final List<NamedAPIResource> versionGroups;
+  List<NamedAPIResource> get versionGroups {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_versionGroups);
+  }
 
   @override
   String toString() {
@@ -818,57 +853,60 @@ class _$_PokedexData implements _PokedexData {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _PokedexData &&
+            other is _$_PokedexData &&
             const DeepCollectionEquality().equals(other.id, id) &&
             const DeepCollectionEquality().equals(other.name, name) &&
             const DeepCollectionEquality()
                 .equals(other.isMainSeries, isMainSeries) &&
             const DeepCollectionEquality()
-                .equals(other.descriptions, descriptions) &&
-            const DeepCollectionEquality().equals(other.names, names) &&
+                .equals(other._descriptions, _descriptions) &&
+            const DeepCollectionEquality().equals(other._names, _names) &&
             const DeepCollectionEquality()
-                .equals(other.pokemonEntries, pokemonEntries) &&
+                .equals(other._pokemonEntries, _pokemonEntries) &&
             const DeepCollectionEquality().equals(other.region, region) &&
             const DeepCollectionEquality()
-                .equals(other.versionGroups, versionGroups));
+                .equals(other._versionGroups, _versionGroups));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
       const DeepCollectionEquality().hash(id),
       const DeepCollectionEquality().hash(name),
       const DeepCollectionEquality().hash(isMainSeries),
-      const DeepCollectionEquality().hash(descriptions),
-      const DeepCollectionEquality().hash(names),
-      const DeepCollectionEquality().hash(pokemonEntries),
+      const DeepCollectionEquality().hash(_descriptions),
+      const DeepCollectionEquality().hash(_names),
+      const DeepCollectionEquality().hash(_pokemonEntries),
       const DeepCollectionEquality().hash(region),
-      const DeepCollectionEquality().hash(versionGroups));
+      const DeepCollectionEquality().hash(_versionGroups));
 
   @JsonKey(ignore: true)
   @override
-  _$PokedexDataCopyWith<_PokedexData> get copyWith =>
-      __$PokedexDataCopyWithImpl<_PokedexData>(this, _$identity);
+  _$$_PokedexDataCopyWith<_$_PokedexData> get copyWith =>
+      __$$_PokedexDataCopyWithImpl<_$_PokedexData>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PokedexDataToJson(this);
+    return _$$_PokedexDataToJson(
+      this,
+    );
   }
 }
 
 abstract class _PokedexData implements PokedexData {
   const factory _PokedexData(
-      int id,
-      String name,
+      final int id,
+      final String name,
       @JsonKey(name: 'is_main_series')
-          bool isMainSeries,
-      List<Description> descriptions,
-      List<Name> names,
+          final bool isMainSeries,
+      final List<Description> descriptions,
+      final List<Name> names,
       @JsonKey(name: 'pokemon_entries')
-          List<PokemonEntry> pokemonEntries,
-      NamedAPIResource? region,
+          final List<PokemonEntry> pokemonEntries,
+      final NamedAPIResource? region,
       @JsonKey(name: 'version_groups')
-          List<NamedAPIResource> versionGroups) = _$_PokedexData;
+          final List<NamedAPIResource> versionGroups) = _$_PokedexData;
 
   factory _PokedexData.fromJson(Map<String, dynamic> json) =
       _$_PokedexData.fromJson;
@@ -918,33 +956,13 @@ abstract class _PokedexData implements PokedexData {
   List<NamedAPIResource> get versionGroups;
   @override
   @JsonKey(ignore: true)
-  _$PokedexDataCopyWith<_PokedexData> get copyWith =>
+  _$$_PokedexDataCopyWith<_$_PokedexData> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 PokemonEntry _$PokemonEntryFromJson(Map<String, dynamic> json) {
   return _PokemonEntry.fromJson(json);
 }
-
-/// @nodoc
-class _$PokemonEntryTearOff {
-  const _$PokemonEntryTearOff();
-
-  _PokemonEntry call(@JsonKey(name: 'entry_number') int entryNumber,
-      @JsonKey(name: 'pokemon_species') NamedAPIResource pokemonSpecies) {
-    return _PokemonEntry(
-      entryNumber,
-      pokemonSpecies,
-    );
-  }
-
-  PokemonEntry fromJson(Map<String, Object?> json) {
-    return PokemonEntry.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $PokemonEntry = _$PokemonEntryTearOff();
 
 /// @nodoc
 mixin _$PokemonEntry {
@@ -1012,11 +1030,11 @@ class _$PokemonEntryCopyWithImpl<$Res> implements $PokemonEntryCopyWith<$Res> {
 }
 
 /// @nodoc
-abstract class _$PokemonEntryCopyWith<$Res>
+abstract class _$$_PokemonEntryCopyWith<$Res>
     implements $PokemonEntryCopyWith<$Res> {
-  factory _$PokemonEntryCopyWith(
-          _PokemonEntry value, $Res Function(_PokemonEntry) then) =
-      __$PokemonEntryCopyWithImpl<$Res>;
+  factory _$$_PokemonEntryCopyWith(
+          _$_PokemonEntry value, $Res Function(_$_PokemonEntry) then) =
+      __$$_PokemonEntryCopyWithImpl<$Res>;
   @override
   $Res call(
       {@JsonKey(name: 'entry_number') int entryNumber,
@@ -1027,21 +1045,22 @@ abstract class _$PokemonEntryCopyWith<$Res>
 }
 
 /// @nodoc
-class __$PokemonEntryCopyWithImpl<$Res> extends _$PokemonEntryCopyWithImpl<$Res>
-    implements _$PokemonEntryCopyWith<$Res> {
-  __$PokemonEntryCopyWithImpl(
-      _PokemonEntry _value, $Res Function(_PokemonEntry) _then)
-      : super(_value, (v) => _then(v as _PokemonEntry));
+class __$$_PokemonEntryCopyWithImpl<$Res>
+    extends _$PokemonEntryCopyWithImpl<$Res>
+    implements _$$_PokemonEntryCopyWith<$Res> {
+  __$$_PokemonEntryCopyWithImpl(
+      _$_PokemonEntry _value, $Res Function(_$_PokemonEntry) _then)
+      : super(_value, (v) => _then(v as _$_PokemonEntry));
 
   @override
-  _PokemonEntry get _value => super._value as _PokemonEntry;
+  _$_PokemonEntry get _value => super._value as _$_PokemonEntry;
 
   @override
   $Res call({
     Object? entryNumber = freezed,
     Object? pokemonSpecies = freezed,
   }) {
-    return _then(_PokemonEntry(
+    return _then(_$_PokemonEntry(
       entryNumber == freezed
           ? _value.entryNumber
           : entryNumber // ignore: cast_nullable_to_non_nullable
@@ -1063,18 +1082,17 @@ class _$_PokemonEntry implements _PokemonEntry {
   factory _$_PokemonEntry.fromJson(Map<String, dynamic> json) =>
       _$$_PokemonEntryFromJson(json);
 
-  @override
-
   /// The index of this Pokémon species entry within the Pokédex.
+  @override
   @JsonKey(name: 'entry_number')
   final int entryNumber;
-  @override
 
   /// The Pokémon species being encountered.
   ///
   /// See also:
   ///
   /// [PokemonSpecies]
+  @override
   @JsonKey(name: 'pokemon_species')
   final NamedAPIResource pokemonSpecies;
 
@@ -1087,13 +1105,14 @@ class _$_PokemonEntry implements _PokemonEntry {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _PokemonEntry &&
+            other is _$_PokemonEntry &&
             const DeepCollectionEquality()
                 .equals(other.entryNumber, entryNumber) &&
             const DeepCollectionEquality()
                 .equals(other.pokemonSpecies, pokemonSpecies));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -1102,19 +1121,23 @@ class _$_PokemonEntry implements _PokemonEntry {
 
   @JsonKey(ignore: true)
   @override
-  _$PokemonEntryCopyWith<_PokemonEntry> get copyWith =>
-      __$PokemonEntryCopyWithImpl<_PokemonEntry>(this, _$identity);
+  _$$_PokemonEntryCopyWith<_$_PokemonEntry> get copyWith =>
+      __$$_PokemonEntryCopyWithImpl<_$_PokemonEntry>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PokemonEntryToJson(this);
+    return _$$_PokemonEntryToJson(
+      this,
+    );
   }
 }
 
 abstract class _PokemonEntry implements PokemonEntry {
-  const factory _PokemonEntry(@JsonKey(name: 'entry_number') int entryNumber,
-          @JsonKey(name: 'pokemon_species') NamedAPIResource pokemonSpecies) =
-      _$_PokemonEntry;
+  const factory _PokemonEntry(
+      @JsonKey(name: 'entry_number')
+          final int entryNumber,
+      @JsonKey(name: 'pokemon_species')
+          final NamedAPIResource pokemonSpecies) = _$_PokemonEntry;
 
   factory _PokemonEntry.fromJson(Map<String, dynamic> json) =
       _$_PokemonEntry.fromJson;
@@ -1135,35 +1158,13 @@ abstract class _PokemonEntry implements PokemonEntry {
   NamedAPIResource get pokemonSpecies;
   @override
   @JsonKey(ignore: true)
-  _$PokemonEntryCopyWith<_PokemonEntry> get copyWith =>
+  _$$_PokemonEntryCopyWith<_$_PokemonEntry> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 Version _$VersionFromJson(Map<String, dynamic> json) {
   return _Version.fromJson(json);
 }
-
-/// @nodoc
-class _$VersionTearOff {
-  const _$VersionTearOff();
-
-  _Version call(int id, String name, List<Name> names,
-      @JsonKey(name: 'version_group') NamedAPIResource versionGroup) {
-    return _Version(
-      id,
-      name,
-      names,
-      versionGroup,
-    );
-  }
-
-  Version fromJson(Map<String, Object?> json) {
-    return Version.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $Version = _$VersionTearOff();
 
 /// @nodoc
 mixin _$Version {
@@ -1246,9 +1247,10 @@ class _$VersionCopyWithImpl<$Res> implements $VersionCopyWith<$Res> {
 }
 
 /// @nodoc
-abstract class _$VersionCopyWith<$Res> implements $VersionCopyWith<$Res> {
-  factory _$VersionCopyWith(_Version value, $Res Function(_Version) then) =
-      __$VersionCopyWithImpl<$Res>;
+abstract class _$$_VersionCopyWith<$Res> implements $VersionCopyWith<$Res> {
+  factory _$$_VersionCopyWith(
+          _$_Version value, $Res Function(_$_Version) then) =
+      __$$_VersionCopyWithImpl<$Res>;
   @override
   $Res call(
       {int id,
@@ -1261,13 +1263,13 @@ abstract class _$VersionCopyWith<$Res> implements $VersionCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$VersionCopyWithImpl<$Res> extends _$VersionCopyWithImpl<$Res>
-    implements _$VersionCopyWith<$Res> {
-  __$VersionCopyWithImpl(_Version _value, $Res Function(_Version) _then)
-      : super(_value, (v) => _then(v as _Version));
+class __$$_VersionCopyWithImpl<$Res> extends _$VersionCopyWithImpl<$Res>
+    implements _$$_VersionCopyWith<$Res> {
+  __$$_VersionCopyWithImpl(_$_Version _value, $Res Function(_$_Version) _then)
+      : super(_value, (v) => _then(v as _$_Version));
 
   @override
-  _Version get _value => super._value as _Version;
+  _$_Version get _value => super._value as _$_Version;
 
   @override
   $Res call({
@@ -1276,7 +1278,7 @@ class __$VersionCopyWithImpl<$Res> extends _$VersionCopyWithImpl<$Res>
     Object? names = freezed,
     Object? versionGroup = freezed,
   }) {
-    return _then(_Version(
+    return _then(_$_Version(
       id == freezed
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
@@ -1286,7 +1288,7 @@ class __$VersionCopyWithImpl<$Res> extends _$VersionCopyWithImpl<$Res>
           : name // ignore: cast_nullable_to_non_nullable
               as String,
       names == freezed
-          ? _value.names
+          ? _value._names
           : names // ignore: cast_nullable_to_non_nullable
               as List<Name>,
       versionGroup == freezed
@@ -1300,31 +1302,37 @@ class __$VersionCopyWithImpl<$Res> extends _$VersionCopyWithImpl<$Res>
 /// @nodoc
 @JsonSerializable()
 class _$_Version implements _Version {
-  const _$_Version(this.id, this.name, this.names,
-      @JsonKey(name: 'version_group') this.versionGroup);
+  const _$_Version(this.id, this.name, final List<Name> names,
+      @JsonKey(name: 'version_group') this.versionGroup)
+      : _names = names;
 
   factory _$_Version.fromJson(Map<String, dynamic> json) =>
       _$$_VersionFromJson(json);
 
-  @override
-
   /// The identifier for this resource.
-  final int id;
   @override
+  final int id;
 
   /// The name for this resource.
-  final String name;
   @override
+  final String name;
 
   /// The name of this resource listed in different languages.
-  final List<Name> names;
+  final List<Name> _names;
+
+  /// The name of this resource listed in different languages.
   @override
+  List<Name> get names {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_names);
+  }
 
   /// The version group this version belongs to.
   ///
   /// See also:
   ///
   /// [VersionGroup]
+  @override
   @JsonKey(name: 'version_group')
   final NamedAPIResource versionGroup;
 
@@ -1337,36 +1345,42 @@ class _$_Version implements _Version {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Version &&
+            other is _$_Version &&
             const DeepCollectionEquality().equals(other.id, id) &&
             const DeepCollectionEquality().equals(other.name, name) &&
-            const DeepCollectionEquality().equals(other.names, names) &&
+            const DeepCollectionEquality().equals(other._names, _names) &&
             const DeepCollectionEquality()
                 .equals(other.versionGroup, versionGroup));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
       const DeepCollectionEquality().hash(id),
       const DeepCollectionEquality().hash(name),
-      const DeepCollectionEquality().hash(names),
+      const DeepCollectionEquality().hash(_names),
       const DeepCollectionEquality().hash(versionGroup));
 
   @JsonKey(ignore: true)
   @override
-  _$VersionCopyWith<_Version> get copyWith =>
-      __$VersionCopyWithImpl<_Version>(this, _$identity);
+  _$$_VersionCopyWith<_$_Version> get copyWith =>
+      __$$_VersionCopyWithImpl<_$_Version>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_VersionToJson(this);
+    return _$$_VersionToJson(
+      this,
+    );
   }
 }
 
 abstract class _Version implements Version {
-  const factory _Version(int id, String name, List<Name> names,
-          @JsonKey(name: 'version_group') NamedAPIResource versionGroup) =
+  const factory _Version(
+          final int id,
+          final String name,
+          final List<Name> names,
+          @JsonKey(name: 'version_group') final NamedAPIResource versionGroup) =
       _$_Version;
 
   factory _Version.fromJson(Map<String, dynamic> json) = _$_Version.fromJson;
@@ -1394,47 +1408,13 @@ abstract class _Version implements Version {
   NamedAPIResource get versionGroup;
   @override
   @JsonKey(ignore: true)
-  _$VersionCopyWith<_Version> get copyWith =>
+  _$$_VersionCopyWith<_$_Version> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 VersionGroup _$VersionGroupFromJson(Map<String, dynamic> json) {
   return _VersionGroup.fromJson(json);
 }
-
-/// @nodoc
-class _$VersionGroupTearOff {
-  const _$VersionGroupTearOff();
-
-  _VersionGroup call(
-      int id,
-      String name,
-      int order,
-      NamedAPIResource generation,
-      @JsonKey(name: 'move_learn_methods')
-          List<NamedAPIResource> moveLearnMethods,
-      List<NamedAPIResource> pokedexes,
-      List<NamedAPIResource> regions,
-      List<NamedAPIResource> versions) {
-    return _VersionGroup(
-      id,
-      name,
-      order,
-      generation,
-      moveLearnMethods,
-      pokedexes,
-      regions,
-      versions,
-    );
-  }
-
-  VersionGroup fromJson(Map<String, Object?> json) {
-    return VersionGroup.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $VersionGroup = _$VersionGroupTearOff();
 
 /// @nodoc
 mixin _$VersionGroup {
@@ -1574,11 +1554,11 @@ class _$VersionGroupCopyWithImpl<$Res> implements $VersionGroupCopyWith<$Res> {
 }
 
 /// @nodoc
-abstract class _$VersionGroupCopyWith<$Res>
+abstract class _$$_VersionGroupCopyWith<$Res>
     implements $VersionGroupCopyWith<$Res> {
-  factory _$VersionGroupCopyWith(
-          _VersionGroup value, $Res Function(_VersionGroup) then) =
-      __$VersionGroupCopyWithImpl<$Res>;
+  factory _$$_VersionGroupCopyWith(
+          _$_VersionGroup value, $Res Function(_$_VersionGroup) then) =
+      __$$_VersionGroupCopyWithImpl<$Res>;
   @override
   $Res call(
       {int id,
@@ -1596,14 +1576,15 @@ abstract class _$VersionGroupCopyWith<$Res>
 }
 
 /// @nodoc
-class __$VersionGroupCopyWithImpl<$Res> extends _$VersionGroupCopyWithImpl<$Res>
-    implements _$VersionGroupCopyWith<$Res> {
-  __$VersionGroupCopyWithImpl(
-      _VersionGroup _value, $Res Function(_VersionGroup) _then)
-      : super(_value, (v) => _then(v as _VersionGroup));
+class __$$_VersionGroupCopyWithImpl<$Res>
+    extends _$VersionGroupCopyWithImpl<$Res>
+    implements _$$_VersionGroupCopyWith<$Res> {
+  __$$_VersionGroupCopyWithImpl(
+      _$_VersionGroup _value, $Res Function(_$_VersionGroup) _then)
+      : super(_value, (v) => _then(v as _$_VersionGroup));
 
   @override
-  _VersionGroup get _value => super._value as _VersionGroup;
+  _$_VersionGroup get _value => super._value as _$_VersionGroup;
 
   @override
   $Res call({
@@ -1616,7 +1597,7 @@ class __$VersionGroupCopyWithImpl<$Res> extends _$VersionGroupCopyWithImpl<$Res>
     Object? regions = freezed,
     Object? versions = freezed,
   }) {
-    return _then(_VersionGroup(
+    return _then(_$_VersionGroup(
       id == freezed
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
@@ -1634,19 +1615,19 @@ class __$VersionGroupCopyWithImpl<$Res> extends _$VersionGroupCopyWithImpl<$Res>
           : generation // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
       moveLearnMethods == freezed
-          ? _value.moveLearnMethods
+          ? _value._moveLearnMethods
           : moveLearnMethods // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
       pokedexes == freezed
-          ? _value.pokedexes
+          ? _value._pokedexes
           : pokedexes // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
       regions == freezed
-          ? _value.regions
+          ? _value._regions
           : regions // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
       versions == freezed
-          ? _value.versions
+          ? _value._versions
           : versions // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
     ));
@@ -1661,68 +1642,112 @@ class _$_VersionGroup implements _VersionGroup {
       this.name,
       this.order,
       this.generation,
-      @JsonKey(name: 'move_learn_methods') this.moveLearnMethods,
-      this.pokedexes,
-      this.regions,
-      this.versions);
+      @JsonKey(name: 'move_learn_methods')
+          final List<NamedAPIResource> moveLearnMethods,
+      final List<NamedAPIResource> pokedexes,
+      final List<NamedAPIResource> regions,
+      final List<NamedAPIResource> versions)
+      : _moveLearnMethods = moveLearnMethods,
+        _pokedexes = pokedexes,
+        _regions = regions,
+        _versions = versions;
 
   factory _$_VersionGroup.fromJson(Map<String, dynamic> json) =>
       _$$_VersionGroupFromJson(json);
 
-  @override
-
   /// The identifier for this resource.
-  final int id;
   @override
+  final int id;
 
   /// The name for this resource.
-  final String name;
   @override
+  final String name;
 
   /// Order for sorting.
   /// Almost by date of release, except similar versions are grouped together.
-  final int order;
   @override
+  final int order;
 
   /// The generation this version was introduced in.
   ///
   /// See also:
   ///
   /// [Generation]
-  final NamedAPIResource generation;
   @override
+  final NamedAPIResource generation;
 
   /// A list of methods in which Pokémon can learn moves in this version group.
   ///
   /// See also:
   ///
   /// [MoveLearnMethod]
-  @JsonKey(name: 'move_learn_methods')
-  final List<NamedAPIResource> moveLearnMethods;
+  final List<NamedAPIResource> _moveLearnMethods;
+
+  /// A list of methods in which Pokémon can learn moves in this version group.
+  ///
+  /// See also:
+  ///
+  /// [MoveLearnMethod]
   @override
+  @JsonKey(name: 'move_learn_methods')
+  List<NamedAPIResource> get moveLearnMethods {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_moveLearnMethods);
+  }
 
   /// A list of Pokédexes introduces in this version group.
   ///
   /// See also:
   ///
   /// [PokedexData]
-  final List<NamedAPIResource> pokedexes;
+  final List<NamedAPIResource> _pokedexes;
+
+  /// A list of Pokédexes introduces in this version group.
+  ///
+  /// See also:
+  ///
+  /// [PokedexData]
   @override
+  List<NamedAPIResource> get pokedexes {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_pokedexes);
+  }
 
   /// A list of regions that can be visited in this version group.
   ///
   /// See also:
   ///
   /// [Region]
-  final List<NamedAPIResource> regions;
+  final List<NamedAPIResource> _regions;
+
+  /// A list of regions that can be visited in this version group.
+  ///
+  /// See also:
+  ///
+  /// [Region]
   @override
+  List<NamedAPIResource> get regions {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_regions);
+  }
 
   /// The versions this version group owns.
   ///
   /// See also:
   ///
   /// [Version]
-  final List<NamedAPIResource> versions;
+  final List<NamedAPIResource> _versions;
+
+  /// The versions this version group owns.
+  ///
+  /// See also:
+  ///
+  /// [Version]
+  @override
+  List<NamedAPIResource> get versions {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_versions);
+  }
 
   @override
   String toString() {
@@ -1733,19 +1758,21 @@ class _$_VersionGroup implements _VersionGroup {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _VersionGroup &&
+            other is _$_VersionGroup &&
             const DeepCollectionEquality().equals(other.id, id) &&
             const DeepCollectionEquality().equals(other.name, name) &&
             const DeepCollectionEquality().equals(other.order, order) &&
             const DeepCollectionEquality()
                 .equals(other.generation, generation) &&
             const DeepCollectionEquality()
-                .equals(other.moveLearnMethods, moveLearnMethods) &&
-            const DeepCollectionEquality().equals(other.pokedexes, pokedexes) &&
-            const DeepCollectionEquality().equals(other.regions, regions) &&
-            const DeepCollectionEquality().equals(other.versions, versions));
+                .equals(other._moveLearnMethods, _moveLearnMethods) &&
+            const DeepCollectionEquality()
+                .equals(other._pokedexes, _pokedexes) &&
+            const DeepCollectionEquality().equals(other._regions, _regions) &&
+            const DeepCollectionEquality().equals(other._versions, _versions));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -1753,33 +1780,35 @@ class _$_VersionGroup implements _VersionGroup {
       const DeepCollectionEquality().hash(name),
       const DeepCollectionEquality().hash(order),
       const DeepCollectionEquality().hash(generation),
-      const DeepCollectionEquality().hash(moveLearnMethods),
-      const DeepCollectionEquality().hash(pokedexes),
-      const DeepCollectionEquality().hash(regions),
-      const DeepCollectionEquality().hash(versions));
+      const DeepCollectionEquality().hash(_moveLearnMethods),
+      const DeepCollectionEquality().hash(_pokedexes),
+      const DeepCollectionEquality().hash(_regions),
+      const DeepCollectionEquality().hash(_versions));
 
   @JsonKey(ignore: true)
   @override
-  _$VersionGroupCopyWith<_VersionGroup> get copyWith =>
-      __$VersionGroupCopyWithImpl<_VersionGroup>(this, _$identity);
+  _$$_VersionGroupCopyWith<_$_VersionGroup> get copyWith =>
+      __$$_VersionGroupCopyWithImpl<_$_VersionGroup>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_VersionGroupToJson(this);
+    return _$$_VersionGroupToJson(
+      this,
+    );
   }
 }
 
 abstract class _VersionGroup implements VersionGroup {
   const factory _VersionGroup(
-      int id,
-      String name,
-      int order,
-      NamedAPIResource generation,
+      final int id,
+      final String name,
+      final int order,
+      final NamedAPIResource generation,
       @JsonKey(name: 'move_learn_methods')
-          List<NamedAPIResource> moveLearnMethods,
-      List<NamedAPIResource> pokedexes,
-      List<NamedAPIResource> regions,
-      List<NamedAPIResource> versions) = _$_VersionGroup;
+          final List<NamedAPIResource> moveLearnMethods,
+      final List<NamedAPIResource> pokedexes,
+      final List<NamedAPIResource> regions,
+      final List<NamedAPIResource> versions) = _$_VersionGroup;
 
   factory _VersionGroup.fromJson(Map<String, dynamic> json) =
       _$_VersionGroup.fromJson;
@@ -1840,6 +1869,6 @@ abstract class _VersionGroup implements VersionGroup {
   List<NamedAPIResource> get versions;
   @override
   @JsonKey(ignore: true)
-  _$VersionGroupCopyWith<_VersionGroup> get copyWith =>
+  _$$_VersionGroupCopyWith<_$_VersionGroup> get copyWith =>
       throw _privateConstructorUsedError;
 }

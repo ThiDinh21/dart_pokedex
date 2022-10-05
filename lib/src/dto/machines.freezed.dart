@@ -12,33 +12,11 @@ part of 'machines.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 Machine _$MachineFromJson(Map<String, dynamic> json) {
   return _Machine.fromJson(json);
 }
-
-/// @nodoc
-class _$MachineTearOff {
-  const _$MachineTearOff();
-
-  _Machine call(int id, NamedAPIResource item, NamedAPIResource move,
-      @JsonKey(name: 'version_group') NamedAPIResource versionGroup) {
-    return _Machine(
-      id,
-      item,
-      move,
-      versionGroup,
-    );
-  }
-
-  Machine fromJson(Map<String, Object?> json) {
-    return Machine.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $Machine = _$MachineTearOff();
 
 /// @nodoc
 mixin _$Machine {
@@ -145,9 +123,10 @@ class _$MachineCopyWithImpl<$Res> implements $MachineCopyWith<$Res> {
 }
 
 /// @nodoc
-abstract class _$MachineCopyWith<$Res> implements $MachineCopyWith<$Res> {
-  factory _$MachineCopyWith(_Machine value, $Res Function(_Machine) then) =
-      __$MachineCopyWithImpl<$Res>;
+abstract class _$$_MachineCopyWith<$Res> implements $MachineCopyWith<$Res> {
+  factory _$$_MachineCopyWith(
+          _$_Machine value, $Res Function(_$_Machine) then) =
+      __$$_MachineCopyWithImpl<$Res>;
   @override
   $Res call(
       {int id,
@@ -164,13 +143,13 @@ abstract class _$MachineCopyWith<$Res> implements $MachineCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$MachineCopyWithImpl<$Res> extends _$MachineCopyWithImpl<$Res>
-    implements _$MachineCopyWith<$Res> {
-  __$MachineCopyWithImpl(_Machine _value, $Res Function(_Machine) _then)
-      : super(_value, (v) => _then(v as _Machine));
+class __$$_MachineCopyWithImpl<$Res> extends _$MachineCopyWithImpl<$Res>
+    implements _$$_MachineCopyWith<$Res> {
+  __$$_MachineCopyWithImpl(_$_Machine _value, $Res Function(_$_Machine) _then)
+      : super(_value, (v) => _then(v as _$_Machine));
 
   @override
-  _Machine get _value => super._value as _Machine;
+  _$_Machine get _value => super._value as _$_Machine;
 
   @override
   $Res call({
@@ -179,7 +158,7 @@ class __$MachineCopyWithImpl<$Res> extends _$MachineCopyWithImpl<$Res>
     Object? move = freezed,
     Object? versionGroup = freezed,
   }) {
-    return _then(_Machine(
+    return _then(_$_Machine(
       id == freezed
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
@@ -209,33 +188,32 @@ class _$_Machine implements _Machine {
   factory _$_Machine.fromJson(Map<String, dynamic> json) =>
       _$$_MachineFromJson(json);
 
-  @override
-
   /// The identifier for this resource.
-  final int id;
   @override
+  final int id;
 
   /// The TM or HM item that corresponds to this machine.
   ///
   /// See also:
   ///
   /// [Item]
-  final NamedAPIResource item;
   @override
+  final NamedAPIResource item;
 
   /// The move that is taught by this machine.
   ///
   /// See also:
   ///
   /// [Move]
-  final NamedAPIResource move;
   @override
+  final NamedAPIResource move;
 
   /// The version group that this machine applies to.
   ///
   /// See also:
   ///
   /// [VersionGroup]
+  @override
   @JsonKey(name: 'version_group')
   final NamedAPIResource versionGroup;
 
@@ -248,7 +226,7 @@ class _$_Machine implements _Machine {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Machine &&
+            other is _$_Machine &&
             const DeepCollectionEquality().equals(other.id, id) &&
             const DeepCollectionEquality().equals(other.item, item) &&
             const DeepCollectionEquality().equals(other.move, move) &&
@@ -256,6 +234,7 @@ class _$_Machine implements _Machine {
                 .equals(other.versionGroup, versionGroup));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -266,18 +245,23 @@ class _$_Machine implements _Machine {
 
   @JsonKey(ignore: true)
   @override
-  _$MachineCopyWith<_Machine> get copyWith =>
-      __$MachineCopyWithImpl<_Machine>(this, _$identity);
+  _$$_MachineCopyWith<_$_Machine> get copyWith =>
+      __$$_MachineCopyWithImpl<_$_Machine>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_MachineToJson(this);
+    return _$$_MachineToJson(
+      this,
+    );
   }
 }
 
 abstract class _Machine implements Machine {
-  const factory _Machine(int id, NamedAPIResource item, NamedAPIResource move,
-          @JsonKey(name: 'version_group') NamedAPIResource versionGroup) =
+  const factory _Machine(
+          final int id,
+          final NamedAPIResource item,
+          final NamedAPIResource move,
+          @JsonKey(name: 'version_group') final NamedAPIResource versionGroup) =
       _$_Machine;
 
   factory _Machine.fromJson(Map<String, dynamic> json) = _$_Machine.fromJson;
@@ -313,6 +297,6 @@ abstract class _Machine implements Machine {
   NamedAPIResource get versionGroup;
   @override
   @JsonKey(ignore: true)
-  _$MachineCopyWith<_Machine> get copyWith =>
+  _$$_MachineCopyWith<_$_Machine> get copyWith =>
       throw _privateConstructorUsedError;
 }

@@ -12,65 +12,11 @@ part of 'items.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 Item _$ItemFromJson(Map<String, dynamic> json) {
   return _Item.fromJson(json);
 }
-
-/// @nodoc
-class _$ItemTearOff {
-  const _$ItemTearOff();
-
-  _Item call(
-      int id,
-      String name,
-      int cost,
-      @JsonKey(name: 'fling_power')
-          int? flingPower,
-      @JsonKey(name: 'fling_effect')
-          NamedAPIResource? flingEffect,
-      List<NamedAPIResource> attributes,
-      NamedAPIResource category,
-      @JsonKey(name: 'effect_entries')
-          List<VerboseEffect> effectEntries,
-      @JsonKey(name: 'flavor_text_entries')
-          List<VersionGroupFlavorText> flavorTextEntries,
-      @JsonKey(name: 'game_indices')
-          List<GenerationGameIndex> gameIndices,
-      List<Name> names,
-      ItemSprites sprites,
-      @JsonKey(name: 'held_by_pokemon')
-          List<ItemHolderPokemon> heldByPokemon,
-      @JsonKey(name: 'baby_trigger_for')
-          APIResource? babyTriggerFor,
-      List<MachineVersionDetail> machines) {
-    return _Item(
-      id,
-      name,
-      cost,
-      flingPower,
-      flingEffect,
-      attributes,
-      category,
-      effectEntries,
-      flavorTextEntries,
-      gameIndices,
-      names,
-      sprites,
-      heldByPokemon,
-      babyTriggerFor,
-      machines,
-    );
-  }
-
-  Item fromJson(Map<String, Object?> json) {
-    return Item.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $Item = _$ItemTearOff();
 
 /// @nodoc
 mixin _$Item {
@@ -312,9 +258,9 @@ class _$ItemCopyWithImpl<$Res> implements $ItemCopyWith<$Res> {
 }
 
 /// @nodoc
-abstract class _$ItemCopyWith<$Res> implements $ItemCopyWith<$Res> {
-  factory _$ItemCopyWith(_Item value, $Res Function(_Item) then) =
-      __$ItemCopyWithImpl<$Res>;
+abstract class _$$_ItemCopyWith<$Res> implements $ItemCopyWith<$Res> {
+  factory _$$_ItemCopyWith(_$_Item value, $Res Function(_$_Item) then) =
+      __$$_ItemCopyWithImpl<$Res>;
   @override
   $Res call(
       {int id,
@@ -351,13 +297,13 @@ abstract class _$ItemCopyWith<$Res> implements $ItemCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$ItemCopyWithImpl<$Res> extends _$ItemCopyWithImpl<$Res>
-    implements _$ItemCopyWith<$Res> {
-  __$ItemCopyWithImpl(_Item _value, $Res Function(_Item) _then)
-      : super(_value, (v) => _then(v as _Item));
+class __$$_ItemCopyWithImpl<$Res> extends _$ItemCopyWithImpl<$Res>
+    implements _$$_ItemCopyWith<$Res> {
+  __$$_ItemCopyWithImpl(_$_Item _value, $Res Function(_$_Item) _then)
+      : super(_value, (v) => _then(v as _$_Item));
 
   @override
-  _Item get _value => super._value as _Item;
+  _$_Item get _value => super._value as _$_Item;
 
   @override
   $Res call({
@@ -377,7 +323,7 @@ class __$ItemCopyWithImpl<$Res> extends _$ItemCopyWithImpl<$Res>
     Object? babyTriggerFor = freezed,
     Object? machines = freezed,
   }) {
-    return _then(_Item(
+    return _then(_$_Item(
       id == freezed
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
@@ -399,7 +345,7 @@ class __$ItemCopyWithImpl<$Res> extends _$ItemCopyWithImpl<$Res>
           : flingEffect // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource?,
       attributes == freezed
-          ? _value.attributes
+          ? _value._attributes
           : attributes // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
       category == freezed
@@ -407,19 +353,19 @@ class __$ItemCopyWithImpl<$Res> extends _$ItemCopyWithImpl<$Res>
           : category // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
       effectEntries == freezed
-          ? _value.effectEntries
+          ? _value._effectEntries
           : effectEntries // ignore: cast_nullable_to_non_nullable
               as List<VerboseEffect>,
       flavorTextEntries == freezed
-          ? _value.flavorTextEntries
+          ? _value._flavorTextEntries
           : flavorTextEntries // ignore: cast_nullable_to_non_nullable
               as List<VersionGroupFlavorText>,
       gameIndices == freezed
-          ? _value.gameIndices
+          ? _value._gameIndices
           : gameIndices // ignore: cast_nullable_to_non_nullable
               as List<GenerationGameIndex>,
       names == freezed
-          ? _value.names
+          ? _value._names
           : names // ignore: cast_nullable_to_non_nullable
               as List<Name>,
       sprites == freezed
@@ -427,7 +373,7 @@ class __$ItemCopyWithImpl<$Res> extends _$ItemCopyWithImpl<$Res>
           : sprites // ignore: cast_nullable_to_non_nullable
               as ItemSprites,
       heldByPokemon == freezed
-          ? _value.heldByPokemon
+          ? _value._heldByPokemon
           : heldByPokemon // ignore: cast_nullable_to_non_nullable
               as List<ItemHolderPokemon>,
       babyTriggerFor == freezed
@@ -435,7 +381,7 @@ class __$ItemCopyWithImpl<$Res> extends _$ItemCopyWithImpl<$Res>
           : babyTriggerFor // ignore: cast_nullable_to_non_nullable
               as APIResource?,
       machines == freezed
-          ? _value.machines
+          ? _value._machines
           : machines // ignore: cast_nullable_to_non_nullable
               as List<MachineVersionDetail>,
     ));
@@ -449,104 +395,163 @@ class _$_Item implements _Item {
       this.id,
       this.name,
       this.cost,
-      @JsonKey(name: 'fling_power') this.flingPower,
-      @JsonKey(name: 'fling_effect') this.flingEffect,
-      this.attributes,
+      @JsonKey(name: 'fling_power')
+          this.flingPower,
+      @JsonKey(name: 'fling_effect')
+          this.flingEffect,
+      final List<NamedAPIResource> attributes,
       this.category,
-      @JsonKey(name: 'effect_entries') this.effectEntries,
-      @JsonKey(name: 'flavor_text_entries') this.flavorTextEntries,
-      @JsonKey(name: 'game_indices') this.gameIndices,
-      this.names,
+      @JsonKey(name: 'effect_entries')
+          final List<VerboseEffect> effectEntries,
+      @JsonKey(name: 'flavor_text_entries')
+          final List<VersionGroupFlavorText> flavorTextEntries,
+      @JsonKey(name: 'game_indices')
+          final List<GenerationGameIndex> gameIndices,
+      final List<Name> names,
       this.sprites,
-      @JsonKey(name: 'held_by_pokemon') this.heldByPokemon,
-      @JsonKey(name: 'baby_trigger_for') this.babyTriggerFor,
-      this.machines);
+      @JsonKey(name: 'held_by_pokemon')
+          final List<ItemHolderPokemon> heldByPokemon,
+      @JsonKey(name: 'baby_trigger_for')
+          this.babyTriggerFor,
+      final List<MachineVersionDetail> machines)
+      : _attributes = attributes,
+        _effectEntries = effectEntries,
+        _flavorTextEntries = flavorTextEntries,
+        _gameIndices = gameIndices,
+        _names = names,
+        _heldByPokemon = heldByPokemon,
+        _machines = machines;
 
   factory _$_Item.fromJson(Map<String, dynamic> json) => _$$_ItemFromJson(json);
 
-  @override
-
   /// The identifier for this resource.
-  final int id;
   @override
+  final int id;
 
   /// The name for this resource.
-  final String name;
   @override
+  final String name;
 
   /// The price of this item in stores.
-  final int cost;
   @override
+  final int cost;
 
   /// The power of the move Fling when used with this item.
+  @override
   @JsonKey(name: 'fling_power')
   final int? flingPower;
-  @override
 
   /// The effect of the move Fling when used with this item.
   ///
   /// See also:
   ///
   /// [ItemFlingEffect]
+  @override
   @JsonKey(name: 'fling_effect')
   final NamedAPIResource? flingEffect;
-  @override
 
   /// A list of attributes this item has.
   ///
   /// See also:
   ///
   /// [ItemAttribute]
-  final List<NamedAPIResource> attributes;
+  final List<NamedAPIResource> _attributes;
+
+  /// A list of attributes this item has.
+  ///
+  /// See also:
+  ///
+  /// [ItemAttribute]
   @override
+  List<NamedAPIResource> get attributes {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_attributes);
+  }
 
   /// The category of items this item falls into.
   ///
   /// See also:
   ///
   /// [ItemCategory]
-  final NamedAPIResource category;
   @override
+  final NamedAPIResource category;
 
   /// The effect of this ability listed in different languages.
-  @JsonKey(name: 'effect_entries')
-  final List<VerboseEffect> effectEntries;
+  final List<VerboseEffect> _effectEntries;
+
+  /// The effect of this ability listed in different languages.
   @override
+  @JsonKey(name: 'effect_entries')
+  List<VerboseEffect> get effectEntries {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_effectEntries);
+  }
 
   /// The flavor text of this ability listed in different languages.
-  @JsonKey(name: 'flavor_text_entries')
-  final List<VersionGroupFlavorText> flavorTextEntries;
+  final List<VersionGroupFlavorText> _flavorTextEntries;
+
+  /// The flavor text of this ability listed in different languages.
   @override
+  @JsonKey(name: 'flavor_text_entries')
+  List<VersionGroupFlavorText> get flavorTextEntries {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_flavorTextEntries);
+  }
 
   /// A list of game indices relevent to this item by generation.
-  @JsonKey(name: 'game_indices')
-  final List<GenerationGameIndex> gameIndices;
+  final List<GenerationGameIndex> _gameIndices;
+
+  /// A list of game indices relevent to this item by generation.
   @override
+  @JsonKey(name: 'game_indices')
+  List<GenerationGameIndex> get gameIndices {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_gameIndices);
+  }
 
   /// The name of this item listed in different languages.
-  final List<Name> names;
+  final List<Name> _names;
+
+  /// The name of this item listed in different languages.
   @override
+  List<Name> get names {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_names);
+  }
 
   /// A set of sprites used to depict this item in the game.
-  final ItemSprites sprites;
   @override
+  final ItemSprites sprites;
 
   /// A list of Pokémon that might be found in the wild holding this item
-  @JsonKey(name: 'held_by_pokemon')
-  final List<ItemHolderPokemon> heldByPokemon;
+  final List<ItemHolderPokemon> _heldByPokemon;
+
+  /// A list of Pokémon that might be found in the wild holding this item
   @override
+  @JsonKey(name: 'held_by_pokemon')
+  List<ItemHolderPokemon> get heldByPokemon {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_heldByPokemon);
+  }
 
   /// An evolution chain this item requires to produce a bay during mating.
   ///
   /// See also:
   ///
   /// [EvolutionChain]
+  @override
   @JsonKey(name: 'baby_trigger_for')
   final APIResource? babyTriggerFor;
-  @override
 
   /// A list of the machines related to this item.
-  final List<MachineVersionDetail> machines;
+  final List<MachineVersionDetail> _machines;
+
+  /// A list of the machines related to this item.
+  @override
+  List<MachineVersionDetail> get machines {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_machines);
+  }
 
   @override
   String toString() {
@@ -557,7 +562,7 @@ class _$_Item implements _Item {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Item &&
+            other is _$_Item &&
             const DeepCollectionEquality().equals(other.id, id) &&
             const DeepCollectionEquality().equals(other.name, name) &&
             const DeepCollectionEquality().equals(other.cost, cost) &&
@@ -566,23 +571,24 @@ class _$_Item implements _Item {
             const DeepCollectionEquality()
                 .equals(other.flingEffect, flingEffect) &&
             const DeepCollectionEquality()
-                .equals(other.attributes, attributes) &&
+                .equals(other._attributes, _attributes) &&
             const DeepCollectionEquality().equals(other.category, category) &&
             const DeepCollectionEquality()
-                .equals(other.effectEntries, effectEntries) &&
+                .equals(other._effectEntries, _effectEntries) &&
             const DeepCollectionEquality()
-                .equals(other.flavorTextEntries, flavorTextEntries) &&
+                .equals(other._flavorTextEntries, _flavorTextEntries) &&
             const DeepCollectionEquality()
-                .equals(other.gameIndices, gameIndices) &&
-            const DeepCollectionEquality().equals(other.names, names) &&
+                .equals(other._gameIndices, _gameIndices) &&
+            const DeepCollectionEquality().equals(other._names, _names) &&
             const DeepCollectionEquality().equals(other.sprites, sprites) &&
             const DeepCollectionEquality()
-                .equals(other.heldByPokemon, heldByPokemon) &&
+                .equals(other._heldByPokemon, _heldByPokemon) &&
             const DeepCollectionEquality()
                 .equals(other.babyTriggerFor, babyTriggerFor) &&
-            const DeepCollectionEquality().equals(other.machines, machines));
+            const DeepCollectionEquality().equals(other._machines, _machines));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -591,52 +597,54 @@ class _$_Item implements _Item {
       const DeepCollectionEquality().hash(cost),
       const DeepCollectionEquality().hash(flingPower),
       const DeepCollectionEquality().hash(flingEffect),
-      const DeepCollectionEquality().hash(attributes),
+      const DeepCollectionEquality().hash(_attributes),
       const DeepCollectionEquality().hash(category),
-      const DeepCollectionEquality().hash(effectEntries),
-      const DeepCollectionEquality().hash(flavorTextEntries),
-      const DeepCollectionEquality().hash(gameIndices),
-      const DeepCollectionEquality().hash(names),
+      const DeepCollectionEquality().hash(_effectEntries),
+      const DeepCollectionEquality().hash(_flavorTextEntries),
+      const DeepCollectionEquality().hash(_gameIndices),
+      const DeepCollectionEquality().hash(_names),
       const DeepCollectionEquality().hash(sprites),
-      const DeepCollectionEquality().hash(heldByPokemon),
+      const DeepCollectionEquality().hash(_heldByPokemon),
       const DeepCollectionEquality().hash(babyTriggerFor),
-      const DeepCollectionEquality().hash(machines));
+      const DeepCollectionEquality().hash(_machines));
 
   @JsonKey(ignore: true)
   @override
-  _$ItemCopyWith<_Item> get copyWith =>
-      __$ItemCopyWithImpl<_Item>(this, _$identity);
+  _$$_ItemCopyWith<_$_Item> get copyWith =>
+      __$$_ItemCopyWithImpl<_$_Item>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_ItemToJson(this);
+    return _$$_ItemToJson(
+      this,
+    );
   }
 }
 
 abstract class _Item implements Item {
   const factory _Item(
-      int id,
-      String name,
-      int cost,
+      final int id,
+      final String name,
+      final int cost,
       @JsonKey(name: 'fling_power')
-          int? flingPower,
+          final int? flingPower,
       @JsonKey(name: 'fling_effect')
-          NamedAPIResource? flingEffect,
-      List<NamedAPIResource> attributes,
-      NamedAPIResource category,
+          final NamedAPIResource? flingEffect,
+      final List<NamedAPIResource> attributes,
+      final NamedAPIResource category,
       @JsonKey(name: 'effect_entries')
-          List<VerboseEffect> effectEntries,
+          final List<VerboseEffect> effectEntries,
       @JsonKey(name: 'flavor_text_entries')
-          List<VersionGroupFlavorText> flavorTextEntries,
+          final List<VersionGroupFlavorText> flavorTextEntries,
       @JsonKey(name: 'game_indices')
-          List<GenerationGameIndex> gameIndices,
-      List<Name> names,
-      ItemSprites sprites,
+          final List<GenerationGameIndex> gameIndices,
+      final List<Name> names,
+      final ItemSprites sprites,
       @JsonKey(name: 'held_by_pokemon')
-          List<ItemHolderPokemon> heldByPokemon,
+          final List<ItemHolderPokemon> heldByPokemon,
       @JsonKey(name: 'baby_trigger_for')
-          APIResource? babyTriggerFor,
-      List<MachineVersionDetail> machines) = _$_Item;
+          final APIResource? babyTriggerFor,
+      final List<MachineVersionDetail> machines) = _$_Item;
 
   factory _Item.fromJson(Map<String, dynamic> json) = _$_Item.fromJson;
 
@@ -725,30 +733,12 @@ abstract class _Item implements Item {
   List<MachineVersionDetail> get machines;
   @override
   @JsonKey(ignore: true)
-  _$ItemCopyWith<_Item> get copyWith => throw _privateConstructorUsedError;
+  _$$_ItemCopyWith<_$_Item> get copyWith => throw _privateConstructorUsedError;
 }
 
 ItemSprites _$ItemSpritesFromJson(Map<String, dynamic> json) {
   return _ItemSprites.fromJson(json);
 }
-
-/// @nodoc
-class _$ItemSpritesTearOff {
-  const _$ItemSpritesTearOff();
-
-  _ItemSprites call(@JsonKey(name: 'default') String? value) {
-    return _ItemSprites(
-      value,
-    );
-  }
-
-  ItemSprites fromJson(Map<String, Object?> json) {
-    return ItemSprites.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $ItemSprites = _$ItemSpritesTearOff();
 
 /// @nodoc
 mixin _$ItemSprites {
@@ -793,30 +783,30 @@ class _$ItemSpritesCopyWithImpl<$Res> implements $ItemSpritesCopyWith<$Res> {
 }
 
 /// @nodoc
-abstract class _$ItemSpritesCopyWith<$Res>
+abstract class _$$_ItemSpritesCopyWith<$Res>
     implements $ItemSpritesCopyWith<$Res> {
-  factory _$ItemSpritesCopyWith(
-          _ItemSprites value, $Res Function(_ItemSprites) then) =
-      __$ItemSpritesCopyWithImpl<$Res>;
+  factory _$$_ItemSpritesCopyWith(
+          _$_ItemSprites value, $Res Function(_$_ItemSprites) then) =
+      __$$_ItemSpritesCopyWithImpl<$Res>;
   @override
   $Res call({@JsonKey(name: 'default') String? value});
 }
 
 /// @nodoc
-class __$ItemSpritesCopyWithImpl<$Res> extends _$ItemSpritesCopyWithImpl<$Res>
-    implements _$ItemSpritesCopyWith<$Res> {
-  __$ItemSpritesCopyWithImpl(
-      _ItemSprites _value, $Res Function(_ItemSprites) _then)
-      : super(_value, (v) => _then(v as _ItemSprites));
+class __$$_ItemSpritesCopyWithImpl<$Res> extends _$ItemSpritesCopyWithImpl<$Res>
+    implements _$$_ItemSpritesCopyWith<$Res> {
+  __$$_ItemSpritesCopyWithImpl(
+      _$_ItemSprites _value, $Res Function(_$_ItemSprites) _then)
+      : super(_value, (v) => _then(v as _$_ItemSprites));
 
   @override
-  _ItemSprites get _value => super._value as _ItemSprites;
+  _$_ItemSprites get _value => super._value as _$_ItemSprites;
 
   @override
   $Res call({
     Object? value = freezed,
   }) {
-    return _then(_ItemSprites(
+    return _then(_$_ItemSprites(
       value == freezed
           ? _value.value
           : value // ignore: cast_nullable_to_non_nullable
@@ -833,10 +823,9 @@ class _$_ItemSprites implements _ItemSprites {
   factory _$_ItemSprites.fromJson(Map<String, dynamic> json) =>
       _$$_ItemSpritesFromJson(json);
 
-  @override
-
   /// The default depiction of this item.
 // Since default is a Dart keyword we have to use this instead
+  @override
   @JsonKey(name: 'default')
   final String? value;
 
@@ -849,27 +838,30 @@ class _$_ItemSprites implements _ItemSprites {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _ItemSprites &&
+            other is _$_ItemSprites &&
             const DeepCollectionEquality().equals(other.value, value));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode =>
       Object.hash(runtimeType, const DeepCollectionEquality().hash(value));
 
   @JsonKey(ignore: true)
   @override
-  _$ItemSpritesCopyWith<_ItemSprites> get copyWith =>
-      __$ItemSpritesCopyWithImpl<_ItemSprites>(this, _$identity);
+  _$$_ItemSpritesCopyWith<_$_ItemSprites> get copyWith =>
+      __$$_ItemSpritesCopyWithImpl<_$_ItemSprites>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_ItemSpritesToJson(this);
+    return _$$_ItemSpritesToJson(
+      this,
+    );
   }
 }
 
 abstract class _ItemSprites implements ItemSprites {
-  const factory _ItemSprites(@JsonKey(name: 'default') String? value) =
+  const factory _ItemSprites(@JsonKey(name: 'default') final String? value) =
       _$_ItemSprites;
 
   factory _ItemSprites.fromJson(Map<String, dynamic> json) =
@@ -883,35 +875,13 @@ abstract class _ItemSprites implements ItemSprites {
   String? get value;
   @override
   @JsonKey(ignore: true)
-  _$ItemSpritesCopyWith<_ItemSprites> get copyWith =>
+  _$$_ItemSpritesCopyWith<_$_ItemSprites> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 ItemHolderPokemon _$ItemHolderPokemonFromJson(Map<String, dynamic> json) {
   return _ItemHolderPokemon.fromJson(json);
 }
-
-/// @nodoc
-class _$ItemHolderPokemonTearOff {
-  const _$ItemHolderPokemonTearOff();
-
-  _ItemHolderPokemon call(
-      NamedAPIResource pokemon,
-      @JsonKey(name: 'version_details')
-          List<ItemHolderPokemonVersionDetail> versionDetails) {
-    return _ItemHolderPokemon(
-      pokemon,
-      versionDetails,
-    );
-  }
-
-  ItemHolderPokemon fromJson(Map<String, Object?> json) {
-    return ItemHolderPokemon.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $ItemHolderPokemon = _$ItemHolderPokemonTearOff();
 
 /// @nodoc
 mixin _$ItemHolderPokemon {
@@ -981,11 +951,11 @@ class _$ItemHolderPokemonCopyWithImpl<$Res>
 }
 
 /// @nodoc
-abstract class _$ItemHolderPokemonCopyWith<$Res>
+abstract class _$$_ItemHolderPokemonCopyWith<$Res>
     implements $ItemHolderPokemonCopyWith<$Res> {
-  factory _$ItemHolderPokemonCopyWith(
-          _ItemHolderPokemon value, $Res Function(_ItemHolderPokemon) then) =
-      __$ItemHolderPokemonCopyWithImpl<$Res>;
+  factory _$$_ItemHolderPokemonCopyWith(_$_ItemHolderPokemon value,
+          $Res Function(_$_ItemHolderPokemon) then) =
+      __$$_ItemHolderPokemonCopyWithImpl<$Res>;
   @override
   $Res call(
       {NamedAPIResource pokemon,
@@ -997,28 +967,28 @@ abstract class _$ItemHolderPokemonCopyWith<$Res>
 }
 
 /// @nodoc
-class __$ItemHolderPokemonCopyWithImpl<$Res>
+class __$$_ItemHolderPokemonCopyWithImpl<$Res>
     extends _$ItemHolderPokemonCopyWithImpl<$Res>
-    implements _$ItemHolderPokemonCopyWith<$Res> {
-  __$ItemHolderPokemonCopyWithImpl(
-      _ItemHolderPokemon _value, $Res Function(_ItemHolderPokemon) _then)
-      : super(_value, (v) => _then(v as _ItemHolderPokemon));
+    implements _$$_ItemHolderPokemonCopyWith<$Res> {
+  __$$_ItemHolderPokemonCopyWithImpl(
+      _$_ItemHolderPokemon _value, $Res Function(_$_ItemHolderPokemon) _then)
+      : super(_value, (v) => _then(v as _$_ItemHolderPokemon));
 
   @override
-  _ItemHolderPokemon get _value => super._value as _ItemHolderPokemon;
+  _$_ItemHolderPokemon get _value => super._value as _$_ItemHolderPokemon;
 
   @override
   $Res call({
     Object? pokemon = freezed,
     Object? versionDetails = freezed,
   }) {
-    return _then(_ItemHolderPokemon(
+    return _then(_$_ItemHolderPokemon(
       pokemon == freezed
           ? _value.pokemon
           : pokemon // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
       versionDetails == freezed
-          ? _value.versionDetails
+          ? _value._versionDetails
           : versionDetails // ignore: cast_nullable_to_non_nullable
               as List<ItemHolderPokemonVersionDetail>,
     ));
@@ -1029,24 +999,32 @@ class __$ItemHolderPokemonCopyWithImpl<$Res>
 @JsonSerializable()
 class _$_ItemHolderPokemon implements _ItemHolderPokemon {
   const _$_ItemHolderPokemon(
-      this.pokemon, @JsonKey(name: 'version_details') this.versionDetails);
+      this.pokemon,
+      @JsonKey(name: 'version_details')
+          final List<ItemHolderPokemonVersionDetail> versionDetails)
+      : _versionDetails = versionDetails;
 
   factory _$_ItemHolderPokemon.fromJson(Map<String, dynamic> json) =>
       _$$_ItemHolderPokemonFromJson(json);
-
-  @override
 
   /// The Pokémon that holds this item.
   ///
   /// See also:
   ///
   /// [Pokemon]
-  final NamedAPIResource pokemon;
   @override
+  final NamedAPIResource pokemon;
 
   /// The details for the version that this item is held in by the Pokémon.
+  final List<ItemHolderPokemonVersionDetail> _versionDetails;
+
+  /// The details for the version that this item is held in by the Pokémon.
+  @override
   @JsonKey(name: 'version_details')
-  final List<ItemHolderPokemonVersionDetail> versionDetails;
+  List<ItemHolderPokemonVersionDetail> get versionDetails {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_versionDetails);
+  }
 
   @override
   String toString() {
@@ -1057,34 +1035,38 @@ class _$_ItemHolderPokemon implements _ItemHolderPokemon {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _ItemHolderPokemon &&
+            other is _$_ItemHolderPokemon &&
             const DeepCollectionEquality().equals(other.pokemon, pokemon) &&
             const DeepCollectionEquality()
-                .equals(other.versionDetails, versionDetails));
+                .equals(other._versionDetails, _versionDetails));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
       const DeepCollectionEquality().hash(pokemon),
-      const DeepCollectionEquality().hash(versionDetails));
+      const DeepCollectionEquality().hash(_versionDetails));
 
   @JsonKey(ignore: true)
   @override
-  _$ItemHolderPokemonCopyWith<_ItemHolderPokemon> get copyWith =>
-      __$ItemHolderPokemonCopyWithImpl<_ItemHolderPokemon>(this, _$identity);
+  _$$_ItemHolderPokemonCopyWith<_$_ItemHolderPokemon> get copyWith =>
+      __$$_ItemHolderPokemonCopyWithImpl<_$_ItemHolderPokemon>(
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_ItemHolderPokemonToJson(this);
+    return _$$_ItemHolderPokemonToJson(
+      this,
+    );
   }
 }
 
 abstract class _ItemHolderPokemon implements ItemHolderPokemon {
   const factory _ItemHolderPokemon(
-          NamedAPIResource pokemon,
+          final NamedAPIResource pokemon,
           @JsonKey(name: 'version_details')
-              List<ItemHolderPokemonVersionDetail> versionDetails) =
+              final List<ItemHolderPokemonVersionDetail> versionDetails) =
       _$_ItemHolderPokemon;
 
   factory _ItemHolderPokemon.fromJson(Map<String, dynamic> json) =
@@ -1105,7 +1087,7 @@ abstract class _ItemHolderPokemon implements ItemHolderPokemon {
   List<ItemHolderPokemonVersionDetail> get versionDetails;
   @override
   @JsonKey(ignore: true)
-  _$ItemHolderPokemonCopyWith<_ItemHolderPokemon> get copyWith =>
+  _$$_ItemHolderPokemonCopyWith<_$_ItemHolderPokemon> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
@@ -1113,26 +1095,6 @@ ItemHolderPokemonVersionDetail _$ItemHolderPokemonVersionDetailFromJson(
     Map<String, dynamic> json) {
   return _ItemHolderPokemonVersionDetail.fromJson(json);
 }
-
-/// @nodoc
-class _$ItemHolderPokemonVersionDetailTearOff {
-  const _$ItemHolderPokemonVersionDetailTearOff();
-
-  _ItemHolderPokemonVersionDetail call(int rarity, NamedAPIResource version) {
-    return _ItemHolderPokemonVersionDetail(
-      rarity,
-      version,
-    );
-  }
-
-  ItemHolderPokemonVersionDetail fromJson(Map<String, Object?> json) {
-    return ItemHolderPokemonVersionDetail.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $ItemHolderPokemonVersionDetail =
-    _$ItemHolderPokemonVersionDetailTearOff();
 
 /// @nodoc
 mixin _$ItemHolderPokemonVersionDetail {
@@ -1198,12 +1160,12 @@ class _$ItemHolderPokemonVersionDetailCopyWithImpl<$Res>
 }
 
 /// @nodoc
-abstract class _$ItemHolderPokemonVersionDetailCopyWith<$Res>
+abstract class _$$_ItemHolderPokemonVersionDetailCopyWith<$Res>
     implements $ItemHolderPokemonVersionDetailCopyWith<$Res> {
-  factory _$ItemHolderPokemonVersionDetailCopyWith(
-          _ItemHolderPokemonVersionDetail value,
-          $Res Function(_ItemHolderPokemonVersionDetail) then) =
-      __$ItemHolderPokemonVersionDetailCopyWithImpl<$Res>;
+  factory _$$_ItemHolderPokemonVersionDetailCopyWith(
+          _$_ItemHolderPokemonVersionDetail value,
+          $Res Function(_$_ItemHolderPokemonVersionDetail) then) =
+      __$$_ItemHolderPokemonVersionDetailCopyWithImpl<$Res>;
   @override
   $Res call({int rarity, NamedAPIResource version});
 
@@ -1212,24 +1174,24 @@ abstract class _$ItemHolderPokemonVersionDetailCopyWith<$Res>
 }
 
 /// @nodoc
-class __$ItemHolderPokemonVersionDetailCopyWithImpl<$Res>
+class __$$_ItemHolderPokemonVersionDetailCopyWithImpl<$Res>
     extends _$ItemHolderPokemonVersionDetailCopyWithImpl<$Res>
-    implements _$ItemHolderPokemonVersionDetailCopyWith<$Res> {
-  __$ItemHolderPokemonVersionDetailCopyWithImpl(
-      _ItemHolderPokemonVersionDetail _value,
-      $Res Function(_ItemHolderPokemonVersionDetail) _then)
-      : super(_value, (v) => _then(v as _ItemHolderPokemonVersionDetail));
+    implements _$$_ItemHolderPokemonVersionDetailCopyWith<$Res> {
+  __$$_ItemHolderPokemonVersionDetailCopyWithImpl(
+      _$_ItemHolderPokemonVersionDetail _value,
+      $Res Function(_$_ItemHolderPokemonVersionDetail) _then)
+      : super(_value, (v) => _then(v as _$_ItemHolderPokemonVersionDetail));
 
   @override
-  _ItemHolderPokemonVersionDetail get _value =>
-      super._value as _ItemHolderPokemonVersionDetail;
+  _$_ItemHolderPokemonVersionDetail get _value =>
+      super._value as _$_ItemHolderPokemonVersionDetail;
 
   @override
   $Res call({
     Object? rarity = freezed,
     Object? version = freezed,
   }) {
-    return _then(_ItemHolderPokemonVersionDetail(
+    return _then(_$_ItemHolderPokemonVersionDetail(
       rarity == freezed
           ? _value.rarity
           : rarity // ignore: cast_nullable_to_non_nullable
@@ -1252,17 +1214,16 @@ class _$_ItemHolderPokemonVersionDetail
           Map<String, dynamic> json) =>
       _$$_ItemHolderPokemonVersionDetailFromJson(json);
 
-  @override
-
   /// How often this Pokémon holds this item in this version.
-  final int rarity;
   @override
+  final int rarity;
 
   /// The version that this item is held in by the Pokémon.
   ///
   /// See also:
   ///
   /// [Version]
+  @override
   final NamedAPIResource version;
 
   @override
@@ -1274,11 +1235,12 @@ class _$_ItemHolderPokemonVersionDetail
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _ItemHolderPokemonVersionDetail &&
+            other is _$_ItemHolderPokemonVersionDetail &&
             const DeepCollectionEquality().equals(other.rarity, rarity) &&
             const DeepCollectionEquality().equals(other.version, version));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -1287,20 +1249,23 @@ class _$_ItemHolderPokemonVersionDetail
 
   @JsonKey(ignore: true)
   @override
-  _$ItemHolderPokemonVersionDetailCopyWith<_ItemHolderPokemonVersionDetail>
-      get copyWith => __$ItemHolderPokemonVersionDetailCopyWithImpl<
-          _ItemHolderPokemonVersionDetail>(this, _$identity);
+  _$$_ItemHolderPokemonVersionDetailCopyWith<_$_ItemHolderPokemonVersionDetail>
+      get copyWith => __$$_ItemHolderPokemonVersionDetailCopyWithImpl<
+          _$_ItemHolderPokemonVersionDetail>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_ItemHolderPokemonVersionDetailToJson(this);
+    return _$$_ItemHolderPokemonVersionDetailToJson(
+      this,
+    );
   }
 }
 
 abstract class _ItemHolderPokemonVersionDetail
     implements ItemHolderPokemonVersionDetail {
   const factory _ItemHolderPokemonVersionDetail(
-      int rarity, NamedAPIResource version) = _$_ItemHolderPokemonVersionDetail;
+          final int rarity, final NamedAPIResource version) =
+      _$_ItemHolderPokemonVersionDetail;
 
   factory _ItemHolderPokemonVersionDetail.fromJson(Map<String, dynamic> json) =
       _$_ItemHolderPokemonVersionDetail.fromJson;
@@ -1319,36 +1284,13 @@ abstract class _ItemHolderPokemonVersionDetail
   NamedAPIResource get version;
   @override
   @JsonKey(ignore: true)
-  _$ItemHolderPokemonVersionDetailCopyWith<_ItemHolderPokemonVersionDetail>
+  _$$_ItemHolderPokemonVersionDetailCopyWith<_$_ItemHolderPokemonVersionDetail>
       get copyWith => throw _privateConstructorUsedError;
 }
 
 ItemAttribute _$ItemAttributeFromJson(Map<String, dynamic> json) {
   return _ItemAttribute.fromJson(json);
 }
-
-/// @nodoc
-class _$ItemAttributeTearOff {
-  const _$ItemAttributeTearOff();
-
-  _ItemAttribute call(int id, String name, List<NamedAPIResource> items,
-      List<Name> names, List<Description> descriptions) {
-    return _ItemAttribute(
-      id,
-      name,
-      items,
-      names,
-      descriptions,
-    );
-  }
-
-  ItemAttribute fromJson(Map<String, Object?> json) {
-    return ItemAttribute.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $ItemAttribute = _$ItemAttributeTearOff();
 
 /// @nodoc
 mixin _$ItemAttribute {
@@ -1433,11 +1375,11 @@ class _$ItemAttributeCopyWithImpl<$Res>
 }
 
 /// @nodoc
-abstract class _$ItemAttributeCopyWith<$Res>
+abstract class _$$_ItemAttributeCopyWith<$Res>
     implements $ItemAttributeCopyWith<$Res> {
-  factory _$ItemAttributeCopyWith(
-          _ItemAttribute value, $Res Function(_ItemAttribute) then) =
-      __$ItemAttributeCopyWithImpl<$Res>;
+  factory _$$_ItemAttributeCopyWith(
+          _$_ItemAttribute value, $Res Function(_$_ItemAttribute) then) =
+      __$$_ItemAttributeCopyWithImpl<$Res>;
   @override
   $Res call(
       {int id,
@@ -1448,15 +1390,15 @@ abstract class _$ItemAttributeCopyWith<$Res>
 }
 
 /// @nodoc
-class __$ItemAttributeCopyWithImpl<$Res>
+class __$$_ItemAttributeCopyWithImpl<$Res>
     extends _$ItemAttributeCopyWithImpl<$Res>
-    implements _$ItemAttributeCopyWith<$Res> {
-  __$ItemAttributeCopyWithImpl(
-      _ItemAttribute _value, $Res Function(_ItemAttribute) _then)
-      : super(_value, (v) => _then(v as _ItemAttribute));
+    implements _$$_ItemAttributeCopyWith<$Res> {
+  __$$_ItemAttributeCopyWithImpl(
+      _$_ItemAttribute _value, $Res Function(_$_ItemAttribute) _then)
+      : super(_value, (v) => _then(v as _$_ItemAttribute));
 
   @override
-  _ItemAttribute get _value => super._value as _ItemAttribute;
+  _$_ItemAttribute get _value => super._value as _$_ItemAttribute;
 
   @override
   $Res call({
@@ -1466,7 +1408,7 @@ class __$ItemAttributeCopyWithImpl<$Res>
     Object? names = freezed,
     Object? descriptions = freezed,
   }) {
-    return _then(_ItemAttribute(
+    return _then(_$_ItemAttribute(
       id == freezed
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
@@ -1476,15 +1418,15 @@ class __$ItemAttributeCopyWithImpl<$Res>
           : name // ignore: cast_nullable_to_non_nullable
               as String,
       items == freezed
-          ? _value.items
+          ? _value._items
           : items // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
       names == freezed
-          ? _value.names
+          ? _value._names
           : names // ignore: cast_nullable_to_non_nullable
               as List<Name>,
       descriptions == freezed
-          ? _value.descriptions
+          ? _value._descriptions
           : descriptions // ignore: cast_nullable_to_non_nullable
               as List<Description>,
     ));
@@ -1494,36 +1436,60 @@ class __$ItemAttributeCopyWithImpl<$Res>
 /// @nodoc
 @JsonSerializable()
 class _$_ItemAttribute implements _ItemAttribute {
-  const _$_ItemAttribute(
-      this.id, this.name, this.items, this.names, this.descriptions);
+  const _$_ItemAttribute(this.id, this.name, final List<NamedAPIResource> items,
+      final List<Name> names, final List<Description> descriptions)
+      : _items = items,
+        _names = names,
+        _descriptions = descriptions;
 
   factory _$_ItemAttribute.fromJson(Map<String, dynamic> json) =>
       _$$_ItemAttributeFromJson(json);
 
-  @override
-
   /// The identifier for this resource.
-  final int id;
   @override
+  final int id;
 
   /// The name for this resource.
-  final String name;
   @override
+  final String name;
 
   /// A list of items that have this attribute.
   ///
   /// See also:
   ///
   /// [Item]
-  final List<NamedAPIResource> items;
+  final List<NamedAPIResource> _items;
+
+  /// A list of items that have this attribute.
+  ///
+  /// See also:
+  ///
+  /// [Item]
   @override
+  List<NamedAPIResource> get items {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_items);
+  }
 
   /// The name of this item attribute listed in different languages.
-  final List<Name> names;
+  final List<Name> _names;
+
+  /// The name of this item attribute listed in different languages.
   @override
+  List<Name> get names {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_names);
+  }
 
   /// The description of this item attribute listed in different languages.
-  final List<Description> descriptions;
+  final List<Description> _descriptions;
+
+  /// The description of this item attribute listed in different languages.
+  @override
+  List<Description> get descriptions {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_descriptions);
+  }
 
   @override
   String toString() {
@@ -1534,42 +1500,45 @@ class _$_ItemAttribute implements _ItemAttribute {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _ItemAttribute &&
+            other is _$_ItemAttribute &&
             const DeepCollectionEquality().equals(other.id, id) &&
             const DeepCollectionEquality().equals(other.name, name) &&
-            const DeepCollectionEquality().equals(other.items, items) &&
-            const DeepCollectionEquality().equals(other.names, names) &&
+            const DeepCollectionEquality().equals(other._items, _items) &&
+            const DeepCollectionEquality().equals(other._names, _names) &&
             const DeepCollectionEquality()
-                .equals(other.descriptions, descriptions));
+                .equals(other._descriptions, _descriptions));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
       const DeepCollectionEquality().hash(id),
       const DeepCollectionEquality().hash(name),
-      const DeepCollectionEquality().hash(items),
-      const DeepCollectionEquality().hash(names),
-      const DeepCollectionEquality().hash(descriptions));
+      const DeepCollectionEquality().hash(_items),
+      const DeepCollectionEquality().hash(_names),
+      const DeepCollectionEquality().hash(_descriptions));
 
   @JsonKey(ignore: true)
   @override
-  _$ItemAttributeCopyWith<_ItemAttribute> get copyWith =>
-      __$ItemAttributeCopyWithImpl<_ItemAttribute>(this, _$identity);
+  _$$_ItemAttributeCopyWith<_$_ItemAttribute> get copyWith =>
+      __$$_ItemAttributeCopyWithImpl<_$_ItemAttribute>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_ItemAttributeToJson(this);
+    return _$$_ItemAttributeToJson(
+      this,
+    );
   }
 }
 
 abstract class _ItemAttribute implements ItemAttribute {
   const factory _ItemAttribute(
-      int id,
-      String name,
-      List<NamedAPIResource> items,
-      List<Name> names,
-      List<Description> descriptions) = _$_ItemAttribute;
+      final int id,
+      final String name,
+      final List<NamedAPIResource> items,
+      final List<Name> names,
+      final List<Description> descriptions) = _$_ItemAttribute;
 
   factory _ItemAttribute.fromJson(Map<String, dynamic> json) =
       _$_ItemAttribute.fromJson;
@@ -1600,36 +1569,13 @@ abstract class _ItemAttribute implements ItemAttribute {
   List<Description> get descriptions;
   @override
   @JsonKey(ignore: true)
-  _$ItemAttributeCopyWith<_ItemAttribute> get copyWith =>
+  _$$_ItemAttributeCopyWith<_$_ItemAttribute> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 ItemCategory _$ItemCategoryFromJson(Map<String, dynamic> json) {
   return _ItemCategory.fromJson(json);
 }
-
-/// @nodoc
-class _$ItemCategoryTearOff {
-  const _$ItemCategoryTearOff();
-
-  _ItemCategory call(int id, String name, List<NamedAPIResource> items,
-      List<Name> names, NamedAPIResource pocket) {
-    return _ItemCategory(
-      id,
-      name,
-      items,
-      names,
-      pocket,
-    );
-  }
-
-  ItemCategory fromJson(Map<String, Object?> json) {
-    return ItemCategory.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $ItemCategory = _$ItemCategoryTearOff();
 
 /// @nodoc
 mixin _$ItemCategory {
@@ -1726,11 +1672,11 @@ class _$ItemCategoryCopyWithImpl<$Res> implements $ItemCategoryCopyWith<$Res> {
 }
 
 /// @nodoc
-abstract class _$ItemCategoryCopyWith<$Res>
+abstract class _$$_ItemCategoryCopyWith<$Res>
     implements $ItemCategoryCopyWith<$Res> {
-  factory _$ItemCategoryCopyWith(
-          _ItemCategory value, $Res Function(_ItemCategory) then) =
-      __$ItemCategoryCopyWithImpl<$Res>;
+  factory _$$_ItemCategoryCopyWith(
+          _$_ItemCategory value, $Res Function(_$_ItemCategory) then) =
+      __$$_ItemCategoryCopyWithImpl<$Res>;
   @override
   $Res call(
       {int id,
@@ -1744,14 +1690,15 @@ abstract class _$ItemCategoryCopyWith<$Res>
 }
 
 /// @nodoc
-class __$ItemCategoryCopyWithImpl<$Res> extends _$ItemCategoryCopyWithImpl<$Res>
-    implements _$ItemCategoryCopyWith<$Res> {
-  __$ItemCategoryCopyWithImpl(
-      _ItemCategory _value, $Res Function(_ItemCategory) _then)
-      : super(_value, (v) => _then(v as _ItemCategory));
+class __$$_ItemCategoryCopyWithImpl<$Res>
+    extends _$ItemCategoryCopyWithImpl<$Res>
+    implements _$$_ItemCategoryCopyWith<$Res> {
+  __$$_ItemCategoryCopyWithImpl(
+      _$_ItemCategory _value, $Res Function(_$_ItemCategory) _then)
+      : super(_value, (v) => _then(v as _$_ItemCategory));
 
   @override
-  _ItemCategory get _value => super._value as _ItemCategory;
+  _$_ItemCategory get _value => super._value as _$_ItemCategory;
 
   @override
   $Res call({
@@ -1761,7 +1708,7 @@ class __$ItemCategoryCopyWithImpl<$Res> extends _$ItemCategoryCopyWithImpl<$Res>
     Object? names = freezed,
     Object? pocket = freezed,
   }) {
-    return _then(_ItemCategory(
+    return _then(_$_ItemCategory(
       id == freezed
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
@@ -1771,11 +1718,11 @@ class __$ItemCategoryCopyWithImpl<$Res> extends _$ItemCategoryCopyWithImpl<$Res>
           : name // ignore: cast_nullable_to_non_nullable
               as String,
       items == freezed
-          ? _value.items
+          ? _value._items
           : items // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
       names == freezed
-          ? _value.names
+          ? _value._names
           : names // ignore: cast_nullable_to_non_nullable
               as List<Name>,
       pocket == freezed
@@ -1789,39 +1736,56 @@ class __$ItemCategoryCopyWithImpl<$Res> extends _$ItemCategoryCopyWithImpl<$Res>
 /// @nodoc
 @JsonSerializable()
 class _$_ItemCategory implements _ItemCategory {
-  const _$_ItemCategory(
-      this.id, this.name, this.items, this.names, this.pocket);
+  const _$_ItemCategory(this.id, this.name, final List<NamedAPIResource> items,
+      final List<Name> names, this.pocket)
+      : _items = items,
+        _names = names;
 
   factory _$_ItemCategory.fromJson(Map<String, dynamic> json) =>
       _$$_ItemCategoryFromJson(json);
 
-  @override
-
   /// The identifier for this resource.
-  final int id;
   @override
+  final int id;
 
   /// The name for this resource.
-  final String name;
   @override
+  final String name;
 
   /// A list of items that are a part of this category.
   ///
   /// See also:
   ///
   /// [Item]
-  final List<NamedAPIResource> items;
+  final List<NamedAPIResource> _items;
+
+  /// A list of items that are a part of this category.
+  ///
+  /// See also:
+  ///
+  /// [Item]
   @override
+  List<NamedAPIResource> get items {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_items);
+  }
 
   /// The name of this item category listed in different languages.
-  final List<Name> names;
+  final List<Name> _names;
+
+  /// The name of this item category listed in different languages.
   @override
+  List<Name> get names {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_names);
+  }
 
   /// The pocket items in this category would be put in.
   ///
   /// See also:
   ///
   /// [ItemPocket]
+  @override
   final NamedAPIResource pocket;
 
   @override
@@ -1833,37 +1797,44 @@ class _$_ItemCategory implements _ItemCategory {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _ItemCategory &&
+            other is _$_ItemCategory &&
             const DeepCollectionEquality().equals(other.id, id) &&
             const DeepCollectionEquality().equals(other.name, name) &&
-            const DeepCollectionEquality().equals(other.items, items) &&
-            const DeepCollectionEquality().equals(other.names, names) &&
+            const DeepCollectionEquality().equals(other._items, _items) &&
+            const DeepCollectionEquality().equals(other._names, _names) &&
             const DeepCollectionEquality().equals(other.pocket, pocket));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
       const DeepCollectionEquality().hash(id),
       const DeepCollectionEquality().hash(name),
-      const DeepCollectionEquality().hash(items),
-      const DeepCollectionEquality().hash(names),
+      const DeepCollectionEquality().hash(_items),
+      const DeepCollectionEquality().hash(_names),
       const DeepCollectionEquality().hash(pocket));
 
   @JsonKey(ignore: true)
   @override
-  _$ItemCategoryCopyWith<_ItemCategory> get copyWith =>
-      __$ItemCategoryCopyWithImpl<_ItemCategory>(this, _$identity);
+  _$$_ItemCategoryCopyWith<_$_ItemCategory> get copyWith =>
+      __$$_ItemCategoryCopyWithImpl<_$_ItemCategory>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_ItemCategoryToJson(this);
+    return _$$_ItemCategoryToJson(
+      this,
+    );
   }
 }
 
 abstract class _ItemCategory implements ItemCategory {
-  const factory _ItemCategory(int id, String name, List<NamedAPIResource> items,
-      List<Name> names, NamedAPIResource pocket) = _$_ItemCategory;
+  const factory _ItemCategory(
+      final int id,
+      final String name,
+      final List<NamedAPIResource> items,
+      final List<Name> names,
+      final NamedAPIResource pocket) = _$_ItemCategory;
 
   factory _ItemCategory.fromJson(Map<String, dynamic> json) =
       _$_ItemCategory.fromJson;
@@ -1898,38 +1869,13 @@ abstract class _ItemCategory implements ItemCategory {
   NamedAPIResource get pocket;
   @override
   @JsonKey(ignore: true)
-  _$ItemCategoryCopyWith<_ItemCategory> get copyWith =>
+  _$$_ItemCategoryCopyWith<_$_ItemCategory> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 ItemFlingEffect _$ItemFlingEffectFromJson(Map<String, dynamic> json) {
   return _ItemFlingEffect.fromJson(json);
 }
-
-/// @nodoc
-class _$ItemFlingEffectTearOff {
-  const _$ItemFlingEffectTearOff();
-
-  _ItemFlingEffect call(
-      int id,
-      String name,
-      @JsonKey(name: 'effect_entries') List<Effect> effectEntries,
-      List<NamedAPIResource> items) {
-    return _ItemFlingEffect(
-      id,
-      name,
-      effectEntries,
-      items,
-    );
-  }
-
-  ItemFlingEffect fromJson(Map<String, Object?> json) {
-    return ItemFlingEffect.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $ItemFlingEffect = _$ItemFlingEffectTearOff();
 
 /// @nodoc
 mixin _$ItemFlingEffect {
@@ -2006,11 +1952,11 @@ class _$ItemFlingEffectCopyWithImpl<$Res>
 }
 
 /// @nodoc
-abstract class _$ItemFlingEffectCopyWith<$Res>
+abstract class _$$_ItemFlingEffectCopyWith<$Res>
     implements $ItemFlingEffectCopyWith<$Res> {
-  factory _$ItemFlingEffectCopyWith(
-          _ItemFlingEffect value, $Res Function(_ItemFlingEffect) then) =
-      __$ItemFlingEffectCopyWithImpl<$Res>;
+  factory _$$_ItemFlingEffectCopyWith(
+          _$_ItemFlingEffect value, $Res Function(_$_ItemFlingEffect) then) =
+      __$$_ItemFlingEffectCopyWithImpl<$Res>;
   @override
   $Res call(
       {int id,
@@ -2020,15 +1966,15 @@ abstract class _$ItemFlingEffectCopyWith<$Res>
 }
 
 /// @nodoc
-class __$ItemFlingEffectCopyWithImpl<$Res>
+class __$$_ItemFlingEffectCopyWithImpl<$Res>
     extends _$ItemFlingEffectCopyWithImpl<$Res>
-    implements _$ItemFlingEffectCopyWith<$Res> {
-  __$ItemFlingEffectCopyWithImpl(
-      _ItemFlingEffect _value, $Res Function(_ItemFlingEffect) _then)
-      : super(_value, (v) => _then(v as _ItemFlingEffect));
+    implements _$$_ItemFlingEffectCopyWith<$Res> {
+  __$$_ItemFlingEffectCopyWithImpl(
+      _$_ItemFlingEffect _value, $Res Function(_$_ItemFlingEffect) _then)
+      : super(_value, (v) => _then(v as _$_ItemFlingEffect));
 
   @override
-  _ItemFlingEffect get _value => super._value as _ItemFlingEffect;
+  _$_ItemFlingEffect get _value => super._value as _$_ItemFlingEffect;
 
   @override
   $Res call({
@@ -2037,7 +1983,7 @@ class __$ItemFlingEffectCopyWithImpl<$Res>
     Object? effectEntries = freezed,
     Object? items = freezed,
   }) {
-    return _then(_ItemFlingEffect(
+    return _then(_$_ItemFlingEffect(
       id == freezed
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
@@ -2047,11 +1993,11 @@ class __$ItemFlingEffectCopyWithImpl<$Res>
           : name // ignore: cast_nullable_to_non_nullable
               as String,
       effectEntries == freezed
-          ? _value.effectEntries
+          ? _value._effectEntries
           : effectEntries // ignore: cast_nullable_to_non_nullable
               as List<Effect>,
       items == freezed
-          ? _value.items
+          ? _value._items
           : items // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
     ));
@@ -2061,33 +2007,53 @@ class __$ItemFlingEffectCopyWithImpl<$Res>
 /// @nodoc
 @JsonSerializable()
 class _$_ItemFlingEffect implements _ItemFlingEffect {
-  const _$_ItemFlingEffect(this.id, this.name,
-      @JsonKey(name: 'effect_entries') this.effectEntries, this.items);
+  const _$_ItemFlingEffect(
+      this.id,
+      this.name,
+      @JsonKey(name: 'effect_entries') final List<Effect> effectEntries,
+      final List<NamedAPIResource> items)
+      : _effectEntries = effectEntries,
+        _items = items;
 
   factory _$_ItemFlingEffect.fromJson(Map<String, dynamic> json) =>
       _$$_ItemFlingEffectFromJson(json);
 
-  @override
-
   /// The identifier for this resource.
-  final int id;
   @override
+  final int id;
 
   /// The name for this resource.
-  final String name;
   @override
+  final String name;
 
   /// The result of this fling effect listed in different languages.
-  @JsonKey(name: 'effect_entries')
-  final List<Effect> effectEntries;
+  final List<Effect> _effectEntries;
+
+  /// The result of this fling effect listed in different languages.
   @override
+  @JsonKey(name: 'effect_entries')
+  List<Effect> get effectEntries {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_effectEntries);
+  }
 
   /// A list of items that have this fling effect.
   ///
   /// See also:
   ///
   /// [Item]
-  final List<NamedAPIResource> items;
+  final List<NamedAPIResource> _items;
+
+  /// A list of items that have this fling effect.
+  ///
+  /// See also:
+  ///
+  /// [Item]
+  @override
+  List<NamedAPIResource> get items {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_items);
+  }
 
   @override
   String toString() {
@@ -2098,39 +2064,42 @@ class _$_ItemFlingEffect implements _ItemFlingEffect {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _ItemFlingEffect &&
+            other is _$_ItemFlingEffect &&
             const DeepCollectionEquality().equals(other.id, id) &&
             const DeepCollectionEquality().equals(other.name, name) &&
             const DeepCollectionEquality()
-                .equals(other.effectEntries, effectEntries) &&
-            const DeepCollectionEquality().equals(other.items, items));
+                .equals(other._effectEntries, _effectEntries) &&
+            const DeepCollectionEquality().equals(other._items, _items));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
       const DeepCollectionEquality().hash(id),
       const DeepCollectionEquality().hash(name),
-      const DeepCollectionEquality().hash(effectEntries),
-      const DeepCollectionEquality().hash(items));
+      const DeepCollectionEquality().hash(_effectEntries),
+      const DeepCollectionEquality().hash(_items));
 
   @JsonKey(ignore: true)
   @override
-  _$ItemFlingEffectCopyWith<_ItemFlingEffect> get copyWith =>
-      __$ItemFlingEffectCopyWithImpl<_ItemFlingEffect>(this, _$identity);
+  _$$_ItemFlingEffectCopyWith<_$_ItemFlingEffect> get copyWith =>
+      __$$_ItemFlingEffectCopyWithImpl<_$_ItemFlingEffect>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_ItemFlingEffectToJson(this);
+    return _$$_ItemFlingEffectToJson(
+      this,
+    );
   }
 }
 
 abstract class _ItemFlingEffect implements ItemFlingEffect {
   const factory _ItemFlingEffect(
-      int id,
-      String name,
-      @JsonKey(name: 'effect_entries') List<Effect> effectEntries,
-      List<NamedAPIResource> items) = _$_ItemFlingEffect;
+      final int id,
+      final String name,
+      @JsonKey(name: 'effect_entries') final List<Effect> effectEntries,
+      final List<NamedAPIResource> items) = _$_ItemFlingEffect;
 
   factory _ItemFlingEffect.fromJson(Map<String, dynamic> json) =
       _$_ItemFlingEffect.fromJson;
@@ -2158,35 +2127,13 @@ abstract class _ItemFlingEffect implements ItemFlingEffect {
   List<NamedAPIResource> get items;
   @override
   @JsonKey(ignore: true)
-  _$ItemFlingEffectCopyWith<_ItemFlingEffect> get copyWith =>
+  _$$_ItemFlingEffectCopyWith<_$_ItemFlingEffect> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 ItemPocket _$ItemPocketFromJson(Map<String, dynamic> json) {
   return _ItemPocket.fromJson(json);
 }
-
-/// @nodoc
-class _$ItemPocketTearOff {
-  const _$ItemPocketTearOff();
-
-  _ItemPocket call(int id, String name, List<NamedAPIResource> categories,
-      List<Name> names) {
-    return _ItemPocket(
-      id,
-      name,
-      categories,
-      names,
-    );
-  }
-
-  ItemPocket fromJson(Map<String, Object?> json) {
-    return ItemPocket.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $ItemPocket = _$ItemPocketTearOff();
 
 /// @nodoc
 mixin _$ItemPocket {
@@ -2261,10 +2208,11 @@ class _$ItemPocketCopyWithImpl<$Res> implements $ItemPocketCopyWith<$Res> {
 }
 
 /// @nodoc
-abstract class _$ItemPocketCopyWith<$Res> implements $ItemPocketCopyWith<$Res> {
-  factory _$ItemPocketCopyWith(
-          _ItemPocket value, $Res Function(_ItemPocket) then) =
-      __$ItemPocketCopyWithImpl<$Res>;
+abstract class _$$_ItemPocketCopyWith<$Res>
+    implements $ItemPocketCopyWith<$Res> {
+  factory _$$_ItemPocketCopyWith(
+          _$_ItemPocket value, $Res Function(_$_ItemPocket) then) =
+      __$$_ItemPocketCopyWithImpl<$Res>;
   @override
   $Res call(
       {int id,
@@ -2274,14 +2222,14 @@ abstract class _$ItemPocketCopyWith<$Res> implements $ItemPocketCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$ItemPocketCopyWithImpl<$Res> extends _$ItemPocketCopyWithImpl<$Res>
-    implements _$ItemPocketCopyWith<$Res> {
-  __$ItemPocketCopyWithImpl(
-      _ItemPocket _value, $Res Function(_ItemPocket) _then)
-      : super(_value, (v) => _then(v as _ItemPocket));
+class __$$_ItemPocketCopyWithImpl<$Res> extends _$ItemPocketCopyWithImpl<$Res>
+    implements _$$_ItemPocketCopyWith<$Res> {
+  __$$_ItemPocketCopyWithImpl(
+      _$_ItemPocket _value, $Res Function(_$_ItemPocket) _then)
+      : super(_value, (v) => _then(v as _$_ItemPocket));
 
   @override
-  _ItemPocket get _value => super._value as _ItemPocket;
+  _$_ItemPocket get _value => super._value as _$_ItemPocket;
 
   @override
   $Res call({
@@ -2290,7 +2238,7 @@ class __$ItemPocketCopyWithImpl<$Res> extends _$ItemPocketCopyWithImpl<$Res>
     Object? categories = freezed,
     Object? names = freezed,
   }) {
-    return _then(_ItemPocket(
+    return _then(_$_ItemPocket(
       id == freezed
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
@@ -2300,11 +2248,11 @@ class __$ItemPocketCopyWithImpl<$Res> extends _$ItemPocketCopyWithImpl<$Res>
           : name // ignore: cast_nullable_to_non_nullable
               as String,
       categories == freezed
-          ? _value.categories
+          ? _value._categories
           : categories // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
       names == freezed
-          ? _value.names
+          ? _value._names
           : names // ignore: cast_nullable_to_non_nullable
               as List<Name>,
     ));
@@ -2314,31 +2262,49 @@ class __$ItemPocketCopyWithImpl<$Res> extends _$ItemPocketCopyWithImpl<$Res>
 /// @nodoc
 @JsonSerializable()
 class _$_ItemPocket implements _ItemPocket {
-  const _$_ItemPocket(this.id, this.name, this.categories, this.names);
+  const _$_ItemPocket(this.id, this.name,
+      final List<NamedAPIResource> categories, final List<Name> names)
+      : _categories = categories,
+        _names = names;
 
   factory _$_ItemPocket.fromJson(Map<String, dynamic> json) =>
       _$$_ItemPocketFromJson(json);
 
-  @override
-
   /// The identifier for this resource.
-  final int id;
   @override
+  final int id;
 
   /// The name for this resource.
-  final String name;
   @override
+  final String name;
 
   /// A list of item categories that are relevant to this item pocket.
   ///
   /// See also:
   ///
   /// [ItemCategory]
-  final List<NamedAPIResource> categories;
+  final List<NamedAPIResource> _categories;
+
+  /// A list of item categories that are relevant to this item pocket.
+  ///
+  /// See also:
+  ///
+  /// [ItemCategory]
   @override
+  List<NamedAPIResource> get categories {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_categories);
+  }
 
   /// The name of this resource listed in different languages.
-  final List<Name> names;
+  final List<Name> _names;
+
+  /// The name of this resource listed in different languages.
+  @override
+  List<Name> get names {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_names);
+  }
 
   @override
   String toString() {
@@ -2349,36 +2315,42 @@ class _$_ItemPocket implements _ItemPocket {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _ItemPocket &&
+            other is _$_ItemPocket &&
             const DeepCollectionEquality().equals(other.id, id) &&
             const DeepCollectionEquality().equals(other.name, name) &&
             const DeepCollectionEquality()
-                .equals(other.categories, categories) &&
-            const DeepCollectionEquality().equals(other.names, names));
+                .equals(other._categories, _categories) &&
+            const DeepCollectionEquality().equals(other._names, _names));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
       const DeepCollectionEquality().hash(id),
       const DeepCollectionEquality().hash(name),
-      const DeepCollectionEquality().hash(categories),
-      const DeepCollectionEquality().hash(names));
+      const DeepCollectionEquality().hash(_categories),
+      const DeepCollectionEquality().hash(_names));
 
   @JsonKey(ignore: true)
   @override
-  _$ItemPocketCopyWith<_ItemPocket> get copyWith =>
-      __$ItemPocketCopyWithImpl<_ItemPocket>(this, _$identity);
+  _$$_ItemPocketCopyWith<_$_ItemPocket> get copyWith =>
+      __$$_ItemPocketCopyWithImpl<_$_ItemPocket>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_ItemPocketToJson(this);
+    return _$$_ItemPocketToJson(
+      this,
+    );
   }
 }
 
 abstract class _ItemPocket implements ItemPocket {
-  const factory _ItemPocket(int id, String name,
-      List<NamedAPIResource> categories, List<Name> names) = _$_ItemPocket;
+  const factory _ItemPocket(
+      final int id,
+      final String name,
+      final List<NamedAPIResource> categories,
+      final List<Name> names) = _$_ItemPocket;
 
   factory _ItemPocket.fromJson(Map<String, dynamic> json) =
       _$_ItemPocket.fromJson;
@@ -2405,6 +2377,6 @@ abstract class _ItemPocket implements ItemPocket {
   List<Name> get names;
   @override
   @JsonKey(ignore: true)
-  _$ItemPocketCopyWith<_ItemPocket> get copyWith =>
+  _$$_ItemPocketCopyWith<_$_ItemPocket> get copyWith =>
       throw _privateConstructorUsedError;
 }

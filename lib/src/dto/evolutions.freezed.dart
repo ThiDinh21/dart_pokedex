@@ -12,34 +12,11 @@ part of 'evolutions.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 EvolutionChain _$EvolutionChainFromJson(Map<String, dynamic> json) {
   return _EvolutionChain.fromJson(json);
 }
-
-/// @nodoc
-class _$EvolutionChainTearOff {
-  const _$EvolutionChainTearOff();
-
-  _EvolutionChain call(
-      int id,
-      @JsonKey(name: 'baby_trigger_item') NamedAPIResource? babyTriggerItem,
-      ChainLink chain) {
-    return _EvolutionChain(
-      id,
-      babyTriggerItem,
-      chain,
-    );
-  }
-
-  EvolutionChain fromJson(Map<String, Object?> json) {
-    return EvolutionChain.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $EvolutionChain = _$EvolutionChainTearOff();
 
 /// @nodoc
 mixin _$EvolutionChain {
@@ -131,11 +108,11 @@ class _$EvolutionChainCopyWithImpl<$Res>
 }
 
 /// @nodoc
-abstract class _$EvolutionChainCopyWith<$Res>
+abstract class _$$_EvolutionChainCopyWith<$Res>
     implements $EvolutionChainCopyWith<$Res> {
-  factory _$EvolutionChainCopyWith(
-          _EvolutionChain value, $Res Function(_EvolutionChain) then) =
-      __$EvolutionChainCopyWithImpl<$Res>;
+  factory _$$_EvolutionChainCopyWith(
+          _$_EvolutionChain value, $Res Function(_$_EvolutionChain) then) =
+      __$$_EvolutionChainCopyWithImpl<$Res>;
   @override
   $Res call(
       {int id,
@@ -149,15 +126,15 @@ abstract class _$EvolutionChainCopyWith<$Res>
 }
 
 /// @nodoc
-class __$EvolutionChainCopyWithImpl<$Res>
+class __$$_EvolutionChainCopyWithImpl<$Res>
     extends _$EvolutionChainCopyWithImpl<$Res>
-    implements _$EvolutionChainCopyWith<$Res> {
-  __$EvolutionChainCopyWithImpl(
-      _EvolutionChain _value, $Res Function(_EvolutionChain) _then)
-      : super(_value, (v) => _then(v as _EvolutionChain));
+    implements _$$_EvolutionChainCopyWith<$Res> {
+  __$$_EvolutionChainCopyWithImpl(
+      _$_EvolutionChain _value, $Res Function(_$_EvolutionChain) _then)
+      : super(_value, (v) => _then(v as _$_EvolutionChain));
 
   @override
-  _EvolutionChain get _value => super._value as _EvolutionChain;
+  _$_EvolutionChain get _value => super._value as _$_EvolutionChain;
 
   @override
   $Res call({
@@ -165,7 +142,7 @@ class __$EvolutionChainCopyWithImpl<$Res>
     Object? babyTriggerItem = freezed,
     Object? chain = freezed,
   }) {
-    return _then(_EvolutionChain(
+    return _then(_$_EvolutionChain(
       id == freezed
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
@@ -191,11 +168,9 @@ class _$_EvolutionChain implements _EvolutionChain {
   factory _$_EvolutionChain.fromJson(Map<String, dynamic> json) =>
       _$$_EvolutionChainFromJson(json);
 
-  @override
-
   /// The identifier for this resource.
-  final int id;
   @override
+  final int id;
 
   /// The item that a Pokémon would be holding when mating
   /// that would trigger the egg hatching a baby Pokémon rather than a basic Pokémon.
@@ -203,13 +178,14 @@ class _$_EvolutionChain implements _EvolutionChain {
   /// See also:
   ///
   /// [Item]
+  @override
   @JsonKey(name: 'baby_trigger_item')
   final NamedAPIResource? babyTriggerItem;
-  @override
 
   /// The base chain link object.
   /// Each link contains evolution details for a Pokémon in the chain.
   /// Each link references the next Pokémon in the natural evolution order.
+  @override
   final ChainLink chain;
 
   @override
@@ -221,13 +197,14 @@ class _$_EvolutionChain implements _EvolutionChain {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _EvolutionChain &&
+            other is _$_EvolutionChain &&
             const DeepCollectionEquality().equals(other.id, id) &&
             const DeepCollectionEquality()
                 .equals(other.babyTriggerItem, babyTriggerItem) &&
             const DeepCollectionEquality().equals(other.chain, chain));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -237,20 +214,23 @@ class _$_EvolutionChain implements _EvolutionChain {
 
   @JsonKey(ignore: true)
   @override
-  _$EvolutionChainCopyWith<_EvolutionChain> get copyWith =>
-      __$EvolutionChainCopyWithImpl<_EvolutionChain>(this, _$identity);
+  _$$_EvolutionChainCopyWith<_$_EvolutionChain> get copyWith =>
+      __$$_EvolutionChainCopyWithImpl<_$_EvolutionChain>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_EvolutionChainToJson(this);
+    return _$$_EvolutionChainToJson(
+      this,
+    );
   }
 }
 
 abstract class _EvolutionChain implements EvolutionChain {
   const factory _EvolutionChain(
-      int id,
-      @JsonKey(name: 'baby_trigger_item') NamedAPIResource? babyTriggerItem,
-      ChainLink chain) = _$_EvolutionChain;
+      final int id,
+      @JsonKey(name: 'baby_trigger_item')
+          final NamedAPIResource? babyTriggerItem,
+      final ChainLink chain) = _$_EvolutionChain;
 
   factory _EvolutionChain.fromJson(Map<String, dynamic> json) =
       _$_EvolutionChain.fromJson;
@@ -277,41 +257,13 @@ abstract class _EvolutionChain implements EvolutionChain {
   ChainLink get chain;
   @override
   @JsonKey(ignore: true)
-  _$EvolutionChainCopyWith<_EvolutionChain> get copyWith =>
+  _$$_EvolutionChainCopyWith<_$_EvolutionChain> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 ChainLink _$ChainLinkFromJson(Map<String, dynamic> json) {
   return _ChainLink.fromJson(json);
 }
-
-/// @nodoc
-class _$ChainLinkTearOff {
-  const _$ChainLinkTearOff();
-
-  _ChainLink call(
-      @JsonKey(name: 'is_baby')
-          bool isBaby,
-      NamedAPIResource species,
-      @JsonKey(name: 'evolution_details')
-          List<EvolutionDetail> evolutionDetails,
-      @JsonKey(name: 'evolves_to')
-          List<ChainLink> evolvesTo) {
-    return _ChainLink(
-      isBaby,
-      species,
-      evolutionDetails,
-      evolvesTo,
-    );
-  }
-
-  ChainLink fromJson(Map<String, Object?> json) {
-    return ChainLink.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $ChainLink = _$ChainLinkTearOff();
 
 /// @nodoc
 mixin _$ChainLink {
@@ -402,10 +354,10 @@ class _$ChainLinkCopyWithImpl<$Res> implements $ChainLinkCopyWith<$Res> {
 }
 
 /// @nodoc
-abstract class _$ChainLinkCopyWith<$Res> implements $ChainLinkCopyWith<$Res> {
-  factory _$ChainLinkCopyWith(
-          _ChainLink value, $Res Function(_ChainLink) then) =
-      __$ChainLinkCopyWithImpl<$Res>;
+abstract class _$$_ChainLinkCopyWith<$Res> implements $ChainLinkCopyWith<$Res> {
+  factory _$$_ChainLinkCopyWith(
+          _$_ChainLink value, $Res Function(_$_ChainLink) then) =
+      __$$_ChainLinkCopyWithImpl<$Res>;
   @override
   $Res call(
       {@JsonKey(name: 'is_baby')
@@ -421,13 +373,14 @@ abstract class _$ChainLinkCopyWith<$Res> implements $ChainLinkCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$ChainLinkCopyWithImpl<$Res> extends _$ChainLinkCopyWithImpl<$Res>
-    implements _$ChainLinkCopyWith<$Res> {
-  __$ChainLinkCopyWithImpl(_ChainLink _value, $Res Function(_ChainLink) _then)
-      : super(_value, (v) => _then(v as _ChainLink));
+class __$$_ChainLinkCopyWithImpl<$Res> extends _$ChainLinkCopyWithImpl<$Res>
+    implements _$$_ChainLinkCopyWith<$Res> {
+  __$$_ChainLinkCopyWithImpl(
+      _$_ChainLink _value, $Res Function(_$_ChainLink) _then)
+      : super(_value, (v) => _then(v as _$_ChainLink));
 
   @override
-  _ChainLink get _value => super._value as _ChainLink;
+  _$_ChainLink get _value => super._value as _$_ChainLink;
 
   @override
   $Res call({
@@ -436,7 +389,7 @@ class __$ChainLinkCopyWithImpl<$Res> extends _$ChainLinkCopyWithImpl<$Res>
     Object? evolutionDetails = freezed,
     Object? evolvesTo = freezed,
   }) {
-    return _then(_ChainLink(
+    return _then(_$_ChainLink(
       isBaby == freezed
           ? _value.isBaby
           : isBaby // ignore: cast_nullable_to_non_nullable
@@ -446,11 +399,11 @@ class __$ChainLinkCopyWithImpl<$Res> extends _$ChainLinkCopyWithImpl<$Res>
           : species // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
       evolutionDetails == freezed
-          ? _value.evolutionDetails
+          ? _value._evolutionDetails
           : evolutionDetails // ignore: cast_nullable_to_non_nullable
               as List<EvolutionDetail>,
       evolvesTo == freezed
-          ? _value.evolvesTo
+          ? _value._evolvesTo
           : evolvesTo // ignore: cast_nullable_to_non_nullable
               as List<ChainLink>,
     ));
@@ -461,38 +414,54 @@ class __$ChainLinkCopyWithImpl<$Res> extends _$ChainLinkCopyWithImpl<$Res>
 @JsonSerializable()
 class _$_ChainLink implements _ChainLink {
   const _$_ChainLink(
-      @JsonKey(name: 'is_baby') this.isBaby,
+      @JsonKey(name: 'is_baby')
+          this.isBaby,
       this.species,
-      @JsonKey(name: 'evolution_details') this.evolutionDetails,
-      @JsonKey(name: 'evolves_to') this.evolvesTo);
+      @JsonKey(name: 'evolution_details')
+          final List<EvolutionDetail> evolutionDetails,
+      @JsonKey(name: 'evolves_to')
+          final List<ChainLink> evolvesTo)
+      : _evolutionDetails = evolutionDetails,
+        _evolvesTo = evolvesTo;
 
   factory _$_ChainLink.fromJson(Map<String, dynamic> json) =>
       _$$_ChainLinkFromJson(json);
 
-  @override
-
   /// Whether or not this link is for a baby Pokémon.
   /// This would only ever be true on the base link.
+  @override
   @JsonKey(name: 'is_baby')
   final bool isBaby;
-  @override
 
   /// The Pokémon species at this point in the evolution chain.
   ///
   /// See also:
   ///
   /// [PokemonSpecies]
-  final NamedAPIResource species;
   @override
+  final NamedAPIResource species;
 
   /// All details regarding the specific details of the referenced Pokémon species evolution.
-  @JsonKey(name: 'evolution_details')
-  final List<EvolutionDetail> evolutionDetails;
+  final List<EvolutionDetail> _evolutionDetails;
+
+  /// All details regarding the specific details of the referenced Pokémon species evolution.
   @override
+  @JsonKey(name: 'evolution_details')
+  List<EvolutionDetail> get evolutionDetails {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_evolutionDetails);
+  }
 
   /// A List of chain objects.
+  final List<ChainLink> _evolvesTo;
+
+  /// A List of chain objects.
+  @override
   @JsonKey(name: 'evolves_to')
-  final List<ChainLink> evolvesTo;
+  List<ChainLink> get evolvesTo {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_evolvesTo);
+  }
 
   @override
   String toString() {
@@ -503,42 +472,46 @@ class _$_ChainLink implements _ChainLink {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _ChainLink &&
+            other is _$_ChainLink &&
             const DeepCollectionEquality().equals(other.isBaby, isBaby) &&
             const DeepCollectionEquality().equals(other.species, species) &&
             const DeepCollectionEquality()
-                .equals(other.evolutionDetails, evolutionDetails) &&
-            const DeepCollectionEquality().equals(other.evolvesTo, evolvesTo));
+                .equals(other._evolutionDetails, _evolutionDetails) &&
+            const DeepCollectionEquality()
+                .equals(other._evolvesTo, _evolvesTo));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
       const DeepCollectionEquality().hash(isBaby),
       const DeepCollectionEquality().hash(species),
-      const DeepCollectionEquality().hash(evolutionDetails),
-      const DeepCollectionEquality().hash(evolvesTo));
+      const DeepCollectionEquality().hash(_evolutionDetails),
+      const DeepCollectionEquality().hash(_evolvesTo));
 
   @JsonKey(ignore: true)
   @override
-  _$ChainLinkCopyWith<_ChainLink> get copyWith =>
-      __$ChainLinkCopyWithImpl<_ChainLink>(this, _$identity);
+  _$$_ChainLinkCopyWith<_$_ChainLink> get copyWith =>
+      __$$_ChainLinkCopyWithImpl<_$_ChainLink>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_ChainLinkToJson(this);
+    return _$$_ChainLinkToJson(
+      this,
+    );
   }
 }
 
 abstract class _ChainLink implements ChainLink {
   const factory _ChainLink(
       @JsonKey(name: 'is_baby')
-          bool isBaby,
-      NamedAPIResource species,
+          final bool isBaby,
+      final NamedAPIResource species,
       @JsonKey(name: 'evolution_details')
-          List<EvolutionDetail> evolutionDetails,
+          final List<EvolutionDetail> evolutionDetails,
       @JsonKey(name: 'evolves_to')
-          List<ChainLink> evolvesTo) = _$_ChainLink;
+          final List<ChainLink> evolvesTo) = _$_ChainLink;
 
   factory _ChainLink.fromJson(Map<String, dynamic> json) =
       _$_ChainLink.fromJson;
@@ -569,66 +542,13 @@ abstract class _ChainLink implements ChainLink {
   List<ChainLink> get evolvesTo;
   @override
   @JsonKey(ignore: true)
-  _$ChainLinkCopyWith<_ChainLink> get copyWith =>
+  _$$_ChainLinkCopyWith<_$_ChainLink> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 EvolutionDetail _$EvolutionDetailFromJson(Map<String, dynamic> json) {
   return _EvolutionDetail.fromJson(json);
 }
-
-/// @nodoc
-class _$EvolutionDetailTearOff {
-  const _$EvolutionDetailTearOff();
-
-  _EvolutionDetail call(
-      NamedAPIResource? item,
-      NamedAPIResource trigger,
-      int? gender,
-      @JsonKey(name: 'held_item') NamedAPIResource? heldItem,
-      @JsonKey(name: 'known_move') NamedAPIResource? knownMove,
-      @JsonKey(name: 'known_move_type') NamedAPIResource? knownMoveType,
-      NamedAPIResource? location,
-      @JsonKey(name: 'min_level') int? minLevel,
-      @JsonKey(name: 'min_happiness') int? minHappiness,
-      @JsonKey(name: 'min_beauty') int? minBeauty,
-      @JsonKey(name: 'min_affection') int? minAffection,
-      @JsonKey(name: 'needs_overworld_rain') bool needsOverworldRain,
-      @JsonKey(name: 'party_species') NamedAPIResource? partySpecies,
-      @JsonKey(name: 'party_type') NamedAPIResource? partyType,
-      @JsonKey(name: 'relative_physical_stats') int? relativePhysicalStats,
-      @JsonKey(name: 'time_of_day') String timeOfDay,
-      @JsonKey(name: 'trade_species') NamedAPIResource? tradeSpecies,
-      @JsonKey(name: 'turn_upside_down') bool turnUpsideDown) {
-    return _EvolutionDetail(
-      item,
-      trigger,
-      gender,
-      heldItem,
-      knownMove,
-      knownMoveType,
-      location,
-      minLevel,
-      minHappiness,
-      minBeauty,
-      minAffection,
-      needsOverworldRain,
-      partySpecies,
-      partyType,
-      relativePhysicalStats,
-      timeOfDay,
-      tradeSpecies,
-      turnUpsideDown,
-    );
-  }
-
-  EvolutionDetail fromJson(Map<String, Object?> json) {
-    return EvolutionDetail.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $EvolutionDetail = _$EvolutionDetailTearOff();
 
 /// @nodoc
 mixin _$EvolutionDetail {
@@ -994,11 +914,11 @@ class _$EvolutionDetailCopyWithImpl<$Res>
 }
 
 /// @nodoc
-abstract class _$EvolutionDetailCopyWith<$Res>
+abstract class _$$_EvolutionDetailCopyWith<$Res>
     implements $EvolutionDetailCopyWith<$Res> {
-  factory _$EvolutionDetailCopyWith(
-          _EvolutionDetail value, $Res Function(_EvolutionDetail) then) =
-      __$EvolutionDetailCopyWithImpl<$Res>;
+  factory _$$_EvolutionDetailCopyWith(
+          _$_EvolutionDetail value, $Res Function(_$_EvolutionDetail) then) =
+      __$$_EvolutionDetailCopyWithImpl<$Res>;
   @override
   $Res call(
       {NamedAPIResource? item,
@@ -1041,15 +961,15 @@ abstract class _$EvolutionDetailCopyWith<$Res>
 }
 
 /// @nodoc
-class __$EvolutionDetailCopyWithImpl<$Res>
+class __$$_EvolutionDetailCopyWithImpl<$Res>
     extends _$EvolutionDetailCopyWithImpl<$Res>
-    implements _$EvolutionDetailCopyWith<$Res> {
-  __$EvolutionDetailCopyWithImpl(
-      _EvolutionDetail _value, $Res Function(_EvolutionDetail) _then)
-      : super(_value, (v) => _then(v as _EvolutionDetail));
+    implements _$$_EvolutionDetailCopyWith<$Res> {
+  __$$_EvolutionDetailCopyWithImpl(
+      _$_EvolutionDetail _value, $Res Function(_$_EvolutionDetail) _then)
+      : super(_value, (v) => _then(v as _$_EvolutionDetail));
 
   @override
-  _EvolutionDetail get _value => super._value as _EvolutionDetail;
+  _$_EvolutionDetail get _value => super._value as _$_EvolutionDetail;
 
   @override
   $Res call({
@@ -1072,7 +992,7 @@ class __$EvolutionDetailCopyWithImpl<$Res>
     Object? tradeSpecies = freezed,
     Object? turnUpsideDown = freezed,
   }) {
-    return _then(_EvolutionDetail(
+    return _then(_$_EvolutionDetail(
       item == freezed
           ? _value.item
           : item // ignore: cast_nullable_to_non_nullable
@@ -1175,28 +1095,26 @@ class _$_EvolutionDetail implements _EvolutionDetail {
   factory _$_EvolutionDetail.fromJson(Map<String, dynamic> json) =>
       _$$_EvolutionDetailFromJson(json);
 
-  @override
-
   /// The item required to cause evolution this into Pokémon species.
   ///
   /// See also:
   ///
   /// [Item]
-  final NamedAPIResource? item;
   @override
+  final NamedAPIResource? item;
 
   /// The type of event that triggers evolution into this Pokémon species.
   ///
   /// See also:
   ///
   /// [EvolutionTrigger]
-  final NamedAPIResource trigger;
   @override
+  final NamedAPIResource trigger;
 
   /// The id of the gender of the evolving Pokémon species must be
   /// in order to evolve into this Pokémon species.
-  final int? gender;
   @override
+  final int? gender;
 
   /// The item the evolving Pokémon species must be holding
   /// during the evolution trigger event to evolve into this Pokémon species.
@@ -1204,9 +1122,9 @@ class _$_EvolutionDetail implements _EvolutionDetail {
   /// See also:
   ///
   /// [Item]
+  @override
   @JsonKey(name: 'held_item')
   final NamedAPIResource? heldItem;
-  @override
 
   /// The move that must be known by the evolving Pokémon species
   /// during the evolution trigger event in order to evolve into this Pokémon species.
@@ -1214,9 +1132,9 @@ class _$_EvolutionDetail implements _EvolutionDetail {
   /// See also:
   ///
   /// [Move]
+  @override
   @JsonKey(name: 'known_move')
   final NamedAPIResource? knownMove;
-  @override
 
   /// The evolving Pokémon species must know a move with this type
   /// during the evolution trigger event in order to evolve into this Pokémon species.
@@ -1224,47 +1142,47 @@ class _$_EvolutionDetail implements _EvolutionDetail {
   /// See also:
   ///
   /// [Type]
+  @override
   @JsonKey(name: 'known_move_type')
   final NamedAPIResource? knownMoveType;
-  @override
 
   /// The location the evolution must be triggered at.
   ///
   /// See also:
   ///
   /// [Location]
-  final NamedAPIResource? location;
   @override
+  final NamedAPIResource? location;
 
   /// The minimum required level of the evolving Pokémon species to evolve
   /// into this Pokémon species.
+  @override
   @JsonKey(name: 'min_level')
   final int? minLevel;
-  @override
 
   /// The minimum required level of happiness the evolving Pokémon species
   /// to evolve into this Pokémon species.
+  @override
   @JsonKey(name: 'min_happiness')
   final int? minHappiness;
-  @override
 
   /// The minimum required level of beauty the evolving Pokémon species
   /// to evolve into this Pokémon species.
+  @override
   @JsonKey(name: 'min_beauty')
   final int? minBeauty;
-  @override
 
   /// The minimum required level of affection the evolving Pokémon species
   /// to evolve into this Pokémon species.
+  @override
   @JsonKey(name: 'min_affection')
   final int? minAffection;
-  @override
 
   /// Whether or not it must be raining in the overworld
   /// to cause evolution this Pokémon species.
+  @override
   @JsonKey(name: 'needs_overworld_rain')
   final bool needsOverworldRain;
-  @override
 
   /// The Pokémon species that must be in the players party
   /// in order for the evolving Pokémon species to evolve into this Pokémon species.
@@ -1272,9 +1190,9 @@ class _$_EvolutionDetail implements _EvolutionDetail {
   /// See also:
   ///
   /// [PokemonSpecies]
+  @override
   @JsonKey(name: 'party_species')
   final NamedAPIResource? partySpecies;
-  @override
 
   /// The player must have a Pokémon of this type in their party
   /// during the evolution trigger event in order for the evolving Pokémon species
@@ -1283,31 +1201,32 @@ class _$_EvolutionDetail implements _EvolutionDetail {
   /// See also:
   ///
   /// [Type]
+  @override
   @JsonKey(name: 'party_type')
   final NamedAPIResource? partyType;
-  @override
 
   /// The required relation between the Pokémon's Attack and Defense stats.
   /// 1 means Attack > Defense. 0 means Attack = Defense. -1 means Attack < Defense.
+  @override
   @JsonKey(name: 'relative_physical_stats')
   final int? relativePhysicalStats;
-  @override
 
   /// The required time of day. Day or night.
+  @override
   @JsonKey(name: 'time_of_day')
   final String timeOfDay;
-  @override
 
   /// Pokémon species for which this one must be traded.
   ///
   /// See also:
   ///
   /// [PokemonSpecies]
+  @override
   @JsonKey(name: 'trade_species')
   final NamedAPIResource? tradeSpecies;
-  @override
 
   /// Whether or not the 3DS needs to be turned upside-down as this Pokémon levels up.
+  @override
   @JsonKey(name: 'turn_upside_down')
   final bool turnUpsideDown;
 
@@ -1320,7 +1239,7 @@ class _$_EvolutionDetail implements _EvolutionDetail {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _EvolutionDetail &&
+            other is _$_EvolutionDetail &&
             const DeepCollectionEquality().equals(other.item, item) &&
             const DeepCollectionEquality().equals(other.trigger, trigger) &&
             const DeepCollectionEquality().equals(other.gender, gender) &&
@@ -1349,6 +1268,7 @@ class _$_EvolutionDetail implements _EvolutionDetail {
                 .equals(other.turnUpsideDown, turnUpsideDown));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -1373,36 +1293,51 @@ class _$_EvolutionDetail implements _EvolutionDetail {
 
   @JsonKey(ignore: true)
   @override
-  _$EvolutionDetailCopyWith<_EvolutionDetail> get copyWith =>
-      __$EvolutionDetailCopyWithImpl<_EvolutionDetail>(this, _$identity);
+  _$$_EvolutionDetailCopyWith<_$_EvolutionDetail> get copyWith =>
+      __$$_EvolutionDetailCopyWithImpl<_$_EvolutionDetail>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_EvolutionDetailToJson(this);
+    return _$$_EvolutionDetailToJson(
+      this,
+    );
   }
 }
 
 abstract class _EvolutionDetail implements EvolutionDetail {
   const factory _EvolutionDetail(
-          NamedAPIResource? item,
-          NamedAPIResource trigger,
-          int? gender,
-          @JsonKey(name: 'held_item') NamedAPIResource? heldItem,
-          @JsonKey(name: 'known_move') NamedAPIResource? knownMove,
-          @JsonKey(name: 'known_move_type') NamedAPIResource? knownMoveType,
-          NamedAPIResource? location,
-          @JsonKey(name: 'min_level') int? minLevel,
-          @JsonKey(name: 'min_happiness') int? minHappiness,
-          @JsonKey(name: 'min_beauty') int? minBeauty,
-          @JsonKey(name: 'min_affection') int? minAffection,
-          @JsonKey(name: 'needs_overworld_rain') bool needsOverworldRain,
-          @JsonKey(name: 'party_species') NamedAPIResource? partySpecies,
-          @JsonKey(name: 'party_type') NamedAPIResource? partyType,
-          @JsonKey(name: 'relative_physical_stats') int? relativePhysicalStats,
-          @JsonKey(name: 'time_of_day') String timeOfDay,
-          @JsonKey(name: 'trade_species') NamedAPIResource? tradeSpecies,
-          @JsonKey(name: 'turn_upside_down') bool turnUpsideDown) =
-      _$_EvolutionDetail;
+      final NamedAPIResource? item,
+      final NamedAPIResource trigger,
+      final int? gender,
+      @JsonKey(name: 'held_item')
+          final NamedAPIResource? heldItem,
+      @JsonKey(name: 'known_move')
+          final NamedAPIResource? knownMove,
+      @JsonKey(name: 'known_move_type')
+          final NamedAPIResource? knownMoveType,
+      final NamedAPIResource? location,
+      @JsonKey(name: 'min_level')
+          final int? minLevel,
+      @JsonKey(name: 'min_happiness')
+          final int? minHappiness,
+      @JsonKey(name: 'min_beauty')
+          final int? minBeauty,
+      @JsonKey(name: 'min_affection')
+          final int? minAffection,
+      @JsonKey(name: 'needs_overworld_rain')
+          final bool needsOverworldRain,
+      @JsonKey(name: 'party_species')
+          final NamedAPIResource? partySpecies,
+      @JsonKey(name: 'party_type')
+          final NamedAPIResource? partyType,
+      @JsonKey(name: 'relative_physical_stats')
+          final int? relativePhysicalStats,
+      @JsonKey(name: 'time_of_day')
+          final String timeOfDay,
+      @JsonKey(name: 'trade_species')
+          final NamedAPIResource? tradeSpecies,
+      @JsonKey(name: 'turn_upside_down')
+          final bool turnUpsideDown) = _$_EvolutionDetail;
 
   factory _EvolutionDetail.fromJson(Map<String, dynamic> json) =
       _$_EvolutionDetail.fromJson;
@@ -1544,35 +1479,13 @@ abstract class _EvolutionDetail implements EvolutionDetail {
   bool get turnUpsideDown;
   @override
   @JsonKey(ignore: true)
-  _$EvolutionDetailCopyWith<_EvolutionDetail> get copyWith =>
+  _$$_EvolutionDetailCopyWith<_$_EvolutionDetail> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 EvolutionTrigger _$EvolutionTriggerFromJson(Map<String, dynamic> json) {
   return _EvolutionTrigger.fromJson(json);
 }
-
-/// @nodoc
-class _$EvolutionTriggerTearOff {
-  const _$EvolutionTriggerTearOff();
-
-  _EvolutionTrigger call(int id, String name, List<Name> names,
-      @JsonKey(name: 'pokemon_species') List<NamedAPIResource> pokemonSpecies) {
-    return _EvolutionTrigger(
-      id,
-      name,
-      names,
-      pokemonSpecies,
-    );
-  }
-
-  EvolutionTrigger fromJson(Map<String, Object?> json) {
-    return EvolutionTrigger.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $EvolutionTrigger = _$EvolutionTriggerTearOff();
 
 /// @nodoc
 mixin _$EvolutionTrigger {
@@ -1650,11 +1563,11 @@ class _$EvolutionTriggerCopyWithImpl<$Res>
 }
 
 /// @nodoc
-abstract class _$EvolutionTriggerCopyWith<$Res>
+abstract class _$$_EvolutionTriggerCopyWith<$Res>
     implements $EvolutionTriggerCopyWith<$Res> {
-  factory _$EvolutionTriggerCopyWith(
-          _EvolutionTrigger value, $Res Function(_EvolutionTrigger) then) =
-      __$EvolutionTriggerCopyWithImpl<$Res>;
+  factory _$$_EvolutionTriggerCopyWith(
+          _$_EvolutionTrigger value, $Res Function(_$_EvolutionTrigger) then) =
+      __$$_EvolutionTriggerCopyWithImpl<$Res>;
   @override
   $Res call(
       {int id,
@@ -1664,15 +1577,15 @@ abstract class _$EvolutionTriggerCopyWith<$Res>
 }
 
 /// @nodoc
-class __$EvolutionTriggerCopyWithImpl<$Res>
+class __$$_EvolutionTriggerCopyWithImpl<$Res>
     extends _$EvolutionTriggerCopyWithImpl<$Res>
-    implements _$EvolutionTriggerCopyWith<$Res> {
-  __$EvolutionTriggerCopyWithImpl(
-      _EvolutionTrigger _value, $Res Function(_EvolutionTrigger) _then)
-      : super(_value, (v) => _then(v as _EvolutionTrigger));
+    implements _$$_EvolutionTriggerCopyWith<$Res> {
+  __$$_EvolutionTriggerCopyWithImpl(
+      _$_EvolutionTrigger _value, $Res Function(_$_EvolutionTrigger) _then)
+      : super(_value, (v) => _then(v as _$_EvolutionTrigger));
 
   @override
-  _EvolutionTrigger get _value => super._value as _EvolutionTrigger;
+  _$_EvolutionTrigger get _value => super._value as _$_EvolutionTrigger;
 
   @override
   $Res call({
@@ -1681,7 +1594,7 @@ class __$EvolutionTriggerCopyWithImpl<$Res>
     Object? names = freezed,
     Object? pokemonSpecies = freezed,
   }) {
-    return _then(_EvolutionTrigger(
+    return _then(_$_EvolutionTrigger(
       id == freezed
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
@@ -1691,11 +1604,11 @@ class __$EvolutionTriggerCopyWithImpl<$Res>
           : name // ignore: cast_nullable_to_non_nullable
               as String,
       names == freezed
-          ? _value.names
+          ? _value._names
           : names // ignore: cast_nullable_to_non_nullable
               as List<Name>,
       pokemonSpecies == freezed
-          ? _value.pokemonSpecies
+          ? _value._pokemonSpecies
           : pokemonSpecies // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
     ));
@@ -1705,33 +1618,54 @@ class __$EvolutionTriggerCopyWithImpl<$Res>
 /// @nodoc
 @JsonSerializable()
 class _$_EvolutionTrigger implements _EvolutionTrigger {
-  const _$_EvolutionTrigger(this.id, this.name, this.names,
-      @JsonKey(name: 'pokemon_species') this.pokemonSpecies);
+  const _$_EvolutionTrigger(
+      this.id,
+      this.name,
+      final List<Name> names,
+      @JsonKey(name: 'pokemon_species')
+          final List<NamedAPIResource> pokemonSpecies)
+      : _names = names,
+        _pokemonSpecies = pokemonSpecies;
 
   factory _$_EvolutionTrigger.fromJson(Map<String, dynamic> json) =>
       _$$_EvolutionTriggerFromJson(json);
 
-  @override
-
   /// The identifier for this resource.
-  final int id;
   @override
+  final int id;
 
   /// The name for this resource.
-  final String name;
   @override
+  final String name;
 
   /// The name of this resource listed in different languages.
-  final List<Name> names;
+  final List<Name> _names;
+
+  /// The name of this resource listed in different languages.
   @override
+  List<Name> get names {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_names);
+  }
 
   /// A list of pokemon species that result from this evolution trigger.
   ///
   /// See also:
   ///
   /// [PokemonSpecies]
+  final List<NamedAPIResource> _pokemonSpecies;
+
+  /// A list of pokemon species that result from this evolution trigger.
+  ///
+  /// See also:
+  ///
+  /// [PokemonSpecies]
+  @override
   @JsonKey(name: 'pokemon_species')
-  final List<NamedAPIResource> pokemonSpecies;
+  List<NamedAPIResource> get pokemonSpecies {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_pokemonSpecies);
+  }
 
   @override
   String toString() {
@@ -1742,40 +1676,43 @@ class _$_EvolutionTrigger implements _EvolutionTrigger {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _EvolutionTrigger &&
+            other is _$_EvolutionTrigger &&
             const DeepCollectionEquality().equals(other.id, id) &&
             const DeepCollectionEquality().equals(other.name, name) &&
-            const DeepCollectionEquality().equals(other.names, names) &&
+            const DeepCollectionEquality().equals(other._names, _names) &&
             const DeepCollectionEquality()
-                .equals(other.pokemonSpecies, pokemonSpecies));
+                .equals(other._pokemonSpecies, _pokemonSpecies));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
       const DeepCollectionEquality().hash(id),
       const DeepCollectionEquality().hash(name),
-      const DeepCollectionEquality().hash(names),
-      const DeepCollectionEquality().hash(pokemonSpecies));
+      const DeepCollectionEquality().hash(_names),
+      const DeepCollectionEquality().hash(_pokemonSpecies));
 
   @JsonKey(ignore: true)
   @override
-  _$EvolutionTriggerCopyWith<_EvolutionTrigger> get copyWith =>
-      __$EvolutionTriggerCopyWithImpl<_EvolutionTrigger>(this, _$identity);
+  _$$_EvolutionTriggerCopyWith<_$_EvolutionTrigger> get copyWith =>
+      __$$_EvolutionTriggerCopyWithImpl<_$_EvolutionTrigger>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_EvolutionTriggerToJson(this);
+    return _$$_EvolutionTriggerToJson(
+      this,
+    );
   }
 }
 
 abstract class _EvolutionTrigger implements EvolutionTrigger {
   const factory _EvolutionTrigger(
-      int id,
-      String name,
-      List<Name> names,
+      final int id,
+      final String name,
+      final List<Name> names,
       @JsonKey(name: 'pokemon_species')
-          List<NamedAPIResource> pokemonSpecies) = _$_EvolutionTrigger;
+          final List<NamedAPIResource> pokemonSpecies) = _$_EvolutionTrigger;
 
   factory _EvolutionTrigger.fromJson(Map<String, dynamic> json) =
       _$_EvolutionTrigger.fromJson;
@@ -1803,6 +1740,6 @@ abstract class _EvolutionTrigger implements EvolutionTrigger {
   List<NamedAPIResource> get pokemonSpecies;
   @override
   @JsonKey(ignore: true)
-  _$EvolutionTriggerCopyWith<_EvolutionTrigger> get copyWith =>
+  _$$_EvolutionTriggerCopyWith<_$_EvolutionTrigger> get copyWith =>
       throw _privateConstructorUsedError;
 }

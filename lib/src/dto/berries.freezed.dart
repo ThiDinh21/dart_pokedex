@@ -12,52 +12,11 @@ part of 'berries.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 Berry _$BerryFromJson(Map<String, dynamic> json) {
   return _Berry.fromJson(json);
 }
-
-/// @nodoc
-class _$BerryTearOff {
-  const _$BerryTearOff();
-
-  _Berry call(
-      int id,
-      String name,
-      @JsonKey(name: 'growth_time') int growthTime,
-      @JsonKey(name: 'max_harvest') int maxHarvest,
-      @JsonKey(name: 'natural_gift_power') int naturalGiftPower,
-      int size,
-      int smoothness,
-      @JsonKey(name: 'soil_dryness') int soilDryness,
-      NamedAPIResource firmness,
-      List<BerryFlavorMap> flavors,
-      NamedAPIResource item,
-      @JsonKey(name: 'natural_gift_type') NamedAPIResource naturalGiftType) {
-    return _Berry(
-      id,
-      name,
-      growthTime,
-      maxHarvest,
-      naturalGiftPower,
-      size,
-      smoothness,
-      soilDryness,
-      firmness,
-      flavors,
-      item,
-      naturalGiftType,
-    );
-  }
-
-  Berry fromJson(Map<String, Object?> json) {
-    return Berry.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $Berry = _$BerryTearOff();
 
 /// @nodoc
 mixin _$Berry {
@@ -246,9 +205,9 @@ class _$BerryCopyWithImpl<$Res> implements $BerryCopyWith<$Res> {
 }
 
 /// @nodoc
-abstract class _$BerryCopyWith<$Res> implements $BerryCopyWith<$Res> {
-  factory _$BerryCopyWith(_Berry value, $Res Function(_Berry) then) =
-      __$BerryCopyWithImpl<$Res>;
+abstract class _$$_BerryCopyWith<$Res> implements $BerryCopyWith<$Res> {
+  factory _$$_BerryCopyWith(_$_Berry value, $Res Function(_$_Berry) then) =
+      __$$_BerryCopyWithImpl<$Res>;
   @override
   $Res call(
       {int id,
@@ -273,13 +232,13 @@ abstract class _$BerryCopyWith<$Res> implements $BerryCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$BerryCopyWithImpl<$Res> extends _$BerryCopyWithImpl<$Res>
-    implements _$BerryCopyWith<$Res> {
-  __$BerryCopyWithImpl(_Berry _value, $Res Function(_Berry) _then)
-      : super(_value, (v) => _then(v as _Berry));
+class __$$_BerryCopyWithImpl<$Res> extends _$BerryCopyWithImpl<$Res>
+    implements _$$_BerryCopyWith<$Res> {
+  __$$_BerryCopyWithImpl(_$_Berry _value, $Res Function(_$_Berry) _then)
+      : super(_value, (v) => _then(v as _$_Berry));
 
   @override
-  _Berry get _value => super._value as _Berry;
+  _$_Berry get _value => super._value as _$_Berry;
 
   @override
   $Res call({
@@ -296,7 +255,7 @@ class __$BerryCopyWithImpl<$Res> extends _$BerryCopyWithImpl<$Res>
     Object? item = freezed,
     Object? naturalGiftType = freezed,
   }) {
-    return _then(_Berry(
+    return _then(_$_Berry(
       id == freezed
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
@@ -334,7 +293,7 @@ class __$BerryCopyWithImpl<$Res> extends _$BerryCopyWithImpl<$Res>
           : firmness // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
       flavors == freezed
-          ? _value.flavors
+          ? _value._flavors
           : flavors // ignore: cast_nullable_to_non_nullable
               as List<BerryFlavorMap>,
       item == freezed
@@ -362,67 +321,73 @@ class _$_Berry implements _Berry {
       this.smoothness,
       @JsonKey(name: 'soil_dryness') this.soilDryness,
       this.firmness,
-      this.flavors,
+      final List<BerryFlavorMap> flavors,
       this.item,
-      @JsonKey(name: 'natural_gift_type') this.naturalGiftType);
+      @JsonKey(name: 'natural_gift_type') this.naturalGiftType)
+      : _flavors = flavors;
 
   factory _$_Berry.fromJson(Map<String, dynamic> json) =>
       _$$_BerryFromJson(json);
 
-  @override
-
   /// The identifier for this resource.
-  final int id;
   @override
+  final int id;
 
   /// The name for this resource.
-  final String name;
   @override
+  final String name;
 
   /// Time it takes the tree to grow one stage, in hours.
   /// Berry trees go through four of these growth stages
   /// before they can be picked.
+  @override
   @JsonKey(name: 'growth_time')
   final int growthTime;
-  @override
 
   /// The maximum number of these berries that can grow
   /// on one tree in Generation IV.
+  @override
   @JsonKey(name: 'max_harvest')
   final int maxHarvest;
-  @override
 
   /// The power of the move "Natural Gift" when used with this Berry.
+  @override
   @JsonKey(name: 'natural_gift_power')
   final int naturalGiftPower;
-  @override
 
   /// The size of this Berry, in millimeters.
-  final int size;
   @override
+  final int size;
 
   /// The smoothness of this Berry, used in making Pokéblocks or Poffins.
-  final int smoothness;
   @override
+  final int smoothness;
 
   /// The speed at which this Berry dries out the soil as it grows.
   /// A higher rate means the soil dries more quickly.
+  @override
   @JsonKey(name: 'soil_dryness')
   final int soilDryness;
-  @override
 
   /// The firmness of this berry, used in making Pokéblocks or Poffins.
   ///
   /// See also:
   ///
   /// [BerryFirmness]
-  final NamedAPIResource firmness;
   @override
+  final NamedAPIResource firmness;
 
   /// A list of references to each flavor a berry can have
   /// and the potency of each of those flavors in regard to this berry.
-  final List<BerryFlavorMap> flavors;
+  final List<BerryFlavorMap> _flavors;
+
+  /// A list of references to each flavor a berry can have
+  /// and the potency of each of those flavors in regard to this berry.
   @override
+  List<BerryFlavorMap> get flavors {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_flavors);
+  }
 
   /// Berries are actually items.
   /// This is a reference to the item specific data for this berry.
@@ -430,14 +395,15 @@ class _$_Berry implements _Berry {
   /// See also:
   ///
   /// [Item]
-  final NamedAPIResource item;
   @override
+  final NamedAPIResource item;
 
   /// The type inherited by "Natural Gift" when used with this Berry.
   ///
   /// See also:
   ///
   /// [Type]
+  @override
   @JsonKey(name: 'natural_gift_type')
   final NamedAPIResource naturalGiftType;
 
@@ -450,7 +416,7 @@ class _$_Berry implements _Berry {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _Berry &&
+            other is _$_Berry &&
             const DeepCollectionEquality().equals(other.id, id) &&
             const DeepCollectionEquality().equals(other.name, name) &&
             const DeepCollectionEquality()
@@ -465,12 +431,13 @@ class _$_Berry implements _Berry {
             const DeepCollectionEquality()
                 .equals(other.soilDryness, soilDryness) &&
             const DeepCollectionEquality().equals(other.firmness, firmness) &&
-            const DeepCollectionEquality().equals(other.flavors, flavors) &&
+            const DeepCollectionEquality().equals(other._flavors, _flavors) &&
             const DeepCollectionEquality().equals(other.item, item) &&
             const DeepCollectionEquality()
                 .equals(other.naturalGiftType, naturalGiftType));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -483,40 +450,42 @@ class _$_Berry implements _Berry {
       const DeepCollectionEquality().hash(smoothness),
       const DeepCollectionEquality().hash(soilDryness),
       const DeepCollectionEquality().hash(firmness),
-      const DeepCollectionEquality().hash(flavors),
+      const DeepCollectionEquality().hash(_flavors),
       const DeepCollectionEquality().hash(item),
       const DeepCollectionEquality().hash(naturalGiftType));
 
   @JsonKey(ignore: true)
   @override
-  _$BerryCopyWith<_Berry> get copyWith =>
-      __$BerryCopyWithImpl<_Berry>(this, _$identity);
+  _$$_BerryCopyWith<_$_Berry> get copyWith =>
+      __$$_BerryCopyWithImpl<_$_Berry>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_BerryToJson(this);
+    return _$$_BerryToJson(
+      this,
+    );
   }
 }
 
 abstract class _Berry implements Berry {
   const factory _Berry(
-      int id,
-      String name,
+      final int id,
+      final String name,
       @JsonKey(name: 'growth_time')
-          int growthTime,
+          final int growthTime,
       @JsonKey(name: 'max_harvest')
-          int maxHarvest,
+          final int maxHarvest,
       @JsonKey(name: 'natural_gift_power')
-          int naturalGiftPower,
-      int size,
-      int smoothness,
+          final int naturalGiftPower,
+      final int size,
+      final int smoothness,
       @JsonKey(name: 'soil_dryness')
-          int soilDryness,
-      NamedAPIResource firmness,
-      List<BerryFlavorMap> flavors,
-      NamedAPIResource item,
+          final int soilDryness,
+      final NamedAPIResource firmness,
+      final List<BerryFlavorMap> flavors,
+      final NamedAPIResource item,
       @JsonKey(name: 'natural_gift_type')
-          NamedAPIResource naturalGiftType) = _$_Berry;
+          final NamedAPIResource naturalGiftType) = _$_Berry;
 
   factory _Berry.fromJson(Map<String, dynamic> json) = _$_Berry.fromJson;
 
@@ -593,31 +562,13 @@ abstract class _Berry implements Berry {
   NamedAPIResource get naturalGiftType;
   @override
   @JsonKey(ignore: true)
-  _$BerryCopyWith<_Berry> get copyWith => throw _privateConstructorUsedError;
+  _$$_BerryCopyWith<_$_Berry> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 BerryFlavorMap _$BerryFlavorMapFromJson(Map<String, dynamic> json) {
   return _BerryFlavorMap.fromJson(json);
 }
-
-/// @nodoc
-class _$BerryFlavorMapTearOff {
-  const _$BerryFlavorMapTearOff();
-
-  _BerryFlavorMap call(int potency, NamedAPIResource flavor) {
-    return _BerryFlavorMap(
-      potency,
-      flavor,
-    );
-  }
-
-  BerryFlavorMap fromJson(Map<String, Object?> json) {
-    return BerryFlavorMap.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $BerryFlavorMap = _$BerryFlavorMapTearOff();
 
 /// @nodoc
 mixin _$BerryFlavorMap {
@@ -682,11 +633,11 @@ class _$BerryFlavorMapCopyWithImpl<$Res>
 }
 
 /// @nodoc
-abstract class _$BerryFlavorMapCopyWith<$Res>
+abstract class _$$_BerryFlavorMapCopyWith<$Res>
     implements $BerryFlavorMapCopyWith<$Res> {
-  factory _$BerryFlavorMapCopyWith(
-          _BerryFlavorMap value, $Res Function(_BerryFlavorMap) then) =
-      __$BerryFlavorMapCopyWithImpl<$Res>;
+  factory _$$_BerryFlavorMapCopyWith(
+          _$_BerryFlavorMap value, $Res Function(_$_BerryFlavorMap) then) =
+      __$$_BerryFlavorMapCopyWithImpl<$Res>;
   @override
   $Res call({int potency, NamedAPIResource flavor});
 
@@ -695,22 +646,22 @@ abstract class _$BerryFlavorMapCopyWith<$Res>
 }
 
 /// @nodoc
-class __$BerryFlavorMapCopyWithImpl<$Res>
+class __$$_BerryFlavorMapCopyWithImpl<$Res>
     extends _$BerryFlavorMapCopyWithImpl<$Res>
-    implements _$BerryFlavorMapCopyWith<$Res> {
-  __$BerryFlavorMapCopyWithImpl(
-      _BerryFlavorMap _value, $Res Function(_BerryFlavorMap) _then)
-      : super(_value, (v) => _then(v as _BerryFlavorMap));
+    implements _$$_BerryFlavorMapCopyWith<$Res> {
+  __$$_BerryFlavorMapCopyWithImpl(
+      _$_BerryFlavorMap _value, $Res Function(_$_BerryFlavorMap) _then)
+      : super(_value, (v) => _then(v as _$_BerryFlavorMap));
 
   @override
-  _BerryFlavorMap get _value => super._value as _BerryFlavorMap;
+  _$_BerryFlavorMap get _value => super._value as _$_BerryFlavorMap;
 
   @override
   $Res call({
     Object? potency = freezed,
     Object? flavor = freezed,
   }) {
-    return _then(_BerryFlavorMap(
+    return _then(_$_BerryFlavorMap(
       potency == freezed
           ? _value.potency
           : potency // ignore: cast_nullable_to_non_nullable
@@ -731,17 +682,16 @@ class _$_BerryFlavorMap implements _BerryFlavorMap {
   factory _$_BerryFlavorMap.fromJson(Map<String, dynamic> json) =>
       _$$_BerryFlavorMapFromJson(json);
 
-  @override
-
   /// How powerful the referenced flavor is for this berry.
-  final int potency;
   @override
+  final int potency;
 
   /// The referenced berry flavor.
   ///
   /// See also:
   ///
   /// [BerryFlavor]
+  @override
   final NamedAPIResource flavor;
 
   @override
@@ -753,11 +703,12 @@ class _$_BerryFlavorMap implements _BerryFlavorMap {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _BerryFlavorMap &&
+            other is _$_BerryFlavorMap &&
             const DeepCollectionEquality().equals(other.potency, potency) &&
             const DeepCollectionEquality().equals(other.flavor, flavor));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -766,18 +717,20 @@ class _$_BerryFlavorMap implements _BerryFlavorMap {
 
   @JsonKey(ignore: true)
   @override
-  _$BerryFlavorMapCopyWith<_BerryFlavorMap> get copyWith =>
-      __$BerryFlavorMapCopyWithImpl<_BerryFlavorMap>(this, _$identity);
+  _$$_BerryFlavorMapCopyWith<_$_BerryFlavorMap> get copyWith =>
+      __$$_BerryFlavorMapCopyWithImpl<_$_BerryFlavorMap>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_BerryFlavorMapToJson(this);
+    return _$$_BerryFlavorMapToJson(
+      this,
+    );
   }
 }
 
 abstract class _BerryFlavorMap implements BerryFlavorMap {
-  const factory _BerryFlavorMap(int potency, NamedAPIResource flavor) =
-      _$_BerryFlavorMap;
+  const factory _BerryFlavorMap(
+      final int potency, final NamedAPIResource flavor) = _$_BerryFlavorMap;
 
   factory _BerryFlavorMap.fromJson(Map<String, dynamic> json) =
       _$_BerryFlavorMap.fromJson;
@@ -796,35 +749,13 @@ abstract class _BerryFlavorMap implements BerryFlavorMap {
   NamedAPIResource get flavor;
   @override
   @JsonKey(ignore: true)
-  _$BerryFlavorMapCopyWith<_BerryFlavorMap> get copyWith =>
+  _$$_BerryFlavorMapCopyWith<_$_BerryFlavorMap> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 BerryFirmness _$BerryFirmnessFromJson(Map<String, dynamic> json) {
   return _BerryFirmness.fromJson(json);
 }
-
-/// @nodoc
-class _$BerryFirmnessTearOff {
-  const _$BerryFirmnessTearOff();
-
-  _BerryFirmness call(
-      int id, String name, List<NamedAPIResource> berries, List<Name> names) {
-    return _BerryFirmness(
-      id,
-      name,
-      berries,
-      names,
-    );
-  }
-
-  BerryFirmness fromJson(Map<String, Object?> json) {
-    return BerryFirmness.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $BerryFirmness = _$BerryFirmnessTearOff();
 
 /// @nodoc
 mixin _$BerryFirmness {
@@ -897,26 +828,26 @@ class _$BerryFirmnessCopyWithImpl<$Res>
 }
 
 /// @nodoc
-abstract class _$BerryFirmnessCopyWith<$Res>
+abstract class _$$_BerryFirmnessCopyWith<$Res>
     implements $BerryFirmnessCopyWith<$Res> {
-  factory _$BerryFirmnessCopyWith(
-          _BerryFirmness value, $Res Function(_BerryFirmness) then) =
-      __$BerryFirmnessCopyWithImpl<$Res>;
+  factory _$$_BerryFirmnessCopyWith(
+          _$_BerryFirmness value, $Res Function(_$_BerryFirmness) then) =
+      __$$_BerryFirmnessCopyWithImpl<$Res>;
   @override
   $Res call(
       {int id, String name, List<NamedAPIResource> berries, List<Name> names});
 }
 
 /// @nodoc
-class __$BerryFirmnessCopyWithImpl<$Res>
+class __$$_BerryFirmnessCopyWithImpl<$Res>
     extends _$BerryFirmnessCopyWithImpl<$Res>
-    implements _$BerryFirmnessCopyWith<$Res> {
-  __$BerryFirmnessCopyWithImpl(
-      _BerryFirmness _value, $Res Function(_BerryFirmness) _then)
-      : super(_value, (v) => _then(v as _BerryFirmness));
+    implements _$$_BerryFirmnessCopyWith<$Res> {
+  __$$_BerryFirmnessCopyWithImpl(
+      _$_BerryFirmness _value, $Res Function(_$_BerryFirmness) _then)
+      : super(_value, (v) => _then(v as _$_BerryFirmness));
 
   @override
-  _BerryFirmness get _value => super._value as _BerryFirmness;
+  _$_BerryFirmness get _value => super._value as _$_BerryFirmness;
 
   @override
   $Res call({
@@ -925,7 +856,7 @@ class __$BerryFirmnessCopyWithImpl<$Res>
     Object? berries = freezed,
     Object? names = freezed,
   }) {
-    return _then(_BerryFirmness(
+    return _then(_$_BerryFirmness(
       id == freezed
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
@@ -935,11 +866,11 @@ class __$BerryFirmnessCopyWithImpl<$Res>
           : name // ignore: cast_nullable_to_non_nullable
               as String,
       berries == freezed
-          ? _value.berries
+          ? _value._berries
           : berries // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
       names == freezed
-          ? _value.names
+          ? _value._names
           : names // ignore: cast_nullable_to_non_nullable
               as List<Name>,
     ));
@@ -949,31 +880,49 @@ class __$BerryFirmnessCopyWithImpl<$Res>
 /// @nodoc
 @JsonSerializable()
 class _$_BerryFirmness implements _BerryFirmness {
-  const _$_BerryFirmness(this.id, this.name, this.berries, this.names);
+  const _$_BerryFirmness(this.id, this.name,
+      final List<NamedAPIResource> berries, final List<Name> names)
+      : _berries = berries,
+        _names = names;
 
   factory _$_BerryFirmness.fromJson(Map<String, dynamic> json) =>
       _$$_BerryFirmnessFromJson(json);
 
-  @override
-
   /// The identifier for this resource.
-  final int id;
   @override
+  final int id;
 
   /// The name for this resource.
-  final String name;
   @override
+  final String name;
 
   /// A list of the berries with this firmness.
   ///
   /// See also:
   ///
   /// [Berry]
-  final List<NamedAPIResource> berries;
+  final List<NamedAPIResource> _berries;
+
+  /// A list of the berries with this firmness.
+  ///
+  /// See also:
+  ///
+  /// [Berry]
   @override
+  List<NamedAPIResource> get berries {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_berries);
+  }
 
   /// The name of this resource listed in different languages.
-  final List<Name> names;
+  final List<Name> _names;
+
+  /// The name of this resource listed in different languages.
+  @override
+  List<Name> get names {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_names);
+  }
 
   @override
   String toString() {
@@ -984,35 +933,41 @@ class _$_BerryFirmness implements _BerryFirmness {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _BerryFirmness &&
+            other is _$_BerryFirmness &&
             const DeepCollectionEquality().equals(other.id, id) &&
             const DeepCollectionEquality().equals(other.name, name) &&
-            const DeepCollectionEquality().equals(other.berries, berries) &&
-            const DeepCollectionEquality().equals(other.names, names));
+            const DeepCollectionEquality().equals(other._berries, _berries) &&
+            const DeepCollectionEquality().equals(other._names, _names));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
       const DeepCollectionEquality().hash(id),
       const DeepCollectionEquality().hash(name),
-      const DeepCollectionEquality().hash(berries),
-      const DeepCollectionEquality().hash(names));
+      const DeepCollectionEquality().hash(_berries),
+      const DeepCollectionEquality().hash(_names));
 
   @JsonKey(ignore: true)
   @override
-  _$BerryFirmnessCopyWith<_BerryFirmness> get copyWith =>
-      __$BerryFirmnessCopyWithImpl<_BerryFirmness>(this, _$identity);
+  _$$_BerryFirmnessCopyWith<_$_BerryFirmness> get copyWith =>
+      __$$_BerryFirmnessCopyWithImpl<_$_BerryFirmness>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_BerryFirmnessToJson(this);
+    return _$$_BerryFirmnessToJson(
+      this,
+    );
   }
 }
 
 abstract class _BerryFirmness implements BerryFirmness {
-  const factory _BerryFirmness(int id, String name,
-      List<NamedAPIResource> berries, List<Name> names) = _$_BerryFirmness;
+  const factory _BerryFirmness(
+      final int id,
+      final String name,
+      final List<NamedAPIResource> berries,
+      final List<Name> names) = _$_BerryFirmness;
 
   factory _BerryFirmness.fromJson(Map<String, dynamic> json) =
       _$_BerryFirmness.fromJson;
@@ -1039,40 +994,13 @@ abstract class _BerryFirmness implements BerryFirmness {
   List<Name> get names;
   @override
   @JsonKey(ignore: true)
-  _$BerryFirmnessCopyWith<_BerryFirmness> get copyWith =>
+  _$$_BerryFirmnessCopyWith<_$_BerryFirmness> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 BerryFlavor _$BerryFlavorFromJson(Map<String, dynamic> json) {
   return _BerryFlavor.fromJson(json);
 }
-
-/// @nodoc
-class _$BerryFlavorTearOff {
-  const _$BerryFlavorTearOff();
-
-  _BerryFlavor call(
-      int id,
-      String name,
-      List<FlavorBerryMap> berries,
-      @JsonKey(name: 'contest_type') NamedAPIResource contestType,
-      List<Name> names) {
-    return _BerryFlavor(
-      id,
-      name,
-      berries,
-      contestType,
-      names,
-    );
-  }
-
-  BerryFlavor fromJson(Map<String, Object?> json) {
-    return BerryFlavor.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $BerryFlavor = _$BerryFlavorTearOff();
 
 /// @nodoc
 mixin _$BerryFlavor {
@@ -1166,11 +1094,11 @@ class _$BerryFlavorCopyWithImpl<$Res> implements $BerryFlavorCopyWith<$Res> {
 }
 
 /// @nodoc
-abstract class _$BerryFlavorCopyWith<$Res>
+abstract class _$$_BerryFlavorCopyWith<$Res>
     implements $BerryFlavorCopyWith<$Res> {
-  factory _$BerryFlavorCopyWith(
-          _BerryFlavor value, $Res Function(_BerryFlavor) then) =
-      __$BerryFlavorCopyWithImpl<$Res>;
+  factory _$$_BerryFlavorCopyWith(
+          _$_BerryFlavor value, $Res Function(_$_BerryFlavor) then) =
+      __$$_BerryFlavorCopyWithImpl<$Res>;
   @override
   $Res call(
       {int id,
@@ -1184,14 +1112,14 @@ abstract class _$BerryFlavorCopyWith<$Res>
 }
 
 /// @nodoc
-class __$BerryFlavorCopyWithImpl<$Res> extends _$BerryFlavorCopyWithImpl<$Res>
-    implements _$BerryFlavorCopyWith<$Res> {
-  __$BerryFlavorCopyWithImpl(
-      _BerryFlavor _value, $Res Function(_BerryFlavor) _then)
-      : super(_value, (v) => _then(v as _BerryFlavor));
+class __$$_BerryFlavorCopyWithImpl<$Res> extends _$BerryFlavorCopyWithImpl<$Res>
+    implements _$$_BerryFlavorCopyWith<$Res> {
+  __$$_BerryFlavorCopyWithImpl(
+      _$_BerryFlavor _value, $Res Function(_$_BerryFlavor) _then)
+      : super(_value, (v) => _then(v as _$_BerryFlavor));
 
   @override
-  _BerryFlavor get _value => super._value as _BerryFlavor;
+  _$_BerryFlavor get _value => super._value as _$_BerryFlavor;
 
   @override
   $Res call({
@@ -1201,7 +1129,7 @@ class __$BerryFlavorCopyWithImpl<$Res> extends _$BerryFlavorCopyWithImpl<$Res>
     Object? contestType = freezed,
     Object? names = freezed,
   }) {
-    return _then(_BerryFlavor(
+    return _then(_$_BerryFlavor(
       id == freezed
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
@@ -1211,7 +1139,7 @@ class __$BerryFlavorCopyWithImpl<$Res> extends _$BerryFlavorCopyWithImpl<$Res>
           : name // ignore: cast_nullable_to_non_nullable
               as String,
       berries == freezed
-          ? _value.berries
+          ? _value._berries
           : berries // ignore: cast_nullable_to_non_nullable
               as List<FlavorBerryMap>,
       contestType == freezed
@@ -1219,7 +1147,7 @@ class __$BerryFlavorCopyWithImpl<$Res> extends _$BerryFlavorCopyWithImpl<$Res>
           : contestType // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
       names == freezed
-          ? _value.names
+          ? _value._names
           : names // ignore: cast_nullable_to_non_nullable
               as List<Name>,
     ));
@@ -1229,37 +1157,50 @@ class __$BerryFlavorCopyWithImpl<$Res> extends _$BerryFlavorCopyWithImpl<$Res>
 /// @nodoc
 @JsonSerializable()
 class _$_BerryFlavor implements _BerryFlavor {
-  const _$_BerryFlavor(this.id, this.name, this.berries,
-      @JsonKey(name: 'contest_type') this.contestType, this.names);
+  const _$_BerryFlavor(this.id, this.name, final List<FlavorBerryMap> berries,
+      @JsonKey(name: 'contest_type') this.contestType, final List<Name> names)
+      : _berries = berries,
+        _names = names;
 
   factory _$_BerryFlavor.fromJson(Map<String, dynamic> json) =>
       _$$_BerryFlavorFromJson(json);
 
-  @override
-
   /// The identifier for this resource.
-  final int id;
   @override
+  final int id;
 
   /// The name for this resource.
-  final String name;
   @override
+  final String name;
 
   /// A list of the berries with this flavor.
-  final List<FlavorBerryMap> berries;
+  final List<FlavorBerryMap> _berries;
+
+  /// A list of the berries with this flavor.
   @override
+  List<FlavorBerryMap> get berries {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_berries);
+  }
 
   /// The contest type that correlates with this berry flavor.
   ///
   /// See also:
   ///
   /// [ContestType]
+  @override
   @JsonKey(name: 'contest_type')
   final NamedAPIResource contestType;
-  @override
 
   /// The name of this resource listed in different languages.
-  final List<Name> names;
+  final List<Name> _names;
+
+  /// The name of this resource listed in different languages.
+  @override
+  List<Name> get names {
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_names);
+  }
 
   @override
   String toString() {
@@ -1270,42 +1211,45 @@ class _$_BerryFlavor implements _BerryFlavor {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _BerryFlavor &&
+            other is _$_BerryFlavor &&
             const DeepCollectionEquality().equals(other.id, id) &&
             const DeepCollectionEquality().equals(other.name, name) &&
-            const DeepCollectionEquality().equals(other.berries, berries) &&
+            const DeepCollectionEquality().equals(other._berries, _berries) &&
             const DeepCollectionEquality()
                 .equals(other.contestType, contestType) &&
-            const DeepCollectionEquality().equals(other.names, names));
+            const DeepCollectionEquality().equals(other._names, _names));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
       const DeepCollectionEquality().hash(id),
       const DeepCollectionEquality().hash(name),
-      const DeepCollectionEquality().hash(berries),
+      const DeepCollectionEquality().hash(_berries),
       const DeepCollectionEquality().hash(contestType),
-      const DeepCollectionEquality().hash(names));
+      const DeepCollectionEquality().hash(_names));
 
   @JsonKey(ignore: true)
   @override
-  _$BerryFlavorCopyWith<_BerryFlavor> get copyWith =>
-      __$BerryFlavorCopyWithImpl<_BerryFlavor>(this, _$identity);
+  _$$_BerryFlavorCopyWith<_$_BerryFlavor> get copyWith =>
+      __$$_BerryFlavorCopyWithImpl<_$_BerryFlavor>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_BerryFlavorToJson(this);
+    return _$$_BerryFlavorToJson(
+      this,
+    );
   }
 }
 
 abstract class _BerryFlavor implements BerryFlavor {
   const factory _BerryFlavor(
-      int id,
-      String name,
-      List<FlavorBerryMap> berries,
-      @JsonKey(name: 'contest_type') NamedAPIResource contestType,
-      List<Name> names) = _$_BerryFlavor;
+      final int id,
+      final String name,
+      final List<FlavorBerryMap> berries,
+      @JsonKey(name: 'contest_type') final NamedAPIResource contestType,
+      final List<Name> names) = _$_BerryFlavor;
 
   factory _BerryFlavor.fromJson(Map<String, dynamic> json) =
       _$_BerryFlavor.fromJson;
@@ -1337,32 +1281,13 @@ abstract class _BerryFlavor implements BerryFlavor {
   List<Name> get names;
   @override
   @JsonKey(ignore: true)
-  _$BerryFlavorCopyWith<_BerryFlavor> get copyWith =>
+  _$$_BerryFlavorCopyWith<_$_BerryFlavor> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 FlavorBerryMap _$FlavorBerryMapFromJson(Map<String, dynamic> json) {
   return _FlavorBerryMap.fromJson(json);
 }
-
-/// @nodoc
-class _$FlavorBerryMapTearOff {
-  const _$FlavorBerryMapTearOff();
-
-  _FlavorBerryMap call(int potency, NamedAPIResource berry) {
-    return _FlavorBerryMap(
-      potency,
-      berry,
-    );
-  }
-
-  FlavorBerryMap fromJson(Map<String, Object?> json) {
-    return FlavorBerryMap.fromJson(json);
-  }
-}
-
-/// @nodoc
-const $FlavorBerryMap = _$FlavorBerryMapTearOff();
 
 /// @nodoc
 mixin _$FlavorBerryMap {
@@ -1427,11 +1352,11 @@ class _$FlavorBerryMapCopyWithImpl<$Res>
 }
 
 /// @nodoc
-abstract class _$FlavorBerryMapCopyWith<$Res>
+abstract class _$$_FlavorBerryMapCopyWith<$Res>
     implements $FlavorBerryMapCopyWith<$Res> {
-  factory _$FlavorBerryMapCopyWith(
-          _FlavorBerryMap value, $Res Function(_FlavorBerryMap) then) =
-      __$FlavorBerryMapCopyWithImpl<$Res>;
+  factory _$$_FlavorBerryMapCopyWith(
+          _$_FlavorBerryMap value, $Res Function(_$_FlavorBerryMap) then) =
+      __$$_FlavorBerryMapCopyWithImpl<$Res>;
   @override
   $Res call({int potency, NamedAPIResource berry});
 
@@ -1440,22 +1365,22 @@ abstract class _$FlavorBerryMapCopyWith<$Res>
 }
 
 /// @nodoc
-class __$FlavorBerryMapCopyWithImpl<$Res>
+class __$$_FlavorBerryMapCopyWithImpl<$Res>
     extends _$FlavorBerryMapCopyWithImpl<$Res>
-    implements _$FlavorBerryMapCopyWith<$Res> {
-  __$FlavorBerryMapCopyWithImpl(
-      _FlavorBerryMap _value, $Res Function(_FlavorBerryMap) _then)
-      : super(_value, (v) => _then(v as _FlavorBerryMap));
+    implements _$$_FlavorBerryMapCopyWith<$Res> {
+  __$$_FlavorBerryMapCopyWithImpl(
+      _$_FlavorBerryMap _value, $Res Function(_$_FlavorBerryMap) _then)
+      : super(_value, (v) => _then(v as _$_FlavorBerryMap));
 
   @override
-  _FlavorBerryMap get _value => super._value as _FlavorBerryMap;
+  _$_FlavorBerryMap get _value => super._value as _$_FlavorBerryMap;
 
   @override
   $Res call({
     Object? potency = freezed,
     Object? berry = freezed,
   }) {
-    return _then(_FlavorBerryMap(
+    return _then(_$_FlavorBerryMap(
       potency == freezed
           ? _value.potency
           : potency // ignore: cast_nullable_to_non_nullable
@@ -1476,17 +1401,16 @@ class _$_FlavorBerryMap implements _FlavorBerryMap {
   factory _$_FlavorBerryMap.fromJson(Map<String, dynamic> json) =>
       _$$_FlavorBerryMapFromJson(json);
 
-  @override
-
   /// How powerful the referenced flavor is for this berry.
-  final int potency;
   @override
+  final int potency;
 
   /// The berry with the referenced flavor.
   ///
   /// See also:
   ///
   /// [Berry]
+  @override
   final NamedAPIResource berry;
 
   @override
@@ -1498,11 +1422,12 @@ class _$_FlavorBerryMap implements _FlavorBerryMap {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _FlavorBerryMap &&
+            other is _$_FlavorBerryMap &&
             const DeepCollectionEquality().equals(other.potency, potency) &&
             const DeepCollectionEquality().equals(other.berry, berry));
   }
 
+  @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -1511,18 +1436,20 @@ class _$_FlavorBerryMap implements _FlavorBerryMap {
 
   @JsonKey(ignore: true)
   @override
-  _$FlavorBerryMapCopyWith<_FlavorBerryMap> get copyWith =>
-      __$FlavorBerryMapCopyWithImpl<_FlavorBerryMap>(this, _$identity);
+  _$$_FlavorBerryMapCopyWith<_$_FlavorBerryMap> get copyWith =>
+      __$$_FlavorBerryMapCopyWithImpl<_$_FlavorBerryMap>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_FlavorBerryMapToJson(this);
+    return _$$_FlavorBerryMapToJson(
+      this,
+    );
   }
 }
 
 abstract class _FlavorBerryMap implements FlavorBerryMap {
-  const factory _FlavorBerryMap(int potency, NamedAPIResource berry) =
-      _$_FlavorBerryMap;
+  const factory _FlavorBerryMap(
+      final int potency, final NamedAPIResource berry) = _$_FlavorBerryMap;
 
   factory _FlavorBerryMap.fromJson(Map<String, dynamic> json) =
       _$_FlavorBerryMap.fromJson;
@@ -1541,6 +1468,6 @@ abstract class _FlavorBerryMap implements FlavorBerryMap {
   NamedAPIResource get berry;
   @override
   @JsonKey(ignore: true)
-  _$FlavorBerryMapCopyWith<_FlavorBerryMap> get copyWith =>
+  _$$_FlavorBerryMapCopyWith<_$_FlavorBerryMap> get copyWith =>
       throw _privateConstructorUsedError;
 }

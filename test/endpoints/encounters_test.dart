@@ -25,7 +25,7 @@ void main() {
         methods.add(item);
       }
 
-      expect(methods.length, 27);
+      expect(methods.length, 31);
     });
 
     test('getPage', () async {
@@ -55,7 +55,7 @@ void main() {
         condi.add(item);
       }
 
-      expect(condi.length, 10);
+      expect(condi.length, 13);
     });
 
     test('getPage', () async {
@@ -65,7 +65,7 @@ void main() {
         condi.add(item);
       }
 
-      expect(condi.length, 10);
+      expect(condi.length, 13);
     });
   });
 

@@ -55,7 +55,7 @@ void main() {
         dexes.add(item);
       }
 
-      expect(dexes.length, 28);
+      expect(dexes.length, 29);
     });
 
     test('getPage', () async {
@@ -85,7 +85,7 @@ void main() {
         versions.add(item);
       }
 
-      expect(versions.length, 34);
+      expect(versions.length, 39);
     });
 
     test('getPage', () async {
@@ -115,7 +115,7 @@ void main() {
         versionGrps.add(item);
       }
 
-      expect(versionGrps.length, 20);
+      expect(versionGrps.length, 24);
     });
 
     test('getPage', () async {
