@@ -123,7 +123,7 @@ void main() {
         regions.add(item);
       }
 
-      expect(regions.length, 8);
+      expect(regions.length, 9);
     });
 
     test('getPage', () async {
@@ -133,7 +133,7 @@ void main() {
         regions.add(item);
       }
 
-      expect(regions.length, 8);
+      expect(regions.length, 9);
     });
   });
 }

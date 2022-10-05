@@ -1873,7 +1873,7 @@ mixin _$Region {
 
   /// The generation this region was introduced in.
   @JsonKey(name: 'main_generation')
-  NamedAPIResource get mainGeneration => throw _privateConstructorUsedError;
+  NamedAPIResource? get mainGeneration => throw _privateConstructorUsedError;
 
   /// A list of pokédexes that catalogue Pokémon in this region.
   ///
@@ -1905,11 +1905,11 @@ abstract class $RegionCopyWith<$Res> {
       List<NamedAPIResource> locations,
       String name,
       List<Name> names,
-      @JsonKey(name: 'main_generation') NamedAPIResource mainGeneration,
+      @JsonKey(name: 'main_generation') NamedAPIResource? mainGeneration,
       List<NamedAPIResource> pokedexes,
       @JsonKey(name: 'version_groups') List<NamedAPIResource> versionGroups});
 
-  $NamedAPIResourceCopyWith<$Res> get mainGeneration;
+  $NamedAPIResourceCopyWith<$Res>? get mainGeneration;
 }
 
 /// @nodoc
@@ -1950,7 +1950,7 @@ class _$RegionCopyWithImpl<$Res> implements $RegionCopyWith<$Res> {
       mainGeneration: mainGeneration == freezed
           ? _value.mainGeneration
           : mainGeneration // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedAPIResource?,
       pokedexes: pokedexes == freezed
           ? _value.pokedexes
           : pokedexes // ignore: cast_nullable_to_non_nullable
@@ -1963,8 +1963,12 @@ class _$RegionCopyWithImpl<$Res> implements $RegionCopyWith<$Res> {
   }
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get mainGeneration {
-    return $NamedAPIResourceCopyWith<$Res>(_value.mainGeneration, (value) {
+  $NamedAPIResourceCopyWith<$Res>? get mainGeneration {
+    if (_value.mainGeneration == null) {
+      return null;
+    }
+
+    return $NamedAPIResourceCopyWith<$Res>(_value.mainGeneration!, (value) {
       return _then(_value.copyWith(mainGeneration: value));
     });
   }
@@ -1980,12 +1984,12 @@ abstract class _$$_RegionCopyWith<$Res> implements $RegionCopyWith<$Res> {
       List<NamedAPIResource> locations,
       String name,
       List<Name> names,
-      @JsonKey(name: 'main_generation') NamedAPIResource mainGeneration,
+      @JsonKey(name: 'main_generation') NamedAPIResource? mainGeneration,
       List<NamedAPIResource> pokedexes,
       @JsonKey(name: 'version_groups') List<NamedAPIResource> versionGroups});
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get mainGeneration;
+  $NamedAPIResourceCopyWith<$Res>? get mainGeneration;
 }
 
 /// @nodoc
@@ -2027,7 +2031,7 @@ class __$$_RegionCopyWithImpl<$Res> extends _$RegionCopyWithImpl<$Res>
       mainGeneration == freezed
           ? _value.mainGeneration
           : mainGeneration // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedAPIResource?,
       pokedexes == freezed
           ? _value._pokedexes
           : pokedexes // ignore: cast_nullable_to_non_nullable
@@ -2100,7 +2104,7 @@ class _$_Region implements _Region {
   /// The generation this region was introduced in.
   @override
   @JsonKey(name: 'main_generation')
-  final NamedAPIResource mainGeneration;
+  final NamedAPIResource? mainGeneration;
 
   /// A list of pokédexes that catalogue Pokémon in this region.
   ///
@@ -2194,7 +2198,7 @@ abstract class _Region implements Region {
       final String name,
       final List<Name> names,
       @JsonKey(name: 'main_generation')
-          final NamedAPIResource mainGeneration,
+          final NamedAPIResource? mainGeneration,
       final List<NamedAPIResource> pokedexes,
       @JsonKey(name: 'version_groups')
           final List<NamedAPIResource> versionGroups) = _$_Region;
@@ -2225,7 +2229,7 @@ abstract class _Region implements Region {
 
   /// The generation this region was introduced in.
   @JsonKey(name: 'main_generation')
-  NamedAPIResource get mainGeneration;
+  NamedAPIResource? get mainGeneration;
   @override
 
   /// A list of pokédexes that catalogue Pokémon in this region.

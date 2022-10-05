@@ -196,7 +196,7 @@ class Region with _$Region {
     List<Name> names,
 
     /// The generation this region was introduced in.
-    @JsonKey(name: 'main_generation') NamedAPIResource mainGeneration,
+    @JsonKey(name: 'main_generation') NamedAPIResource? mainGeneration,
 
     /// A list of pokédexes that catalogue Pokémon in this region.
     ///

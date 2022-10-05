@@ -155,8 +155,10 @@ _$_Region _$$_RegionFromJson(Map<String, dynamic> json) => _$_Region(
       (json['names'] as List<dynamic>)
           .map((e) => Name.fromJson(e as Map<String, dynamic>))
           .toList(),
-      NamedAPIResource.fromJson(
-          json['main_generation'] as Map<String, dynamic>),
+      json['main_generation'] == null
+          ? null
+          : NamedAPIResource.fromJson(
+              json['main_generation'] as Map<String, dynamic>),
       (json['pokedexes'] as List<dynamic>)
           .map((e) => NamedAPIResource.fromJson(e as Map<String, dynamic>))
           .toList(),
