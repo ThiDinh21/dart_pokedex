@@ -4201,7 +4201,7 @@ mixin _$Pokemon {
 
   /// The base experience gained for defeating this Pokémon.
   @JsonKey(name: 'base_experience')
-  int get baseExperience => throw _privateConstructorUsedError;
+  int? get baseExperience => throw _privateConstructorUsedError;
 
   /// The height of this Pokémon in decimetres.
   int get height => throw _privateConstructorUsedError;
@@ -4277,7 +4277,7 @@ abstract class $PokemonCopyWith<$Res> {
   $Res call(
       {int id,
       String name,
-      @JsonKey(name: 'base_experience') int baseExperience,
+      @JsonKey(name: 'base_experience') int? baseExperience,
       int height,
       @JsonKey(name: 'is_default') bool isDefault,
       int order,
@@ -4339,7 +4339,7 @@ class _$PokemonCopyWithImpl<$Res> implements $PokemonCopyWith<$Res> {
       baseExperience: baseExperience == freezed
           ? _value.baseExperience
           : baseExperience // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
       height: height == freezed
           ? _value.height
           : height // ignore: cast_nullable_to_non_nullable
@@ -4427,7 +4427,7 @@ abstract class _$$_PokemonCopyWith<$Res> implements $PokemonCopyWith<$Res> {
   $Res call(
       {int id,
       String name,
-      @JsonKey(name: 'base_experience') int baseExperience,
+      @JsonKey(name: 'base_experience') int? baseExperience,
       int height,
       @JsonKey(name: 'is_default') bool isDefault,
       int order,
@@ -4492,7 +4492,7 @@ class __$$_PokemonCopyWithImpl<$Res> extends _$PokemonCopyWithImpl<$Res>
       baseExperience == freezed
           ? _value.baseExperience
           : baseExperience // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
       height == freezed
           ? _value.height
           : height // ignore: cast_nullable_to_non_nullable
@@ -4602,7 +4602,7 @@ class _$_Pokemon implements _Pokemon {
   /// The base experience gained for defeating this Pokémon.
   @override
   @JsonKey(name: 'base_experience')
-  final int baseExperience;
+  final int? baseExperience;
 
   /// The height of this Pokémon in decimetres.
   @override
@@ -4811,7 +4811,7 @@ abstract class _Pokemon implements Pokemon {
       final int id,
       final String name,
       @JsonKey(name: 'base_experience')
-          final int baseExperience,
+          final int? baseExperience,
       final int height,
       @JsonKey(name: 'is_default')
           final bool isDefault,
@@ -4847,7 +4847,7 @@ abstract class _Pokemon implements Pokemon {
 
   /// The base experience gained for defeating this Pokémon.
   @JsonKey(name: 'base_experience')
-  int get baseExperience;
+  int? get baseExperience;
   @override
 
   /// The height of this Pokémon in decimetres.
@@ -9281,7 +9281,7 @@ mixin _$PokemonSpecies {
   /// The happiness when caught by a normal Pokéball; up to 255.
   /// The higher the number, the happier the Pokémon.
   @JsonKey(name: 'base_happiness')
-  int get baseHappiness => throw _privateConstructorUsedError;
+  int? get baseHappiness => throw _privateConstructorUsedError;
 
   /// Whether or not this is a baby Pokémon.
   @JsonKey(name: 'is_baby')
@@ -9298,7 +9298,7 @@ mixin _$PokemonSpecies {
   /// Initial hatch counter: one must walk 255 × (hatch_counter + 1) steps before
   ///  this Pokémon's egg hatches, unless utilizing bonuses like Flame Body's.
   @JsonKey(name: 'hatch_counter')
-  int get hatchCounter => throw _privateConstructorUsedError;
+  int? get hatchCounter => throw _privateConstructorUsedError;
 
   /// Whether or not this Pokémon has visual gender differences.
   @JsonKey(name: 'has_gender_differences')
@@ -9341,7 +9341,7 @@ mixin _$PokemonSpecies {
   /// See also:
   ///
   /// [PokemonShape]
-  NamedAPIResource get shape => throw _privateConstructorUsedError;
+  NamedAPIResource? get shape => throw _privateConstructorUsedError;
 
   /// The Pokémon species that evolves into this Pokemon_species.
   ///
@@ -9358,7 +9358,7 @@ mixin _$PokemonSpecies {
   ///
   /// [EvolutionChain]
   @JsonKey(name: 'evolution_chain')
-  APIResource get evolutionChain => throw _privateConstructorUsedError;
+  APIResource? get evolutionChain => throw _privateConstructorUsedError;
 
   /// The habitat this Pokémon species can be encountered in.
   ///
@@ -9417,7 +9417,7 @@ abstract class $PokemonSpeciesCopyWith<$Res> {
       @JsonKey(name: 'capture_rate')
           int captureRate,
       @JsonKey(name: 'base_happiness')
-          int baseHappiness,
+          int? baseHappiness,
       @JsonKey(name: 'is_baby')
           bool isBaby,
       @JsonKey(name: 'is_legendary')
@@ -9425,7 +9425,7 @@ abstract class $PokemonSpeciesCopyWith<$Res> {
       @JsonKey(name: 'is_mythical')
           bool isMythical,
       @JsonKey(name: 'hatch_counter')
-          int hatchCounter,
+          int? hatchCounter,
       @JsonKey(name: 'has_gender_differences')
           bool hasGenderdifferences,
       @JsonKey(name: 'forms_switchable')
@@ -9437,11 +9437,11 @@ abstract class $PokemonSpeciesCopyWith<$Res> {
       @JsonKey(name: 'egg_groups')
           List<NamedAPIResource> eggGroups,
       NamedAPIResource color,
-      NamedAPIResource shape,
+      NamedAPIResource? shape,
       @JsonKey(name: 'evolves_from_species')
           NamedAPIResource? evolvesFromSpecies,
       @JsonKey(name: 'evolution_chain')
-          APIResource evolutionChain,
+          APIResource? evolutionChain,
       NamedAPIResource? habitat,
       NamedAPIResource generation,
       List<Name> names,
@@ -9456,9 +9456,9 @@ abstract class $PokemonSpeciesCopyWith<$Res> {
 
   $NamedAPIResourceCopyWith<$Res> get growthRate;
   $NamedAPIResourceCopyWith<$Res> get color;
-  $NamedAPIResourceCopyWith<$Res> get shape;
+  $NamedAPIResourceCopyWith<$Res>? get shape;
   $NamedAPIResourceCopyWith<$Res>? get evolvesFromSpecies;
-  $APIResourceCopyWith<$Res> get evolutionChain;
+  $APIResourceCopyWith<$Res>? get evolutionChain;
   $NamedAPIResourceCopyWith<$Res>? get habitat;
   $NamedAPIResourceCopyWith<$Res> get generation;
 }
@@ -9526,7 +9526,7 @@ class _$PokemonSpeciesCopyWithImpl<$Res>
       baseHappiness: baseHappiness == freezed
           ? _value.baseHappiness
           : baseHappiness // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
       isBaby: isBaby == freezed
           ? _value.isBaby
           : isBaby // ignore: cast_nullable_to_non_nullable
@@ -9542,7 +9542,7 @@ class _$PokemonSpeciesCopyWithImpl<$Res>
       hatchCounter: hatchCounter == freezed
           ? _value.hatchCounter
           : hatchCounter // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
       hasGenderdifferences: hasGenderdifferences == freezed
           ? _value.hasGenderdifferences
           : hasGenderdifferences // ignore: cast_nullable_to_non_nullable
@@ -9570,7 +9570,7 @@ class _$PokemonSpeciesCopyWithImpl<$Res>
       shape: shape == freezed
           ? _value.shape
           : shape // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedAPIResource?,
       evolvesFromSpecies: evolvesFromSpecies == freezed
           ? _value.evolvesFromSpecies
           : evolvesFromSpecies // ignore: cast_nullable_to_non_nullable
@@ -9578,7 +9578,7 @@ class _$PokemonSpeciesCopyWithImpl<$Res>
       evolutionChain: evolutionChain == freezed
           ? _value.evolutionChain
           : evolutionChain // ignore: cast_nullable_to_non_nullable
-              as APIResource,
+              as APIResource?,
       habitat: habitat == freezed
           ? _value.habitat
           : habitat // ignore: cast_nullable_to_non_nullable
@@ -9629,8 +9629,12 @@ class _$PokemonSpeciesCopyWithImpl<$Res>
   }
 
   @override
-  $NamedAPIResourceCopyWith<$Res> get shape {
-    return $NamedAPIResourceCopyWith<$Res>(_value.shape, (value) {
+  $NamedAPIResourceCopyWith<$Res>? get shape {
+    if (_value.shape == null) {
+      return null;
+    }
+
+    return $NamedAPIResourceCopyWith<$Res>(_value.shape!, (value) {
       return _then(_value.copyWith(shape: value));
     });
   }
@@ -9647,8 +9651,12 @@ class _$PokemonSpeciesCopyWithImpl<$Res>
   }
 
   @override
-  $APIResourceCopyWith<$Res> get evolutionChain {
-    return $APIResourceCopyWith<$Res>(_value.evolutionChain, (value) {
+  $APIResourceCopyWith<$Res>? get evolutionChain {
+    if (_value.evolutionChain == null) {
+      return null;
+    }
+
+    return $APIResourceCopyWith<$Res>(_value.evolutionChain!, (value) {
       return _then(_value.copyWith(evolutionChain: value));
     });
   }
@@ -9688,7 +9696,7 @@ abstract class _$$_PokemonSpeciesCopyWith<$Res>
       @JsonKey(name: 'capture_rate')
           int captureRate,
       @JsonKey(name: 'base_happiness')
-          int baseHappiness,
+          int? baseHappiness,
       @JsonKey(name: 'is_baby')
           bool isBaby,
       @JsonKey(name: 'is_legendary')
@@ -9696,7 +9704,7 @@ abstract class _$$_PokemonSpeciesCopyWith<$Res>
       @JsonKey(name: 'is_mythical')
           bool isMythical,
       @JsonKey(name: 'hatch_counter')
-          int hatchCounter,
+          int? hatchCounter,
       @JsonKey(name: 'has_gender_differences')
           bool hasGenderdifferences,
       @JsonKey(name: 'forms_switchable')
@@ -9708,11 +9716,11 @@ abstract class _$$_PokemonSpeciesCopyWith<$Res>
       @JsonKey(name: 'egg_groups')
           List<NamedAPIResource> eggGroups,
       NamedAPIResource color,
-      NamedAPIResource shape,
+      NamedAPIResource? shape,
       @JsonKey(name: 'evolves_from_species')
           NamedAPIResource? evolvesFromSpecies,
       @JsonKey(name: 'evolution_chain')
-          APIResource evolutionChain,
+          APIResource? evolutionChain,
       NamedAPIResource? habitat,
       NamedAPIResource generation,
       List<Name> names,
@@ -9730,11 +9738,11 @@ abstract class _$$_PokemonSpeciesCopyWith<$Res>
   @override
   $NamedAPIResourceCopyWith<$Res> get color;
   @override
-  $NamedAPIResourceCopyWith<$Res> get shape;
+  $NamedAPIResourceCopyWith<$Res>? get shape;
   @override
   $NamedAPIResourceCopyWith<$Res>? get evolvesFromSpecies;
   @override
-  $APIResourceCopyWith<$Res> get evolutionChain;
+  $APIResourceCopyWith<$Res>? get evolutionChain;
   @override
   $NamedAPIResourceCopyWith<$Res>? get habitat;
   @override
@@ -9806,7 +9814,7 @@ class __$$_PokemonSpeciesCopyWithImpl<$Res>
       baseHappiness == freezed
           ? _value.baseHappiness
           : baseHappiness // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
       isBaby == freezed
           ? _value.isBaby
           : isBaby // ignore: cast_nullable_to_non_nullable
@@ -9822,7 +9830,7 @@ class __$$_PokemonSpeciesCopyWithImpl<$Res>
       hatchCounter == freezed
           ? _value.hatchCounter
           : hatchCounter // ignore: cast_nullable_to_non_nullable
-              as int,
+              as int?,
       hasGenderdifferences == freezed
           ? _value.hasGenderdifferences
           : hasGenderdifferences // ignore: cast_nullable_to_non_nullable
@@ -9850,7 +9858,7 @@ class __$$_PokemonSpeciesCopyWithImpl<$Res>
       shape == freezed
           ? _value.shape
           : shape // ignore: cast_nullable_to_non_nullable
-              as NamedAPIResource,
+              as NamedAPIResource?,
       evolvesFromSpecies == freezed
           ? _value.evolvesFromSpecies
           : evolvesFromSpecies // ignore: cast_nullable_to_non_nullable
@@ -9858,7 +9866,7 @@ class __$$_PokemonSpeciesCopyWithImpl<$Res>
       evolutionChain == freezed
           ? _value.evolutionChain
           : evolutionChain // ignore: cast_nullable_to_non_nullable
-              as APIResource,
+              as APIResource?,
       habitat == freezed
           ? _value.habitat
           : habitat // ignore: cast_nullable_to_non_nullable
@@ -9982,7 +9990,7 @@ class _$_PokemonSpecies implements _PokemonSpecies {
   /// The higher the number, the happier the Pokémon.
   @override
   @JsonKey(name: 'base_happiness')
-  final int baseHappiness;
+  final int? baseHappiness;
 
   /// Whether or not this is a baby Pokémon.
   @override
@@ -10003,7 +10011,7 @@ class _$_PokemonSpecies implements _PokemonSpecies {
   ///  this Pokémon's egg hatches, unless utilizing bonuses like Flame Body's.
   @override
   @JsonKey(name: 'hatch_counter')
-  final int hatchCounter;
+  final int? hatchCounter;
 
   /// Whether or not this Pokémon has visual gender differences.
   @override
@@ -10068,7 +10076,7 @@ class _$_PokemonSpecies implements _PokemonSpecies {
   ///
   /// [PokemonShape]
   @override
-  final NamedAPIResource shape;
+  final NamedAPIResource? shape;
 
   /// The Pokémon species that evolves into this Pokemon_species.
   ///
@@ -10086,7 +10094,7 @@ class _$_PokemonSpecies implements _PokemonSpecies {
   /// [EvolutionChain]
   @override
   @JsonKey(name: 'evolution_chain')
-  final APIResource evolutionChain;
+  final APIResource? evolutionChain;
 
   /// The habitat this Pokémon species can be encountered in.
   ///
@@ -10280,7 +10288,7 @@ abstract class _PokemonSpecies implements PokemonSpecies {
       @JsonKey(name: 'capture_rate')
           final int captureRate,
       @JsonKey(name: 'base_happiness')
-          final int baseHappiness,
+          final int? baseHappiness,
       @JsonKey(name: 'is_baby')
           final bool isBaby,
       @JsonKey(name: 'is_legendary')
@@ -10288,7 +10296,7 @@ abstract class _PokemonSpecies implements PokemonSpecies {
       @JsonKey(name: 'is_mythical')
           final bool isMythical,
       @JsonKey(name: 'hatch_counter')
-          final int hatchCounter,
+          final int? hatchCounter,
       @JsonKey(name: 'has_gender_differences')
           final bool hasGenderdifferences,
       @JsonKey(name: 'forms_switchable')
@@ -10300,11 +10308,11 @@ abstract class _PokemonSpecies implements PokemonSpecies {
       @JsonKey(name: 'egg_groups')
           final List<NamedAPIResource> eggGroups,
       final NamedAPIResource color,
-      final NamedAPIResource shape,
+      final NamedAPIResource? shape,
       @JsonKey(name: 'evolves_from_species')
           final NamedAPIResource? evolvesFromSpecies,
       @JsonKey(name: 'evolution_chain')
-          final APIResource evolutionChain,
+          final APIResource? evolutionChain,
       final NamedAPIResource? habitat,
       final NamedAPIResource generation,
       final List<Name> names,
@@ -10348,7 +10356,7 @@ abstract class _PokemonSpecies implements PokemonSpecies {
   /// The happiness when caught by a normal Pokéball; up to 255.
   /// The higher the number, the happier the Pokémon.
   @JsonKey(name: 'base_happiness')
-  int get baseHappiness;
+  int? get baseHappiness;
   @override
 
   /// Whether or not this is a baby Pokémon.
@@ -10369,7 +10377,7 @@ abstract class _PokemonSpecies implements PokemonSpecies {
   /// Initial hatch counter: one must walk 255 × (hatch_counter + 1) steps before
   ///  this Pokémon's egg hatches, unless utilizing bonuses like Flame Body's.
   @JsonKey(name: 'hatch_counter')
-  int get hatchCounter;
+  int? get hatchCounter;
   @override
 
   /// Whether or not this Pokémon has visual gender differences.
@@ -10418,7 +10426,7 @@ abstract class _PokemonSpecies implements PokemonSpecies {
   /// See also:
   ///
   /// [PokemonShape]
-  NamedAPIResource get shape;
+  NamedAPIResource? get shape;
   @override
 
   /// The Pokémon species that evolves into this Pokemon_species.
@@ -10436,7 +10444,7 @@ abstract class _PokemonSpecies implements PokemonSpecies {
   ///
   /// [EvolutionChain]
   @JsonKey(name: 'evolution_chain')
-  APIResource get evolutionChain;
+  APIResource? get evolutionChain;
   @override
 
   /// The habitat this Pokémon species can be encountered in.

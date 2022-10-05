@@ -322,7 +322,7 @@ Map<String, dynamic> _$$_NaturePokeathlonStatAffectToJson(
 _$_Pokemon _$$_PokemonFromJson(Map<String, dynamic> json) => _$_Pokemon(
       json['id'] as int,
       json['name'] as String,
-      json['base_experience'] as int,
+      json['base_experience'] as int?,
       json['height'] as int,
       json['is_default'] as bool,
       json['order'] as int,
@@ -688,11 +688,11 @@ _$_PokemonSpecies _$$_PokemonSpeciesFromJson(Map<String, dynamic> json) =>
       json['order'] as int,
       json['gender_rate'] as int,
       json['capture_rate'] as int,
-      json['base_happiness'] as int,
+      json['base_happiness'] as int?,
       json['is_baby'] as bool,
       json['is_legendary'] as bool,
       json['is_mythical'] as bool,
-      json['hatch_counter'] as int,
+      json['hatch_counter'] as int?,
       json['has_gender_differences'] as bool,
       json['forms_switchable'] as bool,
       NamedAPIResource.fromJson(json['growth_rate'] as Map<String, dynamic>),
@@ -704,12 +704,17 @@ _$_PokemonSpecies _$$_PokemonSpeciesFromJson(Map<String, dynamic> json) =>
           .map((e) => NamedAPIResource.fromJson(e as Map<String, dynamic>))
           .toList(),
       NamedAPIResource.fromJson(json['color'] as Map<String, dynamic>),
-      NamedAPIResource.fromJson(json['shape'] as Map<String, dynamic>),
+      json['shape'] == null
+          ? null
+          : NamedAPIResource.fromJson(json['shape'] as Map<String, dynamic>),
       json['evolves_from_species'] == null
           ? null
           : NamedAPIResource.fromJson(
               json['evolves_from_species'] as Map<String, dynamic>),
-      APIResource.fromJson(json['evolution_chain'] as Map<String, dynamic>),
+      json['evolution_chain'] == null
+          ? null
+          : APIResource.fromJson(
+              json['evolution_chain'] as Map<String, dynamic>),
       json['habitat'] == null
           ? null
           : NamedAPIResource.fromJson(json['habitat'] as Map<String, dynamic>),

@@ -395,7 +395,7 @@ class Pokemon with _$Pokemon {
     String name,
 
     /// The base experience gained for defeating this Pokémon.
-    @JsonKey(name: 'base_experience') int baseExperience,
+    @JsonKey(name: 'base_experience') int? baseExperience,
 
     /// The height of this Pokémon in decimetres.
     int height,
@@ -874,7 +874,7 @@ class PokemonSpecies with _$PokemonSpecies {
 
     /// The happiness when caught by a normal Pokéball; up to 255.
     /// The higher the number, the happier the Pokémon.
-    @JsonKey(name: 'base_happiness') int baseHappiness,
+    @JsonKey(name: 'base_happiness') int? baseHappiness,
 
     /// Whether or not this is a baby Pokémon.
     @JsonKey(name: 'is_baby') bool isBaby,
@@ -887,7 +887,7 @@ class PokemonSpecies with _$PokemonSpecies {
 
     /// Initial hatch counter: one must walk 255 × (hatch_counter + 1) steps before
     ///  this Pokémon's egg hatches, unless utilizing bonuses like Flame Body's.
-    @JsonKey(name: 'hatch_counter') int hatchCounter,
+    @JsonKey(name: 'hatch_counter') int? hatchCounter,
 
     /// Whether or not this Pokémon has visual gender differences.
     @JsonKey(name: 'has_gender_differences') bool hasGenderdifferences,
@@ -925,7 +925,7 @@ class PokemonSpecies with _$PokemonSpecies {
     /// See also:
     ///
     /// [PokemonShape]
-    NamedAPIResource shape,
+    NamedAPIResource? shape,
 
     /// The Pokémon species that evolves into this Pokemon_species.
     ///
@@ -939,7 +939,7 @@ class PokemonSpecies with _$PokemonSpecies {
     /// See also:
     ///
     /// [EvolutionChain]
-    @JsonKey(name: 'evolution_chain') APIResource evolutionChain,
+    @JsonKey(name: 'evolution_chain') APIResource? evolutionChain,
 
     /// The habitat this Pokémon species can be encountered in.
     ///

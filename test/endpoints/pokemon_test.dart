@@ -243,13 +243,13 @@ void main() {
           pokemon.add(item);
         }
 
-        expect(pokemon.length, 1118);
+        expect(pokemon.length, 1154);
       },
       timeout: timeout(600),
     );
 
     test('getPage', () async {
-      final resources = await endpoint.getPage();
+      final resources = await endpoint.getPage(offset: 1130);
       for (final resource in resources.results) {
         final item = await endpoint.getByUrl(resource.url);
         pokemon.add(item);
@@ -307,7 +307,7 @@ void main() {
           shapes.add(item);
         }
 
-        expect(shapes.length, 1283);
+        expect(shapes.length, 1323);
       },
       timeout: timeout(1200),
     );
@@ -401,19 +401,19 @@ void main() {
           species.add(item);
         }
 
-        expect(species.length, 898);
+        expect(species.length, 905);
       },
       timeout: timeout(600),
     );
 
     test('getPage', () async {
-      final resources = await endpoint.getPage();
+      final resources = await endpoint.getPage(offset: 807, limit: 1);
       for (final resource in resources.results) {
         final item = await endpoint.getByUrl(resource.url);
         species.add(item);
       }
 
-      expect(species.length, 20);
+      expect(species.length, 1);
     });
   });
 
