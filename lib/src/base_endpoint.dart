@@ -45,14 +45,164 @@ mixin ResourceEndpointMixin<T> {
   String get path => _resource ?? _createResource();
 
   String _createResource() {
-    _resource = T == PokedexData
-        ? 'pokedex'
-        : T
-            .toString()
-            .split('<')[0] // drop generic
-            .split(RegExp('(?=[A-Z])'))
-            .join('-')
-            .toLowerCase();
+    final endpoint = T;
+    // _resource = T == PokedexData
+    //     ? 'pokedex'
+    //     : T
+    //         .toString()
+    //         .split('<')[0] // drop generic
+    //         .split(RegExp('(?=[A-Z])'))
+    //         .join('-')
+    //         .toLowerCase();
+
+    switch (endpoint) {
+      case Berry:
+        _resource = 'berry';
+        break;
+      case BerryFirmness:
+        _resource = 'berry-firmness';
+        break;
+      case BerryFlavor:
+        _resource = 'berry-flavor';
+        break;
+      case ContestType:
+        _resource = 'contest-type';
+        break;
+      case ContestEffect:
+        _resource = 'contest-effect';
+        break;
+      case SuperContestEffect:
+        _resource = 'super-contest-effect';
+        break;
+      case EncounterMethod:
+        _resource = 'encounter-method';
+        break;
+      case EncounterCondition:
+        _resource = 'encounter-condition';
+        break;
+      case EncounterConditionValue:
+        _resource = 'encounter-condition-value';
+        break;
+      case EvolutionChain:
+        _resource = 'evolution-chain';
+        break;
+      case EvolutionTrigger:
+        _resource = 'evolution-trigger';
+        break;
+      case Generation:
+        _resource = 'generation';
+        break;
+      case PokedexData:
+        _resource = 'pokedex';
+        break;
+      case Version:
+        _resource = 'version';
+        break;
+      case VersionGroup:
+        _resource = 'version-group';
+        break;
+      case Item:
+        _resource = 'item';
+        break;
+      case ItemAttribute:
+        _resource = 'item-attribute';
+        break;
+      case ItemCategory:
+        _resource = 'item-category';
+        break;
+      case ItemFlingEffect:
+        _resource = 'item-fling-effect';
+        break;
+      case ItemPocket:
+        _resource = 'item-pocket';
+        break;
+      case Location:
+        _resource = 'location';
+        break;
+      case LocationArea:
+        _resource = 'location-area';
+        break;
+      case PalParkArea:
+        _resource = 'pal-park-area';
+        break;
+      case Region:
+        _resource = 'region';
+        break;
+      case Machine:
+        _resource = 'machine';
+        break;
+      case Move:
+        _resource = 'move';
+        break;
+      case MoveAilment:
+        _resource = 'move-ailment';
+        break;
+      case MoveBattleStyle:
+        _resource = 'move-battle-style';
+        break;
+      case MoveCategory:
+        _resource = 'move-category';
+        break;
+      case MoveDamageClass:
+        _resource = 'move-damage-class';
+        break;
+      case MoveLearnMethod:
+        _resource = 'move-learn-method';
+        break;
+      case MoveTarget:
+        _resource = 'move-target';
+        break;
+      case Ability:
+        _resource = 'ability';
+        break;
+      case Characteristic:
+        _resource = 'characteristic';
+        break;
+      case EggGroup:
+        _resource = 'egg-group';
+        break;
+      case Gender:
+        _resource = 'gender';
+        break;
+      case GrowthRate:
+        _resource = 'growth-rate';
+        break;
+      case Nature:
+        _resource = 'nature';
+        break;
+      case PokeathlonStat:
+        _resource = 'pokeathlon-stat';
+        break;
+      case Pokemon:
+        _resource = 'pokemon';
+        break;
+      case PokemonColor:
+        _resource = 'pokemon-color';
+        break;
+      case PokemonForm:
+        _resource = 'pokemon-form';
+        break;
+      case PokemonHabitat:
+        _resource = 'pokemon-habitat';
+        break;
+      case PokemonShape:
+        _resource = 'pokemon-shape';
+        break;
+      case PokemonSpecies:
+        _resource = 'pokemon-species';
+        break;
+      case Stat:
+        _resource = 'stat';
+        break;
+      case Type:
+        _resource = 'type';
+        break;
+      case Language:
+        _resource = 'language';
+        break;
+      default:
+        throw ('This endpoint is not supported');
+    }
 
     return _resource!;
   }
