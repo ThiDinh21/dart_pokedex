@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'common.dart';
 
@@ -33,28 +33,32 @@ mixin _$APIResource {
 abstract class $APIResourceCopyWith<$Res> {
   factory $APIResourceCopyWith(
           APIResource value, $Res Function(APIResource) then) =
-      _$APIResourceCopyWithImpl<$Res>;
+      _$APIResourceCopyWithImpl<$Res, APIResource>;
+  @useResult
   $Res call({String url});
 }
 
 /// @nodoc
-class _$APIResourceCopyWithImpl<$Res> implements $APIResourceCopyWith<$Res> {
+class _$APIResourceCopyWithImpl<$Res, $Val extends APIResource>
+    implements $APIResourceCopyWith<$Res> {
   _$APIResourceCopyWithImpl(this._value, this._then);
 
-  final APIResource _value;
   // ignore: unused_field
-  final $Res Function(APIResource) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? url = freezed,
+    Object? url = null,
   }) {
     return _then(_value.copyWith(
-      url: url == freezed
+      url: null == url
           ? _value.url
           : url // ignore: cast_nullable_to_non_nullable
               as String,
-    ));
+    ) as $Val);
   }
 }
 
@@ -65,25 +69,25 @@ abstract class _$$_APIResourceCopyWith<$Res>
           _$_APIResource value, $Res Function(_$_APIResource) then) =
       __$$_APIResourceCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String url});
 }
 
 /// @nodoc
-class __$$_APIResourceCopyWithImpl<$Res> extends _$APIResourceCopyWithImpl<$Res>
+class __$$_APIResourceCopyWithImpl<$Res>
+    extends _$APIResourceCopyWithImpl<$Res, _$_APIResource>
     implements _$$_APIResourceCopyWith<$Res> {
   __$$_APIResourceCopyWithImpl(
       _$_APIResource _value, $Res Function(_$_APIResource) _then)
-      : super(_value, (v) => _then(v as _$_APIResource));
+      : super(_value, _then);
 
-  @override
-  _$_APIResource get _value => super._value as _$_APIResource;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? url = freezed,
+    Object? url = null,
   }) {
     return _then(_$_APIResource(
-      url == freezed
+      null == url
           ? _value.url
           : url // ignore: cast_nullable_to_non_nullable
               as String,
@@ -113,16 +117,16 @@ class _$_APIResource implements _APIResource {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_APIResource &&
-            const DeepCollectionEquality().equals(other.url, url));
+            (identical(other.url, url) || other.url == url));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(url));
+  int get hashCode => Object.hash(runtimeType, url);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_APIResourceCopyWith<_$_APIResource> get copyWith =>
       __$$_APIResourceCopyWithImpl<_$_APIResource>(this, _$identity);
 
@@ -176,41 +180,46 @@ mixin _$Description {
 abstract class $DescriptionCopyWith<$Res> {
   factory $DescriptionCopyWith(
           Description value, $Res Function(Description) then) =
-      _$DescriptionCopyWithImpl<$Res>;
+      _$DescriptionCopyWithImpl<$Res, Description>;
+  @useResult
   $Res call({String description, NamedAPIResource language});
 
   $NamedAPIResourceCopyWith<$Res> get language;
 }
 
 /// @nodoc
-class _$DescriptionCopyWithImpl<$Res> implements $DescriptionCopyWith<$Res> {
+class _$DescriptionCopyWithImpl<$Res, $Val extends Description>
+    implements $DescriptionCopyWith<$Res> {
   _$DescriptionCopyWithImpl(this._value, this._then);
 
-  final Description _value;
   // ignore: unused_field
-  final $Res Function(Description) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? description = freezed,
-    Object? language = freezed,
+    Object? description = null,
+    Object? language = null,
   }) {
     return _then(_value.copyWith(
-      description: description == freezed
+      description: null == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
               as String,
-      language: language == freezed
+      language: null == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $NamedAPIResourceCopyWith<$Res> get language {
     return $NamedAPIResourceCopyWith<$Res>(_value.language, (value) {
-      return _then(_value.copyWith(language: value));
+      return _then(_value.copyWith(language: value) as $Val);
     });
   }
 }
@@ -222,6 +231,7 @@ abstract class _$$_DescriptionCopyWith<$Res>
           _$_Description value, $Res Function(_$_Description) then) =
       __$$_DescriptionCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String description, NamedAPIResource language});
 
   @override
@@ -229,26 +239,25 @@ abstract class _$$_DescriptionCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_DescriptionCopyWithImpl<$Res> extends _$DescriptionCopyWithImpl<$Res>
+class __$$_DescriptionCopyWithImpl<$Res>
+    extends _$DescriptionCopyWithImpl<$Res, _$_Description>
     implements _$$_DescriptionCopyWith<$Res> {
   __$$_DescriptionCopyWithImpl(
       _$_Description _value, $Res Function(_$_Description) _then)
-      : super(_value, (v) => _then(v as _$_Description));
+      : super(_value, _then);
 
-  @override
-  _$_Description get _value => super._value as _$_Description;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? description = freezed,
-    Object? language = freezed,
+    Object? description = null,
+    Object? language = null,
   }) {
     return _then(_$_Description(
-      description == freezed
+      null == description
           ? _value.description
           : description // ignore: cast_nullable_to_non_nullable
               as String,
-      language == freezed
+      null == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
@@ -286,20 +295,19 @@ class _$_Description implements _Description {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_Description &&
-            const DeepCollectionEquality()
-                .equals(other.description, description) &&
-            const DeepCollectionEquality().equals(other.language, language));
+            (identical(other.description, description) ||
+                other.description == description) &&
+            (identical(other.language, language) ||
+                other.language == language));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(description),
-      const DeepCollectionEquality().hash(language));
+  int get hashCode => Object.hash(runtimeType, description, language);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_DescriptionCopyWith<_$_Description> get copyWith =>
       __$$_DescriptionCopyWithImpl<_$_Description>(this, _$identity);
 
@@ -361,41 +369,46 @@ mixin _$Effect {
 /// @nodoc
 abstract class $EffectCopyWith<$Res> {
   factory $EffectCopyWith(Effect value, $Res Function(Effect) then) =
-      _$EffectCopyWithImpl<$Res>;
+      _$EffectCopyWithImpl<$Res, Effect>;
+  @useResult
   $Res call({String effect, NamedAPIResource language});
 
   $NamedAPIResourceCopyWith<$Res> get language;
 }
 
 /// @nodoc
-class _$EffectCopyWithImpl<$Res> implements $EffectCopyWith<$Res> {
+class _$EffectCopyWithImpl<$Res, $Val extends Effect>
+    implements $EffectCopyWith<$Res> {
   _$EffectCopyWithImpl(this._value, this._then);
 
-  final Effect _value;
   // ignore: unused_field
-  final $Res Function(Effect) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? effect = freezed,
-    Object? language = freezed,
+    Object? effect = null,
+    Object? language = null,
   }) {
     return _then(_value.copyWith(
-      effect: effect == freezed
+      effect: null == effect
           ? _value.effect
           : effect // ignore: cast_nullable_to_non_nullable
               as String,
-      language: language == freezed
+      language: null == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $NamedAPIResourceCopyWith<$Res> get language {
     return $NamedAPIResourceCopyWith<$Res>(_value.language, (value) {
-      return _then(_value.copyWith(language: value));
+      return _then(_value.copyWith(language: value) as $Val);
     });
   }
 }
@@ -405,6 +418,7 @@ abstract class _$$_EffectCopyWith<$Res> implements $EffectCopyWith<$Res> {
   factory _$$_EffectCopyWith(_$_Effect value, $Res Function(_$_Effect) then) =
       __$$_EffectCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String effect, NamedAPIResource language});
 
   @override
@@ -412,25 +426,24 @@ abstract class _$$_EffectCopyWith<$Res> implements $EffectCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$_EffectCopyWithImpl<$Res> extends _$EffectCopyWithImpl<$Res>
+class __$$_EffectCopyWithImpl<$Res>
+    extends _$EffectCopyWithImpl<$Res, _$_Effect>
     implements _$$_EffectCopyWith<$Res> {
   __$$_EffectCopyWithImpl(_$_Effect _value, $Res Function(_$_Effect) _then)
-      : super(_value, (v) => _then(v as _$_Effect));
+      : super(_value, _then);
 
-  @override
-  _$_Effect get _value => super._value as _$_Effect;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? effect = freezed,
-    Object? language = freezed,
+    Object? effect = null,
+    Object? language = null,
   }) {
     return _then(_$_Effect(
-      effect == freezed
+      null == effect
           ? _value.effect
           : effect // ignore: cast_nullable_to_non_nullable
               as String,
-      language == freezed
+      null == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
@@ -468,19 +481,18 @@ class _$_Effect implements _Effect {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_Effect &&
-            const DeepCollectionEquality().equals(other.effect, effect) &&
-            const DeepCollectionEquality().equals(other.language, language));
+            (identical(other.effect, effect) || other.effect == effect) &&
+            (identical(other.language, language) ||
+                other.language == language));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(effect),
-      const DeepCollectionEquality().hash(language));
+  int get hashCode => Object.hash(runtimeType, effect, language);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_EffectCopyWith<_$_Effect> get copyWith =>
       __$$_EffectCopyWithImpl<_$_Effect>(this, _$identity);
 
@@ -558,7 +570,8 @@ mixin _$Encounter {
 /// @nodoc
 abstract class $EncounterCopyWith<$Res> {
   factory $EncounterCopyWith(Encounter value, $Res Function(Encounter) then) =
-      _$EncounterCopyWithImpl<$Res>;
+      _$EncounterCopyWithImpl<$Res, Encounter>;
+  @useResult
   $Res call(
       {@JsonKey(name: 'min_level') int minLevel,
       @JsonKey(name: 'max_level') int maxLevel,
@@ -570,49 +583,53 @@ abstract class $EncounterCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$EncounterCopyWithImpl<$Res> implements $EncounterCopyWith<$Res> {
+class _$EncounterCopyWithImpl<$Res, $Val extends Encounter>
+    implements $EncounterCopyWith<$Res> {
   _$EncounterCopyWithImpl(this._value, this._then);
 
-  final Encounter _value;
   // ignore: unused_field
-  final $Res Function(Encounter) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? minLevel = freezed,
-    Object? maxLevel = freezed,
-    Object? conditionValues = freezed,
-    Object? chance = freezed,
-    Object? method = freezed,
+    Object? minLevel = null,
+    Object? maxLevel = null,
+    Object? conditionValues = null,
+    Object? chance = null,
+    Object? method = null,
   }) {
     return _then(_value.copyWith(
-      minLevel: minLevel == freezed
+      minLevel: null == minLevel
           ? _value.minLevel
           : minLevel // ignore: cast_nullable_to_non_nullable
               as int,
-      maxLevel: maxLevel == freezed
+      maxLevel: null == maxLevel
           ? _value.maxLevel
           : maxLevel // ignore: cast_nullable_to_non_nullable
               as int,
-      conditionValues: conditionValues == freezed
+      conditionValues: null == conditionValues
           ? _value.conditionValues
           : conditionValues // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
-      chance: chance == freezed
+      chance: null == chance
           ? _value.chance
           : chance // ignore: cast_nullable_to_non_nullable
               as int,
-      method: method == freezed
+      method: null == method
           ? _value.method
           : method // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $NamedAPIResourceCopyWith<$Res> get method {
     return $NamedAPIResourceCopyWith<$Res>(_value.method, (value) {
-      return _then(_value.copyWith(method: value));
+      return _then(_value.copyWith(method: value) as $Val);
     });
   }
 }
@@ -623,6 +640,7 @@ abstract class _$$_EncounterCopyWith<$Res> implements $EncounterCopyWith<$Res> {
           _$_Encounter value, $Res Function(_$_Encounter) then) =
       __$$_EncounterCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@JsonKey(name: 'min_level') int minLevel,
       @JsonKey(name: 'max_level') int maxLevel,
@@ -635,41 +653,40 @@ abstract class _$$_EncounterCopyWith<$Res> implements $EncounterCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$_EncounterCopyWithImpl<$Res> extends _$EncounterCopyWithImpl<$Res>
+class __$$_EncounterCopyWithImpl<$Res>
+    extends _$EncounterCopyWithImpl<$Res, _$_Encounter>
     implements _$$_EncounterCopyWith<$Res> {
   __$$_EncounterCopyWithImpl(
       _$_Encounter _value, $Res Function(_$_Encounter) _then)
-      : super(_value, (v) => _then(v as _$_Encounter));
+      : super(_value, _then);
 
-  @override
-  _$_Encounter get _value => super._value as _$_Encounter;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? minLevel = freezed,
-    Object? maxLevel = freezed,
-    Object? conditionValues = freezed,
-    Object? chance = freezed,
-    Object? method = freezed,
+    Object? minLevel = null,
+    Object? maxLevel = null,
+    Object? conditionValues = null,
+    Object? chance = null,
+    Object? method = null,
   }) {
     return _then(_$_Encounter(
-      minLevel == freezed
+      null == minLevel
           ? _value.minLevel
           : minLevel // ignore: cast_nullable_to_non_nullable
               as int,
-      maxLevel == freezed
+      null == maxLevel
           ? _value.maxLevel
           : maxLevel // ignore: cast_nullable_to_non_nullable
               as int,
-      conditionValues == freezed
+      null == conditionValues
           ? _value._conditionValues
           : conditionValues // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
-      chance == freezed
+      null == chance
           ? _value.chance
           : chance // ignore: cast_nullable_to_non_nullable
               as int,
-      method == freezed
+      null == method
           ? _value.method
           : method // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
@@ -681,12 +698,10 @@ class __$$_EncounterCopyWithImpl<$Res> extends _$EncounterCopyWithImpl<$Res>
 @JsonSerializable()
 class _$_Encounter implements _Encounter {
   const _$_Encounter(
-      @JsonKey(name: 'min_level')
-          this.minLevel,
-      @JsonKey(name: 'max_level')
-          this.maxLevel,
+      @JsonKey(name: 'min_level') this.minLevel,
+      @JsonKey(name: 'max_level') this.maxLevel,
       @JsonKey(name: 'condition_values')
-          final List<NamedAPIResource> conditionValues,
+      final List<NamedAPIResource> conditionValues,
       this.chance,
       this.method)
       : _conditionValues = conditionValues;
@@ -719,6 +734,7 @@ class _$_Encounter implements _Encounter {
   @override
   @JsonKey(name: 'condition_values')
   List<NamedAPIResource> get conditionValues {
+    if (_conditionValues is EqualUnmodifiableListView) return _conditionValues;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_conditionValues);
   }
@@ -745,26 +761,24 @@ class _$_Encounter implements _Encounter {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_Encounter &&
-            const DeepCollectionEquality().equals(other.minLevel, minLevel) &&
-            const DeepCollectionEquality().equals(other.maxLevel, maxLevel) &&
+            (identical(other.minLevel, minLevel) ||
+                other.minLevel == minLevel) &&
+            (identical(other.maxLevel, maxLevel) ||
+                other.maxLevel == maxLevel) &&
             const DeepCollectionEquality()
                 .equals(other._conditionValues, _conditionValues) &&
-            const DeepCollectionEquality().equals(other.chance, chance) &&
-            const DeepCollectionEquality().equals(other.method, method));
+            (identical(other.chance, chance) || other.chance == chance) &&
+            (identical(other.method, method) || other.method == method));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(minLevel),
-      const DeepCollectionEquality().hash(maxLevel),
-      const DeepCollectionEquality().hash(_conditionValues),
-      const DeepCollectionEquality().hash(chance),
-      const DeepCollectionEquality().hash(method));
+  int get hashCode => Object.hash(runtimeType, minLevel, maxLevel,
+      const DeepCollectionEquality().hash(_conditionValues), chance, method);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_EncounterCopyWith<_$_Encounter> get copyWith =>
       __$$_EncounterCopyWithImpl<_$_Encounter>(this, _$identity);
 
@@ -778,12 +792,10 @@ class _$_Encounter implements _Encounter {
 
 abstract class _Encounter implements Encounter {
   const factory _Encounter(
-      @JsonKey(name: 'min_level')
-          final int minLevel,
-      @JsonKey(name: 'max_level')
-          final int maxLevel,
+      @JsonKey(name: 'min_level') final int minLevel,
+      @JsonKey(name: 'max_level') final int maxLevel,
       @JsonKey(name: 'condition_values')
-          final List<NamedAPIResource> conditionValues,
+      final List<NamedAPIResource> conditionValues,
       final int chance,
       final NamedAPIResource method) = _$_Encounter;
 
@@ -861,7 +873,8 @@ mixin _$FlavorText {
 abstract class $FlavorTextCopyWith<$Res> {
   factory $FlavorTextCopyWith(
           FlavorText value, $Res Function(FlavorText) then) =
-      _$FlavorTextCopyWithImpl<$Res>;
+      _$FlavorTextCopyWithImpl<$Res, FlavorText>;
+  @useResult
   $Res call(
       {@JsonKey(name: 'flavor_text') String flavorText,
       NamedAPIResource language,
@@ -872,50 +885,55 @@ abstract class $FlavorTextCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$FlavorTextCopyWithImpl<$Res> implements $FlavorTextCopyWith<$Res> {
+class _$FlavorTextCopyWithImpl<$Res, $Val extends FlavorText>
+    implements $FlavorTextCopyWith<$Res> {
   _$FlavorTextCopyWithImpl(this._value, this._then);
 
-  final FlavorText _value;
   // ignore: unused_field
-  final $Res Function(FlavorText) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? flavorText = freezed,
-    Object? language = freezed,
+    Object? flavorText = null,
+    Object? language = null,
     Object? version = freezed,
   }) {
     return _then(_value.copyWith(
-      flavorText: flavorText == freezed
+      flavorText: null == flavorText
           ? _value.flavorText
           : flavorText // ignore: cast_nullable_to_non_nullable
               as String,
-      language: language == freezed
+      language: null == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-      version: version == freezed
+      version: freezed == version
           ? _value.version
           : version // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource?,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $NamedAPIResourceCopyWith<$Res> get language {
     return $NamedAPIResourceCopyWith<$Res>(_value.language, (value) {
-      return _then(_value.copyWith(language: value));
+      return _then(_value.copyWith(language: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $NamedAPIResourceCopyWith<$Res>? get version {
     if (_value.version == null) {
       return null;
     }
 
     return $NamedAPIResourceCopyWith<$Res>(_value.version!, (value) {
-      return _then(_value.copyWith(version: value));
+      return _then(_value.copyWith(version: value) as $Val);
     });
   }
 }
@@ -927,6 +945,7 @@ abstract class _$$_FlavorTextCopyWith<$Res>
           _$_FlavorText value, $Res Function(_$_FlavorText) then) =
       __$$_FlavorTextCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@JsonKey(name: 'flavor_text') String flavorText,
       NamedAPIResource language,
@@ -939,31 +958,30 @@ abstract class _$$_FlavorTextCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_FlavorTextCopyWithImpl<$Res> extends _$FlavorTextCopyWithImpl<$Res>
+class __$$_FlavorTextCopyWithImpl<$Res>
+    extends _$FlavorTextCopyWithImpl<$Res, _$_FlavorText>
     implements _$$_FlavorTextCopyWith<$Res> {
   __$$_FlavorTextCopyWithImpl(
       _$_FlavorText _value, $Res Function(_$_FlavorText) _then)
-      : super(_value, (v) => _then(v as _$_FlavorText));
+      : super(_value, _then);
 
-  @override
-  _$_FlavorText get _value => super._value as _$_FlavorText;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? flavorText = freezed,
-    Object? language = freezed,
+    Object? flavorText = null,
+    Object? language = null,
     Object? version = freezed,
   }) {
     return _then(_$_FlavorText(
-      flavorText == freezed
+      null == flavorText
           ? _value.flavorText
           : flavorText // ignore: cast_nullable_to_non_nullable
               as String,
-      language == freezed
+      null == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-      version == freezed
+      freezed == version
           ? _value.version
           : version // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource?,
@@ -1011,22 +1029,20 @@ class _$_FlavorText implements _FlavorText {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_FlavorText &&
-            const DeepCollectionEquality()
-                .equals(other.flavorText, flavorText) &&
-            const DeepCollectionEquality().equals(other.language, language) &&
-            const DeepCollectionEquality().equals(other.version, version));
+            (identical(other.flavorText, flavorText) ||
+                other.flavorText == flavorText) &&
+            (identical(other.language, language) ||
+                other.language == language) &&
+            (identical(other.version, version) || other.version == version));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(flavorText),
-      const DeepCollectionEquality().hash(language),
-      const DeepCollectionEquality().hash(version));
+  int get hashCode => Object.hash(runtimeType, flavorText, language, version);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_FlavorTextCopyWith<_$_FlavorText> get copyWith =>
       __$$_FlavorTextCopyWithImpl<_$_FlavorText>(this, _$identity);
 
@@ -1101,7 +1117,8 @@ mixin _$GenerationGameIndex {
 abstract class $GenerationGameIndexCopyWith<$Res> {
   factory $GenerationGameIndexCopyWith(
           GenerationGameIndex value, $Res Function(GenerationGameIndex) then) =
-      _$GenerationGameIndexCopyWithImpl<$Res>;
+      _$GenerationGameIndexCopyWithImpl<$Res, GenerationGameIndex>;
+  @useResult
   $Res call(
       {@JsonKey(name: 'game_index') int gameIndex,
       NamedAPIResource generation});
@@ -1110,35 +1127,38 @@ abstract class $GenerationGameIndexCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$GenerationGameIndexCopyWithImpl<$Res>
+class _$GenerationGameIndexCopyWithImpl<$Res, $Val extends GenerationGameIndex>
     implements $GenerationGameIndexCopyWith<$Res> {
   _$GenerationGameIndexCopyWithImpl(this._value, this._then);
 
-  final GenerationGameIndex _value;
   // ignore: unused_field
-  final $Res Function(GenerationGameIndex) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? gameIndex = freezed,
-    Object? generation = freezed,
+    Object? gameIndex = null,
+    Object? generation = null,
   }) {
     return _then(_value.copyWith(
-      gameIndex: gameIndex == freezed
+      gameIndex: null == gameIndex
           ? _value.gameIndex
           : gameIndex // ignore: cast_nullable_to_non_nullable
               as int,
-      generation: generation == freezed
+      generation: null == generation
           ? _value.generation
           : generation // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $NamedAPIResourceCopyWith<$Res> get generation {
     return $NamedAPIResourceCopyWith<$Res>(_value.generation, (value) {
-      return _then(_value.copyWith(generation: value));
+      return _then(_value.copyWith(generation: value) as $Val);
     });
   }
 }
@@ -1150,6 +1170,7 @@ abstract class _$$_GenerationGameIndexCopyWith<$Res>
           $Res Function(_$_GenerationGameIndex) then) =
       __$$_GenerationGameIndexCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@JsonKey(name: 'game_index') int gameIndex,
       NamedAPIResource generation});
@@ -1160,26 +1181,24 @@ abstract class _$$_GenerationGameIndexCopyWith<$Res>
 
 /// @nodoc
 class __$$_GenerationGameIndexCopyWithImpl<$Res>
-    extends _$GenerationGameIndexCopyWithImpl<$Res>
+    extends _$GenerationGameIndexCopyWithImpl<$Res, _$_GenerationGameIndex>
     implements _$$_GenerationGameIndexCopyWith<$Res> {
   __$$_GenerationGameIndexCopyWithImpl(_$_GenerationGameIndex _value,
       $Res Function(_$_GenerationGameIndex) _then)
-      : super(_value, (v) => _then(v as _$_GenerationGameIndex));
+      : super(_value, _then);
 
-  @override
-  _$_GenerationGameIndex get _value => super._value as _$_GenerationGameIndex;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? gameIndex = freezed,
-    Object? generation = freezed,
+    Object? gameIndex = null,
+    Object? generation = null,
   }) {
     return _then(_$_GenerationGameIndex(
-      gameIndex == freezed
+      null == gameIndex
           ? _value.gameIndex
           : gameIndex // ignore: cast_nullable_to_non_nullable
               as int,
-      generation == freezed
+      null == generation
           ? _value.generation
           : generation // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
@@ -1219,20 +1238,19 @@ class _$_GenerationGameIndex implements _GenerationGameIndex {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_GenerationGameIndex &&
-            const DeepCollectionEquality().equals(other.gameIndex, gameIndex) &&
-            const DeepCollectionEquality()
-                .equals(other.generation, generation));
+            (identical(other.gameIndex, gameIndex) ||
+                other.gameIndex == gameIndex) &&
+            (identical(other.generation, generation) ||
+                other.generation == generation));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(gameIndex),
-      const DeepCollectionEquality().hash(generation));
+  int get hashCode => Object.hash(runtimeType, gameIndex, generation);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_GenerationGameIndexCopyWith<_$_GenerationGameIndex> get copyWith =>
       __$$_GenerationGameIndexCopyWithImpl<_$_GenerationGameIndex>(
           this, _$identity);
@@ -1303,7 +1321,8 @@ mixin _$MachineVersionDetail {
 abstract class $MachineVersionDetailCopyWith<$Res> {
   factory $MachineVersionDetailCopyWith(MachineVersionDetail value,
           $Res Function(MachineVersionDetail) then) =
-      _$MachineVersionDetailCopyWithImpl<$Res>;
+      _$MachineVersionDetailCopyWithImpl<$Res, MachineVersionDetail>;
+  @useResult
   $Res call(
       {APIResource machine,
       @JsonKey(name: 'version_group') NamedAPIResource versionGroup});
@@ -1313,42 +1332,47 @@ abstract class $MachineVersionDetailCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$MachineVersionDetailCopyWithImpl<$Res>
+class _$MachineVersionDetailCopyWithImpl<$Res,
+        $Val extends MachineVersionDetail>
     implements $MachineVersionDetailCopyWith<$Res> {
   _$MachineVersionDetailCopyWithImpl(this._value, this._then);
 
-  final MachineVersionDetail _value;
   // ignore: unused_field
-  final $Res Function(MachineVersionDetail) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? machine = freezed,
-    Object? versionGroup = freezed,
+    Object? machine = null,
+    Object? versionGroup = null,
   }) {
     return _then(_value.copyWith(
-      machine: machine == freezed
+      machine: null == machine
           ? _value.machine
           : machine // ignore: cast_nullable_to_non_nullable
               as APIResource,
-      versionGroup: versionGroup == freezed
+      versionGroup: null == versionGroup
           ? _value.versionGroup
           : versionGroup // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $APIResourceCopyWith<$Res> get machine {
     return $APIResourceCopyWith<$Res>(_value.machine, (value) {
-      return _then(_value.copyWith(machine: value));
+      return _then(_value.copyWith(machine: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $NamedAPIResourceCopyWith<$Res> get versionGroup {
     return $NamedAPIResourceCopyWith<$Res>(_value.versionGroup, (value) {
-      return _then(_value.copyWith(versionGroup: value));
+      return _then(_value.copyWith(versionGroup: value) as $Val);
     });
   }
 }
@@ -1360,6 +1384,7 @@ abstract class _$$_MachineVersionDetailCopyWith<$Res>
           $Res Function(_$_MachineVersionDetail) then) =
       __$$_MachineVersionDetailCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {APIResource machine,
       @JsonKey(name: 'version_group') NamedAPIResource versionGroup});
@@ -1372,26 +1397,24 @@ abstract class _$$_MachineVersionDetailCopyWith<$Res>
 
 /// @nodoc
 class __$$_MachineVersionDetailCopyWithImpl<$Res>
-    extends _$MachineVersionDetailCopyWithImpl<$Res>
+    extends _$MachineVersionDetailCopyWithImpl<$Res, _$_MachineVersionDetail>
     implements _$$_MachineVersionDetailCopyWith<$Res> {
   __$$_MachineVersionDetailCopyWithImpl(_$_MachineVersionDetail _value,
       $Res Function(_$_MachineVersionDetail) _then)
-      : super(_value, (v) => _then(v as _$_MachineVersionDetail));
+      : super(_value, _then);
 
-  @override
-  _$_MachineVersionDetail get _value => super._value as _$_MachineVersionDetail;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? machine = freezed,
-    Object? versionGroup = freezed,
+    Object? machine = null,
+    Object? versionGroup = null,
   }) {
     return _then(_$_MachineVersionDetail(
-      machine == freezed
+      null == machine
           ? _value.machine
           : machine // ignore: cast_nullable_to_non_nullable
               as APIResource,
-      versionGroup == freezed
+      null == versionGroup
           ? _value.versionGroup
           : versionGroup // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
@@ -1435,20 +1458,18 @@ class _$_MachineVersionDetail implements _MachineVersionDetail {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_MachineVersionDetail &&
-            const DeepCollectionEquality().equals(other.machine, machine) &&
-            const DeepCollectionEquality()
-                .equals(other.versionGroup, versionGroup));
+            (identical(other.machine, machine) || other.machine == machine) &&
+            (identical(other.versionGroup, versionGroup) ||
+                other.versionGroup == versionGroup));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(machine),
-      const DeepCollectionEquality().hash(versionGroup));
+  int get hashCode => Object.hash(runtimeType, machine, versionGroup);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_MachineVersionDetailCopyWith<_$_MachineVersionDetail> get copyWith =>
       __$$_MachineVersionDetailCopyWithImpl<_$_MachineVersionDetail>(
           this, _$identity);
@@ -1516,41 +1537,46 @@ mixin _$Name {
 /// @nodoc
 abstract class $NameCopyWith<$Res> {
   factory $NameCopyWith(Name value, $Res Function(Name) then) =
-      _$NameCopyWithImpl<$Res>;
+      _$NameCopyWithImpl<$Res, Name>;
+  @useResult
   $Res call({String name, NamedAPIResource language});
 
   $NamedAPIResourceCopyWith<$Res> get language;
 }
 
 /// @nodoc
-class _$NameCopyWithImpl<$Res> implements $NameCopyWith<$Res> {
+class _$NameCopyWithImpl<$Res, $Val extends Name>
+    implements $NameCopyWith<$Res> {
   _$NameCopyWithImpl(this._value, this._then);
 
-  final Name _value;
   // ignore: unused_field
-  final $Res Function(Name) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? name = freezed,
-    Object? language = freezed,
+    Object? name = null,
+    Object? language = null,
   }) {
     return _then(_value.copyWith(
-      name: name == freezed
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      language: language == freezed
+      language: null == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $NamedAPIResourceCopyWith<$Res> get language {
     return $NamedAPIResourceCopyWith<$Res>(_value.language, (value) {
-      return _then(_value.copyWith(language: value));
+      return _then(_value.copyWith(language: value) as $Val);
     });
   }
 }
@@ -1560,6 +1586,7 @@ abstract class _$$_NameCopyWith<$Res> implements $NameCopyWith<$Res> {
   factory _$$_NameCopyWith(_$_Name value, $Res Function(_$_Name) then) =
       __$$_NameCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String name, NamedAPIResource language});
 
   @override
@@ -1567,25 +1594,23 @@ abstract class _$$_NameCopyWith<$Res> implements $NameCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$_NameCopyWithImpl<$Res> extends _$NameCopyWithImpl<$Res>
+class __$$_NameCopyWithImpl<$Res> extends _$NameCopyWithImpl<$Res, _$_Name>
     implements _$$_NameCopyWith<$Res> {
   __$$_NameCopyWithImpl(_$_Name _value, $Res Function(_$_Name) _then)
-      : super(_value, (v) => _then(v as _$_Name));
+      : super(_value, _then);
 
-  @override
-  _$_Name get _value => super._value as _$_Name;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? name = freezed,
-    Object? language = freezed,
+    Object? name = null,
+    Object? language = null,
   }) {
     return _then(_$_Name(
-      name == freezed
+      null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      language == freezed
+      null == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
@@ -1622,19 +1647,18 @@ class _$_Name implements _Name {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_Name &&
-            const DeepCollectionEquality().equals(other.name, name) &&
-            const DeepCollectionEquality().equals(other.language, language));
+            (identical(other.name, name) || other.name == name) &&
+            (identical(other.language, language) ||
+                other.language == language));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(name),
-      const DeepCollectionEquality().hash(language));
+  int get hashCode => Object.hash(runtimeType, name, language);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_NameCopyWith<_$_Name> get copyWith =>
       __$$_NameCopyWithImpl<_$_Name>(this, _$identity);
 
@@ -1691,34 +1715,37 @@ mixin _$NamedAPIResource {
 abstract class $NamedAPIResourceCopyWith<$Res> {
   factory $NamedAPIResourceCopyWith(
           NamedAPIResource value, $Res Function(NamedAPIResource) then) =
-      _$NamedAPIResourceCopyWithImpl<$Res>;
+      _$NamedAPIResourceCopyWithImpl<$Res, NamedAPIResource>;
+  @useResult
   $Res call({String name, String url});
 }
 
 /// @nodoc
-class _$NamedAPIResourceCopyWithImpl<$Res>
+class _$NamedAPIResourceCopyWithImpl<$Res, $Val extends NamedAPIResource>
     implements $NamedAPIResourceCopyWith<$Res> {
   _$NamedAPIResourceCopyWithImpl(this._value, this._then);
 
-  final NamedAPIResource _value;
   // ignore: unused_field
-  final $Res Function(NamedAPIResource) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? name = freezed,
-    Object? url = freezed,
+    Object? name = null,
+    Object? url = null,
   }) {
     return _then(_value.copyWith(
-      name: name == freezed
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      url: url == freezed
+      url: null == url
           ? _value.url
           : url // ignore: cast_nullable_to_non_nullable
               as String,
-    ));
+    ) as $Val);
   }
 }
 
@@ -1729,31 +1756,30 @@ abstract class _$$_NamedAPIResourceCopyWith<$Res>
           _$_NamedAPIResource value, $Res Function(_$_NamedAPIResource) then) =
       __$$_NamedAPIResourceCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String name, String url});
 }
 
 /// @nodoc
 class __$$_NamedAPIResourceCopyWithImpl<$Res>
-    extends _$NamedAPIResourceCopyWithImpl<$Res>
+    extends _$NamedAPIResourceCopyWithImpl<$Res, _$_NamedAPIResource>
     implements _$$_NamedAPIResourceCopyWith<$Res> {
   __$$_NamedAPIResourceCopyWithImpl(
       _$_NamedAPIResource _value, $Res Function(_$_NamedAPIResource) _then)
-      : super(_value, (v) => _then(v as _$_NamedAPIResource));
+      : super(_value, _then);
 
-  @override
-  _$_NamedAPIResource get _value => super._value as _$_NamedAPIResource;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? name = freezed,
-    Object? url = freezed,
+    Object? name = null,
+    Object? url = null,
   }) {
     return _then(_$_NamedAPIResource(
-      name == freezed
+      null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      url == freezed
+      null == url
           ? _value.url
           : url // ignore: cast_nullable_to_non_nullable
               as String,
@@ -1787,19 +1813,17 @@ class _$_NamedAPIResource implements _NamedAPIResource {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_NamedAPIResource &&
-            const DeepCollectionEquality().equals(other.name, name) &&
-            const DeepCollectionEquality().equals(other.url, url));
+            (identical(other.name, name) || other.name == name) &&
+            (identical(other.url, url) || other.url == url));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(name),
-      const DeepCollectionEquality().hash(url));
+  int get hashCode => Object.hash(runtimeType, name, url);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_NamedAPIResourceCopyWith<_$_NamedAPIResource> get copyWith =>
       __$$_NamedAPIResourceCopyWithImpl<_$_NamedAPIResource>(this, _$identity);
 
@@ -1862,7 +1886,8 @@ mixin _$VerboseEffect {
 abstract class $VerboseEffectCopyWith<$Res> {
   factory $VerboseEffectCopyWith(
           VerboseEffect value, $Res Function(VerboseEffect) then) =
-      _$VerboseEffectCopyWithImpl<$Res>;
+      _$VerboseEffectCopyWithImpl<$Res, VerboseEffect>;
+  @useResult
   $Res call(
       {String effect,
       @JsonKey(name: 'short_effect') String shortEffect,
@@ -1872,40 +1897,43 @@ abstract class $VerboseEffectCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$VerboseEffectCopyWithImpl<$Res>
+class _$VerboseEffectCopyWithImpl<$Res, $Val extends VerboseEffect>
     implements $VerboseEffectCopyWith<$Res> {
   _$VerboseEffectCopyWithImpl(this._value, this._then);
 
-  final VerboseEffect _value;
   // ignore: unused_field
-  final $Res Function(VerboseEffect) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? effect = freezed,
-    Object? shortEffect = freezed,
-    Object? language = freezed,
+    Object? effect = null,
+    Object? shortEffect = null,
+    Object? language = null,
   }) {
     return _then(_value.copyWith(
-      effect: effect == freezed
+      effect: null == effect
           ? _value.effect
           : effect // ignore: cast_nullable_to_non_nullable
               as String,
-      shortEffect: shortEffect == freezed
+      shortEffect: null == shortEffect
           ? _value.shortEffect
           : shortEffect // ignore: cast_nullable_to_non_nullable
               as String,
-      language: language == freezed
+      language: null == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $NamedAPIResourceCopyWith<$Res> get language {
     return $NamedAPIResourceCopyWith<$Res>(_value.language, (value) {
-      return _then(_value.copyWith(language: value));
+      return _then(_value.copyWith(language: value) as $Val);
     });
   }
 }
@@ -1917,6 +1945,7 @@ abstract class _$$_VerboseEffectCopyWith<$Res>
           _$_VerboseEffect value, $Res Function(_$_VerboseEffect) then) =
       __$$_VerboseEffectCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {String effect,
       @JsonKey(name: 'short_effect') String shortEffect,
@@ -1928,31 +1957,29 @@ abstract class _$$_VerboseEffectCopyWith<$Res>
 
 /// @nodoc
 class __$$_VerboseEffectCopyWithImpl<$Res>
-    extends _$VerboseEffectCopyWithImpl<$Res>
+    extends _$VerboseEffectCopyWithImpl<$Res, _$_VerboseEffect>
     implements _$$_VerboseEffectCopyWith<$Res> {
   __$$_VerboseEffectCopyWithImpl(
       _$_VerboseEffect _value, $Res Function(_$_VerboseEffect) _then)
-      : super(_value, (v) => _then(v as _$_VerboseEffect));
+      : super(_value, _then);
 
-  @override
-  _$_VerboseEffect get _value => super._value as _$_VerboseEffect;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? effect = freezed,
-    Object? shortEffect = freezed,
-    Object? language = freezed,
+    Object? effect = null,
+    Object? shortEffect = null,
+    Object? language = null,
   }) {
     return _then(_$_VerboseEffect(
-      effect == freezed
+      null == effect
           ? _value.effect
           : effect // ignore: cast_nullable_to_non_nullable
               as String,
-      shortEffect == freezed
+      null == shortEffect
           ? _value.shortEffect
           : shortEffect // ignore: cast_nullable_to_non_nullable
               as String,
-      language == freezed
+      null == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
@@ -1996,22 +2023,20 @@ class _$_VerboseEffect implements _VerboseEffect {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_VerboseEffect &&
-            const DeepCollectionEquality().equals(other.effect, effect) &&
-            const DeepCollectionEquality()
-                .equals(other.shortEffect, shortEffect) &&
-            const DeepCollectionEquality().equals(other.language, language));
+            (identical(other.effect, effect) || other.effect == effect) &&
+            (identical(other.shortEffect, shortEffect) ||
+                other.shortEffect == shortEffect) &&
+            (identical(other.language, language) ||
+                other.language == language));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(effect),
-      const DeepCollectionEquality().hash(shortEffect),
-      const DeepCollectionEquality().hash(language));
+  int get hashCode => Object.hash(runtimeType, effect, shortEffect, language);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_VerboseEffectCopyWith<_$_VerboseEffect> get copyWith =>
       __$$_VerboseEffectCopyWithImpl<_$_VerboseEffect>(this, _$identity);
 
@@ -2087,7 +2112,8 @@ mixin _$VersionEncounterDetail {
 abstract class $VersionEncounterDetailCopyWith<$Res> {
   factory $VersionEncounterDetailCopyWith(VersionEncounterDetail value,
           $Res Function(VersionEncounterDetail) then) =
-      _$VersionEncounterDetailCopyWithImpl<$Res>;
+      _$VersionEncounterDetailCopyWithImpl<$Res, VersionEncounterDetail>;
+  @useResult
   $Res call(
       {NamedAPIResource version,
       @JsonKey(name: 'max_chance') int maxChance,
@@ -2097,40 +2123,44 @@ abstract class $VersionEncounterDetailCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$VersionEncounterDetailCopyWithImpl<$Res>
+class _$VersionEncounterDetailCopyWithImpl<$Res,
+        $Val extends VersionEncounterDetail>
     implements $VersionEncounterDetailCopyWith<$Res> {
   _$VersionEncounterDetailCopyWithImpl(this._value, this._then);
 
-  final VersionEncounterDetail _value;
   // ignore: unused_field
-  final $Res Function(VersionEncounterDetail) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? version = freezed,
-    Object? maxChance = freezed,
-    Object? encounterDetails = freezed,
+    Object? version = null,
+    Object? maxChance = null,
+    Object? encounterDetails = null,
   }) {
     return _then(_value.copyWith(
-      version: version == freezed
+      version: null == version
           ? _value.version
           : version // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-      maxChance: maxChance == freezed
+      maxChance: null == maxChance
           ? _value.maxChance
           : maxChance // ignore: cast_nullable_to_non_nullable
               as int,
-      encounterDetails: encounterDetails == freezed
+      encounterDetails: null == encounterDetails
           ? _value.encounterDetails
           : encounterDetails // ignore: cast_nullable_to_non_nullable
               as List<Encounter>,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $NamedAPIResourceCopyWith<$Res> get version {
     return $NamedAPIResourceCopyWith<$Res>(_value.version, (value) {
-      return _then(_value.copyWith(version: value));
+      return _then(_value.copyWith(version: value) as $Val);
     });
   }
 }
@@ -2142,6 +2172,7 @@ abstract class _$$_VersionEncounterDetailCopyWith<$Res>
           $Res Function(_$_VersionEncounterDetail) then) =
       __$$_VersionEncounterDetailCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {NamedAPIResource version,
       @JsonKey(name: 'max_chance') int maxChance,
@@ -2153,32 +2184,30 @@ abstract class _$$_VersionEncounterDetailCopyWith<$Res>
 
 /// @nodoc
 class __$$_VersionEncounterDetailCopyWithImpl<$Res>
-    extends _$VersionEncounterDetailCopyWithImpl<$Res>
+    extends _$VersionEncounterDetailCopyWithImpl<$Res,
+        _$_VersionEncounterDetail>
     implements _$$_VersionEncounterDetailCopyWith<$Res> {
   __$$_VersionEncounterDetailCopyWithImpl(_$_VersionEncounterDetail _value,
       $Res Function(_$_VersionEncounterDetail) _then)
-      : super(_value, (v) => _then(v as _$_VersionEncounterDetail));
+      : super(_value, _then);
 
-  @override
-  _$_VersionEncounterDetail get _value =>
-      super._value as _$_VersionEncounterDetail;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? version = freezed,
-    Object? maxChance = freezed,
-    Object? encounterDetails = freezed,
+    Object? version = null,
+    Object? maxChance = null,
+    Object? encounterDetails = null,
   }) {
     return _then(_$_VersionEncounterDetail(
-      version == freezed
+      null == version
           ? _value.version
           : version // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-      maxChance == freezed
+      null == maxChance
           ? _value.maxChance
           : maxChance // ignore: cast_nullable_to_non_nullable
               as int,
-      encounterDetails == freezed
+      null == encounterDetails
           ? _value._encounterDetails
           : encounterDetails // ignore: cast_nullable_to_non_nullable
               as List<Encounter>,
@@ -2191,10 +2220,9 @@ class __$$_VersionEncounterDetailCopyWithImpl<$Res>
 class _$_VersionEncounterDetail implements _VersionEncounterDetail {
   const _$_VersionEncounterDetail(
       this.version,
-      @JsonKey(name: 'max_chance')
-          this.maxChance,
+      @JsonKey(name: 'max_chance') this.maxChance,
       @JsonKey(name: 'encounter_details')
-          final List<Encounter> encounterDetails)
+      final List<Encounter> encounterDetails)
       : _encounterDetails = encounterDetails;
 
   factory _$_VersionEncounterDetail.fromJson(Map<String, dynamic> json) =>
@@ -2220,6 +2248,8 @@ class _$_VersionEncounterDetail implements _VersionEncounterDetail {
   @override
   @JsonKey(name: 'encounter_details')
   List<Encounter> get encounterDetails {
+    if (_encounterDetails is EqualUnmodifiableListView)
+      return _encounterDetails;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_encounterDetails);
   }
@@ -2234,22 +2264,21 @@ class _$_VersionEncounterDetail implements _VersionEncounterDetail {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_VersionEncounterDetail &&
-            const DeepCollectionEquality().equals(other.version, version) &&
-            const DeepCollectionEquality().equals(other.maxChance, maxChance) &&
+            (identical(other.version, version) || other.version == version) &&
+            (identical(other.maxChance, maxChance) ||
+                other.maxChance == maxChance) &&
             const DeepCollectionEquality()
                 .equals(other._encounterDetails, _encounterDetails));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(version),
-      const DeepCollectionEquality().hash(maxChance),
+  int get hashCode => Object.hash(runtimeType, version, maxChance,
       const DeepCollectionEquality().hash(_encounterDetails));
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_VersionEncounterDetailCopyWith<_$_VersionEncounterDetail> get copyWith =>
       __$$_VersionEncounterDetailCopyWithImpl<_$_VersionEncounterDetail>(
           this, _$identity);
@@ -2265,10 +2294,9 @@ class _$_VersionEncounterDetail implements _VersionEncounterDetail {
 abstract class _VersionEncounterDetail implements VersionEncounterDetail {
   const factory _VersionEncounterDetail(
       final NamedAPIResource version,
-      @JsonKey(name: 'max_chance')
-          final int maxChance,
+      @JsonKey(name: 'max_chance') final int maxChance,
       @JsonKey(name: 'encounter_details')
-          final List<Encounter> encounterDetails) = _$_VersionEncounterDetail;
+      final List<Encounter> encounterDetails) = _$_VersionEncounterDetail;
 
   factory _VersionEncounterDetail.fromJson(Map<String, dynamic> json) =
       _$_VersionEncounterDetail.fromJson;
@@ -2324,7 +2352,8 @@ mixin _$VersionGameIndex {
 abstract class $VersionGameIndexCopyWith<$Res> {
   factory $VersionGameIndexCopyWith(
           VersionGameIndex value, $Res Function(VersionGameIndex) then) =
-      _$VersionGameIndexCopyWithImpl<$Res>;
+      _$VersionGameIndexCopyWithImpl<$Res, VersionGameIndex>;
+  @useResult
   $Res call(
       {@JsonKey(name: 'game_index') int gameIndex, NamedAPIResource version});
 
@@ -2332,35 +2361,38 @@ abstract class $VersionGameIndexCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$VersionGameIndexCopyWithImpl<$Res>
+class _$VersionGameIndexCopyWithImpl<$Res, $Val extends VersionGameIndex>
     implements $VersionGameIndexCopyWith<$Res> {
   _$VersionGameIndexCopyWithImpl(this._value, this._then);
 
-  final VersionGameIndex _value;
   // ignore: unused_field
-  final $Res Function(VersionGameIndex) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? gameIndex = freezed,
-    Object? version = freezed,
+    Object? gameIndex = null,
+    Object? version = null,
   }) {
     return _then(_value.copyWith(
-      gameIndex: gameIndex == freezed
+      gameIndex: null == gameIndex
           ? _value.gameIndex
           : gameIndex // ignore: cast_nullable_to_non_nullable
               as int,
-      version: version == freezed
+      version: null == version
           ? _value.version
           : version // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $NamedAPIResourceCopyWith<$Res> get version {
     return $NamedAPIResourceCopyWith<$Res>(_value.version, (value) {
-      return _then(_value.copyWith(version: value));
+      return _then(_value.copyWith(version: value) as $Val);
     });
   }
 }
@@ -2372,6 +2404,7 @@ abstract class _$$_VersionGameIndexCopyWith<$Res>
           _$_VersionGameIndex value, $Res Function(_$_VersionGameIndex) then) =
       __$$_VersionGameIndexCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@JsonKey(name: 'game_index') int gameIndex, NamedAPIResource version});
 
@@ -2381,26 +2414,24 @@ abstract class _$$_VersionGameIndexCopyWith<$Res>
 
 /// @nodoc
 class __$$_VersionGameIndexCopyWithImpl<$Res>
-    extends _$VersionGameIndexCopyWithImpl<$Res>
+    extends _$VersionGameIndexCopyWithImpl<$Res, _$_VersionGameIndex>
     implements _$$_VersionGameIndexCopyWith<$Res> {
   __$$_VersionGameIndexCopyWithImpl(
       _$_VersionGameIndex _value, $Res Function(_$_VersionGameIndex) _then)
-      : super(_value, (v) => _then(v as _$_VersionGameIndex));
+      : super(_value, _then);
 
-  @override
-  _$_VersionGameIndex get _value => super._value as _$_VersionGameIndex;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? gameIndex = freezed,
-    Object? version = freezed,
+    Object? gameIndex = null,
+    Object? version = null,
   }) {
     return _then(_$_VersionGameIndex(
-      gameIndex == freezed
+      null == gameIndex
           ? _value.gameIndex
           : gameIndex // ignore: cast_nullable_to_non_nullable
               as int,
-      version == freezed
+      null == version
           ? _value.version
           : version // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
@@ -2440,19 +2471,18 @@ class _$_VersionGameIndex implements _VersionGameIndex {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_VersionGameIndex &&
-            const DeepCollectionEquality().equals(other.gameIndex, gameIndex) &&
-            const DeepCollectionEquality().equals(other.version, version));
+            (identical(other.gameIndex, gameIndex) ||
+                other.gameIndex == gameIndex) &&
+            (identical(other.version, version) || other.version == version));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(gameIndex),
-      const DeepCollectionEquality().hash(version));
+  int get hashCode => Object.hash(runtimeType, gameIndex, version);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_VersionGameIndexCopyWith<_$_VersionGameIndex> get copyWith =>
       __$$_VersionGameIndexCopyWithImpl<_$_VersionGameIndex>(this, _$identity);
 
@@ -2526,7 +2556,8 @@ mixin _$VersionGroupFlavorText {
 abstract class $VersionGroupFlavorTextCopyWith<$Res> {
   factory $VersionGroupFlavorTextCopyWith(VersionGroupFlavorText value,
           $Res Function(VersionGroupFlavorText) then) =
-      _$VersionGroupFlavorTextCopyWithImpl<$Res>;
+      _$VersionGroupFlavorTextCopyWithImpl<$Res, VersionGroupFlavorText>;
+  @useResult
   $Res call(
       {String text,
       NamedAPIResource language,
@@ -2537,47 +2568,52 @@ abstract class $VersionGroupFlavorTextCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$VersionGroupFlavorTextCopyWithImpl<$Res>
+class _$VersionGroupFlavorTextCopyWithImpl<$Res,
+        $Val extends VersionGroupFlavorText>
     implements $VersionGroupFlavorTextCopyWith<$Res> {
   _$VersionGroupFlavorTextCopyWithImpl(this._value, this._then);
 
-  final VersionGroupFlavorText _value;
   // ignore: unused_field
-  final $Res Function(VersionGroupFlavorText) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? text = freezed,
-    Object? language = freezed,
-    Object? versionGroup = freezed,
+    Object? text = null,
+    Object? language = null,
+    Object? versionGroup = null,
   }) {
     return _then(_value.copyWith(
-      text: text == freezed
+      text: null == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
               as String,
-      language: language == freezed
+      language: null == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-      versionGroup: versionGroup == freezed
+      versionGroup: null == versionGroup
           ? _value.versionGroup
           : versionGroup // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $NamedAPIResourceCopyWith<$Res> get language {
     return $NamedAPIResourceCopyWith<$Res>(_value.language, (value) {
-      return _then(_value.copyWith(language: value));
+      return _then(_value.copyWith(language: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $NamedAPIResourceCopyWith<$Res> get versionGroup {
     return $NamedAPIResourceCopyWith<$Res>(_value.versionGroup, (value) {
-      return _then(_value.copyWith(versionGroup: value));
+      return _then(_value.copyWith(versionGroup: value) as $Val);
     });
   }
 }
@@ -2589,6 +2625,7 @@ abstract class _$$_VersionGroupFlavorTextCopyWith<$Res>
           $Res Function(_$_VersionGroupFlavorText) then) =
       __$$_VersionGroupFlavorTextCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {String text,
       NamedAPIResource language,
@@ -2602,32 +2639,30 @@ abstract class _$$_VersionGroupFlavorTextCopyWith<$Res>
 
 /// @nodoc
 class __$$_VersionGroupFlavorTextCopyWithImpl<$Res>
-    extends _$VersionGroupFlavorTextCopyWithImpl<$Res>
+    extends _$VersionGroupFlavorTextCopyWithImpl<$Res,
+        _$_VersionGroupFlavorText>
     implements _$$_VersionGroupFlavorTextCopyWith<$Res> {
   __$$_VersionGroupFlavorTextCopyWithImpl(_$_VersionGroupFlavorText _value,
       $Res Function(_$_VersionGroupFlavorText) _then)
-      : super(_value, (v) => _then(v as _$_VersionGroupFlavorText));
+      : super(_value, _then);
 
-  @override
-  _$_VersionGroupFlavorText get _value =>
-      super._value as _$_VersionGroupFlavorText;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? text = freezed,
-    Object? language = freezed,
-    Object? versionGroup = freezed,
+    Object? text = null,
+    Object? language = null,
+    Object? versionGroup = null,
   }) {
     return _then(_$_VersionGroupFlavorText(
-      text == freezed
+      null == text
           ? _value.text
           : text // ignore: cast_nullable_to_non_nullable
               as String,
-      language == freezed
+      null == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-      versionGroup == freezed
+      null == versionGroup
           ? _value.versionGroup
           : versionGroup // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
@@ -2675,22 +2710,20 @@ class _$_VersionGroupFlavorText implements _VersionGroupFlavorText {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_VersionGroupFlavorText &&
-            const DeepCollectionEquality().equals(other.text, text) &&
-            const DeepCollectionEquality().equals(other.language, language) &&
-            const DeepCollectionEquality()
-                .equals(other.versionGroup, versionGroup));
+            (identical(other.text, text) || other.text == text) &&
+            (identical(other.language, language) ||
+                other.language == language) &&
+            (identical(other.versionGroup, versionGroup) ||
+                other.versionGroup == versionGroup));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(text),
-      const DeepCollectionEquality().hash(language),
-      const DeepCollectionEquality().hash(versionGroup));
+  int get hashCode => Object.hash(runtimeType, text, language, versionGroup);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_VersionGroupFlavorTextCopyWith<_$_VersionGroupFlavorText> get copyWith =>
       __$$_VersionGroupFlavorTextCopyWithImpl<_$_VersionGroupFlavorText>(
           this, _$identity);
@@ -2768,7 +2801,8 @@ mixin _$NamedAPIResourceList {
 abstract class $NamedAPIResourceListCopyWith<$Res> {
   factory $NamedAPIResourceListCopyWith(NamedAPIResourceList value,
           $Res Function(NamedAPIResourceList) then) =
-      _$NamedAPIResourceListCopyWithImpl<$Res>;
+      _$NamedAPIResourceListCopyWithImpl<$Res, NamedAPIResourceList>;
+  @useResult
   $Res call(
       {int count,
       String? next,
@@ -2777,39 +2811,42 @@ abstract class $NamedAPIResourceListCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$NamedAPIResourceListCopyWithImpl<$Res>
+class _$NamedAPIResourceListCopyWithImpl<$Res,
+        $Val extends NamedAPIResourceList>
     implements $NamedAPIResourceListCopyWith<$Res> {
   _$NamedAPIResourceListCopyWithImpl(this._value, this._then);
 
-  final NamedAPIResourceList _value;
   // ignore: unused_field
-  final $Res Function(NamedAPIResourceList) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? count = freezed,
+    Object? count = null,
     Object? next = freezed,
     Object? previous = freezed,
-    Object? results = freezed,
+    Object? results = null,
   }) {
     return _then(_value.copyWith(
-      count: count == freezed
+      count: null == count
           ? _value.count
           : count // ignore: cast_nullable_to_non_nullable
               as int,
-      next: next == freezed
+      next: freezed == next
           ? _value.next
           : next // ignore: cast_nullable_to_non_nullable
               as String?,
-      previous: previous == freezed
+      previous: freezed == previous
           ? _value.previous
           : previous // ignore: cast_nullable_to_non_nullable
               as String?,
-      results: results == freezed
+      results: null == results
           ? _value.results
           : results // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
-    ));
+    ) as $Val);
   }
 }
 
@@ -2820,6 +2857,7 @@ abstract class _$$_NamedAPIResourceListCopyWith<$Res>
           $Res Function(_$_NamedAPIResourceList) then) =
       __$$_NamedAPIResourceListCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {int count,
       String? next,
@@ -2829,36 +2867,34 @@ abstract class _$$_NamedAPIResourceListCopyWith<$Res>
 
 /// @nodoc
 class __$$_NamedAPIResourceListCopyWithImpl<$Res>
-    extends _$NamedAPIResourceListCopyWithImpl<$Res>
+    extends _$NamedAPIResourceListCopyWithImpl<$Res, _$_NamedAPIResourceList>
     implements _$$_NamedAPIResourceListCopyWith<$Res> {
   __$$_NamedAPIResourceListCopyWithImpl(_$_NamedAPIResourceList _value,
       $Res Function(_$_NamedAPIResourceList) _then)
-      : super(_value, (v) => _then(v as _$_NamedAPIResourceList));
+      : super(_value, _then);
 
-  @override
-  _$_NamedAPIResourceList get _value => super._value as _$_NamedAPIResourceList;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? count = freezed,
+    Object? count = null,
     Object? next = freezed,
     Object? previous = freezed,
-    Object? results = freezed,
+    Object? results = null,
   }) {
     return _then(_$_NamedAPIResourceList(
-      count == freezed
+      null == count
           ? _value.count
           : count // ignore: cast_nullable_to_non_nullable
               as int,
-      next == freezed
+      freezed == next
           ? _value.next
           : next // ignore: cast_nullable_to_non_nullable
               as String?,
-      previous == freezed
+      freezed == previous
           ? _value.previous
           : previous // ignore: cast_nullable_to_non_nullable
               as String?,
-      results == freezed
+      null == results
           ? _value._results
           : results // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
@@ -2894,6 +2930,7 @@ class _$_NamedAPIResourceList implements _NamedAPIResourceList {
   /// A list of named API resources.
   @override
   List<NamedAPIResource> get results {
+    if (_results is EqualUnmodifiableListView) return _results;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_results);
   }
@@ -2908,23 +2945,21 @@ class _$_NamedAPIResourceList implements _NamedAPIResourceList {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_NamedAPIResourceList &&
-            const DeepCollectionEquality().equals(other.count, count) &&
-            const DeepCollectionEquality().equals(other.next, next) &&
-            const DeepCollectionEquality().equals(other.previous, previous) &&
+            (identical(other.count, count) || other.count == count) &&
+            (identical(other.next, next) || other.next == next) &&
+            (identical(other.previous, previous) ||
+                other.previous == previous) &&
             const DeepCollectionEquality().equals(other._results, _results));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(count),
-      const DeepCollectionEquality().hash(next),
-      const DeepCollectionEquality().hash(previous),
+  int get hashCode => Object.hash(runtimeType, count, next, previous,
       const DeepCollectionEquality().hash(_results));
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_NamedAPIResourceListCopyWith<_$_NamedAPIResourceList> get copyWith =>
       __$$_NamedAPIResourceListCopyWithImpl<_$_NamedAPIResourceList>(
           this, _$identity);
@@ -2997,45 +3032,48 @@ mixin _$APIResourceList {
 abstract class $APIResourceListCopyWith<$Res> {
   factory $APIResourceListCopyWith(
           APIResourceList value, $Res Function(APIResourceList) then) =
-      _$APIResourceListCopyWithImpl<$Res>;
+      _$APIResourceListCopyWithImpl<$Res, APIResourceList>;
+  @useResult
   $Res call(
       {int count, String? next, String? previous, List<APIResource> results});
 }
 
 /// @nodoc
-class _$APIResourceListCopyWithImpl<$Res>
+class _$APIResourceListCopyWithImpl<$Res, $Val extends APIResourceList>
     implements $APIResourceListCopyWith<$Res> {
   _$APIResourceListCopyWithImpl(this._value, this._then);
 
-  final APIResourceList _value;
   // ignore: unused_field
-  final $Res Function(APIResourceList) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? count = freezed,
+    Object? count = null,
     Object? next = freezed,
     Object? previous = freezed,
-    Object? results = freezed,
+    Object? results = null,
   }) {
     return _then(_value.copyWith(
-      count: count == freezed
+      count: null == count
           ? _value.count
           : count // ignore: cast_nullable_to_non_nullable
               as int,
-      next: next == freezed
+      next: freezed == next
           ? _value.next
           : next // ignore: cast_nullable_to_non_nullable
               as String?,
-      previous: previous == freezed
+      previous: freezed == previous
           ? _value.previous
           : previous // ignore: cast_nullable_to_non_nullable
               as String?,
-      results: results == freezed
+      results: null == results
           ? _value.results
           : results // ignore: cast_nullable_to_non_nullable
               as List<APIResource>,
-    ));
+    ) as $Val);
   }
 }
 
@@ -3046,42 +3084,41 @@ abstract class _$$_APIResourceListCopyWith<$Res>
           _$_APIResourceList value, $Res Function(_$_APIResourceList) then) =
       __$$_APIResourceListCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {int count, String? next, String? previous, List<APIResource> results});
 }
 
 /// @nodoc
 class __$$_APIResourceListCopyWithImpl<$Res>
-    extends _$APIResourceListCopyWithImpl<$Res>
+    extends _$APIResourceListCopyWithImpl<$Res, _$_APIResourceList>
     implements _$$_APIResourceListCopyWith<$Res> {
   __$$_APIResourceListCopyWithImpl(
       _$_APIResourceList _value, $Res Function(_$_APIResourceList) _then)
-      : super(_value, (v) => _then(v as _$_APIResourceList));
+      : super(_value, _then);
 
-  @override
-  _$_APIResourceList get _value => super._value as _$_APIResourceList;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? count = freezed,
+    Object? count = null,
     Object? next = freezed,
     Object? previous = freezed,
-    Object? results = freezed,
+    Object? results = null,
   }) {
     return _then(_$_APIResourceList(
-      count == freezed
+      null == count
           ? _value.count
           : count // ignore: cast_nullable_to_non_nullable
               as int,
-      next == freezed
+      freezed == next
           ? _value.next
           : next // ignore: cast_nullable_to_non_nullable
               as String?,
-      previous == freezed
+      freezed == previous
           ? _value.previous
           : previous // ignore: cast_nullable_to_non_nullable
               as String?,
-      results == freezed
+      null == results
           ? _value._results
           : results // ignore: cast_nullable_to_non_nullable
               as List<APIResource>,
@@ -3117,6 +3154,7 @@ class _$_APIResourceList implements _APIResourceList {
   /// A list of API resources.
   @override
   List<APIResource> get results {
+    if (_results is EqualUnmodifiableListView) return _results;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_results);
   }
@@ -3131,23 +3169,21 @@ class _$_APIResourceList implements _APIResourceList {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_APIResourceList &&
-            const DeepCollectionEquality().equals(other.count, count) &&
-            const DeepCollectionEquality().equals(other.next, next) &&
-            const DeepCollectionEquality().equals(other.previous, previous) &&
+            (identical(other.count, count) || other.count == count) &&
+            (identical(other.next, next) || other.next == next) &&
+            (identical(other.previous, previous) ||
+                other.previous == previous) &&
             const DeepCollectionEquality().equals(other._results, _results));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(count),
-      const DeepCollectionEquality().hash(next),
-      const DeepCollectionEquality().hash(previous),
+  int get hashCode => Object.hash(runtimeType, count, next, previous,
       const DeepCollectionEquality().hash(_results));
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_APIResourceListCopyWith<_$_APIResourceList> get copyWith =>
       __$$_APIResourceListCopyWithImpl<_$_APIResourceList>(this, _$identity);
 

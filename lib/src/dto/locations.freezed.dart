@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'locations.dart';
 
@@ -57,7 +57,8 @@ mixin _$Location {
 /// @nodoc
 abstract class $LocationCopyWith<$Res> {
   factory $LocationCopyWith(Location value, $Res Function(Location) then) =
-      _$LocationCopyWithImpl<$Res>;
+      _$LocationCopyWithImpl<$Res, Location>;
+  @useResult
   $Res call(
       {int id,
       String name,
@@ -70,58 +71,62 @@ abstract class $LocationCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$LocationCopyWithImpl<$Res> implements $LocationCopyWith<$Res> {
+class _$LocationCopyWithImpl<$Res, $Val extends Location>
+    implements $LocationCopyWith<$Res> {
   _$LocationCopyWithImpl(this._value, this._then);
 
-  final Location _value;
   // ignore: unused_field
-  final $Res Function(Location) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
+    Object? id = null,
+    Object? name = null,
     Object? region = freezed,
-    Object? names = freezed,
-    Object? gameIndices = freezed,
-    Object? areas = freezed,
+    Object? names = null,
+    Object? gameIndices = null,
+    Object? areas = null,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      name: name == freezed
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      region: region == freezed
+      region: freezed == region
           ? _value.region
           : region // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource?,
-      names: names == freezed
+      names: null == names
           ? _value.names
           : names // ignore: cast_nullable_to_non_nullable
               as List<Name>,
-      gameIndices: gameIndices == freezed
+      gameIndices: null == gameIndices
           ? _value.gameIndices
           : gameIndices // ignore: cast_nullable_to_non_nullable
               as List<GenerationGameIndex>,
-      areas: areas == freezed
+      areas: null == areas
           ? _value.areas
           : areas // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $NamedAPIResourceCopyWith<$Res>? get region {
     if (_value.region == null) {
       return null;
     }
 
     return $NamedAPIResourceCopyWith<$Res>(_value.region!, (value) {
-      return _then(_value.copyWith(region: value));
+      return _then(_value.copyWith(region: value) as $Val);
     });
   }
 }
@@ -132,6 +137,7 @@ abstract class _$$_LocationCopyWith<$Res> implements $LocationCopyWith<$Res> {
           _$_Location value, $Res Function(_$_Location) then) =
       __$$_LocationCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {int id,
       String name,
@@ -145,46 +151,45 @@ abstract class _$$_LocationCopyWith<$Res> implements $LocationCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$_LocationCopyWithImpl<$Res> extends _$LocationCopyWithImpl<$Res>
+class __$$_LocationCopyWithImpl<$Res>
+    extends _$LocationCopyWithImpl<$Res, _$_Location>
     implements _$$_LocationCopyWith<$Res> {
   __$$_LocationCopyWithImpl(
       _$_Location _value, $Res Function(_$_Location) _then)
-      : super(_value, (v) => _then(v as _$_Location));
+      : super(_value, _then);
 
-  @override
-  _$_Location get _value => super._value as _$_Location;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
+    Object? id = null,
+    Object? name = null,
     Object? region = freezed,
-    Object? names = freezed,
-    Object? gameIndices = freezed,
-    Object? areas = freezed,
+    Object? names = null,
+    Object? gameIndices = null,
+    Object? areas = null,
   }) {
     return _then(_$_Location(
-      id == freezed
+      null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      name == freezed
+      null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      region == freezed
+      freezed == region
           ? _value.region
           : region // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource?,
-      names == freezed
+      null == names
           ? _value._names
           : names // ignore: cast_nullable_to_non_nullable
               as List<Name>,
-      gameIndices == freezed
+      null == gameIndices
           ? _value._gameIndices
           : gameIndices // ignore: cast_nullable_to_non_nullable
               as List<GenerationGameIndex>,
-      areas == freezed
+      null == areas
           ? _value._areas
           : areas // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
@@ -201,7 +206,7 @@ class _$_Location implements _Location {
       this.region,
       final List<Name> names,
       @JsonKey(name: 'game_indices')
-          final List<GenerationGameIndex> gameIndices,
+      final List<GenerationGameIndex> gameIndices,
       final List<NamedAPIResource> areas)
       : _names = names,
         _gameIndices = gameIndices,
@@ -232,6 +237,7 @@ class _$_Location implements _Location {
   /// The name of this resource listed in different languages.
   @override
   List<Name> get names {
+    if (_names is EqualUnmodifiableListView) return _names;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_names);
   }
@@ -243,6 +249,7 @@ class _$_Location implements _Location {
   @override
   @JsonKey(name: 'game_indices')
   List<GenerationGameIndex> get gameIndices {
+    if (_gameIndices is EqualUnmodifiableListView) return _gameIndices;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_gameIndices);
   }
@@ -261,6 +268,7 @@ class _$_Location implements _Location {
   /// [LocationArea]
   @override
   List<NamedAPIResource> get areas {
+    if (_areas is EqualUnmodifiableListView) return _areas;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_areas);
   }
@@ -275,9 +283,9 @@ class _$_Location implements _Location {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_Location &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.name, name) &&
-            const DeepCollectionEquality().equals(other.region, region) &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.name, name) || other.name == name) &&
+            (identical(other.region, region) || other.region == region) &&
             const DeepCollectionEquality().equals(other._names, _names) &&
             const DeepCollectionEquality()
                 .equals(other._gameIndices, _gameIndices) &&
@@ -288,15 +296,16 @@ class _$_Location implements _Location {
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(name),
-      const DeepCollectionEquality().hash(region),
+      id,
+      name,
+      region,
       const DeepCollectionEquality().hash(_names),
       const DeepCollectionEquality().hash(_gameIndices),
       const DeepCollectionEquality().hash(_areas));
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_LocationCopyWith<_$_Location> get copyWith =>
       __$$_LocationCopyWithImpl<_$_Location>(this, _$identity);
 
@@ -315,7 +324,7 @@ abstract class _Location implements Location {
       final NamedAPIResource? region,
       final List<Name> names,
       @JsonKey(name: 'game_indices')
-          final List<GenerationGameIndex> gameIndices,
+      final List<GenerationGameIndex> gameIndices,
       final List<NamedAPIResource> areas) = _$_Location;
 
   factory _Location.fromJson(Map<String, dynamic> json) = _$_Location.fromJson;
@@ -407,76 +416,80 @@ mixin _$LocationArea {
 abstract class $LocationAreaCopyWith<$Res> {
   factory $LocationAreaCopyWith(
           LocationArea value, $Res Function(LocationArea) then) =
-      _$LocationAreaCopyWithImpl<$Res>;
+      _$LocationAreaCopyWithImpl<$Res, LocationArea>;
+  @useResult
   $Res call(
       {int id,
       String name,
-      @JsonKey(name: 'game_index')
-          int gameIndex,
+      @JsonKey(name: 'game_index') int gameIndex,
       @JsonKey(name: 'encounter_method_rates')
-          List<EncounterMethodRate> encounterMethodRates,
+      List<EncounterMethodRate> encounterMethodRates,
       NamedAPIResource location,
       List<Name> names,
       @JsonKey(name: 'pokemon_encounters')
-          List<PokemonEncounter> pokemonEncounters});
+      List<PokemonEncounter> pokemonEncounters});
 
   $NamedAPIResourceCopyWith<$Res> get location;
 }
 
 /// @nodoc
-class _$LocationAreaCopyWithImpl<$Res> implements $LocationAreaCopyWith<$Res> {
+class _$LocationAreaCopyWithImpl<$Res, $Val extends LocationArea>
+    implements $LocationAreaCopyWith<$Res> {
   _$LocationAreaCopyWithImpl(this._value, this._then);
 
-  final LocationArea _value;
   // ignore: unused_field
-  final $Res Function(LocationArea) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? gameIndex = freezed,
-    Object? encounterMethodRates = freezed,
-    Object? location = freezed,
-    Object? names = freezed,
-    Object? pokemonEncounters = freezed,
+    Object? id = null,
+    Object? name = null,
+    Object? gameIndex = null,
+    Object? encounterMethodRates = null,
+    Object? location = null,
+    Object? names = null,
+    Object? pokemonEncounters = null,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      name: name == freezed
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      gameIndex: gameIndex == freezed
+      gameIndex: null == gameIndex
           ? _value.gameIndex
           : gameIndex // ignore: cast_nullable_to_non_nullable
               as int,
-      encounterMethodRates: encounterMethodRates == freezed
+      encounterMethodRates: null == encounterMethodRates
           ? _value.encounterMethodRates
           : encounterMethodRates // ignore: cast_nullable_to_non_nullable
               as List<EncounterMethodRate>,
-      location: location == freezed
+      location: null == location
           ? _value.location
           : location // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-      names: names == freezed
+      names: null == names
           ? _value.names
           : names // ignore: cast_nullable_to_non_nullable
               as List<Name>,
-      pokemonEncounters: pokemonEncounters == freezed
+      pokemonEncounters: null == pokemonEncounters
           ? _value.pokemonEncounters
           : pokemonEncounters // ignore: cast_nullable_to_non_nullable
               as List<PokemonEncounter>,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $NamedAPIResourceCopyWith<$Res> get location {
     return $NamedAPIResourceCopyWith<$Res>(_value.location, (value) {
-      return _then(_value.copyWith(location: value));
+      return _then(_value.copyWith(location: value) as $Val);
     });
   }
 }
@@ -488,17 +501,17 @@ abstract class _$$_LocationAreaCopyWith<$Res>
           _$_LocationArea value, $Res Function(_$_LocationArea) then) =
       __$$_LocationAreaCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {int id,
       String name,
-      @JsonKey(name: 'game_index')
-          int gameIndex,
+      @JsonKey(name: 'game_index') int gameIndex,
       @JsonKey(name: 'encounter_method_rates')
-          List<EncounterMethodRate> encounterMethodRates,
+      List<EncounterMethodRate> encounterMethodRates,
       NamedAPIResource location,
       List<Name> names,
       @JsonKey(name: 'pokemon_encounters')
-          List<PokemonEncounter> pokemonEncounters});
+      List<PokemonEncounter> pokemonEncounters});
 
   @override
   $NamedAPIResourceCopyWith<$Res> get location;
@@ -506,51 +519,49 @@ abstract class _$$_LocationAreaCopyWith<$Res>
 
 /// @nodoc
 class __$$_LocationAreaCopyWithImpl<$Res>
-    extends _$LocationAreaCopyWithImpl<$Res>
+    extends _$LocationAreaCopyWithImpl<$Res, _$_LocationArea>
     implements _$$_LocationAreaCopyWith<$Res> {
   __$$_LocationAreaCopyWithImpl(
       _$_LocationArea _value, $Res Function(_$_LocationArea) _then)
-      : super(_value, (v) => _then(v as _$_LocationArea));
+      : super(_value, _then);
 
-  @override
-  _$_LocationArea get _value => super._value as _$_LocationArea;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? gameIndex = freezed,
-    Object? encounterMethodRates = freezed,
-    Object? location = freezed,
-    Object? names = freezed,
-    Object? pokemonEncounters = freezed,
+    Object? id = null,
+    Object? name = null,
+    Object? gameIndex = null,
+    Object? encounterMethodRates = null,
+    Object? location = null,
+    Object? names = null,
+    Object? pokemonEncounters = null,
   }) {
     return _then(_$_LocationArea(
-      id == freezed
+      null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      name == freezed
+      null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      gameIndex == freezed
+      null == gameIndex
           ? _value.gameIndex
           : gameIndex // ignore: cast_nullable_to_non_nullable
               as int,
-      encounterMethodRates == freezed
+      null == encounterMethodRates
           ? _value._encounterMethodRates
           : encounterMethodRates // ignore: cast_nullable_to_non_nullable
               as List<EncounterMethodRate>,
-      location == freezed
+      null == location
           ? _value.location
           : location // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-      names == freezed
+      null == names
           ? _value._names
           : names // ignore: cast_nullable_to_non_nullable
               as List<Name>,
-      pokemonEncounters == freezed
+      null == pokemonEncounters
           ? _value._pokemonEncounters
           : pokemonEncounters // ignore: cast_nullable_to_non_nullable
               as List<PokemonEncounter>,
@@ -564,14 +575,13 @@ class _$_LocationArea implements _LocationArea {
   const _$_LocationArea(
       this.id,
       this.name,
-      @JsonKey(name: 'game_index')
-          this.gameIndex,
+      @JsonKey(name: 'game_index') this.gameIndex,
       @JsonKey(name: 'encounter_method_rates')
-          final List<EncounterMethodRate> encounterMethodRates,
+      final List<EncounterMethodRate> encounterMethodRates,
       this.location,
       final List<Name> names,
       @JsonKey(name: 'pokemon_encounters')
-          final List<PokemonEncounter> pokemonEncounters)
+      final List<PokemonEncounter> pokemonEncounters)
       : _encounterMethodRates = encounterMethodRates,
         _names = names,
         _pokemonEncounters = pokemonEncounters;
@@ -601,6 +611,8 @@ class _$_LocationArea implements _LocationArea {
   @override
   @JsonKey(name: 'encounter_method_rates')
   List<EncounterMethodRate> get encounterMethodRates {
+    if (_encounterMethodRates is EqualUnmodifiableListView)
+      return _encounterMethodRates;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_encounterMethodRates);
   }
@@ -619,6 +631,7 @@ class _$_LocationArea implements _LocationArea {
   /// The name of this resource listed in different languages.
   @override
   List<Name> get names {
+    if (_names is EqualUnmodifiableListView) return _names;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_names);
   }
@@ -632,6 +645,8 @@ class _$_LocationArea implements _LocationArea {
   @override
   @JsonKey(name: 'pokemon_encounters')
   List<PokemonEncounter> get pokemonEncounters {
+    if (_pokemonEncounters is EqualUnmodifiableListView)
+      return _pokemonEncounters;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_pokemonEncounters);
   }
@@ -646,12 +661,14 @@ class _$_LocationArea implements _LocationArea {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_LocationArea &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.name, name) &&
-            const DeepCollectionEquality().equals(other.gameIndex, gameIndex) &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.name, name) || other.name == name) &&
+            (identical(other.gameIndex, gameIndex) ||
+                other.gameIndex == gameIndex) &&
             const DeepCollectionEquality()
                 .equals(other._encounterMethodRates, _encounterMethodRates) &&
-            const DeepCollectionEquality().equals(other.location, location) &&
+            (identical(other.location, location) ||
+                other.location == location) &&
             const DeepCollectionEquality().equals(other._names, _names) &&
             const DeepCollectionEquality()
                 .equals(other._pokemonEncounters, _pokemonEncounters));
@@ -661,16 +678,17 @@ class _$_LocationArea implements _LocationArea {
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(name),
-      const DeepCollectionEquality().hash(gameIndex),
+      id,
+      name,
+      gameIndex,
       const DeepCollectionEquality().hash(_encounterMethodRates),
-      const DeepCollectionEquality().hash(location),
+      location,
       const DeepCollectionEquality().hash(_names),
       const DeepCollectionEquality().hash(_pokemonEncounters));
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_LocationAreaCopyWith<_$_LocationArea> get copyWith =>
       __$$_LocationAreaCopyWithImpl<_$_LocationArea>(this, _$identity);
 
@@ -686,14 +704,13 @@ abstract class _LocationArea implements LocationArea {
   const factory _LocationArea(
       final int id,
       final String name,
-      @JsonKey(name: 'game_index')
-          final int gameIndex,
+      @JsonKey(name: 'game_index') final int gameIndex,
       @JsonKey(name: 'encounter_method_rates')
-          final List<EncounterMethodRate> encounterMethodRates,
+      final List<EncounterMethodRate> encounterMethodRates,
       final NamedAPIResource location,
       final List<Name> names,
       @JsonKey(name: 'pokemon_encounters')
-          final List<PokemonEncounter> pokemonEncounters) = _$_LocationArea;
+      final List<PokemonEncounter> pokemonEncounters) = _$_LocationArea;
 
   factory _LocationArea.fromJson(Map<String, dynamic> json) =
       _$_LocationArea.fromJson;
@@ -770,46 +787,49 @@ mixin _$EncounterMethodRate {
 abstract class $EncounterMethodRateCopyWith<$Res> {
   factory $EncounterMethodRateCopyWith(
           EncounterMethodRate value, $Res Function(EncounterMethodRate) then) =
-      _$EncounterMethodRateCopyWithImpl<$Res>;
+      _$EncounterMethodRateCopyWithImpl<$Res, EncounterMethodRate>;
+  @useResult
   $Res call(
-      {@JsonKey(name: 'encounter_method')
-          NamedAPIResource encounterMethod,
+      {@JsonKey(name: 'encounter_method') NamedAPIResource encounterMethod,
       @JsonKey(name: 'version_details')
-          List<EncounterVersionDetails> versionDetails});
+      List<EncounterVersionDetails> versionDetails});
 
   $NamedAPIResourceCopyWith<$Res> get encounterMethod;
 }
 
 /// @nodoc
-class _$EncounterMethodRateCopyWithImpl<$Res>
+class _$EncounterMethodRateCopyWithImpl<$Res, $Val extends EncounterMethodRate>
     implements $EncounterMethodRateCopyWith<$Res> {
   _$EncounterMethodRateCopyWithImpl(this._value, this._then);
 
-  final EncounterMethodRate _value;
   // ignore: unused_field
-  final $Res Function(EncounterMethodRate) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? encounterMethod = freezed,
-    Object? versionDetails = freezed,
+    Object? encounterMethod = null,
+    Object? versionDetails = null,
   }) {
     return _then(_value.copyWith(
-      encounterMethod: encounterMethod == freezed
+      encounterMethod: null == encounterMethod
           ? _value.encounterMethod
           : encounterMethod // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-      versionDetails: versionDetails == freezed
+      versionDetails: null == versionDetails
           ? _value.versionDetails
           : versionDetails // ignore: cast_nullable_to_non_nullable
               as List<EncounterVersionDetails>,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $NamedAPIResourceCopyWith<$Res> get encounterMethod {
     return $NamedAPIResourceCopyWith<$Res>(_value.encounterMethod, (value) {
-      return _then(_value.copyWith(encounterMethod: value));
+      return _then(_value.copyWith(encounterMethod: value) as $Val);
     });
   }
 }
@@ -821,11 +841,11 @@ abstract class _$$_EncounterMethodRateCopyWith<$Res>
           $Res Function(_$_EncounterMethodRate) then) =
       __$$_EncounterMethodRateCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
-      {@JsonKey(name: 'encounter_method')
-          NamedAPIResource encounterMethod,
+      {@JsonKey(name: 'encounter_method') NamedAPIResource encounterMethod,
       @JsonKey(name: 'version_details')
-          List<EncounterVersionDetails> versionDetails});
+      List<EncounterVersionDetails> versionDetails});
 
   @override
   $NamedAPIResourceCopyWith<$Res> get encounterMethod;
@@ -833,26 +853,24 @@ abstract class _$$_EncounterMethodRateCopyWith<$Res>
 
 /// @nodoc
 class __$$_EncounterMethodRateCopyWithImpl<$Res>
-    extends _$EncounterMethodRateCopyWithImpl<$Res>
+    extends _$EncounterMethodRateCopyWithImpl<$Res, _$_EncounterMethodRate>
     implements _$$_EncounterMethodRateCopyWith<$Res> {
   __$$_EncounterMethodRateCopyWithImpl(_$_EncounterMethodRate _value,
       $Res Function(_$_EncounterMethodRate) _then)
-      : super(_value, (v) => _then(v as _$_EncounterMethodRate));
+      : super(_value, _then);
 
-  @override
-  _$_EncounterMethodRate get _value => super._value as _$_EncounterMethodRate;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? encounterMethod = freezed,
-    Object? versionDetails = freezed,
+    Object? encounterMethod = null,
+    Object? versionDetails = null,
   }) {
     return _then(_$_EncounterMethodRate(
-      encounterMethod == freezed
+      null == encounterMethod
           ? _value.encounterMethod
           : encounterMethod // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-      versionDetails == freezed
+      null == versionDetails
           ? _value._versionDetails
           : versionDetails // ignore: cast_nullable_to_non_nullable
               as List<EncounterVersionDetails>,
@@ -864,10 +882,9 @@ class __$$_EncounterMethodRateCopyWithImpl<$Res>
 @JsonSerializable()
 class _$_EncounterMethodRate implements _EncounterMethodRate {
   const _$_EncounterMethodRate(
-      @JsonKey(name: 'encounter_method')
-          this.encounterMethod,
+      @JsonKey(name: 'encounter_method') this.encounterMethod,
       @JsonKey(name: 'version_details')
-          final List<EncounterVersionDetails> versionDetails)
+      final List<EncounterVersionDetails> versionDetails)
       : _versionDetails = versionDetails;
 
   factory _$_EncounterMethodRate.fromJson(Map<String, dynamic> json) =>
@@ -889,6 +906,7 @@ class _$_EncounterMethodRate implements _EncounterMethodRate {
   @override
   @JsonKey(name: 'version_details')
   List<EncounterVersionDetails> get versionDetails {
+    if (_versionDetails is EqualUnmodifiableListView) return _versionDetails;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_versionDetails);
   }
@@ -903,21 +921,20 @@ class _$_EncounterMethodRate implements _EncounterMethodRate {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_EncounterMethodRate &&
-            const DeepCollectionEquality()
-                .equals(other.encounterMethod, encounterMethod) &&
+            (identical(other.encounterMethod, encounterMethod) ||
+                other.encounterMethod == encounterMethod) &&
             const DeepCollectionEquality()
                 .equals(other._versionDetails, _versionDetails));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(encounterMethod),
+  int get hashCode => Object.hash(runtimeType, encounterMethod,
       const DeepCollectionEquality().hash(_versionDetails));
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_EncounterMethodRateCopyWith<_$_EncounterMethodRate> get copyWith =>
       __$$_EncounterMethodRateCopyWithImpl<_$_EncounterMethodRate>(
           this, _$identity);
@@ -932,11 +949,10 @@ class _$_EncounterMethodRate implements _EncounterMethodRate {
 
 abstract class _EncounterMethodRate implements EncounterMethodRate {
   const factory _EncounterMethodRate(
-          @JsonKey(name: 'encounter_method')
-              final NamedAPIResource encounterMethod,
-          @JsonKey(name: 'version_details')
-              final List<EncounterVersionDetails> versionDetails) =
-      _$_EncounterMethodRate;
+      @JsonKey(name: 'encounter_method') final NamedAPIResource encounterMethod,
+      @JsonKey(name: 'version_details')
+      final List<EncounterVersionDetails>
+          versionDetails) = _$_EncounterMethodRate;
 
   factory _EncounterMethodRate.fromJson(Map<String, dynamic> json) =
       _$_EncounterMethodRate.fromJson;
@@ -988,42 +1004,47 @@ mixin _$EncounterVersionDetails {
 abstract class $EncounterVersionDetailsCopyWith<$Res> {
   factory $EncounterVersionDetailsCopyWith(EncounterVersionDetails value,
           $Res Function(EncounterVersionDetails) then) =
-      _$EncounterVersionDetailsCopyWithImpl<$Res>;
+      _$EncounterVersionDetailsCopyWithImpl<$Res, EncounterVersionDetails>;
+  @useResult
   $Res call({int rate, NamedAPIResource version});
 
   $NamedAPIResourceCopyWith<$Res> get version;
 }
 
 /// @nodoc
-class _$EncounterVersionDetailsCopyWithImpl<$Res>
+class _$EncounterVersionDetailsCopyWithImpl<$Res,
+        $Val extends EncounterVersionDetails>
     implements $EncounterVersionDetailsCopyWith<$Res> {
   _$EncounterVersionDetailsCopyWithImpl(this._value, this._then);
 
-  final EncounterVersionDetails _value;
   // ignore: unused_field
-  final $Res Function(EncounterVersionDetails) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? rate = freezed,
-    Object? version = freezed,
+    Object? rate = null,
+    Object? version = null,
   }) {
     return _then(_value.copyWith(
-      rate: rate == freezed
+      rate: null == rate
           ? _value.rate
           : rate // ignore: cast_nullable_to_non_nullable
               as int,
-      version: version == freezed
+      version: null == version
           ? _value.version
           : version // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $NamedAPIResourceCopyWith<$Res> get version {
     return $NamedAPIResourceCopyWith<$Res>(_value.version, (value) {
-      return _then(_value.copyWith(version: value));
+      return _then(_value.copyWith(version: value) as $Val);
     });
   }
 }
@@ -1035,6 +1056,7 @@ abstract class _$$_EncounterVersionDetailsCopyWith<$Res>
           $Res Function(_$_EncounterVersionDetails) then) =
       __$$_EncounterVersionDetailsCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({int rate, NamedAPIResource version});
 
   @override
@@ -1043,27 +1065,25 @@ abstract class _$$_EncounterVersionDetailsCopyWith<$Res>
 
 /// @nodoc
 class __$$_EncounterVersionDetailsCopyWithImpl<$Res>
-    extends _$EncounterVersionDetailsCopyWithImpl<$Res>
+    extends _$EncounterVersionDetailsCopyWithImpl<$Res,
+        _$_EncounterVersionDetails>
     implements _$$_EncounterVersionDetailsCopyWith<$Res> {
   __$$_EncounterVersionDetailsCopyWithImpl(_$_EncounterVersionDetails _value,
       $Res Function(_$_EncounterVersionDetails) _then)
-      : super(_value, (v) => _then(v as _$_EncounterVersionDetails));
+      : super(_value, _then);
 
-  @override
-  _$_EncounterVersionDetails get _value =>
-      super._value as _$_EncounterVersionDetails;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? rate = freezed,
-    Object? version = freezed,
+    Object? rate = null,
+    Object? version = null,
   }) {
     return _then(_$_EncounterVersionDetails(
-      rate == freezed
+      null == rate
           ? _value.rate
           : rate // ignore: cast_nullable_to_non_nullable
               as int,
-      version == freezed
+      null == version
           ? _value.version
           : version // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
@@ -1101,19 +1121,17 @@ class _$_EncounterVersionDetails implements _EncounterVersionDetails {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_EncounterVersionDetails &&
-            const DeepCollectionEquality().equals(other.rate, rate) &&
-            const DeepCollectionEquality().equals(other.version, version));
+            (identical(other.rate, rate) || other.rate == rate) &&
+            (identical(other.version, version) || other.version == version));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(rate),
-      const DeepCollectionEquality().hash(version));
+  int get hashCode => Object.hash(runtimeType, rate, version);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_EncounterVersionDetailsCopyWith<_$_EncounterVersionDetails>
       get copyWith =>
           __$$_EncounterVersionDetailsCopyWithImpl<_$_EncounterVersionDetails>(
@@ -1182,45 +1200,49 @@ mixin _$PokemonEncounter {
 abstract class $PokemonEncounterCopyWith<$Res> {
   factory $PokemonEncounterCopyWith(
           PokemonEncounter value, $Res Function(PokemonEncounter) then) =
-      _$PokemonEncounterCopyWithImpl<$Res>;
+      _$PokemonEncounterCopyWithImpl<$Res, PokemonEncounter>;
+  @useResult
   $Res call(
       {NamedAPIResource pokemon,
       @JsonKey(name: 'version_details')
-          List<VersionEncounterDetail> versionDetails});
+      List<VersionEncounterDetail> versionDetails});
 
   $NamedAPIResourceCopyWith<$Res> get pokemon;
 }
 
 /// @nodoc
-class _$PokemonEncounterCopyWithImpl<$Res>
+class _$PokemonEncounterCopyWithImpl<$Res, $Val extends PokemonEncounter>
     implements $PokemonEncounterCopyWith<$Res> {
   _$PokemonEncounterCopyWithImpl(this._value, this._then);
 
-  final PokemonEncounter _value;
   // ignore: unused_field
-  final $Res Function(PokemonEncounter) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? pokemon = freezed,
-    Object? versionDetails = freezed,
+    Object? pokemon = null,
+    Object? versionDetails = null,
   }) {
     return _then(_value.copyWith(
-      pokemon: pokemon == freezed
+      pokemon: null == pokemon
           ? _value.pokemon
           : pokemon // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-      versionDetails: versionDetails == freezed
+      versionDetails: null == versionDetails
           ? _value.versionDetails
           : versionDetails // ignore: cast_nullable_to_non_nullable
               as List<VersionEncounterDetail>,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $NamedAPIResourceCopyWith<$Res> get pokemon {
     return $NamedAPIResourceCopyWith<$Res>(_value.pokemon, (value) {
-      return _then(_value.copyWith(pokemon: value));
+      return _then(_value.copyWith(pokemon: value) as $Val);
     });
   }
 }
@@ -1232,10 +1254,11 @@ abstract class _$$_PokemonEncounterCopyWith<$Res>
           _$_PokemonEncounter value, $Res Function(_$_PokemonEncounter) then) =
       __$$_PokemonEncounterCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {NamedAPIResource pokemon,
       @JsonKey(name: 'version_details')
-          List<VersionEncounterDetail> versionDetails});
+      List<VersionEncounterDetail> versionDetails});
 
   @override
   $NamedAPIResourceCopyWith<$Res> get pokemon;
@@ -1243,26 +1266,24 @@ abstract class _$$_PokemonEncounterCopyWith<$Res>
 
 /// @nodoc
 class __$$_PokemonEncounterCopyWithImpl<$Res>
-    extends _$PokemonEncounterCopyWithImpl<$Res>
+    extends _$PokemonEncounterCopyWithImpl<$Res, _$_PokemonEncounter>
     implements _$$_PokemonEncounterCopyWith<$Res> {
   __$$_PokemonEncounterCopyWithImpl(
       _$_PokemonEncounter _value, $Res Function(_$_PokemonEncounter) _then)
-      : super(_value, (v) => _then(v as _$_PokemonEncounter));
+      : super(_value, _then);
 
-  @override
-  _$_PokemonEncounter get _value => super._value as _$_PokemonEncounter;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? pokemon = freezed,
-    Object? versionDetails = freezed,
+    Object? pokemon = null,
+    Object? versionDetails = null,
   }) {
     return _then(_$_PokemonEncounter(
-      pokemon == freezed
+      null == pokemon
           ? _value.pokemon
           : pokemon // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-      versionDetails == freezed
+      null == versionDetails
           ? _value._versionDetails
           : versionDetails // ignore: cast_nullable_to_non_nullable
               as List<VersionEncounterDetail>,
@@ -1276,7 +1297,7 @@ class _$_PokemonEncounter implements _PokemonEncounter {
   const _$_PokemonEncounter(
       this.pokemon,
       @JsonKey(name: 'version_details')
-          final List<VersionEncounterDetail> versionDetails)
+      final List<VersionEncounterDetail> versionDetails)
       : _versionDetails = versionDetails;
 
   factory _$_PokemonEncounter.fromJson(Map<String, dynamic> json) =>
@@ -1299,6 +1320,7 @@ class _$_PokemonEncounter implements _PokemonEncounter {
   @override
   @JsonKey(name: 'version_details')
   List<VersionEncounterDetail> get versionDetails {
+    if (_versionDetails is EqualUnmodifiableListView) return _versionDetails;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_versionDetails);
   }
@@ -1313,20 +1335,19 @@ class _$_PokemonEncounter implements _PokemonEncounter {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_PokemonEncounter &&
-            const DeepCollectionEquality().equals(other.pokemon, pokemon) &&
+            (identical(other.pokemon, pokemon) || other.pokemon == pokemon) &&
             const DeepCollectionEquality()
                 .equals(other._versionDetails, _versionDetails));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(pokemon),
+  int get hashCode => Object.hash(runtimeType, pokemon,
       const DeepCollectionEquality().hash(_versionDetails));
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_PokemonEncounterCopyWith<_$_PokemonEncounter> get copyWith =>
       __$$_PokemonEncounterCopyWithImpl<_$_PokemonEncounter>(this, _$identity);
 
@@ -1340,10 +1361,9 @@ class _$_PokemonEncounter implements _PokemonEncounter {
 
 abstract class _PokemonEncounter implements PokemonEncounter {
   const factory _PokemonEncounter(
-          final NamedAPIResource pokemon,
-          @JsonKey(name: 'version_details')
-              final List<VersionEncounterDetail> versionDetails) =
-      _$_PokemonEncounter;
+      final NamedAPIResource pokemon,
+      @JsonKey(name: 'version_details')
+      final List<VersionEncounterDetail> versionDetails) = _$_PokemonEncounter;
 
   factory _PokemonEncounter.fromJson(Map<String, dynamic> json) =
       _$_PokemonEncounter.fromJson;
@@ -1398,48 +1418,52 @@ mixin _$PalParkArea {
 abstract class $PalParkAreaCopyWith<$Res> {
   factory $PalParkAreaCopyWith(
           PalParkArea value, $Res Function(PalParkArea) then) =
-      _$PalParkAreaCopyWithImpl<$Res>;
+      _$PalParkAreaCopyWithImpl<$Res, PalParkArea>;
+  @useResult
   $Res call(
       {int id,
       String name,
       List<Name> names,
       @JsonKey(name: 'pokemon_encounters')
-          List<PalParkEncounterSpecies> pokemonEncounters});
+      List<PalParkEncounterSpecies> pokemonEncounters});
 }
 
 /// @nodoc
-class _$PalParkAreaCopyWithImpl<$Res> implements $PalParkAreaCopyWith<$Res> {
+class _$PalParkAreaCopyWithImpl<$Res, $Val extends PalParkArea>
+    implements $PalParkAreaCopyWith<$Res> {
   _$PalParkAreaCopyWithImpl(this._value, this._then);
 
-  final PalParkArea _value;
   // ignore: unused_field
-  final $Res Function(PalParkArea) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? names = freezed,
-    Object? pokemonEncounters = freezed,
+    Object? id = null,
+    Object? name = null,
+    Object? names = null,
+    Object? pokemonEncounters = null,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      name: name == freezed
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      names: names == freezed
+      names: null == names
           ? _value.names
           : names // ignore: cast_nullable_to_non_nullable
               as List<Name>,
-      pokemonEncounters: pokemonEncounters == freezed
+      pokemonEncounters: null == pokemonEncounters
           ? _value.pokemonEncounters
           : pokemonEncounters // ignore: cast_nullable_to_non_nullable
               as List<PalParkEncounterSpecies>,
-    ));
+    ) as $Val);
   }
 }
 
@@ -1450,45 +1474,45 @@ abstract class _$$_PalParkAreaCopyWith<$Res>
           _$_PalParkArea value, $Res Function(_$_PalParkArea) then) =
       __$$_PalParkAreaCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {int id,
       String name,
       List<Name> names,
       @JsonKey(name: 'pokemon_encounters')
-          List<PalParkEncounterSpecies> pokemonEncounters});
+      List<PalParkEncounterSpecies> pokemonEncounters});
 }
 
 /// @nodoc
-class __$$_PalParkAreaCopyWithImpl<$Res> extends _$PalParkAreaCopyWithImpl<$Res>
+class __$$_PalParkAreaCopyWithImpl<$Res>
+    extends _$PalParkAreaCopyWithImpl<$Res, _$_PalParkArea>
     implements _$$_PalParkAreaCopyWith<$Res> {
   __$$_PalParkAreaCopyWithImpl(
       _$_PalParkArea _value, $Res Function(_$_PalParkArea) _then)
-      : super(_value, (v) => _then(v as _$_PalParkArea));
+      : super(_value, _then);
 
-  @override
-  _$_PalParkArea get _value => super._value as _$_PalParkArea;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? names = freezed,
-    Object? pokemonEncounters = freezed,
+    Object? id = null,
+    Object? name = null,
+    Object? names = null,
+    Object? pokemonEncounters = null,
   }) {
     return _then(_$_PalParkArea(
-      id == freezed
+      null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      name == freezed
+      null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      names == freezed
+      null == names
           ? _value._names
           : names // ignore: cast_nullable_to_non_nullable
               as List<Name>,
-      pokemonEncounters == freezed
+      null == pokemonEncounters
           ? _value._pokemonEncounters
           : pokemonEncounters // ignore: cast_nullable_to_non_nullable
               as List<PalParkEncounterSpecies>,
@@ -1504,7 +1528,7 @@ class _$_PalParkArea implements _PalParkArea {
       this.name,
       final List<Name> names,
       @JsonKey(name: 'pokemon_encounters')
-          final List<PalParkEncounterSpecies> pokemonEncounters)
+      final List<PalParkEncounterSpecies> pokemonEncounters)
       : _names = names,
         _pokemonEncounters = pokemonEncounters;
 
@@ -1525,6 +1549,7 @@ class _$_PalParkArea implements _PalParkArea {
   /// The name of this resource listed in different languages.
   @override
   List<Name> get names {
+    if (_names is EqualUnmodifiableListView) return _names;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_names);
   }
@@ -1536,6 +1561,8 @@ class _$_PalParkArea implements _PalParkArea {
   @override
   @JsonKey(name: 'pokemon_encounters')
   List<PalParkEncounterSpecies> get pokemonEncounters {
+    if (_pokemonEncounters is EqualUnmodifiableListView)
+      return _pokemonEncounters;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_pokemonEncounters);
   }
@@ -1550,8 +1577,8 @@ class _$_PalParkArea implements _PalParkArea {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_PalParkArea &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.name, name) &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.name, name) || other.name == name) &&
             const DeepCollectionEquality().equals(other._names, _names) &&
             const DeepCollectionEquality()
                 .equals(other._pokemonEncounters, _pokemonEncounters));
@@ -1561,13 +1588,14 @@ class _$_PalParkArea implements _PalParkArea {
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(name),
+      id,
+      name,
       const DeepCollectionEquality().hash(_names),
       const DeepCollectionEquality().hash(_pokemonEncounters));
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_PalParkAreaCopyWith<_$_PalParkArea> get copyWith =>
       __$$_PalParkAreaCopyWithImpl<_$_PalParkArea>(this, _$identity);
 
@@ -1581,12 +1609,11 @@ class _$_PalParkArea implements _PalParkArea {
 
 abstract class _PalParkArea implements PalParkArea {
   const factory _PalParkArea(
-          final int id,
-          final String name,
-          final List<Name> names,
-          @JsonKey(name: 'pokemon_encounters')
-              final List<PalParkEncounterSpecies> pokemonEncounters) =
-      _$_PalParkArea;
+      final int id,
+      final String name,
+      final List<Name> names,
+      @JsonKey(name: 'pokemon_encounters')
+      final List<PalParkEncounterSpecies> pokemonEncounters) = _$_PalParkArea;
 
   factory _PalParkArea.fromJson(Map<String, dynamic> json) =
       _$_PalParkArea.fromJson;
@@ -1647,7 +1674,8 @@ mixin _$PalParkEncounterSpecies {
 abstract class $PalParkEncounterSpeciesCopyWith<$Res> {
   factory $PalParkEncounterSpeciesCopyWith(PalParkEncounterSpecies value,
           $Res Function(PalParkEncounterSpecies) then) =
-      _$PalParkEncounterSpeciesCopyWithImpl<$Res>;
+      _$PalParkEncounterSpeciesCopyWithImpl<$Res, PalParkEncounterSpecies>;
+  @useResult
   $Res call(
       {@JsonKey(name: 'base_score') int baseScore,
       int rate,
@@ -1657,40 +1685,44 @@ abstract class $PalParkEncounterSpeciesCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$PalParkEncounterSpeciesCopyWithImpl<$Res>
+class _$PalParkEncounterSpeciesCopyWithImpl<$Res,
+        $Val extends PalParkEncounterSpecies>
     implements $PalParkEncounterSpeciesCopyWith<$Res> {
   _$PalParkEncounterSpeciesCopyWithImpl(this._value, this._then);
 
-  final PalParkEncounterSpecies _value;
   // ignore: unused_field
-  final $Res Function(PalParkEncounterSpecies) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? baseScore = freezed,
-    Object? rate = freezed,
-    Object? pokemonSpecies = freezed,
+    Object? baseScore = null,
+    Object? rate = null,
+    Object? pokemonSpecies = null,
   }) {
     return _then(_value.copyWith(
-      baseScore: baseScore == freezed
+      baseScore: null == baseScore
           ? _value.baseScore
           : baseScore // ignore: cast_nullable_to_non_nullable
               as int,
-      rate: rate == freezed
+      rate: null == rate
           ? _value.rate
           : rate // ignore: cast_nullable_to_non_nullable
               as int,
-      pokemonSpecies: pokemonSpecies == freezed
+      pokemonSpecies: null == pokemonSpecies
           ? _value.pokemonSpecies
           : pokemonSpecies // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $NamedAPIResourceCopyWith<$Res> get pokemonSpecies {
     return $NamedAPIResourceCopyWith<$Res>(_value.pokemonSpecies, (value) {
-      return _then(_value.copyWith(pokemonSpecies: value));
+      return _then(_value.copyWith(pokemonSpecies: value) as $Val);
     });
   }
 }
@@ -1702,6 +1734,7 @@ abstract class _$$_PalParkEncounterSpeciesCopyWith<$Res>
           $Res Function(_$_PalParkEncounterSpecies) then) =
       __$$_PalParkEncounterSpeciesCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@JsonKey(name: 'base_score') int baseScore,
       int rate,
@@ -1713,32 +1746,30 @@ abstract class _$$_PalParkEncounterSpeciesCopyWith<$Res>
 
 /// @nodoc
 class __$$_PalParkEncounterSpeciesCopyWithImpl<$Res>
-    extends _$PalParkEncounterSpeciesCopyWithImpl<$Res>
+    extends _$PalParkEncounterSpeciesCopyWithImpl<$Res,
+        _$_PalParkEncounterSpecies>
     implements _$$_PalParkEncounterSpeciesCopyWith<$Res> {
   __$$_PalParkEncounterSpeciesCopyWithImpl(_$_PalParkEncounterSpecies _value,
       $Res Function(_$_PalParkEncounterSpecies) _then)
-      : super(_value, (v) => _then(v as _$_PalParkEncounterSpecies));
+      : super(_value, _then);
 
-  @override
-  _$_PalParkEncounterSpecies get _value =>
-      super._value as _$_PalParkEncounterSpecies;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? baseScore = freezed,
-    Object? rate = freezed,
-    Object? pokemonSpecies = freezed,
+    Object? baseScore = null,
+    Object? rate = null,
+    Object? pokemonSpecies = null,
   }) {
     return _then(_$_PalParkEncounterSpecies(
-      baseScore == freezed
+      null == baseScore
           ? _value.baseScore
           : baseScore // ignore: cast_nullable_to_non_nullable
               as int,
-      rate == freezed
+      null == rate
           ? _value.rate
           : rate // ignore: cast_nullable_to_non_nullable
               as int,
-      pokemonSpecies == freezed
+      null == pokemonSpecies
           ? _value.pokemonSpecies
           : pokemonSpecies // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
@@ -1784,22 +1815,20 @@ class _$_PalParkEncounterSpecies implements _PalParkEncounterSpecies {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_PalParkEncounterSpecies &&
-            const DeepCollectionEquality().equals(other.baseScore, baseScore) &&
-            const DeepCollectionEquality().equals(other.rate, rate) &&
-            const DeepCollectionEquality()
-                .equals(other.pokemonSpecies, pokemonSpecies));
+            (identical(other.baseScore, baseScore) ||
+                other.baseScore == baseScore) &&
+            (identical(other.rate, rate) || other.rate == rate) &&
+            (identical(other.pokemonSpecies, pokemonSpecies) ||
+                other.pokemonSpecies == pokemonSpecies));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(baseScore),
-      const DeepCollectionEquality().hash(rate),
-      const DeepCollectionEquality().hash(pokemonSpecies));
+  int get hashCode => Object.hash(runtimeType, baseScore, rate, pokemonSpecies);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_PalParkEncounterSpeciesCopyWith<_$_PalParkEncounterSpecies>
       get copyWith =>
           __$$_PalParkEncounterSpeciesCopyWithImpl<_$_PalParkEncounterSpecies>(
@@ -1815,11 +1844,10 @@ class _$_PalParkEncounterSpecies implements _PalParkEncounterSpecies {
 
 abstract class _PalParkEncounterSpecies implements PalParkEncounterSpecies {
   const factory _PalParkEncounterSpecies(
-      @JsonKey(name: 'base_score')
-          final int baseScore,
+      @JsonKey(name: 'base_score') final int baseScore,
       final int rate,
       @JsonKey(name: 'pokemon_species')
-          final NamedAPIResource pokemonSpecies) = _$_PalParkEncounterSpecies;
+      final NamedAPIResource pokemonSpecies) = _$_PalParkEncounterSpecies;
 
   factory _PalParkEncounterSpecies.fromJson(Map<String, dynamic> json) =
       _$_PalParkEncounterSpecies.fromJson;
@@ -1899,7 +1927,8 @@ mixin _$Region {
 /// @nodoc
 abstract class $RegionCopyWith<$Res> {
   factory $RegionCopyWith(Region value, $Res Function(Region) then) =
-      _$RegionCopyWithImpl<$Res>;
+      _$RegionCopyWithImpl<$Res, Region>;
+  @useResult
   $Res call(
       {int id,
       List<NamedAPIResource> locations,
@@ -1913,63 +1942,67 @@ abstract class $RegionCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$RegionCopyWithImpl<$Res> implements $RegionCopyWith<$Res> {
+class _$RegionCopyWithImpl<$Res, $Val extends Region>
+    implements $RegionCopyWith<$Res> {
   _$RegionCopyWithImpl(this._value, this._then);
 
-  final Region _value;
   // ignore: unused_field
-  final $Res Function(Region) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? locations = freezed,
-    Object? name = freezed,
-    Object? names = freezed,
+    Object? id = null,
+    Object? locations = null,
+    Object? name = null,
+    Object? names = null,
     Object? mainGeneration = freezed,
-    Object? pokedexes = freezed,
-    Object? versionGroups = freezed,
+    Object? pokedexes = null,
+    Object? versionGroups = null,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      locations: locations == freezed
+      locations: null == locations
           ? _value.locations
           : locations // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
-      name: name == freezed
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      names: names == freezed
+      names: null == names
           ? _value.names
           : names // ignore: cast_nullable_to_non_nullable
               as List<Name>,
-      mainGeneration: mainGeneration == freezed
+      mainGeneration: freezed == mainGeneration
           ? _value.mainGeneration
           : mainGeneration // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource?,
-      pokedexes: pokedexes == freezed
+      pokedexes: null == pokedexes
           ? _value.pokedexes
           : pokedexes // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
-      versionGroups: versionGroups == freezed
+      versionGroups: null == versionGroups
           ? _value.versionGroups
           : versionGroups // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $NamedAPIResourceCopyWith<$Res>? get mainGeneration {
     if (_value.mainGeneration == null) {
       return null;
     }
 
     return $NamedAPIResourceCopyWith<$Res>(_value.mainGeneration!, (value) {
-      return _then(_value.copyWith(mainGeneration: value));
+      return _then(_value.copyWith(mainGeneration: value) as $Val);
     });
   }
 }
@@ -1979,6 +2012,7 @@ abstract class _$$_RegionCopyWith<$Res> implements $RegionCopyWith<$Res> {
   factory _$$_RegionCopyWith(_$_Region value, $Res Function(_$_Region) then) =
       __$$_RegionCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {int id,
       List<NamedAPIResource> locations,
@@ -1993,50 +2027,49 @@ abstract class _$$_RegionCopyWith<$Res> implements $RegionCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$_RegionCopyWithImpl<$Res> extends _$RegionCopyWithImpl<$Res>
+class __$$_RegionCopyWithImpl<$Res>
+    extends _$RegionCopyWithImpl<$Res, _$_Region>
     implements _$$_RegionCopyWith<$Res> {
   __$$_RegionCopyWithImpl(_$_Region _value, $Res Function(_$_Region) _then)
-      : super(_value, (v) => _then(v as _$_Region));
+      : super(_value, _then);
 
-  @override
-  _$_Region get _value => super._value as _$_Region;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? locations = freezed,
-    Object? name = freezed,
-    Object? names = freezed,
+    Object? id = null,
+    Object? locations = null,
+    Object? name = null,
+    Object? names = null,
     Object? mainGeneration = freezed,
-    Object? pokedexes = freezed,
-    Object? versionGroups = freezed,
+    Object? pokedexes = null,
+    Object? versionGroups = null,
   }) {
     return _then(_$_Region(
-      id == freezed
+      null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      locations == freezed
+      null == locations
           ? _value._locations
           : locations // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
-      name == freezed
+      null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      names == freezed
+      null == names
           ? _value._names
           : names // ignore: cast_nullable_to_non_nullable
               as List<Name>,
-      mainGeneration == freezed
+      freezed == mainGeneration
           ? _value.mainGeneration
           : mainGeneration // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource?,
-      pokedexes == freezed
+      null == pokedexes
           ? _value._pokedexes
           : pokedexes // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
-      versionGroups == freezed
+      null == versionGroups
           ? _value._versionGroups
           : versionGroups // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
@@ -2052,11 +2085,10 @@ class _$_Region implements _Region {
       final List<NamedAPIResource> locations,
       this.name,
       final List<Name> names,
-      @JsonKey(name: 'main_generation')
-          this.mainGeneration,
+      @JsonKey(name: 'main_generation') this.mainGeneration,
       final List<NamedAPIResource> pokedexes,
       @JsonKey(name: 'version_groups')
-          final List<NamedAPIResource> versionGroups)
+      final List<NamedAPIResource> versionGroups)
       : _locations = locations,
         _names = names,
         _pokedexes = pokedexes,
@@ -2083,6 +2115,7 @@ class _$_Region implements _Region {
   /// [Location]
   @override
   List<NamedAPIResource> get locations {
+    if (_locations is EqualUnmodifiableListView) return _locations;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_locations);
   }
@@ -2097,6 +2130,7 @@ class _$_Region implements _Region {
   /// The name of this resource listed in different languages.
   @override
   List<Name> get names {
+    if (_names is EqualUnmodifiableListView) return _names;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_names);
   }
@@ -2120,6 +2154,7 @@ class _$_Region implements _Region {
   /// [PokedexData]
   @override
   List<NamedAPIResource> get pokedexes {
+    if (_pokedexes is EqualUnmodifiableListView) return _pokedexes;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_pokedexes);
   }
@@ -2139,6 +2174,7 @@ class _$_Region implements _Region {
   @override
   @JsonKey(name: 'version_groups')
   List<NamedAPIResource> get versionGroups {
+    if (_versionGroups is EqualUnmodifiableListView) return _versionGroups;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_versionGroups);
   }
@@ -2153,13 +2189,13 @@ class _$_Region implements _Region {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_Region &&
-            const DeepCollectionEquality().equals(other.id, id) &&
+            (identical(other.id, id) || other.id == id) &&
             const DeepCollectionEquality()
                 .equals(other._locations, _locations) &&
-            const DeepCollectionEquality().equals(other.name, name) &&
+            (identical(other.name, name) || other.name == name) &&
             const DeepCollectionEquality().equals(other._names, _names) &&
-            const DeepCollectionEquality()
-                .equals(other.mainGeneration, mainGeneration) &&
+            (identical(other.mainGeneration, mainGeneration) ||
+                other.mainGeneration == mainGeneration) &&
             const DeepCollectionEquality()
                 .equals(other._pokedexes, _pokedexes) &&
             const DeepCollectionEquality()
@@ -2170,16 +2206,17 @@ class _$_Region implements _Region {
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      const DeepCollectionEquality().hash(id),
+      id,
       const DeepCollectionEquality().hash(_locations),
-      const DeepCollectionEquality().hash(name),
+      name,
       const DeepCollectionEquality().hash(_names),
-      const DeepCollectionEquality().hash(mainGeneration),
+      mainGeneration,
       const DeepCollectionEquality().hash(_pokedexes),
       const DeepCollectionEquality().hash(_versionGroups));
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_RegionCopyWith<_$_Region> get copyWith =>
       __$$_RegionCopyWithImpl<_$_Region>(this, _$identity);
 
@@ -2197,11 +2234,10 @@ abstract class _Region implements Region {
       final List<NamedAPIResource> locations,
       final String name,
       final List<Name> names,
-      @JsonKey(name: 'main_generation')
-          final NamedAPIResource? mainGeneration,
+      @JsonKey(name: 'main_generation') final NamedAPIResource? mainGeneration,
       final List<NamedAPIResource> pokedexes,
       @JsonKey(name: 'version_groups')
-          final List<NamedAPIResource> versionGroups) = _$_Region;
+      final List<NamedAPIResource> versionGroups) = _$_Region;
 
   factory _Region.fromJson(Map<String, dynamic> json) = _$_Region.fromJson;
 

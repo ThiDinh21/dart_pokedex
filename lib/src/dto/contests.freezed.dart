@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'contests.dart';
 
@@ -47,7 +47,8 @@ mixin _$ContestType {
 abstract class $ContestTypeCopyWith<$Res> {
   factory $ContestTypeCopyWith(
           ContestType value, $Res Function(ContestType) then) =
-      _$ContestTypeCopyWithImpl<$Res>;
+      _$ContestTypeCopyWithImpl<$Res, ContestType>;
+  @useResult
   $Res call(
       {int id,
       String name,
@@ -58,44 +59,48 @@ abstract class $ContestTypeCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$ContestTypeCopyWithImpl<$Res> implements $ContestTypeCopyWith<$Res> {
+class _$ContestTypeCopyWithImpl<$Res, $Val extends ContestType>
+    implements $ContestTypeCopyWith<$Res> {
   _$ContestTypeCopyWithImpl(this._value, this._then);
 
-  final ContestType _value;
   // ignore: unused_field
-  final $Res Function(ContestType) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? berryFlavor = freezed,
-    Object? names = freezed,
+    Object? id = null,
+    Object? name = null,
+    Object? berryFlavor = null,
+    Object? names = null,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      name: name == freezed
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      berryFlavor: berryFlavor == freezed
+      berryFlavor: null == berryFlavor
           ? _value.berryFlavor
           : berryFlavor // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-      names: names == freezed
+      names: null == names
           ? _value.names
           : names // ignore: cast_nullable_to_non_nullable
               as List<ContestName>,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $NamedAPIResourceCopyWith<$Res> get berryFlavor {
     return $NamedAPIResourceCopyWith<$Res>(_value.berryFlavor, (value) {
-      return _then(_value.copyWith(berryFlavor: value));
+      return _then(_value.copyWith(berryFlavor: value) as $Val);
     });
   }
 }
@@ -107,6 +112,7 @@ abstract class _$$_ContestTypeCopyWith<$Res>
           _$_ContestType value, $Res Function(_$_ContestType) then) =
       __$$_ContestTypeCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {int id,
       String name,
@@ -118,36 +124,35 @@ abstract class _$$_ContestTypeCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_ContestTypeCopyWithImpl<$Res> extends _$ContestTypeCopyWithImpl<$Res>
+class __$$_ContestTypeCopyWithImpl<$Res>
+    extends _$ContestTypeCopyWithImpl<$Res, _$_ContestType>
     implements _$$_ContestTypeCopyWith<$Res> {
   __$$_ContestTypeCopyWithImpl(
       _$_ContestType _value, $Res Function(_$_ContestType) _then)
-      : super(_value, (v) => _then(v as _$_ContestType));
+      : super(_value, _then);
 
-  @override
-  _$_ContestType get _value => super._value as _$_ContestType;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? berryFlavor = freezed,
-    Object? names = freezed,
+    Object? id = null,
+    Object? name = null,
+    Object? berryFlavor = null,
+    Object? names = null,
   }) {
     return _then(_$_ContestType(
-      id == freezed
+      null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      name == freezed
+      null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      berryFlavor == freezed
+      null == berryFlavor
           ? _value.berryFlavor
           : berryFlavor // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-      names == freezed
+      null == names
           ? _value._names
           : names // ignore: cast_nullable_to_non_nullable
               as List<ContestName>,
@@ -191,6 +196,7 @@ class _$_ContestType implements _ContestType {
   /// The name of this contest type listed in different languages.
   @override
   List<ContestName> get names {
+    if (_names is EqualUnmodifiableListView) return _names;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_names);
   }
@@ -205,24 +211,21 @@ class _$_ContestType implements _ContestType {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_ContestType &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.name, name) &&
-            const DeepCollectionEquality()
-                .equals(other.berryFlavor, berryFlavor) &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.name, name) || other.name == name) &&
+            (identical(other.berryFlavor, berryFlavor) ||
+                other.berryFlavor == berryFlavor) &&
             const DeepCollectionEquality().equals(other._names, _names));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(name),
-      const DeepCollectionEquality().hash(berryFlavor),
+  int get hashCode => Object.hash(runtimeType, id, name, berryFlavor,
       const DeepCollectionEquality().hash(_names));
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_ContestTypeCopyWith<_$_ContestType> get copyWith =>
       __$$_ContestTypeCopyWithImpl<_$_ContestType>(this, _$identity);
 
@@ -300,46 +303,51 @@ mixin _$ContestName {
 abstract class $ContestNameCopyWith<$Res> {
   factory $ContestNameCopyWith(
           ContestName value, $Res Function(ContestName) then) =
-      _$ContestNameCopyWithImpl<$Res>;
+      _$ContestNameCopyWithImpl<$Res, ContestName>;
+  @useResult
   $Res call({String name, String color, NamedAPIResource language});
 
   $NamedAPIResourceCopyWith<$Res> get language;
 }
 
 /// @nodoc
-class _$ContestNameCopyWithImpl<$Res> implements $ContestNameCopyWith<$Res> {
+class _$ContestNameCopyWithImpl<$Res, $Val extends ContestName>
+    implements $ContestNameCopyWith<$Res> {
   _$ContestNameCopyWithImpl(this._value, this._then);
 
-  final ContestName _value;
   // ignore: unused_field
-  final $Res Function(ContestName) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? name = freezed,
-    Object? color = freezed,
-    Object? language = freezed,
+    Object? name = null,
+    Object? color = null,
+    Object? language = null,
   }) {
     return _then(_value.copyWith(
-      name: name == freezed
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      color: color == freezed
+      color: null == color
           ? _value.color
           : color // ignore: cast_nullable_to_non_nullable
               as String,
-      language: language == freezed
+      language: null == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $NamedAPIResourceCopyWith<$Res> get language {
     return $NamedAPIResourceCopyWith<$Res>(_value.language, (value) {
-      return _then(_value.copyWith(language: value));
+      return _then(_value.copyWith(language: value) as $Val);
     });
   }
 }
@@ -351,6 +359,7 @@ abstract class _$$_ContestNameCopyWith<$Res>
           _$_ContestName value, $Res Function(_$_ContestName) then) =
       __$$_ContestNameCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String name, String color, NamedAPIResource language});
 
   @override
@@ -358,31 +367,30 @@ abstract class _$$_ContestNameCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_ContestNameCopyWithImpl<$Res> extends _$ContestNameCopyWithImpl<$Res>
+class __$$_ContestNameCopyWithImpl<$Res>
+    extends _$ContestNameCopyWithImpl<$Res, _$_ContestName>
     implements _$$_ContestNameCopyWith<$Res> {
   __$$_ContestNameCopyWithImpl(
       _$_ContestName _value, $Res Function(_$_ContestName) _then)
-      : super(_value, (v) => _then(v as _$_ContestName));
+      : super(_value, _then);
 
-  @override
-  _$_ContestName get _value => super._value as _$_ContestName;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? name = freezed,
-    Object? color = freezed,
-    Object? language = freezed,
+    Object? name = null,
+    Object? color = null,
+    Object? language = null,
   }) {
     return _then(_$_ContestName(
-      name == freezed
+      null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      color == freezed
+      null == color
           ? _value.color
           : color // ignore: cast_nullable_to_non_nullable
               as String,
-      language == freezed
+      null == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
@@ -424,21 +432,19 @@ class _$_ContestName implements _ContestName {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_ContestName &&
-            const DeepCollectionEquality().equals(other.name, name) &&
-            const DeepCollectionEquality().equals(other.color, color) &&
-            const DeepCollectionEquality().equals(other.language, language));
+            (identical(other.name, name) || other.name == name) &&
+            (identical(other.color, color) || other.color == color) &&
+            (identical(other.language, language) ||
+                other.language == language));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(name),
-      const DeepCollectionEquality().hash(color),
-      const DeepCollectionEquality().hash(language));
+  int get hashCode => Object.hash(runtimeType, name, color, language);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_ContestNameCopyWith<_$_ContestName> get copyWith =>
       __$$_ContestNameCopyWithImpl<_$_ContestName>(this, _$identity);
 
@@ -512,56 +518,58 @@ mixin _$ContestEffect {
 abstract class $ContestEffectCopyWith<$Res> {
   factory $ContestEffectCopyWith(
           ContestEffect value, $Res Function(ContestEffect) then) =
-      _$ContestEffectCopyWithImpl<$Res>;
+      _$ContestEffectCopyWithImpl<$Res, ContestEffect>;
+  @useResult
   $Res call(
       {int id,
       int appeal,
       int jam,
-      @JsonKey(name: 'effect_entries')
-          List<Effect> effectEntries,
+      @JsonKey(name: 'effect_entries') List<Effect> effectEntries,
       @JsonKey(name: 'flavor_text_entries')
-          List<FlavorText> flavorTextEntries});
+      List<FlavorText> flavorTextEntries});
 }
 
 /// @nodoc
-class _$ContestEffectCopyWithImpl<$Res>
+class _$ContestEffectCopyWithImpl<$Res, $Val extends ContestEffect>
     implements $ContestEffectCopyWith<$Res> {
   _$ContestEffectCopyWithImpl(this._value, this._then);
 
-  final ContestEffect _value;
   // ignore: unused_field
-  final $Res Function(ContestEffect) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? appeal = freezed,
-    Object? jam = freezed,
-    Object? effectEntries = freezed,
-    Object? flavorTextEntries = freezed,
+    Object? id = null,
+    Object? appeal = null,
+    Object? jam = null,
+    Object? effectEntries = null,
+    Object? flavorTextEntries = null,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      appeal: appeal == freezed
+      appeal: null == appeal
           ? _value.appeal
           : appeal // ignore: cast_nullable_to_non_nullable
               as int,
-      jam: jam == freezed
+      jam: null == jam
           ? _value.jam
           : jam // ignore: cast_nullable_to_non_nullable
               as int,
-      effectEntries: effectEntries == freezed
+      effectEntries: null == effectEntries
           ? _value.effectEntries
           : effectEntries // ignore: cast_nullable_to_non_nullable
               as List<Effect>,
-      flavorTextEntries: flavorTextEntries == freezed
+      flavorTextEntries: null == flavorTextEntries
           ? _value.flavorTextEntries
           : flavorTextEntries // ignore: cast_nullable_to_non_nullable
               as List<FlavorText>,
-    ));
+    ) as $Val);
   }
 }
 
@@ -572,53 +580,51 @@ abstract class _$$_ContestEffectCopyWith<$Res>
           _$_ContestEffect value, $Res Function(_$_ContestEffect) then) =
       __$$_ContestEffectCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {int id,
       int appeal,
       int jam,
-      @JsonKey(name: 'effect_entries')
-          List<Effect> effectEntries,
+      @JsonKey(name: 'effect_entries') List<Effect> effectEntries,
       @JsonKey(name: 'flavor_text_entries')
-          List<FlavorText> flavorTextEntries});
+      List<FlavorText> flavorTextEntries});
 }
 
 /// @nodoc
 class __$$_ContestEffectCopyWithImpl<$Res>
-    extends _$ContestEffectCopyWithImpl<$Res>
+    extends _$ContestEffectCopyWithImpl<$Res, _$_ContestEffect>
     implements _$$_ContestEffectCopyWith<$Res> {
   __$$_ContestEffectCopyWithImpl(
       _$_ContestEffect _value, $Res Function(_$_ContestEffect) _then)
-      : super(_value, (v) => _then(v as _$_ContestEffect));
+      : super(_value, _then);
 
-  @override
-  _$_ContestEffect get _value => super._value as _$_ContestEffect;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? appeal = freezed,
-    Object? jam = freezed,
-    Object? effectEntries = freezed,
-    Object? flavorTextEntries = freezed,
+    Object? id = null,
+    Object? appeal = null,
+    Object? jam = null,
+    Object? effectEntries = null,
+    Object? flavorTextEntries = null,
   }) {
     return _then(_$_ContestEffect(
-      id == freezed
+      null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      appeal == freezed
+      null == appeal
           ? _value.appeal
           : appeal // ignore: cast_nullable_to_non_nullable
               as int,
-      jam == freezed
+      null == jam
           ? _value.jam
           : jam // ignore: cast_nullable_to_non_nullable
               as int,
-      effectEntries == freezed
+      null == effectEntries
           ? _value._effectEntries
           : effectEntries // ignore: cast_nullable_to_non_nullable
               as List<Effect>,
-      flavorTextEntries == freezed
+      null == flavorTextEntries
           ? _value._flavorTextEntries
           : flavorTextEntries // ignore: cast_nullable_to_non_nullable
               as List<FlavorText>,
@@ -633,10 +639,9 @@ class _$_ContestEffect implements _ContestEffect {
       this.id,
       this.appeal,
       this.jam,
-      @JsonKey(name: 'effect_entries')
-          final List<Effect> effectEntries,
+      @JsonKey(name: 'effect_entries') final List<Effect> effectEntries,
       @JsonKey(name: 'flavor_text_entries')
-          final List<FlavorText> flavorTextEntries)
+      final List<FlavorText> flavorTextEntries)
       : _effectEntries = effectEntries,
         _flavorTextEntries = flavorTextEntries;
 
@@ -662,6 +667,7 @@ class _$_ContestEffect implements _ContestEffect {
   @override
   @JsonKey(name: 'effect_entries')
   List<Effect> get effectEntries {
+    if (_effectEntries is EqualUnmodifiableListView) return _effectEntries;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_effectEntries);
   }
@@ -673,6 +679,8 @@ class _$_ContestEffect implements _ContestEffect {
   @override
   @JsonKey(name: 'flavor_text_entries')
   List<FlavorText> get flavorTextEntries {
+    if (_flavorTextEntries is EqualUnmodifiableListView)
+      return _flavorTextEntries;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_flavorTextEntries);
   }
@@ -687,9 +695,9 @@ class _$_ContestEffect implements _ContestEffect {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_ContestEffect &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.appeal, appeal) &&
-            const DeepCollectionEquality().equals(other.jam, jam) &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.appeal, appeal) || other.appeal == appeal) &&
+            (identical(other.jam, jam) || other.jam == jam) &&
             const DeepCollectionEquality()
                 .equals(other._effectEntries, _effectEntries) &&
             const DeepCollectionEquality()
@@ -700,14 +708,15 @@ class _$_ContestEffect implements _ContestEffect {
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(appeal),
-      const DeepCollectionEquality().hash(jam),
+      id,
+      appeal,
+      jam,
       const DeepCollectionEquality().hash(_effectEntries),
       const DeepCollectionEquality().hash(_flavorTextEntries));
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_ContestEffectCopyWith<_$_ContestEffect> get copyWith =>
       __$$_ContestEffectCopyWithImpl<_$_ContestEffect>(this, _$identity);
 
@@ -724,10 +733,9 @@ abstract class _ContestEffect implements ContestEffect {
       final int id,
       final int appeal,
       final int jam,
-      @JsonKey(name: 'effect_entries')
-          final List<Effect> effectEntries,
+      @JsonKey(name: 'effect_entries') final List<Effect> effectEntries,
       @JsonKey(name: 'flavor_text_entries')
-          final List<FlavorText> flavorTextEntries) = _$_ContestEffect;
+      final List<FlavorText> flavorTextEntries) = _$_ContestEffect;
 
   factory _ContestEffect.fromJson(Map<String, dynamic> json) =
       _$_ContestEffect.fromJson;
@@ -793,7 +801,8 @@ mixin _$SuperContestEffect {
 abstract class $SuperContestEffectCopyWith<$Res> {
   factory $SuperContestEffectCopyWith(
           SuperContestEffect value, $Res Function(SuperContestEffect) then) =
-      _$SuperContestEffectCopyWithImpl<$Res>;
+      _$SuperContestEffectCopyWithImpl<$Res, SuperContestEffect>;
+  @useResult
   $Res call(
       {int id,
       int appeal,
@@ -802,39 +811,41 @@ abstract class $SuperContestEffectCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$SuperContestEffectCopyWithImpl<$Res>
+class _$SuperContestEffectCopyWithImpl<$Res, $Val extends SuperContestEffect>
     implements $SuperContestEffectCopyWith<$Res> {
   _$SuperContestEffectCopyWithImpl(this._value, this._then);
 
-  final SuperContestEffect _value;
   // ignore: unused_field
-  final $Res Function(SuperContestEffect) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? appeal = freezed,
-    Object? flavorTextEntries = freezed,
-    Object? moves = freezed,
+    Object? id = null,
+    Object? appeal = null,
+    Object? flavorTextEntries = null,
+    Object? moves = null,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      appeal: appeal == freezed
+      appeal: null == appeal
           ? _value.appeal
           : appeal // ignore: cast_nullable_to_non_nullable
               as int,
-      flavorTextEntries: flavorTextEntries == freezed
+      flavorTextEntries: null == flavorTextEntries
           ? _value.flavorTextEntries
           : flavorTextEntries // ignore: cast_nullable_to_non_nullable
               as List<FlavorText>,
-      moves: moves == freezed
+      moves: null == moves
           ? _value.moves
           : moves // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
-    ));
+    ) as $Val);
   }
 }
 
@@ -845,6 +856,7 @@ abstract class _$$_SuperContestEffectCopyWith<$Res>
           $Res Function(_$_SuperContestEffect) then) =
       __$$_SuperContestEffectCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {int id,
       int appeal,
@@ -854,36 +866,34 @@ abstract class _$$_SuperContestEffectCopyWith<$Res>
 
 /// @nodoc
 class __$$_SuperContestEffectCopyWithImpl<$Res>
-    extends _$SuperContestEffectCopyWithImpl<$Res>
+    extends _$SuperContestEffectCopyWithImpl<$Res, _$_SuperContestEffect>
     implements _$$_SuperContestEffectCopyWith<$Res> {
   __$$_SuperContestEffectCopyWithImpl(
       _$_SuperContestEffect _value, $Res Function(_$_SuperContestEffect) _then)
-      : super(_value, (v) => _then(v as _$_SuperContestEffect));
+      : super(_value, _then);
 
-  @override
-  _$_SuperContestEffect get _value => super._value as _$_SuperContestEffect;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? appeal = freezed,
-    Object? flavorTextEntries = freezed,
-    Object? moves = freezed,
+    Object? id = null,
+    Object? appeal = null,
+    Object? flavorTextEntries = null,
+    Object? moves = null,
   }) {
     return _then(_$_SuperContestEffect(
-      id == freezed
+      null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      appeal == freezed
+      null == appeal
           ? _value.appeal
           : appeal // ignore: cast_nullable_to_non_nullable
               as int,
-      flavorTextEntries == freezed
+      null == flavorTextEntries
           ? _value._flavorTextEntries
           : flavorTextEntries // ignore: cast_nullable_to_non_nullable
               as List<FlavorText>,
-      moves == freezed
+      null == moves
           ? _value._moves
           : moves // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
@@ -898,7 +908,7 @@ class _$_SuperContestEffect implements _SuperContestEffect {
       this.id,
       this.appeal,
       @JsonKey(name: 'flavor_text_entries')
-          final List<FlavorText> flavorTextEntries,
+      final List<FlavorText> flavorTextEntries,
       final List<NamedAPIResource> moves)
       : _flavorTextEntries = flavorTextEntries,
         _moves = moves;
@@ -921,6 +931,8 @@ class _$_SuperContestEffect implements _SuperContestEffect {
   @override
   @JsonKey(name: 'flavor_text_entries')
   List<FlavorText> get flavorTextEntries {
+    if (_flavorTextEntries is EqualUnmodifiableListView)
+      return _flavorTextEntries;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_flavorTextEntries);
   }
@@ -939,6 +951,7 @@ class _$_SuperContestEffect implements _SuperContestEffect {
   /// [Move]
   @override
   List<NamedAPIResource> get moves {
+    if (_moves is EqualUnmodifiableListView) return _moves;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_moves);
   }
@@ -953,8 +966,8 @@ class _$_SuperContestEffect implements _SuperContestEffect {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_SuperContestEffect &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.appeal, appeal) &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.appeal, appeal) || other.appeal == appeal) &&
             const DeepCollectionEquality()
                 .equals(other._flavorTextEntries, _flavorTextEntries) &&
             const DeepCollectionEquality().equals(other._moves, _moves));
@@ -964,13 +977,14 @@ class _$_SuperContestEffect implements _SuperContestEffect {
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(appeal),
+      id,
+      appeal,
       const DeepCollectionEquality().hash(_flavorTextEntries),
       const DeepCollectionEquality().hash(_moves));
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_SuperContestEffectCopyWith<_$_SuperContestEffect> get copyWith =>
       __$$_SuperContestEffectCopyWithImpl<_$_SuperContestEffect>(
           this, _$identity);
@@ -988,7 +1002,7 @@ abstract class _SuperContestEffect implements SuperContestEffect {
       final int id,
       final int appeal,
       @JsonKey(name: 'flavor_text_entries')
-          final List<FlavorText> flavorTextEntries,
+      final List<FlavorText> flavorTextEntries,
       final List<NamedAPIResource> moves) = _$_SuperContestEffect;
 
   factory _SuperContestEffect.fromJson(Map<String, dynamic> json) =

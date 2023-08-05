@@ -12,4 +12,4 @@ analyzer:
         missing_return: error
         missing_required_param: error
         invalid_annotation_target: ignore
-        avoid_print: ignore
+        # avoid_print: ignore

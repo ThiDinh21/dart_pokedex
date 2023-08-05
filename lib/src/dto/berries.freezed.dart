@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'berries.dart';
 
@@ -87,7 +87,8 @@ mixin _$Berry {
 /// @nodoc
 abstract class $BerryCopyWith<$Res> {
   factory $BerryCopyWith(Berry value, $Res Function(Berry) then) =
-      _$BerryCopyWithImpl<$Res>;
+      _$BerryCopyWithImpl<$Res, Berry>;
+  @useResult
   $Res call(
       {int id,
       String name,
@@ -108,98 +109,104 @@ abstract class $BerryCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$BerryCopyWithImpl<$Res> implements $BerryCopyWith<$Res> {
+class _$BerryCopyWithImpl<$Res, $Val extends Berry>
+    implements $BerryCopyWith<$Res> {
   _$BerryCopyWithImpl(this._value, this._then);
 
-  final Berry _value;
   // ignore: unused_field
-  final $Res Function(Berry) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? growthTime = freezed,
-    Object? maxHarvest = freezed,
-    Object? naturalGiftPower = freezed,
-    Object? size = freezed,
-    Object? smoothness = freezed,
-    Object? soilDryness = freezed,
-    Object? firmness = freezed,
-    Object? flavors = freezed,
-    Object? item = freezed,
-    Object? naturalGiftType = freezed,
+    Object? id = null,
+    Object? name = null,
+    Object? growthTime = null,
+    Object? maxHarvest = null,
+    Object? naturalGiftPower = null,
+    Object? size = null,
+    Object? smoothness = null,
+    Object? soilDryness = null,
+    Object? firmness = null,
+    Object? flavors = null,
+    Object? item = null,
+    Object? naturalGiftType = null,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      name: name == freezed
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      growthTime: growthTime == freezed
+      growthTime: null == growthTime
           ? _value.growthTime
           : growthTime // ignore: cast_nullable_to_non_nullable
               as int,
-      maxHarvest: maxHarvest == freezed
+      maxHarvest: null == maxHarvest
           ? _value.maxHarvest
           : maxHarvest // ignore: cast_nullable_to_non_nullable
               as int,
-      naturalGiftPower: naturalGiftPower == freezed
+      naturalGiftPower: null == naturalGiftPower
           ? _value.naturalGiftPower
           : naturalGiftPower // ignore: cast_nullable_to_non_nullable
               as int,
-      size: size == freezed
+      size: null == size
           ? _value.size
           : size // ignore: cast_nullable_to_non_nullable
               as int,
-      smoothness: smoothness == freezed
+      smoothness: null == smoothness
           ? _value.smoothness
           : smoothness // ignore: cast_nullable_to_non_nullable
               as int,
-      soilDryness: soilDryness == freezed
+      soilDryness: null == soilDryness
           ? _value.soilDryness
           : soilDryness // ignore: cast_nullable_to_non_nullable
               as int,
-      firmness: firmness == freezed
+      firmness: null == firmness
           ? _value.firmness
           : firmness // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-      flavors: flavors == freezed
+      flavors: null == flavors
           ? _value.flavors
           : flavors // ignore: cast_nullable_to_non_nullable
               as List<BerryFlavorMap>,
-      item: item == freezed
+      item: null == item
           ? _value.item
           : item // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-      naturalGiftType: naturalGiftType == freezed
+      naturalGiftType: null == naturalGiftType
           ? _value.naturalGiftType
           : naturalGiftType // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $NamedAPIResourceCopyWith<$Res> get firmness {
     return $NamedAPIResourceCopyWith<$Res>(_value.firmness, (value) {
-      return _then(_value.copyWith(firmness: value));
+      return _then(_value.copyWith(firmness: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $NamedAPIResourceCopyWith<$Res> get item {
     return $NamedAPIResourceCopyWith<$Res>(_value.item, (value) {
-      return _then(_value.copyWith(item: value));
+      return _then(_value.copyWith(item: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $NamedAPIResourceCopyWith<$Res> get naturalGiftType {
     return $NamedAPIResourceCopyWith<$Res>(_value.naturalGiftType, (value) {
-      return _then(_value.copyWith(naturalGiftType: value));
+      return _then(_value.copyWith(naturalGiftType: value) as $Val);
     });
   }
 }
@@ -209,6 +216,7 @@ abstract class _$$_BerryCopyWith<$Res> implements $BerryCopyWith<$Res> {
   factory _$$_BerryCopyWith(_$_Berry value, $Res Function(_$_Berry) then) =
       __$$_BerryCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {int id,
       String name,
@@ -232,75 +240,73 @@ abstract class _$$_BerryCopyWith<$Res> implements $BerryCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$_BerryCopyWithImpl<$Res> extends _$BerryCopyWithImpl<$Res>
+class __$$_BerryCopyWithImpl<$Res> extends _$BerryCopyWithImpl<$Res, _$_Berry>
     implements _$$_BerryCopyWith<$Res> {
   __$$_BerryCopyWithImpl(_$_Berry _value, $Res Function(_$_Berry) _then)
-      : super(_value, (v) => _then(v as _$_Berry));
+      : super(_value, _then);
 
-  @override
-  _$_Berry get _value => super._value as _$_Berry;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? growthTime = freezed,
-    Object? maxHarvest = freezed,
-    Object? naturalGiftPower = freezed,
-    Object? size = freezed,
-    Object? smoothness = freezed,
-    Object? soilDryness = freezed,
-    Object? firmness = freezed,
-    Object? flavors = freezed,
-    Object? item = freezed,
-    Object? naturalGiftType = freezed,
+    Object? id = null,
+    Object? name = null,
+    Object? growthTime = null,
+    Object? maxHarvest = null,
+    Object? naturalGiftPower = null,
+    Object? size = null,
+    Object? smoothness = null,
+    Object? soilDryness = null,
+    Object? firmness = null,
+    Object? flavors = null,
+    Object? item = null,
+    Object? naturalGiftType = null,
   }) {
     return _then(_$_Berry(
-      id == freezed
+      null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      name == freezed
+      null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      growthTime == freezed
+      null == growthTime
           ? _value.growthTime
           : growthTime // ignore: cast_nullable_to_non_nullable
               as int,
-      maxHarvest == freezed
+      null == maxHarvest
           ? _value.maxHarvest
           : maxHarvest // ignore: cast_nullable_to_non_nullable
               as int,
-      naturalGiftPower == freezed
+      null == naturalGiftPower
           ? _value.naturalGiftPower
           : naturalGiftPower // ignore: cast_nullable_to_non_nullable
               as int,
-      size == freezed
+      null == size
           ? _value.size
           : size // ignore: cast_nullable_to_non_nullable
               as int,
-      smoothness == freezed
+      null == smoothness
           ? _value.smoothness
           : smoothness // ignore: cast_nullable_to_non_nullable
               as int,
-      soilDryness == freezed
+      null == soilDryness
           ? _value.soilDryness
           : soilDryness // ignore: cast_nullable_to_non_nullable
               as int,
-      firmness == freezed
+      null == firmness
           ? _value.firmness
           : firmness // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-      flavors == freezed
+      null == flavors
           ? _value._flavors
           : flavors // ignore: cast_nullable_to_non_nullable
               as List<BerryFlavorMap>,
-      item == freezed
+      null == item
           ? _value.item
           : item // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-      naturalGiftType == freezed
+      null == naturalGiftType
           ? _value.naturalGiftType
           : naturalGiftType // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
@@ -385,6 +391,7 @@ class _$_Berry implements _Berry {
   /// and the potency of each of those flavors in regard to this berry.
   @override
   List<BerryFlavorMap> get flavors {
+    if (_flavors is EqualUnmodifiableListView) return _flavors;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_flavors);
   }
@@ -417,45 +424,47 @@ class _$_Berry implements _Berry {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_Berry &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.name, name) &&
-            const DeepCollectionEquality()
-                .equals(other.growthTime, growthTime) &&
-            const DeepCollectionEquality()
-                .equals(other.maxHarvest, maxHarvest) &&
-            const DeepCollectionEquality()
-                .equals(other.naturalGiftPower, naturalGiftPower) &&
-            const DeepCollectionEquality().equals(other.size, size) &&
-            const DeepCollectionEquality()
-                .equals(other.smoothness, smoothness) &&
-            const DeepCollectionEquality()
-                .equals(other.soilDryness, soilDryness) &&
-            const DeepCollectionEquality().equals(other.firmness, firmness) &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.name, name) || other.name == name) &&
+            (identical(other.growthTime, growthTime) ||
+                other.growthTime == growthTime) &&
+            (identical(other.maxHarvest, maxHarvest) ||
+                other.maxHarvest == maxHarvest) &&
+            (identical(other.naturalGiftPower, naturalGiftPower) ||
+                other.naturalGiftPower == naturalGiftPower) &&
+            (identical(other.size, size) || other.size == size) &&
+            (identical(other.smoothness, smoothness) ||
+                other.smoothness == smoothness) &&
+            (identical(other.soilDryness, soilDryness) ||
+                other.soilDryness == soilDryness) &&
+            (identical(other.firmness, firmness) ||
+                other.firmness == firmness) &&
             const DeepCollectionEquality().equals(other._flavors, _flavors) &&
-            const DeepCollectionEquality().equals(other.item, item) &&
-            const DeepCollectionEquality()
-                .equals(other.naturalGiftType, naturalGiftType));
+            (identical(other.item, item) || other.item == item) &&
+            (identical(other.naturalGiftType, naturalGiftType) ||
+                other.naturalGiftType == naturalGiftType));
   }
 
   @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(name),
-      const DeepCollectionEquality().hash(growthTime),
-      const DeepCollectionEquality().hash(maxHarvest),
-      const DeepCollectionEquality().hash(naturalGiftPower),
-      const DeepCollectionEquality().hash(size),
-      const DeepCollectionEquality().hash(smoothness),
-      const DeepCollectionEquality().hash(soilDryness),
-      const DeepCollectionEquality().hash(firmness),
+      id,
+      name,
+      growthTime,
+      maxHarvest,
+      naturalGiftPower,
+      size,
+      smoothness,
+      soilDryness,
+      firmness,
       const DeepCollectionEquality().hash(_flavors),
-      const DeepCollectionEquality().hash(item),
-      const DeepCollectionEquality().hash(naturalGiftType));
+      item,
+      naturalGiftType);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_BerryCopyWith<_$_Berry> get copyWith =>
       __$$_BerryCopyWithImpl<_$_Berry>(this, _$identity);
 
@@ -471,21 +480,17 @@ abstract class _Berry implements Berry {
   const factory _Berry(
       final int id,
       final String name,
-      @JsonKey(name: 'growth_time')
-          final int growthTime,
-      @JsonKey(name: 'max_harvest')
-          final int maxHarvest,
-      @JsonKey(name: 'natural_gift_power')
-          final int naturalGiftPower,
+      @JsonKey(name: 'growth_time') final int growthTime,
+      @JsonKey(name: 'max_harvest') final int maxHarvest,
+      @JsonKey(name: 'natural_gift_power') final int naturalGiftPower,
       final int size,
       final int smoothness,
-      @JsonKey(name: 'soil_dryness')
-          final int soilDryness,
+      @JsonKey(name: 'soil_dryness') final int soilDryness,
       final NamedAPIResource firmness,
       final List<BerryFlavorMap> flavors,
       final NamedAPIResource item,
       @JsonKey(name: 'natural_gift_type')
-          final NamedAPIResource naturalGiftType) = _$_Berry;
+      final NamedAPIResource naturalGiftType) = _$_Berry;
 
   factory _Berry.fromJson(Map<String, dynamic> json) = _$_Berry.fromJson;
 
@@ -592,42 +597,46 @@ mixin _$BerryFlavorMap {
 abstract class $BerryFlavorMapCopyWith<$Res> {
   factory $BerryFlavorMapCopyWith(
           BerryFlavorMap value, $Res Function(BerryFlavorMap) then) =
-      _$BerryFlavorMapCopyWithImpl<$Res>;
+      _$BerryFlavorMapCopyWithImpl<$Res, BerryFlavorMap>;
+  @useResult
   $Res call({int potency, NamedAPIResource flavor});
 
   $NamedAPIResourceCopyWith<$Res> get flavor;
 }
 
 /// @nodoc
-class _$BerryFlavorMapCopyWithImpl<$Res>
+class _$BerryFlavorMapCopyWithImpl<$Res, $Val extends BerryFlavorMap>
     implements $BerryFlavorMapCopyWith<$Res> {
   _$BerryFlavorMapCopyWithImpl(this._value, this._then);
 
-  final BerryFlavorMap _value;
   // ignore: unused_field
-  final $Res Function(BerryFlavorMap) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? potency = freezed,
-    Object? flavor = freezed,
+    Object? potency = null,
+    Object? flavor = null,
   }) {
     return _then(_value.copyWith(
-      potency: potency == freezed
+      potency: null == potency
           ? _value.potency
           : potency // ignore: cast_nullable_to_non_nullable
               as int,
-      flavor: flavor == freezed
+      flavor: null == flavor
           ? _value.flavor
           : flavor // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $NamedAPIResourceCopyWith<$Res> get flavor {
     return $NamedAPIResourceCopyWith<$Res>(_value.flavor, (value) {
-      return _then(_value.copyWith(flavor: value));
+      return _then(_value.copyWith(flavor: value) as $Val);
     });
   }
 }
@@ -639,6 +648,7 @@ abstract class _$$_BerryFlavorMapCopyWith<$Res>
           _$_BerryFlavorMap value, $Res Function(_$_BerryFlavorMap) then) =
       __$$_BerryFlavorMapCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({int potency, NamedAPIResource flavor});
 
   @override
@@ -647,26 +657,24 @@ abstract class _$$_BerryFlavorMapCopyWith<$Res>
 
 /// @nodoc
 class __$$_BerryFlavorMapCopyWithImpl<$Res>
-    extends _$BerryFlavorMapCopyWithImpl<$Res>
+    extends _$BerryFlavorMapCopyWithImpl<$Res, _$_BerryFlavorMap>
     implements _$$_BerryFlavorMapCopyWith<$Res> {
   __$$_BerryFlavorMapCopyWithImpl(
       _$_BerryFlavorMap _value, $Res Function(_$_BerryFlavorMap) _then)
-      : super(_value, (v) => _then(v as _$_BerryFlavorMap));
+      : super(_value, _then);
 
-  @override
-  _$_BerryFlavorMap get _value => super._value as _$_BerryFlavorMap;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? potency = freezed,
-    Object? flavor = freezed,
+    Object? potency = null,
+    Object? flavor = null,
   }) {
     return _then(_$_BerryFlavorMap(
-      potency == freezed
+      null == potency
           ? _value.potency
           : potency // ignore: cast_nullable_to_non_nullable
               as int,
-      flavor == freezed
+      null == flavor
           ? _value.flavor
           : flavor // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
@@ -704,19 +712,17 @@ class _$_BerryFlavorMap implements _BerryFlavorMap {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_BerryFlavorMap &&
-            const DeepCollectionEquality().equals(other.potency, potency) &&
-            const DeepCollectionEquality().equals(other.flavor, flavor));
+            (identical(other.potency, potency) || other.potency == potency) &&
+            (identical(other.flavor, flavor) || other.flavor == flavor));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(potency),
-      const DeepCollectionEquality().hash(flavor));
+  int get hashCode => Object.hash(runtimeType, potency, flavor);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_BerryFlavorMapCopyWith<_$_BerryFlavorMap> get copyWith =>
       __$$_BerryFlavorMapCopyWithImpl<_$_BerryFlavorMap>(this, _$identity);
 
@@ -785,45 +791,48 @@ mixin _$BerryFirmness {
 abstract class $BerryFirmnessCopyWith<$Res> {
   factory $BerryFirmnessCopyWith(
           BerryFirmness value, $Res Function(BerryFirmness) then) =
-      _$BerryFirmnessCopyWithImpl<$Res>;
+      _$BerryFirmnessCopyWithImpl<$Res, BerryFirmness>;
+  @useResult
   $Res call(
       {int id, String name, List<NamedAPIResource> berries, List<Name> names});
 }
 
 /// @nodoc
-class _$BerryFirmnessCopyWithImpl<$Res>
+class _$BerryFirmnessCopyWithImpl<$Res, $Val extends BerryFirmness>
     implements $BerryFirmnessCopyWith<$Res> {
   _$BerryFirmnessCopyWithImpl(this._value, this._then);
 
-  final BerryFirmness _value;
   // ignore: unused_field
-  final $Res Function(BerryFirmness) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? berries = freezed,
-    Object? names = freezed,
+    Object? id = null,
+    Object? name = null,
+    Object? berries = null,
+    Object? names = null,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      name: name == freezed
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      berries: berries == freezed
+      berries: null == berries
           ? _value.berries
           : berries // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
-      names: names == freezed
+      names: null == names
           ? _value.names
           : names // ignore: cast_nullable_to_non_nullable
               as List<Name>,
-    ));
+    ) as $Val);
   }
 }
 
@@ -834,42 +843,41 @@ abstract class _$$_BerryFirmnessCopyWith<$Res>
           _$_BerryFirmness value, $Res Function(_$_BerryFirmness) then) =
       __$$_BerryFirmnessCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {int id, String name, List<NamedAPIResource> berries, List<Name> names});
 }
 
 /// @nodoc
 class __$$_BerryFirmnessCopyWithImpl<$Res>
-    extends _$BerryFirmnessCopyWithImpl<$Res>
+    extends _$BerryFirmnessCopyWithImpl<$Res, _$_BerryFirmness>
     implements _$$_BerryFirmnessCopyWith<$Res> {
   __$$_BerryFirmnessCopyWithImpl(
       _$_BerryFirmness _value, $Res Function(_$_BerryFirmness) _then)
-      : super(_value, (v) => _then(v as _$_BerryFirmness));
+      : super(_value, _then);
 
-  @override
-  _$_BerryFirmness get _value => super._value as _$_BerryFirmness;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? berries = freezed,
-    Object? names = freezed,
+    Object? id = null,
+    Object? name = null,
+    Object? berries = null,
+    Object? names = null,
   }) {
     return _then(_$_BerryFirmness(
-      id == freezed
+      null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      name == freezed
+      null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      berries == freezed
+      null == berries
           ? _value._berries
           : berries // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
-      names == freezed
+      null == names
           ? _value._names
           : names // ignore: cast_nullable_to_non_nullable
               as List<Name>,
@@ -910,6 +918,7 @@ class _$_BerryFirmness implements _BerryFirmness {
   /// [Berry]
   @override
   List<NamedAPIResource> get berries {
+    if (_berries is EqualUnmodifiableListView) return _berries;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_berries);
   }
@@ -920,6 +929,7 @@ class _$_BerryFirmness implements _BerryFirmness {
   /// The name of this resource listed in different languages.
   @override
   List<Name> get names {
+    if (_names is EqualUnmodifiableListView) return _names;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_names);
   }
@@ -934,8 +944,8 @@ class _$_BerryFirmness implements _BerryFirmness {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_BerryFirmness &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.name, name) &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.name, name) || other.name == name) &&
             const DeepCollectionEquality().equals(other._berries, _berries) &&
             const DeepCollectionEquality().equals(other._names, _names));
   }
@@ -944,13 +954,14 @@ class _$_BerryFirmness implements _BerryFirmness {
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(name),
+      id,
+      name,
       const DeepCollectionEquality().hash(_berries),
       const DeepCollectionEquality().hash(_names));
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_BerryFirmnessCopyWith<_$_BerryFirmness> get copyWith =>
       __$$_BerryFirmnessCopyWithImpl<_$_BerryFirmness>(this, _$identity);
 
@@ -1034,7 +1045,8 @@ mixin _$BerryFlavor {
 abstract class $BerryFlavorCopyWith<$Res> {
   factory $BerryFlavorCopyWith(
           BerryFlavor value, $Res Function(BerryFlavor) then) =
-      _$BerryFlavorCopyWithImpl<$Res>;
+      _$BerryFlavorCopyWithImpl<$Res, BerryFlavor>;
+  @useResult
   $Res call(
       {int id,
       String name,
@@ -1046,49 +1058,53 @@ abstract class $BerryFlavorCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$BerryFlavorCopyWithImpl<$Res> implements $BerryFlavorCopyWith<$Res> {
+class _$BerryFlavorCopyWithImpl<$Res, $Val extends BerryFlavor>
+    implements $BerryFlavorCopyWith<$Res> {
   _$BerryFlavorCopyWithImpl(this._value, this._then);
 
-  final BerryFlavor _value;
   // ignore: unused_field
-  final $Res Function(BerryFlavor) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? berries = freezed,
-    Object? contestType = freezed,
-    Object? names = freezed,
+    Object? id = null,
+    Object? name = null,
+    Object? berries = null,
+    Object? contestType = null,
+    Object? names = null,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      name: name == freezed
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      berries: berries == freezed
+      berries: null == berries
           ? _value.berries
           : berries // ignore: cast_nullable_to_non_nullable
               as List<FlavorBerryMap>,
-      contestType: contestType == freezed
+      contestType: null == contestType
           ? _value.contestType
           : contestType // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-      names: names == freezed
+      names: null == names
           ? _value.names
           : names // ignore: cast_nullable_to_non_nullable
               as List<Name>,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $NamedAPIResourceCopyWith<$Res> get contestType {
     return $NamedAPIResourceCopyWith<$Res>(_value.contestType, (value) {
-      return _then(_value.copyWith(contestType: value));
+      return _then(_value.copyWith(contestType: value) as $Val);
     });
   }
 }
@@ -1100,6 +1116,7 @@ abstract class _$$_BerryFlavorCopyWith<$Res>
           _$_BerryFlavor value, $Res Function(_$_BerryFlavor) then) =
       __$$_BerryFlavorCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {int id,
       String name,
@@ -1112,41 +1129,40 @@ abstract class _$$_BerryFlavorCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_BerryFlavorCopyWithImpl<$Res> extends _$BerryFlavorCopyWithImpl<$Res>
+class __$$_BerryFlavorCopyWithImpl<$Res>
+    extends _$BerryFlavorCopyWithImpl<$Res, _$_BerryFlavor>
     implements _$$_BerryFlavorCopyWith<$Res> {
   __$$_BerryFlavorCopyWithImpl(
       _$_BerryFlavor _value, $Res Function(_$_BerryFlavor) _then)
-      : super(_value, (v) => _then(v as _$_BerryFlavor));
+      : super(_value, _then);
 
-  @override
-  _$_BerryFlavor get _value => super._value as _$_BerryFlavor;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? berries = freezed,
-    Object? contestType = freezed,
-    Object? names = freezed,
+    Object? id = null,
+    Object? name = null,
+    Object? berries = null,
+    Object? contestType = null,
+    Object? names = null,
   }) {
     return _then(_$_BerryFlavor(
-      id == freezed
+      null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      name == freezed
+      null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      berries == freezed
+      null == berries
           ? _value._berries
           : berries // ignore: cast_nullable_to_non_nullable
               as List<FlavorBerryMap>,
-      contestType == freezed
+      null == contestType
           ? _value.contestType
           : contestType // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-      names == freezed
+      null == names
           ? _value._names
           : names // ignore: cast_nullable_to_non_nullable
               as List<Name>,
@@ -1179,6 +1195,7 @@ class _$_BerryFlavor implements _BerryFlavor {
   /// A list of the berries with this flavor.
   @override
   List<FlavorBerryMap> get berries {
+    if (_berries is EqualUnmodifiableListView) return _berries;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_berries);
   }
@@ -1198,6 +1215,7 @@ class _$_BerryFlavor implements _BerryFlavor {
   /// The name of this resource listed in different languages.
   @override
   List<Name> get names {
+    if (_names is EqualUnmodifiableListView) return _names;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_names);
   }
@@ -1212,11 +1230,11 @@ class _$_BerryFlavor implements _BerryFlavor {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_BerryFlavor &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.name, name) &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.name, name) || other.name == name) &&
             const DeepCollectionEquality().equals(other._berries, _berries) &&
-            const DeepCollectionEquality()
-                .equals(other.contestType, contestType) &&
+            (identical(other.contestType, contestType) ||
+                other.contestType == contestType) &&
             const DeepCollectionEquality().equals(other._names, _names));
   }
 
@@ -1224,14 +1242,15 @@ class _$_BerryFlavor implements _BerryFlavor {
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(name),
+      id,
+      name,
       const DeepCollectionEquality().hash(_berries),
-      const DeepCollectionEquality().hash(contestType),
+      contestType,
       const DeepCollectionEquality().hash(_names));
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_BerryFlavorCopyWith<_$_BerryFlavor> get copyWith =>
       __$$_BerryFlavorCopyWithImpl<_$_BerryFlavor>(this, _$identity);
 
@@ -1311,42 +1330,46 @@ mixin _$FlavorBerryMap {
 abstract class $FlavorBerryMapCopyWith<$Res> {
   factory $FlavorBerryMapCopyWith(
           FlavorBerryMap value, $Res Function(FlavorBerryMap) then) =
-      _$FlavorBerryMapCopyWithImpl<$Res>;
+      _$FlavorBerryMapCopyWithImpl<$Res, FlavorBerryMap>;
+  @useResult
   $Res call({int potency, NamedAPIResource berry});
 
   $NamedAPIResourceCopyWith<$Res> get berry;
 }
 
 /// @nodoc
-class _$FlavorBerryMapCopyWithImpl<$Res>
+class _$FlavorBerryMapCopyWithImpl<$Res, $Val extends FlavorBerryMap>
     implements $FlavorBerryMapCopyWith<$Res> {
   _$FlavorBerryMapCopyWithImpl(this._value, this._then);
 
-  final FlavorBerryMap _value;
   // ignore: unused_field
-  final $Res Function(FlavorBerryMap) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? potency = freezed,
-    Object? berry = freezed,
+    Object? potency = null,
+    Object? berry = null,
   }) {
     return _then(_value.copyWith(
-      potency: potency == freezed
+      potency: null == potency
           ? _value.potency
           : potency // ignore: cast_nullable_to_non_nullable
               as int,
-      berry: berry == freezed
+      berry: null == berry
           ? _value.berry
           : berry // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $NamedAPIResourceCopyWith<$Res> get berry {
     return $NamedAPIResourceCopyWith<$Res>(_value.berry, (value) {
-      return _then(_value.copyWith(berry: value));
+      return _then(_value.copyWith(berry: value) as $Val);
     });
   }
 }
@@ -1358,6 +1381,7 @@ abstract class _$$_FlavorBerryMapCopyWith<$Res>
           _$_FlavorBerryMap value, $Res Function(_$_FlavorBerryMap) then) =
       __$$_FlavorBerryMapCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({int potency, NamedAPIResource berry});
 
   @override
@@ -1366,26 +1390,24 @@ abstract class _$$_FlavorBerryMapCopyWith<$Res>
 
 /// @nodoc
 class __$$_FlavorBerryMapCopyWithImpl<$Res>
-    extends _$FlavorBerryMapCopyWithImpl<$Res>
+    extends _$FlavorBerryMapCopyWithImpl<$Res, _$_FlavorBerryMap>
     implements _$$_FlavorBerryMapCopyWith<$Res> {
   __$$_FlavorBerryMapCopyWithImpl(
       _$_FlavorBerryMap _value, $Res Function(_$_FlavorBerryMap) _then)
-      : super(_value, (v) => _then(v as _$_FlavorBerryMap));
+      : super(_value, _then);
 
-  @override
-  _$_FlavorBerryMap get _value => super._value as _$_FlavorBerryMap;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? potency = freezed,
-    Object? berry = freezed,
+    Object? potency = null,
+    Object? berry = null,
   }) {
     return _then(_$_FlavorBerryMap(
-      potency == freezed
+      null == potency
           ? _value.potency
           : potency // ignore: cast_nullable_to_non_nullable
               as int,
-      berry == freezed
+      null == berry
           ? _value.berry
           : berry // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
@@ -1423,19 +1445,17 @@ class _$_FlavorBerryMap implements _FlavorBerryMap {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_FlavorBerryMap &&
-            const DeepCollectionEquality().equals(other.potency, potency) &&
-            const DeepCollectionEquality().equals(other.berry, berry));
+            (identical(other.potency, potency) || other.potency == potency) &&
+            (identical(other.berry, berry) || other.berry == berry));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(potency),
-      const DeepCollectionEquality().hash(berry));
+  int get hashCode => Object.hash(runtimeType, potency, berry);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_FlavorBerryMapCopyWith<_$_FlavorBerryMap> get copyWith =>
       __$$_FlavorBerryMapCopyWithImpl<_$_FlavorBerryMap>(this, _$identity);
 

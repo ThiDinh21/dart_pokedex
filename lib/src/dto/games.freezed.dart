@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'games.dart';
 
@@ -86,7 +86,8 @@ mixin _$Generation {
 abstract class $GenerationCopyWith<$Res> {
   factory $GenerationCopyWith(
           Generation value, $Res Function(Generation) then) =
-      _$GenerationCopyWithImpl<$Res>;
+      _$GenerationCopyWithImpl<$Res, Generation>;
+  @useResult
   $Res call(
       {int id,
       String name,
@@ -102,69 +103,73 @@ abstract class $GenerationCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$GenerationCopyWithImpl<$Res> implements $GenerationCopyWith<$Res> {
+class _$GenerationCopyWithImpl<$Res, $Val extends Generation>
+    implements $GenerationCopyWith<$Res> {
   _$GenerationCopyWithImpl(this._value, this._then);
 
-  final Generation _value;
   // ignore: unused_field
-  final $Res Function(Generation) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? abilities = freezed,
-    Object? names = freezed,
-    Object? mainRegion = freezed,
-    Object? moves = freezed,
-    Object? pokemonSpecies = freezed,
-    Object? types = freezed,
-    Object? versionGroups = freezed,
+    Object? id = null,
+    Object? name = null,
+    Object? abilities = null,
+    Object? names = null,
+    Object? mainRegion = null,
+    Object? moves = null,
+    Object? pokemonSpecies = null,
+    Object? types = null,
+    Object? versionGroups = null,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      name: name == freezed
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      abilities: abilities == freezed
+      abilities: null == abilities
           ? _value.abilities
           : abilities // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
-      names: names == freezed
+      names: null == names
           ? _value.names
           : names // ignore: cast_nullable_to_non_nullable
               as List<Name>,
-      mainRegion: mainRegion == freezed
+      mainRegion: null == mainRegion
           ? _value.mainRegion
           : mainRegion // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-      moves: moves == freezed
+      moves: null == moves
           ? _value.moves
           : moves // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
-      pokemonSpecies: pokemonSpecies == freezed
+      pokemonSpecies: null == pokemonSpecies
           ? _value.pokemonSpecies
           : pokemonSpecies // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
-      types: types == freezed
+      types: null == types
           ? _value.types
           : types // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
-      versionGroups: versionGroups == freezed
+      versionGroups: null == versionGroups
           ? _value.versionGroups
           : versionGroups // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $NamedAPIResourceCopyWith<$Res> get mainRegion {
     return $NamedAPIResourceCopyWith<$Res>(_value.mainRegion, (value) {
-      return _then(_value.copyWith(mainRegion: value));
+      return _then(_value.copyWith(mainRegion: value) as $Val);
     });
   }
 }
@@ -176,6 +181,7 @@ abstract class _$$_GenerationCopyWith<$Res>
           _$_Generation value, $Res Function(_$_Generation) then) =
       __$$_GenerationCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {int id,
       String name,
@@ -192,61 +198,60 @@ abstract class _$$_GenerationCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_GenerationCopyWithImpl<$Res> extends _$GenerationCopyWithImpl<$Res>
+class __$$_GenerationCopyWithImpl<$Res>
+    extends _$GenerationCopyWithImpl<$Res, _$_Generation>
     implements _$$_GenerationCopyWith<$Res> {
   __$$_GenerationCopyWithImpl(
       _$_Generation _value, $Res Function(_$_Generation) _then)
-      : super(_value, (v) => _then(v as _$_Generation));
+      : super(_value, _then);
 
-  @override
-  _$_Generation get _value => super._value as _$_Generation;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? abilities = freezed,
-    Object? names = freezed,
-    Object? mainRegion = freezed,
-    Object? moves = freezed,
-    Object? pokemonSpecies = freezed,
-    Object? types = freezed,
-    Object? versionGroups = freezed,
+    Object? id = null,
+    Object? name = null,
+    Object? abilities = null,
+    Object? names = null,
+    Object? mainRegion = null,
+    Object? moves = null,
+    Object? pokemonSpecies = null,
+    Object? types = null,
+    Object? versionGroups = null,
   }) {
     return _then(_$_Generation(
-      id == freezed
+      null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      name == freezed
+      null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      abilities == freezed
+      null == abilities
           ? _value._abilities
           : abilities // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
-      names == freezed
+      null == names
           ? _value._names
           : names // ignore: cast_nullable_to_non_nullable
               as List<Name>,
-      mainRegion == freezed
+      null == mainRegion
           ? _value.mainRegion
           : mainRegion // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-      moves == freezed
+      null == moves
           ? _value._moves
           : moves // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
-      pokemonSpecies == freezed
+      null == pokemonSpecies
           ? _value._pokemonSpecies
           : pokemonSpecies // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
-      types == freezed
+      null == types
           ? _value._types
           : types // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
-      versionGroups == freezed
+      null == versionGroups
           ? _value._versionGroups
           : versionGroups // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
@@ -262,14 +267,13 @@ class _$_Generation implements _Generation {
       this.name,
       final List<NamedAPIResource> abilities,
       final List<Name> names,
-      @JsonKey(name: 'main_region')
-          this.mainRegion,
+      @JsonKey(name: 'main_region') this.mainRegion,
       final List<NamedAPIResource> moves,
       @JsonKey(name: 'pokemon_species')
-          final List<NamedAPIResource> pokemonSpecies,
+      final List<NamedAPIResource> pokemonSpecies,
       final List<NamedAPIResource> types,
       @JsonKey(name: 'version_groups')
-          final List<NamedAPIResource> versionGroups)
+      final List<NamedAPIResource> versionGroups)
       : _abilities = abilities,
         _names = names,
         _moves = moves,
@@ -302,6 +306,7 @@ class _$_Generation implements _Generation {
   /// [Ability]
   @override
   List<NamedAPIResource> get abilities {
+    if (_abilities is EqualUnmodifiableListView) return _abilities;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_abilities);
   }
@@ -312,6 +317,7 @@ class _$_Generation implements _Generation {
   /// The name of this resource listed in different languages.
   @override
   List<Name> get names {
+    if (_names is EqualUnmodifiableListView) return _names;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_names);
   }
@@ -339,6 +345,7 @@ class _$_Generation implements _Generation {
   /// [Move]
   @override
   List<NamedAPIResource> get moves {
+    if (_moves is EqualUnmodifiableListView) return _moves;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_moves);
   }
@@ -358,6 +365,7 @@ class _$_Generation implements _Generation {
   @override
   @JsonKey(name: 'pokemon_species')
   List<NamedAPIResource> get pokemonSpecies {
+    if (_pokemonSpecies is EqualUnmodifiableListView) return _pokemonSpecies;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_pokemonSpecies);
   }
@@ -376,6 +384,7 @@ class _$_Generation implements _Generation {
   /// [Type]
   @override
   List<NamedAPIResource> get types {
+    if (_types is EqualUnmodifiableListView) return _types;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_types);
   }
@@ -395,6 +404,7 @@ class _$_Generation implements _Generation {
   @override
   @JsonKey(name: 'version_groups')
   List<NamedAPIResource> get versionGroups {
+    if (_versionGroups is EqualUnmodifiableListView) return _versionGroups;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_versionGroups);
   }
@@ -409,13 +419,13 @@ class _$_Generation implements _Generation {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_Generation &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.name, name) &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.name, name) || other.name == name) &&
             const DeepCollectionEquality()
                 .equals(other._abilities, _abilities) &&
             const DeepCollectionEquality().equals(other._names, _names) &&
-            const DeepCollectionEquality()
-                .equals(other.mainRegion, mainRegion) &&
+            (identical(other.mainRegion, mainRegion) ||
+                other.mainRegion == mainRegion) &&
             const DeepCollectionEquality().equals(other._moves, _moves) &&
             const DeepCollectionEquality()
                 .equals(other._pokemonSpecies, _pokemonSpecies) &&
@@ -428,11 +438,11 @@ class _$_Generation implements _Generation {
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(name),
+      id,
+      name,
       const DeepCollectionEquality().hash(_abilities),
       const DeepCollectionEquality().hash(_names),
-      const DeepCollectionEquality().hash(mainRegion),
+      mainRegion,
       const DeepCollectionEquality().hash(_moves),
       const DeepCollectionEquality().hash(_pokemonSpecies),
       const DeepCollectionEquality().hash(_types),
@@ -440,6 +450,7 @@ class _$_Generation implements _Generation {
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_GenerationCopyWith<_$_Generation> get copyWith =>
       __$$_GenerationCopyWithImpl<_$_Generation>(this, _$identity);
 
@@ -457,14 +468,13 @@ abstract class _Generation implements Generation {
       final String name,
       final List<NamedAPIResource> abilities,
       final List<Name> names,
-      @JsonKey(name: 'main_region')
-          final NamedAPIResource mainRegion,
+      @JsonKey(name: 'main_region') final NamedAPIResource mainRegion,
       final List<NamedAPIResource> moves,
       @JsonKey(name: 'pokemon_species')
-          final List<NamedAPIResource> pokemonSpecies,
+      final List<NamedAPIResource> pokemonSpecies,
       final List<NamedAPIResource> types,
       @JsonKey(name: 'version_groups')
-          final List<NamedAPIResource> versionGroups) = _$_Generation;
+      final List<NamedAPIResource> versionGroups) = _$_Generation;
 
   factory _Generation.fromJson(Map<String, dynamic> json) =
       _$_Generation.fromJson;
@@ -590,7 +600,8 @@ mixin _$PokedexData {
 abstract class $PokedexDataCopyWith<$Res> {
   factory $PokedexDataCopyWith(
           PokedexData value, $Res Function(PokedexData) then) =
-      _$PokedexDataCopyWithImpl<$Res>;
+      _$PokedexDataCopyWithImpl<$Res, PokedexData>;
+  @useResult
   $Res call(
       {int id,
       String name,
@@ -605,68 +616,72 @@ abstract class $PokedexDataCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$PokedexDataCopyWithImpl<$Res> implements $PokedexDataCopyWith<$Res> {
+class _$PokedexDataCopyWithImpl<$Res, $Val extends PokedexData>
+    implements $PokedexDataCopyWith<$Res> {
   _$PokedexDataCopyWithImpl(this._value, this._then);
 
-  final PokedexData _value;
   // ignore: unused_field
-  final $Res Function(PokedexData) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? isMainSeries = freezed,
-    Object? descriptions = freezed,
-    Object? names = freezed,
-    Object? pokemonEntries = freezed,
+    Object? id = null,
+    Object? name = null,
+    Object? isMainSeries = null,
+    Object? descriptions = null,
+    Object? names = null,
+    Object? pokemonEntries = null,
     Object? region = freezed,
-    Object? versionGroups = freezed,
+    Object? versionGroups = null,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      name: name == freezed
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      isMainSeries: isMainSeries == freezed
+      isMainSeries: null == isMainSeries
           ? _value.isMainSeries
           : isMainSeries // ignore: cast_nullable_to_non_nullable
               as bool,
-      descriptions: descriptions == freezed
+      descriptions: null == descriptions
           ? _value.descriptions
           : descriptions // ignore: cast_nullable_to_non_nullable
               as List<Description>,
-      names: names == freezed
+      names: null == names
           ? _value.names
           : names // ignore: cast_nullable_to_non_nullable
               as List<Name>,
-      pokemonEntries: pokemonEntries == freezed
+      pokemonEntries: null == pokemonEntries
           ? _value.pokemonEntries
           : pokemonEntries // ignore: cast_nullable_to_non_nullable
               as List<PokemonEntry>,
-      region: region == freezed
+      region: freezed == region
           ? _value.region
           : region // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource?,
-      versionGroups: versionGroups == freezed
+      versionGroups: null == versionGroups
           ? _value.versionGroups
           : versionGroups // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $NamedAPIResourceCopyWith<$Res>? get region {
     if (_value.region == null) {
       return null;
     }
 
     return $NamedAPIResourceCopyWith<$Res>(_value.region!, (value) {
-      return _then(_value.copyWith(region: value));
+      return _then(_value.copyWith(region: value) as $Val);
     });
   }
 }
@@ -678,6 +693,7 @@ abstract class _$$_PokedexDataCopyWith<$Res>
           _$_PokedexData value, $Res Function(_$_PokedexData) then) =
       __$$_PokedexDataCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {int id,
       String name,
@@ -693,56 +709,55 @@ abstract class _$$_PokedexDataCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_PokedexDataCopyWithImpl<$Res> extends _$PokedexDataCopyWithImpl<$Res>
+class __$$_PokedexDataCopyWithImpl<$Res>
+    extends _$PokedexDataCopyWithImpl<$Res, _$_PokedexData>
     implements _$$_PokedexDataCopyWith<$Res> {
   __$$_PokedexDataCopyWithImpl(
       _$_PokedexData _value, $Res Function(_$_PokedexData) _then)
-      : super(_value, (v) => _then(v as _$_PokedexData));
+      : super(_value, _then);
 
-  @override
-  _$_PokedexData get _value => super._value as _$_PokedexData;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? isMainSeries = freezed,
-    Object? descriptions = freezed,
-    Object? names = freezed,
-    Object? pokemonEntries = freezed,
+    Object? id = null,
+    Object? name = null,
+    Object? isMainSeries = null,
+    Object? descriptions = null,
+    Object? names = null,
+    Object? pokemonEntries = null,
     Object? region = freezed,
-    Object? versionGroups = freezed,
+    Object? versionGroups = null,
   }) {
     return _then(_$_PokedexData(
-      id == freezed
+      null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      name == freezed
+      null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      isMainSeries == freezed
+      null == isMainSeries
           ? _value.isMainSeries
           : isMainSeries // ignore: cast_nullable_to_non_nullable
               as bool,
-      descriptions == freezed
+      null == descriptions
           ? _value._descriptions
           : descriptions // ignore: cast_nullable_to_non_nullable
               as List<Description>,
-      names == freezed
+      null == names
           ? _value._names
           : names // ignore: cast_nullable_to_non_nullable
               as List<Name>,
-      pokemonEntries == freezed
+      null == pokemonEntries
           ? _value._pokemonEntries
           : pokemonEntries // ignore: cast_nullable_to_non_nullable
               as List<PokemonEntry>,
-      region == freezed
+      freezed == region
           ? _value.region
           : region // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource?,
-      versionGroups == freezed
+      null == versionGroups
           ? _value._versionGroups
           : versionGroups // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
@@ -756,15 +771,13 @@ class _$_PokedexData implements _PokedexData {
   const _$_PokedexData(
       this.id,
       this.name,
-      @JsonKey(name: 'is_main_series')
-          this.isMainSeries,
+      @JsonKey(name: 'is_main_series') this.isMainSeries,
       final List<Description> descriptions,
       final List<Name> names,
-      @JsonKey(name: 'pokemon_entries')
-          final List<PokemonEntry> pokemonEntries,
+      @JsonKey(name: 'pokemon_entries') final List<PokemonEntry> pokemonEntries,
       this.region,
       @JsonKey(name: 'version_groups')
-          final List<NamedAPIResource> versionGroups)
+      final List<NamedAPIResource> versionGroups)
       : _descriptions = descriptions,
         _names = names,
         _pokemonEntries = pokemonEntries,
@@ -792,6 +805,7 @@ class _$_PokedexData implements _PokedexData {
   /// The description of this resource listed in different languages.
   @override
   List<Description> get descriptions {
+    if (_descriptions is EqualUnmodifiableListView) return _descriptions;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_descriptions);
   }
@@ -802,6 +816,7 @@ class _$_PokedexData implements _PokedexData {
   /// The name of this resource listed in different languages.
   @override
   List<Name> get names {
+    if (_names is EqualUnmodifiableListView) return _names;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_names);
   }
@@ -813,6 +828,7 @@ class _$_PokedexData implements _PokedexData {
   @override
   @JsonKey(name: 'pokemon_entries')
   List<PokemonEntry> get pokemonEntries {
+    if (_pokemonEntries is EqualUnmodifiableListView) return _pokemonEntries;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_pokemonEntries);
   }
@@ -840,6 +856,7 @@ class _$_PokedexData implements _PokedexData {
   @override
   @JsonKey(name: 'version_groups')
   List<NamedAPIResource> get versionGroups {
+    if (_versionGroups is EqualUnmodifiableListView) return _versionGroups;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_versionGroups);
   }
@@ -854,16 +871,16 @@ class _$_PokedexData implements _PokedexData {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_PokedexData &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.name, name) &&
-            const DeepCollectionEquality()
-                .equals(other.isMainSeries, isMainSeries) &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.name, name) || other.name == name) &&
+            (identical(other.isMainSeries, isMainSeries) ||
+                other.isMainSeries == isMainSeries) &&
             const DeepCollectionEquality()
                 .equals(other._descriptions, _descriptions) &&
             const DeepCollectionEquality().equals(other._names, _names) &&
             const DeepCollectionEquality()
                 .equals(other._pokemonEntries, _pokemonEntries) &&
-            const DeepCollectionEquality().equals(other.region, region) &&
+            (identical(other.region, region) || other.region == region) &&
             const DeepCollectionEquality()
                 .equals(other._versionGroups, _versionGroups));
   }
@@ -872,17 +889,18 @@ class _$_PokedexData implements _PokedexData {
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(name),
-      const DeepCollectionEquality().hash(isMainSeries),
+      id,
+      name,
+      isMainSeries,
       const DeepCollectionEquality().hash(_descriptions),
       const DeepCollectionEquality().hash(_names),
       const DeepCollectionEquality().hash(_pokemonEntries),
-      const DeepCollectionEquality().hash(region),
+      region,
       const DeepCollectionEquality().hash(_versionGroups));
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_PokedexDataCopyWith<_$_PokedexData> get copyWith =>
       __$$_PokedexDataCopyWithImpl<_$_PokedexData>(this, _$identity);
 
@@ -898,15 +916,13 @@ abstract class _PokedexData implements PokedexData {
   const factory _PokedexData(
       final int id,
       final String name,
-      @JsonKey(name: 'is_main_series')
-          final bool isMainSeries,
+      @JsonKey(name: 'is_main_series') final bool isMainSeries,
       final List<Description> descriptions,
       final List<Name> names,
-      @JsonKey(name: 'pokemon_entries')
-          final List<PokemonEntry> pokemonEntries,
+      @JsonKey(name: 'pokemon_entries') final List<PokemonEntry> pokemonEntries,
       final NamedAPIResource? region,
       @JsonKey(name: 'version_groups')
-          final List<NamedAPIResource> versionGroups) = _$_PokedexData;
+      final List<NamedAPIResource> versionGroups) = _$_PokedexData;
 
   factory _PokedexData.fromJson(Map<String, dynamic> json) =
       _$_PokedexData.fromJson;
@@ -988,7 +1004,8 @@ mixin _$PokemonEntry {
 abstract class $PokemonEntryCopyWith<$Res> {
   factory $PokemonEntryCopyWith(
           PokemonEntry value, $Res Function(PokemonEntry) then) =
-      _$PokemonEntryCopyWithImpl<$Res>;
+      _$PokemonEntryCopyWithImpl<$Res, PokemonEntry>;
+  @useResult
   $Res call(
       {@JsonKey(name: 'entry_number') int entryNumber,
       @JsonKey(name: 'pokemon_species') NamedAPIResource pokemonSpecies});
@@ -997,34 +1014,38 @@ abstract class $PokemonEntryCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$PokemonEntryCopyWithImpl<$Res> implements $PokemonEntryCopyWith<$Res> {
+class _$PokemonEntryCopyWithImpl<$Res, $Val extends PokemonEntry>
+    implements $PokemonEntryCopyWith<$Res> {
   _$PokemonEntryCopyWithImpl(this._value, this._then);
 
-  final PokemonEntry _value;
   // ignore: unused_field
-  final $Res Function(PokemonEntry) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? entryNumber = freezed,
-    Object? pokemonSpecies = freezed,
+    Object? entryNumber = null,
+    Object? pokemonSpecies = null,
   }) {
     return _then(_value.copyWith(
-      entryNumber: entryNumber == freezed
+      entryNumber: null == entryNumber
           ? _value.entryNumber
           : entryNumber // ignore: cast_nullable_to_non_nullable
               as int,
-      pokemonSpecies: pokemonSpecies == freezed
+      pokemonSpecies: null == pokemonSpecies
           ? _value.pokemonSpecies
           : pokemonSpecies // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $NamedAPIResourceCopyWith<$Res> get pokemonSpecies {
     return $NamedAPIResourceCopyWith<$Res>(_value.pokemonSpecies, (value) {
-      return _then(_value.copyWith(pokemonSpecies: value));
+      return _then(_value.copyWith(pokemonSpecies: value) as $Val);
     });
   }
 }
@@ -1036,6 +1057,7 @@ abstract class _$$_PokemonEntryCopyWith<$Res>
           _$_PokemonEntry value, $Res Function(_$_PokemonEntry) then) =
       __$$_PokemonEntryCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@JsonKey(name: 'entry_number') int entryNumber,
       @JsonKey(name: 'pokemon_species') NamedAPIResource pokemonSpecies});
@@ -1046,26 +1068,24 @@ abstract class _$$_PokemonEntryCopyWith<$Res>
 
 /// @nodoc
 class __$$_PokemonEntryCopyWithImpl<$Res>
-    extends _$PokemonEntryCopyWithImpl<$Res>
+    extends _$PokemonEntryCopyWithImpl<$Res, _$_PokemonEntry>
     implements _$$_PokemonEntryCopyWith<$Res> {
   __$$_PokemonEntryCopyWithImpl(
       _$_PokemonEntry _value, $Res Function(_$_PokemonEntry) _then)
-      : super(_value, (v) => _then(v as _$_PokemonEntry));
+      : super(_value, _then);
 
-  @override
-  _$_PokemonEntry get _value => super._value as _$_PokemonEntry;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? entryNumber = freezed,
-    Object? pokemonSpecies = freezed,
+    Object? entryNumber = null,
+    Object? pokemonSpecies = null,
   }) {
     return _then(_$_PokemonEntry(
-      entryNumber == freezed
+      null == entryNumber
           ? _value.entryNumber
           : entryNumber // ignore: cast_nullable_to_non_nullable
               as int,
-      pokemonSpecies == freezed
+      null == pokemonSpecies
           ? _value.pokemonSpecies
           : pokemonSpecies // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
@@ -1106,21 +1126,19 @@ class _$_PokemonEntry implements _PokemonEntry {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_PokemonEntry &&
-            const DeepCollectionEquality()
-                .equals(other.entryNumber, entryNumber) &&
-            const DeepCollectionEquality()
-                .equals(other.pokemonSpecies, pokemonSpecies));
+            (identical(other.entryNumber, entryNumber) ||
+                other.entryNumber == entryNumber) &&
+            (identical(other.pokemonSpecies, pokemonSpecies) ||
+                other.pokemonSpecies == pokemonSpecies));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(entryNumber),
-      const DeepCollectionEquality().hash(pokemonSpecies));
+  int get hashCode => Object.hash(runtimeType, entryNumber, pokemonSpecies);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_PokemonEntryCopyWith<_$_PokemonEntry> get copyWith =>
       __$$_PokemonEntryCopyWithImpl<_$_PokemonEntry>(this, _$identity);
 
@@ -1134,10 +1152,9 @@ class _$_PokemonEntry implements _PokemonEntry {
 
 abstract class _PokemonEntry implements PokemonEntry {
   const factory _PokemonEntry(
-      @JsonKey(name: 'entry_number')
-          final int entryNumber,
+      @JsonKey(name: 'entry_number') final int entryNumber,
       @JsonKey(name: 'pokemon_species')
-          final NamedAPIResource pokemonSpecies) = _$_PokemonEntry;
+      final NamedAPIResource pokemonSpecies) = _$_PokemonEntry;
 
   factory _PokemonEntry.fromJson(Map<String, dynamic> json) =
       _$_PokemonEntry.fromJson;
@@ -1193,7 +1210,8 @@ mixin _$Version {
 /// @nodoc
 abstract class $VersionCopyWith<$Res> {
   factory $VersionCopyWith(Version value, $Res Function(Version) then) =
-      _$VersionCopyWithImpl<$Res>;
+      _$VersionCopyWithImpl<$Res, Version>;
+  @useResult
   $Res call(
       {int id,
       String name,
@@ -1204,44 +1222,48 @@ abstract class $VersionCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$VersionCopyWithImpl<$Res> implements $VersionCopyWith<$Res> {
+class _$VersionCopyWithImpl<$Res, $Val extends Version>
+    implements $VersionCopyWith<$Res> {
   _$VersionCopyWithImpl(this._value, this._then);
 
-  final Version _value;
   // ignore: unused_field
-  final $Res Function(Version) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? names = freezed,
-    Object? versionGroup = freezed,
+    Object? id = null,
+    Object? name = null,
+    Object? names = null,
+    Object? versionGroup = null,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      name: name == freezed
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      names: names == freezed
+      names: null == names
           ? _value.names
           : names // ignore: cast_nullable_to_non_nullable
               as List<Name>,
-      versionGroup: versionGroup == freezed
+      versionGroup: null == versionGroup
           ? _value.versionGroup
           : versionGroup // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $NamedAPIResourceCopyWith<$Res> get versionGroup {
     return $NamedAPIResourceCopyWith<$Res>(_value.versionGroup, (value) {
-      return _then(_value.copyWith(versionGroup: value));
+      return _then(_value.copyWith(versionGroup: value) as $Val);
     });
   }
 }
@@ -1252,6 +1274,7 @@ abstract class _$$_VersionCopyWith<$Res> implements $VersionCopyWith<$Res> {
           _$_Version value, $Res Function(_$_Version) then) =
       __$$_VersionCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {int id,
       String name,
@@ -1263,35 +1286,34 @@ abstract class _$$_VersionCopyWith<$Res> implements $VersionCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$_VersionCopyWithImpl<$Res> extends _$VersionCopyWithImpl<$Res>
+class __$$_VersionCopyWithImpl<$Res>
+    extends _$VersionCopyWithImpl<$Res, _$_Version>
     implements _$$_VersionCopyWith<$Res> {
   __$$_VersionCopyWithImpl(_$_Version _value, $Res Function(_$_Version) _then)
-      : super(_value, (v) => _then(v as _$_Version));
+      : super(_value, _then);
 
-  @override
-  _$_Version get _value => super._value as _$_Version;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? names = freezed,
-    Object? versionGroup = freezed,
+    Object? id = null,
+    Object? name = null,
+    Object? names = null,
+    Object? versionGroup = null,
   }) {
     return _then(_$_Version(
-      id == freezed
+      null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      name == freezed
+      null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      names == freezed
+      null == names
           ? _value._names
           : names // ignore: cast_nullable_to_non_nullable
               as List<Name>,
-      versionGroup == freezed
+      null == versionGroup
           ? _value.versionGroup
           : versionGroup // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
@@ -1323,6 +1345,7 @@ class _$_Version implements _Version {
   /// The name of this resource listed in different languages.
   @override
   List<Name> get names {
+    if (_names is EqualUnmodifiableListView) return _names;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_names);
   }
@@ -1346,24 +1369,21 @@ class _$_Version implements _Version {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_Version &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.name, name) &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.name, name) || other.name == name) &&
             const DeepCollectionEquality().equals(other._names, _names) &&
-            const DeepCollectionEquality()
-                .equals(other.versionGroup, versionGroup));
+            (identical(other.versionGroup, versionGroup) ||
+                other.versionGroup == versionGroup));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(name),
-      const DeepCollectionEquality().hash(_names),
-      const DeepCollectionEquality().hash(versionGroup));
+  int get hashCode => Object.hash(runtimeType, id, name,
+      const DeepCollectionEquality().hash(_names), versionGroup);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_VersionCopyWith<_$_Version> get copyWith =>
       __$$_VersionCopyWithImpl<_$_Version>(this, _$identity);
 
@@ -1475,14 +1495,15 @@ mixin _$VersionGroup {
 abstract class $VersionGroupCopyWith<$Res> {
   factory $VersionGroupCopyWith(
           VersionGroup value, $Res Function(VersionGroup) then) =
-      _$VersionGroupCopyWithImpl<$Res>;
+      _$VersionGroupCopyWithImpl<$Res, VersionGroup>;
+  @useResult
   $Res call(
       {int id,
       String name,
       int order,
       NamedAPIResource generation,
       @JsonKey(name: 'move_learn_methods')
-          List<NamedAPIResource> moveLearnMethods,
+      List<NamedAPIResource> moveLearnMethods,
       List<NamedAPIResource> pokedexes,
       List<NamedAPIResource> regions,
       List<NamedAPIResource> versions});
@@ -1491,64 +1512,68 @@ abstract class $VersionGroupCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$VersionGroupCopyWithImpl<$Res> implements $VersionGroupCopyWith<$Res> {
+class _$VersionGroupCopyWithImpl<$Res, $Val extends VersionGroup>
+    implements $VersionGroupCopyWith<$Res> {
   _$VersionGroupCopyWithImpl(this._value, this._then);
 
-  final VersionGroup _value;
   // ignore: unused_field
-  final $Res Function(VersionGroup) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? order = freezed,
-    Object? generation = freezed,
-    Object? moveLearnMethods = freezed,
-    Object? pokedexes = freezed,
-    Object? regions = freezed,
-    Object? versions = freezed,
+    Object? id = null,
+    Object? name = null,
+    Object? order = null,
+    Object? generation = null,
+    Object? moveLearnMethods = null,
+    Object? pokedexes = null,
+    Object? regions = null,
+    Object? versions = null,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      name: name == freezed
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      order: order == freezed
+      order: null == order
           ? _value.order
           : order // ignore: cast_nullable_to_non_nullable
               as int,
-      generation: generation == freezed
+      generation: null == generation
           ? _value.generation
           : generation // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-      moveLearnMethods: moveLearnMethods == freezed
+      moveLearnMethods: null == moveLearnMethods
           ? _value.moveLearnMethods
           : moveLearnMethods // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
-      pokedexes: pokedexes == freezed
+      pokedexes: null == pokedexes
           ? _value.pokedexes
           : pokedexes // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
-      regions: regions == freezed
+      regions: null == regions
           ? _value.regions
           : regions // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
-      versions: versions == freezed
+      versions: null == versions
           ? _value.versions
           : versions // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $NamedAPIResourceCopyWith<$Res> get generation {
     return $NamedAPIResourceCopyWith<$Res>(_value.generation, (value) {
-      return _then(_value.copyWith(generation: value));
+      return _then(_value.copyWith(generation: value) as $Val);
     });
   }
 }
@@ -1560,13 +1585,14 @@ abstract class _$$_VersionGroupCopyWith<$Res>
           _$_VersionGroup value, $Res Function(_$_VersionGroup) then) =
       __$$_VersionGroupCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {int id,
       String name,
       int order,
       NamedAPIResource generation,
       @JsonKey(name: 'move_learn_methods')
-          List<NamedAPIResource> moveLearnMethods,
+      List<NamedAPIResource> moveLearnMethods,
       List<NamedAPIResource> pokedexes,
       List<NamedAPIResource> regions,
       List<NamedAPIResource> versions});
@@ -1577,56 +1603,54 @@ abstract class _$$_VersionGroupCopyWith<$Res>
 
 /// @nodoc
 class __$$_VersionGroupCopyWithImpl<$Res>
-    extends _$VersionGroupCopyWithImpl<$Res>
+    extends _$VersionGroupCopyWithImpl<$Res, _$_VersionGroup>
     implements _$$_VersionGroupCopyWith<$Res> {
   __$$_VersionGroupCopyWithImpl(
       _$_VersionGroup _value, $Res Function(_$_VersionGroup) _then)
-      : super(_value, (v) => _then(v as _$_VersionGroup));
+      : super(_value, _then);
 
-  @override
-  _$_VersionGroup get _value => super._value as _$_VersionGroup;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? order = freezed,
-    Object? generation = freezed,
-    Object? moveLearnMethods = freezed,
-    Object? pokedexes = freezed,
-    Object? regions = freezed,
-    Object? versions = freezed,
+    Object? id = null,
+    Object? name = null,
+    Object? order = null,
+    Object? generation = null,
+    Object? moveLearnMethods = null,
+    Object? pokedexes = null,
+    Object? regions = null,
+    Object? versions = null,
   }) {
     return _then(_$_VersionGroup(
-      id == freezed
+      null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      name == freezed
+      null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      order == freezed
+      null == order
           ? _value.order
           : order // ignore: cast_nullable_to_non_nullable
               as int,
-      generation == freezed
+      null == generation
           ? _value.generation
           : generation // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-      moveLearnMethods == freezed
+      null == moveLearnMethods
           ? _value._moveLearnMethods
           : moveLearnMethods // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
-      pokedexes == freezed
+      null == pokedexes
           ? _value._pokedexes
           : pokedexes // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
-      regions == freezed
+      null == regions
           ? _value._regions
           : regions // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
-      versions == freezed
+      null == versions
           ? _value._versions
           : versions // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
@@ -1643,7 +1667,7 @@ class _$_VersionGroup implements _VersionGroup {
       this.order,
       this.generation,
       @JsonKey(name: 'move_learn_methods')
-          final List<NamedAPIResource> moveLearnMethods,
+      final List<NamedAPIResource> moveLearnMethods,
       final List<NamedAPIResource> pokedexes,
       final List<NamedAPIResource> regions,
       final List<NamedAPIResource> versions)
@@ -1691,6 +1715,8 @@ class _$_VersionGroup implements _VersionGroup {
   @override
   @JsonKey(name: 'move_learn_methods')
   List<NamedAPIResource> get moveLearnMethods {
+    if (_moveLearnMethods is EqualUnmodifiableListView)
+      return _moveLearnMethods;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_moveLearnMethods);
   }
@@ -1709,6 +1735,7 @@ class _$_VersionGroup implements _VersionGroup {
   /// [PokedexData]
   @override
   List<NamedAPIResource> get pokedexes {
+    if (_pokedexes is EqualUnmodifiableListView) return _pokedexes;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_pokedexes);
   }
@@ -1727,6 +1754,7 @@ class _$_VersionGroup implements _VersionGroup {
   /// [Region]
   @override
   List<NamedAPIResource> get regions {
+    if (_regions is EqualUnmodifiableListView) return _regions;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_regions);
   }
@@ -1745,6 +1773,7 @@ class _$_VersionGroup implements _VersionGroup {
   /// [Version]
   @override
   List<NamedAPIResource> get versions {
+    if (_versions is EqualUnmodifiableListView) return _versions;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_versions);
   }
@@ -1759,11 +1788,11 @@ class _$_VersionGroup implements _VersionGroup {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_VersionGroup &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.name, name) &&
-            const DeepCollectionEquality().equals(other.order, order) &&
-            const DeepCollectionEquality()
-                .equals(other.generation, generation) &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.name, name) || other.name == name) &&
+            (identical(other.order, order) || other.order == order) &&
+            (identical(other.generation, generation) ||
+                other.generation == generation) &&
             const DeepCollectionEquality()
                 .equals(other._moveLearnMethods, _moveLearnMethods) &&
             const DeepCollectionEquality()
@@ -1776,10 +1805,10 @@ class _$_VersionGroup implements _VersionGroup {
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(name),
-      const DeepCollectionEquality().hash(order),
-      const DeepCollectionEquality().hash(generation),
+      id,
+      name,
+      order,
+      generation,
       const DeepCollectionEquality().hash(_moveLearnMethods),
       const DeepCollectionEquality().hash(_pokedexes),
       const DeepCollectionEquality().hash(_regions),
@@ -1787,6 +1816,7 @@ class _$_VersionGroup implements _VersionGroup {
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_VersionGroupCopyWith<_$_VersionGroup> get copyWith =>
       __$$_VersionGroupCopyWithImpl<_$_VersionGroup>(this, _$identity);
 
@@ -1805,7 +1835,7 @@ abstract class _VersionGroup implements VersionGroup {
       final int order,
       final NamedAPIResource generation,
       @JsonKey(name: 'move_learn_methods')
-          final List<NamedAPIResource> moveLearnMethods,
+      final List<NamedAPIResource> moveLearnMethods,
       final List<NamedAPIResource> pokedexes,
       final List<NamedAPIResource> regions,
       final List<NamedAPIResource> versions) = _$_VersionGroup;

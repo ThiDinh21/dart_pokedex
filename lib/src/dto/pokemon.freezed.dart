@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'pokemon.dart';
 
@@ -65,89 +65,91 @@ mixin _$Ability {
 /// @nodoc
 abstract class $AbilityCopyWith<$Res> {
   factory $AbilityCopyWith(Ability value, $Res Function(Ability) then) =
-      _$AbilityCopyWithImpl<$Res>;
+      _$AbilityCopyWithImpl<$Res, Ability>;
+  @useResult
   $Res call(
       {int id,
       String name,
-      @JsonKey(name: 'is_main_series')
-          bool isMainSeries,
+      @JsonKey(name: 'is_main_series') bool isMainSeries,
       NamedAPIResource generation,
       List<Name> names,
-      @JsonKey(name: 'effect_entries')
-          List<VerboseEffect> effectEntries,
-      @JsonKey(name: 'effect_changes')
-          List<AbilityEffectChange> effectChanges,
+      @JsonKey(name: 'effect_entries') List<VerboseEffect> effectEntries,
+      @JsonKey(name: 'effect_changes') List<AbilityEffectChange> effectChanges,
       @JsonKey(name: 'flavor_text_entries')
-          List<AbilityFlavorText> flavorTextEntries,
+      List<AbilityFlavorText> flavorTextEntries,
       List<AbilityPokemon> pokemon});
 
   $NamedAPIResourceCopyWith<$Res> get generation;
 }
 
 /// @nodoc
-class _$AbilityCopyWithImpl<$Res> implements $AbilityCopyWith<$Res> {
+class _$AbilityCopyWithImpl<$Res, $Val extends Ability>
+    implements $AbilityCopyWith<$Res> {
   _$AbilityCopyWithImpl(this._value, this._then);
 
-  final Ability _value;
   // ignore: unused_field
-  final $Res Function(Ability) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? isMainSeries = freezed,
-    Object? generation = freezed,
-    Object? names = freezed,
-    Object? effectEntries = freezed,
-    Object? effectChanges = freezed,
-    Object? flavorTextEntries = freezed,
-    Object? pokemon = freezed,
+    Object? id = null,
+    Object? name = null,
+    Object? isMainSeries = null,
+    Object? generation = null,
+    Object? names = null,
+    Object? effectEntries = null,
+    Object? effectChanges = null,
+    Object? flavorTextEntries = null,
+    Object? pokemon = null,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      name: name == freezed
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      isMainSeries: isMainSeries == freezed
+      isMainSeries: null == isMainSeries
           ? _value.isMainSeries
           : isMainSeries // ignore: cast_nullable_to_non_nullable
               as bool,
-      generation: generation == freezed
+      generation: null == generation
           ? _value.generation
           : generation // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-      names: names == freezed
+      names: null == names
           ? _value.names
           : names // ignore: cast_nullable_to_non_nullable
               as List<Name>,
-      effectEntries: effectEntries == freezed
+      effectEntries: null == effectEntries
           ? _value.effectEntries
           : effectEntries // ignore: cast_nullable_to_non_nullable
               as List<VerboseEffect>,
-      effectChanges: effectChanges == freezed
+      effectChanges: null == effectChanges
           ? _value.effectChanges
           : effectChanges // ignore: cast_nullable_to_non_nullable
               as List<AbilityEffectChange>,
-      flavorTextEntries: flavorTextEntries == freezed
+      flavorTextEntries: null == flavorTextEntries
           ? _value.flavorTextEntries
           : flavorTextEntries // ignore: cast_nullable_to_non_nullable
               as List<AbilityFlavorText>,
-      pokemon: pokemon == freezed
+      pokemon: null == pokemon
           ? _value.pokemon
           : pokemon // ignore: cast_nullable_to_non_nullable
               as List<AbilityPokemon>,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $NamedAPIResourceCopyWith<$Res> get generation {
     return $NamedAPIResourceCopyWith<$Res>(_value.generation, (value) {
-      return _then(_value.copyWith(generation: value));
+      return _then(_value.copyWith(generation: value) as $Val);
     });
   }
 }
@@ -158,19 +160,17 @@ abstract class _$$_AbilityCopyWith<$Res> implements $AbilityCopyWith<$Res> {
           _$_Ability value, $Res Function(_$_Ability) then) =
       __$$_AbilityCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {int id,
       String name,
-      @JsonKey(name: 'is_main_series')
-          bool isMainSeries,
+      @JsonKey(name: 'is_main_series') bool isMainSeries,
       NamedAPIResource generation,
       List<Name> names,
-      @JsonKey(name: 'effect_entries')
-          List<VerboseEffect> effectEntries,
-      @JsonKey(name: 'effect_changes')
-          List<AbilityEffectChange> effectChanges,
+      @JsonKey(name: 'effect_entries') List<VerboseEffect> effectEntries,
+      @JsonKey(name: 'effect_changes') List<AbilityEffectChange> effectChanges,
       @JsonKey(name: 'flavor_text_entries')
-          List<AbilityFlavorText> flavorTextEntries,
+      List<AbilityFlavorText> flavorTextEntries,
       List<AbilityPokemon> pokemon});
 
   @override
@@ -178,60 +178,59 @@ abstract class _$$_AbilityCopyWith<$Res> implements $AbilityCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$_AbilityCopyWithImpl<$Res> extends _$AbilityCopyWithImpl<$Res>
+class __$$_AbilityCopyWithImpl<$Res>
+    extends _$AbilityCopyWithImpl<$Res, _$_Ability>
     implements _$$_AbilityCopyWith<$Res> {
   __$$_AbilityCopyWithImpl(_$_Ability _value, $Res Function(_$_Ability) _then)
-      : super(_value, (v) => _then(v as _$_Ability));
+      : super(_value, _then);
 
-  @override
-  _$_Ability get _value => super._value as _$_Ability;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? isMainSeries = freezed,
-    Object? generation = freezed,
-    Object? names = freezed,
-    Object? effectEntries = freezed,
-    Object? effectChanges = freezed,
-    Object? flavorTextEntries = freezed,
-    Object? pokemon = freezed,
+    Object? id = null,
+    Object? name = null,
+    Object? isMainSeries = null,
+    Object? generation = null,
+    Object? names = null,
+    Object? effectEntries = null,
+    Object? effectChanges = null,
+    Object? flavorTextEntries = null,
+    Object? pokemon = null,
   }) {
     return _then(_$_Ability(
-      id == freezed
+      null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      name == freezed
+      null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      isMainSeries == freezed
+      null == isMainSeries
           ? _value.isMainSeries
           : isMainSeries // ignore: cast_nullable_to_non_nullable
               as bool,
-      generation == freezed
+      null == generation
           ? _value.generation
           : generation // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-      names == freezed
+      null == names
           ? _value._names
           : names // ignore: cast_nullable_to_non_nullable
               as List<Name>,
-      effectEntries == freezed
+      null == effectEntries
           ? _value._effectEntries
           : effectEntries // ignore: cast_nullable_to_non_nullable
               as List<VerboseEffect>,
-      effectChanges == freezed
+      null == effectChanges
           ? _value._effectChanges
           : effectChanges // ignore: cast_nullable_to_non_nullable
               as List<AbilityEffectChange>,
-      flavorTextEntries == freezed
+      null == flavorTextEntries
           ? _value._flavorTextEntries
           : flavorTextEntries // ignore: cast_nullable_to_non_nullable
               as List<AbilityFlavorText>,
-      pokemon == freezed
+      null == pokemon
           ? _value._pokemon
           : pokemon // ignore: cast_nullable_to_non_nullable
               as List<AbilityPokemon>,
@@ -245,16 +244,14 @@ class _$_Ability implements _Ability {
   const _$_Ability(
       this.id,
       this.name,
-      @JsonKey(name: 'is_main_series')
-          this.isMainSeries,
+      @JsonKey(name: 'is_main_series') this.isMainSeries,
       this.generation,
       final List<Name> names,
-      @JsonKey(name: 'effect_entries')
-          final List<VerboseEffect> effectEntries,
+      @JsonKey(name: 'effect_entries') final List<VerboseEffect> effectEntries,
       @JsonKey(name: 'effect_changes')
-          final List<AbilityEffectChange> effectChanges,
+      final List<AbilityEffectChange> effectChanges,
       @JsonKey(name: 'flavor_text_entries')
-          final List<AbilityFlavorText> flavorTextEntries,
+      final List<AbilityFlavorText> flavorTextEntries,
       final List<AbilityPokemon> pokemon)
       : _names = names,
         _effectEntries = effectEntries,
@@ -292,6 +289,7 @@ class _$_Ability implements _Ability {
   /// The name of this resource listed in different languages.
   @override
   List<Name> get names {
+    if (_names is EqualUnmodifiableListView) return _names;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_names);
   }
@@ -303,6 +301,7 @@ class _$_Ability implements _Ability {
   @override
   @JsonKey(name: 'effect_entries')
   List<VerboseEffect> get effectEntries {
+    if (_effectEntries is EqualUnmodifiableListView) return _effectEntries;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_effectEntries);
   }
@@ -314,6 +313,7 @@ class _$_Ability implements _Ability {
   @override
   @JsonKey(name: 'effect_changes')
   List<AbilityEffectChange> get effectChanges {
+    if (_effectChanges is EqualUnmodifiableListView) return _effectChanges;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_effectChanges);
   }
@@ -325,6 +325,8 @@ class _$_Ability implements _Ability {
   @override
   @JsonKey(name: 'flavor_text_entries')
   List<AbilityFlavorText> get flavorTextEntries {
+    if (_flavorTextEntries is EqualUnmodifiableListView)
+      return _flavorTextEntries;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_flavorTextEntries);
   }
@@ -335,6 +337,7 @@ class _$_Ability implements _Ability {
   /// A list of Pokémon that could potentially have this ability.
   @override
   List<AbilityPokemon> get pokemon {
+    if (_pokemon is EqualUnmodifiableListView) return _pokemon;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_pokemon);
   }
@@ -349,12 +352,12 @@ class _$_Ability implements _Ability {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_Ability &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.name, name) &&
-            const DeepCollectionEquality()
-                .equals(other.isMainSeries, isMainSeries) &&
-            const DeepCollectionEquality()
-                .equals(other.generation, generation) &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.name, name) || other.name == name) &&
+            (identical(other.isMainSeries, isMainSeries) ||
+                other.isMainSeries == isMainSeries) &&
+            (identical(other.generation, generation) ||
+                other.generation == generation) &&
             const DeepCollectionEquality().equals(other._names, _names) &&
             const DeepCollectionEquality()
                 .equals(other._effectEntries, _effectEntries) &&
@@ -369,10 +372,10 @@ class _$_Ability implements _Ability {
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(name),
-      const DeepCollectionEquality().hash(isMainSeries),
-      const DeepCollectionEquality().hash(generation),
+      id,
+      name,
+      isMainSeries,
+      generation,
       const DeepCollectionEquality().hash(_names),
       const DeepCollectionEquality().hash(_effectEntries),
       const DeepCollectionEquality().hash(_effectChanges),
@@ -381,6 +384,7 @@ class _$_Ability implements _Ability {
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_AbilityCopyWith<_$_Ability> get copyWith =>
       __$$_AbilityCopyWithImpl<_$_Ability>(this, _$identity);
 
@@ -396,16 +400,14 @@ abstract class _Ability implements Ability {
   const factory _Ability(
       final int id,
       final String name,
-      @JsonKey(name: 'is_main_series')
-          final bool isMainSeries,
+      @JsonKey(name: 'is_main_series') final bool isMainSeries,
       final NamedAPIResource generation,
       final List<Name> names,
-      @JsonKey(name: 'effect_entries')
-          final List<VerboseEffect> effectEntries,
+      @JsonKey(name: 'effect_entries') final List<VerboseEffect> effectEntries,
       @JsonKey(name: 'effect_changes')
-          final List<AbilityEffectChange> effectChanges,
+      final List<AbilityEffectChange> effectChanges,
       @JsonKey(name: 'flavor_text_entries')
-          final List<AbilityFlavorText> flavorTextEntries,
+      final List<AbilityFlavorText> flavorTextEntries,
       final List<AbilityPokemon> pokemon) = _$_Ability;
 
   factory _Ability.fromJson(Map<String, dynamic> json) = _$_Ability.fromJson;
@@ -488,7 +490,8 @@ mixin _$AbilityEffectChange {
 abstract class $AbilityEffectChangeCopyWith<$Res> {
   factory $AbilityEffectChangeCopyWith(
           AbilityEffectChange value, $Res Function(AbilityEffectChange) then) =
-      _$AbilityEffectChangeCopyWithImpl<$Res>;
+      _$AbilityEffectChangeCopyWithImpl<$Res, AbilityEffectChange>;
+  @useResult
   $Res call(
       {@JsonKey(name: 'effect_entries') List<Effect> effectEntries,
       @JsonKey(name: 'version_group') NamedAPIResource versionGroup});
@@ -497,35 +500,38 @@ abstract class $AbilityEffectChangeCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$AbilityEffectChangeCopyWithImpl<$Res>
+class _$AbilityEffectChangeCopyWithImpl<$Res, $Val extends AbilityEffectChange>
     implements $AbilityEffectChangeCopyWith<$Res> {
   _$AbilityEffectChangeCopyWithImpl(this._value, this._then);
 
-  final AbilityEffectChange _value;
   // ignore: unused_field
-  final $Res Function(AbilityEffectChange) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? effectEntries = freezed,
-    Object? versionGroup = freezed,
+    Object? effectEntries = null,
+    Object? versionGroup = null,
   }) {
     return _then(_value.copyWith(
-      effectEntries: effectEntries == freezed
+      effectEntries: null == effectEntries
           ? _value.effectEntries
           : effectEntries // ignore: cast_nullable_to_non_nullable
               as List<Effect>,
-      versionGroup: versionGroup == freezed
+      versionGroup: null == versionGroup
           ? _value.versionGroup
           : versionGroup // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $NamedAPIResourceCopyWith<$Res> get versionGroup {
     return $NamedAPIResourceCopyWith<$Res>(_value.versionGroup, (value) {
-      return _then(_value.copyWith(versionGroup: value));
+      return _then(_value.copyWith(versionGroup: value) as $Val);
     });
   }
 }
@@ -537,6 +543,7 @@ abstract class _$$_AbilityEffectChangeCopyWith<$Res>
           $Res Function(_$_AbilityEffectChange) then) =
       __$$_AbilityEffectChangeCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@JsonKey(name: 'effect_entries') List<Effect> effectEntries,
       @JsonKey(name: 'version_group') NamedAPIResource versionGroup});
@@ -547,26 +554,24 @@ abstract class _$$_AbilityEffectChangeCopyWith<$Res>
 
 /// @nodoc
 class __$$_AbilityEffectChangeCopyWithImpl<$Res>
-    extends _$AbilityEffectChangeCopyWithImpl<$Res>
+    extends _$AbilityEffectChangeCopyWithImpl<$Res, _$_AbilityEffectChange>
     implements _$$_AbilityEffectChangeCopyWith<$Res> {
   __$$_AbilityEffectChangeCopyWithImpl(_$_AbilityEffectChange _value,
       $Res Function(_$_AbilityEffectChange) _then)
-      : super(_value, (v) => _then(v as _$_AbilityEffectChange));
+      : super(_value, _then);
 
-  @override
-  _$_AbilityEffectChange get _value => super._value as _$_AbilityEffectChange;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? effectEntries = freezed,
-    Object? versionGroup = freezed,
+    Object? effectEntries = null,
+    Object? versionGroup = null,
   }) {
     return _then(_$_AbilityEffectChange(
-      effectEntries == freezed
+      null == effectEntries
           ? _value._effectEntries
           : effectEntries // ignore: cast_nullable_to_non_nullable
               as List<Effect>,
-      versionGroup == freezed
+      null == versionGroup
           ? _value.versionGroup
           : versionGroup // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
@@ -592,6 +597,7 @@ class _$_AbilityEffectChange implements _AbilityEffectChange {
   @override
   @JsonKey(name: 'effect_entries')
   List<Effect> get effectEntries {
+    if (_effectEntries is EqualUnmodifiableListView) return _effectEntries;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_effectEntries);
   }
@@ -617,19 +623,18 @@ class _$_AbilityEffectChange implements _AbilityEffectChange {
             other is _$_AbilityEffectChange &&
             const DeepCollectionEquality()
                 .equals(other._effectEntries, _effectEntries) &&
-            const DeepCollectionEquality()
-                .equals(other.versionGroup, versionGroup));
+            (identical(other.versionGroup, versionGroup) ||
+                other.versionGroup == versionGroup));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(_effectEntries),
-      const DeepCollectionEquality().hash(versionGroup));
+  int get hashCode => Object.hash(runtimeType,
+      const DeepCollectionEquality().hash(_effectEntries), versionGroup);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_AbilityEffectChangeCopyWith<_$_AbilityEffectChange> get copyWith =>
       __$$_AbilityEffectChangeCopyWithImpl<_$_AbilityEffectChange>(
           this, _$identity);
@@ -706,7 +711,8 @@ mixin _$AbilityFlavorText {
 abstract class $AbilityFlavorTextCopyWith<$Res> {
   factory $AbilityFlavorTextCopyWith(
           AbilityFlavorText value, $Res Function(AbilityFlavorText) then) =
-      _$AbilityFlavorTextCopyWithImpl<$Res>;
+      _$AbilityFlavorTextCopyWithImpl<$Res, AbilityFlavorText>;
+  @useResult
   $Res call(
       {@JsonKey(name: 'flavor_text') String flavorText,
       NamedAPIResource language,
@@ -717,47 +723,51 @@ abstract class $AbilityFlavorTextCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$AbilityFlavorTextCopyWithImpl<$Res>
+class _$AbilityFlavorTextCopyWithImpl<$Res, $Val extends AbilityFlavorText>
     implements $AbilityFlavorTextCopyWith<$Res> {
   _$AbilityFlavorTextCopyWithImpl(this._value, this._then);
 
-  final AbilityFlavorText _value;
   // ignore: unused_field
-  final $Res Function(AbilityFlavorText) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? flavorText = freezed,
-    Object? language = freezed,
-    Object? versionGroup = freezed,
+    Object? flavorText = null,
+    Object? language = null,
+    Object? versionGroup = null,
   }) {
     return _then(_value.copyWith(
-      flavorText: flavorText == freezed
+      flavorText: null == flavorText
           ? _value.flavorText
           : flavorText // ignore: cast_nullable_to_non_nullable
               as String,
-      language: language == freezed
+      language: null == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-      versionGroup: versionGroup == freezed
+      versionGroup: null == versionGroup
           ? _value.versionGroup
           : versionGroup // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $NamedAPIResourceCopyWith<$Res> get language {
     return $NamedAPIResourceCopyWith<$Res>(_value.language, (value) {
-      return _then(_value.copyWith(language: value));
+      return _then(_value.copyWith(language: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $NamedAPIResourceCopyWith<$Res> get versionGroup {
     return $NamedAPIResourceCopyWith<$Res>(_value.versionGroup, (value) {
-      return _then(_value.copyWith(versionGroup: value));
+      return _then(_value.copyWith(versionGroup: value) as $Val);
     });
   }
 }
@@ -769,6 +779,7 @@ abstract class _$$_AbilityFlavorTextCopyWith<$Res>
           $Res Function(_$_AbilityFlavorText) then) =
       __$$_AbilityFlavorTextCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@JsonKey(name: 'flavor_text') String flavorText,
       NamedAPIResource language,
@@ -782,31 +793,29 @@ abstract class _$$_AbilityFlavorTextCopyWith<$Res>
 
 /// @nodoc
 class __$$_AbilityFlavorTextCopyWithImpl<$Res>
-    extends _$AbilityFlavorTextCopyWithImpl<$Res>
+    extends _$AbilityFlavorTextCopyWithImpl<$Res, _$_AbilityFlavorText>
     implements _$$_AbilityFlavorTextCopyWith<$Res> {
   __$$_AbilityFlavorTextCopyWithImpl(
       _$_AbilityFlavorText _value, $Res Function(_$_AbilityFlavorText) _then)
-      : super(_value, (v) => _then(v as _$_AbilityFlavorText));
+      : super(_value, _then);
 
-  @override
-  _$_AbilityFlavorText get _value => super._value as _$_AbilityFlavorText;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? flavorText = freezed,
-    Object? language = freezed,
-    Object? versionGroup = freezed,
+    Object? flavorText = null,
+    Object? language = null,
+    Object? versionGroup = null,
   }) {
     return _then(_$_AbilityFlavorText(
-      flavorText == freezed
+      null == flavorText
           ? _value.flavorText
           : flavorText // ignore: cast_nullable_to_non_nullable
               as String,
-      language == freezed
+      null == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-      versionGroup == freezed
+      null == versionGroup
           ? _value.versionGroup
           : versionGroup // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
@@ -855,23 +864,22 @@ class _$_AbilityFlavorText implements _AbilityFlavorText {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_AbilityFlavorText &&
-            const DeepCollectionEquality()
-                .equals(other.flavorText, flavorText) &&
-            const DeepCollectionEquality().equals(other.language, language) &&
-            const DeepCollectionEquality()
-                .equals(other.versionGroup, versionGroup));
+            (identical(other.flavorText, flavorText) ||
+                other.flavorText == flavorText) &&
+            (identical(other.language, language) ||
+                other.language == language) &&
+            (identical(other.versionGroup, versionGroup) ||
+                other.versionGroup == versionGroup));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(flavorText),
-      const DeepCollectionEquality().hash(language),
-      const DeepCollectionEquality().hash(versionGroup));
+  int get hashCode =>
+      Object.hash(runtimeType, flavorText, language, versionGroup);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_AbilityFlavorTextCopyWith<_$_AbilityFlavorText> get copyWith =>
       __$$_AbilityFlavorTextCopyWithImpl<_$_AbilityFlavorText>(
           this, _$identity);
@@ -953,7 +961,8 @@ mixin _$AbilityPokemon {
 abstract class $AbilityPokemonCopyWith<$Res> {
   factory $AbilityPokemonCopyWith(
           AbilityPokemon value, $Res Function(AbilityPokemon) then) =
-      _$AbilityPokemonCopyWithImpl<$Res>;
+      _$AbilityPokemonCopyWithImpl<$Res, AbilityPokemon>;
+  @useResult
   $Res call(
       {@JsonKey(name: 'is_hidden') bool isHidden,
       int slot,
@@ -963,40 +972,43 @@ abstract class $AbilityPokemonCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$AbilityPokemonCopyWithImpl<$Res>
+class _$AbilityPokemonCopyWithImpl<$Res, $Val extends AbilityPokemon>
     implements $AbilityPokemonCopyWith<$Res> {
   _$AbilityPokemonCopyWithImpl(this._value, this._then);
 
-  final AbilityPokemon _value;
   // ignore: unused_field
-  final $Res Function(AbilityPokemon) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? isHidden = freezed,
-    Object? slot = freezed,
-    Object? pokemon = freezed,
+    Object? isHidden = null,
+    Object? slot = null,
+    Object? pokemon = null,
   }) {
     return _then(_value.copyWith(
-      isHidden: isHidden == freezed
+      isHidden: null == isHidden
           ? _value.isHidden
           : isHidden // ignore: cast_nullable_to_non_nullable
               as bool,
-      slot: slot == freezed
+      slot: null == slot
           ? _value.slot
           : slot // ignore: cast_nullable_to_non_nullable
               as int,
-      pokemon: pokemon == freezed
+      pokemon: null == pokemon
           ? _value.pokemon
           : pokemon // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $NamedAPIResourceCopyWith<$Res> get pokemon {
     return $NamedAPIResourceCopyWith<$Res>(_value.pokemon, (value) {
-      return _then(_value.copyWith(pokemon: value));
+      return _then(_value.copyWith(pokemon: value) as $Val);
     });
   }
 }
@@ -1008,6 +1020,7 @@ abstract class _$$_AbilityPokemonCopyWith<$Res>
           _$_AbilityPokemon value, $Res Function(_$_AbilityPokemon) then) =
       __$$_AbilityPokemonCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@JsonKey(name: 'is_hidden') bool isHidden,
       int slot,
@@ -1019,31 +1032,29 @@ abstract class _$$_AbilityPokemonCopyWith<$Res>
 
 /// @nodoc
 class __$$_AbilityPokemonCopyWithImpl<$Res>
-    extends _$AbilityPokemonCopyWithImpl<$Res>
+    extends _$AbilityPokemonCopyWithImpl<$Res, _$_AbilityPokemon>
     implements _$$_AbilityPokemonCopyWith<$Res> {
   __$$_AbilityPokemonCopyWithImpl(
       _$_AbilityPokemon _value, $Res Function(_$_AbilityPokemon) _then)
-      : super(_value, (v) => _then(v as _$_AbilityPokemon));
+      : super(_value, _then);
 
-  @override
-  _$_AbilityPokemon get _value => super._value as _$_AbilityPokemon;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? isHidden = freezed,
-    Object? slot = freezed,
-    Object? pokemon = freezed,
+    Object? isHidden = null,
+    Object? slot = null,
+    Object? pokemon = null,
   }) {
     return _then(_$_AbilityPokemon(
-      isHidden == freezed
+      null == isHidden
           ? _value.isHidden
           : isHidden // ignore: cast_nullable_to_non_nullable
               as bool,
-      slot == freezed
+      null == slot
           ? _value.slot
           : slot // ignore: cast_nullable_to_non_nullable
               as int,
-      pokemon == freezed
+      null == pokemon
           ? _value.pokemon
           : pokemon // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
@@ -1088,21 +1099,19 @@ class _$_AbilityPokemon implements _AbilityPokemon {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_AbilityPokemon &&
-            const DeepCollectionEquality().equals(other.isHidden, isHidden) &&
-            const DeepCollectionEquality().equals(other.slot, slot) &&
-            const DeepCollectionEquality().equals(other.pokemon, pokemon));
+            (identical(other.isHidden, isHidden) ||
+                other.isHidden == isHidden) &&
+            (identical(other.slot, slot) || other.slot == slot) &&
+            (identical(other.pokemon, pokemon) || other.pokemon == pokemon));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(isHidden),
-      const DeepCollectionEquality().hash(slot),
-      const DeepCollectionEquality().hash(pokemon));
+  int get hashCode => Object.hash(runtimeType, isHidden, slot, pokemon);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_AbilityPokemonCopyWith<_$_AbilityPokemon> get copyWith =>
       __$$_AbilityPokemonCopyWithImpl<_$_AbilityPokemon>(this, _$identity);
 
@@ -1173,7 +1182,8 @@ mixin _$Characteristic {
 abstract class $CharacteristicCopyWith<$Res> {
   factory $CharacteristicCopyWith(
           Characteristic value, $Res Function(Characteristic) then) =
-      _$CharacteristicCopyWithImpl<$Res>;
+      _$CharacteristicCopyWithImpl<$Res, Characteristic>;
+  @useResult
   $Res call(
       {int id,
       @JsonKey(name: 'gene_modulo') int geneModulo,
@@ -1181,34 +1191,36 @@ abstract class $CharacteristicCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$CharacteristicCopyWithImpl<$Res>
+class _$CharacteristicCopyWithImpl<$Res, $Val extends Characteristic>
     implements $CharacteristicCopyWith<$Res> {
   _$CharacteristicCopyWithImpl(this._value, this._then);
 
-  final Characteristic _value;
   // ignore: unused_field
-  final $Res Function(Characteristic) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? geneModulo = freezed,
-    Object? possibleValues = freezed,
+    Object? id = null,
+    Object? geneModulo = null,
+    Object? possibleValues = null,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      geneModulo: geneModulo == freezed
+      geneModulo: null == geneModulo
           ? _value.geneModulo
           : geneModulo // ignore: cast_nullable_to_non_nullable
               as int,
-      possibleValues: possibleValues == freezed
+      possibleValues: null == possibleValues
           ? _value.possibleValues
           : possibleValues // ignore: cast_nullable_to_non_nullable
               as List<int>,
-    ));
+    ) as $Val);
   }
 }
 
@@ -1219,6 +1231,7 @@ abstract class _$$_CharacteristicCopyWith<$Res>
           _$_Characteristic value, $Res Function(_$_Characteristic) then) =
       __$$_CharacteristicCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {int id,
       @JsonKey(name: 'gene_modulo') int geneModulo,
@@ -1227,31 +1240,29 @@ abstract class _$$_CharacteristicCopyWith<$Res>
 
 /// @nodoc
 class __$$_CharacteristicCopyWithImpl<$Res>
-    extends _$CharacteristicCopyWithImpl<$Res>
+    extends _$CharacteristicCopyWithImpl<$Res, _$_Characteristic>
     implements _$$_CharacteristicCopyWith<$Res> {
   __$$_CharacteristicCopyWithImpl(
       _$_Characteristic _value, $Res Function(_$_Characteristic) _then)
-      : super(_value, (v) => _then(v as _$_Characteristic));
+      : super(_value, _then);
 
-  @override
-  _$_Characteristic get _value => super._value as _$_Characteristic;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? geneModulo = freezed,
-    Object? possibleValues = freezed,
+    Object? id = null,
+    Object? geneModulo = null,
+    Object? possibleValues = null,
   }) {
     return _then(_$_Characteristic(
-      id == freezed
+      null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      geneModulo == freezed
+      null == geneModulo
           ? _value.geneModulo
           : geneModulo // ignore: cast_nullable_to_non_nullable
               as int,
-      possibleValues == freezed
+      null == possibleValues
           ? _value._possibleValues
           : possibleValues // ignore: cast_nullable_to_non_nullable
               as List<int>,
@@ -1289,6 +1300,7 @@ class _$_Characteristic implements _Characteristic {
   @override
   @JsonKey(name: 'possible_values')
   List<int> get possibleValues {
+    if (_possibleValues is EqualUnmodifiableListView) return _possibleValues;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_possibleValues);
   }
@@ -1303,23 +1315,21 @@ class _$_Characteristic implements _Characteristic {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_Characteristic &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality()
-                .equals(other.geneModulo, geneModulo) &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.geneModulo, geneModulo) ||
+                other.geneModulo == geneModulo) &&
             const DeepCollectionEquality()
                 .equals(other._possibleValues, _possibleValues));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(geneModulo),
+  int get hashCode => Object.hash(runtimeType, id, geneModulo,
       const DeepCollectionEquality().hash(_possibleValues));
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_CharacteristicCopyWith<_$_Characteristic> get copyWith =>
       __$$_CharacteristicCopyWithImpl<_$_Characteristic>(this, _$identity);
 
@@ -1395,7 +1405,8 @@ mixin _$EggGroup {
 /// @nodoc
 abstract class $EggGroupCopyWith<$Res> {
   factory $EggGroupCopyWith(EggGroup value, $Res Function(EggGroup) then) =
-      _$EggGroupCopyWithImpl<$Res>;
+      _$EggGroupCopyWithImpl<$Res, EggGroup>;
+  @useResult
   $Res call(
       {int id,
       String name,
@@ -1404,38 +1415,41 @@ abstract class $EggGroupCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$EggGroupCopyWithImpl<$Res> implements $EggGroupCopyWith<$Res> {
+class _$EggGroupCopyWithImpl<$Res, $Val extends EggGroup>
+    implements $EggGroupCopyWith<$Res> {
   _$EggGroupCopyWithImpl(this._value, this._then);
 
-  final EggGroup _value;
   // ignore: unused_field
-  final $Res Function(EggGroup) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? names = freezed,
-    Object? pokemonSpecies = freezed,
+    Object? id = null,
+    Object? name = null,
+    Object? names = null,
+    Object? pokemonSpecies = null,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      name: name == freezed
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      names: names == freezed
+      names: null == names
           ? _value.names
           : names // ignore: cast_nullable_to_non_nullable
               as List<Name>,
-      pokemonSpecies: pokemonSpecies == freezed
+      pokemonSpecies: null == pokemonSpecies
           ? _value.pokemonSpecies
           : pokemonSpecies // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
-    ));
+    ) as $Val);
   }
 }
 
@@ -1445,6 +1459,7 @@ abstract class _$$_EggGroupCopyWith<$Res> implements $EggGroupCopyWith<$Res> {
           _$_EggGroup value, $Res Function(_$_EggGroup) then) =
       __$$_EggGroupCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {int id,
       String name,
@@ -1453,36 +1468,35 @@ abstract class _$$_EggGroupCopyWith<$Res> implements $EggGroupCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$_EggGroupCopyWithImpl<$Res> extends _$EggGroupCopyWithImpl<$Res>
+class __$$_EggGroupCopyWithImpl<$Res>
+    extends _$EggGroupCopyWithImpl<$Res, _$_EggGroup>
     implements _$$_EggGroupCopyWith<$Res> {
   __$$_EggGroupCopyWithImpl(
       _$_EggGroup _value, $Res Function(_$_EggGroup) _then)
-      : super(_value, (v) => _then(v as _$_EggGroup));
+      : super(_value, _then);
 
-  @override
-  _$_EggGroup get _value => super._value as _$_EggGroup;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? names = freezed,
-    Object? pokemonSpecies = freezed,
+    Object? id = null,
+    Object? name = null,
+    Object? names = null,
+    Object? pokemonSpecies = null,
   }) {
     return _then(_$_EggGroup(
-      id == freezed
+      null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      name == freezed
+      null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      names == freezed
+      null == names
           ? _value._names
           : names // ignore: cast_nullable_to_non_nullable
               as List<Name>,
-      pokemonSpecies == freezed
+      null == pokemonSpecies
           ? _value._pokemonSpecies
           : pokemonSpecies // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
@@ -1498,7 +1512,7 @@ class _$_EggGroup implements _EggGroup {
       this.name,
       final List<Name> names,
       @JsonKey(name: 'pokemon_species')
-          final List<NamedAPIResource> pokemonSpecies)
+      final List<NamedAPIResource> pokemonSpecies)
       : _names = names,
         _pokemonSpecies = pokemonSpecies;
 
@@ -1519,6 +1533,7 @@ class _$_EggGroup implements _EggGroup {
   /// The name of this resource listed in different languages.
   @override
   List<Name> get names {
+    if (_names is EqualUnmodifiableListView) return _names;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_names);
   }
@@ -1538,6 +1553,7 @@ class _$_EggGroup implements _EggGroup {
   @override
   @JsonKey(name: 'pokemon_species')
   List<NamedAPIResource> get pokemonSpecies {
+    if (_pokemonSpecies is EqualUnmodifiableListView) return _pokemonSpecies;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_pokemonSpecies);
   }
@@ -1552,8 +1568,8 @@ class _$_EggGroup implements _EggGroup {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_EggGroup &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.name, name) &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.name, name) || other.name == name) &&
             const DeepCollectionEquality().equals(other._names, _names) &&
             const DeepCollectionEquality()
                 .equals(other._pokemonSpecies, _pokemonSpecies));
@@ -1563,13 +1579,14 @@ class _$_EggGroup implements _EggGroup {
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(name),
+      id,
+      name,
       const DeepCollectionEquality().hash(_names),
       const DeepCollectionEquality().hash(_pokemonSpecies));
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_EggGroupCopyWith<_$_EggGroup> get copyWith =>
       __$$_EggGroupCopyWithImpl<_$_EggGroup>(this, _$identity);
 
@@ -1587,7 +1604,7 @@ abstract class _EggGroup implements EggGroup {
       final String name,
       final List<Name> names,
       @JsonKey(name: 'pokemon_species')
-          final List<NamedAPIResource> pokemonSpecies) = _$_EggGroup;
+      final List<NamedAPIResource> pokemonSpecies) = _$_EggGroup;
 
   factory _EggGroup.fromJson(Map<String, dynamic> json) = _$_EggGroup.fromJson;
 
@@ -1649,49 +1666,53 @@ mixin _$Gender {
 /// @nodoc
 abstract class $GenderCopyWith<$Res> {
   factory $GenderCopyWith(Gender value, $Res Function(Gender) then) =
-      _$GenderCopyWithImpl<$Res>;
+      _$GenderCopyWithImpl<$Res, Gender>;
+  @useResult
   $Res call(
       {int id,
       String name,
       @JsonKey(name: 'pokemon_species_details')
-          List<PokemonSpeciesGender> pokemonSpeciesDetails,
+      List<PokemonSpeciesGender> pokemonSpeciesDetails,
       @JsonKey(name: 'required_for_evolution')
-          List<NamedAPIResource> requiredForEvolution});
+      List<NamedAPIResource> requiredForEvolution});
 }
 
 /// @nodoc
-class _$GenderCopyWithImpl<$Res> implements $GenderCopyWith<$Res> {
+class _$GenderCopyWithImpl<$Res, $Val extends Gender>
+    implements $GenderCopyWith<$Res> {
   _$GenderCopyWithImpl(this._value, this._then);
 
-  final Gender _value;
   // ignore: unused_field
-  final $Res Function(Gender) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? pokemonSpeciesDetails = freezed,
-    Object? requiredForEvolution = freezed,
+    Object? id = null,
+    Object? name = null,
+    Object? pokemonSpeciesDetails = null,
+    Object? requiredForEvolution = null,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      name: name == freezed
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      pokemonSpeciesDetails: pokemonSpeciesDetails == freezed
+      pokemonSpeciesDetails: null == pokemonSpeciesDetails
           ? _value.pokemonSpeciesDetails
           : pokemonSpeciesDetails // ignore: cast_nullable_to_non_nullable
               as List<PokemonSpeciesGender>,
-      requiredForEvolution: requiredForEvolution == freezed
+      requiredForEvolution: null == requiredForEvolution
           ? _value.requiredForEvolution
           : requiredForEvolution // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
-    ));
+    ) as $Val);
   }
 }
 
@@ -1700,45 +1721,45 @@ abstract class _$$_GenderCopyWith<$Res> implements $GenderCopyWith<$Res> {
   factory _$$_GenderCopyWith(_$_Gender value, $Res Function(_$_Gender) then) =
       __$$_GenderCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {int id,
       String name,
       @JsonKey(name: 'pokemon_species_details')
-          List<PokemonSpeciesGender> pokemonSpeciesDetails,
+      List<PokemonSpeciesGender> pokemonSpeciesDetails,
       @JsonKey(name: 'required_for_evolution')
-          List<NamedAPIResource> requiredForEvolution});
+      List<NamedAPIResource> requiredForEvolution});
 }
 
 /// @nodoc
-class __$$_GenderCopyWithImpl<$Res> extends _$GenderCopyWithImpl<$Res>
+class __$$_GenderCopyWithImpl<$Res>
+    extends _$GenderCopyWithImpl<$Res, _$_Gender>
     implements _$$_GenderCopyWith<$Res> {
   __$$_GenderCopyWithImpl(_$_Gender _value, $Res Function(_$_Gender) _then)
-      : super(_value, (v) => _then(v as _$_Gender));
+      : super(_value, _then);
 
-  @override
-  _$_Gender get _value => super._value as _$_Gender;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? pokemonSpeciesDetails = freezed,
-    Object? requiredForEvolution = freezed,
+    Object? id = null,
+    Object? name = null,
+    Object? pokemonSpeciesDetails = null,
+    Object? requiredForEvolution = null,
   }) {
     return _then(_$_Gender(
-      id == freezed
+      null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      name == freezed
+      null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      pokemonSpeciesDetails == freezed
+      null == pokemonSpeciesDetails
           ? _value._pokemonSpeciesDetails
           : pokemonSpeciesDetails // ignore: cast_nullable_to_non_nullable
               as List<PokemonSpeciesGender>,
-      requiredForEvolution == freezed
+      null == requiredForEvolution
           ? _value._requiredForEvolution
           : requiredForEvolution // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
@@ -1753,9 +1774,9 @@ class _$_Gender implements _Gender {
       this.id,
       this.name,
       @JsonKey(name: 'pokemon_species_details')
-          final List<PokemonSpeciesGender> pokemonSpeciesDetails,
+      final List<PokemonSpeciesGender> pokemonSpeciesDetails,
       @JsonKey(name: 'required_for_evolution')
-          final List<NamedAPIResource> requiredForEvolution)
+      final List<NamedAPIResource> requiredForEvolution)
       : _pokemonSpeciesDetails = pokemonSpeciesDetails,
         _requiredForEvolution = requiredForEvolution;
 
@@ -1777,6 +1798,8 @@ class _$_Gender implements _Gender {
   @override
   @JsonKey(name: 'pokemon_species_details')
   List<PokemonSpeciesGender> get pokemonSpeciesDetails {
+    if (_pokemonSpeciesDetails is EqualUnmodifiableListView)
+      return _pokemonSpeciesDetails;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_pokemonSpeciesDetails);
   }
@@ -1790,6 +1813,8 @@ class _$_Gender implements _Gender {
   @override
   @JsonKey(name: 'required_for_evolution')
   List<NamedAPIResource> get requiredForEvolution {
+    if (_requiredForEvolution is EqualUnmodifiableListView)
+      return _requiredForEvolution;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_requiredForEvolution);
   }
@@ -1804,8 +1829,8 @@ class _$_Gender implements _Gender {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_Gender &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.name, name) &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.name, name) || other.name == name) &&
             const DeepCollectionEquality()
                 .equals(other._pokemonSpeciesDetails, _pokemonSpeciesDetails) &&
             const DeepCollectionEquality()
@@ -1816,13 +1841,14 @@ class _$_Gender implements _Gender {
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(name),
+      id,
+      name,
       const DeepCollectionEquality().hash(_pokemonSpeciesDetails),
       const DeepCollectionEquality().hash(_requiredForEvolution));
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_GenderCopyWith<_$_Gender> get copyWith =>
       __$$_GenderCopyWithImpl<_$_Gender>(this, _$identity);
 
@@ -1839,9 +1865,9 @@ abstract class _Gender implements Gender {
       final int id,
       final String name,
       @JsonKey(name: 'pokemon_species_details')
-          final List<PokemonSpeciesGender> pokemonSpeciesDetails,
+      final List<PokemonSpeciesGender> pokemonSpeciesDetails,
       @JsonKey(name: 'required_for_evolution')
-          final List<NamedAPIResource> requiredForEvolution) = _$_Gender;
+      final List<NamedAPIResource> requiredForEvolution) = _$_Gender;
 
   factory _Gender.fromJson(Map<String, dynamic> json) = _$_Gender.fromJson;
 
@@ -1897,7 +1923,8 @@ mixin _$PokemonSpeciesGender {
 abstract class $PokemonSpeciesGenderCopyWith<$Res> {
   factory $PokemonSpeciesGenderCopyWith(PokemonSpeciesGender value,
           $Res Function(PokemonSpeciesGender) then) =
-      _$PokemonSpeciesGenderCopyWithImpl<$Res>;
+      _$PokemonSpeciesGenderCopyWithImpl<$Res, PokemonSpeciesGender>;
+  @useResult
   $Res call(
       {int rate,
       @JsonKey(name: 'pokemon_species') NamedAPIResource pokemonSpecies});
@@ -1906,35 +1933,39 @@ abstract class $PokemonSpeciesGenderCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$PokemonSpeciesGenderCopyWithImpl<$Res>
+class _$PokemonSpeciesGenderCopyWithImpl<$Res,
+        $Val extends PokemonSpeciesGender>
     implements $PokemonSpeciesGenderCopyWith<$Res> {
   _$PokemonSpeciesGenderCopyWithImpl(this._value, this._then);
 
-  final PokemonSpeciesGender _value;
   // ignore: unused_field
-  final $Res Function(PokemonSpeciesGender) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? rate = freezed,
-    Object? pokemonSpecies = freezed,
+    Object? rate = null,
+    Object? pokemonSpecies = null,
   }) {
     return _then(_value.copyWith(
-      rate: rate == freezed
+      rate: null == rate
           ? _value.rate
           : rate // ignore: cast_nullable_to_non_nullable
               as int,
-      pokemonSpecies: pokemonSpecies == freezed
+      pokemonSpecies: null == pokemonSpecies
           ? _value.pokemonSpecies
           : pokemonSpecies // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $NamedAPIResourceCopyWith<$Res> get pokemonSpecies {
     return $NamedAPIResourceCopyWith<$Res>(_value.pokemonSpecies, (value) {
-      return _then(_value.copyWith(pokemonSpecies: value));
+      return _then(_value.copyWith(pokemonSpecies: value) as $Val);
     });
   }
 }
@@ -1946,6 +1977,7 @@ abstract class _$$_PokemonSpeciesGenderCopyWith<$Res>
           $Res Function(_$_PokemonSpeciesGender) then) =
       __$$_PokemonSpeciesGenderCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {int rate,
       @JsonKey(name: 'pokemon_species') NamedAPIResource pokemonSpecies});
@@ -1956,26 +1988,24 @@ abstract class _$$_PokemonSpeciesGenderCopyWith<$Res>
 
 /// @nodoc
 class __$$_PokemonSpeciesGenderCopyWithImpl<$Res>
-    extends _$PokemonSpeciesGenderCopyWithImpl<$Res>
+    extends _$PokemonSpeciesGenderCopyWithImpl<$Res, _$_PokemonSpeciesGender>
     implements _$$_PokemonSpeciesGenderCopyWith<$Res> {
   __$$_PokemonSpeciesGenderCopyWithImpl(_$_PokemonSpeciesGender _value,
       $Res Function(_$_PokemonSpeciesGender) _then)
-      : super(_value, (v) => _then(v as _$_PokemonSpeciesGender));
+      : super(_value, _then);
 
-  @override
-  _$_PokemonSpeciesGender get _value => super._value as _$_PokemonSpeciesGender;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? rate = freezed,
-    Object? pokemonSpecies = freezed,
+    Object? rate = null,
+    Object? pokemonSpecies = null,
   }) {
     return _then(_$_PokemonSpeciesGender(
-      rate == freezed
+      null == rate
           ? _value.rate
           : rate // ignore: cast_nullable_to_non_nullable
               as int,
-      pokemonSpecies == freezed
+      null == pokemonSpecies
           ? _value.pokemonSpecies
           : pokemonSpecies // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
@@ -2015,20 +2045,18 @@ class _$_PokemonSpeciesGender implements _PokemonSpeciesGender {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_PokemonSpeciesGender &&
-            const DeepCollectionEquality().equals(other.rate, rate) &&
-            const DeepCollectionEquality()
-                .equals(other.pokemonSpecies, pokemonSpecies));
+            (identical(other.rate, rate) || other.rate == rate) &&
+            (identical(other.pokemonSpecies, pokemonSpecies) ||
+                other.pokemonSpecies == pokemonSpecies));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(rate),
-      const DeepCollectionEquality().hash(pokemonSpecies));
+  int get hashCode => Object.hash(runtimeType, rate, pokemonSpecies);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_PokemonSpeciesGenderCopyWith<_$_PokemonSpeciesGender> get copyWith =>
       __$$_PokemonSpeciesGenderCopyWithImpl<_$_PokemonSpeciesGender>(
           this, _$identity);
@@ -2045,7 +2073,7 @@ abstract class _PokemonSpeciesGender implements PokemonSpeciesGender {
   const factory _PokemonSpeciesGender(
       final int rate,
       @JsonKey(name: 'pokemon_species')
-          final NamedAPIResource pokemonSpecies) = _$_PokemonSpeciesGender;
+      final NamedAPIResource pokemonSpecies) = _$_PokemonSpeciesGender;
 
   factory _PokemonSpeciesGender.fromJson(Map<String, dynamic> json) =
       _$_PokemonSpeciesGender.fromJson;
@@ -2111,7 +2139,8 @@ mixin _$GrowthRate {
 abstract class $GrowthRateCopyWith<$Res> {
   factory $GrowthRateCopyWith(
           GrowthRate value, $Res Function(GrowthRate) then) =
-      _$GrowthRateCopyWithImpl<$Res>;
+      _$GrowthRateCopyWithImpl<$Res, GrowthRate>;
+  @useResult
   $Res call(
       {int id,
       String name,
@@ -2122,48 +2151,51 @@ abstract class $GrowthRateCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$GrowthRateCopyWithImpl<$Res> implements $GrowthRateCopyWith<$Res> {
+class _$GrowthRateCopyWithImpl<$Res, $Val extends GrowthRate>
+    implements $GrowthRateCopyWith<$Res> {
   _$GrowthRateCopyWithImpl(this._value, this._then);
 
-  final GrowthRate _value;
   // ignore: unused_field
-  final $Res Function(GrowthRate) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? formula = freezed,
-    Object? descriptions = freezed,
-    Object? levels = freezed,
-    Object? pokemonSpecies = freezed,
+    Object? id = null,
+    Object? name = null,
+    Object? formula = null,
+    Object? descriptions = null,
+    Object? levels = null,
+    Object? pokemonSpecies = null,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      name: name == freezed
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      formula: formula == freezed
+      formula: null == formula
           ? _value.formula
           : formula // ignore: cast_nullable_to_non_nullable
               as String,
-      descriptions: descriptions == freezed
+      descriptions: null == descriptions
           ? _value.descriptions
           : descriptions // ignore: cast_nullable_to_non_nullable
               as List<Description>,
-      levels: levels == freezed
+      levels: null == levels
           ? _value.levels
           : levels // ignore: cast_nullable_to_non_nullable
               as List<GrowthRateExperienceLevel>,
-      pokemonSpecies: pokemonSpecies == freezed
+      pokemonSpecies: null == pokemonSpecies
           ? _value.pokemonSpecies
           : pokemonSpecies // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
-    ));
+    ) as $Val);
   }
 }
 
@@ -2174,6 +2206,7 @@ abstract class _$$_GrowthRateCopyWith<$Res>
           _$_GrowthRate value, $Res Function(_$_GrowthRate) then) =
       __$$_GrowthRateCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {int id,
       String name,
@@ -2184,46 +2217,45 @@ abstract class _$$_GrowthRateCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_GrowthRateCopyWithImpl<$Res> extends _$GrowthRateCopyWithImpl<$Res>
+class __$$_GrowthRateCopyWithImpl<$Res>
+    extends _$GrowthRateCopyWithImpl<$Res, _$_GrowthRate>
     implements _$$_GrowthRateCopyWith<$Res> {
   __$$_GrowthRateCopyWithImpl(
       _$_GrowthRate _value, $Res Function(_$_GrowthRate) _then)
-      : super(_value, (v) => _then(v as _$_GrowthRate));
+      : super(_value, _then);
 
-  @override
-  _$_GrowthRate get _value => super._value as _$_GrowthRate;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? formula = freezed,
-    Object? descriptions = freezed,
-    Object? levels = freezed,
-    Object? pokemonSpecies = freezed,
+    Object? id = null,
+    Object? name = null,
+    Object? formula = null,
+    Object? descriptions = null,
+    Object? levels = null,
+    Object? pokemonSpecies = null,
   }) {
     return _then(_$_GrowthRate(
-      id == freezed
+      null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      name == freezed
+      null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      formula == freezed
+      null == formula
           ? _value.formula
           : formula // ignore: cast_nullable_to_non_nullable
               as String,
-      descriptions == freezed
+      null == descriptions
           ? _value._descriptions
           : descriptions // ignore: cast_nullable_to_non_nullable
               as List<Description>,
-      levels == freezed
+      null == levels
           ? _value._levels
           : levels // ignore: cast_nullable_to_non_nullable
               as List<GrowthRateExperienceLevel>,
-      pokemonSpecies == freezed
+      null == pokemonSpecies
           ? _value._pokemonSpecies
           : pokemonSpecies // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
@@ -2241,7 +2273,7 @@ class _$_GrowthRate implements _GrowthRate {
       final List<Description> descriptions,
       final List<GrowthRateExperienceLevel> levels,
       @JsonKey(name: 'pokemon_species')
-          final List<NamedAPIResource> pokemonSpecies)
+      final List<NamedAPIResource> pokemonSpecies)
       : _descriptions = descriptions,
         _levels = levels,
         _pokemonSpecies = pokemonSpecies;
@@ -2267,6 +2299,7 @@ class _$_GrowthRate implements _GrowthRate {
   /// The descriptions of this characteristic listed in different languages.
   @override
   List<Description> get descriptions {
+    if (_descriptions is EqualUnmodifiableListView) return _descriptions;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_descriptions);
   }
@@ -2279,6 +2312,7 @@ class _$_GrowthRate implements _GrowthRate {
   /// based on this growth rate.
   @override
   List<GrowthRateExperienceLevel> get levels {
+    if (_levels is EqualUnmodifiableListView) return _levels;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_levels);
   }
@@ -2298,6 +2332,7 @@ class _$_GrowthRate implements _GrowthRate {
   @override
   @JsonKey(name: 'pokemon_species')
   List<NamedAPIResource> get pokemonSpecies {
+    if (_pokemonSpecies is EqualUnmodifiableListView) return _pokemonSpecies;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_pokemonSpecies);
   }
@@ -2312,9 +2347,9 @@ class _$_GrowthRate implements _GrowthRate {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_GrowthRate &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.name, name) &&
-            const DeepCollectionEquality().equals(other.formula, formula) &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.name, name) || other.name == name) &&
+            (identical(other.formula, formula) || other.formula == formula) &&
             const DeepCollectionEquality()
                 .equals(other._descriptions, _descriptions) &&
             const DeepCollectionEquality().equals(other._levels, _levels) &&
@@ -2326,15 +2361,16 @@ class _$_GrowthRate implements _GrowthRate {
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(name),
-      const DeepCollectionEquality().hash(formula),
+      id,
+      name,
+      formula,
       const DeepCollectionEquality().hash(_descriptions),
       const DeepCollectionEquality().hash(_levels),
       const DeepCollectionEquality().hash(_pokemonSpecies));
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_GrowthRateCopyWith<_$_GrowthRate> get copyWith =>
       __$$_GrowthRateCopyWithImpl<_$_GrowthRate>(this, _$identity);
 
@@ -2354,7 +2390,7 @@ abstract class _GrowthRate implements GrowthRate {
       final List<Description> descriptions,
       final List<GrowthRateExperienceLevel> levels,
       @JsonKey(name: 'pokemon_species')
-          final List<NamedAPIResource> pokemonSpecies) = _$_GrowthRate;
+      final List<NamedAPIResource> pokemonSpecies) = _$_GrowthRate;
 
   factory _GrowthRate.fromJson(Map<String, dynamic> json) =
       _$_GrowthRate.fromJson;
@@ -2418,34 +2454,38 @@ mixin _$GrowthRateExperienceLevel {
 abstract class $GrowthRateExperienceLevelCopyWith<$Res> {
   factory $GrowthRateExperienceLevelCopyWith(GrowthRateExperienceLevel value,
           $Res Function(GrowthRateExperienceLevel) then) =
-      _$GrowthRateExperienceLevelCopyWithImpl<$Res>;
+      _$GrowthRateExperienceLevelCopyWithImpl<$Res, GrowthRateExperienceLevel>;
+  @useResult
   $Res call({int level, int experience});
 }
 
 /// @nodoc
-class _$GrowthRateExperienceLevelCopyWithImpl<$Res>
+class _$GrowthRateExperienceLevelCopyWithImpl<$Res,
+        $Val extends GrowthRateExperienceLevel>
     implements $GrowthRateExperienceLevelCopyWith<$Res> {
   _$GrowthRateExperienceLevelCopyWithImpl(this._value, this._then);
 
-  final GrowthRateExperienceLevel _value;
   // ignore: unused_field
-  final $Res Function(GrowthRateExperienceLevel) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? level = freezed,
-    Object? experience = freezed,
+    Object? level = null,
+    Object? experience = null,
   }) {
     return _then(_value.copyWith(
-      level: level == freezed
+      level: null == level
           ? _value.level
           : level // ignore: cast_nullable_to_non_nullable
               as int,
-      experience: experience == freezed
+      experience: null == experience
           ? _value.experience
           : experience // ignore: cast_nullable_to_non_nullable
               as int,
-    ));
+    ) as $Val);
   }
 }
 
@@ -2457,33 +2497,32 @@ abstract class _$$_GrowthRateExperienceLevelCopyWith<$Res>
           $Res Function(_$_GrowthRateExperienceLevel) then) =
       __$$_GrowthRateExperienceLevelCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({int level, int experience});
 }
 
 /// @nodoc
 class __$$_GrowthRateExperienceLevelCopyWithImpl<$Res>
-    extends _$GrowthRateExperienceLevelCopyWithImpl<$Res>
+    extends _$GrowthRateExperienceLevelCopyWithImpl<$Res,
+        _$_GrowthRateExperienceLevel>
     implements _$$_GrowthRateExperienceLevelCopyWith<$Res> {
   __$$_GrowthRateExperienceLevelCopyWithImpl(
       _$_GrowthRateExperienceLevel _value,
       $Res Function(_$_GrowthRateExperienceLevel) _then)
-      : super(_value, (v) => _then(v as _$_GrowthRateExperienceLevel));
+      : super(_value, _then);
 
-  @override
-  _$_GrowthRateExperienceLevel get _value =>
-      super._value as _$_GrowthRateExperienceLevel;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? level = freezed,
-    Object? experience = freezed,
+    Object? level = null,
+    Object? experience = null,
   }) {
     return _then(_$_GrowthRateExperienceLevel(
-      level == freezed
+      null == level
           ? _value.level
           : level // ignore: cast_nullable_to_non_nullable
               as int,
-      experience == freezed
+      null == experience
           ? _value.experience
           : experience // ignore: cast_nullable_to_non_nullable
               as int,
@@ -2517,20 +2556,18 @@ class _$_GrowthRateExperienceLevel implements _GrowthRateExperienceLevel {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_GrowthRateExperienceLevel &&
-            const DeepCollectionEquality().equals(other.level, level) &&
-            const DeepCollectionEquality()
-                .equals(other.experience, experience));
+            (identical(other.level, level) || other.level == level) &&
+            (identical(other.experience, experience) ||
+                other.experience == experience));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(level),
-      const DeepCollectionEquality().hash(experience));
+  int get hashCode => Object.hash(runtimeType, level, experience);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_GrowthRateExperienceLevelCopyWith<_$_GrowthRateExperienceLevel>
       get copyWith => __$$_GrowthRateExperienceLevelCopyWithImpl<
           _$_GrowthRateExperienceLevel>(this, _$identity);
@@ -2630,22 +2667,19 @@ mixin _$Nature {
 /// @nodoc
 abstract class $NatureCopyWith<$Res> {
   factory $NatureCopyWith(Nature value, $Res Function(Nature) then) =
-      _$NatureCopyWithImpl<$Res>;
+      _$NatureCopyWithImpl<$Res, Nature>;
+  @useResult
   $Res call(
       {int id,
       String name,
-      @JsonKey(name: 'decreased_stat')
-          NamedAPIResource? decreasedStat,
-      @JsonKey(name: 'increased_stat')
-          NamedAPIResource? increasedStat,
-      @JsonKey(name: 'hates_flavor')
-          NamedAPIResource? hatesFlavor,
-      @JsonKey(name: 'likes_flavor')
-          NamedAPIResource? likesFlavor,
+      @JsonKey(name: 'decreased_stat') NamedAPIResource? decreasedStat,
+      @JsonKey(name: 'increased_stat') NamedAPIResource? increasedStat,
+      @JsonKey(name: 'hates_flavor') NamedAPIResource? hatesFlavor,
+      @JsonKey(name: 'likes_flavor') NamedAPIResource? likesFlavor,
       @JsonKey(name: 'pokeathlon_stat_changes')
-          List<NatureStatChange> pokeathlonStatChanges,
+      List<NatureStatChange> pokeathlonStatChanges,
       @JsonKey(name: 'move_battle_style_preferences')
-          List<MoveBattleStylePreference> moveBattleStylePreferences,
+      List<MoveBattleStylePreference> moveBattleStylePreferences,
       List<Name> names});
 
   $NamedAPIResourceCopyWith<$Res>? get decreasedStat;
@@ -2655,106 +2689,113 @@ abstract class $NatureCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$NatureCopyWithImpl<$Res> implements $NatureCopyWith<$Res> {
+class _$NatureCopyWithImpl<$Res, $Val extends Nature>
+    implements $NatureCopyWith<$Res> {
   _$NatureCopyWithImpl(this._value, this._then);
 
-  final Nature _value;
   // ignore: unused_field
-  final $Res Function(Nature) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
+    Object? id = null,
+    Object? name = null,
     Object? decreasedStat = freezed,
     Object? increasedStat = freezed,
     Object? hatesFlavor = freezed,
     Object? likesFlavor = freezed,
-    Object? pokeathlonStatChanges = freezed,
-    Object? moveBattleStylePreferences = freezed,
-    Object? names = freezed,
+    Object? pokeathlonStatChanges = null,
+    Object? moveBattleStylePreferences = null,
+    Object? names = null,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      name: name == freezed
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      decreasedStat: decreasedStat == freezed
+      decreasedStat: freezed == decreasedStat
           ? _value.decreasedStat
           : decreasedStat // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource?,
-      increasedStat: increasedStat == freezed
+      increasedStat: freezed == increasedStat
           ? _value.increasedStat
           : increasedStat // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource?,
-      hatesFlavor: hatesFlavor == freezed
+      hatesFlavor: freezed == hatesFlavor
           ? _value.hatesFlavor
           : hatesFlavor // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource?,
-      likesFlavor: likesFlavor == freezed
+      likesFlavor: freezed == likesFlavor
           ? _value.likesFlavor
           : likesFlavor // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource?,
-      pokeathlonStatChanges: pokeathlonStatChanges == freezed
+      pokeathlonStatChanges: null == pokeathlonStatChanges
           ? _value.pokeathlonStatChanges
           : pokeathlonStatChanges // ignore: cast_nullable_to_non_nullable
               as List<NatureStatChange>,
-      moveBattleStylePreferences: moveBattleStylePreferences == freezed
+      moveBattleStylePreferences: null == moveBattleStylePreferences
           ? _value.moveBattleStylePreferences
           : moveBattleStylePreferences // ignore: cast_nullable_to_non_nullable
               as List<MoveBattleStylePreference>,
-      names: names == freezed
+      names: null == names
           ? _value.names
           : names // ignore: cast_nullable_to_non_nullable
               as List<Name>,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $NamedAPIResourceCopyWith<$Res>? get decreasedStat {
     if (_value.decreasedStat == null) {
       return null;
     }
 
     return $NamedAPIResourceCopyWith<$Res>(_value.decreasedStat!, (value) {
-      return _then(_value.copyWith(decreasedStat: value));
+      return _then(_value.copyWith(decreasedStat: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $NamedAPIResourceCopyWith<$Res>? get increasedStat {
     if (_value.increasedStat == null) {
       return null;
     }
 
     return $NamedAPIResourceCopyWith<$Res>(_value.increasedStat!, (value) {
-      return _then(_value.copyWith(increasedStat: value));
+      return _then(_value.copyWith(increasedStat: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $NamedAPIResourceCopyWith<$Res>? get hatesFlavor {
     if (_value.hatesFlavor == null) {
       return null;
     }
 
     return $NamedAPIResourceCopyWith<$Res>(_value.hatesFlavor!, (value) {
-      return _then(_value.copyWith(hatesFlavor: value));
+      return _then(_value.copyWith(hatesFlavor: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $NamedAPIResourceCopyWith<$Res>? get likesFlavor {
     if (_value.likesFlavor == null) {
       return null;
     }
 
     return $NamedAPIResourceCopyWith<$Res>(_value.likesFlavor!, (value) {
-      return _then(_value.copyWith(likesFlavor: value));
+      return _then(_value.copyWith(likesFlavor: value) as $Val);
     });
   }
 }
@@ -2764,21 +2805,18 @@ abstract class _$$_NatureCopyWith<$Res> implements $NatureCopyWith<$Res> {
   factory _$$_NatureCopyWith(_$_Nature value, $Res Function(_$_Nature) then) =
       __$$_NatureCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {int id,
       String name,
-      @JsonKey(name: 'decreased_stat')
-          NamedAPIResource? decreasedStat,
-      @JsonKey(name: 'increased_stat')
-          NamedAPIResource? increasedStat,
-      @JsonKey(name: 'hates_flavor')
-          NamedAPIResource? hatesFlavor,
-      @JsonKey(name: 'likes_flavor')
-          NamedAPIResource? likesFlavor,
+      @JsonKey(name: 'decreased_stat') NamedAPIResource? decreasedStat,
+      @JsonKey(name: 'increased_stat') NamedAPIResource? increasedStat,
+      @JsonKey(name: 'hates_flavor') NamedAPIResource? hatesFlavor,
+      @JsonKey(name: 'likes_flavor') NamedAPIResource? likesFlavor,
       @JsonKey(name: 'pokeathlon_stat_changes')
-          List<NatureStatChange> pokeathlonStatChanges,
+      List<NatureStatChange> pokeathlonStatChanges,
       @JsonKey(name: 'move_battle_style_preferences')
-          List<MoveBattleStylePreference> moveBattleStylePreferences,
+      List<MoveBattleStylePreference> moveBattleStylePreferences,
       List<Name> names});
 
   @override
@@ -2792,60 +2830,59 @@ abstract class _$$_NatureCopyWith<$Res> implements $NatureCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$_NatureCopyWithImpl<$Res> extends _$NatureCopyWithImpl<$Res>
+class __$$_NatureCopyWithImpl<$Res>
+    extends _$NatureCopyWithImpl<$Res, _$_Nature>
     implements _$$_NatureCopyWith<$Res> {
   __$$_NatureCopyWithImpl(_$_Nature _value, $Res Function(_$_Nature) _then)
-      : super(_value, (v) => _then(v as _$_Nature));
+      : super(_value, _then);
 
-  @override
-  _$_Nature get _value => super._value as _$_Nature;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
+    Object? id = null,
+    Object? name = null,
     Object? decreasedStat = freezed,
     Object? increasedStat = freezed,
     Object? hatesFlavor = freezed,
     Object? likesFlavor = freezed,
-    Object? pokeathlonStatChanges = freezed,
-    Object? moveBattleStylePreferences = freezed,
-    Object? names = freezed,
+    Object? pokeathlonStatChanges = null,
+    Object? moveBattleStylePreferences = null,
+    Object? names = null,
   }) {
     return _then(_$_Nature(
-      id == freezed
+      null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      name == freezed
+      null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      decreasedStat == freezed
+      freezed == decreasedStat
           ? _value.decreasedStat
           : decreasedStat // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource?,
-      increasedStat == freezed
+      freezed == increasedStat
           ? _value.increasedStat
           : increasedStat // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource?,
-      hatesFlavor == freezed
+      freezed == hatesFlavor
           ? _value.hatesFlavor
           : hatesFlavor // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource?,
-      likesFlavor == freezed
+      freezed == likesFlavor
           ? _value.likesFlavor
           : likesFlavor // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource?,
-      pokeathlonStatChanges == freezed
+      null == pokeathlonStatChanges
           ? _value._pokeathlonStatChanges
           : pokeathlonStatChanges // ignore: cast_nullable_to_non_nullable
               as List<NatureStatChange>,
-      moveBattleStylePreferences == freezed
+      null == moveBattleStylePreferences
           ? _value._moveBattleStylePreferences
           : moveBattleStylePreferences // ignore: cast_nullable_to_non_nullable
               as List<MoveBattleStylePreference>,
-      names == freezed
+      null == names
           ? _value._names
           : names // ignore: cast_nullable_to_non_nullable
               as List<Name>,
@@ -2859,18 +2896,14 @@ class _$_Nature implements _Nature {
   const _$_Nature(
       this.id,
       this.name,
-      @JsonKey(name: 'decreased_stat')
-          this.decreasedStat,
-      @JsonKey(name: 'increased_stat')
-          this.increasedStat,
-      @JsonKey(name: 'hates_flavor')
-          this.hatesFlavor,
-      @JsonKey(name: 'likes_flavor')
-          this.likesFlavor,
+      @JsonKey(name: 'decreased_stat') this.decreasedStat,
+      @JsonKey(name: 'increased_stat') this.increasedStat,
+      @JsonKey(name: 'hates_flavor') this.hatesFlavor,
+      @JsonKey(name: 'likes_flavor') this.likesFlavor,
       @JsonKey(name: 'pokeathlon_stat_changes')
-          final List<NatureStatChange> pokeathlonStatChanges,
+      final List<NatureStatChange> pokeathlonStatChanges,
       @JsonKey(name: 'move_battle_style_preferences')
-          final List<MoveBattleStylePreference> moveBattleStylePreferences,
+      final List<MoveBattleStylePreference> moveBattleStylePreferences,
       final List<Name> names)
       : _pokeathlonStatChanges = pokeathlonStatChanges,
         _moveBattleStylePreferences = moveBattleStylePreferences,
@@ -2930,6 +2963,8 @@ class _$_Nature implements _Nature {
   @override
   @JsonKey(name: 'pokeathlon_stat_changes')
   List<NatureStatChange> get pokeathlonStatChanges {
+    if (_pokeathlonStatChanges is EqualUnmodifiableListView)
+      return _pokeathlonStatChanges;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_pokeathlonStatChanges);
   }
@@ -2943,6 +2978,8 @@ class _$_Nature implements _Nature {
   @override
   @JsonKey(name: 'move_battle_style_preferences')
   List<MoveBattleStylePreference> get moveBattleStylePreferences {
+    if (_moveBattleStylePreferences is EqualUnmodifiableListView)
+      return _moveBattleStylePreferences;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_moveBattleStylePreferences);
   }
@@ -2953,6 +2990,7 @@ class _$_Nature implements _Nature {
   /// The name of this resource listed in different languages.
   @override
   List<Name> get names {
+    if (_names is EqualUnmodifiableListView) return _names;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_names);
   }
@@ -2967,16 +3005,16 @@ class _$_Nature implements _Nature {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_Nature &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.name, name) &&
-            const DeepCollectionEquality()
-                .equals(other.decreasedStat, decreasedStat) &&
-            const DeepCollectionEquality()
-                .equals(other.increasedStat, increasedStat) &&
-            const DeepCollectionEquality()
-                .equals(other.hatesFlavor, hatesFlavor) &&
-            const DeepCollectionEquality()
-                .equals(other.likesFlavor, likesFlavor) &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.name, name) || other.name == name) &&
+            (identical(other.decreasedStat, decreasedStat) ||
+                other.decreasedStat == decreasedStat) &&
+            (identical(other.increasedStat, increasedStat) ||
+                other.increasedStat == increasedStat) &&
+            (identical(other.hatesFlavor, hatesFlavor) ||
+                other.hatesFlavor == hatesFlavor) &&
+            (identical(other.likesFlavor, likesFlavor) ||
+                other.likesFlavor == likesFlavor) &&
             const DeepCollectionEquality()
                 .equals(other._pokeathlonStatChanges, _pokeathlonStatChanges) &&
             const DeepCollectionEquality().equals(
@@ -2989,18 +3027,19 @@ class _$_Nature implements _Nature {
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(name),
-      const DeepCollectionEquality().hash(decreasedStat),
-      const DeepCollectionEquality().hash(increasedStat),
-      const DeepCollectionEquality().hash(hatesFlavor),
-      const DeepCollectionEquality().hash(likesFlavor),
+      id,
+      name,
+      decreasedStat,
+      increasedStat,
+      hatesFlavor,
+      likesFlavor,
       const DeepCollectionEquality().hash(_pokeathlonStatChanges),
       const DeepCollectionEquality().hash(_moveBattleStylePreferences),
       const DeepCollectionEquality().hash(_names));
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_NatureCopyWith<_$_Nature> get copyWith =>
       __$$_NatureCopyWithImpl<_$_Nature>(this, _$identity);
 
@@ -3016,18 +3055,14 @@ abstract class _Nature implements Nature {
   const factory _Nature(
       final int id,
       final String name,
-      @JsonKey(name: 'decreased_stat')
-          final NamedAPIResource? decreasedStat,
-      @JsonKey(name: 'increased_stat')
-          final NamedAPIResource? increasedStat,
-      @JsonKey(name: 'hates_flavor')
-          final NamedAPIResource? hatesFlavor,
-      @JsonKey(name: 'likes_flavor')
-          final NamedAPIResource? likesFlavor,
+      @JsonKey(name: 'decreased_stat') final NamedAPIResource? decreasedStat,
+      @JsonKey(name: 'increased_stat') final NamedAPIResource? increasedStat,
+      @JsonKey(name: 'hates_flavor') final NamedAPIResource? hatesFlavor,
+      @JsonKey(name: 'likes_flavor') final NamedAPIResource? likesFlavor,
       @JsonKey(name: 'pokeathlon_stat_changes')
-          final List<NatureStatChange> pokeathlonStatChanges,
+      final List<NatureStatChange> pokeathlonStatChanges,
       @JsonKey(name: 'move_battle_style_preferences')
-          final List<MoveBattleStylePreference> moveBattleStylePreferences,
+      final List<MoveBattleStylePreference> moveBattleStylePreferences,
       final List<Name> names) = _$_Nature;
 
   factory _Nature.fromJson(Map<String, dynamic> json) = _$_Nature.fromJson;
@@ -3125,7 +3160,8 @@ mixin _$NatureStatChange {
 abstract class $NatureStatChangeCopyWith<$Res> {
   factory $NatureStatChangeCopyWith(
           NatureStatChange value, $Res Function(NatureStatChange) then) =
-      _$NatureStatChangeCopyWithImpl<$Res>;
+      _$NatureStatChangeCopyWithImpl<$Res, NatureStatChange>;
+  @useResult
   $Res call(
       {@JsonKey(name: 'max_change') int maxChange,
       @JsonKey(name: 'pokeathlon_stat') NamedAPIResource pokeathlonStat});
@@ -3134,35 +3170,38 @@ abstract class $NatureStatChangeCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$NatureStatChangeCopyWithImpl<$Res>
+class _$NatureStatChangeCopyWithImpl<$Res, $Val extends NatureStatChange>
     implements $NatureStatChangeCopyWith<$Res> {
   _$NatureStatChangeCopyWithImpl(this._value, this._then);
 
-  final NatureStatChange _value;
   // ignore: unused_field
-  final $Res Function(NatureStatChange) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? maxChange = freezed,
-    Object? pokeathlonStat = freezed,
+    Object? maxChange = null,
+    Object? pokeathlonStat = null,
   }) {
     return _then(_value.copyWith(
-      maxChange: maxChange == freezed
+      maxChange: null == maxChange
           ? _value.maxChange
           : maxChange // ignore: cast_nullable_to_non_nullable
               as int,
-      pokeathlonStat: pokeathlonStat == freezed
+      pokeathlonStat: null == pokeathlonStat
           ? _value.pokeathlonStat
           : pokeathlonStat // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $NamedAPIResourceCopyWith<$Res> get pokeathlonStat {
     return $NamedAPIResourceCopyWith<$Res>(_value.pokeathlonStat, (value) {
-      return _then(_value.copyWith(pokeathlonStat: value));
+      return _then(_value.copyWith(pokeathlonStat: value) as $Val);
     });
   }
 }
@@ -3174,6 +3213,7 @@ abstract class _$$_NatureStatChangeCopyWith<$Res>
           _$_NatureStatChange value, $Res Function(_$_NatureStatChange) then) =
       __$$_NatureStatChangeCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@JsonKey(name: 'max_change') int maxChange,
       @JsonKey(name: 'pokeathlon_stat') NamedAPIResource pokeathlonStat});
@@ -3184,26 +3224,24 @@ abstract class _$$_NatureStatChangeCopyWith<$Res>
 
 /// @nodoc
 class __$$_NatureStatChangeCopyWithImpl<$Res>
-    extends _$NatureStatChangeCopyWithImpl<$Res>
+    extends _$NatureStatChangeCopyWithImpl<$Res, _$_NatureStatChange>
     implements _$$_NatureStatChangeCopyWith<$Res> {
   __$$_NatureStatChangeCopyWithImpl(
       _$_NatureStatChange _value, $Res Function(_$_NatureStatChange) _then)
-      : super(_value, (v) => _then(v as _$_NatureStatChange));
+      : super(_value, _then);
 
-  @override
-  _$_NatureStatChange get _value => super._value as _$_NatureStatChange;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? maxChange = freezed,
-    Object? pokeathlonStat = freezed,
+    Object? maxChange = null,
+    Object? pokeathlonStat = null,
   }) {
     return _then(_$_NatureStatChange(
-      maxChange == freezed
+      null == maxChange
           ? _value.maxChange
           : maxChange // ignore: cast_nullable_to_non_nullable
               as int,
-      pokeathlonStat == freezed
+      null == pokeathlonStat
           ? _value.pokeathlonStat
           : pokeathlonStat // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
@@ -3244,20 +3282,19 @@ class _$_NatureStatChange implements _NatureStatChange {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_NatureStatChange &&
-            const DeepCollectionEquality().equals(other.maxChange, maxChange) &&
-            const DeepCollectionEquality()
-                .equals(other.pokeathlonStat, pokeathlonStat));
+            (identical(other.maxChange, maxChange) ||
+                other.maxChange == maxChange) &&
+            (identical(other.pokeathlonStat, pokeathlonStat) ||
+                other.pokeathlonStat == pokeathlonStat));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(maxChange),
-      const DeepCollectionEquality().hash(pokeathlonStat));
+  int get hashCode => Object.hash(runtimeType, maxChange, pokeathlonStat);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_NatureStatChangeCopyWith<_$_NatureStatChange> get copyWith =>
       __$$_NatureStatChangeCopyWithImpl<_$_NatureStatChange>(this, _$identity);
 
@@ -3271,10 +3308,9 @@ class _$_NatureStatChange implements _NatureStatChange {
 
 abstract class _NatureStatChange implements NatureStatChange {
   const factory _NatureStatChange(
-      @JsonKey(name: 'max_change')
-          final int maxChange,
+      @JsonKey(name: 'max_change') final int maxChange,
       @JsonKey(name: 'pokeathlon_stat')
-          final NamedAPIResource pokeathlonStat) = _$_NatureStatChange;
+      final NamedAPIResource pokeathlonStat) = _$_NatureStatChange;
 
   factory _NatureStatChange.fromJson(Map<String, dynamic> json) =
       _$_NatureStatChange.fromJson;
@@ -3332,7 +3368,8 @@ mixin _$MoveBattleStylePreference {
 abstract class $MoveBattleStylePreferenceCopyWith<$Res> {
   factory $MoveBattleStylePreferenceCopyWith(MoveBattleStylePreference value,
           $Res Function(MoveBattleStylePreference) then) =
-      _$MoveBattleStylePreferenceCopyWithImpl<$Res>;
+      _$MoveBattleStylePreferenceCopyWithImpl<$Res, MoveBattleStylePreference>;
+  @useResult
   $Res call(
       {@JsonKey(name: 'low_hp_preference') int lowHpPreference,
       @JsonKey(name: 'high_hp_preference') int highHpPreference,
@@ -3342,40 +3379,44 @@ abstract class $MoveBattleStylePreferenceCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$MoveBattleStylePreferenceCopyWithImpl<$Res>
+class _$MoveBattleStylePreferenceCopyWithImpl<$Res,
+        $Val extends MoveBattleStylePreference>
     implements $MoveBattleStylePreferenceCopyWith<$Res> {
   _$MoveBattleStylePreferenceCopyWithImpl(this._value, this._then);
 
-  final MoveBattleStylePreference _value;
   // ignore: unused_field
-  final $Res Function(MoveBattleStylePreference) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? lowHpPreference = freezed,
-    Object? highHpPreference = freezed,
-    Object? moveBattleStyle = freezed,
+    Object? lowHpPreference = null,
+    Object? highHpPreference = null,
+    Object? moveBattleStyle = null,
   }) {
     return _then(_value.copyWith(
-      lowHpPreference: lowHpPreference == freezed
+      lowHpPreference: null == lowHpPreference
           ? _value.lowHpPreference
           : lowHpPreference // ignore: cast_nullable_to_non_nullable
               as int,
-      highHpPreference: highHpPreference == freezed
+      highHpPreference: null == highHpPreference
           ? _value.highHpPreference
           : highHpPreference // ignore: cast_nullable_to_non_nullable
               as int,
-      moveBattleStyle: moveBattleStyle == freezed
+      moveBattleStyle: null == moveBattleStyle
           ? _value.moveBattleStyle
           : moveBattleStyle // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $NamedAPIResourceCopyWith<$Res> get moveBattleStyle {
     return $NamedAPIResourceCopyWith<$Res>(_value.moveBattleStyle, (value) {
-      return _then(_value.copyWith(moveBattleStyle: value));
+      return _then(_value.copyWith(moveBattleStyle: value) as $Val);
     });
   }
 }
@@ -3388,6 +3429,7 @@ abstract class _$$_MoveBattleStylePreferenceCopyWith<$Res>
           $Res Function(_$_MoveBattleStylePreference) then) =
       __$$_MoveBattleStylePreferenceCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@JsonKey(name: 'low_hp_preference') int lowHpPreference,
       @JsonKey(name: 'high_hp_preference') int highHpPreference,
@@ -3399,33 +3441,31 @@ abstract class _$$_MoveBattleStylePreferenceCopyWith<$Res>
 
 /// @nodoc
 class __$$_MoveBattleStylePreferenceCopyWithImpl<$Res>
-    extends _$MoveBattleStylePreferenceCopyWithImpl<$Res>
+    extends _$MoveBattleStylePreferenceCopyWithImpl<$Res,
+        _$_MoveBattleStylePreference>
     implements _$$_MoveBattleStylePreferenceCopyWith<$Res> {
   __$$_MoveBattleStylePreferenceCopyWithImpl(
       _$_MoveBattleStylePreference _value,
       $Res Function(_$_MoveBattleStylePreference) _then)
-      : super(_value, (v) => _then(v as _$_MoveBattleStylePreference));
+      : super(_value, _then);
 
-  @override
-  _$_MoveBattleStylePreference get _value =>
-      super._value as _$_MoveBattleStylePreference;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? lowHpPreference = freezed,
-    Object? highHpPreference = freezed,
-    Object? moveBattleStyle = freezed,
+    Object? lowHpPreference = null,
+    Object? highHpPreference = null,
+    Object? moveBattleStyle = null,
   }) {
     return _then(_$_MoveBattleStylePreference(
-      lowHpPreference == freezed
+      null == lowHpPreference
           ? _value.lowHpPreference
           : lowHpPreference // ignore: cast_nullable_to_non_nullable
               as int,
-      highHpPreference == freezed
+      null == highHpPreference
           ? _value.highHpPreference
           : highHpPreference // ignore: cast_nullable_to_non_nullable
               as int,
-      moveBattleStyle == freezed
+      null == moveBattleStyle
           ? _value.moveBattleStyle
           : moveBattleStyle // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
@@ -3473,24 +3513,22 @@ class _$_MoveBattleStylePreference implements _MoveBattleStylePreference {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_MoveBattleStylePreference &&
-            const DeepCollectionEquality()
-                .equals(other.lowHpPreference, lowHpPreference) &&
-            const DeepCollectionEquality()
-                .equals(other.highHpPreference, highHpPreference) &&
-            const DeepCollectionEquality()
-                .equals(other.moveBattleStyle, moveBattleStyle));
+            (identical(other.lowHpPreference, lowHpPreference) ||
+                other.lowHpPreference == lowHpPreference) &&
+            (identical(other.highHpPreference, highHpPreference) ||
+                other.highHpPreference == highHpPreference) &&
+            (identical(other.moveBattleStyle, moveBattleStyle) ||
+                other.moveBattleStyle == moveBattleStyle));
   }
 
   @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(lowHpPreference),
-      const DeepCollectionEquality().hash(highHpPreference),
-      const DeepCollectionEquality().hash(moveBattleStyle));
+      runtimeType, lowHpPreference, highHpPreference, moveBattleStyle);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_MoveBattleStylePreferenceCopyWith<_$_MoveBattleStylePreference>
       get copyWith => __$$_MoveBattleStylePreferenceCopyWithImpl<
           _$_MoveBattleStylePreference>(this, _$identity);
@@ -3505,13 +3543,10 @@ class _$_MoveBattleStylePreference implements _MoveBattleStylePreference {
 
 abstract class _MoveBattleStylePreference implements MoveBattleStylePreference {
   const factory _MoveBattleStylePreference(
-          @JsonKey(name: 'low_hp_preference')
-              final int lowHpPreference,
-          @JsonKey(name: 'high_hp_preference')
-              final int highHpPreference,
-          @JsonKey(name: 'move_battle_style')
-              final NamedAPIResource moveBattleStyle) =
-      _$_MoveBattleStylePreference;
+      @JsonKey(name: 'low_hp_preference') final int lowHpPreference,
+      @JsonKey(name: 'high_hp_preference') final int highHpPreference,
+      @JsonKey(name: 'move_battle_style')
+      final NamedAPIResource moveBattleStyle) = _$_MoveBattleStylePreference;
 
   factory _MoveBattleStylePreference.fromJson(Map<String, dynamic> json) =
       _$_MoveBattleStylePreference.fromJson;
@@ -3571,58 +3606,62 @@ mixin _$PokeathlonStat {
 abstract class $PokeathlonStatCopyWith<$Res> {
   factory $PokeathlonStatCopyWith(
           PokeathlonStat value, $Res Function(PokeathlonStat) then) =
-      _$PokeathlonStatCopyWithImpl<$Res>;
+      _$PokeathlonStatCopyWithImpl<$Res, PokeathlonStat>;
+  @useResult
   $Res call(
       {int id,
       String name,
       List<Name> names,
       @JsonKey(name: 'affecting_natures')
-          NaturePokeathlonStatAffectSets affectingNatures});
+      NaturePokeathlonStatAffectSets affectingNatures});
 
   $NaturePokeathlonStatAffectSetsCopyWith<$Res> get affectingNatures;
 }
 
 /// @nodoc
-class _$PokeathlonStatCopyWithImpl<$Res>
+class _$PokeathlonStatCopyWithImpl<$Res, $Val extends PokeathlonStat>
     implements $PokeathlonStatCopyWith<$Res> {
   _$PokeathlonStatCopyWithImpl(this._value, this._then);
 
-  final PokeathlonStat _value;
   // ignore: unused_field
-  final $Res Function(PokeathlonStat) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? names = freezed,
-    Object? affectingNatures = freezed,
+    Object? id = null,
+    Object? name = null,
+    Object? names = null,
+    Object? affectingNatures = null,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      name: name == freezed
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      names: names == freezed
+      names: null == names
           ? _value.names
           : names // ignore: cast_nullable_to_non_nullable
               as List<Name>,
-      affectingNatures: affectingNatures == freezed
+      affectingNatures: null == affectingNatures
           ? _value.affectingNatures
           : affectingNatures // ignore: cast_nullable_to_non_nullable
               as NaturePokeathlonStatAffectSets,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $NaturePokeathlonStatAffectSetsCopyWith<$Res> get affectingNatures {
     return $NaturePokeathlonStatAffectSetsCopyWith<$Res>(
         _value.affectingNatures, (value) {
-      return _then(_value.copyWith(affectingNatures: value));
+      return _then(_value.copyWith(affectingNatures: value) as $Val);
     });
   }
 }
@@ -3634,12 +3673,13 @@ abstract class _$$_PokeathlonStatCopyWith<$Res>
           _$_PokeathlonStat value, $Res Function(_$_PokeathlonStat) then) =
       __$$_PokeathlonStatCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {int id,
       String name,
       List<Name> names,
       @JsonKey(name: 'affecting_natures')
-          NaturePokeathlonStatAffectSets affectingNatures});
+      NaturePokeathlonStatAffectSets affectingNatures});
 
   @override
   $NaturePokeathlonStatAffectSetsCopyWith<$Res> get affectingNatures;
@@ -3647,36 +3687,34 @@ abstract class _$$_PokeathlonStatCopyWith<$Res>
 
 /// @nodoc
 class __$$_PokeathlonStatCopyWithImpl<$Res>
-    extends _$PokeathlonStatCopyWithImpl<$Res>
+    extends _$PokeathlonStatCopyWithImpl<$Res, _$_PokeathlonStat>
     implements _$$_PokeathlonStatCopyWith<$Res> {
   __$$_PokeathlonStatCopyWithImpl(
       _$_PokeathlonStat _value, $Res Function(_$_PokeathlonStat) _then)
-      : super(_value, (v) => _then(v as _$_PokeathlonStat));
+      : super(_value, _then);
 
-  @override
-  _$_PokeathlonStat get _value => super._value as _$_PokeathlonStat;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? names = freezed,
-    Object? affectingNatures = freezed,
+    Object? id = null,
+    Object? name = null,
+    Object? names = null,
+    Object? affectingNatures = null,
   }) {
     return _then(_$_PokeathlonStat(
-      id == freezed
+      null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      name == freezed
+      null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      names == freezed
+      null == names
           ? _value._names
           : names // ignore: cast_nullable_to_non_nullable
               as List<Name>,
-      affectingNatures == freezed
+      null == affectingNatures
           ? _value.affectingNatures
           : affectingNatures // ignore: cast_nullable_to_non_nullable
               as NaturePokeathlonStatAffectSets,
@@ -3708,6 +3746,7 @@ class _$_PokeathlonStat implements _PokeathlonStat {
   /// The name of this resource listed in different languages.
   @override
   List<Name> get names {
+    if (_names is EqualUnmodifiableListView) return _names;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_names);
   }
@@ -3727,24 +3766,21 @@ class _$_PokeathlonStat implements _PokeathlonStat {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_PokeathlonStat &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.name, name) &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.name, name) || other.name == name) &&
             const DeepCollectionEquality().equals(other._names, _names) &&
-            const DeepCollectionEquality()
-                .equals(other.affectingNatures, affectingNatures));
+            (identical(other.affectingNatures, affectingNatures) ||
+                other.affectingNatures == affectingNatures));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(name),
-      const DeepCollectionEquality().hash(_names),
-      const DeepCollectionEquality().hash(affectingNatures));
+  int get hashCode => Object.hash(runtimeType, id, name,
+      const DeepCollectionEquality().hash(_names), affectingNatures);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_PokeathlonStatCopyWith<_$_PokeathlonStat> get copyWith =>
       __$$_PokeathlonStatCopyWithImpl<_$_PokeathlonStat>(this, _$identity);
 
@@ -3762,7 +3798,7 @@ abstract class _PokeathlonStat implements PokeathlonStat {
           final String name,
           final List<Name> names,
           @JsonKey(name: 'affecting_natures')
-              final NaturePokeathlonStatAffectSets affectingNatures) =
+          final NaturePokeathlonStatAffectSets affectingNatures) =
       _$_PokeathlonStat;
 
   factory _PokeathlonStat.fromJson(Map<String, dynamic> json) =
@@ -3817,36 +3853,41 @@ abstract class $NaturePokeathlonStatAffectSetsCopyWith<$Res> {
   factory $NaturePokeathlonStatAffectSetsCopyWith(
           NaturePokeathlonStatAffectSets value,
           $Res Function(NaturePokeathlonStatAffectSets) then) =
-      _$NaturePokeathlonStatAffectSetsCopyWithImpl<$Res>;
+      _$NaturePokeathlonStatAffectSetsCopyWithImpl<$Res,
+          NaturePokeathlonStatAffectSets>;
+  @useResult
   $Res call(
       {List<NaturePokeathlonStatAffect> increase,
       List<NaturePokeathlonStatAffect> decrease});
 }
 
 /// @nodoc
-class _$NaturePokeathlonStatAffectSetsCopyWithImpl<$Res>
+class _$NaturePokeathlonStatAffectSetsCopyWithImpl<$Res,
+        $Val extends NaturePokeathlonStatAffectSets>
     implements $NaturePokeathlonStatAffectSetsCopyWith<$Res> {
   _$NaturePokeathlonStatAffectSetsCopyWithImpl(this._value, this._then);
 
-  final NaturePokeathlonStatAffectSets _value;
   // ignore: unused_field
-  final $Res Function(NaturePokeathlonStatAffectSets) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? increase = freezed,
-    Object? decrease = freezed,
+    Object? increase = null,
+    Object? decrease = null,
   }) {
     return _then(_value.copyWith(
-      increase: increase == freezed
+      increase: null == increase
           ? _value.increase
           : increase // ignore: cast_nullable_to_non_nullable
               as List<NaturePokeathlonStatAffect>,
-      decrease: decrease == freezed
+      decrease: null == decrease
           ? _value.decrease
           : decrease // ignore: cast_nullable_to_non_nullable
               as List<NaturePokeathlonStatAffect>,
-    ));
+    ) as $Val);
   }
 }
 
@@ -3858,6 +3899,7 @@ abstract class _$$_NaturePokeathlonStatAffectSetsCopyWith<$Res>
           $Res Function(_$_NaturePokeathlonStatAffectSets) then) =
       __$$_NaturePokeathlonStatAffectSetsCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {List<NaturePokeathlonStatAffect> increase,
       List<NaturePokeathlonStatAffect> decrease});
@@ -3865,28 +3907,26 @@ abstract class _$$_NaturePokeathlonStatAffectSetsCopyWith<$Res>
 
 /// @nodoc
 class __$$_NaturePokeathlonStatAffectSetsCopyWithImpl<$Res>
-    extends _$NaturePokeathlonStatAffectSetsCopyWithImpl<$Res>
+    extends _$NaturePokeathlonStatAffectSetsCopyWithImpl<$Res,
+        _$_NaturePokeathlonStatAffectSets>
     implements _$$_NaturePokeathlonStatAffectSetsCopyWith<$Res> {
   __$$_NaturePokeathlonStatAffectSetsCopyWithImpl(
       _$_NaturePokeathlonStatAffectSets _value,
       $Res Function(_$_NaturePokeathlonStatAffectSets) _then)
-      : super(_value, (v) => _then(v as _$_NaturePokeathlonStatAffectSets));
+      : super(_value, _then);
 
-  @override
-  _$_NaturePokeathlonStatAffectSets get _value =>
-      super._value as _$_NaturePokeathlonStatAffectSets;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? increase = freezed,
-    Object? decrease = freezed,
+    Object? increase = null,
+    Object? decrease = null,
   }) {
     return _then(_$_NaturePokeathlonStatAffectSets(
-      increase == freezed
+      null == increase
           ? _value._increase
           : increase // ignore: cast_nullable_to_non_nullable
               as List<NaturePokeathlonStatAffect>,
-      decrease == freezed
+      null == decrease
           ? _value._decrease
           : decrease // ignore: cast_nullable_to_non_nullable
               as List<NaturePokeathlonStatAffect>,
@@ -3914,6 +3954,7 @@ class _$_NaturePokeathlonStatAffectSets
   /// A list of natures and how they change the referenced Pokéathlon stat.
   @override
   List<NaturePokeathlonStatAffect> get increase {
+    if (_increase is EqualUnmodifiableListView) return _increase;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_increase);
   }
@@ -3924,6 +3965,7 @@ class _$_NaturePokeathlonStatAffectSets
   /// A list of natures and how they change the referenced Pokéathlon stat.
   @override
   List<NaturePokeathlonStatAffect> get decrease {
+    if (_decrease is EqualUnmodifiableListView) return _decrease;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_decrease);
   }
@@ -3951,6 +3993,7 @@ class _$_NaturePokeathlonStatAffectSets
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_NaturePokeathlonStatAffectSetsCopyWith<_$_NaturePokeathlonStatAffectSets>
       get copyWith => __$$_NaturePokeathlonStatAffectSetsCopyWithImpl<
           _$_NaturePokeathlonStatAffectSets>(this, _$identity);
@@ -4015,7 +4058,9 @@ mixin _$NaturePokeathlonStatAffect {
 abstract class $NaturePokeathlonStatAffectCopyWith<$Res> {
   factory $NaturePokeathlonStatAffectCopyWith(NaturePokeathlonStatAffect value,
           $Res Function(NaturePokeathlonStatAffect) then) =
-      _$NaturePokeathlonStatAffectCopyWithImpl<$Res>;
+      _$NaturePokeathlonStatAffectCopyWithImpl<$Res,
+          NaturePokeathlonStatAffect>;
+  @useResult
   $Res call(
       {@JsonKey(name: 'max_change') int maxChange, NamedAPIResource nature});
 
@@ -4023,35 +4068,39 @@ abstract class $NaturePokeathlonStatAffectCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$NaturePokeathlonStatAffectCopyWithImpl<$Res>
+class _$NaturePokeathlonStatAffectCopyWithImpl<$Res,
+        $Val extends NaturePokeathlonStatAffect>
     implements $NaturePokeathlonStatAffectCopyWith<$Res> {
   _$NaturePokeathlonStatAffectCopyWithImpl(this._value, this._then);
 
-  final NaturePokeathlonStatAffect _value;
   // ignore: unused_field
-  final $Res Function(NaturePokeathlonStatAffect) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? maxChange = freezed,
-    Object? nature = freezed,
+    Object? maxChange = null,
+    Object? nature = null,
   }) {
     return _then(_value.copyWith(
-      maxChange: maxChange == freezed
+      maxChange: null == maxChange
           ? _value.maxChange
           : maxChange // ignore: cast_nullable_to_non_nullable
               as int,
-      nature: nature == freezed
+      nature: null == nature
           ? _value.nature
           : nature // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $NamedAPIResourceCopyWith<$Res> get nature {
     return $NamedAPIResourceCopyWith<$Res>(_value.nature, (value) {
-      return _then(_value.copyWith(nature: value));
+      return _then(_value.copyWith(nature: value) as $Val);
     });
   }
 }
@@ -4064,6 +4113,7 @@ abstract class _$$_NaturePokeathlonStatAffectCopyWith<$Res>
           $Res Function(_$_NaturePokeathlonStatAffect) then) =
       __$$_NaturePokeathlonStatAffectCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@JsonKey(name: 'max_change') int maxChange, NamedAPIResource nature});
 
@@ -4073,28 +4123,26 @@ abstract class _$$_NaturePokeathlonStatAffectCopyWith<$Res>
 
 /// @nodoc
 class __$$_NaturePokeathlonStatAffectCopyWithImpl<$Res>
-    extends _$NaturePokeathlonStatAffectCopyWithImpl<$Res>
+    extends _$NaturePokeathlonStatAffectCopyWithImpl<$Res,
+        _$_NaturePokeathlonStatAffect>
     implements _$$_NaturePokeathlonStatAffectCopyWith<$Res> {
   __$$_NaturePokeathlonStatAffectCopyWithImpl(
       _$_NaturePokeathlonStatAffect _value,
       $Res Function(_$_NaturePokeathlonStatAffect) _then)
-      : super(_value, (v) => _then(v as _$_NaturePokeathlonStatAffect));
+      : super(_value, _then);
 
-  @override
-  _$_NaturePokeathlonStatAffect get _value =>
-      super._value as _$_NaturePokeathlonStatAffect;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? maxChange = freezed,
-    Object? nature = freezed,
+    Object? maxChange = null,
+    Object? nature = null,
   }) {
     return _then(_$_NaturePokeathlonStatAffect(
-      maxChange == freezed
+      null == maxChange
           ? _value.maxChange
           : maxChange // ignore: cast_nullable_to_non_nullable
               as int,
-      nature == freezed
+      null == nature
           ? _value.nature
           : nature // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
@@ -4134,19 +4182,18 @@ class _$_NaturePokeathlonStatAffect implements _NaturePokeathlonStatAffect {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_NaturePokeathlonStatAffect &&
-            const DeepCollectionEquality().equals(other.maxChange, maxChange) &&
-            const DeepCollectionEquality().equals(other.nature, nature));
+            (identical(other.maxChange, maxChange) ||
+                other.maxChange == maxChange) &&
+            (identical(other.nature, nature) || other.nature == nature));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(maxChange),
-      const DeepCollectionEquality().hash(nature));
+  int get hashCode => Object.hash(runtimeType, maxChange, nature);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_NaturePokeathlonStatAffectCopyWith<_$_NaturePokeathlonStatAffect>
       get copyWith => __$$_NaturePokeathlonStatAffectCopyWithImpl<
           _$_NaturePokeathlonStatAffect>(this, _$identity);
@@ -4273,7 +4320,8 @@ mixin _$Pokemon {
 /// @nodoc
 abstract class $PokemonCopyWith<$Res> {
   factory $PokemonCopyWith(Pokemon value, $Res Function(Pokemon) then) =
-      _$PokemonCopyWithImpl<$Res>;
+      _$PokemonCopyWithImpl<$Res, Pokemon>;
+  @useResult
   $Res call(
       {int id,
       String name,
@@ -4299,121 +4347,126 @@ abstract class $PokemonCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$PokemonCopyWithImpl<$Res> implements $PokemonCopyWith<$Res> {
+class _$PokemonCopyWithImpl<$Res, $Val extends Pokemon>
+    implements $PokemonCopyWith<$Res> {
   _$PokemonCopyWithImpl(this._value, this._then);
 
-  final Pokemon _value;
   // ignore: unused_field
-  final $Res Function(Pokemon) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
+    Object? id = null,
+    Object? name = null,
     Object? baseExperience = freezed,
-    Object? height = freezed,
-    Object? isDefault = freezed,
-    Object? order = freezed,
-    Object? weight = freezed,
-    Object? abilities = freezed,
-    Object? forms = freezed,
-    Object? gameIndices = freezed,
-    Object? heldItems = freezed,
-    Object? locationAreaEncounters = freezed,
-    Object? moves = freezed,
-    Object? pastTypes = freezed,
-    Object? sprites = freezed,
-    Object? species = freezed,
-    Object? stats = freezed,
-    Object? types = freezed,
+    Object? height = null,
+    Object? isDefault = null,
+    Object? order = null,
+    Object? weight = null,
+    Object? abilities = null,
+    Object? forms = null,
+    Object? gameIndices = null,
+    Object? heldItems = null,
+    Object? locationAreaEncounters = null,
+    Object? moves = null,
+    Object? pastTypes = null,
+    Object? sprites = null,
+    Object? species = null,
+    Object? stats = null,
+    Object? types = null,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      name: name == freezed
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      baseExperience: baseExperience == freezed
+      baseExperience: freezed == baseExperience
           ? _value.baseExperience
           : baseExperience // ignore: cast_nullable_to_non_nullable
               as int?,
-      height: height == freezed
+      height: null == height
           ? _value.height
           : height // ignore: cast_nullable_to_non_nullable
               as int,
-      isDefault: isDefault == freezed
+      isDefault: null == isDefault
           ? _value.isDefault
           : isDefault // ignore: cast_nullable_to_non_nullable
               as bool,
-      order: order == freezed
+      order: null == order
           ? _value.order
           : order // ignore: cast_nullable_to_non_nullable
               as int,
-      weight: weight == freezed
+      weight: null == weight
           ? _value.weight
           : weight // ignore: cast_nullable_to_non_nullable
               as int,
-      abilities: abilities == freezed
+      abilities: null == abilities
           ? _value.abilities
           : abilities // ignore: cast_nullable_to_non_nullable
               as List<PokemonAbility>,
-      forms: forms == freezed
+      forms: null == forms
           ? _value.forms
           : forms // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
-      gameIndices: gameIndices == freezed
+      gameIndices: null == gameIndices
           ? _value.gameIndices
           : gameIndices // ignore: cast_nullable_to_non_nullable
               as List<VersionGameIndex>,
-      heldItems: heldItems == freezed
+      heldItems: null == heldItems
           ? _value.heldItems
           : heldItems // ignore: cast_nullable_to_non_nullable
               as List<PokemonHeldItem>,
-      locationAreaEncounters: locationAreaEncounters == freezed
+      locationAreaEncounters: null == locationAreaEncounters
           ? _value.locationAreaEncounters
           : locationAreaEncounters // ignore: cast_nullable_to_non_nullable
               as String,
-      moves: moves == freezed
+      moves: null == moves
           ? _value.moves
           : moves // ignore: cast_nullable_to_non_nullable
               as List<PokemonMove>,
-      pastTypes: pastTypes == freezed
+      pastTypes: null == pastTypes
           ? _value.pastTypes
           : pastTypes // ignore: cast_nullable_to_non_nullable
               as List<PokemonTypePast>,
-      sprites: sprites == freezed
+      sprites: null == sprites
           ? _value.sprites
           : sprites // ignore: cast_nullable_to_non_nullable
               as PokemonSprites,
-      species: species == freezed
+      species: null == species
           ? _value.species
           : species // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-      stats: stats == freezed
+      stats: null == stats
           ? _value.stats
           : stats // ignore: cast_nullable_to_non_nullable
               as List<PokemonStat>,
-      types: types == freezed
+      types: null == types
           ? _value.types
           : types // ignore: cast_nullable_to_non_nullable
               as List<PokemonType>,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $PokemonSpritesCopyWith<$Res> get sprites {
     return $PokemonSpritesCopyWith<$Res>(_value.sprites, (value) {
-      return _then(_value.copyWith(sprites: value));
+      return _then(_value.copyWith(sprites: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $NamedAPIResourceCopyWith<$Res> get species {
     return $NamedAPIResourceCopyWith<$Res>(_value.species, (value) {
-      return _then(_value.copyWith(species: value));
+      return _then(_value.copyWith(species: value) as $Val);
     });
   }
 }
@@ -4424,6 +4477,7 @@ abstract class _$$_PokemonCopyWith<$Res> implements $PokemonCopyWith<$Res> {
           _$_Pokemon value, $Res Function(_$_Pokemon) then) =
       __$$_PokemonCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {int id,
       String name,
@@ -4451,105 +4505,104 @@ abstract class _$$_PokemonCopyWith<$Res> implements $PokemonCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$_PokemonCopyWithImpl<$Res> extends _$PokemonCopyWithImpl<$Res>
+class __$$_PokemonCopyWithImpl<$Res>
+    extends _$PokemonCopyWithImpl<$Res, _$_Pokemon>
     implements _$$_PokemonCopyWith<$Res> {
   __$$_PokemonCopyWithImpl(_$_Pokemon _value, $Res Function(_$_Pokemon) _then)
-      : super(_value, (v) => _then(v as _$_Pokemon));
+      : super(_value, _then);
 
-  @override
-  _$_Pokemon get _value => super._value as _$_Pokemon;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
+    Object? id = null,
+    Object? name = null,
     Object? baseExperience = freezed,
-    Object? height = freezed,
-    Object? isDefault = freezed,
-    Object? order = freezed,
-    Object? weight = freezed,
-    Object? abilities = freezed,
-    Object? forms = freezed,
-    Object? gameIndices = freezed,
-    Object? heldItems = freezed,
-    Object? locationAreaEncounters = freezed,
-    Object? moves = freezed,
-    Object? pastTypes = freezed,
-    Object? sprites = freezed,
-    Object? species = freezed,
-    Object? stats = freezed,
-    Object? types = freezed,
+    Object? height = null,
+    Object? isDefault = null,
+    Object? order = null,
+    Object? weight = null,
+    Object? abilities = null,
+    Object? forms = null,
+    Object? gameIndices = null,
+    Object? heldItems = null,
+    Object? locationAreaEncounters = null,
+    Object? moves = null,
+    Object? pastTypes = null,
+    Object? sprites = null,
+    Object? species = null,
+    Object? stats = null,
+    Object? types = null,
   }) {
     return _then(_$_Pokemon(
-      id == freezed
+      null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      name == freezed
+      null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      baseExperience == freezed
+      freezed == baseExperience
           ? _value.baseExperience
           : baseExperience // ignore: cast_nullable_to_non_nullable
               as int?,
-      height == freezed
+      null == height
           ? _value.height
           : height // ignore: cast_nullable_to_non_nullable
               as int,
-      isDefault == freezed
+      null == isDefault
           ? _value.isDefault
           : isDefault // ignore: cast_nullable_to_non_nullable
               as bool,
-      order == freezed
+      null == order
           ? _value.order
           : order // ignore: cast_nullable_to_non_nullable
               as int,
-      weight == freezed
+      null == weight
           ? _value.weight
           : weight // ignore: cast_nullable_to_non_nullable
               as int,
-      abilities == freezed
+      null == abilities
           ? _value._abilities
           : abilities // ignore: cast_nullable_to_non_nullable
               as List<PokemonAbility>,
-      forms == freezed
+      null == forms
           ? _value._forms
           : forms // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
-      gameIndices == freezed
+      null == gameIndices
           ? _value._gameIndices
           : gameIndices // ignore: cast_nullable_to_non_nullable
               as List<VersionGameIndex>,
-      heldItems == freezed
+      null == heldItems
           ? _value._heldItems
           : heldItems // ignore: cast_nullable_to_non_nullable
               as List<PokemonHeldItem>,
-      locationAreaEncounters == freezed
+      null == locationAreaEncounters
           ? _value.locationAreaEncounters
           : locationAreaEncounters // ignore: cast_nullable_to_non_nullable
               as String,
-      moves == freezed
+      null == moves
           ? _value._moves
           : moves // ignore: cast_nullable_to_non_nullable
               as List<PokemonMove>,
-      pastTypes == freezed
+      null == pastTypes
           ? _value._pastTypes
           : pastTypes // ignore: cast_nullable_to_non_nullable
               as List<PokemonTypePast>,
-      sprites == freezed
+      null == sprites
           ? _value.sprites
           : sprites // ignore: cast_nullable_to_non_nullable
               as PokemonSprites,
-      species == freezed
+      null == species
           ? _value.species
           : species // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-      stats == freezed
+      null == stats
           ? _value._stats
           : stats // ignore: cast_nullable_to_non_nullable
               as List<PokemonStat>,
-      types == freezed
+      null == types
           ? _value._types
           : types // ignore: cast_nullable_to_non_nullable
               as List<PokemonType>,
@@ -4627,6 +4680,7 @@ class _$_Pokemon implements _Pokemon {
   /// A list of abilities this Pokémon could potentially have.
   @override
   List<PokemonAbility> get abilities {
+    if (_abilities is EqualUnmodifiableListView) return _abilities;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_abilities);
   }
@@ -4645,6 +4699,7 @@ class _$_Pokemon implements _Pokemon {
   /// [PokemonForm]
   @override
   List<NamedAPIResource> get forms {
+    if (_forms is EqualUnmodifiableListView) return _forms;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_forms);
   }
@@ -4656,6 +4711,7 @@ class _$_Pokemon implements _Pokemon {
   @override
   @JsonKey(name: 'game_indices')
   List<VersionGameIndex> get gameIndices {
+    if (_gameIndices is EqualUnmodifiableListView) return _gameIndices;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_gameIndices);
   }
@@ -4667,6 +4723,7 @@ class _$_Pokemon implements _Pokemon {
   @override
   @JsonKey(name: 'held_items')
   List<PokemonHeldItem> get heldItems {
+    if (_heldItems is EqualUnmodifiableListView) return _heldItems;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_heldItems);
   }
@@ -4685,6 +4742,7 @@ class _$_Pokemon implements _Pokemon {
   /// to specific version groups.
   @override
   List<PokemonMove> get moves {
+    if (_moves is EqualUnmodifiableListView) return _moves;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_moves);
   }
@@ -4696,6 +4754,7 @@ class _$_Pokemon implements _Pokemon {
   @override
   @JsonKey(name: 'past_types')
   List<PokemonTypePast> get pastTypes {
+    if (_pastTypes is EqualUnmodifiableListView) return _pastTypes;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_pastTypes);
   }
@@ -4720,6 +4779,7 @@ class _$_Pokemon implements _Pokemon {
   /// A list of base stat values for this Pokémon.
   @override
   List<PokemonStat> get stats {
+    if (_stats is EqualUnmodifiableListView) return _stats;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_stats);
   }
@@ -4730,6 +4790,7 @@ class _$_Pokemon implements _Pokemon {
   /// A list of details showing types this Pokémon has.
   @override
   List<PokemonType> get types {
+    if (_types is EqualUnmodifiableListView) return _types;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_types);
   }
@@ -4744,14 +4805,15 @@ class _$_Pokemon implements _Pokemon {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_Pokemon &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.name, name) &&
-            const DeepCollectionEquality()
-                .equals(other.baseExperience, baseExperience) &&
-            const DeepCollectionEquality().equals(other.height, height) &&
-            const DeepCollectionEquality().equals(other.isDefault, isDefault) &&
-            const DeepCollectionEquality().equals(other.order, order) &&
-            const DeepCollectionEquality().equals(other.weight, weight) &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.name, name) || other.name == name) &&
+            (identical(other.baseExperience, baseExperience) ||
+                other.baseExperience == baseExperience) &&
+            (identical(other.height, height) || other.height == height) &&
+            (identical(other.isDefault, isDefault) ||
+                other.isDefault == isDefault) &&
+            (identical(other.order, order) || other.order == order) &&
+            (identical(other.weight, weight) || other.weight == weight) &&
             const DeepCollectionEquality()
                 .equals(other._abilities, _abilities) &&
             const DeepCollectionEquality().equals(other._forms, _forms) &&
@@ -4759,13 +4821,13 @@ class _$_Pokemon implements _Pokemon {
                 .equals(other._gameIndices, _gameIndices) &&
             const DeepCollectionEquality()
                 .equals(other._heldItems, _heldItems) &&
-            const DeepCollectionEquality()
-                .equals(other.locationAreaEncounters, locationAreaEncounters) &&
+            (identical(other.locationAreaEncounters, locationAreaEncounters) ||
+                other.locationAreaEncounters == locationAreaEncounters) &&
             const DeepCollectionEquality().equals(other._moves, _moves) &&
             const DeepCollectionEquality()
                 .equals(other._pastTypes, _pastTypes) &&
-            const DeepCollectionEquality().equals(other.sprites, sprites) &&
-            const DeepCollectionEquality().equals(other.species, species) &&
+            (identical(other.sprites, sprites) || other.sprites == sprites) &&
+            (identical(other.species, species) || other.species == species) &&
             const DeepCollectionEquality().equals(other._stats, _stats) &&
             const DeepCollectionEquality().equals(other._types, _types));
   }
@@ -4774,27 +4836,28 @@ class _$_Pokemon implements _Pokemon {
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(name),
-      const DeepCollectionEquality().hash(baseExperience),
-      const DeepCollectionEquality().hash(height),
-      const DeepCollectionEquality().hash(isDefault),
-      const DeepCollectionEquality().hash(order),
-      const DeepCollectionEquality().hash(weight),
+      id,
+      name,
+      baseExperience,
+      height,
+      isDefault,
+      order,
+      weight,
       const DeepCollectionEquality().hash(_abilities),
       const DeepCollectionEquality().hash(_forms),
       const DeepCollectionEquality().hash(_gameIndices),
       const DeepCollectionEquality().hash(_heldItems),
-      const DeepCollectionEquality().hash(locationAreaEncounters),
+      locationAreaEncounters,
       const DeepCollectionEquality().hash(_moves),
       const DeepCollectionEquality().hash(_pastTypes),
-      const DeepCollectionEquality().hash(sprites),
-      const DeepCollectionEquality().hash(species),
+      sprites,
+      species,
       const DeepCollectionEquality().hash(_stats),
       const DeepCollectionEquality().hash(_types));
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_PokemonCopyWith<_$_Pokemon> get copyWith =>
       __$$_PokemonCopyWithImpl<_$_Pokemon>(this, _$identity);
 
@@ -4810,24 +4873,19 @@ abstract class _Pokemon implements Pokemon {
   const factory _Pokemon(
       final int id,
       final String name,
-      @JsonKey(name: 'base_experience')
-          final int? baseExperience,
+      @JsonKey(name: 'base_experience') final int? baseExperience,
       final int height,
-      @JsonKey(name: 'is_default')
-          final bool isDefault,
+      @JsonKey(name: 'is_default') final bool isDefault,
       final int order,
       final int weight,
       final List<PokemonAbility> abilities,
       final List<NamedAPIResource> forms,
-      @JsonKey(name: 'game_indices')
-          final List<VersionGameIndex> gameIndices,
-      @JsonKey(name: 'held_items')
-          final List<PokemonHeldItem> heldItems,
+      @JsonKey(name: 'game_indices') final List<VersionGameIndex> gameIndices,
+      @JsonKey(name: 'held_items') final List<PokemonHeldItem> heldItems,
       @JsonKey(name: 'location_area_encounters')
-          final String locationAreaEncounters,
+      final String locationAreaEncounters,
       final List<PokemonMove> moves,
-      @JsonKey(name: 'past_types')
-          final List<PokemonTypePast> pastTypes,
+      @JsonKey(name: 'past_types') final List<PokemonTypePast> pastTypes,
       final PokemonSprites sprites,
       final NamedAPIResource species,
       final List<PokemonStat> stats,
@@ -4961,7 +5019,8 @@ mixin _$PokemonAbility {
 abstract class $PokemonAbilityCopyWith<$Res> {
   factory $PokemonAbilityCopyWith(
           PokemonAbility value, $Res Function(PokemonAbility) then) =
-      _$PokemonAbilityCopyWithImpl<$Res>;
+      _$PokemonAbilityCopyWithImpl<$Res, PokemonAbility>;
+  @useResult
   $Res call(
       {@JsonKey(name: 'is_hidden') bool isHidden,
       int slot,
@@ -4971,40 +5030,43 @@ abstract class $PokemonAbilityCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$PokemonAbilityCopyWithImpl<$Res>
+class _$PokemonAbilityCopyWithImpl<$Res, $Val extends PokemonAbility>
     implements $PokemonAbilityCopyWith<$Res> {
   _$PokemonAbilityCopyWithImpl(this._value, this._then);
 
-  final PokemonAbility _value;
   // ignore: unused_field
-  final $Res Function(PokemonAbility) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? isHidden = freezed,
-    Object? slot = freezed,
-    Object? ability = freezed,
+    Object? isHidden = null,
+    Object? slot = null,
+    Object? ability = null,
   }) {
     return _then(_value.copyWith(
-      isHidden: isHidden == freezed
+      isHidden: null == isHidden
           ? _value.isHidden
           : isHidden // ignore: cast_nullable_to_non_nullable
               as bool,
-      slot: slot == freezed
+      slot: null == slot
           ? _value.slot
           : slot // ignore: cast_nullable_to_non_nullable
               as int,
-      ability: ability == freezed
+      ability: null == ability
           ? _value.ability
           : ability // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $NamedAPIResourceCopyWith<$Res> get ability {
     return $NamedAPIResourceCopyWith<$Res>(_value.ability, (value) {
-      return _then(_value.copyWith(ability: value));
+      return _then(_value.copyWith(ability: value) as $Val);
     });
   }
 }
@@ -5016,6 +5078,7 @@ abstract class _$$_PokemonAbilityCopyWith<$Res>
           _$_PokemonAbility value, $Res Function(_$_PokemonAbility) then) =
       __$$_PokemonAbilityCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@JsonKey(name: 'is_hidden') bool isHidden,
       int slot,
@@ -5027,31 +5090,29 @@ abstract class _$$_PokemonAbilityCopyWith<$Res>
 
 /// @nodoc
 class __$$_PokemonAbilityCopyWithImpl<$Res>
-    extends _$PokemonAbilityCopyWithImpl<$Res>
+    extends _$PokemonAbilityCopyWithImpl<$Res, _$_PokemonAbility>
     implements _$$_PokemonAbilityCopyWith<$Res> {
   __$$_PokemonAbilityCopyWithImpl(
       _$_PokemonAbility _value, $Res Function(_$_PokemonAbility) _then)
-      : super(_value, (v) => _then(v as _$_PokemonAbility));
+      : super(_value, _then);
 
-  @override
-  _$_PokemonAbility get _value => super._value as _$_PokemonAbility;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? isHidden = freezed,
-    Object? slot = freezed,
-    Object? ability = freezed,
+    Object? isHidden = null,
+    Object? slot = null,
+    Object? ability = null,
   }) {
     return _then(_$_PokemonAbility(
-      isHidden == freezed
+      null == isHidden
           ? _value.isHidden
           : isHidden // ignore: cast_nullable_to_non_nullable
               as bool,
-      slot == freezed
+      null == slot
           ? _value.slot
           : slot // ignore: cast_nullable_to_non_nullable
               as int,
-      ability == freezed
+      null == ability
           ? _value.ability
           : ability // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
@@ -5095,21 +5156,19 @@ class _$_PokemonAbility implements _PokemonAbility {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_PokemonAbility &&
-            const DeepCollectionEquality().equals(other.isHidden, isHidden) &&
-            const DeepCollectionEquality().equals(other.slot, slot) &&
-            const DeepCollectionEquality().equals(other.ability, ability));
+            (identical(other.isHidden, isHidden) ||
+                other.isHidden == isHidden) &&
+            (identical(other.slot, slot) || other.slot == slot) &&
+            (identical(other.ability, ability) || other.ability == ability));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(isHidden),
-      const DeepCollectionEquality().hash(slot),
-      const DeepCollectionEquality().hash(ability));
+  int get hashCode => Object.hash(runtimeType, isHidden, slot, ability);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_PokemonAbilityCopyWith<_$_PokemonAbility> get copyWith =>
       __$$_PokemonAbilityCopyWithImpl<_$_PokemonAbility>(this, _$identity);
 
@@ -5177,41 +5236,46 @@ mixin _$PokemonType {
 abstract class $PokemonTypeCopyWith<$Res> {
   factory $PokemonTypeCopyWith(
           PokemonType value, $Res Function(PokemonType) then) =
-      _$PokemonTypeCopyWithImpl<$Res>;
+      _$PokemonTypeCopyWithImpl<$Res, PokemonType>;
+  @useResult
   $Res call({int slot, NamedAPIResource type});
 
   $NamedAPIResourceCopyWith<$Res> get type;
 }
 
 /// @nodoc
-class _$PokemonTypeCopyWithImpl<$Res> implements $PokemonTypeCopyWith<$Res> {
+class _$PokemonTypeCopyWithImpl<$Res, $Val extends PokemonType>
+    implements $PokemonTypeCopyWith<$Res> {
   _$PokemonTypeCopyWithImpl(this._value, this._then);
 
-  final PokemonType _value;
   // ignore: unused_field
-  final $Res Function(PokemonType) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? slot = freezed,
-    Object? type = freezed,
+    Object? slot = null,
+    Object? type = null,
   }) {
     return _then(_value.copyWith(
-      slot: slot == freezed
+      slot: null == slot
           ? _value.slot
           : slot // ignore: cast_nullable_to_non_nullable
               as int,
-      type: type == freezed
+      type: null == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $NamedAPIResourceCopyWith<$Res> get type {
     return $NamedAPIResourceCopyWith<$Res>(_value.type, (value) {
-      return _then(_value.copyWith(type: value));
+      return _then(_value.copyWith(type: value) as $Val);
     });
   }
 }
@@ -5223,6 +5287,7 @@ abstract class _$$_PokemonTypeCopyWith<$Res>
           _$_PokemonType value, $Res Function(_$_PokemonType) then) =
       __$$_PokemonTypeCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({int slot, NamedAPIResource type});
 
   @override
@@ -5230,26 +5295,25 @@ abstract class _$$_PokemonTypeCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_PokemonTypeCopyWithImpl<$Res> extends _$PokemonTypeCopyWithImpl<$Res>
+class __$$_PokemonTypeCopyWithImpl<$Res>
+    extends _$PokemonTypeCopyWithImpl<$Res, _$_PokemonType>
     implements _$$_PokemonTypeCopyWith<$Res> {
   __$$_PokemonTypeCopyWithImpl(
       _$_PokemonType _value, $Res Function(_$_PokemonType) _then)
-      : super(_value, (v) => _then(v as _$_PokemonType));
+      : super(_value, _then);
 
-  @override
-  _$_PokemonType get _value => super._value as _$_PokemonType;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? slot = freezed,
-    Object? type = freezed,
+    Object? slot = null,
+    Object? type = null,
   }) {
     return _then(_$_PokemonType(
-      slot == freezed
+      null == slot
           ? _value.slot
           : slot // ignore: cast_nullable_to_non_nullable
               as int,
-      type == freezed
+      null == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
@@ -5287,19 +5351,17 @@ class _$_PokemonType implements _PokemonType {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_PokemonType &&
-            const DeepCollectionEquality().equals(other.slot, slot) &&
-            const DeepCollectionEquality().equals(other.type, type));
+            (identical(other.slot, slot) || other.slot == slot) &&
+            (identical(other.type, type) || other.type == type));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(slot),
-      const DeepCollectionEquality().hash(type));
+  int get hashCode => Object.hash(runtimeType, slot, type);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_PokemonTypeCopyWith<_$_PokemonType> get copyWith =>
       __$$_PokemonTypeCopyWithImpl<_$_PokemonType>(this, _$identity);
 
@@ -5362,42 +5424,46 @@ mixin _$PokemonFormType {
 abstract class $PokemonFormTypeCopyWith<$Res> {
   factory $PokemonFormTypeCopyWith(
           PokemonFormType value, $Res Function(PokemonFormType) then) =
-      _$PokemonFormTypeCopyWithImpl<$Res>;
+      _$PokemonFormTypeCopyWithImpl<$Res, PokemonFormType>;
+  @useResult
   $Res call({int slot, NamedAPIResource type});
 
   $NamedAPIResourceCopyWith<$Res> get type;
 }
 
 /// @nodoc
-class _$PokemonFormTypeCopyWithImpl<$Res>
+class _$PokemonFormTypeCopyWithImpl<$Res, $Val extends PokemonFormType>
     implements $PokemonFormTypeCopyWith<$Res> {
   _$PokemonFormTypeCopyWithImpl(this._value, this._then);
 
-  final PokemonFormType _value;
   // ignore: unused_field
-  final $Res Function(PokemonFormType) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? slot = freezed,
-    Object? type = freezed,
+    Object? slot = null,
+    Object? type = null,
   }) {
     return _then(_value.copyWith(
-      slot: slot == freezed
+      slot: null == slot
           ? _value.slot
           : slot // ignore: cast_nullable_to_non_nullable
               as int,
-      type: type == freezed
+      type: null == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $NamedAPIResourceCopyWith<$Res> get type {
     return $NamedAPIResourceCopyWith<$Res>(_value.type, (value) {
-      return _then(_value.copyWith(type: value));
+      return _then(_value.copyWith(type: value) as $Val);
     });
   }
 }
@@ -5409,6 +5475,7 @@ abstract class _$$_PokemonFormTypeCopyWith<$Res>
           _$_PokemonFormType value, $Res Function(_$_PokemonFormType) then) =
       __$$_PokemonFormTypeCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({int slot, NamedAPIResource type});
 
   @override
@@ -5417,26 +5484,24 @@ abstract class _$$_PokemonFormTypeCopyWith<$Res>
 
 /// @nodoc
 class __$$_PokemonFormTypeCopyWithImpl<$Res>
-    extends _$PokemonFormTypeCopyWithImpl<$Res>
+    extends _$PokemonFormTypeCopyWithImpl<$Res, _$_PokemonFormType>
     implements _$$_PokemonFormTypeCopyWith<$Res> {
   __$$_PokemonFormTypeCopyWithImpl(
       _$_PokemonFormType _value, $Res Function(_$_PokemonFormType) _then)
-      : super(_value, (v) => _then(v as _$_PokemonFormType));
+      : super(_value, _then);
 
-  @override
-  _$_PokemonFormType get _value => super._value as _$_PokemonFormType;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? slot = freezed,
-    Object? type = freezed,
+    Object? slot = null,
+    Object? type = null,
   }) {
     return _then(_$_PokemonFormType(
-      slot == freezed
+      null == slot
           ? _value.slot
           : slot // ignore: cast_nullable_to_non_nullable
               as int,
-      type == freezed
+      null == type
           ? _value.type
           : type // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
@@ -5474,19 +5539,17 @@ class _$_PokemonFormType implements _PokemonFormType {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_PokemonFormType &&
-            const DeepCollectionEquality().equals(other.slot, slot) &&
-            const DeepCollectionEquality().equals(other.type, type));
+            (identical(other.slot, slot) || other.slot == slot) &&
+            (identical(other.type, type) || other.type == type));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(slot),
-      const DeepCollectionEquality().hash(type));
+  int get hashCode => Object.hash(runtimeType, slot, type);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_PokemonFormTypeCopyWith<_$_PokemonFormType> get copyWith =>
       __$$_PokemonFormTypeCopyWithImpl<_$_PokemonFormType>(this, _$identity);
 
@@ -5549,42 +5612,46 @@ mixin _$PokemonTypePast {
 abstract class $PokemonTypePastCopyWith<$Res> {
   factory $PokemonTypePastCopyWith(
           PokemonTypePast value, $Res Function(PokemonTypePast) then) =
-      _$PokemonTypePastCopyWithImpl<$Res>;
+      _$PokemonTypePastCopyWithImpl<$Res, PokemonTypePast>;
+  @useResult
   $Res call({NamedAPIResource generation, List<PokemonType> types});
 
   $NamedAPIResourceCopyWith<$Res> get generation;
 }
 
 /// @nodoc
-class _$PokemonTypePastCopyWithImpl<$Res>
+class _$PokemonTypePastCopyWithImpl<$Res, $Val extends PokemonTypePast>
     implements $PokemonTypePastCopyWith<$Res> {
   _$PokemonTypePastCopyWithImpl(this._value, this._then);
 
-  final PokemonTypePast _value;
   // ignore: unused_field
-  final $Res Function(PokemonTypePast) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? generation = freezed,
-    Object? types = freezed,
+    Object? generation = null,
+    Object? types = null,
   }) {
     return _then(_value.copyWith(
-      generation: generation == freezed
+      generation: null == generation
           ? _value.generation
           : generation // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-      types: types == freezed
+      types: null == types
           ? _value.types
           : types // ignore: cast_nullable_to_non_nullable
               as List<PokemonType>,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $NamedAPIResourceCopyWith<$Res> get generation {
     return $NamedAPIResourceCopyWith<$Res>(_value.generation, (value) {
-      return _then(_value.copyWith(generation: value));
+      return _then(_value.copyWith(generation: value) as $Val);
     });
   }
 }
@@ -5596,6 +5663,7 @@ abstract class _$$_PokemonTypePastCopyWith<$Res>
           _$_PokemonTypePast value, $Res Function(_$_PokemonTypePast) then) =
       __$$_PokemonTypePastCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({NamedAPIResource generation, List<PokemonType> types});
 
   @override
@@ -5604,26 +5672,24 @@ abstract class _$$_PokemonTypePastCopyWith<$Res>
 
 /// @nodoc
 class __$$_PokemonTypePastCopyWithImpl<$Res>
-    extends _$PokemonTypePastCopyWithImpl<$Res>
+    extends _$PokemonTypePastCopyWithImpl<$Res, _$_PokemonTypePast>
     implements _$$_PokemonTypePastCopyWith<$Res> {
   __$$_PokemonTypePastCopyWithImpl(
       _$_PokemonTypePast _value, $Res Function(_$_PokemonTypePast) _then)
-      : super(_value, (v) => _then(v as _$_PokemonTypePast));
+      : super(_value, _then);
 
-  @override
-  _$_PokemonTypePast get _value => super._value as _$_PokemonTypePast;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? generation = freezed,
-    Object? types = freezed,
+    Object? generation = null,
+    Object? types = null,
   }) {
     return _then(_$_PokemonTypePast(
-      generation == freezed
+      null == generation
           ? _value.generation
           : generation // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-      types == freezed
+      null == types
           ? _value._types
           : types // ignore: cast_nullable_to_non_nullable
               as List<PokemonType>,
@@ -5654,6 +5720,7 @@ class _$_PokemonTypePast implements _PokemonTypePast {
   /// The types the referenced pokémon had up to and including the listed generation.
   @override
   List<PokemonType> get types {
+    if (_types is EqualUnmodifiableListView) return _types;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_types);
   }
@@ -5668,20 +5735,19 @@ class _$_PokemonTypePast implements _PokemonTypePast {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_PokemonTypePast &&
-            const DeepCollectionEquality()
-                .equals(other.generation, generation) &&
+            (identical(other.generation, generation) ||
+                other.generation == generation) &&
             const DeepCollectionEquality().equals(other._types, _types));
   }
 
   @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(generation),
-      const DeepCollectionEquality().hash(_types));
+      runtimeType, generation, const DeepCollectionEquality().hash(_types));
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_PokemonTypePastCopyWith<_$_PokemonTypePast> get copyWith =>
       __$$_PokemonTypePastCopyWithImpl<_$_PokemonTypePast>(this, _$identity);
 
@@ -5747,45 +5813,49 @@ mixin _$PokemonHeldItem {
 abstract class $PokemonHeldItemCopyWith<$Res> {
   factory $PokemonHeldItemCopyWith(
           PokemonHeldItem value, $Res Function(PokemonHeldItem) then) =
-      _$PokemonHeldItemCopyWithImpl<$Res>;
+      _$PokemonHeldItemCopyWithImpl<$Res, PokemonHeldItem>;
+  @useResult
   $Res call(
       {NamedAPIResource item,
       @JsonKey(name: 'version_details')
-          List<PokemonHeldItemVersion> versionDetails});
+      List<PokemonHeldItemVersion> versionDetails});
 
   $NamedAPIResourceCopyWith<$Res> get item;
 }
 
 /// @nodoc
-class _$PokemonHeldItemCopyWithImpl<$Res>
+class _$PokemonHeldItemCopyWithImpl<$Res, $Val extends PokemonHeldItem>
     implements $PokemonHeldItemCopyWith<$Res> {
   _$PokemonHeldItemCopyWithImpl(this._value, this._then);
 
-  final PokemonHeldItem _value;
   // ignore: unused_field
-  final $Res Function(PokemonHeldItem) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? item = freezed,
-    Object? versionDetails = freezed,
+    Object? item = null,
+    Object? versionDetails = null,
   }) {
     return _then(_value.copyWith(
-      item: item == freezed
+      item: null == item
           ? _value.item
           : item // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-      versionDetails: versionDetails == freezed
+      versionDetails: null == versionDetails
           ? _value.versionDetails
           : versionDetails // ignore: cast_nullable_to_non_nullable
               as List<PokemonHeldItemVersion>,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $NamedAPIResourceCopyWith<$Res> get item {
     return $NamedAPIResourceCopyWith<$Res>(_value.item, (value) {
-      return _then(_value.copyWith(item: value));
+      return _then(_value.copyWith(item: value) as $Val);
     });
   }
 }
@@ -5797,10 +5867,11 @@ abstract class _$$_PokemonHeldItemCopyWith<$Res>
           _$_PokemonHeldItem value, $Res Function(_$_PokemonHeldItem) then) =
       __$$_PokemonHeldItemCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {NamedAPIResource item,
       @JsonKey(name: 'version_details')
-          List<PokemonHeldItemVersion> versionDetails});
+      List<PokemonHeldItemVersion> versionDetails});
 
   @override
   $NamedAPIResourceCopyWith<$Res> get item;
@@ -5808,26 +5879,24 @@ abstract class _$$_PokemonHeldItemCopyWith<$Res>
 
 /// @nodoc
 class __$$_PokemonHeldItemCopyWithImpl<$Res>
-    extends _$PokemonHeldItemCopyWithImpl<$Res>
+    extends _$PokemonHeldItemCopyWithImpl<$Res, _$_PokemonHeldItem>
     implements _$$_PokemonHeldItemCopyWith<$Res> {
   __$$_PokemonHeldItemCopyWithImpl(
       _$_PokemonHeldItem _value, $Res Function(_$_PokemonHeldItem) _then)
-      : super(_value, (v) => _then(v as _$_PokemonHeldItem));
+      : super(_value, _then);
 
-  @override
-  _$_PokemonHeldItem get _value => super._value as _$_PokemonHeldItem;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? item = freezed,
-    Object? versionDetails = freezed,
+    Object? item = null,
+    Object? versionDetails = null,
   }) {
     return _then(_$_PokemonHeldItem(
-      item == freezed
+      null == item
           ? _value.item
           : item // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-      versionDetails == freezed
+      null == versionDetails
           ? _value._versionDetails
           : versionDetails // ignore: cast_nullable_to_non_nullable
               as List<PokemonHeldItemVersion>,
@@ -5841,7 +5910,7 @@ class _$_PokemonHeldItem implements _PokemonHeldItem {
   const _$_PokemonHeldItem(
       this.item,
       @JsonKey(name: 'version_details')
-          final List<PokemonHeldItemVersion> versionDetails)
+      final List<PokemonHeldItemVersion> versionDetails)
       : _versionDetails = versionDetails;
 
   factory _$_PokemonHeldItem.fromJson(Map<String, dynamic> json) =>
@@ -5862,6 +5931,7 @@ class _$_PokemonHeldItem implements _PokemonHeldItem {
   @override
   @JsonKey(name: 'version_details')
   List<PokemonHeldItemVersion> get versionDetails {
+    if (_versionDetails is EqualUnmodifiableListView) return _versionDetails;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_versionDetails);
   }
@@ -5876,7 +5946,7 @@ class _$_PokemonHeldItem implements _PokemonHeldItem {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_PokemonHeldItem &&
-            const DeepCollectionEquality().equals(other.item, item) &&
+            (identical(other.item, item) || other.item == item) &&
             const DeepCollectionEquality()
                 .equals(other._versionDetails, _versionDetails));
   }
@@ -5884,12 +5954,11 @@ class _$_PokemonHeldItem implements _PokemonHeldItem {
   @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(item),
-      const DeepCollectionEquality().hash(_versionDetails));
+      runtimeType, item, const DeepCollectionEquality().hash(_versionDetails));
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_PokemonHeldItemCopyWith<_$_PokemonHeldItem> get copyWith =>
       __$$_PokemonHeldItemCopyWithImpl<_$_PokemonHeldItem>(this, _$identity);
 
@@ -5903,10 +5972,9 @@ class _$_PokemonHeldItem implements _PokemonHeldItem {
 
 abstract class _PokemonHeldItem implements PokemonHeldItem {
   const factory _PokemonHeldItem(
-          final NamedAPIResource item,
-          @JsonKey(name: 'version_details')
-              final List<PokemonHeldItemVersion> versionDetails) =
-      _$_PokemonHeldItem;
+      final NamedAPIResource item,
+      @JsonKey(name: 'version_details')
+      final List<PokemonHeldItemVersion> versionDetails) = _$_PokemonHeldItem;
 
   factory _PokemonHeldItem.fromJson(Map<String, dynamic> json) =
       _$_PokemonHeldItem.fromJson;
@@ -5957,42 +6025,47 @@ mixin _$PokemonHeldItemVersion {
 abstract class $PokemonHeldItemVersionCopyWith<$Res> {
   factory $PokemonHeldItemVersionCopyWith(PokemonHeldItemVersion value,
           $Res Function(PokemonHeldItemVersion) then) =
-      _$PokemonHeldItemVersionCopyWithImpl<$Res>;
+      _$PokemonHeldItemVersionCopyWithImpl<$Res, PokemonHeldItemVersion>;
+  @useResult
   $Res call({NamedAPIResource version, int rarity});
 
   $NamedAPIResourceCopyWith<$Res> get version;
 }
 
 /// @nodoc
-class _$PokemonHeldItemVersionCopyWithImpl<$Res>
+class _$PokemonHeldItemVersionCopyWithImpl<$Res,
+        $Val extends PokemonHeldItemVersion>
     implements $PokemonHeldItemVersionCopyWith<$Res> {
   _$PokemonHeldItemVersionCopyWithImpl(this._value, this._then);
 
-  final PokemonHeldItemVersion _value;
   // ignore: unused_field
-  final $Res Function(PokemonHeldItemVersion) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? version = freezed,
-    Object? rarity = freezed,
+    Object? version = null,
+    Object? rarity = null,
   }) {
     return _then(_value.copyWith(
-      version: version == freezed
+      version: null == version
           ? _value.version
           : version // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-      rarity: rarity == freezed
+      rarity: null == rarity
           ? _value.rarity
           : rarity // ignore: cast_nullable_to_non_nullable
               as int,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $NamedAPIResourceCopyWith<$Res> get version {
     return $NamedAPIResourceCopyWith<$Res>(_value.version, (value) {
-      return _then(_value.copyWith(version: value));
+      return _then(_value.copyWith(version: value) as $Val);
     });
   }
 }
@@ -6004,6 +6077,7 @@ abstract class _$$_PokemonHeldItemVersionCopyWith<$Res>
           $Res Function(_$_PokemonHeldItemVersion) then) =
       __$$_PokemonHeldItemVersionCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({NamedAPIResource version, int rarity});
 
   @override
@@ -6012,27 +6086,25 @@ abstract class _$$_PokemonHeldItemVersionCopyWith<$Res>
 
 /// @nodoc
 class __$$_PokemonHeldItemVersionCopyWithImpl<$Res>
-    extends _$PokemonHeldItemVersionCopyWithImpl<$Res>
+    extends _$PokemonHeldItemVersionCopyWithImpl<$Res,
+        _$_PokemonHeldItemVersion>
     implements _$$_PokemonHeldItemVersionCopyWith<$Res> {
   __$$_PokemonHeldItemVersionCopyWithImpl(_$_PokemonHeldItemVersion _value,
       $Res Function(_$_PokemonHeldItemVersion) _then)
-      : super(_value, (v) => _then(v as _$_PokemonHeldItemVersion));
+      : super(_value, _then);
 
-  @override
-  _$_PokemonHeldItemVersion get _value =>
-      super._value as _$_PokemonHeldItemVersion;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? version = freezed,
-    Object? rarity = freezed,
+    Object? version = null,
+    Object? rarity = null,
   }) {
     return _then(_$_PokemonHeldItemVersion(
-      version == freezed
+      null == version
           ? _value.version
           : version // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-      rarity == freezed
+      null == rarity
           ? _value.rarity
           : rarity // ignore: cast_nullable_to_non_nullable
               as int,
@@ -6070,19 +6142,17 @@ class _$_PokemonHeldItemVersion implements _PokemonHeldItemVersion {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_PokemonHeldItemVersion &&
-            const DeepCollectionEquality().equals(other.version, version) &&
-            const DeepCollectionEquality().equals(other.rarity, rarity));
+            (identical(other.version, version) || other.version == version) &&
+            (identical(other.rarity, rarity) || other.rarity == rarity));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(version),
-      const DeepCollectionEquality().hash(rarity));
+  int get hashCode => Object.hash(runtimeType, version, rarity);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_PokemonHeldItemVersionCopyWith<_$_PokemonHeldItemVersion> get copyWith =>
       __$$_PokemonHeldItemVersionCopyWithImpl<_$_PokemonHeldItemVersion>(
           this, _$identity);
@@ -6149,44 +6219,49 @@ mixin _$PokemonMove {
 abstract class $PokemonMoveCopyWith<$Res> {
   factory $PokemonMoveCopyWith(
           PokemonMove value, $Res Function(PokemonMove) then) =
-      _$PokemonMoveCopyWithImpl<$Res>;
+      _$PokemonMoveCopyWithImpl<$Res, PokemonMove>;
+  @useResult
   $Res call(
       {NamedAPIResource move,
       @JsonKey(name: 'version_group_details')
-          List<PokemonMoveVersion> versionGroupDetails});
+      List<PokemonMoveVersion> versionGroupDetails});
 
   $NamedAPIResourceCopyWith<$Res> get move;
 }
 
 /// @nodoc
-class _$PokemonMoveCopyWithImpl<$Res> implements $PokemonMoveCopyWith<$Res> {
+class _$PokemonMoveCopyWithImpl<$Res, $Val extends PokemonMove>
+    implements $PokemonMoveCopyWith<$Res> {
   _$PokemonMoveCopyWithImpl(this._value, this._then);
 
-  final PokemonMove _value;
   // ignore: unused_field
-  final $Res Function(PokemonMove) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? move = freezed,
-    Object? versionGroupDetails = freezed,
+    Object? move = null,
+    Object? versionGroupDetails = null,
   }) {
     return _then(_value.copyWith(
-      move: move == freezed
+      move: null == move
           ? _value.move
           : move // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-      versionGroupDetails: versionGroupDetails == freezed
+      versionGroupDetails: null == versionGroupDetails
           ? _value.versionGroupDetails
           : versionGroupDetails // ignore: cast_nullable_to_non_nullable
               as List<PokemonMoveVersion>,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $NamedAPIResourceCopyWith<$Res> get move {
     return $NamedAPIResourceCopyWith<$Res>(_value.move, (value) {
-      return _then(_value.copyWith(move: value));
+      return _then(_value.copyWith(move: value) as $Val);
     });
   }
 }
@@ -6198,36 +6273,36 @@ abstract class _$$_PokemonMoveCopyWith<$Res>
           _$_PokemonMove value, $Res Function(_$_PokemonMove) then) =
       __$$_PokemonMoveCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {NamedAPIResource move,
       @JsonKey(name: 'version_group_details')
-          List<PokemonMoveVersion> versionGroupDetails});
+      List<PokemonMoveVersion> versionGroupDetails});
 
   @override
   $NamedAPIResourceCopyWith<$Res> get move;
 }
 
 /// @nodoc
-class __$$_PokemonMoveCopyWithImpl<$Res> extends _$PokemonMoveCopyWithImpl<$Res>
+class __$$_PokemonMoveCopyWithImpl<$Res>
+    extends _$PokemonMoveCopyWithImpl<$Res, _$_PokemonMove>
     implements _$$_PokemonMoveCopyWith<$Res> {
   __$$_PokemonMoveCopyWithImpl(
       _$_PokemonMove _value, $Res Function(_$_PokemonMove) _then)
-      : super(_value, (v) => _then(v as _$_PokemonMove));
+      : super(_value, _then);
 
-  @override
-  _$_PokemonMove get _value => super._value as _$_PokemonMove;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? move = freezed,
-    Object? versionGroupDetails = freezed,
+    Object? move = null,
+    Object? versionGroupDetails = null,
   }) {
     return _then(_$_PokemonMove(
-      move == freezed
+      null == move
           ? _value.move
           : move // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-      versionGroupDetails == freezed
+      null == versionGroupDetails
           ? _value._versionGroupDetails
           : versionGroupDetails // ignore: cast_nullable_to_non_nullable
               as List<PokemonMoveVersion>,
@@ -6241,7 +6316,7 @@ class _$_PokemonMove implements _PokemonMove {
   const _$_PokemonMove(
       this.move,
       @JsonKey(name: 'version_group_details')
-          final List<PokemonMoveVersion> versionGroupDetails)
+      final List<PokemonMoveVersion> versionGroupDetails)
       : _versionGroupDetails = versionGroupDetails;
 
   factory _$_PokemonMove.fromJson(Map<String, dynamic> json) =>
@@ -6262,6 +6337,8 @@ class _$_PokemonMove implements _PokemonMove {
   @override
   @JsonKey(name: 'version_group_details')
   List<PokemonMoveVersion> get versionGroupDetails {
+    if (_versionGroupDetails is EqualUnmodifiableListView)
+      return _versionGroupDetails;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_versionGroupDetails);
   }
@@ -6276,20 +6353,19 @@ class _$_PokemonMove implements _PokemonMove {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_PokemonMove &&
-            const DeepCollectionEquality().equals(other.move, move) &&
+            (identical(other.move, move) || other.move == move) &&
             const DeepCollectionEquality()
                 .equals(other._versionGroupDetails, _versionGroupDetails));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(move),
+  int get hashCode => Object.hash(runtimeType, move,
       const DeepCollectionEquality().hash(_versionGroupDetails));
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_PokemonMoveCopyWith<_$_PokemonMove> get copyWith =>
       __$$_PokemonMoveCopyWithImpl<_$_PokemonMove>(this, _$identity);
 
@@ -6305,7 +6381,7 @@ abstract class _PokemonMove implements PokemonMove {
   const factory _PokemonMove(
       final NamedAPIResource move,
       @JsonKey(name: 'version_group_details')
-          final List<PokemonMoveVersion> versionGroupDetails) = _$_PokemonMove;
+      final List<PokemonMoveVersion> versionGroupDetails) = _$_PokemonMove;
 
   factory _PokemonMove.fromJson(Map<String, dynamic> json) =
       _$_PokemonMove.fromJson;
@@ -6365,7 +6441,8 @@ mixin _$PokemonMoveVersion {
 abstract class $PokemonMoveVersionCopyWith<$Res> {
   factory $PokemonMoveVersionCopyWith(
           PokemonMoveVersion value, $Res Function(PokemonMoveVersion) then) =
-      _$PokemonMoveVersionCopyWithImpl<$Res>;
+      _$PokemonMoveVersionCopyWithImpl<$Res, PokemonMoveVersion>;
+  @useResult
   $Res call(
       {@JsonKey(name: 'move_learn_method') NamedAPIResource moveLearnMethod,
       @JsonKey(name: 'version_group') NamedAPIResource versionGroup,
@@ -6376,47 +6453,51 @@ abstract class $PokemonMoveVersionCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$PokemonMoveVersionCopyWithImpl<$Res>
+class _$PokemonMoveVersionCopyWithImpl<$Res, $Val extends PokemonMoveVersion>
     implements $PokemonMoveVersionCopyWith<$Res> {
   _$PokemonMoveVersionCopyWithImpl(this._value, this._then);
 
-  final PokemonMoveVersion _value;
   // ignore: unused_field
-  final $Res Function(PokemonMoveVersion) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? moveLearnMethod = freezed,
-    Object? versionGroup = freezed,
-    Object? levelLearnedAt = freezed,
+    Object? moveLearnMethod = null,
+    Object? versionGroup = null,
+    Object? levelLearnedAt = null,
   }) {
     return _then(_value.copyWith(
-      moveLearnMethod: moveLearnMethod == freezed
+      moveLearnMethod: null == moveLearnMethod
           ? _value.moveLearnMethod
           : moveLearnMethod // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-      versionGroup: versionGroup == freezed
+      versionGroup: null == versionGroup
           ? _value.versionGroup
           : versionGroup // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-      levelLearnedAt: levelLearnedAt == freezed
+      levelLearnedAt: null == levelLearnedAt
           ? _value.levelLearnedAt
           : levelLearnedAt // ignore: cast_nullable_to_non_nullable
               as int,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $NamedAPIResourceCopyWith<$Res> get moveLearnMethod {
     return $NamedAPIResourceCopyWith<$Res>(_value.moveLearnMethod, (value) {
-      return _then(_value.copyWith(moveLearnMethod: value));
+      return _then(_value.copyWith(moveLearnMethod: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $NamedAPIResourceCopyWith<$Res> get versionGroup {
     return $NamedAPIResourceCopyWith<$Res>(_value.versionGroup, (value) {
-      return _then(_value.copyWith(versionGroup: value));
+      return _then(_value.copyWith(versionGroup: value) as $Val);
     });
   }
 }
@@ -6428,6 +6509,7 @@ abstract class _$$_PokemonMoveVersionCopyWith<$Res>
           $Res Function(_$_PokemonMoveVersion) then) =
       __$$_PokemonMoveVersionCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@JsonKey(name: 'move_learn_method') NamedAPIResource moveLearnMethod,
       @JsonKey(name: 'version_group') NamedAPIResource versionGroup,
@@ -6441,31 +6523,29 @@ abstract class _$$_PokemonMoveVersionCopyWith<$Res>
 
 /// @nodoc
 class __$$_PokemonMoveVersionCopyWithImpl<$Res>
-    extends _$PokemonMoveVersionCopyWithImpl<$Res>
+    extends _$PokemonMoveVersionCopyWithImpl<$Res, _$_PokemonMoveVersion>
     implements _$$_PokemonMoveVersionCopyWith<$Res> {
   __$$_PokemonMoveVersionCopyWithImpl(
       _$_PokemonMoveVersion _value, $Res Function(_$_PokemonMoveVersion) _then)
-      : super(_value, (v) => _then(v as _$_PokemonMoveVersion));
+      : super(_value, _then);
 
-  @override
-  _$_PokemonMoveVersion get _value => super._value as _$_PokemonMoveVersion;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? moveLearnMethod = freezed,
-    Object? versionGroup = freezed,
-    Object? levelLearnedAt = freezed,
+    Object? moveLearnMethod = null,
+    Object? versionGroup = null,
+    Object? levelLearnedAt = null,
   }) {
     return _then(_$_PokemonMoveVersion(
-      moveLearnMethod == freezed
+      null == moveLearnMethod
           ? _value.moveLearnMethod
           : moveLearnMethod // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-      versionGroup == freezed
+      null == versionGroup
           ? _value.versionGroup
           : versionGroup // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-      levelLearnedAt == freezed
+      null == levelLearnedAt
           ? _value.levelLearnedAt
           : levelLearnedAt // ignore: cast_nullable_to_non_nullable
               as int,
@@ -6517,24 +6597,22 @@ class _$_PokemonMoveVersion implements _PokemonMoveVersion {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_PokemonMoveVersion &&
-            const DeepCollectionEquality()
-                .equals(other.moveLearnMethod, moveLearnMethod) &&
-            const DeepCollectionEquality()
-                .equals(other.versionGroup, versionGroup) &&
-            const DeepCollectionEquality()
-                .equals(other.levelLearnedAt, levelLearnedAt));
+            (identical(other.moveLearnMethod, moveLearnMethod) ||
+                other.moveLearnMethod == moveLearnMethod) &&
+            (identical(other.versionGroup, versionGroup) ||
+                other.versionGroup == versionGroup) &&
+            (identical(other.levelLearnedAt, levelLearnedAt) ||
+                other.levelLearnedAt == levelLearnedAt));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(moveLearnMethod),
-      const DeepCollectionEquality().hash(versionGroup),
-      const DeepCollectionEquality().hash(levelLearnedAt));
+  int get hashCode =>
+      Object.hash(runtimeType, moveLearnMethod, versionGroup, levelLearnedAt);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_PokemonMoveVersionCopyWith<_$_PokemonMoveVersion> get copyWith =>
       __$$_PokemonMoveVersionCopyWithImpl<_$_PokemonMoveVersion>(
           this, _$identity);
@@ -6549,12 +6627,11 @@ class _$_PokemonMoveVersion implements _PokemonMoveVersion {
 
 abstract class _PokemonMoveVersion implements PokemonMoveVersion {
   const factory _PokemonMoveVersion(
-      @JsonKey(name: 'move_learn_method')
+          @JsonKey(name: 'move_learn_method')
           final NamedAPIResource moveLearnMethod,
-      @JsonKey(name: 'version_group')
-          final NamedAPIResource versionGroup,
-      @JsonKey(name: 'level_learned_at')
-          final int levelLearnedAt) = _$_PokemonMoveVersion;
+          @JsonKey(name: 'version_group') final NamedAPIResource versionGroup,
+          @JsonKey(name: 'level_learned_at') final int levelLearnedAt) =
+      _$_PokemonMoveVersion;
 
   factory _PokemonMoveVersion.fromJson(Map<String, dynamic> json) =
       _$_PokemonMoveVersion.fromJson;
@@ -6618,7 +6695,8 @@ mixin _$PokemonStat {
 abstract class $PokemonStatCopyWith<$Res> {
   factory $PokemonStatCopyWith(
           PokemonStat value, $Res Function(PokemonStat) then) =
-      _$PokemonStatCopyWithImpl<$Res>;
+      _$PokemonStatCopyWithImpl<$Res, PokemonStat>;
+  @useResult
   $Res call(
       {NamedAPIResource stat,
       int effort,
@@ -6628,39 +6706,43 @@ abstract class $PokemonStatCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$PokemonStatCopyWithImpl<$Res> implements $PokemonStatCopyWith<$Res> {
+class _$PokemonStatCopyWithImpl<$Res, $Val extends PokemonStat>
+    implements $PokemonStatCopyWith<$Res> {
   _$PokemonStatCopyWithImpl(this._value, this._then);
 
-  final PokemonStat _value;
   // ignore: unused_field
-  final $Res Function(PokemonStat) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stat = freezed,
-    Object? effort = freezed,
-    Object? baseStat = freezed,
+    Object? stat = null,
+    Object? effort = null,
+    Object? baseStat = null,
   }) {
     return _then(_value.copyWith(
-      stat: stat == freezed
+      stat: null == stat
           ? _value.stat
           : stat // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-      effort: effort == freezed
+      effort: null == effort
           ? _value.effort
           : effort // ignore: cast_nullable_to_non_nullable
               as int,
-      baseStat: baseStat == freezed
+      baseStat: null == baseStat
           ? _value.baseStat
           : baseStat // ignore: cast_nullable_to_non_nullable
               as int,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $NamedAPIResourceCopyWith<$Res> get stat {
     return $NamedAPIResourceCopyWith<$Res>(_value.stat, (value) {
-      return _then(_value.copyWith(stat: value));
+      return _then(_value.copyWith(stat: value) as $Val);
     });
   }
 }
@@ -6672,6 +6754,7 @@ abstract class _$$_PokemonStatCopyWith<$Res>
           _$_PokemonStat value, $Res Function(_$_PokemonStat) then) =
       __$$_PokemonStatCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {NamedAPIResource stat,
       int effort,
@@ -6682,31 +6765,30 @@ abstract class _$$_PokemonStatCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_PokemonStatCopyWithImpl<$Res> extends _$PokemonStatCopyWithImpl<$Res>
+class __$$_PokemonStatCopyWithImpl<$Res>
+    extends _$PokemonStatCopyWithImpl<$Res, _$_PokemonStat>
     implements _$$_PokemonStatCopyWith<$Res> {
   __$$_PokemonStatCopyWithImpl(
       _$_PokemonStat _value, $Res Function(_$_PokemonStat) _then)
-      : super(_value, (v) => _then(v as _$_PokemonStat));
+      : super(_value, _then);
 
-  @override
-  _$_PokemonStat get _value => super._value as _$_PokemonStat;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? stat = freezed,
-    Object? effort = freezed,
-    Object? baseStat = freezed,
+    Object? stat = null,
+    Object? effort = null,
+    Object? baseStat = null,
   }) {
     return _then(_$_PokemonStat(
-      stat == freezed
+      null == stat
           ? _value.stat
           : stat // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-      effort == freezed
+      null == effort
           ? _value.effort
           : effort // ignore: cast_nullable_to_non_nullable
               as int,
-      baseStat == freezed
+      null == baseStat
           ? _value.baseStat
           : baseStat // ignore: cast_nullable_to_non_nullable
               as int,
@@ -6750,21 +6832,19 @@ class _$_PokemonStat implements _PokemonStat {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_PokemonStat &&
-            const DeepCollectionEquality().equals(other.stat, stat) &&
-            const DeepCollectionEquality().equals(other.effort, effort) &&
-            const DeepCollectionEquality().equals(other.baseStat, baseStat));
+            (identical(other.stat, stat) || other.stat == stat) &&
+            (identical(other.effort, effort) || other.effort == effort) &&
+            (identical(other.baseStat, baseStat) ||
+                other.baseStat == baseStat));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(stat),
-      const DeepCollectionEquality().hash(effort),
-      const DeepCollectionEquality().hash(baseStat));
+  int get hashCode => Object.hash(runtimeType, stat, effort, baseStat);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_PokemonStatCopyWith<_$_PokemonStat> get copyWith =>
       __$$_PokemonStatCopyWithImpl<_$_PokemonStat>(this, _$identity);
 
@@ -6854,7 +6934,8 @@ mixin _$PokemonSprites {
 abstract class $PokemonSpritesCopyWith<$Res> {
   factory $PokemonSpritesCopyWith(
           PokemonSprites value, $Res Function(PokemonSprites) then) =
-      _$PokemonSpritesCopyWithImpl<$Res>;
+      _$PokemonSpritesCopyWithImpl<$Res, PokemonSprites>;
+  @useResult
   $Res call(
       {@JsonKey(name: 'front_default') String? frontDefault,
       @JsonKey(name: 'front_shiny') String? frontShiny,
@@ -6867,14 +6948,16 @@ abstract class $PokemonSpritesCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$PokemonSpritesCopyWithImpl<$Res>
+class _$PokemonSpritesCopyWithImpl<$Res, $Val extends PokemonSprites>
     implements $PokemonSpritesCopyWith<$Res> {
   _$PokemonSpritesCopyWithImpl(this._value, this._then);
 
-  final PokemonSprites _value;
   // ignore: unused_field
-  final $Res Function(PokemonSprites) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? frontDefault = freezed,
@@ -6887,39 +6970,39 @@ class _$PokemonSpritesCopyWithImpl<$Res>
     Object? backShinyFemale = freezed,
   }) {
     return _then(_value.copyWith(
-      frontDefault: frontDefault == freezed
+      frontDefault: freezed == frontDefault
           ? _value.frontDefault
           : frontDefault // ignore: cast_nullable_to_non_nullable
               as String?,
-      frontShiny: frontShiny == freezed
+      frontShiny: freezed == frontShiny
           ? _value.frontShiny
           : frontShiny // ignore: cast_nullable_to_non_nullable
               as String?,
-      frontFemale: frontFemale == freezed
+      frontFemale: freezed == frontFemale
           ? _value.frontFemale
           : frontFemale // ignore: cast_nullable_to_non_nullable
               as String?,
-      frontShinyFemale: frontShinyFemale == freezed
+      frontShinyFemale: freezed == frontShinyFemale
           ? _value.frontShinyFemale
           : frontShinyFemale // ignore: cast_nullable_to_non_nullable
               as String?,
-      backDefault: backDefault == freezed
+      backDefault: freezed == backDefault
           ? _value.backDefault
           : backDefault // ignore: cast_nullable_to_non_nullable
               as String?,
-      backShiny: backShiny == freezed
+      backShiny: freezed == backShiny
           ? _value.backShiny
           : backShiny // ignore: cast_nullable_to_non_nullable
               as String?,
-      backFemale: backFemale == freezed
+      backFemale: freezed == backFemale
           ? _value.backFemale
           : backFemale // ignore: cast_nullable_to_non_nullable
               as String?,
-      backShinyFemale: backShinyFemale == freezed
+      backShinyFemale: freezed == backShinyFemale
           ? _value.backShinyFemale
           : backShinyFemale // ignore: cast_nullable_to_non_nullable
               as String?,
-    ));
+    ) as $Val);
   }
 }
 
@@ -6930,6 +7013,7 @@ abstract class _$$_PokemonSpritesCopyWith<$Res>
           _$_PokemonSprites value, $Res Function(_$_PokemonSprites) then) =
       __$$_PokemonSpritesCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@JsonKey(name: 'front_default') String? frontDefault,
       @JsonKey(name: 'front_shiny') String? frontShiny,
@@ -6943,15 +7027,13 @@ abstract class _$$_PokemonSpritesCopyWith<$Res>
 
 /// @nodoc
 class __$$_PokemonSpritesCopyWithImpl<$Res>
-    extends _$PokemonSpritesCopyWithImpl<$Res>
+    extends _$PokemonSpritesCopyWithImpl<$Res, _$_PokemonSprites>
     implements _$$_PokemonSpritesCopyWith<$Res> {
   __$$_PokemonSpritesCopyWithImpl(
       _$_PokemonSprites _value, $Res Function(_$_PokemonSprites) _then)
-      : super(_value, (v) => _then(v as _$_PokemonSprites));
+      : super(_value, _then);
 
-  @override
-  _$_PokemonSprites get _value => super._value as _$_PokemonSprites;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? frontDefault = freezed,
@@ -6964,35 +7046,35 @@ class __$$_PokemonSpritesCopyWithImpl<$Res>
     Object? backShinyFemale = freezed,
   }) {
     return _then(_$_PokemonSprites(
-      frontDefault == freezed
+      freezed == frontDefault
           ? _value.frontDefault
           : frontDefault // ignore: cast_nullable_to_non_nullable
               as String?,
-      frontShiny == freezed
+      freezed == frontShiny
           ? _value.frontShiny
           : frontShiny // ignore: cast_nullable_to_non_nullable
               as String?,
-      frontFemale == freezed
+      freezed == frontFemale
           ? _value.frontFemale
           : frontFemale // ignore: cast_nullable_to_non_nullable
               as String?,
-      frontShinyFemale == freezed
+      freezed == frontShinyFemale
           ? _value.frontShinyFemale
           : frontShinyFemale // ignore: cast_nullable_to_non_nullable
               as String?,
-      backDefault == freezed
+      freezed == backDefault
           ? _value.backDefault
           : backDefault // ignore: cast_nullable_to_non_nullable
               as String?,
-      backShiny == freezed
+      freezed == backShiny
           ? _value.backShiny
           : backShiny // ignore: cast_nullable_to_non_nullable
               as String?,
-      backFemale == freezed
+      freezed == backFemale
           ? _value.backFemale
           : backFemale // ignore: cast_nullable_to_non_nullable
               as String?,
-      backShinyFemale == freezed
+      freezed == backShinyFemale
           ? _value.backShinyFemale
           : backShinyFemale // ignore: cast_nullable_to_non_nullable
               as String?,
@@ -7066,38 +7148,40 @@ class _$_PokemonSprites implements _PokemonSprites {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_PokemonSprites &&
-            const DeepCollectionEquality()
-                .equals(other.frontDefault, frontDefault) &&
-            const DeepCollectionEquality()
-                .equals(other.frontShiny, frontShiny) &&
-            const DeepCollectionEquality()
-                .equals(other.frontFemale, frontFemale) &&
-            const DeepCollectionEquality()
-                .equals(other.frontShinyFemale, frontShinyFemale) &&
-            const DeepCollectionEquality()
-                .equals(other.backDefault, backDefault) &&
-            const DeepCollectionEquality().equals(other.backShiny, backShiny) &&
-            const DeepCollectionEquality()
-                .equals(other.backFemale, backFemale) &&
-            const DeepCollectionEquality()
-                .equals(other.backShinyFemale, backShinyFemale));
+            (identical(other.frontDefault, frontDefault) ||
+                other.frontDefault == frontDefault) &&
+            (identical(other.frontShiny, frontShiny) ||
+                other.frontShiny == frontShiny) &&
+            (identical(other.frontFemale, frontFemale) ||
+                other.frontFemale == frontFemale) &&
+            (identical(other.frontShinyFemale, frontShinyFemale) ||
+                other.frontShinyFemale == frontShinyFemale) &&
+            (identical(other.backDefault, backDefault) ||
+                other.backDefault == backDefault) &&
+            (identical(other.backShiny, backShiny) ||
+                other.backShiny == backShiny) &&
+            (identical(other.backFemale, backFemale) ||
+                other.backFemale == backFemale) &&
+            (identical(other.backShinyFemale, backShinyFemale) ||
+                other.backShinyFemale == backShinyFemale));
   }
 
   @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      const DeepCollectionEquality().hash(frontDefault),
-      const DeepCollectionEquality().hash(frontShiny),
-      const DeepCollectionEquality().hash(frontFemale),
-      const DeepCollectionEquality().hash(frontShinyFemale),
-      const DeepCollectionEquality().hash(backDefault),
-      const DeepCollectionEquality().hash(backShiny),
-      const DeepCollectionEquality().hash(backFemale),
-      const DeepCollectionEquality().hash(backShinyFemale));
+      frontDefault,
+      frontShiny,
+      frontFemale,
+      frontShinyFemale,
+      backDefault,
+      backShiny,
+      backFemale,
+      backShinyFemale);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_PokemonSpritesCopyWith<_$_PokemonSprites> get copyWith =>
       __$$_PokemonSpritesCopyWithImpl<_$_PokemonSprites>(this, _$identity);
 
@@ -7199,46 +7283,50 @@ mixin _$PokemonLocationAreas {
 abstract class $PokemonLocationAreasCopyWith<$Res> {
   factory $PokemonLocationAreasCopyWith(PokemonLocationAreas value,
           $Res Function(PokemonLocationAreas) then) =
-      _$PokemonLocationAreasCopyWithImpl<$Res>;
+      _$PokemonLocationAreasCopyWithImpl<$Res, PokemonLocationAreas>;
+  @useResult
   $Res call(
-      {@JsonKey(name: 'location_area')
-          NamedAPIResource locationArea,
+      {@JsonKey(name: 'location_area') NamedAPIResource locationArea,
       @JsonKey(name: 'version_details')
-          List<VersionEncounterDetail> versionDetails});
+      List<VersionEncounterDetail> versionDetails});
 
   $NamedAPIResourceCopyWith<$Res> get locationArea;
 }
 
 /// @nodoc
-class _$PokemonLocationAreasCopyWithImpl<$Res>
+class _$PokemonLocationAreasCopyWithImpl<$Res,
+        $Val extends PokemonLocationAreas>
     implements $PokemonLocationAreasCopyWith<$Res> {
   _$PokemonLocationAreasCopyWithImpl(this._value, this._then);
 
-  final PokemonLocationAreas _value;
   // ignore: unused_field
-  final $Res Function(PokemonLocationAreas) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? locationArea = freezed,
-    Object? versionDetails = freezed,
+    Object? locationArea = null,
+    Object? versionDetails = null,
   }) {
     return _then(_value.copyWith(
-      locationArea: locationArea == freezed
+      locationArea: null == locationArea
           ? _value.locationArea
           : locationArea // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-      versionDetails: versionDetails == freezed
+      versionDetails: null == versionDetails
           ? _value.versionDetails
           : versionDetails // ignore: cast_nullable_to_non_nullable
               as List<VersionEncounterDetail>,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $NamedAPIResourceCopyWith<$Res> get locationArea {
     return $NamedAPIResourceCopyWith<$Res>(_value.locationArea, (value) {
-      return _then(_value.copyWith(locationArea: value));
+      return _then(_value.copyWith(locationArea: value) as $Val);
     });
   }
 }
@@ -7250,11 +7338,11 @@ abstract class _$$_PokemonLocationAreasCopyWith<$Res>
           $Res Function(_$_PokemonLocationAreas) then) =
       __$$_PokemonLocationAreasCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
-      {@JsonKey(name: 'location_area')
-          NamedAPIResource locationArea,
+      {@JsonKey(name: 'location_area') NamedAPIResource locationArea,
       @JsonKey(name: 'version_details')
-          List<VersionEncounterDetail> versionDetails});
+      List<VersionEncounterDetail> versionDetails});
 
   @override
   $NamedAPIResourceCopyWith<$Res> get locationArea;
@@ -7262,26 +7350,24 @@ abstract class _$$_PokemonLocationAreasCopyWith<$Res>
 
 /// @nodoc
 class __$$_PokemonLocationAreasCopyWithImpl<$Res>
-    extends _$PokemonLocationAreasCopyWithImpl<$Res>
+    extends _$PokemonLocationAreasCopyWithImpl<$Res, _$_PokemonLocationAreas>
     implements _$$_PokemonLocationAreasCopyWith<$Res> {
   __$$_PokemonLocationAreasCopyWithImpl(_$_PokemonLocationAreas _value,
       $Res Function(_$_PokemonLocationAreas) _then)
-      : super(_value, (v) => _then(v as _$_PokemonLocationAreas));
+      : super(_value, _then);
 
-  @override
-  _$_PokemonLocationAreas get _value => super._value as _$_PokemonLocationAreas;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? locationArea = freezed,
-    Object? versionDetails = freezed,
+    Object? locationArea = null,
+    Object? versionDetails = null,
   }) {
     return _then(_$_PokemonLocationAreas(
-      locationArea == freezed
+      null == locationArea
           ? _value.locationArea
           : locationArea // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-      versionDetails == freezed
+      null == versionDetails
           ? _value._versionDetails
           : versionDetails // ignore: cast_nullable_to_non_nullable
               as List<VersionEncounterDetail>,
@@ -7293,10 +7379,9 @@ class __$$_PokemonLocationAreasCopyWithImpl<$Res>
 @JsonSerializable()
 class _$_PokemonLocationAreas implements _PokemonLocationAreas {
   const _$_PokemonLocationAreas(
-      @JsonKey(name: 'location_area')
-          this.locationArea,
+      @JsonKey(name: 'location_area') this.locationArea,
       @JsonKey(name: 'version_details')
-          final List<VersionEncounterDetail> versionDetails)
+      final List<VersionEncounterDetail> versionDetails)
       : _versionDetails = versionDetails;
 
   factory _$_PokemonLocationAreas.fromJson(Map<String, dynamic> json) =>
@@ -7318,6 +7403,7 @@ class _$_PokemonLocationAreas implements _PokemonLocationAreas {
   @override
   @JsonKey(name: 'version_details')
   List<VersionEncounterDetail> get versionDetails {
+    if (_versionDetails is EqualUnmodifiableListView) return _versionDetails;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_versionDetails);
   }
@@ -7332,21 +7418,20 @@ class _$_PokemonLocationAreas implements _PokemonLocationAreas {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_PokemonLocationAreas &&
-            const DeepCollectionEquality()
-                .equals(other.locationArea, locationArea) &&
+            (identical(other.locationArea, locationArea) ||
+                other.locationArea == locationArea) &&
             const DeepCollectionEquality()
                 .equals(other._versionDetails, _versionDetails));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(locationArea),
+  int get hashCode => Object.hash(runtimeType, locationArea,
       const DeepCollectionEquality().hash(_versionDetails));
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_PokemonLocationAreasCopyWith<_$_PokemonLocationAreas> get copyWith =>
       __$$_PokemonLocationAreasCopyWithImpl<_$_PokemonLocationAreas>(
           this, _$identity);
@@ -7361,10 +7446,9 @@ class _$_PokemonLocationAreas implements _PokemonLocationAreas {
 
 abstract class _PokemonLocationAreas implements PokemonLocationAreas {
   const factory _PokemonLocationAreas(
-          @JsonKey(name: 'location_area')
-              final NamedAPIResource locationArea,
+          @JsonKey(name: 'location_area') final NamedAPIResource locationArea,
           @JsonKey(name: 'version_details')
-              final List<VersionEncounterDetail> versionDetails) =
+          final List<VersionEncounterDetail> versionDetails) =
       _$_PokemonLocationAreas;
 
   factory _PokemonLocationAreas.fromJson(Map<String, dynamic> json) =
@@ -7424,7 +7508,8 @@ mixin _$PokemonColor {
 abstract class $PokemonColorCopyWith<$Res> {
   factory $PokemonColorCopyWith(
           PokemonColor value, $Res Function(PokemonColor) then) =
-      _$PokemonColorCopyWithImpl<$Res>;
+      _$PokemonColorCopyWithImpl<$Res, PokemonColor>;
+  @useResult
   $Res call(
       {int id,
       String name,
@@ -7433,38 +7518,41 @@ abstract class $PokemonColorCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$PokemonColorCopyWithImpl<$Res> implements $PokemonColorCopyWith<$Res> {
+class _$PokemonColorCopyWithImpl<$Res, $Val extends PokemonColor>
+    implements $PokemonColorCopyWith<$Res> {
   _$PokemonColorCopyWithImpl(this._value, this._then);
 
-  final PokemonColor _value;
   // ignore: unused_field
-  final $Res Function(PokemonColor) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? names = freezed,
-    Object? pokemonSpecies = freezed,
+    Object? id = null,
+    Object? name = null,
+    Object? names = null,
+    Object? pokemonSpecies = null,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      name: name == freezed
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      names: names == freezed
+      names: null == names
           ? _value.names
           : names // ignore: cast_nullable_to_non_nullable
               as List<Name>,
-      pokemonSpecies: pokemonSpecies == freezed
+      pokemonSpecies: null == pokemonSpecies
           ? _value.pokemonSpecies
           : pokemonSpecies // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
-    ));
+    ) as $Val);
   }
 }
 
@@ -7475,6 +7563,7 @@ abstract class _$$_PokemonColorCopyWith<$Res>
           _$_PokemonColor value, $Res Function(_$_PokemonColor) then) =
       __$$_PokemonColorCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {int id,
       String name,
@@ -7484,36 +7573,34 @@ abstract class _$$_PokemonColorCopyWith<$Res>
 
 /// @nodoc
 class __$$_PokemonColorCopyWithImpl<$Res>
-    extends _$PokemonColorCopyWithImpl<$Res>
+    extends _$PokemonColorCopyWithImpl<$Res, _$_PokemonColor>
     implements _$$_PokemonColorCopyWith<$Res> {
   __$$_PokemonColorCopyWithImpl(
       _$_PokemonColor _value, $Res Function(_$_PokemonColor) _then)
-      : super(_value, (v) => _then(v as _$_PokemonColor));
+      : super(_value, _then);
 
-  @override
-  _$_PokemonColor get _value => super._value as _$_PokemonColor;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? names = freezed,
-    Object? pokemonSpecies = freezed,
+    Object? id = null,
+    Object? name = null,
+    Object? names = null,
+    Object? pokemonSpecies = null,
   }) {
     return _then(_$_PokemonColor(
-      id == freezed
+      null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      name == freezed
+      null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      names == freezed
+      null == names
           ? _value._names
           : names // ignore: cast_nullable_to_non_nullable
               as List<Name>,
-      pokemonSpecies == freezed
+      null == pokemonSpecies
           ? _value._pokemonSpecies
           : pokemonSpecies // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
@@ -7529,7 +7616,7 @@ class _$_PokemonColor implements _PokemonColor {
       this.name,
       final List<Name> names,
       @JsonKey(name: 'pokemon_species')
-          final List<NamedAPIResource> pokemonSpecies)
+      final List<NamedAPIResource> pokemonSpecies)
       : _names = names,
         _pokemonSpecies = pokemonSpecies;
 
@@ -7550,6 +7637,7 @@ class _$_PokemonColor implements _PokemonColor {
   /// The name of this resource listed in different languages.
   @override
   List<Name> get names {
+    if (_names is EqualUnmodifiableListView) return _names;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_names);
   }
@@ -7569,6 +7657,7 @@ class _$_PokemonColor implements _PokemonColor {
   @override
   @JsonKey(name: 'pokemon_species')
   List<NamedAPIResource> get pokemonSpecies {
+    if (_pokemonSpecies is EqualUnmodifiableListView) return _pokemonSpecies;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_pokemonSpecies);
   }
@@ -7583,8 +7672,8 @@ class _$_PokemonColor implements _PokemonColor {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_PokemonColor &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.name, name) &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.name, name) || other.name == name) &&
             const DeepCollectionEquality().equals(other._names, _names) &&
             const DeepCollectionEquality()
                 .equals(other._pokemonSpecies, _pokemonSpecies));
@@ -7594,13 +7683,14 @@ class _$_PokemonColor implements _PokemonColor {
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(name),
+      id,
+      name,
       const DeepCollectionEquality().hash(_names),
       const DeepCollectionEquality().hash(_pokemonSpecies));
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_PokemonColorCopyWith<_$_PokemonColor> get copyWith =>
       __$$_PokemonColorCopyWithImpl<_$_PokemonColor>(this, _$identity);
 
@@ -7618,7 +7708,7 @@ abstract class _PokemonColor implements PokemonColor {
       final String name,
       final List<Name> names,
       @JsonKey(name: 'pokemon_species')
-          final List<NamedAPIResource> pokemonSpecies) = _$_PokemonColor;
+      final List<NamedAPIResource> pokemonSpecies) = _$_PokemonColor;
 
   factory _PokemonColor.fromJson(Map<String, dynamic> json) =
       _$_PokemonColor.fromJson;
@@ -7727,7 +7817,8 @@ mixin _$PokemonForm {
 abstract class $PokemonFormCopyWith<$Res> {
   factory $PokemonFormCopyWith(
           PokemonForm value, $Res Function(PokemonForm) then) =
-      _$PokemonFormCopyWithImpl<$Res>;
+      _$PokemonFormCopyWithImpl<$Res, PokemonForm>;
+  @useResult
   $Res call(
       {int id,
       String name,
@@ -7750,108 +7841,114 @@ abstract class $PokemonFormCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$PokemonFormCopyWithImpl<$Res> implements $PokemonFormCopyWith<$Res> {
+class _$PokemonFormCopyWithImpl<$Res, $Val extends PokemonForm>
+    implements $PokemonFormCopyWith<$Res> {
   _$PokemonFormCopyWithImpl(this._value, this._then);
 
-  final PokemonForm _value;
   // ignore: unused_field
-  final $Res Function(PokemonForm) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? order = freezed,
-    Object? formOrder = freezed,
-    Object? isDefault = freezed,
-    Object? isBattleOnly = freezed,
-    Object? isMega = freezed,
-    Object? formName = freezed,
-    Object? pokemon = freezed,
-    Object? types = freezed,
-    Object? sprites = freezed,
-    Object? versionGroup = freezed,
-    Object? names = freezed,
-    Object? formNames = freezed,
+    Object? id = null,
+    Object? name = null,
+    Object? order = null,
+    Object? formOrder = null,
+    Object? isDefault = null,
+    Object? isBattleOnly = null,
+    Object? isMega = null,
+    Object? formName = null,
+    Object? pokemon = null,
+    Object? types = null,
+    Object? sprites = null,
+    Object? versionGroup = null,
+    Object? names = null,
+    Object? formNames = null,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      name: name == freezed
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      order: order == freezed
+      order: null == order
           ? _value.order
           : order // ignore: cast_nullable_to_non_nullable
               as int,
-      formOrder: formOrder == freezed
+      formOrder: null == formOrder
           ? _value.formOrder
           : formOrder // ignore: cast_nullable_to_non_nullable
               as int,
-      isDefault: isDefault == freezed
+      isDefault: null == isDefault
           ? _value.isDefault
           : isDefault // ignore: cast_nullable_to_non_nullable
               as bool,
-      isBattleOnly: isBattleOnly == freezed
+      isBattleOnly: null == isBattleOnly
           ? _value.isBattleOnly
           : isBattleOnly // ignore: cast_nullable_to_non_nullable
               as bool,
-      isMega: isMega == freezed
+      isMega: null == isMega
           ? _value.isMega
           : isMega // ignore: cast_nullable_to_non_nullable
               as bool,
-      formName: formName == freezed
+      formName: null == formName
           ? _value.formName
           : formName // ignore: cast_nullable_to_non_nullable
               as String,
-      pokemon: pokemon == freezed
+      pokemon: null == pokemon
           ? _value.pokemon
           : pokemon // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-      types: types == freezed
+      types: null == types
           ? _value.types
           : types // ignore: cast_nullable_to_non_nullable
               as List<PokemonFormType>,
-      sprites: sprites == freezed
+      sprites: null == sprites
           ? _value.sprites
           : sprites // ignore: cast_nullable_to_non_nullable
               as PokemonFormSprites,
-      versionGroup: versionGroup == freezed
+      versionGroup: null == versionGroup
           ? _value.versionGroup
           : versionGroup // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-      names: names == freezed
+      names: null == names
           ? _value.names
           : names // ignore: cast_nullable_to_non_nullable
               as List<Name>,
-      formNames: formNames == freezed
+      formNames: null == formNames
           ? _value.formNames
           : formNames // ignore: cast_nullable_to_non_nullable
               as List<Name>,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $NamedAPIResourceCopyWith<$Res> get pokemon {
     return $NamedAPIResourceCopyWith<$Res>(_value.pokemon, (value) {
-      return _then(_value.copyWith(pokemon: value));
+      return _then(_value.copyWith(pokemon: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $PokemonFormSpritesCopyWith<$Res> get sprites {
     return $PokemonFormSpritesCopyWith<$Res>(_value.sprites, (value) {
-      return _then(_value.copyWith(sprites: value));
+      return _then(_value.copyWith(sprites: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $NamedAPIResourceCopyWith<$Res> get versionGroup {
     return $NamedAPIResourceCopyWith<$Res>(_value.versionGroup, (value) {
-      return _then(_value.copyWith(versionGroup: value));
+      return _then(_value.copyWith(versionGroup: value) as $Val);
     });
   }
 }
@@ -7863,6 +7960,7 @@ abstract class _$$_PokemonFormCopyWith<$Res>
           _$_PokemonForm value, $Res Function(_$_PokemonForm) then) =
       __$$_PokemonFormCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {int id,
       String name,
@@ -7888,86 +7986,85 @@ abstract class _$$_PokemonFormCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_PokemonFormCopyWithImpl<$Res> extends _$PokemonFormCopyWithImpl<$Res>
+class __$$_PokemonFormCopyWithImpl<$Res>
+    extends _$PokemonFormCopyWithImpl<$Res, _$_PokemonForm>
     implements _$$_PokemonFormCopyWith<$Res> {
   __$$_PokemonFormCopyWithImpl(
       _$_PokemonForm _value, $Res Function(_$_PokemonForm) _then)
-      : super(_value, (v) => _then(v as _$_PokemonForm));
+      : super(_value, _then);
 
-  @override
-  _$_PokemonForm get _value => super._value as _$_PokemonForm;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? order = freezed,
-    Object? formOrder = freezed,
-    Object? isDefault = freezed,
-    Object? isBattleOnly = freezed,
-    Object? isMega = freezed,
-    Object? formName = freezed,
-    Object? pokemon = freezed,
-    Object? types = freezed,
-    Object? sprites = freezed,
-    Object? versionGroup = freezed,
-    Object? names = freezed,
-    Object? formNames = freezed,
+    Object? id = null,
+    Object? name = null,
+    Object? order = null,
+    Object? formOrder = null,
+    Object? isDefault = null,
+    Object? isBattleOnly = null,
+    Object? isMega = null,
+    Object? formName = null,
+    Object? pokemon = null,
+    Object? types = null,
+    Object? sprites = null,
+    Object? versionGroup = null,
+    Object? names = null,
+    Object? formNames = null,
   }) {
     return _then(_$_PokemonForm(
-      id == freezed
+      null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      name == freezed
+      null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      order == freezed
+      null == order
           ? _value.order
           : order // ignore: cast_nullable_to_non_nullable
               as int,
-      formOrder == freezed
+      null == formOrder
           ? _value.formOrder
           : formOrder // ignore: cast_nullable_to_non_nullable
               as int,
-      isDefault == freezed
+      null == isDefault
           ? _value.isDefault
           : isDefault // ignore: cast_nullable_to_non_nullable
               as bool,
-      isBattleOnly == freezed
+      null == isBattleOnly
           ? _value.isBattleOnly
           : isBattleOnly // ignore: cast_nullable_to_non_nullable
               as bool,
-      isMega == freezed
+      null == isMega
           ? _value.isMega
           : isMega // ignore: cast_nullable_to_non_nullable
               as bool,
-      formName == freezed
+      null == formName
           ? _value.formName
           : formName // ignore: cast_nullable_to_non_nullable
               as String,
-      pokemon == freezed
+      null == pokemon
           ? _value.pokemon
           : pokemon // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-      types == freezed
+      null == types
           ? _value._types
           : types // ignore: cast_nullable_to_non_nullable
               as List<PokemonFormType>,
-      sprites == freezed
+      null == sprites
           ? _value.sprites
           : sprites // ignore: cast_nullable_to_non_nullable
               as PokemonFormSprites,
-      versionGroup == freezed
+      null == versionGroup
           ? _value.versionGroup
           : versionGroup // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-      names == freezed
+      null == names
           ? _value._names
           : names // ignore: cast_nullable_to_non_nullable
               as List<Name>,
-      formNames == freezed
+      null == formNames
           ? _value._formNames
           : formNames // ignore: cast_nullable_to_non_nullable
               as List<Name>,
@@ -8053,6 +8150,7 @@ class _$_PokemonForm implements _PokemonForm {
   /// A list of details showing types this Pokémon form has.
   @override
   List<PokemonFormType> get types {
+    if (_types is EqualUnmodifiableListView) return _types;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_types);
   }
@@ -8078,6 +8176,7 @@ class _$_PokemonForm implements _PokemonForm {
   /// does not have a specific name.
   @override
   List<Name> get names {
+    if (_names is EqualUnmodifiableListView) return _names;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_names);
   }
@@ -8091,6 +8190,7 @@ class _$_PokemonForm implements _PokemonForm {
   @override
   @JsonKey(name: 'form_names')
   List<Name> get formNames {
+    if (_formNames is EqualUnmodifiableListView) return _formNames;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_formNames);
   }
@@ -8105,20 +8205,23 @@ class _$_PokemonForm implements _PokemonForm {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_PokemonForm &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.name, name) &&
-            const DeepCollectionEquality().equals(other.order, order) &&
-            const DeepCollectionEquality().equals(other.formOrder, formOrder) &&
-            const DeepCollectionEquality().equals(other.isDefault, isDefault) &&
-            const DeepCollectionEquality()
-                .equals(other.isBattleOnly, isBattleOnly) &&
-            const DeepCollectionEquality().equals(other.isMega, isMega) &&
-            const DeepCollectionEquality().equals(other.formName, formName) &&
-            const DeepCollectionEquality().equals(other.pokemon, pokemon) &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.name, name) || other.name == name) &&
+            (identical(other.order, order) || other.order == order) &&
+            (identical(other.formOrder, formOrder) ||
+                other.formOrder == formOrder) &&
+            (identical(other.isDefault, isDefault) ||
+                other.isDefault == isDefault) &&
+            (identical(other.isBattleOnly, isBattleOnly) ||
+                other.isBattleOnly == isBattleOnly) &&
+            (identical(other.isMega, isMega) || other.isMega == isMega) &&
+            (identical(other.formName, formName) ||
+                other.formName == formName) &&
+            (identical(other.pokemon, pokemon) || other.pokemon == pokemon) &&
             const DeepCollectionEquality().equals(other._types, _types) &&
-            const DeepCollectionEquality().equals(other.sprites, sprites) &&
-            const DeepCollectionEquality()
-                .equals(other.versionGroup, versionGroup) &&
+            (identical(other.sprites, sprites) || other.sprites == sprites) &&
+            (identical(other.versionGroup, versionGroup) ||
+                other.versionGroup == versionGroup) &&
             const DeepCollectionEquality().equals(other._names, _names) &&
             const DeepCollectionEquality()
                 .equals(other._formNames, _formNames));
@@ -8128,23 +8231,24 @@ class _$_PokemonForm implements _PokemonForm {
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(name),
-      const DeepCollectionEquality().hash(order),
-      const DeepCollectionEquality().hash(formOrder),
-      const DeepCollectionEquality().hash(isDefault),
-      const DeepCollectionEquality().hash(isBattleOnly),
-      const DeepCollectionEquality().hash(isMega),
-      const DeepCollectionEquality().hash(formName),
-      const DeepCollectionEquality().hash(pokemon),
+      id,
+      name,
+      order,
+      formOrder,
+      isDefault,
+      isBattleOnly,
+      isMega,
+      formName,
+      pokemon,
       const DeepCollectionEquality().hash(_types),
-      const DeepCollectionEquality().hash(sprites),
-      const DeepCollectionEquality().hash(versionGroup),
+      sprites,
+      versionGroup,
       const DeepCollectionEquality().hash(_names),
       const DeepCollectionEquality().hash(_formNames));
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_PokemonFormCopyWith<_$_PokemonForm> get copyWith =>
       __$$_PokemonFormCopyWithImpl<_$_PokemonForm>(this, _$identity);
 
@@ -8289,7 +8393,8 @@ mixin _$PokemonFormSprites {
 abstract class $PokemonFormSpritesCopyWith<$Res> {
   factory $PokemonFormSpritesCopyWith(
           PokemonFormSprites value, $Res Function(PokemonFormSprites) then) =
-      _$PokemonFormSpritesCopyWithImpl<$Res>;
+      _$PokemonFormSpritesCopyWithImpl<$Res, PokemonFormSprites>;
+  @useResult
   $Res call(
       {@JsonKey(name: 'front_default') String? frontDefault,
       @JsonKey(name: 'front_shiny') String? frontShiny,
@@ -8298,14 +8403,16 @@ abstract class $PokemonFormSpritesCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$PokemonFormSpritesCopyWithImpl<$Res>
+class _$PokemonFormSpritesCopyWithImpl<$Res, $Val extends PokemonFormSprites>
     implements $PokemonFormSpritesCopyWith<$Res> {
   _$PokemonFormSpritesCopyWithImpl(this._value, this._then);
 
-  final PokemonFormSprites _value;
   // ignore: unused_field
-  final $Res Function(PokemonFormSprites) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? frontDefault = freezed,
@@ -8314,23 +8421,23 @@ class _$PokemonFormSpritesCopyWithImpl<$Res>
     Object? backShiny = freezed,
   }) {
     return _then(_value.copyWith(
-      frontDefault: frontDefault == freezed
+      frontDefault: freezed == frontDefault
           ? _value.frontDefault
           : frontDefault // ignore: cast_nullable_to_non_nullable
               as String?,
-      frontShiny: frontShiny == freezed
+      frontShiny: freezed == frontShiny
           ? _value.frontShiny
           : frontShiny // ignore: cast_nullable_to_non_nullable
               as String?,
-      backDefault: backDefault == freezed
+      backDefault: freezed == backDefault
           ? _value.backDefault
           : backDefault // ignore: cast_nullable_to_non_nullable
               as String?,
-      backShiny: backShiny == freezed
+      backShiny: freezed == backShiny
           ? _value.backShiny
           : backShiny // ignore: cast_nullable_to_non_nullable
               as String?,
-    ));
+    ) as $Val);
   }
 }
 
@@ -8341,6 +8448,7 @@ abstract class _$$_PokemonFormSpritesCopyWith<$Res>
           $Res Function(_$_PokemonFormSprites) then) =
       __$$_PokemonFormSpritesCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@JsonKey(name: 'front_default') String? frontDefault,
       @JsonKey(name: 'front_shiny') String? frontShiny,
@@ -8350,15 +8458,13 @@ abstract class _$$_PokemonFormSpritesCopyWith<$Res>
 
 /// @nodoc
 class __$$_PokemonFormSpritesCopyWithImpl<$Res>
-    extends _$PokemonFormSpritesCopyWithImpl<$Res>
+    extends _$PokemonFormSpritesCopyWithImpl<$Res, _$_PokemonFormSprites>
     implements _$$_PokemonFormSpritesCopyWith<$Res> {
   __$$_PokemonFormSpritesCopyWithImpl(
       _$_PokemonFormSprites _value, $Res Function(_$_PokemonFormSprites) _then)
-      : super(_value, (v) => _then(v as _$_PokemonFormSprites));
+      : super(_value, _then);
 
-  @override
-  _$_PokemonFormSprites get _value => super._value as _$_PokemonFormSprites;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
     Object? frontDefault = freezed,
@@ -8367,19 +8473,19 @@ class __$$_PokemonFormSpritesCopyWithImpl<$Res>
     Object? backShiny = freezed,
   }) {
     return _then(_$_PokemonFormSprites(
-      frontDefault == freezed
+      freezed == frontDefault
           ? _value.frontDefault
           : frontDefault // ignore: cast_nullable_to_non_nullable
               as String?,
-      frontShiny == freezed
+      freezed == frontShiny
           ? _value.frontShiny
           : frontShiny // ignore: cast_nullable_to_non_nullable
               as String?,
-      backDefault == freezed
+      freezed == backDefault
           ? _value.backDefault
           : backDefault // ignore: cast_nullable_to_non_nullable
               as String?,
-      backShiny == freezed
+      freezed == backShiny
           ? _value.backShiny
           : backShiny // ignore: cast_nullable_to_non_nullable
               as String?,
@@ -8429,26 +8535,24 @@ class _$_PokemonFormSprites implements _PokemonFormSprites {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_PokemonFormSprites &&
-            const DeepCollectionEquality()
-                .equals(other.frontDefault, frontDefault) &&
-            const DeepCollectionEquality()
-                .equals(other.frontShiny, frontShiny) &&
-            const DeepCollectionEquality()
-                .equals(other.backDefault, backDefault) &&
-            const DeepCollectionEquality().equals(other.backShiny, backShiny));
+            (identical(other.frontDefault, frontDefault) ||
+                other.frontDefault == frontDefault) &&
+            (identical(other.frontShiny, frontShiny) ||
+                other.frontShiny == frontShiny) &&
+            (identical(other.backDefault, backDefault) ||
+                other.backDefault == backDefault) &&
+            (identical(other.backShiny, backShiny) ||
+                other.backShiny == backShiny));
   }
 
   @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(frontDefault),
-      const DeepCollectionEquality().hash(frontShiny),
-      const DeepCollectionEquality().hash(backDefault),
-      const DeepCollectionEquality().hash(backShiny));
+      runtimeType, frontDefault, frontShiny, backDefault, backShiny);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_PokemonFormSpritesCopyWith<_$_PokemonFormSprites> get copyWith =>
       __$$_PokemonFormSpritesCopyWithImpl<_$_PokemonFormSprites>(
           this, _$identity);
@@ -8532,7 +8636,8 @@ mixin _$PokemonHabitat {
 abstract class $PokemonHabitatCopyWith<$Res> {
   factory $PokemonHabitatCopyWith(
           PokemonHabitat value, $Res Function(PokemonHabitat) then) =
-      _$PokemonHabitatCopyWithImpl<$Res>;
+      _$PokemonHabitatCopyWithImpl<$Res, PokemonHabitat>;
+  @useResult
   $Res call(
       {int id,
       String name,
@@ -8541,39 +8646,41 @@ abstract class $PokemonHabitatCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$PokemonHabitatCopyWithImpl<$Res>
+class _$PokemonHabitatCopyWithImpl<$Res, $Val extends PokemonHabitat>
     implements $PokemonHabitatCopyWith<$Res> {
   _$PokemonHabitatCopyWithImpl(this._value, this._then);
 
-  final PokemonHabitat _value;
   // ignore: unused_field
-  final $Res Function(PokemonHabitat) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? names = freezed,
-    Object? pokemonSpecies = freezed,
+    Object? id = null,
+    Object? name = null,
+    Object? names = null,
+    Object? pokemonSpecies = null,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      name: name == freezed
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      names: names == freezed
+      names: null == names
           ? _value.names
           : names // ignore: cast_nullable_to_non_nullable
               as List<Name>,
-      pokemonSpecies: pokemonSpecies == freezed
+      pokemonSpecies: null == pokemonSpecies
           ? _value.pokemonSpecies
           : pokemonSpecies // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
-    ));
+    ) as $Val);
   }
 }
 
@@ -8584,6 +8691,7 @@ abstract class _$$_PokemonHabitatCopyWith<$Res>
           _$_PokemonHabitat value, $Res Function(_$_PokemonHabitat) then) =
       __$$_PokemonHabitatCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {int id,
       String name,
@@ -8593,36 +8701,34 @@ abstract class _$$_PokemonHabitatCopyWith<$Res>
 
 /// @nodoc
 class __$$_PokemonHabitatCopyWithImpl<$Res>
-    extends _$PokemonHabitatCopyWithImpl<$Res>
+    extends _$PokemonHabitatCopyWithImpl<$Res, _$_PokemonHabitat>
     implements _$$_PokemonHabitatCopyWith<$Res> {
   __$$_PokemonHabitatCopyWithImpl(
       _$_PokemonHabitat _value, $Res Function(_$_PokemonHabitat) _then)
-      : super(_value, (v) => _then(v as _$_PokemonHabitat));
+      : super(_value, _then);
 
-  @override
-  _$_PokemonHabitat get _value => super._value as _$_PokemonHabitat;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? names = freezed,
-    Object? pokemonSpecies = freezed,
+    Object? id = null,
+    Object? name = null,
+    Object? names = null,
+    Object? pokemonSpecies = null,
   }) {
     return _then(_$_PokemonHabitat(
-      id == freezed
+      null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      name == freezed
+      null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      names == freezed
+      null == names
           ? _value._names
           : names // ignore: cast_nullable_to_non_nullable
               as List<Name>,
-      pokemonSpecies == freezed
+      null == pokemonSpecies
           ? _value._pokemonSpecies
           : pokemonSpecies // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
@@ -8638,7 +8744,7 @@ class _$_PokemonHabitat implements _PokemonHabitat {
       this.name,
       final List<Name> names,
       @JsonKey(name: 'pokemon_species')
-          final List<NamedAPIResource> pokemonSpecies)
+      final List<NamedAPIResource> pokemonSpecies)
       : _names = names,
         _pokemonSpecies = pokemonSpecies;
 
@@ -8659,6 +8765,7 @@ class _$_PokemonHabitat implements _PokemonHabitat {
   /// The name of this resource listed in different languages.
   @override
   List<Name> get names {
+    if (_names is EqualUnmodifiableListView) return _names;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_names);
   }
@@ -8678,6 +8785,7 @@ class _$_PokemonHabitat implements _PokemonHabitat {
   @override
   @JsonKey(name: 'pokemon_species')
   List<NamedAPIResource> get pokemonSpecies {
+    if (_pokemonSpecies is EqualUnmodifiableListView) return _pokemonSpecies;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_pokemonSpecies);
   }
@@ -8692,8 +8800,8 @@ class _$_PokemonHabitat implements _PokemonHabitat {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_PokemonHabitat &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.name, name) &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.name, name) || other.name == name) &&
             const DeepCollectionEquality().equals(other._names, _names) &&
             const DeepCollectionEquality()
                 .equals(other._pokemonSpecies, _pokemonSpecies));
@@ -8703,13 +8811,14 @@ class _$_PokemonHabitat implements _PokemonHabitat {
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(name),
+      id,
+      name,
       const DeepCollectionEquality().hash(_names),
       const DeepCollectionEquality().hash(_pokemonSpecies));
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_PokemonHabitatCopyWith<_$_PokemonHabitat> get copyWith =>
       __$$_PokemonHabitatCopyWithImpl<_$_PokemonHabitat>(this, _$identity);
 
@@ -8727,7 +8836,7 @@ abstract class _PokemonHabitat implements PokemonHabitat {
       final String name,
       final List<Name> names,
       @JsonKey(name: 'pokemon_species')
-          final List<NamedAPIResource> pokemonSpecies) = _$_PokemonHabitat;
+      final List<NamedAPIResource> pokemonSpecies) = _$_PokemonHabitat;
 
   factory _PokemonHabitat.fromJson(Map<String, dynamic> json) =
       _$_PokemonHabitat.fromJson;
@@ -8797,7 +8906,8 @@ mixin _$PokemonShape {
 abstract class $PokemonShapeCopyWith<$Res> {
   factory $PokemonShapeCopyWith(
           PokemonShape value, $Res Function(PokemonShape) then) =
-      _$PokemonShapeCopyWithImpl<$Res>;
+      _$PokemonShapeCopyWithImpl<$Res, PokemonShape>;
+  @useResult
   $Res call(
       {int id,
       String name,
@@ -8807,43 +8917,46 @@ abstract class $PokemonShapeCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$PokemonShapeCopyWithImpl<$Res> implements $PokemonShapeCopyWith<$Res> {
+class _$PokemonShapeCopyWithImpl<$Res, $Val extends PokemonShape>
+    implements $PokemonShapeCopyWith<$Res> {
   _$PokemonShapeCopyWithImpl(this._value, this._then);
 
-  final PokemonShape _value;
   // ignore: unused_field
-  final $Res Function(PokemonShape) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? awesomeNames = freezed,
-    Object? names = freezed,
-    Object? pokemonSpecies = freezed,
+    Object? id = null,
+    Object? name = null,
+    Object? awesomeNames = null,
+    Object? names = null,
+    Object? pokemonSpecies = null,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      name: name == freezed
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      awesomeNames: awesomeNames == freezed
+      awesomeNames: null == awesomeNames
           ? _value.awesomeNames
           : awesomeNames // ignore: cast_nullable_to_non_nullable
               as List<AwesomeName>,
-      names: names == freezed
+      names: null == names
           ? _value.names
           : names // ignore: cast_nullable_to_non_nullable
               as List<Name>,
-      pokemonSpecies: pokemonSpecies == freezed
+      pokemonSpecies: null == pokemonSpecies
           ? _value.pokemonSpecies
           : pokemonSpecies // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
-    ));
+    ) as $Val);
   }
 }
 
@@ -8854,6 +8967,7 @@ abstract class _$$_PokemonShapeCopyWith<$Res>
           _$_PokemonShape value, $Res Function(_$_PokemonShape) then) =
       __$$_PokemonShapeCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {int id,
       String name,
@@ -8864,41 +8978,39 @@ abstract class _$$_PokemonShapeCopyWith<$Res>
 
 /// @nodoc
 class __$$_PokemonShapeCopyWithImpl<$Res>
-    extends _$PokemonShapeCopyWithImpl<$Res>
+    extends _$PokemonShapeCopyWithImpl<$Res, _$_PokemonShape>
     implements _$$_PokemonShapeCopyWith<$Res> {
   __$$_PokemonShapeCopyWithImpl(
       _$_PokemonShape _value, $Res Function(_$_PokemonShape) _then)
-      : super(_value, (v) => _then(v as _$_PokemonShape));
+      : super(_value, _then);
 
-  @override
-  _$_PokemonShape get _value => super._value as _$_PokemonShape;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? awesomeNames = freezed,
-    Object? names = freezed,
-    Object? pokemonSpecies = freezed,
+    Object? id = null,
+    Object? name = null,
+    Object? awesomeNames = null,
+    Object? names = null,
+    Object? pokemonSpecies = null,
   }) {
     return _then(_$_PokemonShape(
-      id == freezed
+      null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      name == freezed
+      null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      awesomeNames == freezed
+      null == awesomeNames
           ? _value._awesomeNames
           : awesomeNames // ignore: cast_nullable_to_non_nullable
               as List<AwesomeName>,
-      names == freezed
+      null == names
           ? _value._names
           : names // ignore: cast_nullable_to_non_nullable
               as List<Name>,
-      pokemonSpecies == freezed
+      null == pokemonSpecies
           ? _value._pokemonSpecies
           : pokemonSpecies // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
@@ -8912,11 +9024,10 @@ class _$_PokemonShape implements _PokemonShape {
   const _$_PokemonShape(
       this.id,
       this.name,
-      @JsonKey(name: 'awesome_names')
-          final List<AwesomeName> awesomeNames,
+      @JsonKey(name: 'awesome_names') final List<AwesomeName> awesomeNames,
       final List<Name> names,
       @JsonKey(name: 'pokemon_species')
-          final List<NamedAPIResource> pokemonSpecies)
+      final List<NamedAPIResource> pokemonSpecies)
       : _awesomeNames = awesomeNames,
         _names = names,
         _pokemonSpecies = pokemonSpecies;
@@ -8939,6 +9050,7 @@ class _$_PokemonShape implements _PokemonShape {
   @override
   @JsonKey(name: 'awesome_names')
   List<AwesomeName> get awesomeNames {
+    if (_awesomeNames is EqualUnmodifiableListView) return _awesomeNames;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_awesomeNames);
   }
@@ -8949,6 +9061,7 @@ class _$_PokemonShape implements _PokemonShape {
   /// The name of this resource listed in different languages.
   @override
   List<Name> get names {
+    if (_names is EqualUnmodifiableListView) return _names;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_names);
   }
@@ -8968,6 +9081,7 @@ class _$_PokemonShape implements _PokemonShape {
   @override
   @JsonKey(name: 'pokemon_species')
   List<NamedAPIResource> get pokemonSpecies {
+    if (_pokemonSpecies is EqualUnmodifiableListView) return _pokemonSpecies;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_pokemonSpecies);
   }
@@ -8982,8 +9096,8 @@ class _$_PokemonShape implements _PokemonShape {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_PokemonShape &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.name, name) &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.name, name) || other.name == name) &&
             const DeepCollectionEquality()
                 .equals(other._awesomeNames, _awesomeNames) &&
             const DeepCollectionEquality().equals(other._names, _names) &&
@@ -8995,14 +9109,15 @@ class _$_PokemonShape implements _PokemonShape {
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(name),
+      id,
+      name,
       const DeepCollectionEquality().hash(_awesomeNames),
       const DeepCollectionEquality().hash(_names),
       const DeepCollectionEquality().hash(_pokemonSpecies));
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_PokemonShapeCopyWith<_$_PokemonShape> get copyWith =>
       __$$_PokemonShapeCopyWithImpl<_$_PokemonShape>(this, _$identity);
 
@@ -9018,11 +9133,10 @@ abstract class _PokemonShape implements PokemonShape {
   const factory _PokemonShape(
       final int id,
       final String name,
-      @JsonKey(name: 'awesome_names')
-          final List<AwesomeName> awesomeNames,
+      @JsonKey(name: 'awesome_names') final List<AwesomeName> awesomeNames,
       final List<Name> names,
       @JsonKey(name: 'pokemon_species')
-          final List<NamedAPIResource> pokemonSpecies) = _$_PokemonShape;
+      final List<NamedAPIResource> pokemonSpecies) = _$_PokemonShape;
 
   factory _PokemonShape.fromJson(Map<String, dynamic> json) =
       _$_PokemonShape.fromJson;
@@ -9086,7 +9200,8 @@ mixin _$AwesomeName {
 abstract class $AwesomeNameCopyWith<$Res> {
   factory $AwesomeNameCopyWith(
           AwesomeName value, $Res Function(AwesomeName) then) =
-      _$AwesomeNameCopyWithImpl<$Res>;
+      _$AwesomeNameCopyWithImpl<$Res, AwesomeName>;
+  @useResult
   $Res call(
       {@JsonKey(name: 'awesome_name') String awesomeName,
       NamedAPIResource language});
@@ -9095,34 +9210,38 @@ abstract class $AwesomeNameCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$AwesomeNameCopyWithImpl<$Res> implements $AwesomeNameCopyWith<$Res> {
+class _$AwesomeNameCopyWithImpl<$Res, $Val extends AwesomeName>
+    implements $AwesomeNameCopyWith<$Res> {
   _$AwesomeNameCopyWithImpl(this._value, this._then);
 
-  final AwesomeName _value;
   // ignore: unused_field
-  final $Res Function(AwesomeName) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? awesomeName = freezed,
-    Object? language = freezed,
+    Object? awesomeName = null,
+    Object? language = null,
   }) {
     return _then(_value.copyWith(
-      awesomeName: awesomeName == freezed
+      awesomeName: null == awesomeName
           ? _value.awesomeName
           : awesomeName // ignore: cast_nullable_to_non_nullable
               as String,
-      language: language == freezed
+      language: null == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $NamedAPIResourceCopyWith<$Res> get language {
     return $NamedAPIResourceCopyWith<$Res>(_value.language, (value) {
-      return _then(_value.copyWith(language: value));
+      return _then(_value.copyWith(language: value) as $Val);
     });
   }
 }
@@ -9134,6 +9253,7 @@ abstract class _$$_AwesomeNameCopyWith<$Res>
           _$_AwesomeName value, $Res Function(_$_AwesomeName) then) =
       __$$_AwesomeNameCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@JsonKey(name: 'awesome_name') String awesomeName,
       NamedAPIResource language});
@@ -9143,26 +9263,25 @@ abstract class _$$_AwesomeNameCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_AwesomeNameCopyWithImpl<$Res> extends _$AwesomeNameCopyWithImpl<$Res>
+class __$$_AwesomeNameCopyWithImpl<$Res>
+    extends _$AwesomeNameCopyWithImpl<$Res, _$_AwesomeName>
     implements _$$_AwesomeNameCopyWith<$Res> {
   __$$_AwesomeNameCopyWithImpl(
       _$_AwesomeName _value, $Res Function(_$_AwesomeName) _then)
-      : super(_value, (v) => _then(v as _$_AwesomeName));
+      : super(_value, _then);
 
-  @override
-  _$_AwesomeName get _value => super._value as _$_AwesomeName;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? awesomeName = freezed,
-    Object? language = freezed,
+    Object? awesomeName = null,
+    Object? language = null,
   }) {
     return _then(_$_AwesomeName(
-      awesomeName == freezed
+      null == awesomeName
           ? _value.awesomeName
           : awesomeName // ignore: cast_nullable_to_non_nullable
               as String,
-      language == freezed
+      null == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
@@ -9202,20 +9321,19 @@ class _$_AwesomeName implements _AwesomeName {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_AwesomeName &&
-            const DeepCollectionEquality()
-                .equals(other.awesomeName, awesomeName) &&
-            const DeepCollectionEquality().equals(other.language, language));
+            (identical(other.awesomeName, awesomeName) ||
+                other.awesomeName == awesomeName) &&
+            (identical(other.language, language) ||
+                other.language == language));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(awesomeName),
-      const DeepCollectionEquality().hash(language));
+  int get hashCode => Object.hash(runtimeType, awesomeName, language);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_AwesomeNameCopyWith<_$_AwesomeName> get copyWith =>
       __$$_AwesomeNameCopyWithImpl<_$_AwesomeName>(this, _$identity);
 
@@ -9407,50 +9525,37 @@ mixin _$PokemonSpecies {
 abstract class $PokemonSpeciesCopyWith<$Res> {
   factory $PokemonSpeciesCopyWith(
           PokemonSpecies value, $Res Function(PokemonSpecies) then) =
-      _$PokemonSpeciesCopyWithImpl<$Res>;
+      _$PokemonSpeciesCopyWithImpl<$Res, PokemonSpecies>;
+  @useResult
   $Res call(
       {int id,
       String name,
       int order,
-      @JsonKey(name: 'gender_rate')
-          int genderRate,
-      @JsonKey(name: 'capture_rate')
-          int captureRate,
-      @JsonKey(name: 'base_happiness')
-          int? baseHappiness,
-      @JsonKey(name: 'is_baby')
-          bool isBaby,
-      @JsonKey(name: 'is_legendary')
-          bool isLegendary,
-      @JsonKey(name: 'is_mythical')
-          bool isMythical,
-      @JsonKey(name: 'hatch_counter')
-          int? hatchCounter,
-      @JsonKey(name: 'has_gender_differences')
-          bool hasGenderdifferences,
-      @JsonKey(name: 'forms_switchable')
-          bool formsSwitchable,
-      @JsonKey(name: 'growth_rate')
-          NamedAPIResource growthRate,
+      @JsonKey(name: 'gender_rate') int genderRate,
+      @JsonKey(name: 'capture_rate') int captureRate,
+      @JsonKey(name: 'base_happiness') int? baseHappiness,
+      @JsonKey(name: 'is_baby') bool isBaby,
+      @JsonKey(name: 'is_legendary') bool isLegendary,
+      @JsonKey(name: 'is_mythical') bool isMythical,
+      @JsonKey(name: 'hatch_counter') int? hatchCounter,
+      @JsonKey(name: 'has_gender_differences') bool hasGenderdifferences,
+      @JsonKey(name: 'forms_switchable') bool formsSwitchable,
+      @JsonKey(name: 'growth_rate') NamedAPIResource growthRate,
       @JsonKey(name: 'pokedex_numbers')
-          List<PokemonSpeciesDexEntry> pokedexNumbers,
-      @JsonKey(name: 'egg_groups')
-          List<NamedAPIResource> eggGroups,
+      List<PokemonSpeciesDexEntry> pokedexNumbers,
+      @JsonKey(name: 'egg_groups') List<NamedAPIResource> eggGroups,
       NamedAPIResource color,
       NamedAPIResource? shape,
       @JsonKey(name: 'evolves_from_species')
-          NamedAPIResource? evolvesFromSpecies,
-      @JsonKey(name: 'evolution_chain')
-          APIResource? evolutionChain,
+      NamedAPIResource? evolvesFromSpecies,
+      @JsonKey(name: 'evolution_chain') APIResource? evolutionChain,
       NamedAPIResource? habitat,
       NamedAPIResource generation,
       List<Name> names,
       @JsonKey(name: 'pal_park_encounters')
-          List<PalParkEncounterArea> palParkEncounters,
-      @JsonKey(name: 'flavor_text_entries')
-          List<FlavorText> flavorTextEntries,
-      @JsonKey(name: 'form_descriptions')
-          List<Description> formDescriptions,
+      List<PalParkEncounterArea> palParkEncounters,
+      @JsonKey(name: 'flavor_text_entries') List<FlavorText> flavorTextEntries,
+      @JsonKey(name: 'form_descriptions') List<Description> formDescriptions,
       List<Genus> genera,
       List<PokemonSpeciesVariety> varieties});
 
@@ -9464,218 +9569,227 @@ abstract class $PokemonSpeciesCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$PokemonSpeciesCopyWithImpl<$Res>
+class _$PokemonSpeciesCopyWithImpl<$Res, $Val extends PokemonSpecies>
     implements $PokemonSpeciesCopyWith<$Res> {
   _$PokemonSpeciesCopyWithImpl(this._value, this._then);
 
-  final PokemonSpecies _value;
   // ignore: unused_field
-  final $Res Function(PokemonSpecies) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? order = freezed,
-    Object? genderRate = freezed,
-    Object? captureRate = freezed,
+    Object? id = null,
+    Object? name = null,
+    Object? order = null,
+    Object? genderRate = null,
+    Object? captureRate = null,
     Object? baseHappiness = freezed,
-    Object? isBaby = freezed,
-    Object? isLegendary = freezed,
-    Object? isMythical = freezed,
+    Object? isBaby = null,
+    Object? isLegendary = null,
+    Object? isMythical = null,
     Object? hatchCounter = freezed,
-    Object? hasGenderdifferences = freezed,
-    Object? formsSwitchable = freezed,
-    Object? growthRate = freezed,
-    Object? pokedexNumbers = freezed,
-    Object? eggGroups = freezed,
-    Object? color = freezed,
+    Object? hasGenderdifferences = null,
+    Object? formsSwitchable = null,
+    Object? growthRate = null,
+    Object? pokedexNumbers = null,
+    Object? eggGroups = null,
+    Object? color = null,
     Object? shape = freezed,
     Object? evolvesFromSpecies = freezed,
     Object? evolutionChain = freezed,
     Object? habitat = freezed,
-    Object? generation = freezed,
-    Object? names = freezed,
-    Object? palParkEncounters = freezed,
-    Object? flavorTextEntries = freezed,
-    Object? formDescriptions = freezed,
-    Object? genera = freezed,
-    Object? varieties = freezed,
+    Object? generation = null,
+    Object? names = null,
+    Object? palParkEncounters = null,
+    Object? flavorTextEntries = null,
+    Object? formDescriptions = null,
+    Object? genera = null,
+    Object? varieties = null,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      name: name == freezed
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      order: order == freezed
+      order: null == order
           ? _value.order
           : order // ignore: cast_nullable_to_non_nullable
               as int,
-      genderRate: genderRate == freezed
+      genderRate: null == genderRate
           ? _value.genderRate
           : genderRate // ignore: cast_nullable_to_non_nullable
               as int,
-      captureRate: captureRate == freezed
+      captureRate: null == captureRate
           ? _value.captureRate
           : captureRate // ignore: cast_nullable_to_non_nullable
               as int,
-      baseHappiness: baseHappiness == freezed
+      baseHappiness: freezed == baseHappiness
           ? _value.baseHappiness
           : baseHappiness // ignore: cast_nullable_to_non_nullable
               as int?,
-      isBaby: isBaby == freezed
+      isBaby: null == isBaby
           ? _value.isBaby
           : isBaby // ignore: cast_nullable_to_non_nullable
               as bool,
-      isLegendary: isLegendary == freezed
+      isLegendary: null == isLegendary
           ? _value.isLegendary
           : isLegendary // ignore: cast_nullable_to_non_nullable
               as bool,
-      isMythical: isMythical == freezed
+      isMythical: null == isMythical
           ? _value.isMythical
           : isMythical // ignore: cast_nullable_to_non_nullable
               as bool,
-      hatchCounter: hatchCounter == freezed
+      hatchCounter: freezed == hatchCounter
           ? _value.hatchCounter
           : hatchCounter // ignore: cast_nullable_to_non_nullable
               as int?,
-      hasGenderdifferences: hasGenderdifferences == freezed
+      hasGenderdifferences: null == hasGenderdifferences
           ? _value.hasGenderdifferences
           : hasGenderdifferences // ignore: cast_nullable_to_non_nullable
               as bool,
-      formsSwitchable: formsSwitchable == freezed
+      formsSwitchable: null == formsSwitchable
           ? _value.formsSwitchable
           : formsSwitchable // ignore: cast_nullable_to_non_nullable
               as bool,
-      growthRate: growthRate == freezed
+      growthRate: null == growthRate
           ? _value.growthRate
           : growthRate // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-      pokedexNumbers: pokedexNumbers == freezed
+      pokedexNumbers: null == pokedexNumbers
           ? _value.pokedexNumbers
           : pokedexNumbers // ignore: cast_nullable_to_non_nullable
               as List<PokemonSpeciesDexEntry>,
-      eggGroups: eggGroups == freezed
+      eggGroups: null == eggGroups
           ? _value.eggGroups
           : eggGroups // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
-      color: color == freezed
+      color: null == color
           ? _value.color
           : color // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-      shape: shape == freezed
+      shape: freezed == shape
           ? _value.shape
           : shape // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource?,
-      evolvesFromSpecies: evolvesFromSpecies == freezed
+      evolvesFromSpecies: freezed == evolvesFromSpecies
           ? _value.evolvesFromSpecies
           : evolvesFromSpecies // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource?,
-      evolutionChain: evolutionChain == freezed
+      evolutionChain: freezed == evolutionChain
           ? _value.evolutionChain
           : evolutionChain // ignore: cast_nullable_to_non_nullable
               as APIResource?,
-      habitat: habitat == freezed
+      habitat: freezed == habitat
           ? _value.habitat
           : habitat // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource?,
-      generation: generation == freezed
+      generation: null == generation
           ? _value.generation
           : generation // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-      names: names == freezed
+      names: null == names
           ? _value.names
           : names // ignore: cast_nullable_to_non_nullable
               as List<Name>,
-      palParkEncounters: palParkEncounters == freezed
+      palParkEncounters: null == palParkEncounters
           ? _value.palParkEncounters
           : palParkEncounters // ignore: cast_nullable_to_non_nullable
               as List<PalParkEncounterArea>,
-      flavorTextEntries: flavorTextEntries == freezed
+      flavorTextEntries: null == flavorTextEntries
           ? _value.flavorTextEntries
           : flavorTextEntries // ignore: cast_nullable_to_non_nullable
               as List<FlavorText>,
-      formDescriptions: formDescriptions == freezed
+      formDescriptions: null == formDescriptions
           ? _value.formDescriptions
           : formDescriptions // ignore: cast_nullable_to_non_nullable
               as List<Description>,
-      genera: genera == freezed
+      genera: null == genera
           ? _value.genera
           : genera // ignore: cast_nullable_to_non_nullable
               as List<Genus>,
-      varieties: varieties == freezed
+      varieties: null == varieties
           ? _value.varieties
           : varieties // ignore: cast_nullable_to_non_nullable
               as List<PokemonSpeciesVariety>,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $NamedAPIResourceCopyWith<$Res> get growthRate {
     return $NamedAPIResourceCopyWith<$Res>(_value.growthRate, (value) {
-      return _then(_value.copyWith(growthRate: value));
+      return _then(_value.copyWith(growthRate: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $NamedAPIResourceCopyWith<$Res> get color {
     return $NamedAPIResourceCopyWith<$Res>(_value.color, (value) {
-      return _then(_value.copyWith(color: value));
+      return _then(_value.copyWith(color: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $NamedAPIResourceCopyWith<$Res>? get shape {
     if (_value.shape == null) {
       return null;
     }
 
     return $NamedAPIResourceCopyWith<$Res>(_value.shape!, (value) {
-      return _then(_value.copyWith(shape: value));
+      return _then(_value.copyWith(shape: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $NamedAPIResourceCopyWith<$Res>? get evolvesFromSpecies {
     if (_value.evolvesFromSpecies == null) {
       return null;
     }
 
     return $NamedAPIResourceCopyWith<$Res>(_value.evolvesFromSpecies!, (value) {
-      return _then(_value.copyWith(evolvesFromSpecies: value));
+      return _then(_value.copyWith(evolvesFromSpecies: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $APIResourceCopyWith<$Res>? get evolutionChain {
     if (_value.evolutionChain == null) {
       return null;
     }
 
     return $APIResourceCopyWith<$Res>(_value.evolutionChain!, (value) {
-      return _then(_value.copyWith(evolutionChain: value));
+      return _then(_value.copyWith(evolutionChain: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $NamedAPIResourceCopyWith<$Res>? get habitat {
     if (_value.habitat == null) {
       return null;
     }
 
     return $NamedAPIResourceCopyWith<$Res>(_value.habitat!, (value) {
-      return _then(_value.copyWith(habitat: value));
+      return _then(_value.copyWith(habitat: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $NamedAPIResourceCopyWith<$Res> get generation {
     return $NamedAPIResourceCopyWith<$Res>(_value.generation, (value) {
-      return _then(_value.copyWith(generation: value));
+      return _then(_value.copyWith(generation: value) as $Val);
     });
   }
 }
@@ -9687,49 +9801,36 @@ abstract class _$$_PokemonSpeciesCopyWith<$Res>
           _$_PokemonSpecies value, $Res Function(_$_PokemonSpecies) then) =
       __$$_PokemonSpeciesCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {int id,
       String name,
       int order,
-      @JsonKey(name: 'gender_rate')
-          int genderRate,
-      @JsonKey(name: 'capture_rate')
-          int captureRate,
-      @JsonKey(name: 'base_happiness')
-          int? baseHappiness,
-      @JsonKey(name: 'is_baby')
-          bool isBaby,
-      @JsonKey(name: 'is_legendary')
-          bool isLegendary,
-      @JsonKey(name: 'is_mythical')
-          bool isMythical,
-      @JsonKey(name: 'hatch_counter')
-          int? hatchCounter,
-      @JsonKey(name: 'has_gender_differences')
-          bool hasGenderdifferences,
-      @JsonKey(name: 'forms_switchable')
-          bool formsSwitchable,
-      @JsonKey(name: 'growth_rate')
-          NamedAPIResource growthRate,
+      @JsonKey(name: 'gender_rate') int genderRate,
+      @JsonKey(name: 'capture_rate') int captureRate,
+      @JsonKey(name: 'base_happiness') int? baseHappiness,
+      @JsonKey(name: 'is_baby') bool isBaby,
+      @JsonKey(name: 'is_legendary') bool isLegendary,
+      @JsonKey(name: 'is_mythical') bool isMythical,
+      @JsonKey(name: 'hatch_counter') int? hatchCounter,
+      @JsonKey(name: 'has_gender_differences') bool hasGenderdifferences,
+      @JsonKey(name: 'forms_switchable') bool formsSwitchable,
+      @JsonKey(name: 'growth_rate') NamedAPIResource growthRate,
       @JsonKey(name: 'pokedex_numbers')
-          List<PokemonSpeciesDexEntry> pokedexNumbers,
-      @JsonKey(name: 'egg_groups')
-          List<NamedAPIResource> eggGroups,
+      List<PokemonSpeciesDexEntry> pokedexNumbers,
+      @JsonKey(name: 'egg_groups') List<NamedAPIResource> eggGroups,
       NamedAPIResource color,
       NamedAPIResource? shape,
       @JsonKey(name: 'evolves_from_species')
-          NamedAPIResource? evolvesFromSpecies,
-      @JsonKey(name: 'evolution_chain')
-          APIResource? evolutionChain,
+      NamedAPIResource? evolvesFromSpecies,
+      @JsonKey(name: 'evolution_chain') APIResource? evolutionChain,
       NamedAPIResource? habitat,
       NamedAPIResource generation,
       List<Name> names,
       @JsonKey(name: 'pal_park_encounters')
-          List<PalParkEncounterArea> palParkEncounters,
-      @JsonKey(name: 'flavor_text_entries')
-          List<FlavorText> flavorTextEntries,
-      @JsonKey(name: 'form_descriptions')
-          List<Description> formDescriptions,
+      List<PalParkEncounterArea> palParkEncounters,
+      @JsonKey(name: 'flavor_text_entries') List<FlavorText> flavorTextEntries,
+      @JsonKey(name: 'form_descriptions') List<Description> formDescriptions,
       List<Genus> genera,
       List<PokemonSpeciesVariety> varieties});
 
@@ -9751,151 +9852,149 @@ abstract class _$$_PokemonSpeciesCopyWith<$Res>
 
 /// @nodoc
 class __$$_PokemonSpeciesCopyWithImpl<$Res>
-    extends _$PokemonSpeciesCopyWithImpl<$Res>
+    extends _$PokemonSpeciesCopyWithImpl<$Res, _$_PokemonSpecies>
     implements _$$_PokemonSpeciesCopyWith<$Res> {
   __$$_PokemonSpeciesCopyWithImpl(
       _$_PokemonSpecies _value, $Res Function(_$_PokemonSpecies) _then)
-      : super(_value, (v) => _then(v as _$_PokemonSpecies));
+      : super(_value, _then);
 
-  @override
-  _$_PokemonSpecies get _value => super._value as _$_PokemonSpecies;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? order = freezed,
-    Object? genderRate = freezed,
-    Object? captureRate = freezed,
+    Object? id = null,
+    Object? name = null,
+    Object? order = null,
+    Object? genderRate = null,
+    Object? captureRate = null,
     Object? baseHappiness = freezed,
-    Object? isBaby = freezed,
-    Object? isLegendary = freezed,
-    Object? isMythical = freezed,
+    Object? isBaby = null,
+    Object? isLegendary = null,
+    Object? isMythical = null,
     Object? hatchCounter = freezed,
-    Object? hasGenderdifferences = freezed,
-    Object? formsSwitchable = freezed,
-    Object? growthRate = freezed,
-    Object? pokedexNumbers = freezed,
-    Object? eggGroups = freezed,
-    Object? color = freezed,
+    Object? hasGenderdifferences = null,
+    Object? formsSwitchable = null,
+    Object? growthRate = null,
+    Object? pokedexNumbers = null,
+    Object? eggGroups = null,
+    Object? color = null,
     Object? shape = freezed,
     Object? evolvesFromSpecies = freezed,
     Object? evolutionChain = freezed,
     Object? habitat = freezed,
-    Object? generation = freezed,
-    Object? names = freezed,
-    Object? palParkEncounters = freezed,
-    Object? flavorTextEntries = freezed,
-    Object? formDescriptions = freezed,
-    Object? genera = freezed,
-    Object? varieties = freezed,
+    Object? generation = null,
+    Object? names = null,
+    Object? palParkEncounters = null,
+    Object? flavorTextEntries = null,
+    Object? formDescriptions = null,
+    Object? genera = null,
+    Object? varieties = null,
   }) {
     return _then(_$_PokemonSpecies(
-      id == freezed
+      null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      name == freezed
+      null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      order == freezed
+      null == order
           ? _value.order
           : order // ignore: cast_nullable_to_non_nullable
               as int,
-      genderRate == freezed
+      null == genderRate
           ? _value.genderRate
           : genderRate // ignore: cast_nullable_to_non_nullable
               as int,
-      captureRate == freezed
+      null == captureRate
           ? _value.captureRate
           : captureRate // ignore: cast_nullable_to_non_nullable
               as int,
-      baseHappiness == freezed
+      freezed == baseHappiness
           ? _value.baseHappiness
           : baseHappiness // ignore: cast_nullable_to_non_nullable
               as int?,
-      isBaby == freezed
+      null == isBaby
           ? _value.isBaby
           : isBaby // ignore: cast_nullable_to_non_nullable
               as bool,
-      isLegendary == freezed
+      null == isLegendary
           ? _value.isLegendary
           : isLegendary // ignore: cast_nullable_to_non_nullable
               as bool,
-      isMythical == freezed
+      null == isMythical
           ? _value.isMythical
           : isMythical // ignore: cast_nullable_to_non_nullable
               as bool,
-      hatchCounter == freezed
+      freezed == hatchCounter
           ? _value.hatchCounter
           : hatchCounter // ignore: cast_nullable_to_non_nullable
               as int?,
-      hasGenderdifferences == freezed
+      null == hasGenderdifferences
           ? _value.hasGenderdifferences
           : hasGenderdifferences // ignore: cast_nullable_to_non_nullable
               as bool,
-      formsSwitchable == freezed
+      null == formsSwitchable
           ? _value.formsSwitchable
           : formsSwitchable // ignore: cast_nullable_to_non_nullable
               as bool,
-      growthRate == freezed
+      null == growthRate
           ? _value.growthRate
           : growthRate // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-      pokedexNumbers == freezed
+      null == pokedexNumbers
           ? _value._pokedexNumbers
           : pokedexNumbers // ignore: cast_nullable_to_non_nullable
               as List<PokemonSpeciesDexEntry>,
-      eggGroups == freezed
+      null == eggGroups
           ? _value._eggGroups
           : eggGroups // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
-      color == freezed
+      null == color
           ? _value.color
           : color // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-      shape == freezed
+      freezed == shape
           ? _value.shape
           : shape // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource?,
-      evolvesFromSpecies == freezed
+      freezed == evolvesFromSpecies
           ? _value.evolvesFromSpecies
           : evolvesFromSpecies // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource?,
-      evolutionChain == freezed
+      freezed == evolutionChain
           ? _value.evolutionChain
           : evolutionChain // ignore: cast_nullable_to_non_nullable
               as APIResource?,
-      habitat == freezed
+      freezed == habitat
           ? _value.habitat
           : habitat // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource?,
-      generation == freezed
+      null == generation
           ? _value.generation
           : generation // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-      names == freezed
+      null == names
           ? _value._names
           : names // ignore: cast_nullable_to_non_nullable
               as List<Name>,
-      palParkEncounters == freezed
+      null == palParkEncounters
           ? _value._palParkEncounters
           : palParkEncounters // ignore: cast_nullable_to_non_nullable
               as List<PalParkEncounterArea>,
-      flavorTextEntries == freezed
+      null == flavorTextEntries
           ? _value._flavorTextEntries
           : flavorTextEntries // ignore: cast_nullable_to_non_nullable
               as List<FlavorText>,
-      formDescriptions == freezed
+      null == formDescriptions
           ? _value._formDescriptions
           : formDescriptions // ignore: cast_nullable_to_non_nullable
               as List<Description>,
-      genera == freezed
+      null == genera
           ? _value._genera
           : genera // ignore: cast_nullable_to_non_nullable
               as List<Genus>,
-      varieties == freezed
+      null == varieties
           ? _value._varieties
           : varieties // ignore: cast_nullable_to_non_nullable
               as List<PokemonSpeciesVariety>,
@@ -9910,45 +10009,32 @@ class _$_PokemonSpecies implements _PokemonSpecies {
       this.id,
       this.name,
       this.order,
-      @JsonKey(name: 'gender_rate')
-          this.genderRate,
-      @JsonKey(name: 'capture_rate')
-          this.captureRate,
-      @JsonKey(name: 'base_happiness')
-          this.baseHappiness,
-      @JsonKey(name: 'is_baby')
-          this.isBaby,
-      @JsonKey(name: 'is_legendary')
-          this.isLegendary,
-      @JsonKey(name: 'is_mythical')
-          this.isMythical,
-      @JsonKey(name: 'hatch_counter')
-          this.hatchCounter,
-      @JsonKey(name: 'has_gender_differences')
-          this.hasGenderdifferences,
-      @JsonKey(name: 'forms_switchable')
-          this.formsSwitchable,
-      @JsonKey(name: 'growth_rate')
-          this.growthRate,
+      @JsonKey(name: 'gender_rate') this.genderRate,
+      @JsonKey(name: 'capture_rate') this.captureRate,
+      @JsonKey(name: 'base_happiness') this.baseHappiness,
+      @JsonKey(name: 'is_baby') this.isBaby,
+      @JsonKey(name: 'is_legendary') this.isLegendary,
+      @JsonKey(name: 'is_mythical') this.isMythical,
+      @JsonKey(name: 'hatch_counter') this.hatchCounter,
+      @JsonKey(name: 'has_gender_differences') this.hasGenderdifferences,
+      @JsonKey(name: 'forms_switchable') this.formsSwitchable,
+      @JsonKey(name: 'growth_rate') this.growthRate,
       @JsonKey(name: 'pokedex_numbers')
-          final List<PokemonSpeciesDexEntry> pokedexNumbers,
-      @JsonKey(name: 'egg_groups')
-          final List<NamedAPIResource> eggGroups,
+      final List<PokemonSpeciesDexEntry> pokedexNumbers,
+      @JsonKey(name: 'egg_groups') final List<NamedAPIResource> eggGroups,
       this.color,
       this.shape,
-      @JsonKey(name: 'evolves_from_species')
-          this.evolvesFromSpecies,
-      @JsonKey(name: 'evolution_chain')
-          this.evolutionChain,
+      @JsonKey(name: 'evolves_from_species') this.evolvesFromSpecies,
+      @JsonKey(name: 'evolution_chain') this.evolutionChain,
       this.habitat,
       this.generation,
       final List<Name> names,
       @JsonKey(name: 'pal_park_encounters')
-          final List<PalParkEncounterArea> palParkEncounters,
+      final List<PalParkEncounterArea> palParkEncounters,
       @JsonKey(name: 'flavor_text_entries')
-          final List<FlavorText> flavorTextEntries,
+      final List<FlavorText> flavorTextEntries,
       @JsonKey(name: 'form_descriptions')
-          final List<Description> formDescriptions,
+      final List<Description> formDescriptions,
       final List<Genus> genera,
       final List<PokemonSpeciesVariety> varieties)
       : _pokedexNumbers = pokedexNumbers,
@@ -10039,6 +10125,7 @@ class _$_PokemonSpecies implements _PokemonSpecies {
   @override
   @JsonKey(name: 'pokedex_numbers')
   List<PokemonSpeciesDexEntry> get pokedexNumbers {
+    if (_pokedexNumbers is EqualUnmodifiableListView) return _pokedexNumbers;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_pokedexNumbers);
   }
@@ -10058,6 +10145,7 @@ class _$_PokemonSpecies implements _PokemonSpecies {
   @override
   @JsonKey(name: 'egg_groups')
   List<NamedAPIResource> get eggGroups {
+    if (_eggGroups is EqualUnmodifiableListView) return _eggGroups;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_eggGroups);
   }
@@ -10118,6 +10206,7 @@ class _$_PokemonSpecies implements _PokemonSpecies {
   /// The name of this resource listed in different languages.
   @override
   List<Name> get names {
+    if (_names is EqualUnmodifiableListView) return _names;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_names);
   }
@@ -10129,6 +10218,8 @@ class _$_PokemonSpecies implements _PokemonSpecies {
   @override
   @JsonKey(name: 'pal_park_encounters')
   List<PalParkEncounterArea> get palParkEncounters {
+    if (_palParkEncounters is EqualUnmodifiableListView)
+      return _palParkEncounters;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_palParkEncounters);
   }
@@ -10140,6 +10231,8 @@ class _$_PokemonSpecies implements _PokemonSpecies {
   @override
   @JsonKey(name: 'flavor_text_entries')
   List<FlavorText> get flavorTextEntries {
+    if (_flavorTextEntries is EqualUnmodifiableListView)
+      return _flavorTextEntries;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_flavorTextEntries);
   }
@@ -10151,6 +10244,8 @@ class _$_PokemonSpecies implements _PokemonSpecies {
   @override
   @JsonKey(name: 'form_descriptions')
   List<Description> get formDescriptions {
+    if (_formDescriptions is EqualUnmodifiableListView)
+      return _formDescriptions;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_formDescriptions);
   }
@@ -10161,6 +10256,7 @@ class _$_PokemonSpecies implements _PokemonSpecies {
   /// The genus of this Pokémon species listed in multiple languages.
   @override
   List<Genus> get genera {
+    if (_genera is EqualUnmodifiableListView) return _genera;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_genera);
   }
@@ -10171,6 +10267,7 @@ class _$_PokemonSpecies implements _PokemonSpecies {
   /// A list of the Pokémon that exist within this Pokémon species.
   @override
   List<PokemonSpeciesVariety> get varieties {
+    if (_varieties is EqualUnmodifiableListView) return _varieties;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_varieties);
   }
@@ -10185,41 +10282,41 @@ class _$_PokemonSpecies implements _PokemonSpecies {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_PokemonSpecies &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.name, name) &&
-            const DeepCollectionEquality().equals(other.order, order) &&
-            const DeepCollectionEquality()
-                .equals(other.genderRate, genderRate) &&
-            const DeepCollectionEquality()
-                .equals(other.captureRate, captureRate) &&
-            const DeepCollectionEquality()
-                .equals(other.baseHappiness, baseHappiness) &&
-            const DeepCollectionEquality().equals(other.isBaby, isBaby) &&
-            const DeepCollectionEquality()
-                .equals(other.isLegendary, isLegendary) &&
-            const DeepCollectionEquality()
-                .equals(other.isMythical, isMythical) &&
-            const DeepCollectionEquality()
-                .equals(other.hatchCounter, hatchCounter) &&
-            const DeepCollectionEquality()
-                .equals(other.hasGenderdifferences, hasGenderdifferences) &&
-            const DeepCollectionEquality()
-                .equals(other.formsSwitchable, formsSwitchable) &&
-            const DeepCollectionEquality()
-                .equals(other.growthRate, growthRate) &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.name, name) || other.name == name) &&
+            (identical(other.order, order) || other.order == order) &&
+            (identical(other.genderRate, genderRate) ||
+                other.genderRate == genderRate) &&
+            (identical(other.captureRate, captureRate) ||
+                other.captureRate == captureRate) &&
+            (identical(other.baseHappiness, baseHappiness) ||
+                other.baseHappiness == baseHappiness) &&
+            (identical(other.isBaby, isBaby) || other.isBaby == isBaby) &&
+            (identical(other.isLegendary, isLegendary) ||
+                other.isLegendary == isLegendary) &&
+            (identical(other.isMythical, isMythical) ||
+                other.isMythical == isMythical) &&
+            (identical(other.hatchCounter, hatchCounter) ||
+                other.hatchCounter == hatchCounter) &&
+            (identical(other.hasGenderdifferences, hasGenderdifferences) ||
+                other.hasGenderdifferences == hasGenderdifferences) &&
+            (identical(other.formsSwitchable, formsSwitchable) ||
+                other.formsSwitchable == formsSwitchable) &&
+            (identical(other.growthRate, growthRate) ||
+                other.growthRate == growthRate) &&
             const DeepCollectionEquality()
                 .equals(other._pokedexNumbers, _pokedexNumbers) &&
             const DeepCollectionEquality()
                 .equals(other._eggGroups, _eggGroups) &&
-            const DeepCollectionEquality().equals(other.color, color) &&
-            const DeepCollectionEquality().equals(other.shape, shape) &&
-            const DeepCollectionEquality()
-                .equals(other.evolvesFromSpecies, evolvesFromSpecies) &&
-            const DeepCollectionEquality()
-                .equals(other.evolutionChain, evolutionChain) &&
-            const DeepCollectionEquality().equals(other.habitat, habitat) &&
-            const DeepCollectionEquality()
-                .equals(other.generation, generation) &&
+            (identical(other.color, color) || other.color == color) &&
+            (identical(other.shape, shape) || other.shape == shape) &&
+            (identical(other.evolvesFromSpecies, evolvesFromSpecies) ||
+                other.evolvesFromSpecies == evolvesFromSpecies) &&
+            (identical(other.evolutionChain, evolutionChain) ||
+                other.evolutionChain == evolutionChain) &&
+            (identical(other.habitat, habitat) || other.habitat == habitat) &&
+            (identical(other.generation, generation) ||
+                other.generation == generation) &&
             const DeepCollectionEquality().equals(other._names, _names) &&
             const DeepCollectionEquality()
                 .equals(other._palParkEncounters, _palParkEncounters) &&
@@ -10236,27 +10333,27 @@ class _$_PokemonSpecies implements _PokemonSpecies {
   @override
   int get hashCode => Object.hashAll([
         runtimeType,
-        const DeepCollectionEquality().hash(id),
-        const DeepCollectionEquality().hash(name),
-        const DeepCollectionEquality().hash(order),
-        const DeepCollectionEquality().hash(genderRate),
-        const DeepCollectionEquality().hash(captureRate),
-        const DeepCollectionEquality().hash(baseHappiness),
-        const DeepCollectionEquality().hash(isBaby),
-        const DeepCollectionEquality().hash(isLegendary),
-        const DeepCollectionEquality().hash(isMythical),
-        const DeepCollectionEquality().hash(hatchCounter),
-        const DeepCollectionEquality().hash(hasGenderdifferences),
-        const DeepCollectionEquality().hash(formsSwitchable),
-        const DeepCollectionEquality().hash(growthRate),
+        id,
+        name,
+        order,
+        genderRate,
+        captureRate,
+        baseHappiness,
+        isBaby,
+        isLegendary,
+        isMythical,
+        hatchCounter,
+        hasGenderdifferences,
+        formsSwitchable,
+        growthRate,
         const DeepCollectionEquality().hash(_pokedexNumbers),
         const DeepCollectionEquality().hash(_eggGroups),
-        const DeepCollectionEquality().hash(color),
-        const DeepCollectionEquality().hash(shape),
-        const DeepCollectionEquality().hash(evolvesFromSpecies),
-        const DeepCollectionEquality().hash(evolutionChain),
-        const DeepCollectionEquality().hash(habitat),
-        const DeepCollectionEquality().hash(generation),
+        color,
+        shape,
+        evolvesFromSpecies,
+        evolutionChain,
+        habitat,
+        generation,
         const DeepCollectionEquality().hash(_names),
         const DeepCollectionEquality().hash(_palParkEncounters),
         const DeepCollectionEquality().hash(_flavorTextEntries),
@@ -10267,6 +10364,7 @@ class _$_PokemonSpecies implements _PokemonSpecies {
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_PokemonSpeciesCopyWith<_$_PokemonSpecies> get copyWith =>
       __$$_PokemonSpeciesCopyWithImpl<_$_PokemonSpecies>(this, _$identity);
 
@@ -10283,45 +10381,33 @@ abstract class _PokemonSpecies implements PokemonSpecies {
       final int id,
       final String name,
       final int order,
-      @JsonKey(name: 'gender_rate')
-          final int genderRate,
-      @JsonKey(name: 'capture_rate')
-          final int captureRate,
-      @JsonKey(name: 'base_happiness')
-          final int? baseHappiness,
-      @JsonKey(name: 'is_baby')
-          final bool isBaby,
-      @JsonKey(name: 'is_legendary')
-          final bool isLegendary,
-      @JsonKey(name: 'is_mythical')
-          final bool isMythical,
-      @JsonKey(name: 'hatch_counter')
-          final int? hatchCounter,
-      @JsonKey(name: 'has_gender_differences')
-          final bool hasGenderdifferences,
-      @JsonKey(name: 'forms_switchable')
-          final bool formsSwitchable,
-      @JsonKey(name: 'growth_rate')
-          final NamedAPIResource growthRate,
+      @JsonKey(name: 'gender_rate') final int genderRate,
+      @JsonKey(name: 'capture_rate') final int captureRate,
+      @JsonKey(name: 'base_happiness') final int? baseHappiness,
+      @JsonKey(name: 'is_baby') final bool isBaby,
+      @JsonKey(name: 'is_legendary') final bool isLegendary,
+      @JsonKey(name: 'is_mythical') final bool isMythical,
+      @JsonKey(name: 'hatch_counter') final int? hatchCounter,
+      @JsonKey(name: 'has_gender_differences') final bool hasGenderdifferences,
+      @JsonKey(name: 'forms_switchable') final bool formsSwitchable,
+      @JsonKey(name: 'growth_rate') final NamedAPIResource growthRate,
       @JsonKey(name: 'pokedex_numbers')
-          final List<PokemonSpeciesDexEntry> pokedexNumbers,
-      @JsonKey(name: 'egg_groups')
-          final List<NamedAPIResource> eggGroups,
+      final List<PokemonSpeciesDexEntry> pokedexNumbers,
+      @JsonKey(name: 'egg_groups') final List<NamedAPIResource> eggGroups,
       final NamedAPIResource color,
       final NamedAPIResource? shape,
       @JsonKey(name: 'evolves_from_species')
-          final NamedAPIResource? evolvesFromSpecies,
-      @JsonKey(name: 'evolution_chain')
-          final APIResource? evolutionChain,
+      final NamedAPIResource? evolvesFromSpecies,
+      @JsonKey(name: 'evolution_chain') final APIResource? evolutionChain,
       final NamedAPIResource? habitat,
       final NamedAPIResource generation,
       final List<Name> names,
       @JsonKey(name: 'pal_park_encounters')
-          final List<PalParkEncounterArea> palParkEncounters,
+      final List<PalParkEncounterArea> palParkEncounters,
       @JsonKey(name: 'flavor_text_entries')
-          final List<FlavorText> flavorTextEntries,
+      final List<FlavorText> flavorTextEntries,
       @JsonKey(name: 'form_descriptions')
-          final List<Description> formDescriptions,
+      final List<Description> formDescriptions,
       final List<Genus> genera,
       final List<PokemonSpeciesVariety> varieties) = _$_PokemonSpecies;
 
@@ -10518,41 +10604,46 @@ mixin _$Genus {
 /// @nodoc
 abstract class $GenusCopyWith<$Res> {
   factory $GenusCopyWith(Genus value, $Res Function(Genus) then) =
-      _$GenusCopyWithImpl<$Res>;
+      _$GenusCopyWithImpl<$Res, Genus>;
+  @useResult
   $Res call({String genus, NamedAPIResource language});
 
   $NamedAPIResourceCopyWith<$Res> get language;
 }
 
 /// @nodoc
-class _$GenusCopyWithImpl<$Res> implements $GenusCopyWith<$Res> {
+class _$GenusCopyWithImpl<$Res, $Val extends Genus>
+    implements $GenusCopyWith<$Res> {
   _$GenusCopyWithImpl(this._value, this._then);
 
-  final Genus _value;
   // ignore: unused_field
-  final $Res Function(Genus) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? genus = freezed,
-    Object? language = freezed,
+    Object? genus = null,
+    Object? language = null,
   }) {
     return _then(_value.copyWith(
-      genus: genus == freezed
+      genus: null == genus
           ? _value.genus
           : genus // ignore: cast_nullable_to_non_nullable
               as String,
-      language: language == freezed
+      language: null == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $NamedAPIResourceCopyWith<$Res> get language {
     return $NamedAPIResourceCopyWith<$Res>(_value.language, (value) {
-      return _then(_value.copyWith(language: value));
+      return _then(_value.copyWith(language: value) as $Val);
     });
   }
 }
@@ -10562,6 +10653,7 @@ abstract class _$$_GenusCopyWith<$Res> implements $GenusCopyWith<$Res> {
   factory _$$_GenusCopyWith(_$_Genus value, $Res Function(_$_Genus) then) =
       __$$_GenusCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({String genus, NamedAPIResource language});
 
   @override
@@ -10569,25 +10661,23 @@ abstract class _$$_GenusCopyWith<$Res> implements $GenusCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$_GenusCopyWithImpl<$Res> extends _$GenusCopyWithImpl<$Res>
+class __$$_GenusCopyWithImpl<$Res> extends _$GenusCopyWithImpl<$Res, _$_Genus>
     implements _$$_GenusCopyWith<$Res> {
   __$$_GenusCopyWithImpl(_$_Genus _value, $Res Function(_$_Genus) _then)
-      : super(_value, (v) => _then(v as _$_Genus));
+      : super(_value, _then);
 
-  @override
-  _$_Genus get _value => super._value as _$_Genus;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? genus = freezed,
-    Object? language = freezed,
+    Object? genus = null,
+    Object? language = null,
   }) {
     return _then(_$_Genus(
-      genus == freezed
+      null == genus
           ? _value.genus
           : genus // ignore: cast_nullable_to_non_nullable
               as String,
-      language == freezed
+      null == language
           ? _value.language
           : language // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
@@ -10625,19 +10715,18 @@ class _$_Genus implements _Genus {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_Genus &&
-            const DeepCollectionEquality().equals(other.genus, genus) &&
-            const DeepCollectionEquality().equals(other.language, language));
+            (identical(other.genus, genus) || other.genus == genus) &&
+            (identical(other.language, language) ||
+                other.language == language));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(genus),
-      const DeepCollectionEquality().hash(language));
+  int get hashCode => Object.hash(runtimeType, genus, language);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_GenusCopyWith<_$_Genus> get copyWith =>
       __$$_GenusCopyWithImpl<_$_Genus>(this, _$identity);
 
@@ -10701,7 +10790,8 @@ mixin _$PokemonSpeciesDexEntry {
 abstract class $PokemonSpeciesDexEntryCopyWith<$Res> {
   factory $PokemonSpeciesDexEntryCopyWith(PokemonSpeciesDexEntry value,
           $Res Function(PokemonSpeciesDexEntry) then) =
-      _$PokemonSpeciesDexEntryCopyWithImpl<$Res>;
+      _$PokemonSpeciesDexEntryCopyWithImpl<$Res, PokemonSpeciesDexEntry>;
+  @useResult
   $Res call(
       {@JsonKey(name: 'entry_number') int entryNumber,
       NamedAPIResource pokedex});
@@ -10710,35 +10800,39 @@ abstract class $PokemonSpeciesDexEntryCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$PokemonSpeciesDexEntryCopyWithImpl<$Res>
+class _$PokemonSpeciesDexEntryCopyWithImpl<$Res,
+        $Val extends PokemonSpeciesDexEntry>
     implements $PokemonSpeciesDexEntryCopyWith<$Res> {
   _$PokemonSpeciesDexEntryCopyWithImpl(this._value, this._then);
 
-  final PokemonSpeciesDexEntry _value;
   // ignore: unused_field
-  final $Res Function(PokemonSpeciesDexEntry) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? entryNumber = freezed,
-    Object? pokedex = freezed,
+    Object? entryNumber = null,
+    Object? pokedex = null,
   }) {
     return _then(_value.copyWith(
-      entryNumber: entryNumber == freezed
+      entryNumber: null == entryNumber
           ? _value.entryNumber
           : entryNumber // ignore: cast_nullable_to_non_nullable
               as int,
-      pokedex: pokedex == freezed
+      pokedex: null == pokedex
           ? _value.pokedex
           : pokedex // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $NamedAPIResourceCopyWith<$Res> get pokedex {
     return $NamedAPIResourceCopyWith<$Res>(_value.pokedex, (value) {
-      return _then(_value.copyWith(pokedex: value));
+      return _then(_value.copyWith(pokedex: value) as $Val);
     });
   }
 }
@@ -10750,6 +10844,7 @@ abstract class _$$_PokemonSpeciesDexEntryCopyWith<$Res>
           $Res Function(_$_PokemonSpeciesDexEntry) then) =
       __$$_PokemonSpeciesDexEntryCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@JsonKey(name: 'entry_number') int entryNumber,
       NamedAPIResource pokedex});
@@ -10760,27 +10855,25 @@ abstract class _$$_PokemonSpeciesDexEntryCopyWith<$Res>
 
 /// @nodoc
 class __$$_PokemonSpeciesDexEntryCopyWithImpl<$Res>
-    extends _$PokemonSpeciesDexEntryCopyWithImpl<$Res>
+    extends _$PokemonSpeciesDexEntryCopyWithImpl<$Res,
+        _$_PokemonSpeciesDexEntry>
     implements _$$_PokemonSpeciesDexEntryCopyWith<$Res> {
   __$$_PokemonSpeciesDexEntryCopyWithImpl(_$_PokemonSpeciesDexEntry _value,
       $Res Function(_$_PokemonSpeciesDexEntry) _then)
-      : super(_value, (v) => _then(v as _$_PokemonSpeciesDexEntry));
+      : super(_value, _then);
 
-  @override
-  _$_PokemonSpeciesDexEntry get _value =>
-      super._value as _$_PokemonSpeciesDexEntry;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? entryNumber = freezed,
-    Object? pokedex = freezed,
+    Object? entryNumber = null,
+    Object? pokedex = null,
   }) {
     return _then(_$_PokemonSpeciesDexEntry(
-      entryNumber == freezed
+      null == entryNumber
           ? _value.entryNumber
           : entryNumber // ignore: cast_nullable_to_non_nullable
               as int,
-      pokedex == freezed
+      null == pokedex
           ? _value.pokedex
           : pokedex // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
@@ -10820,20 +10913,18 @@ class _$_PokemonSpeciesDexEntry implements _PokemonSpeciesDexEntry {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_PokemonSpeciesDexEntry &&
-            const DeepCollectionEquality()
-                .equals(other.entryNumber, entryNumber) &&
-            const DeepCollectionEquality().equals(other.pokedex, pokedex));
+            (identical(other.entryNumber, entryNumber) ||
+                other.entryNumber == entryNumber) &&
+            (identical(other.pokedex, pokedex) || other.pokedex == pokedex));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(entryNumber),
-      const DeepCollectionEquality().hash(pokedex));
+  int get hashCode => Object.hash(runtimeType, entryNumber, pokedex);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_PokemonSpeciesDexEntryCopyWith<_$_PokemonSpeciesDexEntry> get copyWith =>
       __$$_PokemonSpeciesDexEntryCopyWithImpl<_$_PokemonSpeciesDexEntry>(
           this, _$identity);
@@ -10903,7 +10994,8 @@ mixin _$PalParkEncounterArea {
 abstract class $PalParkEncounterAreaCopyWith<$Res> {
   factory $PalParkEncounterAreaCopyWith(PalParkEncounterArea value,
           $Res Function(PalParkEncounterArea) then) =
-      _$PalParkEncounterAreaCopyWithImpl<$Res>;
+      _$PalParkEncounterAreaCopyWithImpl<$Res, PalParkEncounterArea>;
+  @useResult
   $Res call(
       {@JsonKey(name: 'base_score') int baseScore,
       int rate,
@@ -10913,40 +11005,44 @@ abstract class $PalParkEncounterAreaCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$PalParkEncounterAreaCopyWithImpl<$Res>
+class _$PalParkEncounterAreaCopyWithImpl<$Res,
+        $Val extends PalParkEncounterArea>
     implements $PalParkEncounterAreaCopyWith<$Res> {
   _$PalParkEncounterAreaCopyWithImpl(this._value, this._then);
 
-  final PalParkEncounterArea _value;
   // ignore: unused_field
-  final $Res Function(PalParkEncounterArea) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? baseScore = freezed,
-    Object? rate = freezed,
-    Object? area = freezed,
+    Object? baseScore = null,
+    Object? rate = null,
+    Object? area = null,
   }) {
     return _then(_value.copyWith(
-      baseScore: baseScore == freezed
+      baseScore: null == baseScore
           ? _value.baseScore
           : baseScore // ignore: cast_nullable_to_non_nullable
               as int,
-      rate: rate == freezed
+      rate: null == rate
           ? _value.rate
           : rate // ignore: cast_nullable_to_non_nullable
               as int,
-      area: area == freezed
+      area: null == area
           ? _value.area
           : area // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $NamedAPIResourceCopyWith<$Res> get area {
     return $NamedAPIResourceCopyWith<$Res>(_value.area, (value) {
-      return _then(_value.copyWith(area: value));
+      return _then(_value.copyWith(area: value) as $Val);
     });
   }
 }
@@ -10958,6 +11054,7 @@ abstract class _$$_PalParkEncounterAreaCopyWith<$Res>
           $Res Function(_$_PalParkEncounterArea) then) =
       __$$_PalParkEncounterAreaCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@JsonKey(name: 'base_score') int baseScore,
       int rate,
@@ -10969,31 +11066,29 @@ abstract class _$$_PalParkEncounterAreaCopyWith<$Res>
 
 /// @nodoc
 class __$$_PalParkEncounterAreaCopyWithImpl<$Res>
-    extends _$PalParkEncounterAreaCopyWithImpl<$Res>
+    extends _$PalParkEncounterAreaCopyWithImpl<$Res, _$_PalParkEncounterArea>
     implements _$$_PalParkEncounterAreaCopyWith<$Res> {
   __$$_PalParkEncounterAreaCopyWithImpl(_$_PalParkEncounterArea _value,
       $Res Function(_$_PalParkEncounterArea) _then)
-      : super(_value, (v) => _then(v as _$_PalParkEncounterArea));
+      : super(_value, _then);
 
-  @override
-  _$_PalParkEncounterArea get _value => super._value as _$_PalParkEncounterArea;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? baseScore = freezed,
-    Object? rate = freezed,
-    Object? area = freezed,
+    Object? baseScore = null,
+    Object? rate = null,
+    Object? area = null,
   }) {
     return _then(_$_PalParkEncounterArea(
-      baseScore == freezed
+      null == baseScore
           ? _value.baseScore
           : baseScore // ignore: cast_nullable_to_non_nullable
               as int,
-      rate == freezed
+      null == rate
           ? _value.rate
           : rate // ignore: cast_nullable_to_non_nullable
               as int,
-      area == freezed
+      null == area
           ? _value.area
           : area // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
@@ -11037,21 +11132,19 @@ class _$_PalParkEncounterArea implements _PalParkEncounterArea {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_PalParkEncounterArea &&
-            const DeepCollectionEquality().equals(other.baseScore, baseScore) &&
-            const DeepCollectionEquality().equals(other.rate, rate) &&
-            const DeepCollectionEquality().equals(other.area, area));
+            (identical(other.baseScore, baseScore) ||
+                other.baseScore == baseScore) &&
+            (identical(other.rate, rate) || other.rate == rate) &&
+            (identical(other.area, area) || other.area == area));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(baseScore),
-      const DeepCollectionEquality().hash(rate),
-      const DeepCollectionEquality().hash(area));
+  int get hashCode => Object.hash(runtimeType, baseScore, rate, area);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_PalParkEncounterAreaCopyWith<_$_PalParkEncounterArea> get copyWith =>
       __$$_PalParkEncounterAreaCopyWithImpl<_$_PalParkEncounterArea>(
           this, _$identity);
@@ -11124,7 +11217,8 @@ mixin _$PokemonSpeciesVariety {
 abstract class $PokemonSpeciesVarietyCopyWith<$Res> {
   factory $PokemonSpeciesVarietyCopyWith(PokemonSpeciesVariety value,
           $Res Function(PokemonSpeciesVariety) then) =
-      _$PokemonSpeciesVarietyCopyWithImpl<$Res>;
+      _$PokemonSpeciesVarietyCopyWithImpl<$Res, PokemonSpeciesVariety>;
+  @useResult
   $Res call(
       {@JsonKey(name: 'is_default') bool isDefault, NamedAPIResource pokemon});
 
@@ -11132,35 +11226,39 @@ abstract class $PokemonSpeciesVarietyCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$PokemonSpeciesVarietyCopyWithImpl<$Res>
+class _$PokemonSpeciesVarietyCopyWithImpl<$Res,
+        $Val extends PokemonSpeciesVariety>
     implements $PokemonSpeciesVarietyCopyWith<$Res> {
   _$PokemonSpeciesVarietyCopyWithImpl(this._value, this._then);
 
-  final PokemonSpeciesVariety _value;
   // ignore: unused_field
-  final $Res Function(PokemonSpeciesVariety) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? isDefault = freezed,
-    Object? pokemon = freezed,
+    Object? isDefault = null,
+    Object? pokemon = null,
   }) {
     return _then(_value.copyWith(
-      isDefault: isDefault == freezed
+      isDefault: null == isDefault
           ? _value.isDefault
           : isDefault // ignore: cast_nullable_to_non_nullable
               as bool,
-      pokemon: pokemon == freezed
+      pokemon: null == pokemon
           ? _value.pokemon
           : pokemon // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $NamedAPIResourceCopyWith<$Res> get pokemon {
     return $NamedAPIResourceCopyWith<$Res>(_value.pokemon, (value) {
-      return _then(_value.copyWith(pokemon: value));
+      return _then(_value.copyWith(pokemon: value) as $Val);
     });
   }
 }
@@ -11172,6 +11270,7 @@ abstract class _$$_PokemonSpeciesVarietyCopyWith<$Res>
           $Res Function(_$_PokemonSpeciesVariety) then) =
       __$$_PokemonSpeciesVarietyCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {@JsonKey(name: 'is_default') bool isDefault, NamedAPIResource pokemon});
 
@@ -11181,27 +11280,24 @@ abstract class _$$_PokemonSpeciesVarietyCopyWith<$Res>
 
 /// @nodoc
 class __$$_PokemonSpeciesVarietyCopyWithImpl<$Res>
-    extends _$PokemonSpeciesVarietyCopyWithImpl<$Res>
+    extends _$PokemonSpeciesVarietyCopyWithImpl<$Res, _$_PokemonSpeciesVariety>
     implements _$$_PokemonSpeciesVarietyCopyWith<$Res> {
   __$$_PokemonSpeciesVarietyCopyWithImpl(_$_PokemonSpeciesVariety _value,
       $Res Function(_$_PokemonSpeciesVariety) _then)
-      : super(_value, (v) => _then(v as _$_PokemonSpeciesVariety));
+      : super(_value, _then);
 
-  @override
-  _$_PokemonSpeciesVariety get _value =>
-      super._value as _$_PokemonSpeciesVariety;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? isDefault = freezed,
-    Object? pokemon = freezed,
+    Object? isDefault = null,
+    Object? pokemon = null,
   }) {
     return _then(_$_PokemonSpeciesVariety(
-      isDefault == freezed
+      null == isDefault
           ? _value.isDefault
           : isDefault // ignore: cast_nullable_to_non_nullable
               as bool,
-      pokemon == freezed
+      null == pokemon
           ? _value.pokemon
           : pokemon // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
@@ -11241,19 +11337,18 @@ class _$_PokemonSpeciesVariety implements _PokemonSpeciesVariety {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_PokemonSpeciesVariety &&
-            const DeepCollectionEquality().equals(other.isDefault, isDefault) &&
-            const DeepCollectionEquality().equals(other.pokemon, pokemon));
+            (identical(other.isDefault, isDefault) ||
+                other.isDefault == isDefault) &&
+            (identical(other.pokemon, pokemon) || other.pokemon == pokemon));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(isDefault),
-      const DeepCollectionEquality().hash(pokemon));
+  int get hashCode => Object.hash(runtimeType, isDefault, pokemon);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_PokemonSpeciesVarietyCopyWith<_$_PokemonSpeciesVariety> get copyWith =>
       __$$_PokemonSpeciesVarietyCopyWithImpl<_$_PokemonSpeciesVariety>(
           this, _$identity);
@@ -11348,7 +11443,8 @@ mixin _$Stat {
 /// @nodoc
 abstract class $StatCopyWith<$Res> {
   factory $StatCopyWith(Stat value, $Res Function(Stat) then) =
-      _$StatCopyWithImpl<$Res>;
+      _$StatCopyWithImpl<$Res, Stat>;
+  @useResult
   $Res call(
       {int id,
       String name,
@@ -11366,88 +11462,94 @@ abstract class $StatCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$StatCopyWithImpl<$Res> implements $StatCopyWith<$Res> {
+class _$StatCopyWithImpl<$Res, $Val extends Stat>
+    implements $StatCopyWith<$Res> {
   _$StatCopyWithImpl(this._value, this._then);
 
-  final Stat _value;
   // ignore: unused_field
-  final $Res Function(Stat) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? gameIndex = freezed,
-    Object? isBattleOnly = freezed,
-    Object? affectingMoves = freezed,
-    Object? affectingNatures = freezed,
-    Object? characteristics = freezed,
+    Object? id = null,
+    Object? name = null,
+    Object? gameIndex = null,
+    Object? isBattleOnly = null,
+    Object? affectingMoves = null,
+    Object? affectingNatures = null,
+    Object? characteristics = null,
     Object? moveDamageClass = freezed,
-    Object? names = freezed,
+    Object? names = null,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      name: name == freezed
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      gameIndex: gameIndex == freezed
+      gameIndex: null == gameIndex
           ? _value.gameIndex
           : gameIndex // ignore: cast_nullable_to_non_nullable
               as int,
-      isBattleOnly: isBattleOnly == freezed
+      isBattleOnly: null == isBattleOnly
           ? _value.isBattleOnly
           : isBattleOnly // ignore: cast_nullable_to_non_nullable
               as bool,
-      affectingMoves: affectingMoves == freezed
+      affectingMoves: null == affectingMoves
           ? _value.affectingMoves
           : affectingMoves // ignore: cast_nullable_to_non_nullable
               as MoveStatAffectSets,
-      affectingNatures: affectingNatures == freezed
+      affectingNatures: null == affectingNatures
           ? _value.affectingNatures
           : affectingNatures // ignore: cast_nullable_to_non_nullable
               as NatureStatAffectSets,
-      characteristics: characteristics == freezed
+      characteristics: null == characteristics
           ? _value.characteristics
           : characteristics // ignore: cast_nullable_to_non_nullable
               as List<APIResource>,
-      moveDamageClass: moveDamageClass == freezed
+      moveDamageClass: freezed == moveDamageClass
           ? _value.moveDamageClass
           : moveDamageClass // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource?,
-      names: names == freezed
+      names: null == names
           ? _value.names
           : names // ignore: cast_nullable_to_non_nullable
               as List<Name>,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $MoveStatAffectSetsCopyWith<$Res> get affectingMoves {
     return $MoveStatAffectSetsCopyWith<$Res>(_value.affectingMoves, (value) {
-      return _then(_value.copyWith(affectingMoves: value));
+      return _then(_value.copyWith(affectingMoves: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $NatureStatAffectSetsCopyWith<$Res> get affectingNatures {
     return $NatureStatAffectSetsCopyWith<$Res>(_value.affectingNatures,
         (value) {
-      return _then(_value.copyWith(affectingNatures: value));
+      return _then(_value.copyWith(affectingNatures: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $NamedAPIResourceCopyWith<$Res>? get moveDamageClass {
     if (_value.moveDamageClass == null) {
       return null;
     }
 
     return $NamedAPIResourceCopyWith<$Res>(_value.moveDamageClass!, (value) {
-      return _then(_value.copyWith(moveDamageClass: value));
+      return _then(_value.copyWith(moveDamageClass: value) as $Val);
     });
   }
 }
@@ -11457,6 +11559,7 @@ abstract class _$$_StatCopyWith<$Res> implements $StatCopyWith<$Res> {
   factory _$$_StatCopyWith(_$_Stat value, $Res Function(_$_Stat) then) =
       __$$_StatCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {int id,
       String name,
@@ -11477,60 +11580,58 @@ abstract class _$$_StatCopyWith<$Res> implements $StatCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$_StatCopyWithImpl<$Res> extends _$StatCopyWithImpl<$Res>
+class __$$_StatCopyWithImpl<$Res> extends _$StatCopyWithImpl<$Res, _$_Stat>
     implements _$$_StatCopyWith<$Res> {
   __$$_StatCopyWithImpl(_$_Stat _value, $Res Function(_$_Stat) _then)
-      : super(_value, (v) => _then(v as _$_Stat));
+      : super(_value, _then);
 
-  @override
-  _$_Stat get _value => super._value as _$_Stat;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? gameIndex = freezed,
-    Object? isBattleOnly = freezed,
-    Object? affectingMoves = freezed,
-    Object? affectingNatures = freezed,
-    Object? characteristics = freezed,
+    Object? id = null,
+    Object? name = null,
+    Object? gameIndex = null,
+    Object? isBattleOnly = null,
+    Object? affectingMoves = null,
+    Object? affectingNatures = null,
+    Object? characteristics = null,
     Object? moveDamageClass = freezed,
-    Object? names = freezed,
+    Object? names = null,
   }) {
     return _then(_$_Stat(
-      id == freezed
+      null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      name == freezed
+      null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      gameIndex == freezed
+      null == gameIndex
           ? _value.gameIndex
           : gameIndex // ignore: cast_nullable_to_non_nullable
               as int,
-      isBattleOnly == freezed
+      null == isBattleOnly
           ? _value.isBattleOnly
           : isBattleOnly // ignore: cast_nullable_to_non_nullable
               as bool,
-      affectingMoves == freezed
+      null == affectingMoves
           ? _value.affectingMoves
           : affectingMoves // ignore: cast_nullable_to_non_nullable
               as MoveStatAffectSets,
-      affectingNatures == freezed
+      null == affectingNatures
           ? _value.affectingNatures
           : affectingNatures // ignore: cast_nullable_to_non_nullable
               as NatureStatAffectSets,
-      characteristics == freezed
+      null == characteristics
           ? _value._characteristics
           : characteristics // ignore: cast_nullable_to_non_nullable
               as List<APIResource>,
-      moveDamageClass == freezed
+      freezed == moveDamageClass
           ? _value.moveDamageClass
           : moveDamageClass // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource?,
-      names == freezed
+      null == names
           ? _value._names
           : names // ignore: cast_nullable_to_non_nullable
               as List<Name>,
@@ -11598,6 +11699,7 @@ class _$_Stat implements _Stat {
   /// [Characteristic]
   @override
   List<APIResource> get characteristics {
+    if (_characteristics is EqualUnmodifiableListView) return _characteristics;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_characteristics);
   }
@@ -11617,6 +11719,7 @@ class _$_Stat implements _Stat {
   /// The name of this resource listed in different languages.
   @override
   List<Name> get names {
+    if (_names is EqualUnmodifiableListView) return _names;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_names);
   }
@@ -11631,19 +11734,20 @@ class _$_Stat implements _Stat {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_Stat &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.name, name) &&
-            const DeepCollectionEquality().equals(other.gameIndex, gameIndex) &&
-            const DeepCollectionEquality()
-                .equals(other.isBattleOnly, isBattleOnly) &&
-            const DeepCollectionEquality()
-                .equals(other.affectingMoves, affectingMoves) &&
-            const DeepCollectionEquality()
-                .equals(other.affectingNatures, affectingNatures) &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.name, name) || other.name == name) &&
+            (identical(other.gameIndex, gameIndex) ||
+                other.gameIndex == gameIndex) &&
+            (identical(other.isBattleOnly, isBattleOnly) ||
+                other.isBattleOnly == isBattleOnly) &&
+            (identical(other.affectingMoves, affectingMoves) ||
+                other.affectingMoves == affectingMoves) &&
+            (identical(other.affectingNatures, affectingNatures) ||
+                other.affectingNatures == affectingNatures) &&
             const DeepCollectionEquality()
                 .equals(other._characteristics, _characteristics) &&
-            const DeepCollectionEquality()
-                .equals(other.moveDamageClass, moveDamageClass) &&
+            (identical(other.moveDamageClass, moveDamageClass) ||
+                other.moveDamageClass == moveDamageClass) &&
             const DeepCollectionEquality().equals(other._names, _names));
   }
 
@@ -11651,18 +11755,19 @@ class _$_Stat implements _Stat {
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(name),
-      const DeepCollectionEquality().hash(gameIndex),
-      const DeepCollectionEquality().hash(isBattleOnly),
-      const DeepCollectionEquality().hash(affectingMoves),
-      const DeepCollectionEquality().hash(affectingNatures),
+      id,
+      name,
+      gameIndex,
+      isBattleOnly,
+      affectingMoves,
+      affectingNatures,
       const DeepCollectionEquality().hash(_characteristics),
-      const DeepCollectionEquality().hash(moveDamageClass),
+      moveDamageClass,
       const DeepCollectionEquality().hash(_names));
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_StatCopyWith<_$_Stat> get copyWith =>
       __$$_StatCopyWithImpl<_$_Stat>(this, _$identity);
 
@@ -11678,17 +11783,14 @@ abstract class _Stat implements Stat {
   const factory _Stat(
       final int id,
       final String name,
-      @JsonKey(name: 'game_index')
-          final int gameIndex,
-      @JsonKey(name: 'is_battle_only')
-          final bool isBattleOnly,
-      @JsonKey(name: 'affecting_moves')
-          final MoveStatAffectSets affectingMoves,
+      @JsonKey(name: 'game_index') final int gameIndex,
+      @JsonKey(name: 'is_battle_only') final bool isBattleOnly,
+      @JsonKey(name: 'affecting_moves') final MoveStatAffectSets affectingMoves,
       @JsonKey(name: 'affecting_natures')
-          final NatureStatAffectSets affectingNatures,
+      final NatureStatAffectSets affectingNatures,
       final List<APIResource> characteristics,
       @JsonKey(name: 'move_damage_class')
-          final NamedAPIResource? moveDamageClass,
+      final NamedAPIResource? moveDamageClass,
       final List<Name> names) = _$_Stat;
 
   factory _Stat.fromJson(Map<String, dynamic> json) = _$_Stat.fromJson;
@@ -11769,34 +11871,37 @@ mixin _$MoveStatAffectSets {
 abstract class $MoveStatAffectSetsCopyWith<$Res> {
   factory $MoveStatAffectSetsCopyWith(
           MoveStatAffectSets value, $Res Function(MoveStatAffectSets) then) =
-      _$MoveStatAffectSetsCopyWithImpl<$Res>;
+      _$MoveStatAffectSetsCopyWithImpl<$Res, MoveStatAffectSets>;
+  @useResult
   $Res call({List<MoveStatAffect> increase, List<MoveStatAffect> decrease});
 }
 
 /// @nodoc
-class _$MoveStatAffectSetsCopyWithImpl<$Res>
+class _$MoveStatAffectSetsCopyWithImpl<$Res, $Val extends MoveStatAffectSets>
     implements $MoveStatAffectSetsCopyWith<$Res> {
   _$MoveStatAffectSetsCopyWithImpl(this._value, this._then);
 
-  final MoveStatAffectSets _value;
   // ignore: unused_field
-  final $Res Function(MoveStatAffectSets) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? increase = freezed,
-    Object? decrease = freezed,
+    Object? increase = null,
+    Object? decrease = null,
   }) {
     return _then(_value.copyWith(
-      increase: increase == freezed
+      increase: null == increase
           ? _value.increase
           : increase // ignore: cast_nullable_to_non_nullable
               as List<MoveStatAffect>,
-      decrease: decrease == freezed
+      decrease: null == decrease
           ? _value.decrease
           : decrease // ignore: cast_nullable_to_non_nullable
               as List<MoveStatAffect>,
-    ));
+    ) as $Val);
   }
 }
 
@@ -11807,31 +11912,30 @@ abstract class _$$_MoveStatAffectSetsCopyWith<$Res>
           $Res Function(_$_MoveStatAffectSets) then) =
       __$$_MoveStatAffectSetsCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({List<MoveStatAffect> increase, List<MoveStatAffect> decrease});
 }
 
 /// @nodoc
 class __$$_MoveStatAffectSetsCopyWithImpl<$Res>
-    extends _$MoveStatAffectSetsCopyWithImpl<$Res>
+    extends _$MoveStatAffectSetsCopyWithImpl<$Res, _$_MoveStatAffectSets>
     implements _$$_MoveStatAffectSetsCopyWith<$Res> {
   __$$_MoveStatAffectSetsCopyWithImpl(
       _$_MoveStatAffectSets _value, $Res Function(_$_MoveStatAffectSets) _then)
-      : super(_value, (v) => _then(v as _$_MoveStatAffectSets));
+      : super(_value, _then);
 
-  @override
-  _$_MoveStatAffectSets get _value => super._value as _$_MoveStatAffectSets;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? increase = freezed,
-    Object? decrease = freezed,
+    Object? increase = null,
+    Object? decrease = null,
   }) {
     return _then(_$_MoveStatAffectSets(
-      increase == freezed
+      null == increase
           ? _value._increase
           : increase // ignore: cast_nullable_to_non_nullable
               as List<MoveStatAffect>,
-      decrease == freezed
+      null == decrease
           ? _value._decrease
           : decrease // ignore: cast_nullable_to_non_nullable
               as List<MoveStatAffect>,
@@ -11856,6 +11960,7 @@ class _$_MoveStatAffectSets implements _MoveStatAffectSets {
   /// A list of moves and how they change the referenced stat.
   @override
   List<MoveStatAffect> get increase {
+    if (_increase is EqualUnmodifiableListView) return _increase;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_increase);
   }
@@ -11866,6 +11971,7 @@ class _$_MoveStatAffectSets implements _MoveStatAffectSets {
   /// A list of moves and how they change the referenced stat.
   @override
   List<MoveStatAffect> get decrease {
+    if (_decrease is EqualUnmodifiableListView) return _decrease;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_decrease);
   }
@@ -11893,6 +11999,7 @@ class _$_MoveStatAffectSets implements _MoveStatAffectSets {
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_MoveStatAffectSetsCopyWith<_$_MoveStatAffectSets> get copyWith =>
       __$$_MoveStatAffectSetsCopyWithImpl<_$_MoveStatAffectSets>(
           this, _$identity);
@@ -11952,42 +12059,46 @@ mixin _$MoveStatAffect {
 abstract class $MoveStatAffectCopyWith<$Res> {
   factory $MoveStatAffectCopyWith(
           MoveStatAffect value, $Res Function(MoveStatAffect) then) =
-      _$MoveStatAffectCopyWithImpl<$Res>;
+      _$MoveStatAffectCopyWithImpl<$Res, MoveStatAffect>;
+  @useResult
   $Res call({int change, NamedAPIResource move});
 
   $NamedAPIResourceCopyWith<$Res> get move;
 }
 
 /// @nodoc
-class _$MoveStatAffectCopyWithImpl<$Res>
+class _$MoveStatAffectCopyWithImpl<$Res, $Val extends MoveStatAffect>
     implements $MoveStatAffectCopyWith<$Res> {
   _$MoveStatAffectCopyWithImpl(this._value, this._then);
 
-  final MoveStatAffect _value;
   // ignore: unused_field
-  final $Res Function(MoveStatAffect) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? change = freezed,
-    Object? move = freezed,
+    Object? change = null,
+    Object? move = null,
   }) {
     return _then(_value.copyWith(
-      change: change == freezed
+      change: null == change
           ? _value.change
           : change // ignore: cast_nullable_to_non_nullable
               as int,
-      move: move == freezed
+      move: null == move
           ? _value.move
           : move // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $NamedAPIResourceCopyWith<$Res> get move {
     return $NamedAPIResourceCopyWith<$Res>(_value.move, (value) {
-      return _then(_value.copyWith(move: value));
+      return _then(_value.copyWith(move: value) as $Val);
     });
   }
 }
@@ -11999,6 +12110,7 @@ abstract class _$$_MoveStatAffectCopyWith<$Res>
           _$_MoveStatAffect value, $Res Function(_$_MoveStatAffect) then) =
       __$$_MoveStatAffectCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({int change, NamedAPIResource move});
 
   @override
@@ -12007,26 +12119,24 @@ abstract class _$$_MoveStatAffectCopyWith<$Res>
 
 /// @nodoc
 class __$$_MoveStatAffectCopyWithImpl<$Res>
-    extends _$MoveStatAffectCopyWithImpl<$Res>
+    extends _$MoveStatAffectCopyWithImpl<$Res, _$_MoveStatAffect>
     implements _$$_MoveStatAffectCopyWith<$Res> {
   __$$_MoveStatAffectCopyWithImpl(
       _$_MoveStatAffect _value, $Res Function(_$_MoveStatAffect) _then)
-      : super(_value, (v) => _then(v as _$_MoveStatAffect));
+      : super(_value, _then);
 
-  @override
-  _$_MoveStatAffect get _value => super._value as _$_MoveStatAffect;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? change = freezed,
-    Object? move = freezed,
+    Object? change = null,
+    Object? move = null,
   }) {
     return _then(_$_MoveStatAffect(
-      change == freezed
+      null == change
           ? _value.change
           : change // ignore: cast_nullable_to_non_nullable
               as int,
-      move == freezed
+      null == move
           ? _value.move
           : move // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
@@ -12064,19 +12174,17 @@ class _$_MoveStatAffect implements _MoveStatAffect {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_MoveStatAffect &&
-            const DeepCollectionEquality().equals(other.change, change) &&
-            const DeepCollectionEquality().equals(other.move, move));
+            (identical(other.change, change) || other.change == change) &&
+            (identical(other.move, move) || other.move == move));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(change),
-      const DeepCollectionEquality().hash(move));
+  int get hashCode => Object.hash(runtimeType, change, move);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_MoveStatAffectCopyWith<_$_MoveStatAffect> get copyWith =>
       __$$_MoveStatAffectCopyWithImpl<_$_MoveStatAffect>(this, _$identity);
 
@@ -12143,34 +12251,38 @@ mixin _$NatureStatAffectSets {
 abstract class $NatureStatAffectSetsCopyWith<$Res> {
   factory $NatureStatAffectSetsCopyWith(NatureStatAffectSets value,
           $Res Function(NatureStatAffectSets) then) =
-      _$NatureStatAffectSetsCopyWithImpl<$Res>;
+      _$NatureStatAffectSetsCopyWithImpl<$Res, NatureStatAffectSets>;
+  @useResult
   $Res call({List<NamedAPIResource> increase, List<NamedAPIResource> decrease});
 }
 
 /// @nodoc
-class _$NatureStatAffectSetsCopyWithImpl<$Res>
+class _$NatureStatAffectSetsCopyWithImpl<$Res,
+        $Val extends NatureStatAffectSets>
     implements $NatureStatAffectSetsCopyWith<$Res> {
   _$NatureStatAffectSetsCopyWithImpl(this._value, this._then);
 
-  final NatureStatAffectSets _value;
   // ignore: unused_field
-  final $Res Function(NatureStatAffectSets) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? increase = freezed,
-    Object? decrease = freezed,
+    Object? increase = null,
+    Object? decrease = null,
   }) {
     return _then(_value.copyWith(
-      increase: increase == freezed
+      increase: null == increase
           ? _value.increase
           : increase // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
-      decrease: decrease == freezed
+      decrease: null == decrease
           ? _value.decrease
           : decrease // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
-    ));
+    ) as $Val);
   }
 }
 
@@ -12181,31 +12293,30 @@ abstract class _$$_NatureStatAffectSetsCopyWith<$Res>
           $Res Function(_$_NatureStatAffectSets) then) =
       __$$_NatureStatAffectSetsCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({List<NamedAPIResource> increase, List<NamedAPIResource> decrease});
 }
 
 /// @nodoc
 class __$$_NatureStatAffectSetsCopyWithImpl<$Res>
-    extends _$NatureStatAffectSetsCopyWithImpl<$Res>
+    extends _$NatureStatAffectSetsCopyWithImpl<$Res, _$_NatureStatAffectSets>
     implements _$$_NatureStatAffectSetsCopyWith<$Res> {
   __$$_NatureStatAffectSetsCopyWithImpl(_$_NatureStatAffectSets _value,
       $Res Function(_$_NatureStatAffectSets) _then)
-      : super(_value, (v) => _then(v as _$_NatureStatAffectSets));
+      : super(_value, _then);
 
-  @override
-  _$_NatureStatAffectSets get _value => super._value as _$_NatureStatAffectSets;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? increase = freezed,
-    Object? decrease = freezed,
+    Object? increase = null,
+    Object? decrease = null,
   }) {
     return _then(_$_NatureStatAffectSets(
-      increase == freezed
+      null == increase
           ? _value._increase
           : increase // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
-      decrease == freezed
+      null == decrease
           ? _value._decrease
           : decrease // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
@@ -12238,6 +12349,7 @@ class _$_NatureStatAffectSets implements _NatureStatAffectSets {
   /// [Nature]
   @override
   List<NamedAPIResource> get increase {
+    if (_increase is EqualUnmodifiableListView) return _increase;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_increase);
   }
@@ -12256,6 +12368,7 @@ class _$_NatureStatAffectSets implements _NatureStatAffectSets {
   /// [Nature]
   @override
   List<NamedAPIResource> get decrease {
+    if (_decrease is EqualUnmodifiableListView) return _decrease;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_decrease);
   }
@@ -12283,6 +12396,7 @@ class _$_NatureStatAffectSets implements _NatureStatAffectSets {
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_NatureStatAffectSetsCopyWith<_$_NatureStatAffectSets> get copyWith =>
       __$$_NatureStatAffectSetsCopyWithImpl<_$_NatureStatAffectSets>(
           this, _$identity);
@@ -12387,19 +12501,17 @@ mixin _$Type {
 /// @nodoc
 abstract class $TypeCopyWith<$Res> {
   factory $TypeCopyWith(Type value, $Res Function(Type) then) =
-      _$TypeCopyWithImpl<$Res>;
+      _$TypeCopyWithImpl<$Res, Type>;
+  @useResult
   $Res call(
       {int id,
       String name,
-      @JsonKey(name: 'damage_relations')
-          TypeRelations damageRelations,
+      @JsonKey(name: 'damage_relations') TypeRelations damageRelations,
       @JsonKey(name: 'past_damage_relations')
-          List<TypeRelationsPast> pastDamageRelations,
-      @JsonKey(name: 'game_indices')
-          List<GenerationGameIndex> gameIndices,
+      List<TypeRelationsPast> pastDamageRelations,
+      @JsonKey(name: 'game_indices') List<GenerationGameIndex> gameIndices,
       NamedAPIResource generation,
-      @JsonKey(name: 'move_damage_class')
-          NamedAPIResource? moveDamageClass,
+      @JsonKey(name: 'move_damage_class') NamedAPIResource? moveDamageClass,
       List<Name> names,
       List<TypePokemon> pokemon,
       List<NamedAPIResource> moves});
@@ -12410,92 +12522,98 @@ abstract class $TypeCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$TypeCopyWithImpl<$Res> implements $TypeCopyWith<$Res> {
+class _$TypeCopyWithImpl<$Res, $Val extends Type>
+    implements $TypeCopyWith<$Res> {
   _$TypeCopyWithImpl(this._value, this._then);
 
-  final Type _value;
   // ignore: unused_field
-  final $Res Function(Type) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? damageRelations = freezed,
-    Object? pastDamageRelations = freezed,
-    Object? gameIndices = freezed,
-    Object? generation = freezed,
+    Object? id = null,
+    Object? name = null,
+    Object? damageRelations = null,
+    Object? pastDamageRelations = null,
+    Object? gameIndices = null,
+    Object? generation = null,
     Object? moveDamageClass = freezed,
-    Object? names = freezed,
-    Object? pokemon = freezed,
-    Object? moves = freezed,
+    Object? names = null,
+    Object? pokemon = null,
+    Object? moves = null,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      name: name == freezed
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      damageRelations: damageRelations == freezed
+      damageRelations: null == damageRelations
           ? _value.damageRelations
           : damageRelations // ignore: cast_nullable_to_non_nullable
               as TypeRelations,
-      pastDamageRelations: pastDamageRelations == freezed
+      pastDamageRelations: null == pastDamageRelations
           ? _value.pastDamageRelations
           : pastDamageRelations // ignore: cast_nullable_to_non_nullable
               as List<TypeRelationsPast>,
-      gameIndices: gameIndices == freezed
+      gameIndices: null == gameIndices
           ? _value.gameIndices
           : gameIndices // ignore: cast_nullable_to_non_nullable
               as List<GenerationGameIndex>,
-      generation: generation == freezed
+      generation: null == generation
           ? _value.generation
           : generation // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-      moveDamageClass: moveDamageClass == freezed
+      moveDamageClass: freezed == moveDamageClass
           ? _value.moveDamageClass
           : moveDamageClass // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource?,
-      names: names == freezed
+      names: null == names
           ? _value.names
           : names // ignore: cast_nullable_to_non_nullable
               as List<Name>,
-      pokemon: pokemon == freezed
+      pokemon: null == pokemon
           ? _value.pokemon
           : pokemon // ignore: cast_nullable_to_non_nullable
               as List<TypePokemon>,
-      moves: moves == freezed
+      moves: null == moves
           ? _value.moves
           : moves // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $TypeRelationsCopyWith<$Res> get damageRelations {
     return $TypeRelationsCopyWith<$Res>(_value.damageRelations, (value) {
-      return _then(_value.copyWith(damageRelations: value));
+      return _then(_value.copyWith(damageRelations: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $NamedAPIResourceCopyWith<$Res> get generation {
     return $NamedAPIResourceCopyWith<$Res>(_value.generation, (value) {
-      return _then(_value.copyWith(generation: value));
+      return _then(_value.copyWith(generation: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $NamedAPIResourceCopyWith<$Res>? get moveDamageClass {
     if (_value.moveDamageClass == null) {
       return null;
     }
 
     return $NamedAPIResourceCopyWith<$Res>(_value.moveDamageClass!, (value) {
-      return _then(_value.copyWith(moveDamageClass: value));
+      return _then(_value.copyWith(moveDamageClass: value) as $Val);
     });
   }
 }
@@ -12505,18 +12623,16 @@ abstract class _$$_TypeCopyWith<$Res> implements $TypeCopyWith<$Res> {
   factory _$$_TypeCopyWith(_$_Type value, $Res Function(_$_Type) then) =
       __$$_TypeCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {int id,
       String name,
-      @JsonKey(name: 'damage_relations')
-          TypeRelations damageRelations,
+      @JsonKey(name: 'damage_relations') TypeRelations damageRelations,
       @JsonKey(name: 'past_damage_relations')
-          List<TypeRelationsPast> pastDamageRelations,
-      @JsonKey(name: 'game_indices')
-          List<GenerationGameIndex> gameIndices,
+      List<TypeRelationsPast> pastDamageRelations,
+      @JsonKey(name: 'game_indices') List<GenerationGameIndex> gameIndices,
       NamedAPIResource generation,
-      @JsonKey(name: 'move_damage_class')
-          NamedAPIResource? moveDamageClass,
+      @JsonKey(name: 'move_damage_class') NamedAPIResource? moveDamageClass,
       List<Name> names,
       List<TypePokemon> pokemon,
       List<NamedAPIResource> moves});
@@ -12530,65 +12646,63 @@ abstract class _$$_TypeCopyWith<$Res> implements $TypeCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$_TypeCopyWithImpl<$Res> extends _$TypeCopyWithImpl<$Res>
+class __$$_TypeCopyWithImpl<$Res> extends _$TypeCopyWithImpl<$Res, _$_Type>
     implements _$$_TypeCopyWith<$Res> {
   __$$_TypeCopyWithImpl(_$_Type _value, $Res Function(_$_Type) _then)
-      : super(_value, (v) => _then(v as _$_Type));
+      : super(_value, _then);
 
-  @override
-  _$_Type get _value => super._value as _$_Type;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? damageRelations = freezed,
-    Object? pastDamageRelations = freezed,
-    Object? gameIndices = freezed,
-    Object? generation = freezed,
+    Object? id = null,
+    Object? name = null,
+    Object? damageRelations = null,
+    Object? pastDamageRelations = null,
+    Object? gameIndices = null,
+    Object? generation = null,
     Object? moveDamageClass = freezed,
-    Object? names = freezed,
-    Object? pokemon = freezed,
-    Object? moves = freezed,
+    Object? names = null,
+    Object? pokemon = null,
+    Object? moves = null,
   }) {
     return _then(_$_Type(
-      id == freezed
+      null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      name == freezed
+      null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      damageRelations == freezed
+      null == damageRelations
           ? _value.damageRelations
           : damageRelations // ignore: cast_nullable_to_non_nullable
               as TypeRelations,
-      pastDamageRelations == freezed
+      null == pastDamageRelations
           ? _value._pastDamageRelations
           : pastDamageRelations // ignore: cast_nullable_to_non_nullable
               as List<TypeRelationsPast>,
-      gameIndices == freezed
+      null == gameIndices
           ? _value._gameIndices
           : gameIndices // ignore: cast_nullable_to_non_nullable
               as List<GenerationGameIndex>,
-      generation == freezed
+      null == generation
           ? _value.generation
           : generation // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-      moveDamageClass == freezed
+      freezed == moveDamageClass
           ? _value.moveDamageClass
           : moveDamageClass // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource?,
-      names == freezed
+      null == names
           ? _value._names
           : names // ignore: cast_nullable_to_non_nullable
               as List<Name>,
-      pokemon == freezed
+      null == pokemon
           ? _value._pokemon
           : pokemon // ignore: cast_nullable_to_non_nullable
               as List<TypePokemon>,
-      moves == freezed
+      null == moves
           ? _value._moves
           : moves // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
@@ -12602,15 +12716,13 @@ class _$_Type implements _Type {
   const _$_Type(
       this.id,
       this.name,
-      @JsonKey(name: 'damage_relations')
-          this.damageRelations,
+      @JsonKey(name: 'damage_relations') this.damageRelations,
       @JsonKey(name: 'past_damage_relations')
-          final List<TypeRelationsPast> pastDamageRelations,
+      final List<TypeRelationsPast> pastDamageRelations,
       @JsonKey(name: 'game_indices')
-          final List<GenerationGameIndex> gameIndices,
+      final List<GenerationGameIndex> gameIndices,
       this.generation,
-      @JsonKey(name: 'move_damage_class')
-          this.moveDamageClass,
+      @JsonKey(name: 'move_damage_class') this.moveDamageClass,
       final List<Name> names,
       final List<TypePokemon> pokemon,
       final List<NamedAPIResource> moves)
@@ -12644,6 +12756,8 @@ class _$_Type implements _Type {
   @override
   @JsonKey(name: 'past_damage_relations')
   List<TypeRelationsPast> get pastDamageRelations {
+    if (_pastDamageRelations is EqualUnmodifiableListView)
+      return _pastDamageRelations;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_pastDamageRelations);
   }
@@ -12655,6 +12769,7 @@ class _$_Type implements _Type {
   @override
   @JsonKey(name: 'game_indices')
   List<GenerationGameIndex> get gameIndices {
+    if (_gameIndices is EqualUnmodifiableListView) return _gameIndices;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_gameIndices);
   }
@@ -12682,6 +12797,7 @@ class _$_Type implements _Type {
   /// The name of this resource listed in different languages.
   @override
   List<Name> get names {
+    if (_names is EqualUnmodifiableListView) return _names;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_names);
   }
@@ -12692,6 +12808,7 @@ class _$_Type implements _Type {
   /// A list of details of Pokémon that have this type.
   @override
   List<TypePokemon> get pokemon {
+    if (_pokemon is EqualUnmodifiableListView) return _pokemon;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_pokemon);
   }
@@ -12710,6 +12827,7 @@ class _$_Type implements _Type {
   /// [Move]
   @override
   List<NamedAPIResource> get moves {
+    if (_moves is EqualUnmodifiableListView) return _moves;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_moves);
   }
@@ -12724,18 +12842,18 @@ class _$_Type implements _Type {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_Type &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.name, name) &&
-            const DeepCollectionEquality()
-                .equals(other.damageRelations, damageRelations) &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.name, name) || other.name == name) &&
+            (identical(other.damageRelations, damageRelations) ||
+                other.damageRelations == damageRelations) &&
             const DeepCollectionEquality()
                 .equals(other._pastDamageRelations, _pastDamageRelations) &&
             const DeepCollectionEquality()
                 .equals(other._gameIndices, _gameIndices) &&
-            const DeepCollectionEquality()
-                .equals(other.generation, generation) &&
-            const DeepCollectionEquality()
-                .equals(other.moveDamageClass, moveDamageClass) &&
+            (identical(other.generation, generation) ||
+                other.generation == generation) &&
+            (identical(other.moveDamageClass, moveDamageClass) ||
+                other.moveDamageClass == moveDamageClass) &&
             const DeepCollectionEquality().equals(other._names, _names) &&
             const DeepCollectionEquality().equals(other._pokemon, _pokemon) &&
             const DeepCollectionEquality().equals(other._moves, _moves));
@@ -12745,19 +12863,20 @@ class _$_Type implements _Type {
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(name),
-      const DeepCollectionEquality().hash(damageRelations),
+      id,
+      name,
+      damageRelations,
       const DeepCollectionEquality().hash(_pastDamageRelations),
       const DeepCollectionEquality().hash(_gameIndices),
-      const DeepCollectionEquality().hash(generation),
-      const DeepCollectionEquality().hash(moveDamageClass),
+      generation,
+      moveDamageClass,
       const DeepCollectionEquality().hash(_names),
       const DeepCollectionEquality().hash(_pokemon),
       const DeepCollectionEquality().hash(_moves));
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_TypeCopyWith<_$_Type> get copyWith =>
       __$$_TypeCopyWithImpl<_$_Type>(this, _$identity);
 
@@ -12773,15 +12892,14 @@ abstract class _Type implements Type {
   const factory _Type(
       final int id,
       final String name,
-      @JsonKey(name: 'damage_relations')
-          final TypeRelations damageRelations,
+      @JsonKey(name: 'damage_relations') final TypeRelations damageRelations,
       @JsonKey(name: 'past_damage_relations')
-          final List<TypeRelationsPast> pastDamageRelations,
+      final List<TypeRelationsPast> pastDamageRelations,
       @JsonKey(name: 'game_indices')
-          final List<GenerationGameIndex> gameIndices,
+      final List<GenerationGameIndex> gameIndices,
       final NamedAPIResource generation,
       @JsonKey(name: 'move_damage_class')
-          final NamedAPIResource? moveDamageClass,
+      final NamedAPIResource? moveDamageClass,
       final List<Name> names,
       final List<TypePokemon> pokemon,
       final List<NamedAPIResource> moves) = _$_Type;
@@ -12876,41 +12994,46 @@ mixin _$TypePokemon {
 abstract class $TypePokemonCopyWith<$Res> {
   factory $TypePokemonCopyWith(
           TypePokemon value, $Res Function(TypePokemon) then) =
-      _$TypePokemonCopyWithImpl<$Res>;
+      _$TypePokemonCopyWithImpl<$Res, TypePokemon>;
+  @useResult
   $Res call({int slot, NamedAPIResource pokemon});
 
   $NamedAPIResourceCopyWith<$Res> get pokemon;
 }
 
 /// @nodoc
-class _$TypePokemonCopyWithImpl<$Res> implements $TypePokemonCopyWith<$Res> {
+class _$TypePokemonCopyWithImpl<$Res, $Val extends TypePokemon>
+    implements $TypePokemonCopyWith<$Res> {
   _$TypePokemonCopyWithImpl(this._value, this._then);
 
-  final TypePokemon _value;
   // ignore: unused_field
-  final $Res Function(TypePokemon) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? slot = freezed,
-    Object? pokemon = freezed,
+    Object? slot = null,
+    Object? pokemon = null,
   }) {
     return _then(_value.copyWith(
-      slot: slot == freezed
+      slot: null == slot
           ? _value.slot
           : slot // ignore: cast_nullable_to_non_nullable
               as int,
-      pokemon: pokemon == freezed
+      pokemon: null == pokemon
           ? _value.pokemon
           : pokemon // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $NamedAPIResourceCopyWith<$Res> get pokemon {
     return $NamedAPIResourceCopyWith<$Res>(_value.pokemon, (value) {
-      return _then(_value.copyWith(pokemon: value));
+      return _then(_value.copyWith(pokemon: value) as $Val);
     });
   }
 }
@@ -12922,6 +13045,7 @@ abstract class _$$_TypePokemonCopyWith<$Res>
           _$_TypePokemon value, $Res Function(_$_TypePokemon) then) =
       __$$_TypePokemonCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({int slot, NamedAPIResource pokemon});
 
   @override
@@ -12929,26 +13053,25 @@ abstract class _$$_TypePokemonCopyWith<$Res>
 }
 
 /// @nodoc
-class __$$_TypePokemonCopyWithImpl<$Res> extends _$TypePokemonCopyWithImpl<$Res>
+class __$$_TypePokemonCopyWithImpl<$Res>
+    extends _$TypePokemonCopyWithImpl<$Res, _$_TypePokemon>
     implements _$$_TypePokemonCopyWith<$Res> {
   __$$_TypePokemonCopyWithImpl(
       _$_TypePokemon _value, $Res Function(_$_TypePokemon) _then)
-      : super(_value, (v) => _then(v as _$_TypePokemon));
+      : super(_value, _then);
 
-  @override
-  _$_TypePokemon get _value => super._value as _$_TypePokemon;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? slot = freezed,
-    Object? pokemon = freezed,
+    Object? slot = null,
+    Object? pokemon = null,
   }) {
     return _then(_$_TypePokemon(
-      slot == freezed
+      null == slot
           ? _value.slot
           : slot // ignore: cast_nullable_to_non_nullable
               as int,
-      pokemon == freezed
+      null == pokemon
           ? _value.pokemon
           : pokemon // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
@@ -12986,19 +13109,17 @@ class _$_TypePokemon implements _TypePokemon {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_TypePokemon &&
-            const DeepCollectionEquality().equals(other.slot, slot) &&
-            const DeepCollectionEquality().equals(other.pokemon, pokemon));
+            (identical(other.slot, slot) || other.slot == slot) &&
+            (identical(other.pokemon, pokemon) || other.pokemon == pokemon));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(slot),
-      const DeepCollectionEquality().hash(pokemon));
+  int get hashCode => Object.hash(runtimeType, slot, pokemon);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_TypePokemonCopyWith<_$_TypePokemon> get copyWith =>
       __$$_TypePokemonCopyWithImpl<_$_TypePokemon>(this, _$identity);
 
@@ -13102,66 +13223,64 @@ mixin _$TypeRelations {
 abstract class $TypeRelationsCopyWith<$Res> {
   factory $TypeRelationsCopyWith(
           TypeRelations value, $Res Function(TypeRelations) then) =
-      _$TypeRelationsCopyWithImpl<$Res>;
+      _$TypeRelationsCopyWithImpl<$Res, TypeRelations>;
+  @useResult
   $Res call(
-      {@JsonKey(name: 'no_damage_to')
-          List<NamedAPIResource> noDamageTo,
-      @JsonKey(name: 'half_damage_to')
-          List<NamedAPIResource> halfDamageTo,
-      @JsonKey(name: 'double_damage_to')
-          List<NamedAPIResource> doubleDamageTo,
-      @JsonKey(name: 'no_damage_from')
-          List<NamedAPIResource> noDamageFrom,
-      @JsonKey(name: 'half_damage_from')
-          List<NamedAPIResource> halfDamageFrom,
+      {@JsonKey(name: 'no_damage_to') List<NamedAPIResource> noDamageTo,
+      @JsonKey(name: 'half_damage_to') List<NamedAPIResource> halfDamageTo,
+      @JsonKey(name: 'double_damage_to') List<NamedAPIResource> doubleDamageTo,
+      @JsonKey(name: 'no_damage_from') List<NamedAPIResource> noDamageFrom,
+      @JsonKey(name: 'half_damage_from') List<NamedAPIResource> halfDamageFrom,
       @JsonKey(name: 'double_damage_from')
-          List<NamedAPIResource> doubleDamageFrom});
+      List<NamedAPIResource> doubleDamageFrom});
 }
 
 /// @nodoc
-class _$TypeRelationsCopyWithImpl<$Res>
+class _$TypeRelationsCopyWithImpl<$Res, $Val extends TypeRelations>
     implements $TypeRelationsCopyWith<$Res> {
   _$TypeRelationsCopyWithImpl(this._value, this._then);
 
-  final TypeRelations _value;
   // ignore: unused_field
-  final $Res Function(TypeRelations) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? noDamageTo = freezed,
-    Object? halfDamageTo = freezed,
-    Object? doubleDamageTo = freezed,
-    Object? noDamageFrom = freezed,
-    Object? halfDamageFrom = freezed,
-    Object? doubleDamageFrom = freezed,
+    Object? noDamageTo = null,
+    Object? halfDamageTo = null,
+    Object? doubleDamageTo = null,
+    Object? noDamageFrom = null,
+    Object? halfDamageFrom = null,
+    Object? doubleDamageFrom = null,
   }) {
     return _then(_value.copyWith(
-      noDamageTo: noDamageTo == freezed
+      noDamageTo: null == noDamageTo
           ? _value.noDamageTo
           : noDamageTo // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
-      halfDamageTo: halfDamageTo == freezed
+      halfDamageTo: null == halfDamageTo
           ? _value.halfDamageTo
           : halfDamageTo // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
-      doubleDamageTo: doubleDamageTo == freezed
+      doubleDamageTo: null == doubleDamageTo
           ? _value.doubleDamageTo
           : doubleDamageTo // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
-      noDamageFrom: noDamageFrom == freezed
+      noDamageFrom: null == noDamageFrom
           ? _value.noDamageFrom
           : noDamageFrom // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
-      halfDamageFrom: halfDamageFrom == freezed
+      halfDamageFrom: null == halfDamageFrom
           ? _value.halfDamageFrom
           : halfDamageFrom // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
-      doubleDamageFrom: doubleDamageFrom == freezed
+      doubleDamageFrom: null == doubleDamageFrom
           ? _value.doubleDamageFrom
           : doubleDamageFrom // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
-    ));
+    ) as $Val);
   }
 }
 
@@ -13172,63 +13291,57 @@ abstract class _$$_TypeRelationsCopyWith<$Res>
           _$_TypeRelations value, $Res Function(_$_TypeRelations) then) =
       __$$_TypeRelationsCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
-      {@JsonKey(name: 'no_damage_to')
-          List<NamedAPIResource> noDamageTo,
-      @JsonKey(name: 'half_damage_to')
-          List<NamedAPIResource> halfDamageTo,
-      @JsonKey(name: 'double_damage_to')
-          List<NamedAPIResource> doubleDamageTo,
-      @JsonKey(name: 'no_damage_from')
-          List<NamedAPIResource> noDamageFrom,
-      @JsonKey(name: 'half_damage_from')
-          List<NamedAPIResource> halfDamageFrom,
+      {@JsonKey(name: 'no_damage_to') List<NamedAPIResource> noDamageTo,
+      @JsonKey(name: 'half_damage_to') List<NamedAPIResource> halfDamageTo,
+      @JsonKey(name: 'double_damage_to') List<NamedAPIResource> doubleDamageTo,
+      @JsonKey(name: 'no_damage_from') List<NamedAPIResource> noDamageFrom,
+      @JsonKey(name: 'half_damage_from') List<NamedAPIResource> halfDamageFrom,
       @JsonKey(name: 'double_damage_from')
-          List<NamedAPIResource> doubleDamageFrom});
+      List<NamedAPIResource> doubleDamageFrom});
 }
 
 /// @nodoc
 class __$$_TypeRelationsCopyWithImpl<$Res>
-    extends _$TypeRelationsCopyWithImpl<$Res>
+    extends _$TypeRelationsCopyWithImpl<$Res, _$_TypeRelations>
     implements _$$_TypeRelationsCopyWith<$Res> {
   __$$_TypeRelationsCopyWithImpl(
       _$_TypeRelations _value, $Res Function(_$_TypeRelations) _then)
-      : super(_value, (v) => _then(v as _$_TypeRelations));
+      : super(_value, _then);
 
-  @override
-  _$_TypeRelations get _value => super._value as _$_TypeRelations;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? noDamageTo = freezed,
-    Object? halfDamageTo = freezed,
-    Object? doubleDamageTo = freezed,
-    Object? noDamageFrom = freezed,
-    Object? halfDamageFrom = freezed,
-    Object? doubleDamageFrom = freezed,
+    Object? noDamageTo = null,
+    Object? halfDamageTo = null,
+    Object? doubleDamageTo = null,
+    Object? noDamageFrom = null,
+    Object? halfDamageFrom = null,
+    Object? doubleDamageFrom = null,
   }) {
     return _then(_$_TypeRelations(
-      noDamageTo == freezed
+      null == noDamageTo
           ? _value._noDamageTo
           : noDamageTo // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
-      halfDamageTo == freezed
+      null == halfDamageTo
           ? _value._halfDamageTo
           : halfDamageTo // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
-      doubleDamageTo == freezed
+      null == doubleDamageTo
           ? _value._doubleDamageTo
           : doubleDamageTo // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
-      noDamageFrom == freezed
+      null == noDamageFrom
           ? _value._noDamageFrom
           : noDamageFrom // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
-      halfDamageFrom == freezed
+      null == halfDamageFrom
           ? _value._halfDamageFrom
           : halfDamageFrom // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
-      doubleDamageFrom == freezed
+      null == doubleDamageFrom
           ? _value._doubleDamageFrom
           : doubleDamageFrom // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
@@ -13240,18 +13353,17 @@ class __$$_TypeRelationsCopyWithImpl<$Res>
 @JsonSerializable()
 class _$_TypeRelations implements _TypeRelations {
   const _$_TypeRelations(
-      @JsonKey(name: 'no_damage_to')
-          final List<NamedAPIResource> noDamageTo,
+      @JsonKey(name: 'no_damage_to') final List<NamedAPIResource> noDamageTo,
       @JsonKey(name: 'half_damage_to')
-          final List<NamedAPIResource> halfDamageTo,
+      final List<NamedAPIResource> halfDamageTo,
       @JsonKey(name: 'double_damage_to')
-          final List<NamedAPIResource> doubleDamageTo,
+      final List<NamedAPIResource> doubleDamageTo,
       @JsonKey(name: 'no_damage_from')
-          final List<NamedAPIResource> noDamageFrom,
+      final List<NamedAPIResource> noDamageFrom,
       @JsonKey(name: 'half_damage_from')
-          final List<NamedAPIResource> halfDamageFrom,
+      final List<NamedAPIResource> halfDamageFrom,
       @JsonKey(name: 'double_damage_from')
-          final List<NamedAPIResource> doubleDamageFrom)
+      final List<NamedAPIResource> doubleDamageFrom)
       : _noDamageTo = noDamageTo,
         _halfDamageTo = halfDamageTo,
         _doubleDamageTo = doubleDamageTo,
@@ -13277,6 +13389,7 @@ class _$_TypeRelations implements _TypeRelations {
   @override
   @JsonKey(name: 'no_damage_to')
   List<NamedAPIResource> get noDamageTo {
+    if (_noDamageTo is EqualUnmodifiableListView) return _noDamageTo;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_noDamageTo);
   }
@@ -13296,6 +13409,7 @@ class _$_TypeRelations implements _TypeRelations {
   @override
   @JsonKey(name: 'half_damage_to')
   List<NamedAPIResource> get halfDamageTo {
+    if (_halfDamageTo is EqualUnmodifiableListView) return _halfDamageTo;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_halfDamageTo);
   }
@@ -13315,6 +13429,7 @@ class _$_TypeRelations implements _TypeRelations {
   @override
   @JsonKey(name: 'double_damage_to')
   List<NamedAPIResource> get doubleDamageTo {
+    if (_doubleDamageTo is EqualUnmodifiableListView) return _doubleDamageTo;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_doubleDamageTo);
   }
@@ -13334,6 +13449,7 @@ class _$_TypeRelations implements _TypeRelations {
   @override
   @JsonKey(name: 'no_damage_from')
   List<NamedAPIResource> get noDamageFrom {
+    if (_noDamageFrom is EqualUnmodifiableListView) return _noDamageFrom;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_noDamageFrom);
   }
@@ -13353,6 +13469,7 @@ class _$_TypeRelations implements _TypeRelations {
   @override
   @JsonKey(name: 'half_damage_from')
   List<NamedAPIResource> get halfDamageFrom {
+    if (_halfDamageFrom is EqualUnmodifiableListView) return _halfDamageFrom;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_halfDamageFrom);
   }
@@ -13372,6 +13489,8 @@ class _$_TypeRelations implements _TypeRelations {
   @override
   @JsonKey(name: 'double_damage_from')
   List<NamedAPIResource> get doubleDamageFrom {
+    if (_doubleDamageFrom is EqualUnmodifiableListView)
+      return _doubleDamageFrom;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_doubleDamageFrom);
   }
@@ -13413,6 +13532,7 @@ class _$_TypeRelations implements _TypeRelations {
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_TypeRelationsCopyWith<_$_TypeRelations> get copyWith =>
       __$$_TypeRelationsCopyWithImpl<_$_TypeRelations>(this, _$identity);
 
@@ -13426,18 +13546,17 @@ class _$_TypeRelations implements _TypeRelations {
 
 abstract class _TypeRelations implements TypeRelations {
   const factory _TypeRelations(
-      @JsonKey(name: 'no_damage_to')
-          final List<NamedAPIResource> noDamageTo,
+      @JsonKey(name: 'no_damage_to') final List<NamedAPIResource> noDamageTo,
       @JsonKey(name: 'half_damage_to')
-          final List<NamedAPIResource> halfDamageTo,
+      final List<NamedAPIResource> halfDamageTo,
       @JsonKey(name: 'double_damage_to')
-          final List<NamedAPIResource> doubleDamageTo,
+      final List<NamedAPIResource> doubleDamageTo,
       @JsonKey(name: 'no_damage_from')
-          final List<NamedAPIResource> noDamageFrom,
+      final List<NamedAPIResource> noDamageFrom,
       @JsonKey(name: 'half_damage_from')
-          final List<NamedAPIResource> halfDamageFrom,
+      final List<NamedAPIResource> halfDamageFrom,
       @JsonKey(name: 'double_damage_from')
-          final List<NamedAPIResource> doubleDamageFrom) = _$_TypeRelations;
+      final List<NamedAPIResource> doubleDamageFrom) = _$_TypeRelations;
 
   factory _TypeRelations.fromJson(Map<String, dynamic> json) =
       _$_TypeRelations.fromJson;
@@ -13529,7 +13648,8 @@ mixin _$TypeRelationsPast {
 abstract class $TypeRelationsPastCopyWith<$Res> {
   factory $TypeRelationsPastCopyWith(
           TypeRelationsPast value, $Res Function(TypeRelationsPast) then) =
-      _$TypeRelationsPastCopyWithImpl<$Res>;
+      _$TypeRelationsPastCopyWithImpl<$Res, TypeRelationsPast>;
+  @useResult
   $Res call(
       {NamedAPIResource generation,
       @JsonKey(name: 'damage_relations') TypeRelations damageRelations});
@@ -13539,42 +13659,46 @@ abstract class $TypeRelationsPastCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$TypeRelationsPastCopyWithImpl<$Res>
+class _$TypeRelationsPastCopyWithImpl<$Res, $Val extends TypeRelationsPast>
     implements $TypeRelationsPastCopyWith<$Res> {
   _$TypeRelationsPastCopyWithImpl(this._value, this._then);
 
-  final TypeRelationsPast _value;
   // ignore: unused_field
-  final $Res Function(TypeRelationsPast) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? generation = freezed,
-    Object? damageRelations = freezed,
+    Object? generation = null,
+    Object? damageRelations = null,
   }) {
     return _then(_value.copyWith(
-      generation: generation == freezed
+      generation: null == generation
           ? _value.generation
           : generation // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-      damageRelations: damageRelations == freezed
+      damageRelations: null == damageRelations
           ? _value.damageRelations
           : damageRelations // ignore: cast_nullable_to_non_nullable
               as TypeRelations,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $NamedAPIResourceCopyWith<$Res> get generation {
     return $NamedAPIResourceCopyWith<$Res>(_value.generation, (value) {
-      return _then(_value.copyWith(generation: value));
+      return _then(_value.copyWith(generation: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $TypeRelationsCopyWith<$Res> get damageRelations {
     return $TypeRelationsCopyWith<$Res>(_value.damageRelations, (value) {
-      return _then(_value.copyWith(damageRelations: value));
+      return _then(_value.copyWith(damageRelations: value) as $Val);
     });
   }
 }
@@ -13586,6 +13710,7 @@ abstract class _$$_TypeRelationsPastCopyWith<$Res>
           $Res Function(_$_TypeRelationsPast) then) =
       __$$_TypeRelationsPastCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {NamedAPIResource generation,
       @JsonKey(name: 'damage_relations') TypeRelations damageRelations});
@@ -13598,26 +13723,24 @@ abstract class _$$_TypeRelationsPastCopyWith<$Res>
 
 /// @nodoc
 class __$$_TypeRelationsPastCopyWithImpl<$Res>
-    extends _$TypeRelationsPastCopyWithImpl<$Res>
+    extends _$TypeRelationsPastCopyWithImpl<$Res, _$_TypeRelationsPast>
     implements _$$_TypeRelationsPastCopyWith<$Res> {
   __$$_TypeRelationsPastCopyWithImpl(
       _$_TypeRelationsPast _value, $Res Function(_$_TypeRelationsPast) _then)
-      : super(_value, (v) => _then(v as _$_TypeRelationsPast));
+      : super(_value, _then);
 
-  @override
-  _$_TypeRelationsPast get _value => super._value as _$_TypeRelationsPast;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? generation = freezed,
-    Object? damageRelations = freezed,
+    Object? generation = null,
+    Object? damageRelations = null,
   }) {
     return _then(_$_TypeRelationsPast(
-      generation == freezed
+      null == generation
           ? _value.generation
           : generation // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-      damageRelations == freezed
+      null == damageRelations
           ? _value.damageRelations
           : damageRelations // ignore: cast_nullable_to_non_nullable
               as TypeRelations,
@@ -13657,21 +13780,19 @@ class _$_TypeRelationsPast implements _TypeRelationsPast {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_TypeRelationsPast &&
-            const DeepCollectionEquality()
-                .equals(other.generation, generation) &&
-            const DeepCollectionEquality()
-                .equals(other.damageRelations, damageRelations));
+            (identical(other.generation, generation) ||
+                other.generation == generation) &&
+            (identical(other.damageRelations, damageRelations) ||
+                other.damageRelations == damageRelations));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(generation),
-      const DeepCollectionEquality().hash(damageRelations));
+  int get hashCode => Object.hash(runtimeType, generation, damageRelations);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_TypeRelationsPastCopyWith<_$_TypeRelationsPast> get copyWith =>
       __$$_TypeRelationsPastCopyWithImpl<_$_TypeRelationsPast>(
           this, _$identity);
@@ -13688,7 +13809,7 @@ abstract class _TypeRelationsPast implements TypeRelationsPast {
   const factory _TypeRelationsPast(
       final NamedAPIResource generation,
       @JsonKey(name: 'damage_relations')
-          final TypeRelations damageRelations) = _$_TypeRelationsPast;
+      final TypeRelations damageRelations) = _$_TypeRelationsPast;
 
   factory _TypeRelationsPast.fromJson(Map<String, dynamic> json) =
       _$_TypeRelationsPast.fromJson;

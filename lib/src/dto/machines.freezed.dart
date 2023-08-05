@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'machines.dart';
 
@@ -53,7 +53,8 @@ mixin _$Machine {
 /// @nodoc
 abstract class $MachineCopyWith<$Res> {
   factory $MachineCopyWith(Machine value, $Res Function(Machine) then) =
-      _$MachineCopyWithImpl<$Res>;
+      _$MachineCopyWithImpl<$Res, Machine>;
+  @useResult
   $Res call(
       {int id,
       NamedAPIResource item,
@@ -66,58 +67,64 @@ abstract class $MachineCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$MachineCopyWithImpl<$Res> implements $MachineCopyWith<$Res> {
+class _$MachineCopyWithImpl<$Res, $Val extends Machine>
+    implements $MachineCopyWith<$Res> {
   _$MachineCopyWithImpl(this._value, this._then);
 
-  final Machine _value;
   // ignore: unused_field
-  final $Res Function(Machine) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? item = freezed,
-    Object? move = freezed,
-    Object? versionGroup = freezed,
+    Object? id = null,
+    Object? item = null,
+    Object? move = null,
+    Object? versionGroup = null,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      item: item == freezed
+      item: null == item
           ? _value.item
           : item // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-      move: move == freezed
+      move: null == move
           ? _value.move
           : move // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-      versionGroup: versionGroup == freezed
+      versionGroup: null == versionGroup
           ? _value.versionGroup
           : versionGroup // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $NamedAPIResourceCopyWith<$Res> get item {
     return $NamedAPIResourceCopyWith<$Res>(_value.item, (value) {
-      return _then(_value.copyWith(item: value));
+      return _then(_value.copyWith(item: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $NamedAPIResourceCopyWith<$Res> get move {
     return $NamedAPIResourceCopyWith<$Res>(_value.move, (value) {
-      return _then(_value.copyWith(move: value));
+      return _then(_value.copyWith(move: value) as $Val);
     });
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $NamedAPIResourceCopyWith<$Res> get versionGroup {
     return $NamedAPIResourceCopyWith<$Res>(_value.versionGroup, (value) {
-      return _then(_value.copyWith(versionGroup: value));
+      return _then(_value.copyWith(versionGroup: value) as $Val);
     });
   }
 }
@@ -128,6 +135,7 @@ abstract class _$$_MachineCopyWith<$Res> implements $MachineCopyWith<$Res> {
           _$_Machine value, $Res Function(_$_Machine) then) =
       __$$_MachineCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {int id,
       NamedAPIResource item,
@@ -143,35 +151,34 @@ abstract class _$$_MachineCopyWith<$Res> implements $MachineCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$_MachineCopyWithImpl<$Res> extends _$MachineCopyWithImpl<$Res>
+class __$$_MachineCopyWithImpl<$Res>
+    extends _$MachineCopyWithImpl<$Res, _$_Machine>
     implements _$$_MachineCopyWith<$Res> {
   __$$_MachineCopyWithImpl(_$_Machine _value, $Res Function(_$_Machine) _then)
-      : super(_value, (v) => _then(v as _$_Machine));
+      : super(_value, _then);
 
-  @override
-  _$_Machine get _value => super._value as _$_Machine;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? item = freezed,
-    Object? move = freezed,
-    Object? versionGroup = freezed,
+    Object? id = null,
+    Object? item = null,
+    Object? move = null,
+    Object? versionGroup = null,
   }) {
     return _then(_$_Machine(
-      id == freezed
+      null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      item == freezed
+      null == item
           ? _value.item
           : item // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-      move == freezed
+      null == move
           ? _value.move
           : move // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-      versionGroup == freezed
+      null == versionGroup
           ? _value.versionGroup
           : versionGroup // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
@@ -227,24 +234,20 @@ class _$_Machine implements _Machine {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_Machine &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.item, item) &&
-            const DeepCollectionEquality().equals(other.move, move) &&
-            const DeepCollectionEquality()
-                .equals(other.versionGroup, versionGroup));
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.item, item) || other.item == item) &&
+            (identical(other.move, move) || other.move == move) &&
+            (identical(other.versionGroup, versionGroup) ||
+                other.versionGroup == versionGroup));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(item),
-      const DeepCollectionEquality().hash(move),
-      const DeepCollectionEquality().hash(versionGroup));
+  int get hashCode => Object.hash(runtimeType, id, item, move, versionGroup);
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_MachineCopyWith<_$_Machine> get copyWith =>
       __$$_MachineCopyWithImpl<_$_Machine>(this, _$identity);
 

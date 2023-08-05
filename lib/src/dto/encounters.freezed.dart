@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'encounters.dart';
 
@@ -42,44 +42,47 @@ mixin _$EncounterMethod {
 abstract class $EncounterMethodCopyWith<$Res> {
   factory $EncounterMethodCopyWith(
           EncounterMethod value, $Res Function(EncounterMethod) then) =
-      _$EncounterMethodCopyWithImpl<$Res>;
+      _$EncounterMethodCopyWithImpl<$Res, EncounterMethod>;
+  @useResult
   $Res call({int id, String name, int order, List<Name> names});
 }
 
 /// @nodoc
-class _$EncounterMethodCopyWithImpl<$Res>
+class _$EncounterMethodCopyWithImpl<$Res, $Val extends EncounterMethod>
     implements $EncounterMethodCopyWith<$Res> {
   _$EncounterMethodCopyWithImpl(this._value, this._then);
 
-  final EncounterMethod _value;
   // ignore: unused_field
-  final $Res Function(EncounterMethod) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? order = freezed,
-    Object? names = freezed,
+    Object? id = null,
+    Object? name = null,
+    Object? order = null,
+    Object? names = null,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      name: name == freezed
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      order: order == freezed
+      order: null == order
           ? _value.order
           : order // ignore: cast_nullable_to_non_nullable
               as int,
-      names: names == freezed
+      names: null == names
           ? _value.names
           : names // ignore: cast_nullable_to_non_nullable
               as List<Name>,
-    ));
+    ) as $Val);
   }
 }
 
@@ -90,41 +93,40 @@ abstract class _$$_EncounterMethodCopyWith<$Res>
           _$_EncounterMethod value, $Res Function(_$_EncounterMethod) then) =
       __$$_EncounterMethodCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call({int id, String name, int order, List<Name> names});
 }
 
 /// @nodoc
 class __$$_EncounterMethodCopyWithImpl<$Res>
-    extends _$EncounterMethodCopyWithImpl<$Res>
+    extends _$EncounterMethodCopyWithImpl<$Res, _$_EncounterMethod>
     implements _$$_EncounterMethodCopyWith<$Res> {
   __$$_EncounterMethodCopyWithImpl(
       _$_EncounterMethod _value, $Res Function(_$_EncounterMethod) _then)
-      : super(_value, (v) => _then(v as _$_EncounterMethod));
+      : super(_value, _then);
 
-  @override
-  _$_EncounterMethod get _value => super._value as _$_EncounterMethod;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? order = freezed,
-    Object? names = freezed,
+    Object? id = null,
+    Object? name = null,
+    Object? order = null,
+    Object? names = null,
   }) {
     return _then(_$_EncounterMethod(
-      id == freezed
+      null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      name == freezed
+      null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      order == freezed
+      null == order
           ? _value.order
           : order // ignore: cast_nullable_to_non_nullable
               as int,
-      names == freezed
+      null == names
           ? _value._names
           : names // ignore: cast_nullable_to_non_nullable
               as List<Name>,
@@ -160,6 +162,7 @@ class _$_EncounterMethod implements _EncounterMethod {
   /// The name of this resource listed in different languages.
   @override
   List<Name> get names {
+    if (_names is EqualUnmodifiableListView) return _names;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_names);
   }
@@ -174,23 +177,20 @@ class _$_EncounterMethod implements _EncounterMethod {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_EncounterMethod &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.name, name) &&
-            const DeepCollectionEquality().equals(other.order, order) &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.name, name) || other.name == name) &&
+            (identical(other.order, order) || other.order == order) &&
             const DeepCollectionEquality().equals(other._names, _names));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(name),
-      const DeepCollectionEquality().hash(order),
+  int get hashCode => Object.hash(runtimeType, id, name, order,
       const DeepCollectionEquality().hash(_names));
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_EncounterMethodCopyWith<_$_EncounterMethod> get copyWith =>
       __$$_EncounterMethodCopyWithImpl<_$_EncounterMethod>(this, _$identity);
 
@@ -263,45 +263,48 @@ mixin _$EncounterCondition {
 abstract class $EncounterConditionCopyWith<$Res> {
   factory $EncounterConditionCopyWith(
           EncounterCondition value, $Res Function(EncounterCondition) then) =
-      _$EncounterConditionCopyWithImpl<$Res>;
+      _$EncounterConditionCopyWithImpl<$Res, EncounterCondition>;
+  @useResult
   $Res call(
       {int id, String name, List<Name> names, List<NamedAPIResource> values});
 }
 
 /// @nodoc
-class _$EncounterConditionCopyWithImpl<$Res>
+class _$EncounterConditionCopyWithImpl<$Res, $Val extends EncounterCondition>
     implements $EncounterConditionCopyWith<$Res> {
   _$EncounterConditionCopyWithImpl(this._value, this._then);
 
-  final EncounterCondition _value;
   // ignore: unused_field
-  final $Res Function(EncounterCondition) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? names = freezed,
-    Object? values = freezed,
+    Object? id = null,
+    Object? name = null,
+    Object? names = null,
+    Object? values = null,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      name: name == freezed
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      names: names == freezed
+      names: null == names
           ? _value.names
           : names // ignore: cast_nullable_to_non_nullable
               as List<Name>,
-      values: values == freezed
+      values: null == values
           ? _value.values
           : values // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
-    ));
+    ) as $Val);
   }
 }
 
@@ -312,42 +315,41 @@ abstract class _$$_EncounterConditionCopyWith<$Res>
           $Res Function(_$_EncounterCondition) then) =
       __$$_EncounterConditionCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {int id, String name, List<Name> names, List<NamedAPIResource> values});
 }
 
 /// @nodoc
 class __$$_EncounterConditionCopyWithImpl<$Res>
-    extends _$EncounterConditionCopyWithImpl<$Res>
+    extends _$EncounterConditionCopyWithImpl<$Res, _$_EncounterCondition>
     implements _$$_EncounterConditionCopyWith<$Res> {
   __$$_EncounterConditionCopyWithImpl(
       _$_EncounterCondition _value, $Res Function(_$_EncounterCondition) _then)
-      : super(_value, (v) => _then(v as _$_EncounterCondition));
+      : super(_value, _then);
 
-  @override
-  _$_EncounterCondition get _value => super._value as _$_EncounterCondition;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? names = freezed,
-    Object? values = freezed,
+    Object? id = null,
+    Object? name = null,
+    Object? names = null,
+    Object? values = null,
   }) {
     return _then(_$_EncounterCondition(
-      id == freezed
+      null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      name == freezed
+      null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      names == freezed
+      null == names
           ? _value._names
           : names // ignore: cast_nullable_to_non_nullable
               as List<Name>,
-      values == freezed
+      null == values
           ? _value._values
           : values // ignore: cast_nullable_to_non_nullable
               as List<NamedAPIResource>,
@@ -380,6 +382,7 @@ class _$_EncounterCondition implements _EncounterCondition {
   /// The name of this resource listed in different languages.
   @override
   List<Name> get names {
+    if (_names is EqualUnmodifiableListView) return _names;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_names);
   }
@@ -398,6 +401,7 @@ class _$_EncounterCondition implements _EncounterCondition {
   /// [EncounterConditionValue]
   @override
   List<NamedAPIResource> get values {
+    if (_values is EqualUnmodifiableListView) return _values;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_values);
   }
@@ -412,8 +416,8 @@ class _$_EncounterCondition implements _EncounterCondition {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_EncounterCondition &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.name, name) &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.name, name) || other.name == name) &&
             const DeepCollectionEquality().equals(other._names, _names) &&
             const DeepCollectionEquality().equals(other._values, _values));
   }
@@ -422,13 +426,14 @@ class _$_EncounterCondition implements _EncounterCondition {
   @override
   int get hashCode => Object.hash(
       runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(name),
+      id,
+      name,
       const DeepCollectionEquality().hash(_names),
       const DeepCollectionEquality().hash(_values));
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_EncounterConditionCopyWith<_$_EncounterCondition> get copyWith =>
       __$$_EncounterConditionCopyWithImpl<_$_EncounterCondition>(
           this, _$identity);
@@ -510,7 +515,8 @@ mixin _$EncounterConditionValue {
 abstract class $EncounterConditionValueCopyWith<$Res> {
   factory $EncounterConditionValueCopyWith(EncounterConditionValue value,
           $Res Function(EncounterConditionValue) then) =
-      _$EncounterConditionValueCopyWithImpl<$Res>;
+      _$EncounterConditionValueCopyWithImpl<$Res, EncounterConditionValue>;
+  @useResult
   $Res call(
       {int id, String name, NamedAPIResource condition, List<Name> names});
 
@@ -518,45 +524,49 @@ abstract class $EncounterConditionValueCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$EncounterConditionValueCopyWithImpl<$Res>
+class _$EncounterConditionValueCopyWithImpl<$Res,
+        $Val extends EncounterConditionValue>
     implements $EncounterConditionValueCopyWith<$Res> {
   _$EncounterConditionValueCopyWithImpl(this._value, this._then);
 
-  final EncounterConditionValue _value;
   // ignore: unused_field
-  final $Res Function(EncounterConditionValue) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? condition = freezed,
-    Object? names = freezed,
+    Object? id = null,
+    Object? name = null,
+    Object? condition = null,
+    Object? names = null,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      name: name == freezed
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      condition: condition == freezed
+      condition: null == condition
           ? _value.condition
           : condition // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-      names: names == freezed
+      names: null == names
           ? _value.names
           : names // ignore: cast_nullable_to_non_nullable
               as List<Name>,
-    ));
+    ) as $Val);
   }
 
   @override
+  @pragma('vm:prefer-inline')
   $NamedAPIResourceCopyWith<$Res> get condition {
     return $NamedAPIResourceCopyWith<$Res>(_value.condition, (value) {
-      return _then(_value.copyWith(condition: value));
+      return _then(_value.copyWith(condition: value) as $Val);
     });
   }
 }
@@ -568,6 +578,7 @@ abstract class _$$_EncounterConditionValueCopyWith<$Res>
           $Res Function(_$_EncounterConditionValue) then) =
       __$$_EncounterConditionValueCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {int id, String name, NamedAPIResource condition, List<Name> names});
 
@@ -577,37 +588,35 @@ abstract class _$$_EncounterConditionValueCopyWith<$Res>
 
 /// @nodoc
 class __$$_EncounterConditionValueCopyWithImpl<$Res>
-    extends _$EncounterConditionValueCopyWithImpl<$Res>
+    extends _$EncounterConditionValueCopyWithImpl<$Res,
+        _$_EncounterConditionValue>
     implements _$$_EncounterConditionValueCopyWith<$Res> {
   __$$_EncounterConditionValueCopyWithImpl(_$_EncounterConditionValue _value,
       $Res Function(_$_EncounterConditionValue) _then)
-      : super(_value, (v) => _then(v as _$_EncounterConditionValue));
+      : super(_value, _then);
 
-  @override
-  _$_EncounterConditionValue get _value =>
-      super._value as _$_EncounterConditionValue;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? condition = freezed,
-    Object? names = freezed,
+    Object? id = null,
+    Object? name = null,
+    Object? condition = null,
+    Object? names = null,
   }) {
     return _then(_$_EncounterConditionValue(
-      id == freezed
+      null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      name == freezed
+      null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      condition == freezed
+      null == condition
           ? _value.condition
           : condition // ignore: cast_nullable_to_non_nullable
               as NamedAPIResource,
-      names == freezed
+      null == names
           ? _value._names
           : names // ignore: cast_nullable_to_non_nullable
               as List<Name>,
@@ -647,6 +656,7 @@ class _$_EncounterConditionValue implements _EncounterConditionValue {
   /// The name of this resource listed in different languages.
   @override
   List<Name> get names {
+    if (_names is EqualUnmodifiableListView) return _names;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_names);
   }
@@ -661,23 +671,21 @@ class _$_EncounterConditionValue implements _EncounterConditionValue {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_EncounterConditionValue &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.name, name) &&
-            const DeepCollectionEquality().equals(other.condition, condition) &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.name, name) || other.name == name) &&
+            (identical(other.condition, condition) ||
+                other.condition == condition) &&
             const DeepCollectionEquality().equals(other._names, _names));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(name),
-      const DeepCollectionEquality().hash(condition),
+  int get hashCode => Object.hash(runtimeType, id, name, condition,
       const DeepCollectionEquality().hash(_names));
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_EncounterConditionValueCopyWith<_$_EncounterConditionValue>
       get copyWith =>
           __$$_EncounterConditionValueCopyWithImpl<_$_EncounterConditionValue>(

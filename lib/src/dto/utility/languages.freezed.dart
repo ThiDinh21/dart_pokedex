@@ -1,7 +1,7 @@
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
-// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
 part of 'languages.dart';
 
@@ -47,7 +47,8 @@ mixin _$Language {
 /// @nodoc
 abstract class $LanguageCopyWith<$Res> {
   factory $LanguageCopyWith(Language value, $Res Function(Language) then) =
-      _$LanguageCopyWithImpl<$Res>;
+      _$LanguageCopyWithImpl<$Res, Language>;
+  @useResult
   $Res call(
       {int id,
       String name,
@@ -58,48 +59,51 @@ abstract class $LanguageCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$LanguageCopyWithImpl<$Res> implements $LanguageCopyWith<$Res> {
+class _$LanguageCopyWithImpl<$Res, $Val extends Language>
+    implements $LanguageCopyWith<$Res> {
   _$LanguageCopyWithImpl(this._value, this._then);
 
-  final Language _value;
   // ignore: unused_field
-  final $Res Function(Language) _then;
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
 
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? official = freezed,
-    Object? iso639 = freezed,
-    Object? iso3166 = freezed,
-    Object? names = freezed,
+    Object? id = null,
+    Object? name = null,
+    Object? official = null,
+    Object? iso639 = null,
+    Object? iso3166 = null,
+    Object? names = null,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed
+      id: null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      name: name == freezed
+      name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      official: official == freezed
+      official: null == official
           ? _value.official
           : official // ignore: cast_nullable_to_non_nullable
               as bool,
-      iso639: iso639 == freezed
+      iso639: null == iso639
           ? _value.iso639
           : iso639 // ignore: cast_nullable_to_non_nullable
               as String,
-      iso3166: iso3166 == freezed
+      iso3166: null == iso3166
           ? _value.iso3166
           : iso3166 // ignore: cast_nullable_to_non_nullable
               as String,
-      names: names == freezed
+      names: null == names
           ? _value.names
           : names // ignore: cast_nullable_to_non_nullable
               as List<Name>,
-    ));
+    ) as $Val);
   }
 }
 
@@ -109,6 +113,7 @@ abstract class _$$_LanguageCopyWith<$Res> implements $LanguageCopyWith<$Res> {
           _$_Language value, $Res Function(_$_Language) then) =
       __$$_LanguageCopyWithImpl<$Res>;
   @override
+  @useResult
   $Res call(
       {int id,
       String name,
@@ -119,46 +124,45 @@ abstract class _$$_LanguageCopyWith<$Res> implements $LanguageCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$_LanguageCopyWithImpl<$Res> extends _$LanguageCopyWithImpl<$Res>
+class __$$_LanguageCopyWithImpl<$Res>
+    extends _$LanguageCopyWithImpl<$Res, _$_Language>
     implements _$$_LanguageCopyWith<$Res> {
   __$$_LanguageCopyWithImpl(
       _$_Language _value, $Res Function(_$_Language) _then)
-      : super(_value, (v) => _then(v as _$_Language));
+      : super(_value, _then);
 
-  @override
-  _$_Language get _value => super._value as _$_Language;
-
+  @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? id = freezed,
-    Object? name = freezed,
-    Object? official = freezed,
-    Object? iso639 = freezed,
-    Object? iso3166 = freezed,
-    Object? names = freezed,
+    Object? id = null,
+    Object? name = null,
+    Object? official = null,
+    Object? iso639 = null,
+    Object? iso3166 = null,
+    Object? names = null,
   }) {
     return _then(_$_Language(
-      id == freezed
+      null == id
           ? _value.id
           : id // ignore: cast_nullable_to_non_nullable
               as int,
-      name == freezed
+      null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
               as String,
-      official == freezed
+      null == official
           ? _value.official
           : official // ignore: cast_nullable_to_non_nullable
               as bool,
-      iso639 == freezed
+      null == iso639
           ? _value.iso639
           : iso639 // ignore: cast_nullable_to_non_nullable
               as String,
-      iso3166 == freezed
+      null == iso3166
           ? _value.iso3166
           : iso3166 // ignore: cast_nullable_to_non_nullable
               as String,
-      names == freezed
+      null == names
           ? _value._names
           : names // ignore: cast_nullable_to_non_nullable
               as List<Name>,
@@ -202,6 +206,7 @@ class _$_Language implements _Language {
   /// The name of this resource listed in different languages.
   @override
   List<Name> get names {
+    if (_names is EqualUnmodifiableListView) return _names;
     // ignore: implicit_dynamic_type
     return EqualUnmodifiableListView(_names);
   }
@@ -216,27 +221,23 @@ class _$_Language implements _Language {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_Language &&
-            const DeepCollectionEquality().equals(other.id, id) &&
-            const DeepCollectionEquality().equals(other.name, name) &&
-            const DeepCollectionEquality().equals(other.official, official) &&
-            const DeepCollectionEquality().equals(other.iso639, iso639) &&
-            const DeepCollectionEquality().equals(other.iso3166, iso3166) &&
+            (identical(other.id, id) || other.id == id) &&
+            (identical(other.name, name) || other.name == name) &&
+            (identical(other.official, official) ||
+                other.official == official) &&
+            (identical(other.iso639, iso639) || other.iso639 == iso639) &&
+            (identical(other.iso3166, iso3166) || other.iso3166 == iso3166) &&
             const DeepCollectionEquality().equals(other._names, _names));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(
-      runtimeType,
-      const DeepCollectionEquality().hash(id),
-      const DeepCollectionEquality().hash(name),
-      const DeepCollectionEquality().hash(official),
-      const DeepCollectionEquality().hash(iso639),
-      const DeepCollectionEquality().hash(iso3166),
-      const DeepCollectionEquality().hash(_names));
+  int get hashCode => Object.hash(runtimeType, id, name, official, iso639,
+      iso3166, const DeepCollectionEquality().hash(_names));
 
   @JsonKey(ignore: true)
   @override
+  @pragma('vm:prefer-inline')
   _$$_LanguageCopyWith<_$_Language> get copyWith =>
       __$$_LanguageCopyWithImpl<_$_Language>(this, _$identity);
 
