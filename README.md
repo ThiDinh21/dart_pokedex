@@ -38,7 +38,7 @@ Add this to your package's pubspec.yaml file:
 
 ```yaml
 dependencies:
-    pokedex: ^0.1.1
+    pokedex: ^0.3.0
 ```
 
 Then run `dart pub get` or `flutter pub get` if you are using Flutter.
