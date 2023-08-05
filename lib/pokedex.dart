@@ -7,7 +7,6 @@ library pokedex;
 export 'package:pokedex/src/client.dart';
 export 'package:pokedex/src/converter_factory.dart';
 export 'package:pokedex/src/dto/berries.dart';
-export 'package:pokedex/src/dto/berries.dart';
 export 'package:pokedex/src/dto/contests.dart';
 export 'package:pokedex/src/dto/encounters.dart';
 export 'package:pokedex/src/dto/evolutions.dart';
