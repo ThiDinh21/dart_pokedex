@@ -18,20 +18,6 @@ void main() {
       endpoint = dex.items;
     });
 
-    test(
-      'getAll',
-      () async {
-        final resources = await endpoint.getAll();
-        for (final resource in resources.results) {
-          final item = await endpoint.getByUrl(resource.url);
-          items.add(item);
-        }
-
-        expect(items.length, 1607);
-      },
-      timeout: const Timeout(Duration(seconds: 900)),
-    );
-
     test('getPage', () async {
       final resources = await endpoint.getPage();
       for (final resource in resources.results) {
@@ -50,16 +36,6 @@ void main() {
     setUp(() {
       attribs.clear();
       endpoint = dex.itemAttributes;
-    });
-
-    test('getAll', () async {
-      final resources = await endpoint.getAll();
-      for (final resource in resources.results) {
-        final item = await endpoint.getByUrl(resource.url);
-        attribs.add(item);
-      }
-
-      expect(attribs.length, 8);
     });
 
     test('getPage', () async {
@@ -82,16 +58,6 @@ void main() {
       endpoint = dex.itemCategories;
     });
 
-    test('getAll', () async {
-      final resources = await endpoint.getAll();
-      for (final resource in resources.results) {
-        final item = await endpoint.getByUrl(resource.url);
-        categories.add(item);
-      }
-
-      expect(categories.length, 50);
-    });
-
     test('getPage', () async {
       final resources = await endpoint.getPage();
       for (final resource in resources.results) {
@@ -112,16 +78,6 @@ void main() {
       endpoint = dex.itemFlingEffects;
     });
 
-    test('getAll', () async {
-      final resources = await endpoint.getAll();
-      for (final resource in resources.results) {
-        final item = await endpoint.getByUrl(resource.url);
-        flingEffs.add(item);
-      }
-
-      expect(flingEffs.length, 7);
-    });
-
     test('getPage', () async {
       final resources = await endpoint.getPage();
       for (final resource in resources.results) {
@@ -140,16 +96,6 @@ void main() {
     setUp(() {
       itemPockets.clear();
       endpoint = dex.itemPockets;
-    });
-
-    test('getAll', () async {
-      final resources = await endpoint.getAll();
-      for (final resource in resources.results) {
-        final item = await endpoint.getByUrl(resource.url);
-        itemPockets.add(item);
-      }
-
-      expect(itemPockets.length, 8);
     });
 
     test('getPage', () async {

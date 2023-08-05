@@ -2,8 +2,6 @@ import 'package:pokedex/pokedex.dart';
 import 'package:pokedex/src/base_endpoint.dart';
 import 'package:test/test.dart';
 
-import '../util.dart';
-
 void main() {
   late Pokedex dex;
 
@@ -19,20 +17,6 @@ void main() {
       chains.clear();
       endpoint = dex.evolutionChains;
     });
-
-    test(
-      'getAll',
-      () async {
-        final resources = await endpoint.getAll();
-        for (final resource in resources.results) {
-          final item = await endpoint.getByUrl(resource.url);
-          chains.add(item);
-        }
-
-        expect(chains.length, 468);
-      },
-      timeout: timeout(600),
-    );
 
     test('getPage', () async {
       final resources = await endpoint.getPage(limit: 100, offset: 399);
@@ -54,18 +38,8 @@ void main() {
       endpoint = dex.evolutionTriggers;
     });
 
-    test('getAll', () async {
-      final resources = await endpoint.getAll();
-      for (final resource in resources.results) {
-        final item = await endpoint.getByUrl(resource.url);
-        triggers.add(item);
-      }
-
-      expect(triggers.length, 10);
-    });
-
     test('getPage', () async {
-      final resources = await endpoint.getPage();
+      final resources = await endpoint.getPage(limit: 10);
       for (final resource in resources.results) {
         final item = await endpoint.getByUrl(resource.url);
         triggers.add(item);

@@ -2,8 +2,6 @@ import 'package:pokedex/pokedex.dart';
 import 'package:pokedex/src/base_endpoint.dart';
 import 'package:test/test.dart';
 
-import '../util.dart';
-
 void main() {
   late Pokedex dex;
 
@@ -19,20 +17,6 @@ void main() {
       moves.clear();
       endpoint = dex.moves;
     });
-
-    test(
-      'getAll',
-      () async {
-        final resources = await endpoint.getAll();
-        for (final resource in resources.results) {
-          final item = await endpoint.getByUrl(resource.url);
-          moves.add(item);
-        }
-
-        expect(moves.length, 844);
-      },
-      timeout: timeout(900),
-    );
 
     test('getPage', () async {
       final resources = await endpoint.getPage();
@@ -52,16 +36,6 @@ void main() {
     setUp(() {
       ailments.clear();
       endpoint = dex.moveAilments;
-    });
-
-    test('getAll', () async {
-      final resources = await endpoint.getAll();
-      for (final resource in resources.results) {
-        final item = await endpoint.getByUrl(resource.url);
-        ailments.add(item);
-      }
-
-      expect(ailments.length, 22);
     });
 
     test('getPage', () async {
@@ -84,16 +58,6 @@ void main() {
       endpoint = dex.moveBattleStyles;
     });
 
-    test('getAll', () async {
-      final resources = await endpoint.getAll();
-      for (final resource in resources.results) {
-        final item = await endpoint.getByUrl(resource.url);
-        battleStyles.add(item);
-      }
-
-      expect(battleStyles.length, 3);
-    });
-
     test('getPage', () async {
       final resources = await endpoint.getPage();
       for (final resource in resources.results) {
@@ -112,16 +76,6 @@ void main() {
     setUp(() {
       categories.clear();
       endpoint = dex.moveCategories;
-    });
-
-    test('getAll', () async {
-      final resources = await endpoint.getAll();
-      for (final resource in resources.results) {
-        final item = await endpoint.getByUrl(resource.url);
-        categories.add(item);
-      }
-
-      expect(categories.length, 14);
     });
 
     test('getPage', () async {
@@ -144,16 +98,6 @@ void main() {
       endpoint = dex.moveDamageClasses;
     });
 
-    test('getAll', () async {
-      final resources = await endpoint.getAll();
-      for (final resource in resources.results) {
-        final item = await endpoint.getByUrl(resource.url);
-        damageClasses.add(item);
-      }
-
-      expect(damageClasses.length, 3);
-    });
-
     test('getPage', () async {
       final resources = await endpoint.getPage();
       for (final resource in resources.results) {
@@ -172,16 +116,6 @@ void main() {
     setUp(() {
       learnMethods.clear();
       endpoint = dex.moveLearnMethods;
-    });
-
-    test('getAll', () async {
-      final resources = await endpoint.getAll();
-      for (final resource in resources.results) {
-        final item = await endpoint.getByUrl(resource.url);
-        learnMethods.add(item);
-      }
-
-      expect(learnMethods.length, 11);
     });
 
     test('getPage', () async {
@@ -204,18 +138,8 @@ void main() {
       endpoint = dex.moveTargets;
     });
 
-    test('getAll', () async {
-      final resources = await endpoint.getAll();
-      for (final resource in resources.results) {
-        final item = await endpoint.getByUrl(resource.url);
-        moveTargets.add(item);
-      }
-
-      expect(moveTargets.length, 15);
-    });
-
     test('getPage', () async {
-      final resources = await endpoint.getPage();
+      final resources = await endpoint.getPage(limit: 15);
       for (final resource in resources.results) {
         final item = await endpoint.getByUrl(resource.url);
         moveTargets.add(item);

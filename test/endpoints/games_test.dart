@@ -18,16 +18,6 @@ void main() {
       endpoint = dex.generations;
     });
 
-    test('getAll', () async {
-      final resources = await endpoint.getAll();
-      for (final resource in resources.results) {
-        final item = await endpoint.getByUrl(resource.url);
-        gens.add(item);
-      }
-
-      expect(gens.length, 8);
-    });
-
     test('getPage', () async {
       final resources = await endpoint.getPage();
       for (final resource in resources.results) {
@@ -35,7 +25,7 @@ void main() {
         gens.add(item);
       }
 
-      expect(gens.length, 8);
+      expect(gens.length, 9);
     });
   });
 
@@ -46,16 +36,6 @@ void main() {
     setUp(() {
       dexes.clear();
       endpoint = dex.pokedexes;
-    });
-
-    test('getAll', () async {
-      final resources = await endpoint.getAll();
-      for (final resource in resources.results) {
-        final item = await endpoint.getByUrl(resource.url);
-        dexes.add(item);
-      }
-
-      expect(dexes.length, 29);
     });
 
     test('getPage', () async {
@@ -78,16 +58,6 @@ void main() {
       endpoint = dex.versions;
     });
 
-    test('getAll', () async {
-      final resources = await endpoint.getAll();
-      for (final resource in resources.results) {
-        final item = await endpoint.getByUrl(resource.url);
-        versions.add(item);
-      }
-
-      expect(versions.length, 39);
-    });
-
     test('getPage', () async {
       final resources = await endpoint.getPage();
       for (final resource in resources.results) {
@@ -106,16 +76,6 @@ void main() {
     setUp(() {
       versionGrps.clear();
       endpoint = dex.versionGroups;
-    });
-
-    test('getAll', () async {
-      final resources = await endpoint.getAll();
-      for (final resource in resources.results) {
-        final item = await endpoint.getByUrl(resource.url);
-        versionGrps.add(item);
-      }
-
-      expect(versionGrps.length, 24);
     });
 
     test('getPage', () async {

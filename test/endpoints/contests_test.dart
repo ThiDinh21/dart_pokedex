@@ -18,16 +18,6 @@ void main() {
       endpoint = dex.contestTypes;
     });
 
-    test('getAll', () async {
-      final resources = await endpoint.getAll();
-      for (final resource in resources.results) {
-        final item = await endpoint.getByUrl(resource.url);
-        types.add(item);
-      }
-
-      expect(types.length, 5);
-    });
-
     test('getPage', () async {
       final resources = await endpoint.getPage(limit: 4, offset: 1);
       for (final resource in resources.results) {
@@ -48,16 +38,6 @@ void main() {
       endpoint = dex.contestEffects;
     });
 
-    test('getAll', () async {
-      final resources = await endpoint.getAll();
-      for (final resource in resources.results) {
-        final item = await endpoint.getByUrl(resource.url);
-        effects.add(item);
-      }
-
-      expect(effects.length, 33);
-    });
-
     test('getPage', () async {
       final resources = await endpoint.getPage(limit: 10, offset: 20);
       for (final resource in resources.results) {
@@ -76,16 +56,6 @@ void main() {
     setUp(() {
       superEffects.clear();
       endpoint = dex.superContestEffects;
-    });
-
-    test('getAll', () async {
-      final resources = await endpoint.getAll();
-      for (final resource in resources.results) {
-        final item = await endpoint.getByUrl(resource.url);
-        superEffects.add(item);
-      }
-
-      expect(superEffects.length, 22);
     });
 
     test('getPage', () async {

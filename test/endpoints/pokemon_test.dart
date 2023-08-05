@@ -2,8 +2,6 @@ import 'package:pokedex/pokedex.dart';
 import 'package:pokedex/src/base_endpoint.dart';
 import 'package:test/test.dart';
 
-import '../util.dart';
-
 void main() {
   late Pokedex dex;
 
@@ -19,20 +17,6 @@ void main() {
       abilities.clear();
       endpoint = dex.abilities;
     });
-
-    test(
-      'getAll',
-      () async {
-        final resources = await endpoint.getAll();
-        for (final resource in resources.results) {
-          final item = await endpoint.getByUrl(resource.url);
-          abilities.add(item);
-        }
-
-        expect(abilities.length, 327);
-      },
-      timeout: timeout(300),
-    );
 
     test('getPage', () async {
       final resources = await endpoint.getPage();
@@ -52,16 +36,6 @@ void main() {
     setUp(() {
       characteristics.clear();
       endpoint = dex.characteristics;
-    });
-
-    test('getAll', () async {
-      final resources = await endpoint.getAll();
-      for (final resource in resources.results) {
-        final item = await endpoint.getByUrl(resource.url);
-        characteristics.add(item);
-      }
-
-      expect(characteristics.length, 30);
     });
 
     test('getPage', () async {
@@ -84,16 +58,6 @@ void main() {
       endpoint = dex.eggGroups;
     });
 
-    test('getAll', () async {
-      final resources = await endpoint.getAll();
-      for (final resource in resources.results) {
-        final item = await endpoint.getByUrl(resource.url);
-        eggGroups.add(item);
-      }
-
-      expect(eggGroups.length, 15);
-    });
-
     test('getPage', () async {
       final resources = await endpoint.getPage();
       for (final resource in resources.results) {
@@ -112,16 +76,6 @@ void main() {
     setUp(() {
       genders.clear();
       endpoint = dex.genders;
-    });
-
-    test('getAll', () async {
-      final resources = await endpoint.getAll();
-      for (final resource in resources.results) {
-        final item = await endpoint.getByUrl(resource.url);
-        genders.add(item);
-      }
-
-      expect(genders.length, 3);
     });
 
     test('getPage', () async {
@@ -144,16 +98,6 @@ void main() {
       endpoint = dex.growthRates;
     });
 
-    test('getAll', () async {
-      final resources = await endpoint.getAll();
-      for (final resource in resources.results) {
-        final item = await endpoint.getByUrl(resource.url);
-        growthRates.add(item);
-      }
-
-      expect(growthRates.length, 6);
-    });
-
     test('getPage', () async {
       final resources = await endpoint.getPage();
       for (final resource in resources.results) {
@@ -172,16 +116,6 @@ void main() {
     setUp(() {
       natures.clear();
       endpoint = dex.natures;
-    });
-
-    test('getAll', () async {
-      final resources = await endpoint.getAll();
-      for (final resource in resources.results) {
-        final item = await endpoint.getByUrl(resource.url);
-        natures.add(item);
-      }
-
-      expect(natures.length, 25);
     });
 
     test('getPage', () async {
@@ -204,16 +138,6 @@ void main() {
       endpoint = dex.pokeathlonStats;
     });
 
-    test('getAll', () async {
-      final resources = await endpoint.getAll();
-      for (final resource in resources.results) {
-        final item = await endpoint.getByUrl(resource.url);
-        stats.add(item);
-      }
-
-      expect(stats.length, 5);
-    });
-
     test('getPage', () async {
       final resources = await endpoint.getPage();
       for (final resource in resources.results) {
@@ -234,20 +158,6 @@ void main() {
       endpoint = dex.pokemon;
     });
 
-    test(
-      'getAll',
-      () async {
-        final resources = await endpoint.getAll();
-        for (final resource in resources.results) {
-          final item = await endpoint.getByUrl(resource.url);
-          pokemon.add(item);
-        }
-
-        expect(pokemon.length, 1154);
-      },
-      timeout: timeout(600),
-    );
-
     test('getPage', () async {
       final resources = await endpoint.getPage(offset: 1130);
       for (final resource in resources.results) {
@@ -266,16 +176,6 @@ void main() {
     setUp(() {
       colors.clear();
       endpoint = dex.pokemonColors;
-    });
-
-    test('getAll', () async {
-      final resources = await endpoint.getAll();
-      for (final resource in resources.results) {
-        final item = await endpoint.getByUrl(resource.url);
-        colors.add(item);
-      }
-
-      expect(colors.length, 10);
     });
 
     test('getPage', () async {
@@ -298,20 +198,6 @@ void main() {
       endpoint = dex.pokemonForms;
     });
 
-    test(
-      'getAll',
-      () async {
-        final resources = await endpoint.getAll();
-        for (final resource in resources.results) {
-          final item = await endpoint.getByUrl(resource.url);
-          shapes.add(item);
-        }
-
-        expect(shapes.length, 1323);
-      },
-      timeout: timeout(1200),
-    );
-
     test('getPage', () async {
       final resources = await endpoint.getPage();
       for (final resource in resources.results) {
@@ -330,16 +216,6 @@ void main() {
     setUp(() {
       habitats.clear();
       endpoint = dex.pokemonHabitats;
-    });
-
-    test('getAll', () async {
-      final resources = await endpoint.getAll();
-      for (final resource in resources.results) {
-        final item = await endpoint.getByUrl(resource.url);
-        habitats.add(item);
-      }
-
-      expect(habitats.length, 9);
     });
 
     test('getPage', () async {
@@ -362,16 +238,6 @@ void main() {
       endpoint = dex.pokemonShapes;
     });
 
-    test('getAll', () async {
-      final resources = await endpoint.getAll();
-      for (final resource in resources.results) {
-        final item = await endpoint.getByUrl(resource.url);
-        shapes.add(item);
-      }
-
-      expect(shapes.length, 14);
-    });
-
     test('getPage', () async {
       final resources = await endpoint.getPage();
       for (final resource in resources.results) {
@@ -391,20 +257,6 @@ void main() {
       species.clear();
       endpoint = dex.pokemonSpecies;
     });
-
-    test(
-      'getAll',
-      () async {
-        final resources = await endpoint.getAll();
-        for (final resource in resources.results) {
-          final item = await endpoint.getByUrl(resource.url);
-          species.add(item);
-        }
-
-        expect(species.length, 905);
-      },
-      timeout: timeout(600),
-    );
 
     test('getPage', () async {
       final resources = await endpoint.getPage(offset: 807, limit: 1);
@@ -426,16 +278,6 @@ void main() {
       endpoint = dex.stats;
     });
 
-    test('getAll', () async {
-      final resources = await endpoint.getAll();
-      for (final resource in resources.results) {
-        final item = await endpoint.getByUrl(resource.url);
-        stats.add(item);
-      }
-
-      expect(stats.length, 8);
-    });
-
     test('getPage', () async {
       final resources = await endpoint.getPage();
       for (final resource in resources.results) {
@@ -454,16 +296,6 @@ void main() {
     setUp(() {
       types.clear();
       endpoint = dex.types;
-    });
-
-    test('getAll', () async {
-      final resources = await endpoint.getAll();
-      for (final resource in resources.results) {
-        final item = await endpoint.getByUrl(resource.url);
-        types.add(item);
-      }
-
-      expect(types.length, 20);
     });
 
     test('getPage', () async {

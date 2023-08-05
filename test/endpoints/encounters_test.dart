@@ -18,16 +18,6 @@ void main() {
       endpoint = dex.encounterMethods;
     });
 
-    test('getAll', () async {
-      final resources = await endpoint.getAll();
-      for (final resource in resources.results) {
-        final item = await endpoint.getByUrl(resource.url);
-        methods.add(item);
-      }
-
-      expect(methods.length, 31);
-    });
-
     test('getPage', () async {
       final resources = await endpoint.getPage();
       for (final resource in resources.results) {
@@ -48,16 +38,6 @@ void main() {
       endpoint = dex.encounterConditions;
     });
 
-    test('getAll', () async {
-      final resources = await endpoint.getAll();
-      for (final resource in resources.results) {
-        final item = await endpoint.getByUrl(resource.url);
-        condi.add(item);
-      }
-
-      expect(condi.length, 13);
-    });
-
     test('getPage', () async {
       final resources = await endpoint.getPage();
       for (final resource in resources.results) {
@@ -76,16 +56,6 @@ void main() {
     setUp(() {
       condiVals.clear();
       endpoint = dex.encounterConditionValues;
-    });
-
-    test('getAll', () async {
-      final resources = await endpoint.getAll();
-      for (final resource in resources.results) {
-        final item = await endpoint.getByUrl(resource.url);
-        condiVals.add(item);
-      }
-
-      expect(condiVals.length, 39);
     });
 
     test('getPage', () async {

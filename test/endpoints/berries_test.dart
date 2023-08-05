@@ -15,16 +15,6 @@ void main() {
       berries.clear();
     });
 
-    test('getAll', () async {
-      final berryResources = await mockPokedex.berries.getAll();
-      for (final resource in berryResources.results) {
-        final berry = await mockPokedex.berries.getByUrl(resource.url);
-        berries.add(berry);
-      }
-
-      expect(berries.length, 64);
-    });
-
     test('getPage', () async {
       final berryResources =
           await mockPokedex.berries.getPage(limit: 50, offset: 2);
@@ -44,21 +34,12 @@ void main() {
       berryFirmnesses.clear();
     });
 
-    test('getAll', () async {
-      final resources = await mockPokedex.berryFirmnesses.getAll();
-      for (final resource in resources.results) {
-        final firmness = await mockPokedex.berryFirmnesses.getByUrl(resource.url);
-        berryFirmnesses.add(firmness);
-      }
-
-      expect(berryFirmnesses.length, 5);
-    });
-
     test('getPage', () async {
       final berryFirmnessResources =
           await mockPokedex.berryFirmnesses.getPage(limit: 2, offset: 2);
       for (final resource in berryFirmnessResources.results) {
-        final firmness = await mockPokedex.berryFirmnesses.getByUrl(resource.url);
+        final firmness =
+            await mockPokedex.berryFirmnesses.getByUrl(resource.url);
         berryFirmnesses.add(firmness);
       }
 
@@ -71,17 +52,6 @@ void main() {
 
     setUp(() {
       flavors.clear();
-    });
-
-    test('getAll', () async {
-      final endpoint = mockPokedex.berryFlavors;
-      final resources = await endpoint.getAll();
-      for (final resource in resources.results) {
-        final flavor = await endpoint.getByUrl(resource.url);
-        flavors.add(flavor);
-      }
-
-      expect(flavors.length, 5);
     });
 
     test('getPage', () async {

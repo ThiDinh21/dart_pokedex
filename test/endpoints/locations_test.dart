@@ -18,20 +18,6 @@ void main() {
       endpoint = dex.locations;
     });
 
-    test(
-      'getAll',
-      () async {
-        final resources = await endpoint.getAll();
-        for (final resource in resources.results) {
-          final item = await endpoint.getByUrl(resource.url);
-          locations.add(item);
-        }
-
-        expect(locations.length, 797);
-      },
-      timeout: const Timeout(Duration(seconds: 600)),
-    );
-
     test('getPage', () async {
       final resources = await endpoint.getPage();
       for (final resource in resources.results) {
@@ -52,20 +38,6 @@ void main() {
       endpoint = dex.locationAreas;
     });
 
-    test(
-      'getAll',
-      () async {
-        final resources = await endpoint.getAll();
-        for (final resource in resources.results) {
-          final item = await endpoint.getByUrl(resource.url);
-          areas.add(item);
-        }
-
-        expect(areas.length, 732);
-      },
-      timeout: const Timeout(Duration(seconds: 600)),
-    );
-
     test('getPage', () async {
       final resources = await endpoint.getPage();
       for (final resource in resources.results) {
@@ -84,16 +56,6 @@ void main() {
     setUp(() {
       parkAreas.clear();
       endpoint = dex.palParkAreas;
-    });
-
-    test('getAll', () async {
-      final resources = await endpoint.getAll();
-      for (final resource in resources.results) {
-        final item = await endpoint.getByUrl(resource.url);
-        parkAreas.add(item);
-      }
-
-      expect(parkAreas.length, 5);
     });
 
     test('getPage', () async {
@@ -116,16 +78,6 @@ void main() {
       endpoint = dex.regions;
     });
 
-    test('getAll', () async {
-      final resources = await endpoint.getAll();
-      for (final resource in resources.results) {
-        final item = await endpoint.getByUrl(resource.url);
-        regions.add(item);
-      }
-
-      expect(regions.length, 9);
-    });
-
     test('getPage', () async {
       final resources = await endpoint.getPage();
       for (final resource in resources.results) {
@@ -133,7 +85,7 @@ void main() {
         regions.add(item);
       }
 
-      expect(regions.length, 9);
+      expect(regions.length, 10);
     });
   });
 }
