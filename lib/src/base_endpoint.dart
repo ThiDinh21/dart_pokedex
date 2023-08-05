@@ -46,14 +46,6 @@ mixin ResourceEndpointMixin<T> {
 
   String _createResource() {
     final endpoint = T;
-    // _resource = T == PokedexData
-    //     ? 'pokedex'
-    //     : T
-    //         .toString()
-    //         .split('<')[0] // drop generic
-    //         .split(RegExp('(?=[A-Z])'))
-    //         .join('-')
-    //         .toLowerCase();
 
     switch (endpoint) {
       case Berry:
